@@ -1,0 +1,3673 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:27,155
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:27,160 --> 00:00:30,464
+谈论梯度下降和和
+talk about gradient descent and the and
+
+10
+00:00:30,469 --> 00:00:35,775
+它的后代也是基本的
+its descendants so from the basic
+
+11
+00:00:35,780 --> 00:00:37,695
+我们所有的梯度下降公式
+gradient descent formula which we all
+
+12
+00:00:37,700 --> 00:00:41,015
+知道让我写下来的新
+know let me just write that down the new
+
+13
+00:00:41,020 --> 00:00:47,535
+要点是我们要走的旧点
+point is the old point we're going
+
+14
+00:00:47,540 --> 00:00:49,995
+向下，所以用减号表示
+downwards so with a minus sign that's
+
+15
+00:00:50,000 --> 00:00:54,465
+步长我们计算
+the step size and we compute the
+
+16
+00:00:54,470 --> 00:00:59,115
+在XK的梯度，所以我们正在下降
+gradient at X K so we're descending in
+
+17
+00:00:59,120 --> 00:01:01,574
+负梯度的方向
+the direction of the negative gradient
+
+18
+00:01:01,579 --> 00:01:07,125
+这是基本的公式，并在
+and that's the basic formula and is in
+
+19
+00:01:07,130 --> 00:01:13,395
+每本书都是我研究的主要参考书
+every book studied so my main reference
+
+20
+00:01:13,400 --> 00:01:19,485
+对于这些讲座中的一些是
+for the some of these lectures is the
+
+21
+00:01:19,490 --> 00:01:22,904
+斯蒂芬博伊德和林登的书
+book by Stephen Boyd and Linden and
+
+22
+00:01:22,909 --> 00:01:26,805
+范登堡和我再次提到
+Vandenberg and and I mentioned again
+
+23
+00:01:26,810 --> 00:01:29,675
+博伊德教授在这个房间里说话
+professor Boyd is talking in this room
+
+24
+00:01:29,680 --> 00:01:33,875
+下周三周三和周四
+next week Wednesday Thursday and and
+
+25
+00:01:33,880 --> 00:01:36,885
+他周五在某个地方说话
+he's speaking somewhere on Friday at
+
+26
+00:01:36,890 --> 00:01:40,935
+4:30当然还有优化
+4:30 and of course about optimization
+
+27
+00:01:40,940 --> 00:01:43,904
+他是个好讲师，非常好
+and he's a good lecturer yeah very good
+
+28
+00:01:43,909 --> 00:01:46,934
+好的，所以有最陡的下降和
+okay so there's steepest descent and
+
+29
+00:01:46,939 --> 00:01:50,595
+我上次重绘了我的照片
+I've redrawn my picture from last time
+
+30
+00:01:50,600 --> 00:01:52,995
+我会去那边看看那个
+that I'll go over there and look at that
+
+31
+00:01:53,000 --> 00:01:56,505
+图片，但让我说出来的是什么
+picture but let me say what's coming so
+
+32
+00:01:56,510 --> 00:02:00,345
+这是非常标准非常标准的你
+that's pretty standard very standard you
+
+33
+00:02:00,350 --> 00:02:06,575
+可以说这是改善
+could say then this is the improvement
+
+34
+00:02:06,580 --> 00:02:10,874
+被广泛使用添加的东西
+that is widely used adding in something
+
+35
+00:02:10,879 --> 00:02:13,695
+称为动量以避免之字形
+called momentum to avoid the zigzag that
+
+36
+00:02:13,700 --> 00:02:15,124
+我们要去看看
+we're going to see
+
+37
+00:02:15,129 --> 00:02:17,654
+还有另一种方法可以做到这一点
+and there's another way to do it there's
+
+38
+00:02:17,659 --> 00:02:20,745
+一个名叫内斯特的俄罗斯人
+a Russian guy named Nestor off his
+
+39
+00:02:20,750 --> 00:02:22,844
+论文不容易阅读，但他们已经
+papers are not easy to read but they've
+
+40
+00:02:22,849 --> 00:02:26,835
+得到了严肃的内容，他做了一件事
+got serious content and one thing he did
+
+41
+00:02:26,840 --> 00:02:31,335
+被找到的势头替代方案，
+was find an alternative to momentum that
+
+42
+00:02:31,340 --> 00:02:37,484
+也加速了下降所以这
+also accelerated the the descent so this
+
+43
+00:02:37,489 --> 00:02:41,645
+产生这两者产生更快
+produces these both produce faster
+
+44
+00:02:41,650 --> 00:02:46,154
+血统比普通的一个好和
+descent than the ordinary one okay and
+
+45
+00:02:46,159 --> 00:02:49,665
+然后你知道展望未来
+then you know looking ahead that for
+
+46
+00:02:49,670 --> 00:02:52,904
+机器学习的问题就是这样
+problems of machine learning they're so
+
+47
+00:02:52,909 --> 00:02:57,044
+大的梯度，我们有这么
+large that the gradient and we have so
+
+48
+00:02:57,049 --> 00:02:59,884
+许多变量都是那些权重
+many variables all those weights are
+
+49
+00:02:59,889 --> 00:03:03,975
+变量全部和那可能数百个
+variables all and that could hundreds of
+
+50
+00:03:03,980 --> 00:03:07,035
+成千上万并不罕见
+thousands is is not uncommon
+
+51
+00:03:07,040 --> 00:03:09,675
+这样梯度就变成了
+so that then the gradient becomes a
+
+52
+00:03:09,680 --> 00:03:13,814
+相当大的计算，我们没有
+pretty big calculation and we don't have
+
+53
+00:03:13,819 --> 00:03:15,615
+做这一切的，一旦我们不必
+to do it all at once we don't have to
+
+54
+00:03:15,620 --> 00:03:19,484
+改变所以xk是所有的向量
+change so xk is a vector of all the
+
+55
+00:03:19,489 --> 00:03:24,285
+权重或使用和我们的方程
+weights or and using and our equations
+
+56
+00:03:24,290 --> 00:03:28,745
+是匹配训练数据
+are the matching the the training data
+
+57
+00:03:28,750 --> 00:03:31,275
+所以我们不必使用所有的培训
+so we don't have to use all the training
+
+58
+00:03:31,280 --> 00:03:34,634
+数据一下子我们不接受
+data at once and we don't we take a
+
+59
+00:03:34,639 --> 00:03:39,074
+一批训练数据，但一个
+batch of training data like one but
+
+60
+00:03:39,079 --> 00:03:41,145
+这种方式效率低下
+that's sort of inefficient in the
+
+61
+00:03:41,150 --> 00:03:43,185
+相反的方向，他们做一个在一个
+opposite direction they do them one at a
+
+62
+00:03:43,190 --> 00:03:45,194
+时间，所以我们不想与他们做
+time so we don't want to do with them
+
+63
+00:03:45,199 --> 00:03:46,965
+一次一个，但我们不想这样做
+one at a time but we don't want to do
+
+64
+00:03:46,970 --> 00:03:49,185
+一次只有百万
+all all million at a time
+
+65
+00:03:49,190 --> 00:03:53,654
+因此妥协是一个小批量
+so the compromise is a mini batch so
+
+66
+00:03:53,659 --> 00:03:56,895
+讽刺的渐变血统做迷你
+sarcastic gradient descent does a mini
+
+67
+00:03:56,900 --> 00:04:01,564
+批量一次一个小批次的
+batch at a time a mini batch of of
+
+68
+00:04:01,569 --> 00:04:08,115
+每个样本培训数据的培训
+training of samples training data each
+
+69
+00:04:08,120 --> 00:04:14,104
+步骤，它可以选择它们
+step and it can choose them
+
+70
+00:04:14,109 --> 00:04:16,954
+随机地或随机地意义
+stochastically meaning randomly or
+
+71
+00:04:16,959 --> 00:04:21,455
+坐得更系统，但我们做了一个
+sitting more systematically but we do a
+
+72
+00:04:21,460 --> 00:04:25,214
+一批在时间和会后
+batch at a time and that will come after
+
+73
+00:04:25,219 --> 00:04:26,785
+该
+the
+
+74
+00:04:26,790 --> 00:04:30,715
+它将在下周马拉松比赛后出现
+it'll come next week after a marathon of
+
+75
+00:04:30,720 --> 00:04:35,095
+当然星期一好吧让我走吧
+course on Monday okay so let me just go
+
+76
+00:04:35,100 --> 00:04:36,955
+回到那张照片片刻，但是
+back to that picture for a moment but
+
+77
+00:04:36,960 --> 00:04:41,035
+那么今天真正的内容就是这个
+then the real content of today is this
+
+78
+00:04:41,040 --> 00:04:45,285
+一个动量增加好吧，我只是我
+one with momentum added okay I just I
+
+79
+00:04:45,290 --> 00:04:47,725
+可能没有完美的画面
+probably haven't got the picture perfect
+
+80
+00:04:47,730 --> 00:04:55,135
+但我认为我不是艺术家
+yet I'm just not an artist but I think
+
+81
+00:04:55,140 --> 00:04:59,665
+我离我很近，所以这就是那些
+I'm closer so this is uh those are the
+
+82
+00:04:59,670 --> 00:05:03,235
+级别设置那些是X的集合f
+level sets those are the sets f of X
+
+83
+00:05:03,240 --> 00:05:08,245
+等于常数和我们的模型问题
+equal constant and in our model problem
+
+84
+00:05:08,250 --> 00:05:12,355
+X的f是X1平方或者说x
+f of X is X 1 squared or let's say x
+
+85
+00:05:12,360 --> 00:05:15,805
+平方加上By平方等于常数
+squared plus B y squared equal constants
+
+86
+00:05:15,810 --> 00:05:20,875
+小B低于1，可能远
+with small B be below 1 and maybe far
+
+87
+00:05:20,880 --> 00:05:26,575
+低于1所以那些是椭圆形的那些
+below 1 so those are ellipses those the
+
+88
+00:05:26,580 --> 00:05:28,315
+椭圆的方程式，这就是什么
+equations of an ellipse and that's what
+
+89
+00:05:28,320 --> 00:05:31,465
+我试图绘制，如果B小则那么
+I tried to draw and if B is small then
+
+90
+00:05:31,470 --> 00:05:33,985
+椭圆形长而薄
+the ellipses are long and thin like that
+
+91
+00:05:33,990 --> 00:05:38,575
+现在你的照片是什么样的
+and now what's what's the picture you
+
+92
+00:05:38,580 --> 00:05:40,405
+从一点开始，没有你和你
+start with a point X naught and you
+
+93
+00:05:40,410 --> 00:05:44,665
+以最陡的方向下降所以
+descend in the steepest direction so the
+
+94
+00:05:44,670 --> 00:05:46,525
+最陡的方向垂直于
+steepest direction is perpendicular to
+
+95
+00:05:46,530 --> 00:05:49,285
+水平设置正确垂直于
+the level set right perpendicular to the
+
+96
+00:05:49,290 --> 00:05:51,355
+椭圆让你倒下来
+ellipse so you down down down you're
+
+97
+00:05:51,360 --> 00:05:53,305
+更多地通过更多的椭圆
+passing through more ellipses more
+
+98
+00:05:53,310 --> 00:05:56,325
+省略号更多省略号最终你的
+ellipses more ellipses eventually your
+
+99
+00:05:56,330 --> 00:06:00,205
+切线在我看来，它必须是
+tangent to it seems to me it has to be
+
+100
+00:06:00,210 --> 00:06:02,235
+切线我没看过这个，但它看起来
+tangent I didn't read this but it looks
+
+101
+00:06:02,240 --> 00:06:06,415
+对我来说合理的是最远的
+reasonable to me that the the farthest
+
+102
+00:06:06,420 --> 00:06:11,905
+在水平设置最远的椭圆形你是
+in level-set farthest an ellipse you're
+
+103
+00:06:11,910 --> 00:06:14,005
+相切，然后你开始上升
+tangent to and then you start going up
+
+104
+00:06:14,010 --> 00:06:16,795
+再次，这是最佳点
+again so that's the optimal point to
+
+105
+00:06:16,800 --> 00:06:19,915
+停止结束那一步，然后在哪里
+stop to end that step and then where
+
+106
+00:06:19,920 --> 00:06:22,885
+下一步是否顺利，你就在这里
+does the next step go well you're here
+
+107
+00:06:22,890 --> 00:06:26,005
+你在一个水平集的椭圆上
+you're on an ellipse that's a level set
+
+108
+00:06:26,010 --> 00:06:28,285
+你想要在渐变中移动
+you want to move in the gradient
+
+109
+00:06:28,290 --> 00:06:30,325
+与...垂直的方向
+direction that's perpendicular to the
+
+110
+00:06:30,330 --> 00:06:33,385
+水平设置，所以你要去某个地方
+level set so you're going down somewhere
+
+111
+00:06:33,390 --> 00:06:35,655
+在这里，你又过去了
+here and you're passing again through
+
+112
+00:06:35,660 --> 00:06:38,295
+越来越多的椭圆直到你的
+more and more ellipses until your
+
+113
+00:06:38,300 --> 00:06:40,305
+与...相切
+tangent to a
+
+114
+00:06:40,310 --> 00:06:45,675
+在这里和你一个较小的椭圆
+to a smaller ellipse here and and you
+
+115
+00:06:45,680 --> 00:06:49,065
+看到之字形图案和锯齿形
+see the zig-zag pattern and that zig-zag
+
+116
+00:06:49,070 --> 00:06:55,805
+模式是我们通过公式看到的
+pattern is what we see by formula in in
+
+117
+00:06:55,810 --> 00:06:59,475
+博伊德的书和许多其他地方也是如此
+Boyd's book and many other places too
+
+118
+00:06:59,480 --> 00:07:03,525
+公式有权力
+the formula has the there was powers of
+
+119
+00:07:03,530 --> 00:07:07,664
+一个神奇数字的光束，所以我们开始
+a beam of the magic number so we start
+
+120
+00:07:07,669 --> 00:07:19,875
+在点b1开始并按照这个
+at start at the point b1 and follow this
+
+121
+00:07:19,880 --> 00:07:25,605
+路径然后X是相同的B次
+path then the X's are the same B times
+
+122
+00:07:25,610 --> 00:07:29,045
+这个数量与案件的权力和
+this quantity to the case power and
+
+123
+00:07:29,050 --> 00:07:32,505
+这是B的数量减去1
+here's that quantity B minus 1 over B
+
+124
+00:07:32,510 --> 00:07:35,775
+加1，所以你看到一个小B的
+plus 1 so you see for a small B that's
+
+125
+00:07:35,780 --> 00:07:38,625
+这是一个负数，所以它是
+that's a negative number so it's
+
+126
+00:07:38,630 --> 00:07:41,235
+翻转迹象在X的，因为我们看到了
+flipping sign in the X's as we saw on
+
+127
+00:07:41,240 --> 00:07:42,015
+图片
+the pictures
+
+128
+00:07:42,020 --> 00:07:44,505
+留下那部分图片
+leave that part of the picture is
+
+129
+00:07:44,510 --> 00:07:48,705
+纠正Y的不要翻转标志所以这个
+correct the Y's don't flip sign so this
+
+130
+00:07:48,710 --> 00:07:56,985
+是XK，当K为0时我们得到BYK就是我
+was XK and when K is 0 we got B YK is I
+
+131
+00:07:56,990 --> 00:08:03,945
+认为这是没有翻转的迹象，使
+think is is not flipping a sign so that
+
+132
+00:08:03,950 --> 00:08:09,125
+看起来的F好，然后FK值
+looks good and then FK the value of F
+
+133
+00:08:09,130 --> 00:08:12,315
+也是相同的数量
+also was the same quantity
+
+134
+00:08:12,320 --> 00:08:18,945
+FK与案件的数量相同
+FK is that same quantity to the case
+
+135
+00:08:18,950 --> 00:08:20,565
+次f0
+times f0
+
+136
+00:08:20,570 --> 00:08:23,235
+所以数量就是最重要的
+so that quantity is all all-important
+
+137
+00:08:23,240 --> 00:08:27,255
+所以今天演讲的目的是
+and so the purpose of today's lecture is
+
+138
+00:08:27,260 --> 00:08:33,315
+告诉你什么动力术语是什么
+to tell you what the momentum term what
+
+139
+00:08:33,320 --> 00:08:35,955
+改善带来的变化
+improvement what change that brings in
+
+140
+00:08:35,960 --> 00:08:39,435
+我最基本的最陡下降公式
+the basic steepest descent formula I'm
+
+141
+00:08:39,440 --> 00:08:42,164
+要加上另一个正在进行的术语
+gonna add on another term which is going
+
+142
+00:08:42,169 --> 00:08:45,225
+有一些给我们一些记忆
+to have some give us some memory of the
+
+143
+00:08:45,230 --> 00:08:52,545
+前面的步骤，所以当我这样做
+previous step and so when I do that
+
+144
+00:08:52,550 --> 00:08:58,275
+我想追踪那种下降
+I want to track that kind of descent for
+
+145
+00:08:58,280 --> 00:09:03,345
+对于新的加速下降
+for the new for the accelerated descent
+
+146
+00:09:03,350 --> 00:09:07,995
+并跟踪它，看看有什么改进
+and track it and see what improvement
+
+147
+00:09:08,000 --> 00:09:12,555
+动量术语带来了所以
+the momentum term brings and so the
+
+148
+00:09:12,560 --> 00:09:14,565
+最后的结果将告诉你
+final result will be to tell you the
+
+149
+00:09:14,570 --> 00:09:16,515
+改进了产品
+improvement in the produce by the
+
+150
+00:09:16,520 --> 00:09:19,845
+动量术语也许我有你的时候
+momentum term maybe while I have your
+
+151
+00:09:19,850 --> 00:09:22,905
+注意我会告诉你它现在是什么
+attention I'll tell you what it is now
+
+152
+00:09:22,910 --> 00:09:27,585
+然后我们将详细介绍
+and then we'll come the details the
+
+153
+00:09:27,590 --> 00:09:33,015
+代数和我，所以这是我自己的
+algebra and to me so this is my own
+
+154
+00:09:33,020 --> 00:09:38,385
+认为这是代数的奇迹
+thought it's a miracle that the algebra
+
+155
+00:09:38,390 --> 00:09:41,295
+你真的看到这很简单
+which is straightforward you really see
+
+156
+00:09:41,300 --> 00:09:43,155
+特征向量的值
+the value of eigenvectors
+
+157
+00:09:43,160 --> 00:09:45,285
+你知道我们解释了特征向量
+you know we explain eigenvectors in
+
+158
+00:09:45,290 --> 00:09:49,545
+上课，但在这里，你明白为什么如何
+class but but here you see why what how
+
+159
+00:09:49,550 --> 00:09:52,545
+使用它们这的确是一个不错
+to use them that's is really a good
+
+160
+00:09:52,550 --> 00:09:57,185
+但对我而言，这是一个奇迹
+exercise but to me it's a miracle that
+
+161
+00:09:57,190 --> 00:10:04,065
+动量的表达非常
+the expression with momentum is very
+
+162
+00:10:04,070 --> 00:10:07,395
+很像那种表达，但不同
+much like that expression but different
+
+163
+00:10:07,400 --> 00:10:14,625
+当然腐烂是一个术语
+of course the the the decay is a term
+
+164
+00:10:14,630 --> 00:10:17,945
+它告诉你腐烂的速度有多快
+that tells you how fast the decay is is
+
+165
+00:10:17,950 --> 00:10:22,335
+更小，所以你就是这样服用K的力量
+smaller so you're taking K power so so
+
+166
+00:10:22,340 --> 00:10:23,955
+如果那样的话，让我写下来
+let me I'll write that down if that's
+
+167
+00:10:23,960 --> 00:10:26,715
+好吧这是我不打算做
+all right it's I didn't plan to do to
+
+168
+00:10:26,720 --> 00:10:32,595
+在开始时揭示最终结果
+reveal the final result at the beginning
+
+169
+00:10:32,600 --> 00:10:35,955
+讲座的，但我想你想
+of the lecture but I think you want to
+
+170
+00:10:35,960 --> 00:10:37,935
+看看我们在哪里这么做
+see where we're going so so with
+
+171
+00:10:37,940 --> 00:10:47,325
+势头，我们必须看到这一点
+momentum and we have to see what that
+
+172
+00:10:47,330 --> 00:10:53,025
+意味着这个术语1减去B超过1
+means this this term of 1 minus B over 1
+
+173
+00:10:53,030 --> 00:11:02,195
+加B变为
+plus B becomes changes to
+
+174
+00:11:02,200 --> 00:11:06,315
+一个减去B的平方根超过1加
+one minus square root of B over 1 plus
+
+175
+00:11:06,320 --> 00:11:09,824
+广场就这样我提到了
+square would be so I mentioned that
+
+176
+00:11:09,829 --> 00:11:13,485
+之前，但我不认为我写了它
+before but but I don't think I wrote it
+
+177
+00:11:13,490 --> 00:11:18,465
+只是清楚地说明这对我来说是个奇迹
+down just clearly so the miracle to me
+
+178
+00:11:18,470 --> 00:11:21,334
+是为了获得这样一个很好的表达
+is to get such a nice expression for the
+
+179
+00:11:21,339 --> 00:11:24,315
+因为你会看到代数就是它
+because you'll see the algebra is it
+
+180
+00:11:24,320 --> 00:11:31,365
+有效，但它涉及更多
+works but it's it's it involves more
+
+181
+00:11:31,370 --> 00:11:34,274
+因动量而涉及的条款
+terms because of momentum involves doing
+
+182
+00:11:34,279 --> 00:11:37,965
+最小化特征值然而它
+a minimization of eigenvalues and yet it
+
+183
+00:11:37,970 --> 00:11:40,545
+出来很好，然后你有
+comes out nicely and and then you have
+
+184
+00:11:40,550 --> 00:11:43,514
+看到它的重要性所以让我
+to see the importance of that so let me
+
+185
+00:11:43,519 --> 00:11:45,345
+我只想采用相同的例子
+I would just take the same example that
+
+186
+00:11:45,350 --> 00:11:48,935
+如果B超过100，我之前提到过
+I mentioned before if B is 1 over 100
+
+187
+00:11:48,940 --> 00:11:56,144
+那么这是0.99超过1.01哦我想
+then this is 0.99 over 1.01 oh I think
+
+188
+00:11:56,149 --> 00:12:05,595
+这些在这里有一个正方形2K所以
+that these there's a square here 2 K so
+
+189
+00:12:05,600 --> 00:12:08,175
+如果我们这样的话，我会保留这个
+if we're so I'll I'll just keep this
+
+190
+00:12:08,180 --> 00:12:12,704
+广场上没有什么大变化，但我是
+square there no big change but but I'm
+
+191
+00:12:12,709 --> 00:12:16,595
+现在看着广场
+looking at now here at the square
+
+192
+00:12:16,600 --> 00:12:20,505
+也许广场到处都是你
+maybe maybe squares are everywhere you
+
+193
+00:12:20,510 --> 00:12:26,954
+知道好，所以接近1现在
+know ok so so that's close to 1 and now
+
+194
+00:12:26,959 --> 00:12:29,625
+让我们比较的是什么，我们有这么
+let's compare that with what we have so
+
+195
+00:12:29,630 --> 00:12:33,584
+如果b为1超过100，所以我服用V至是
+if B is 1 over 100 so I'm taking V to be
+
+196
+00:12:33,589 --> 00:12:36,225
+1超过100然后B的平方根是1
+1 over 100 then square root of B is 1
+
+197
+00:12:36,230 --> 00:12:42,245
+超过10所以这是0.9比0.9超过1.1
+over 10 so this is 0.9 0.9 over 1.1
+
+198
+00:12:42,250 --> 00:12:46,694
+平方，这是一个巨大的嗯
+squared and there's a tremendous um
+
+199
+00:12:46,699 --> 00:12:50,764
+比这更小的块是正确的
+block smaller than that is right
+
+200
+00:12:50,769 --> 00:12:56,625
+9/1099/11与99比99
+9/10 9 9 / 11 compared to 99 over 101
+
+201
+00:12:56,630 --> 00:13:02,264
+这一个你知道的绝对是哦
+this one is you know is definitely oh
+
+202
+00:13:02,269 --> 00:13:06,764
+对不起，是的，就是这个减少
+sorry it's yeah it's this this reduction
+
+203
+00:13:06,769 --> 00:13:10,965
+因素远低于那个，所以它是一个
+factor is well below that one so it's a
+
+204
+00:13:10,970 --> 00:13:14,655
+值得做的好事，没关系
+good thing it's worth doing and okay
+
+205
+00:13:14,660 --> 00:13:17,295
+现在它涉及什么，好吧，所以我会
+now what is it involved okay so I'll
+
+206
+00:13:17,300 --> 00:13:23,084
+写下for的表达式
+write down the expression for the for
+
+207
+00:13:23,089 --> 00:13:26,685
+讽刺在这里我们没事
+the sarcastic here we go okay
+
+208
+00:13:26,690 --> 00:13:31,934
+所以这是一种看待新X的方法
+so here's one way to see it the new X is
+
+209
+00:13:31,939 --> 00:13:40,725
+旧X减去渐变现在
+the old X minus the gradient and now
+
+210
+00:13:40,730 --> 00:13:44,595
+是一个额外的术语，它给了我们一个
+comes an extra term which gives us a
+
+211
+00:13:44,600 --> 00:13:51,374
+很少记忆我很抱歉
+little memory well I'm sorry the the
+
+212
+00:13:51,379 --> 00:13:54,134
+如果我写代数，代数会稍微好一些
+algebra is slightly nicer if I write it
+
+213
+00:13:54,139 --> 00:13:57,014
+有点不同我会创建一个
+a little bit differently I'll create a
+
+214
+00:13:57,019 --> 00:14:13,985
+新的数量ZK步长可以
+new quantity ZK with a step size okay
+
+215
+00:14:13,990 --> 00:14:17,745
+好吧，如果我把ZK当成了
+okay so if I took ZK to be just the
+
+216
+00:14:17,750 --> 00:14:20,444
+梯度最陡的下降
+gradient that would be steepest descent
+
+217
+00:14:20,449 --> 00:14:23,504
+一切都没有改变，而是我
+nothing has changed but instead I'm
+
+218
+00:14:23,509 --> 00:14:27,644
+要把ZK带到其领先的术语意志
+gonna take ZK well its leading term will
+
+219
+00:14:27,649 --> 00:14:33,045
+是渐变但是来了
+be the gradient but here comes the
+
+220
+00:14:33,050 --> 00:14:36,254
+动量术语我添加了多个beta
+momentum term I add on a multiple beta
+
+221
+00:14:36,259 --> 00:14:40,155
+一种方法是先前Z所以
+one way to do it is of the previous Z so
+
+222
+00:14:40,160 --> 00:14:42,944
+Z是搜索方向z是
+the Z is the search direction z is the
+
+223
+00:14:42,949 --> 00:14:45,194
+渐变你正在旅行它是
+gradient you're traveling it's the
+
+224
+00:14:45,199 --> 00:14:48,045
+方向你移动所以它是
+direction you're moving so it's
+
+225
+00:14:48,050 --> 00:14:51,764
+从该方向有不同的
+different from that direction there that
+
+226
+00:14:51,769 --> 00:14:56,504
+方向是这个梯度
+direction was the gradient this
+
+227
+00:14:56,509 --> 00:14:59,175
+方向是渐变正确的
+direction is the gradient correct
+
+228
+00:14:59,180 --> 00:15:04,574
+用记忆词来纠正动量
+corrected by a memory term a momentum
+
+229
+00:15:04,579 --> 00:15:07,845
+术语和解释的一种方式是
+term and one way to interpret that is to
+
+230
+00:15:07,850 --> 00:15:10,454
+说那个球是想到的
+say that that ball is to think of a
+
+231
+00:15:10,459 --> 00:15:14,144
+沉重的球而不仅仅是一点我
+heavy ball instead of just a point I
+
+232
+00:15:14,149 --> 00:15:18,725
+想到一个沉重的球而不是
+think of a heavy ball it instead of
+
+233
+00:15:18,730 --> 00:15:24,694
+像来一样来回蹦蹦跳跳
+bouncing back and forth as as as as
+
+234
+00:15:24,699 --> 00:15:28,005
+它倾向于无用
+uselessly as this one it tends to
+
+235
+00:15:28,010 --> 00:15:30,825
+当然它仍然在两侧反弹
+it still bounces of course on the sides
+
+236
+00:15:30,830 --> 00:15:34,065
+水平集但它下来了
+of the level sets but it comes down the
+
+237
+00:15:34,070 --> 00:15:36,915
+谷更快，这就是效果
+valley faster and that's the effect of
+
+238
+00:15:36,920 --> 00:15:42,695
+这样所以你可以玩不同的
+this so so you could play with different
+
+239
+00:15:42,700 --> 00:15:45,165
+调整术语不同的更正
+adjustment terms different Corrections
+
+240
+00:15:45,170 --> 00:15:48,395
+所以，但我会完成这一个
+so but I'll follow through this one
+
+241
+00:15:48,400 --> 00:15:51,735
+Nesterov还有另一种方法可以做到
+Nesterov had another way to make a
+
+242
+00:15:51,740 --> 00:15:55,275
+改变公式和有
+change in the formula and the there are
+
+243
+00:15:55,280 --> 00:15:57,465
+当然其他人还可以
+certainly others beyond that okay
+
+244
+00:15:57,470 --> 00:16:01,395
+那么，我们如何分析一个很好
+so how do we analyze that one well
+
+245
+00:16:01,400 --> 00:16:06,645
+他们真正的重点是我们有点
+they're the real point is we've sort of
+
+246
+00:16:06,650 --> 00:16:10,545
+通过涉及前一步骤
+by taking by involving the previous step
+
+247
+00:16:10,550 --> 00:16:15,345
+我们现在有一个三级方法
+we now have a three level method instead
+
+248
+00:16:15,350 --> 00:16:17,055
+你可以说两级方法
+of a two level method you could say
+
+249
+00:16:17,060 --> 00:16:20,745
+这就是这只涉及k级
+there's this this involves only level k
+
+250
+00:16:20,750 --> 00:16:24,515
+现在加1和K级公式
+plus 1 and level K the formulas now
+
+251
+00:16:24,520 --> 00:16:30,315
+涉及k加1k和k减1
+involve k plus 1 k and k minus 1 it's
+
+252
+00:16:30,320 --> 00:16:34,275
+就像从第一顺序出发一样
+just like going from a first-order
+
+253
+00:16:34,280 --> 00:16:37,365
+微分方程到二阶
+differential equation to a second-order
+
+254
+00:16:37,370 --> 00:16:38,925
+微分方程
+differential equation
+
+255
+00:16:38,930 --> 00:16:44,025
+是的，我不是真的在想K
+it's it's I'm not really thinking that K
+
+256
+00:16:44,030 --> 00:16:46,695
+是一个时间变量，但在
+is a is a time variable but in the
+
+257
+00:16:46,700 --> 00:16:50,415
+类比K可以是时间变量
+analogy K could be a time variable so
+
+258
+00:16:50,420 --> 00:16:53,535
+在这里，我们喜欢一阶
+that here we had like a first-order
+
+259
+00:16:53,540 --> 00:16:55,725
+等式，如果我想模拟那个
+equation if I wanted to model that
+
+260
+00:16:55,730 --> 00:16:59,975
+那是一种DXDT进入那里
+that's sort of a DX DT coming in there
+
+261
+00:16:59,980 --> 00:17:02,745
+等于梯度和这些模型
+equal a gradient and and these models
+
+262
+00:17:02,750 --> 00:17:06,515
+非常有用，并为之开发
+are highly useful and and developed for
+
+263
+00:17:06,520 --> 00:17:11,355
+一种连续的最陡峭的模型
+sort of a continuous model of steepest
+
+264
+00:17:11,360 --> 00:17:14,925
+下降连续运动而不是
+descent a continuous motion instead of
+
+265
+00:17:14,930 --> 00:17:19,995
+的，而不是离散的运动行
+the instead of the discrete motion okay
+
+266
+00:17:20,000 --> 00:17:24,405
+那就是那个连续的模型
+so that would that's continuous model
+
+267
+00:17:24,410 --> 00:17:26,535
+因为那个人将是第一个订单
+for that guy would be a first order in
+
+268
+00:17:26,540 --> 00:17:29,265
+这一次的时间将是二阶
+time for this one it'll be second order
+
+269
+00:17:29,270 --> 00:17:32,805
+时间和二阶方程
+in time and second order equations of
+
+270
+00:17:32,810 --> 00:17:35,685
+当然和是常数系数
+course and the be constant coefficients
+
+271
+00:17:35,690 --> 00:17:38,655
+在我们的模型问题和关于
+in our model problem and the thing about
+
+272
+00:17:38,660 --> 00:17:41,875
+我们都知道的二阶方程
+a second-order equation that we all know
+
+273
+00:17:41,880 --> 00:17:47,815
+有一个动量项是一个阻尼项
+there's a momentum term a a damping term
+
+274
+00:17:47,820 --> 00:17:52,135
+你可以说乘以第一个
+you could say in multiplying the first
+
+275
+00:17:52,140 --> 00:17:55,615
+衍生所以这就是什么
+derivative so that's what that's what a
+
+276
+00:17:55,620 --> 00:17:59,485
+二阶方程提供的是
+second-order equation offers is the
+
+277
+00:17:59,490 --> 00:18:03,355
+包含阻尼项而不是
+inclusion of a damping term which isn't
+
+278
+00:18:03,360 --> 00:18:06,685
+存在于原文中
+present in the in the original
+
+279
+00:18:06,690 --> 00:18:10,195
+一阶还好，我们如何分析
+first-order okay so how do we analyze
+
+280
+00:18:10,200 --> 00:18:15,625
+我必须这样你怎么分析
+this I have to so how do you analyze
+
+281
+00:18:15,630 --> 00:18:19,164
+你的二阶微分方程
+second-order differential equations you
+
+282
+00:18:19,169 --> 00:18:21,355
+首先将它们写成两个系统
+write them as a system of two first
+
+283
+00:18:21,360 --> 00:18:23,904
+订购方程式正是如此
+order equations so that's exactly what
+
+284
+00:18:23,909 --> 00:18:25,885
+我们将在离散的地方做这里
+we're going to do here in the discrete
+
+285
+00:18:25,890 --> 00:18:30,205
+我们当然会看到我们的情况
+case we're going to see of course we
+
+286
+00:18:30,210 --> 00:18:32,875
+有两个方程式和它们的第一个顺序
+have two equations and their first order
+
+287
+00:18:32,880 --> 00:18:35,664
+而且我们可以让我和他们一起玩
+and and we can let me play with them for
+
+288
+00:18:35,669 --> 00:18:39,804
+几分钟的时间来让他们很好的好了，
+a moment to to make them good okay so
+
+289
+00:18:39,809 --> 00:18:44,664
+我会这样，这将是2
+I'm gonna have so this will go to 2
+
+290
+00:18:44,669 --> 00:18:47,875
+第一阶方程，其中第一
+first order equations in which the first
+
+291
+00:18:47,880 --> 00:18:52,105
+一个我要复制XK加1是XK
+one I'm just gonna copy XK plus 1 is XK
+
+292
+00:18:52,110 --> 00:19:02,395
+减去步长ZK哇哇呀，是的
+minus at step size ZK whew yeah ok yeah
+
+293
+00:19:02,400 --> 00:19:06,345
+好的时间以前的时间在这里输入
+ok time the previous times type here the
+
+294
+00:19:06,350 --> 00:19:09,955
+左边的下一步好吧，所以我
+the next time step on the left okay so I
+
+295
+00:19:09,960 --> 00:19:13,015
+刚刚复制了那个我要去的那个
+just copied that now this one I'm going
+
+296
+00:19:13,020 --> 00:19:17,965
+如此才能有提高K内由1
+to increase K by 1 so in order to have
+
+297
+00:19:17,970 --> 00:19:21,654
+我希望写下来
+that looking to match this I'll write
+
+298
+00:19:21,659 --> 00:19:25,615
+因为ZK加1而我将带来
+that as Z K plus 1 and I'll bring the
+
+299
+00:19:25,620 --> 00:19:35,025
+case不是gradFk加1等于betaZK
+case ain't grad F k plus 1 equal beta ZK
+
+300
+00:19:35,030 --> 00:19:39,315
+看着你，我就在这里
+that look with you I just in this in
+
+301
+00:19:39,320 --> 00:19:42,325
+这件事而不是看着它
+this thing instead of looking at it at
+
+302
+00:19:42,330 --> 00:19:48,475
+我去K加1，我把K
+ki I went to K plus 1 and I put the K
+
+303
+00:19:48,480 --> 00:19:51,265
+一边加1个条款好吧现在我
+plus 1 terms on one side okay so now I
+
+304
+00:19:51,270 --> 00:19:54,555
+有一个
+have a a
+
+305
+00:19:54,560 --> 00:19:58,095
+让我们看看让我们记住我们正在做的事情
+and let's see let's remember we're doing
+
+306
+00:19:58,100 --> 00:20:01,125
+我们正在做的模型是f等于
+our the model we're doing is f equal up
+
+307
+00:20:01,130 --> 00:20:05,145
+1/2X转置sX所以F的梯度
+1/2 X transpose s X so the gradient of F
+
+308
+00:20:05,150 --> 00:20:11,175
+是X，所以我写在那里或
+is s X so what I've written there or
+
+309
+00:20:11,180 --> 00:20:14,235
+渐变真的我知道那是什么
+gradient is really I know what that
+
+310
+00:20:14,240 --> 00:20:22,715
+渐变是真的sxkplus
+gradient is so that's really s xk plus
+
+311
+00:20:22,720 --> 00:20:30,165
+好吧好的，如何分析那是什么
+okay okay how to analyze that what
+
+312
+00:20:30,170 --> 00:20:35,325
+以K为K，K前进一个
+happens as K as K travels forward one
+
+313
+00:20:35,330 --> 00:20:37,755
+我们有两个三四五个常数
+two three four five we have a constant
+
+314
+00:20:37,760 --> 00:20:42,585
+XZ的每一步系数问题
+coefficient problem at every step the XZ
+
+315
+00:20:42,590 --> 00:20:45,435
+变量乘以a
+variable is getting multiplied by a
+
+316
+00:20:45,440 --> 00:20:51,875
+矩阵所以这里的XZ在k加1和
+matrix so here's X Z at k plus 1 and
+
+317
+00:20:51,880 --> 00:20:58,965
+在这里将是XZ在步骤K和我
+over here will be X Z at step K and I
+
+318
+00:20:58,970 --> 00:21:02,685
+只是要搞清楚矩阵是什么
+just have to figure out what matrix is
+
+319
+00:21:02,690 --> 00:21:07,455
+乘以这里和这里好吧，我
+multiplying here and here okay and I
+
+320
+00:21:07,460 --> 00:21:10,185
+在这里猜测我是第一个看到的
+guess here I see it if the first
+
+321
+00:21:10,190 --> 00:21:12,915
+等式具有1和减去s的外观
+equation has a 1 and a minus s looks
+
+322
+00:21:12,920 --> 00:21:15,555
+就像在第一行，它有一个beta
+like in the first row and it has a beta
+
+323
+00:21:15,560 --> 00:21:19,155
+在第二行，这里是第一行
+in the second row and here the first
+
+324
+00:21:19,160 --> 00:21:24,465
+等式在该行中有10然后
+equation has a 1 0 in that row and then
+
+325
+00:21:24,470 --> 00:21:28,745
+减去s我会输入减号
+a minus s I'll put in minus s
+
+326
+00:21:28,750 --> 00:21:32,235
+将XK加1再乘以1
+multiplying XK plus 1 and then the one
+
+327
+00:21:32,240 --> 00:21:35,205
+那个乘以ZK加1就是全部
+that multiplies ZK plus 1 is that all
+
+328
+00:21:35,210 --> 00:21:38,795
+对
+right
+
+329
+00:21:38,800 --> 00:21:41,595
+对不起，我有2个SS而且我没画画
+sorry I've got 2 SS and I didn't draw
+
+330
+00:21:41,600 --> 00:21:43,695
+那个人没有写那个大的
+that one didn't write that one in large
+
+331
+00:21:43,700 --> 00:21:46,505
+够了，无论如何我打算擦掉它
+enough and I'd plan to erase it anyway
+
+332
+00:21:46,510 --> 00:21:49,635
+这是这个步长
+this is the this is the step size this
+
+333
+00:21:49,640 --> 00:21:53,415
+这是矩阵，但事实并非如此
+this is the matrix but but it's it's not
+
+334
+00:21:53,420 --> 00:21:57,105
+放置它不太合适
+it's not quite fitting it's placed this
+
+335
+00:21:57,110 --> 00:22:00,405
+是我要使用本征的点
+is the point where I'm gonna use eigen
+
+336
+00:22:00,410 --> 00:22:04,455
+价值观我会跟着我跟随每一个
+values I'm gonna follow an I follow each
+
+337
+00:22:04,460 --> 00:22:06,915
+特征值是整点时的
+eigen value that's the whole point when
+
+338
+00:22:06,920 --> 00:22:08,445
+我遵循每个特征值
+I follow each eigen value
+
+339
+00:22:08,450 --> 00:22:10,935
+每个特征向量我应该说我会
+each eigenvector I should say I'll
+
+340
+00:22:10,940 --> 00:22:14,565
+按照s的每个特征向量，让我们
+follow each eigenvector of s so let's
+
+341
+00:22:14,570 --> 00:22:19,665
+让我们这样做，这样我就可以了
+let's do that so so I can vectors of s
+
+342
+00:22:19,670 --> 00:22:23,865
+我们怎么称呼那些lambda
+what are we gonna call those lambda
+
+343
+00:22:23,870 --> 00:22:28,995
+可能是这样的X等于lambdaXI思考
+probably so s X equal lambda X I think
+
+344
+00:22:29,000 --> 00:22:39,375
+这就是即将到来或QI做的事情
+that's what's coming or Q I to do things
+
+345
+00:22:39,380 --> 00:22:42,165
+我想要记住，s是一个
+right I want to remember that s is a
+
+346
+00:22:42,170 --> 00:22:44,535
+正定对称矩阵
+positive definite symmetric matrix
+
+347
+00:22:44,540 --> 00:22:47,745
+这就是为什么我称它为s而不是它
+that's why I called it s instead of a so
+
+348
+00:22:47,750 --> 00:22:49,305
+我真的应该称之为本征
+I really should call the eigen it
+
+349
+00:22:49,310 --> 00:22:55,005
+无所谓但是要在球上让
+doesn't matter but to be on the ball let
+
+350
+00:22:55,010 --> 00:22:57,885
+我称本征向量Q和本征
+me call the eigen vector Q and the eigen
+
+351
+00:22:57,890 --> 00:23:07,155
+价值lambda没关系，所以现在我想
+value lambda okay okay so now I want to
+
+352
+00:23:07,160 --> 00:23:10,815
+我想跟随这个特征向量
+I want to follow this eigen vector so
+
+353
+00:23:10,820 --> 00:23:15,975
+我假设XK是CK的一些时间
+I'm supposing that X K is some C K times
+
+354
+00:23:15,980 --> 00:23:21,705
+问：我假设X在跟踪中
+Q I'm assuming that X is in the tracking
+
+355
+00:23:21,710 --> 00:23:24,255
+这个特征向量，我会假设
+this eigen vector and I'm gonna assume
+
+356
+00:23:24,260 --> 00:23:29,775
+ZK是其他一些不变的时间Q.
+that ZK is some other constant times Q
+
+357
+00:23:29,780 --> 00:23:32,625
+大家，你看到那是一个矢量和
+everybody do you see that's a vector and
+
+358
+00:23:32,630 --> 00:23:34,815
+这是一个向量，我想要标量我
+that's a vector and I want scalars I
+
+359
+00:23:34,820 --> 00:23:39,735
+想要吸引标量CK和DK
+want to attract just scalar C K and D K
+
+360
+00:23:39,740 --> 00:23:42,495
+所以我真的在这里
+so that's really what I have here is
+
+361
+00:23:42,500 --> 00:23:45,915
+这有点棘手，因为X在这里
+this was a little tricky because X here
+
+362
+00:23:45,920 --> 00:23:49,035
+是一个向量，两个组件是n
+is a vector and two components are n
+
+363
+00:23:49,040 --> 00:23:51,885
+组件我不想要我真的
+components I didn't want that I really
+
+364
+00:23:51,890 --> 00:23:55,665
+只想跟踪一个特征向量
+wanted just to track an eigen vector
+
+365
+00:23:55,670 --> 00:23:58,755
+一旦我确定了方向Q.
+once I've settled on the direction Q
+
+366
+00:23:58,760 --> 00:24:01,695
+一切的一切都是向量都在
+everything is all vectors are in the
+
+367
+00:24:01,700 --> 00:24:04,035
+Q的方向所以我们就这样了
+direction of Q so so we just have
+
+368
+00:24:04,040 --> 00:24:07,695
+数字看到确实是一条轨道好，所以我
+numbers see indeed a track okay so I'm
+
+369
+00:24:07,700 --> 00:24:10,345
+要改写这个
+gonna rewrite this
+
+370
+00:24:10,350 --> 00:24:17,304
+正确，因为是的，让我继续保持
+correctly as yeah well let me keep keep
+
+371
+00:24:17,309 --> 00:24:19,764
+按照这个小公式去做什么
+going with this little formula then what
+
+372
+00:24:19,769 --> 00:24:26,065
+我需要一个SX将会是什么样的
+will I needed an SX what will s xk be if
+
+373
+00:24:26,070 --> 00:24:28,945
+如果xk在特征方向上
+if xk is in the direction of the eigen
+
+374
+00:24:28,950 --> 00:24:33,654
+矢量Q及其CK当我发生时会发生什么
+vector Q and its CK what happens when I
+
+375
+00:24:33,659 --> 00:24:39,294
+乘以是q是一个特征向量
+multiply by yes q was an eigen vector so
+
+376
+00:24:39,299 --> 00:24:43,254
+乘以s给了我可以
+the multiplying by s gives me I can
+
+377
+00:24:43,259 --> 00:24:48,554
+价值正确所以它是CKlambdaQ.
+value right so it's C K lambda Q
+
+378
+00:24:48,559 --> 00:24:51,054
+一切都是Q的倍数而且是
+everything is a multiple of Q and it's
+
+379
+00:24:51,059 --> 00:24:54,205
+只有那些我正在寻找的倍数
+only those multiples I'm looking for the
+
+380
+00:24:54,210 --> 00:24:56,664
+海和DS然后是lambda
+Seas and the DS and then the lambda
+
+381
+00:24:56,669 --> 00:24:59,965
+进入S期间，我想是的
+comes into the S term yeah I think
+
+382
+00:24:59,970 --> 00:25:05,695
+这可能是我需要做到这一点
+that's probably all I need to to do this
+
+383
+00:25:05,700 --> 00:25:07,975
+然后渐变是啊所以这是
+and then the gradient yeah so that's the
+
+384
+00:25:07,980 --> 00:25:10,975
+渐变当然这是渐变
+gradient of course this is the gradient
+
+385
+00:25:10,980 --> 00:25:19,075
+的F好了，取而代之的是让我
+of F okay so instead of this let me just
+
+386
+00:25:19,080 --> 00:25:21,504
+写下发生了什么，如果我是
+write what's what's happening if I'm
+
+387
+00:25:21,509 --> 00:25:25,995
+跟踪系数CK加1和
+tracking the coefficients CK plus 1 and
+
+388
+00:25:26,000 --> 00:25:30,985
+DK加1然后我真正的意思
+DK plus 1 then what I really meant to
+
+389
+00:25:30,990 --> 00:25:37,935
+有10和减去s是减号
+have there is 1 0 and minus s is a minus
+
+390
+00:25:37,940 --> 00:25:45,445
+lambda是对的，当我
+lambda is that right yeah when I
+
+391
+00:25:45,450 --> 00:25:49,345
+将特征向量乘以s我只是
+multiply the eigenvector by s I'm just
+
+392
+00:25:49,350 --> 00:25:53,815
+开玩笑哦，它是CK的一倍
+kidding oh it's a lambda times the CK
+
+393
+00:25:53,820 --> 00:25:57,024
+是的lambda倍于CK，这对我来说很好
+yeah lambda times the CK that's good I
+
+394
+00:25:57,029 --> 00:26:00,624
+认为那是左手边的
+think that that's the left-hand side of
+
+395
+00:26:00,629 --> 00:26:03,745
+我的等式，在右边我
+my equation and on the right hand side I
+
+396
+00:26:03,750 --> 00:26:11,995
+在这里是1，这是
+have here that's 1 and this was the
+
+397
+00:26:12,000 --> 00:26:15,085
+标量步长，这是
+scalar the step size and this was the
+
+398
+00:26:15,090 --> 00:26:17,845
+其他系数是SNbeta所以我
+other coefficient it's the SN beta so I
+
+399
+00:26:17,850 --> 00:26:21,674
+我想选择现在的目的
+want to choose what's my purpose now
+
+400
+00:26:21,679 --> 00:26:25,484
+这给了我
+that gives me the
+
+401
+00:26:25,489 --> 00:26:29,034
+在C和C的每一步都会发生什么
+what happens at every step to the C and
+
+402
+00:26:29,039 --> 00:26:33,114
+D所以我想选择土地了
+D so I want to choose the land the the
+
+403
+00:26:33,119 --> 00:26:35,274
+我有两件事我可以随意
+two things that I have I'm free to
+
+404
+00:26:35,279 --> 00:26:37,825
+选择我们的s和beta，这是我的大事
+choose our s and beta so that's my big
+
+405
+00:26:37,830 --> 00:26:46,134
+大工作选择s和beta现在我好
+big job choose s and beta okay now I to
+
+406
+00:26:46,139 --> 00:26:49,854
+让哦让我塑造这个事情了
+make oh let me just shape this thing up
+
+407
+00:26:49,859 --> 00:26:52,404
+按月乘以倒数
+by month by multiplying the inverse of
+
+408
+00:26:52,409 --> 00:26:54,864
+这一点，把它在这里，这样很好
+that and get it over here so that well
+
+409
+00:26:54,869 --> 00:26:57,954
+真的，你会看到一切所以CK加
+really you'll see everything so CK plus
+
+410
+00:26:57,959 --> 00:27:03,624
+一个DK加一个什么是倒数
+one DK plus one what's the inverse of
+
+411
+00:27:03,629 --> 00:27:04,734
+一零
+one zero
+
+412
+00:27:04,739 --> 00:27:08,274
+哦，我不认为我想要那样
+oh I don't think I wanna that would have
+
+413
+00:27:08,279 --> 00:27:12,354
+一个艰难的时期找到一个逆转它是一个
+a tough time finding an inverse it was a
+
+414
+00:27:12,359 --> 00:27:21,565
+一个不是它是的好，所以我想
+one wasn't it yeah okay so I want to
+
+415
+00:27:21,570 --> 00:27:23,274
+乘以该矩阵的倒数
+multiply by the inverse of that matrix
+
+416
+00:27:23,279 --> 00:27:26,724
+在这里得到它，是什么
+to get it over here and what's the
+
+417
+00:27:26,729 --> 00:27:30,624
+倒数11减去lamda它是1加1
+inverse of 1 1 minus lamda it's 1 1 plus
+
+418
+00:27:30,629 --> 00:27:34,074
+lambda使逆转带来了它
+lambda so that the inverse brought it
+
+419
+00:27:34,079 --> 00:27:38,514
+在这里时间这个矩阵10beta和
+over here times this matrix 1 0 beta and
+
+420
+00:27:38,519 --> 00:27:41,364
+减去步长是什么的
+minus the step size that's what
+
+421
+00:27:41,369 --> 00:27:46,394
+倍增CKDK所以我们有这些
+multiplies C KD K so we have these
+
+422
+00:27:46,399 --> 00:27:51,114
+简单漂亮的步骤来了
+simple beautiful steps which which come
+
+423
+00:27:51,119 --> 00:27:54,354
+从跟踪一个特征向量得到
+from tracking one eigenvector makes the
+
+424
+00:27:54,359 --> 00:27:56,604
+整个问题标量，所以我乘以那些
+whole problem scalar so I multiply those
+
+425
+00:27:56,609 --> 00:27:59,214
+在我们的两个矩阵中我终于得到了
+two matrices in our I finally get the
+
+426
+00:27:59,219 --> 00:28:00,924
+矩阵，我真的要想一想
+matrix that I really have to think about
+
+427
+00:28:00,929 --> 00:28:05,394
+10倍，即1减去slambda1
+1 0 times that'll be 1 minus s lambda 1
+
+428
+00:28:05,399 --> 00:28:08,474
+在那里将成为一个lambda的时代
+times that will be a lambda there and
+
+429
+00:28:08,479 --> 00:28:12,685
+减去lambdas加betabeta减去
+minus lambda s plus beta beta minus
+
+430
+00:28:12,690 --> 00:28:16,494
+lambda是我们看到的矩阵
+lambda s that's the matrix that we see
+
+431
+00:28:16,499 --> 00:28:28,125
+在每一步让我称之为矩阵哦
+at every step let me call that matrix Oh
+
+432
+00:28:28,130 --> 00:28:30,745
+所以我比我做了更多的代数
+so I've done some algebra more than I
+
+433
+00:28:30,750 --> 00:28:34,015
+总是会在演讲中做，但事实如此
+would always do in a lecture but it's
+
+434
+00:28:34,020 --> 00:28:36,415
+真的，如果不是，我就不会这样做
+really my I wouldn't do it if it wasn't
+
+435
+00:28:36,420 --> 00:28:39,715
+好的代数是什么结论了
+nice algebra what's the conclusion the
+
+436
+00:28:39,720 --> 00:28:43,105
+结论是有了动力
+conclusion is that with the momentum
+
+437
+00:28:43,110 --> 00:28:47,335
+这个数字beta的术语可用于
+term with this number beta available to
+
+438
+00:28:47,340 --> 00:28:51,355
+选择以及S中的步骤
+choose as well as s the step the
+
+439
+00:28:51,360 --> 00:28:54,555
+特征值的系数
+coefficient of the eigenvalue
+
+440
+00:28:54,560 --> 00:28:58,525
+特征向量在每一步都相乘
+eigenvector is multiplied at every step
+
+441
+00:28:58,530 --> 00:29:04,375
+通过该矩阵rr是那个矩阵和
+by that matrix r r is that matrix and of
+
+442
+00:29:04,380 --> 00:29:06,055
+当然矩阵涉及到
+course that matrix involves the
+
+443
+00:29:06,060 --> 00:29:13,515
+特征值是的，所以我们要考虑一下
+eigenvalue yep so we have to think about
+
+444
+00:29:13,520 --> 00:29:17,425
+我们现在想要做什么
+what what do we want to do now we want
+
+445
+00:29:17,430 --> 00:29:24,175
+选择beta和s来制作我们的
+to choose beta and s to make our as
+
+446
+00:29:24,180 --> 00:29:27,295
+小编为大家想使可能的权
+small as possible right we want to make
+
+447
+00:29:27,300 --> 00:29:29,965
+我们尽可能小，我们是自由的
+our as small as possible and we're free
+
+448
+00:29:29,970 --> 00:29:33,025
+选择beta和s但我们只是我们的
+to choose beta and s but we but our
+
+449
+00:29:33,030 --> 00:29:37,495
+取决于lambda所以我要做
+depends on lambda so I'm going to make
+
+450
+00:29:37,500 --> 00:29:39,985
+它尽可能小，在整个
+it as small as possible over the whole
+
+451
+00:29:39,990 --> 00:29:43,375
+范围可能的lambdas所以让我
+range of possible lambdas so so let me
+
+452
+00:29:43,380 --> 00:29:50,185
+所以现在我们真的去了
+so now here we really go so we have
+
+453
+00:29:50,190 --> 00:29:57,325
+一些这些之间的lambda是这些
+lambda between some these are these are
+
+454
+00:29:57,330 --> 00:30:03,745
+s的本征特征值和我们的特征值
+the eigen eigen value of s and what we
+
+455
+00:30:03,750 --> 00:30:06,205
+知道什么是合理的知道
+know what's what's reasonable to know is
+
+456
+00:30:06,210 --> 00:30:10,465
+下限这是一个积极的，这是一个
+a lower bound it's a positive this is a
+
+457
+00:30:10,470 --> 00:30:12,955
+对称正定矩阵
+symmetric positive definite matrix a
+
+458
+00:30:12,960 --> 00:30:16,005
+下界和上界
+lower bound and an upper bound for
+
+459
+00:30:16,010 --> 00:30:22,365
+例如，M是B，M是其中之一
+example and M was B and M was one in
+
+460
+00:30:22,370 --> 00:30:26,485
+那个二乘二的问题就是这个
+that two-by-two problem and this is what
+
+461
+00:30:26,490 --> 00:30:28,375
+我们知道特征值是
+we know that the eigen values are
+
+462
+00:30:28,380 --> 00:30:36,885
+M＆M之间的比例
+between M&M and the ratio of
+
+463
+00:30:36,890 --> 00:30:46,615
+M2M很好，如果我不买对的，这是这个
+m2m well if I buy right this is the this
+
+464
+00:30:46,620 --> 00:30:52,455
+是关键数量，它是什么叫它
+is the key quantity and what's it called
+
+465
+00:30:52,460 --> 00:30:56,325
+lambdamax除以lambdamin是
+lambda max divided by lambda min is the
+
+466
+00:30:56,330 --> 00:30:58,644
+条件号码这就是全部
+condition number right this is all
+
+467
+00:30:58,649 --> 00:31:01,315
+有时写Kappa希腊字母
+sometimes written Kappa Greek letter
+
+468
+00:31:01,320 --> 00:31:10,705
+Kappa的条件数和时间
+Kappa the condition number of s and when
+
+469
+00:31:10,710 --> 00:31:12,294
+这个问题很重要
+that's big that then the problem is
+
+470
+00:31:12,299 --> 00:31:17,304
+将是困难时，这是一个
+going to be harder when that's one that
+
+471
+00:31:17,309 --> 00:31:19,794
+然后矩阵只是一个倍数
+then the matrix is just a multiple of
+
+472
+00:31:19,799 --> 00:31:21,745
+单位矩阵和所述问题是
+the identity matrix and the problem is
+
+473
+00:31:21,750 --> 00:31:24,534
+当这个时候资本何时何时琐碎
+trivial when this when when when capital
+
+474
+00:31:24,539 --> 00:31:28,215
+在它m和小米相同，则
+in it m and small m are the same then
+
+475
+00:31:28,220 --> 00:31:31,315
+这是说，规模最大，
+that's saying that the largest and
+
+476
+00:31:31,320 --> 00:31:33,205
+最小的特征值是相同的
+smallest eigen values are identical that
+
+477
+00:31:33,210 --> 00:31:35,575
+该矩阵是的倍数
+that the matrix is a multiple of the
+
+478
+00:31:35,580 --> 00:31:38,995
+这是条件第一的身份
+identity that's the condition number one
+
+479
+00:31:39,000 --> 00:31:44,815
+但是糟糕的是当它结束时
+but but the bad one is when it's 1 over
+
+480
+00:31:44,820 --> 00:31:49,495
+B在我们的例子中，它可以
+B in our example and it and that could
+
+481
+00:31:49,500 --> 00:31:53,664
+非常大可以，这就是我们所拥有的
+be very large okay that's where we have
+
+482
+00:31:53,669 --> 00:32:00,674
+一个问题让我只是插入一下
+a problem let me just insert about the
+
+483
+00:32:00,679 --> 00:32:06,985
+普通的梯度下降当然了
+ordinary gradient descent of course the
+
+484
+00:32:06,990 --> 00:32:10,375
+教科书找到了有多快的估计
+textbooks find a estimate for how fast
+
+485
+00:32:10,380 --> 00:32:13,705
+那当然是取决于那个
+that is and of course it depends on that
+
+486
+00:32:13,710 --> 00:32:14,804
+数
+number
+
+487
+00:32:14,809 --> 00:32:17,815
+是啊所以它依赖于数量和E
+yeah so it depends on that number and E
+
+488
+00:32:17,820 --> 00:32:21,264
+对，你确切地看到它是如何依赖的
+right you exactly saw how it depended on
+
+489
+00:32:21,269 --> 00:32:26,125
+这个号码没错，但现在我们有了
+that number right but now we have a
+
+490
+00:32:26,130 --> 00:32:28,644
+不同的问题，我们要完成
+different problem and we're gonna finish
+
+491
+00:32:28,649 --> 00:32:31,345
+没关系，那我的工作是什么呢？
+it okay so what's my job I'm gonna
+
+492
+00:32:31,350 --> 00:32:37,375
+选择s和beta来保持
+choose s and beta to get to keep the the
+
+493
+00:32:37,380 --> 00:32:39,595
+R的本征值让我们给出
+eigen values of R so let's give the
+
+494
+00:32:39,600 --> 00:32:44,804
+RNA的本征值所以R让我们说R有
+eigen values of RNA so R let's say R has
+
+495
+00:32:44,809 --> 00:32:48,435
+特征值
+eigen values
+
+496
+00:32:48,440 --> 00:32:55,005
+我赢得了取决于lambda和
+II won that depends on on the lambda and
+
+497
+00:32:55,010 --> 00:33:00,975
+s和beta以及E-所以那些是
+the s and the beta and E - so those are
+
+498
+00:33:00,980 --> 00:33:04,365
+我们刚才给出的特征值
+the eigenvalues of our just giving a
+
+499
+00:33:04,370 --> 00:33:09,525
+给他们的信，那么我们的工作是什么
+letter to to them so what's our job we
+
+500
+00:33:09,530 --> 00:33:13,755
+想要选择s和beta来制作它们
+want to choose s and beta to make those
+
+501
+00:33:13,760 --> 00:33:17,295
+特征值尽可能小
+eigenvalues as small as possible right
+
+502
+00:33:17,300 --> 00:33:22,125
+如果r小，则小的特征值
+small eigenvalues if r has small
+
+503
+00:33:22,130 --> 00:33:25,395
+特征值它的力量看到我们每一个
+eigenvalues its powers see we ever every
+
+504
+00:33:25,400 --> 00:33:28,965
+步骤乘以r使收敛
+step multiplies by r so the convergence
+
+505
+00:33:28,970 --> 00:33:33,495
+动量率依赖于
+rate with momentum is depends on the
+
+506
+00:33:33,500 --> 00:33:36,495
+我们快速变小的力量吧
+powers of our getting small fast it
+
+507
+00:33:36,500 --> 00:33:38,835
+取决于特征值很小
+depends on the eigenvalues being small
+
+508
+00:33:38,840 --> 00:33:45,285
+我们希望尽量减少最大的
+we want to minimize the largest
+
+509
+00:33:45,290 --> 00:33:51,195
+特征值所以我会说e的最大值
+eigenvalue so I'll say the maximum of e
+
+510
+00:33:51,200 --> 00:33:57,065
+1和每个和E2这是我们的工作
+1 and each and E 2 that's our job
+
+511
+00:33:57,070 --> 00:34:00,735
+最小化我们想要选择s和beta
+minimize we want to choose s and beta to
+
+512
+00:34:00,740 --> 00:34:03,795
+最小化最大特征值因为
+minimize the largest eigenvalue because
+
+513
+00:34:03,800 --> 00:34:05,805
+如果有一个小的特征值，但是
+if there's one small eigenvalue but the
+
+514
+00:34:05,810 --> 00:34:07,575
+另一个很大，另一个很重要
+other is big then the other one is going
+
+515
+00:34:07,580 --> 00:34:09,945
+杀了我们所以我们必须得到两者
+to kill us so we have to get both
+
+516
+00:34:09,950 --> 00:34:13,635
+特征值下降，当然还有那些
+eigenvalues down and of course those
+
+517
+00:34:13,640 --> 00:34:17,414
+取决于lambdae1取决于lambda
+depend on lambda e 1 depends on lambda
+
+518
+00:34:17,419 --> 00:34:19,965
+所以我们有一点代数问题
+so we have a little algebra problem and
+
+519
+00:34:19,970 --> 00:34:22,965
+这就是我所描述的奇迹
+this is what I described as a miracle
+
+520
+00:34:22,970 --> 00:34:25,365
+这个小代数的事实
+the fact that this little algebra
+
+521
+00:34:25,370 --> 00:34:28,215
+问题是该矩阵的特征值
+problem the eigenvalues of that matrix
+
+522
+00:34:28,220 --> 00:34:32,595
+e1和e2在某些方面取决于lambda
+e1 and e2 which depend on lambda in some
+
+523
+00:34:32,600 --> 00:34:36,914
+在某种程度上，我们想要制作两个e1
+in some way and we want to make both e1
+
+524
+00:34:36,919 --> 00:34:41,055
+和e2最小的那些
+and e2 small the maximum of those of
+
+525
+00:34:41,060 --> 00:34:45,105
+他们，我们必须为所有人做
+them and we have to do it for all the
+
+526
+00:34:45,110 --> 00:34:47,205
+特征所有特征值lambda因为
+eigen all the eigenvalues lambda because
+
+527
+00:34:47,210 --> 00:34:51,375
+我们现在必须认为我们一直都是
+we have to we're now thinking we've been
+
+528
+00:34:51,380 --> 00:34:55,275
+跟踪每个特征向量，以便给出
+tracking each eigenvector so that gave
+
+529
+00:34:55,280 --> 00:34:58,275
+我们1所以这是所有可能的lambda
+us 1 so this is for all possible lambda
+
+530
+00:34:58,280 --> 00:35:01,395
+哦，所以我们必须决定我的意思
+oh so we have to decide what do I mean
+
+531
+00:35:01,400 --> 00:35:02,345
+所有意大利面
+by all pasta
+
+532
+00:35:02,350 --> 00:35:05,315
+lambda和我的意思是所有的lambda
+lambda and I mean all lambda that are
+
+533
+00:35:05,320 --> 00:35:14,915
+在一些M＆M之间有一个美丽的
+between some M&M there is a beautiful
+
+534
+00:35:14,920 --> 00:35:18,905
+你有一个二乘二矩阵的问题
+problem you have a two-by-two matrix you
+
+535
+00:35:18,910 --> 00:35:22,475
+可以找到它找到它的特征值的
+can find it it find its eigenvalues its
+
+536
+00:35:22,480 --> 00:35:25,445
+它依赖于lambda和我们所有人
+it they depend on lambda and what we all
+
+537
+00:35:25,450 --> 00:35:27,725
+我们所知道的λ是它的M之间
+we know about lambda is it's between m
+
+538
+00:35:27,730 --> 00:35:31,685
+并与capya也是他们也依赖
+and and capya and also they also depend
+
+539
+00:35:31,690 --> 00:35:34,055
+在s和beta上我们可以使用两个参数
+on s and beta the two parameters we can
+
+540
+00:35:34,060 --> 00:35:36,515
+选择，我们想选择那些
+choose and we want to choose those
+
+541
+00:35:36,520 --> 00:35:40,895
+参数使所有的所有
+parameters so that for for all the all
+
+542
+00:35:40,900 --> 00:35:44,105
+可能的特征值越大
+the possible eigenvalues the larger of
+
+543
+00:35:44,110 --> 00:35:46,655
+两个特征值将小到
+the two eigenvalues will be as small as
+
+544
+00:35:46,660 --> 00:35:50,165
+可能这就是它的一点点
+possible that's it's a little bit of
+
+545
+00:35:50,170 --> 00:35:53,345
+代数但你知道那是那个吗？
+algebra but it's do you see that that's
+
+546
+00:35:53,350 --> 00:35:56,675
+我不应该说狡猾的棘手
+the tricky that I shouldn't say tricky
+
+547
+00:35:56,680 --> 00:35:59,975
+因为它出来就是这个
+because it comes out that's that this is
+
+548
+00:35:59,980 --> 00:36:02,885
+一来就是一个奇迹中
+the one that is a miracle in the in the
+
+549
+00:36:02,890 --> 00:36:06,155
+简单的解决方案好吧，我
+simplicity of the solution okay and I'm
+
+550
+00:36:06,160 --> 00:36:08,735
+会影响也许我会搬到这里
+gonna effect maybe I'll move over here
+
+551
+00:36:08,740 --> 00:36:17,795
+把答案写好，我只是想要
+to write the answer okay and I just want
+
+552
+00:36:17,800 --> 00:36:20,645
+说奇迹不会发生
+to say that miracles don't happen so
+
+553
+00:36:20,650 --> 00:36:24,755
+通常在数学中，你知道所有的
+often in math there's you know all of
+
+554
+00:36:24,760 --> 00:36:26,525
+数学的全部要点是数学
+mathematics the whole point of math is
+
+555
+00:36:26,530 --> 00:36:30,535
+解释奇迹所以有一个
+to explain miracles so there is a
+
+556
+00:36:30,540 --> 00:36:34,595
+这里有一些东西要解释我
+there's something to explain here and I
+
+557
+00:36:34,600 --> 00:36:38,335
+没有我的手指上还因
+don't have my finger on it yet because
+
+558
+00:36:38,340 --> 00:36:42,005
+无论如何它发生了让我告诉你
+anyway it happens so let me tell you
+
+559
+00:36:42,010 --> 00:36:45,485
+什么是正确的和正确的beta和
+what the right s and the right beta and
+
+560
+00:36:45,490 --> 00:36:53,785
+得到的最小特征值是这样的
+the resulting minimum eigen value are so
+
+561
+00:36:53,790 --> 00:36:59,395
+他们又依赖于小米和大米
+again they depend on little m and Big M
+
+562
+00:36:59,400 --> 00:37:04,805
+这是我们非常好的功能
+that's a very nice feature which we
+
+563
+00:37:04,810 --> 00:37:06,485
+预计，这是他们依赖
+expect and that is and they depend on
+
+564
+00:37:06,490 --> 00:37:09,425
+这个比例没关系，所以这个比例还好
+the ratio okay so that ratio alright
+
+565
+00:37:09,430 --> 00:37:17,755
+让我们看看它没关系，所以最好的
+let's let's see it okay so the best s
+
+566
+00:37:17,760 --> 00:37:26,825
+S最优具有公式二
+the S optimal has the formula two over
+
+567
+00:37:26,830 --> 00:37:29,825
+lambdamax的平方根就是
+square root of lambda max that's the
+
+568
+00:37:29,830 --> 00:37:33,215
+M的平方根和平方根
+square root of M and the square root of
+
+569
+00:37:33,220 --> 00:37:42,955
+MSquared令人惊叹的好和beta最佳
+M Squared amazing okay and beta optimal
+
+570
+00:37:42,960 --> 00:37:48,265
+原来是M的平方根
+turns out to be the square root of M
+
+571
+00:37:48,270 --> 00:37:51,055
+减去小米的平方根
+minus the square root of little m over
+
+572
+00:37:51,060 --> 00:37:54,485
+MPLUS平方的平方根
+the square root of M plus the square
+
+573
+00:37:54,490 --> 00:37:57,575
+所有平方的小M的根
+root of little M all the squared of
+
+574
+00:37:57,580 --> 00:37:59,765
+当然我们知道这些数字是1
+course we know what these numbers are 1
+
+575
+00:37:59,770 --> 00:38:02,525
+和我们的模型问题中的beta
+and beta in our model problem that's
+
+576
+00:38:02,530 --> 00:38:05,975
+在哪里我会得到这个平方根
+where I'm gonna get this square root of
+
+577
+00:38:05,980 --> 00:38:09,725
+这是1减去广场对不起B这个
+this is 1 minus the square sorry B this
+
+578
+00:38:09,730 --> 00:38:14,155
+实际上是1减去B的平方根
+is 1 minus the square root of B in fact
+
+579
+00:38:14,160 --> 00:38:17,885
+雅为我们的例子好吧让我
+ya for our for our example well let me
+
+580
+00:38:17,890 --> 00:38:21,305
+只要写出2比1的内容
+just write what they would be 2 over 1
+
+581
+00:38:21,310 --> 00:38:27,305
+乙广场和1个减去加平方根
+plus square root of B Square and 1 minus
+
+582
+00:38:27,310 --> 00:38:30,305
+将超过1加方你看
+would be over 1 plus square you see
+
+583
+00:38:30,310 --> 00:38:34,595
+这是1减去B的平方根
+where this is 1 minus square root of B
+
+584
+00:38:34,600 --> 00:38:37,055
+作为一个开始出现现在它出现
+as a beginning to appear now it appears
+
+585
+00:38:37,060 --> 00:38:39,125
+在解决这个问题然后
+in the solution of this problem and then
+
+586
+00:38:39,130 --> 00:38:45,245
+我得告诉你怎么回事
+I have to tell you what the what how
+
+587
+00:38:45,250 --> 00:38:49,415
+小确实做了这些这些最佳选择
+small did do these these optimal choices
+
+588
+00:38:49,420 --> 00:38:52,715
+让我们的这项权利的特征值
+make the eigenvalues of our right this
+
+589
+00:38:52,720 --> 00:38:56,165
+是我们真正关注的
+is what we're really paying attention to
+
+590
+00:38:56,170 --> 00:38:58,985
+因为它的特征值是该
+because it's the eigen values that that
+
+591
+00:38:58,990 --> 00:39:01,535
+矩阵告诉我们每个人都会发生什么
+matrix tells us what happens at every
+
+592
+00:39:01,540 --> 00:39:04,565
+步骤及其特征值必须是
+step and the its eigen values have to be
+
+593
+00:39:04,570 --> 00:39:07,205
+如何获得快速收敛
+small to get fast convergence so how
+
+594
+00:39:07,210 --> 00:39:12,745
+他们很好，他们涉及这个
+small are they well they involve this
+
+595
+00:39:12,750 --> 00:39:16,115
+是的，这是我见过的数字
+yeah so it's the number that I've seen
+
+596
+00:39:16,120 --> 00:39:21,665
+所以在这种情况下轻松了
+so so in this case the ease the
+
+597
+00:39:21,670 --> 00:39:27,005
+特征值
+eigenvalues
+
+598
+00:39:27,010 --> 00:39:32,055
+我们那是迭代矩阵
+of our that's the iterating matrix are
+
+599
+00:39:32,060 --> 00:39:34,545
+现在我们现在你要去了
+below that now we're now you're gonna
+
+600
+00:39:34,550 --> 00:39:38,325
+看到一个-都将超过1加
+see that one - were to be over 1 plus
+
+601
+00:39:38,330 --> 00:39:43,455
+我们认为也许平方让我
+we're to be I think maybe squared let me
+
+602
+00:39:43,460 --> 00:39:47,084
+只是看是的是的它恰好来了
+just see yeah yeah it happens to come
+
+603
+00:39:47,089 --> 00:39:51,135
+再次出这个数字，这就是
+out that number again so that's the
+
+604
+00:39:51,140 --> 00:39:54,765
+结论是正确的选择
+conclusion that was the right choice of
+
+605
+00:39:54,770 --> 00:40:01,275
+s和beta通过添加这个回顾期限
+s and beta by adding this look-back term
+
+606
+00:40:01,280 --> 00:40:04,305
+回头一步，你得到这个
+look back one step you get this
+
+607
+00:40:04,310 --> 00:40:11,265
+改善，这是你看到的
+improvement and it's it happens you see
+
+608
+00:40:11,270 --> 00:40:14,265
+它在实践当然你会看到它
+it in practice of course you'll see it
+
+609
+00:40:14,270 --> 00:40:25,065
+确切地说，你完成了这项工作
+exactly and so you you do the job to use
+
+610
+00:40:25,070 --> 00:40:27,885
+现在的势头我会提到什么
+momentum now I'm going to mention what
+
+611
+00:40:27,890 --> 00:40:31,395
+NesterovNesterov有一点点
+the Nesterov Nesterov had a slightly
+
+612
+00:40:31,400 --> 00:40:34,065
+不同的方式去做，我会告诉你
+different way to do it and i'll tell you
+
+613
+00:40:34,070 --> 00:40:38,775
+这是什么，但它是相同的想法得到
+what that is but it's the same idea get
+
+614
+00:40:38,780 --> 00:40:41,295
+第二件事让我们看看能不能
+a second thing so let's see if I can
+
+615
+00:40:41,300 --> 00:40:51,854
+发现是的nestor哦，好的，我们在这里
+find that yeah nestor oh ok ok here we
+
+616
+00:40:51,859 --> 00:40:52,245
+走
+go
+
+617
+00:40:52,250 --> 00:40:55,575
+所以让我给内斯特打下个名字
+so let me bring Nestor offs a name down
+
+618
+00:40:55,580 --> 00:41:05,295
+所以这基本上就是我
+so that that's the basically what I
+
+619
+00:41:05,300 --> 00:41:07,665
+我想说的是第一和什么时候
+wanted to say about number one and when
+
+620
+00:41:07,670 --> 00:41:09,765
+你已经看到了这个低谷你会看到的
+you've seen this trough you'll see that
+
+621
+00:41:09,770 --> 00:41:13,515
+这是一个类似的想法涉及到
+it's a similar idea of involving the
+
+622
+00:41:13,520 --> 00:41:20,505
+以前的时间值确定还有
+previous time value ok there are very
+
+623
+00:41:20,510 --> 00:41:25,515
+现在用于机器的流行方法
+popular methods in use now for machine
+
+624
+00:41:25,520 --> 00:41:29,325
+通过简单的学习来学习
+learning that involves by a simple
+
+625
+00:41:29,330 --> 00:41:32,805
+通过以下方式计算所有先前的值
+formula all the previous values by by
+
+626
+00:41:32,810 --> 00:41:36,195
+只是增加了一堆
+sort of just by an addition of a bunch
+
+627
+00:41:36,200 --> 00:41:38,775
+条款所以它确实如此
+of terms so it's really it
+
+628
+00:41:38,780 --> 00:41:45,455
+所以这就是ADAADA的名称
+so it's it goes under the names ADA ADA
+
+629
+00:41:45,460 --> 00:41:51,705
+毕业或其他人已经
+grad or others those of you who already
+
+630
+00:41:51,710 --> 00:41:54,824
+了解机器学习会知道
+know about machine learning will know
+
+631
+00:41:54,829 --> 00:41:56,475
+我在说什么，我会说
+what I'm speaking about and I'll say
+
+632
+00:41:56,480 --> 00:42:00,554
+更多关于那些是的，但事实并非如此
+more about those yeah but it doesn't
+
+633
+00:42:00,559 --> 00:42:03,125
+每个都包含一个单独的系数
+involve a separate coefficient for each
+
+634
+00:42:03,130 --> 00:42:06,304
+以前的价值或者是一个
+previous value or that would be a
+
+635
+00:42:06,309 --> 00:42:09,854
+现在我做了大量的工作
+momentous amount of work so so now I
+
+636
+00:42:09,859 --> 00:42:11,685
+只是想告诉你涅斯捷罗夫是什么
+just want to tell you what Nesterov is
+
+637
+00:42:11,690 --> 00:42:14,294
+然后我们好OK先生。罗菲的
+and then we were good ok mr. roffe's
+
+638
+00:42:14,299 --> 00:42:20,175
+想法让我把它带下来
+idea let me bring that down
+
+639
+00:42:20,180 --> 00:42:31,665
+因为他有这个，所以把它打倒了
+shoot this up bring down because he had
+
+640
+00:42:31,670 --> 00:42:33,885
+你可能没有想过的想法
+an idea that you might not have thought
+
+641
+00:42:33,890 --> 00:42:37,544
+不知怎的，动量想法很漂亮
+of somehow the momentum idea was pretty
+
+642
+00:42:37,549 --> 00:42:41,265
+自然地使用以前的值和
+natural to use that previous value and
+
+643
+00:42:41,270 --> 00:42:43,965
+其实我想知道什么
+actually I would like to know what
+
+644
+00:42:43,970 --> 00:42:46,215
+如果您使用两个先前的值，则会发生
+happens if you use two previous values
+
+645
+00:42:46,220 --> 00:42:48,554
+或者你可以使用之前的三个值
+or three previous values can you then
+
+646
+00:42:48,559 --> 00:42:53,655
+对此有所改进
+get improvements on this this
+
+647
+00:42:53,660 --> 00:42:58,665
+回归两步收敛率
+convergence rate by going back two steps
+
+648
+00:42:58,670 --> 00:43:03,455
+或者如果我使用类比的三个步骤
+or three steps if I use the analogy with
+
+649
+00:43:03,460 --> 00:43:07,125
+常微分方程可能
+ordinary differential equations maybe
+
+650
+00:43:07,130 --> 00:43:10,574
+你知道的就是这样，所以有
+you know so right so so there are
+
+651
+00:43:10,579 --> 00:43:13,094
+后向差异公式你知道吗？
+backward difference formulas do you know
+
+652
+00:43:13,099 --> 00:43:15,824
+关于这四个人的情况
+about those four those would be in
+
+653
+00:43:15,829 --> 00:43:19,804
+MATLAB软件和所有其他软件
+MATLAB software and all other software
+
+654
+00:43:19,809 --> 00:43:22,905
+落后的差异，所以也许你去
+backward differences so maybe you go
+
+655
+00:43:22,910 --> 00:43:27,314
+如果你是的话，回来两步或四步
+back two steps or four steps if you're
+
+656
+00:43:27,319 --> 00:43:30,074
+如果你正在进行行星计算
+doing planetary calculations if you're
+
+657
+00:43:30,079 --> 00:43:32,715
+天文学家，你可能会回到七或
+an astronomer you go back maybe seven or
+
+658
+00:43:32,720 --> 00:43:35,114
+八个步骤，以获得超高精度
+eight steps to get super high accuracy
+
+659
+00:43:35,119 --> 00:43:39,495
+所以似乎没有发生过
+so that doesn't seem to have happened
+
+660
+00:43:39,500 --> 00:43:42,614
+不过也应该发生在这里回去
+yet but it should happen here to go back
+
+661
+00:43:42,619 --> 00:43:46,125
+更但却涅斯捷罗夫将具有它
+more but but Nesterov will has it has
+
+662
+00:43:46,130 --> 00:43:48,314
+这种不同的回归方式让他如此
+this different way to go back so his
+
+663
+00:43:48,319 --> 00:43:51,595
+公式是XK加一种新方法
+formula is XK plus one the new way
+
+664
+00:43:51,600 --> 00:43:57,275
+是YK所以他正在介绍一些东西
+is YK so he's introducing something a
+
+665
+00:43:57,280 --> 00:44:09,125
+有点不同-s辐射f@YK我是
+little different - s radiant f @ YK I'm
+
+666
+00:44:09,130 --> 00:44:11,075
+对YK有点惊讶但是
+a little surprised about that YK but
+
+667
+00:44:11,080 --> 00:44:14,135
+这是渐变的重点
+this is the point here that the gradient
+
+668
+00:44:14,140 --> 00:44:16,595
+正在评估一些不同的
+is being evaluated at some different
+
+669
+00:44:16,600 --> 00:44:20,465
+然后他必须给出一个公式
+point and then he has to give a formula
+
+670
+00:44:20,470 --> 00:44:23,065
+那些跟踪那些明智的人
+for that for those to track those wise
+
+671
+00:44:23,070 --> 00:44:27,815
+所以Y和X一样，但它们是
+so the Y's are like the X's but they're
+
+672
+00:44:27,820 --> 00:44:30,305
+在一段时间内转移了一点点
+shifted a little bit by some term and
+
+673
+00:44:30,310 --> 00:44:37,475
+测试就可以了哦，不行呀公测有
+beta would be fine Oh No yeah beta have
+
+674
+00:44:37,480 --> 00:44:41,075
+我们得到了涅斯捷罗夫这里是老总掉了
+we got Nesterov here yes mister off has
+
+675
+00:44:41,080 --> 00:44:47,045
+耶和华的因素，所以我没事
+a factor gamma in yeah so I all right
+
+676
+00:44:47,050 --> 00:44:51,864
+让我让我尝试获得这项权利好吗
+let me let me try to get this right okay
+
+677
+00:44:51,869 --> 00:44:54,635
+上一行我已经没事了
+all right on the previous line I've
+
+678
+00:44:54,640 --> 00:44:57,065
+在这里写了整个巢穴的东西
+written the whole nestdrop thing here
+
+679
+00:44:57,070 --> 00:44:59,465
+让我们完全看到漂亮的下降然后
+let's see nice drop completely and then
+
+680
+00:44:59,470 --> 00:45:01,445
+他们会打破那么这是一步，
+they'll break then this is the step that
+
+681
+00:45:01,450 --> 00:45:03,815
+把它分成两个第一顺序但是
+breaks it into two first order but
+
+682
+00:45:03,820 --> 00:45:07,415
+你会在这里看到XKplus的主要公式
+you'll see the main formula here XK plus
+
+683
+00:45:07,420 --> 00:45:17,255
+1是XK，然后β倍XK减去
+1 is XK and then a beta times XK minus
+
+684
+00:45:17,260 --> 00:45:21,455
+XK减1，这就像一个动量
+XK minus 1 so that's like a momentum
+
+685
+00:45:21,460 --> 00:45:27,095
+术语，然后是典型的梯度，但现在
+term and then a typical gradient but now
+
+686
+00:45:27,100 --> 00:45:30,335
+这是Nesterov说出这个低谷
+here's Nesterov speaking up this trough
+
+687
+00:45:30,340 --> 00:45:34,205
+评估梯度不是在XK而不是在
+evaluates the gradient not at XK not at
+
+688
+00:45:34,210 --> 00:45:37,595
+XK减去1，但它是家里先生。奥兹点
+XK minus 1 but it is home mr. Oz point
+
+689
+00:45:37,600 --> 00:45:41,104
+就像这样，这是Nesterov说我最喜欢的
+like so this is Nesterov say my favorite
+
+690
+00:45:41,109 --> 00:45:46,075
+点伽玛XK减XK减1
+point gamma XK minus XK minus 1 some
+
+691
+00:45:46,080 --> 00:45:55,655
+指向该步骤的一部分，所以它
+point part way along that step so it so
+
+692
+00:45:55,660 --> 00:45:58,114
+这一点，因为伽玛将是
+this point because gamma is going to be
+
+693
+00:45:58,119 --> 00:46:02,735
+一些非整数这个评价点
+some non integer this evaluation point
+
+694
+00:46:02,740 --> 00:46:04,685
+对于F的梯度
+of for the gradient of F
+
+695
+00:46:04,690 --> 00:46:07,685
+有点意外和奇怪，因为
+is a little unexpected and weird because
+
+696
+00:46:07,690 --> 00:46:11,285
+它不是一个网格点，它在某个地方
+it's not a mesh point it's somewhere
+
+697
+00:46:11,290 --> 00:46:20,555
+之间好吧是的，然后就是这样
+between okay yep yep and then that so
+
+698
+00:46:20,560 --> 00:46:26,975
+涉及XK加1XK和XK减去
+that involves XK plus 1 XK and XK minus
+
+699
+00:46:26,980 --> 00:46:33,485
+1所以这是一个二阶有一个
+1 so it's a second-order there's a
+
+700
+00:46:33,490 --> 00:46:35,975
+我们要去的二阶方法
+second-order method here we're going to
+
+701
+00:46:35,980 --> 00:46:38,495
+分析它我们将要去
+it to analyze it we're going to go
+
+702
+00:46:38,500 --> 00:46:41,765
+通过与此相同写它的过程
+through this same process of writing it
+
+703
+00:46:41,770 --> 00:46:46,385
+作为前两个的两个一阶步骤
+as two first-order steps to first two
+
+704
+00:46:46,390 --> 00:46:51,395
+单步从k到k加一步
+single step to one step from k to k plus
+
+705
+00:46:51,400 --> 00:46:58,955
+1所涉及的耦合一步法事情遵循
+1 a a coupled one-step thing follow that
+
+706
+00:46:58,960 --> 00:47:02,195
+同样的事情，然后结果
+same thing through and then the result
+
+707
+00:47:02,200 --> 00:47:07,875
+对他来说是一个相同的因素
+is a same factor appears for him
+
+708
+00:47:07,880 --> 00:47:12,615
+同样的因素这也是如此
+the same factor this is also so this the
+
+709
+00:47:12,620 --> 00:47:21,605
+点是这是动力和
+point is this is for momentum and
+
+710
+00:47:21,610 --> 00:47:30,495
+涅斯捷罗夫与一些人
+Nesterov with with some with some
+
+711
+00:47:30,500 --> 00:47:32,895
+常数差由一些不同的
+constant difference different by some
+
+712
+00:47:32,900 --> 00:47:36,585
+不变但关键数量是
+constant but the key quantity is that
+
+713
+00:47:36,590 --> 00:47:46,125
+一个和那个出现在两个所以我
+one and that appears in both so so so I
+
+714
+00:47:46,130 --> 00:47:48,975
+当然不建议重复这些
+don't propose of course to repeat these
+
+715
+00:47:48,980 --> 00:47:51,765
+酯的步骤，但你看到了什么
+steps for an ester off but you see what
+
+716
+00:47:51,770 --> 00:47:55,365
+你看到你能做什么，你看到了
+you see what you could do you see that
+
+717
+00:47:55,370 --> 00:47:59,775
+它涉及K减1Kink加1你
+it involves K minus 1 K in k plus 1 you
+
+718
+00:47:59,780 --> 00:48:02,945
+当你按照一个特征向量写它
+write it as you follow an eigen vector
+
+719
+00:48:02,950 --> 00:48:06,575
+你把它写成一个耦合系统
+you write it as a coupled system of
+
+720
+00:48:06,580 --> 00:48:10,635
+这是一个有一个矩阵的一步
+that's a one-step that has a matrix you
+
+721
+00:48:10,640 --> 00:48:13,095
+找到你找到特征的矩阵
+find the matrix you find the eigen
+
+722
+00:48:13,100 --> 00:48:15,285
+你做的那些矩阵的值
+values of the matrix you make those
+
+723
+00:48:15,290 --> 00:48:17,775
+特征值尽可能小，你
+eigenvalues as small as possible and you
+
+724
+00:48:17,780 --> 00:48:21,255
+优化了它们的系数
+have optimized their coefficients in
+
+725
+00:48:21,260 --> 00:48:26,115
+Nesterov确定那是那么多
+Nesterov ok that's that's sort of a lot
+
+726
+00:48:26,120 --> 00:48:30,215
+代数的核心是
+of algebra that's at the heart of
+
+727
+00:48:30,220 --> 00:48:33,315
+加速梯度下降和
+accelerated gradient descent and of
+
+728
+00:48:33,320 --> 00:48:37,695
+当然值得做，因为它是一个
+course it's worth doing because it's a
+
+729
+00:48:37,700 --> 00:48:41,265
+在中的巨大储蓄
+tremendous saving in the in the in the
+
+730
+00:48:41,270 --> 00:48:45,555
+收敛率确定任何人都跑了
+convergence rate ok anybody running in
+
+731
+00:48:45,560 --> 00:48:49,695
+马拉松或只是看着它
+the marathon or just watching it's
+
+732
+00:48:49,700 --> 00:48:54,165
+无论如何我都会看到你可能知道
+possible to run you know anyway I'll see
+
+733
+00:48:54,170 --> 00:48:56,830
+you after the marathon next Wednesday
+
+734
+00:48:54,170 --> 00:49:01,990
+你下周三马拉松之后
+
+735
+00:48:56,840 --> 00:49:01,990
+博伊德教授也会见到你
+and professor Boyd will also see you
+

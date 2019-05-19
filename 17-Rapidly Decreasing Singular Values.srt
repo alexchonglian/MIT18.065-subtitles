@@ -1,0 +1,3928 @@
+1
+00:00:21,880 --> 00:00:27,575
+让我用麦克风介绍Alex
+so let me use the mic to introduce Alex
+
+2
+00:00:27,580 --> 00:00:31,175
+在麻省理工学院任教的汤森教授
+Townsend who taught here at MIT taught
+
+3
+00:00:31,180 --> 00:00:34,775
+线性代数1806非常成功
+linear algebra 1806 very successfully
+
+4
+00:00:34,780 --> 00:00:38,255
+现在他在康奈尔大学就读了
+and now he's at Cornell on the faculty
+
+5
+00:00:38,260 --> 00:00:40,955
+仍然非常成功地教学
+still teaching very successfully and
+
+6
+00:00:40,960 --> 00:00:43,895
+他昨天被邀请来这里
+he's he was invited here yesterday for a
+
+7
+00:00:43,900 --> 00:00:50,554
+在工程和和他的大事件
+big event over in engineering and and he
+
+8
+00:00:50,559 --> 00:00:54,304
+同意谈谈一部分
+agreed to give a talk about a section of
+
+9
+00:00:54,309 --> 00:00:58,205
+如果你看的话，本书第4.33节
+the book section 4.33 which if you look
+
+10
+00:00:58,210 --> 00:01:00,095
+在它，你会看到他的工作
+at it you'll see is all about his work
+
+11
+00:01:00,100 --> 00:01:03,785
+现在你可以听到创作者的消息
+and now you get to hear from the creator
+
+12
+00:01:03,790 --> 00:01:12,724
+自己还好，谢谢谢谢谢谢
+himself okay okay thanks thank you thank
+
+13
+00:01:12,729 --> 00:01:15,035
+你在这里邀请我，我希望你是
+you for inviting me here I hope you're
+
+14
+00:01:15,040 --> 00:01:17,645
+今天享受这个课程我想说
+enjoying the course today I want to tell
+
+15
+00:01:17,650 --> 00:01:20,614
+你有一点为什么会有这么多
+you a little about why there are so many
+
+16
+00:01:20,619 --> 00:01:23,135
+排名较低的矩阵
+matrices that are low ranked in the
+
+17
+00:01:23,140 --> 00:01:23,585
+世界
+world
+
+18
+00:01:23,590 --> 00:01:26,645
+如计算数学家盖尔
+so as computational mathematicians Gail
+
+19
+00:01:26,650 --> 00:01:28,595
+而我自己也遇到了低级别
+and myself we come across low rank
+
+20
+00:01:28,600 --> 00:01:32,765
+矩阵一直在我们开始
+matrices all the time and we started
+
+21
+00:01:32,770 --> 00:01:36,815
+想知道为什么是社区
+wondering as a community why why is what
+
+22
+00:01:36,820 --> 00:01:38,675
+是关于矩阵，所述
+is it about the matrices that the
+
+23
+00:01:38,680 --> 00:01:41,465
+我们正在研究什么问题
+problems that we're looking at what
+
+24
+00:01:41,470 --> 00:01:44,795
+使得低等级矩阵出现在今天
+makes low rank matrices appear and today
+
+25
+00:01:44,800 --> 00:01:46,595
+我想给你这个故事或者
+I want to kind of give you that story or
+
+26
+00:01:46,600 --> 00:01:49,655
+至少概述了这个故事
+at least an overview of that story so
+
+27
+00:01:49,660 --> 00:01:53,045
+对于这个类，X将进一步发展
+further for this class X is going to be
+
+28
+00:01:53,050 --> 00:01:58,505
+n由n真实矩阵组成，非常方便
+n by n real matrix so nice and square
+
+29
+00:01:58,510 --> 00:02:01,895
+你已经知道或非常舒服
+and you already know or very comfortable
+
+30
+00:02:01,900 --> 00:02:05,615
+与矩阵的奇异值，使
+with the singular values of a matrix so
+
+31
+00:02:05,620 --> 00:02:08,764
+矩阵的奇异值就像你一样
+the singular values of a matrix as you
+
+32
+00:02:08,769 --> 00:02:14,154
+知道是一系列数字
+know are a sequence of numbers that are
+
+33
+00:02:14,159 --> 00:02:19,535
+单调不增加告诉
+monotonically non-increasing that tell
+
+34
+00:02:19,540 --> 00:02:21,575
+我们关于矩阵的各种事情
+us all kinds of things about the matrix
+
+35
+00:02:21,580 --> 00:02:28,505
+X例如非零数
+X for example the number of nonzero
+
+36
+00:02:28,510 --> 00:02:32,225
+奇异值告诉我们的等级
+singular values tell us the rank of the
+
+37
+00:02:32,230 --> 00:02:35,585
+矩阵X和他们你也可能知道
+matrix X and they also you probably know
+
+38
+00:02:35,590 --> 00:02:38,344
+告诉我们矩阵X的表现如何
+tell us how well a matrix X can be
+
+39
+00:02:38,349 --> 00:02:43,715
+由低秩矩阵近似所以让
+approximated by a low rank matrix so let
+
+40
+00:02:43,720 --> 00:02:45,335
+我只是写下你的两个事实
+me just write two facts down that you
+
+41
+00:02:45,340 --> 00:02:48,124
+已经熟悉了，所以这里是一个
+already are familiar with so here's a
+
+42
+00:02:48,129 --> 00:02:53,555
+事实上，如果我看一下数量
+fact that if I look at the number of
+
+43
+00:02:53,560 --> 00:02:58,234
+X中的非零奇异值，所以我是
+nonzero singular values in X so I'm
+
+44
+00:02:58,239 --> 00:03:00,695
+想象那将是K非零
+imagining there's going to be K nonzero
+
+45
+00:03:00,700 --> 00:03:07,745
+奇异的价值然后我们可以说几个
+singular values then we can say a few
+
+46
+00:03:07,750 --> 00:03:11,855
+关于X的事情，例如X的等级
+things about X for example X the rank of
+
+47
+00:03:11,860 --> 00:03:17,135
+我们知道的X是非零数
+X as we know is K the number of nonzero
+
+48
+00:03:17,140 --> 00:03:21,995
+奇异值，但我们也知道，从
+singular values but we also know from
+
+49
+00:03:22,000 --> 00:03:26,135
+我们可以将X分解为的SVD
+the SVD that we can decompose X into a
+
+50
+00:03:26,140 --> 00:03:30,395
+一级矩阵的总和实际上是一个总和
+sum of rank one matrices in fact a sum
+
+51
+00:03:30,400 --> 00:03:36,725
+他们的K因为X是等级K我们
+of K of them so because X is rank K we
+
+52
+00:03:36,730 --> 00:03:40,115
+可以写下低级别的表示
+can write down a low rank representation
+
+53
+00:03:40,120 --> 00:03:46,764
+对于X，它涉及K这样的术语
+for X and it involves K terms like this
+
+54
+00:03:46,769 --> 00:03:50,734
+这里的每一个向量都是一个
+each one of these vectors here is a
+
+55
+00:03:50,739 --> 00:03:53,074
+列向量所以如果我画这个
+column vector so if I draw this
+
+56
+00:03:53,079 --> 00:03:57,935
+这个家伙看起来像这样
+pictorially this guy looks like this
+
+57
+00:03:57,940 --> 00:04:02,555
+对，我们有K，所以因为X是
+right we have K of them so because X is
+
+58
+00:04:02,560 --> 00:04:06,125
+等级好我们可以写X作为K的总和
+rank okay we can write X as a sum of K
+
+59
+00:04:06,130 --> 00:04:09,245
+排名一个矩阵，我们也有
+rank one matrices and we also have
+
+60
+00:04:09,250 --> 00:04:11,555
+我们已经知道的最初事实
+initial fact that we already know that
+
+61
+00:04:11,560 --> 00:04:15,935
+X列空间的维数
+the dimension of the column space of X
+
+62
+00:04:15,940 --> 00:04:19,085
+等于K，与行相同
+is equal to K and the same with the row
+
+63
+00:04:19,090 --> 00:04:19,854
+空间
+space
+
+64
+00:04:19,859 --> 00:04:26,134
+所以X的Col空间等于行
+so the Col space of X equals the row
+
+65
+00:04:26,139 --> 00:04:32,615
+的X尺寸和空间，他们
+space of X the dimension and that they
+
+66
+00:04:32,620 --> 00:04:35,945
+所有等于K好，所以有三个
+all equal K okay so there are three
+
+67
+00:04:35,950 --> 00:04:38,405
+我们可以通过观察确定的事实
+facts we can determine from looking at
+
+68
+00:04:38,410 --> 00:04:41,855
+这个奇异值的序列
+this sequence of singular values of a
+
+69
+00:04:41,860 --> 00:04:45,154
+矩阵X当然是奇异值
+matrix X of course the singular value
+
+70
+00:04:45,159 --> 00:04:47,185
+序列是独一无二的
+sequence is unique
+
+71
+00:04:47,190 --> 00:04:49,585
+X定义了关于它的单数
+X defines that singular about this its
+
+72
+00:04:49,590 --> 00:04:54,534
+拥有奇异的价值好吧我们是什么
+own singular values okay what we're
+
+73
+00:04:54,539 --> 00:04:58,615
+对此感兴趣的是什么使X成为什么
+interested in here is what makes X what
+
+74
+00:04:58,620 --> 00:05:00,955
+是X的属性，确保
+are the properties of X that make sure
+
+75
+00:05:00,960 --> 00:05:03,055
+奇异值有很多
+that the singular values have a lot of
+
+76
+00:05:03,060 --> 00:05:07,525
+我们可以尝试按顺序排列零
+zeros in that sequence can we try to
+
+77
+00:05:07,530 --> 00:05:09,474
+了解X是什么样的
+understand what kind of X makes that
+
+78
+00:05:09,479 --> 00:05:15,235
+发生了，我们真的很喜欢矩阵
+happen and we really like matrices that
+
+79
+00:05:15,240 --> 00:05:17,004
+这里有很多零
+have a lot of zeros here for the
+
+80
+00:05:17,009 --> 00:05:22,944
+如果X是我们说X，请按照阅读原因
+following read reason if X is we say X
+
+81
+00:05:22,949 --> 00:05:29,625
+如果以下情况正确，则排名较低
+is low rank if the following holds right
+
+82
+00:05:29,630 --> 00:05:32,575
+因为我们想把X送到我们家
+because we if we wanted to send X to our
+
+83
+00:05:32,580 --> 00:05:34,735
+朋友，我们想象X是一张照片
+friend we're imagining X is a picture
+
+84
+00:05:34,740 --> 00:05:38,664
+其中每个条目就是一个像素
+where each entry is a pixel of that
+
+85
+00:05:38,669 --> 00:05:42,594
+如果该图像矩阵低的图像
+image if that matrix that image was low
+
+86
+00:05:42,599 --> 00:05:45,715
+排名我们可以将图片发送给我们
+rank we could send the picture to our
+
+87
+00:05:45,720 --> 00:05:50,025
+朋友有两种方式我们可以送一个
+friend in two ways we could send one
+
+88
+00:05:50,030 --> 00:05:54,325
+X的每一个条目和我们要做的
+every single entry of X and for us to do
+
+89
+00:05:54,330 --> 00:05:56,565
+我们将不得不派ñ平方
+that we would have to send N squared
+
+90
+00:05:56,570 --> 00:05:59,004
+的信息，因为我们不得不
+pieces of information because we'd have
+
+91
+00:05:59,009 --> 00:06:01,705
+发送每个条目但是如果是
+to send every entry but if X is
+
+92
+00:06:01,710 --> 00:06:04,194
+我们也可以发送足够低的排名
+sufficiently low rank we could also send
+
+93
+00:06:04,199 --> 00:06:09,865
+他们是我们的朋友你的矢量u1V1u
+them our friend the vectors u u 1 V 1 u
+
+94
+00:06:09,870 --> 00:06:10,944
+K到VK
+K up to VK
+
+95
+00:06:10,949 --> 00:06:14,875
+以及有多少数据
+and how many how much pieces of data
+
+96
+00:06:14,880 --> 00:06:17,004
+我们要送朋友去吗？
+would we have to send our friend to get
+
+97
+00:06:17,009 --> 00:06:19,464
+如果我们发送低级别的话，X给他们
+X to them if we sent in the low rank
+
+98
+00:06:19,469 --> 00:06:25,464
+形成良好这里这里有这个到n
+form well here there's to this to n here
+
+99
+00:06:25,469 --> 00:06:28,645
+也和这里的数字这个ķ因此其中的
+too and here numbers this K of them so
+
+100
+00:06:28,650 --> 00:06:34,164
+我们必须发送给K数字和我们
+we'd have to send to K n numbers and we
+
+101
+00:06:34,169 --> 00:06:38,325
+严格说矩阵秩低中频
+strictly say a matrix is low rank if
+
+102
+00:06:38,330 --> 00:06:41,094
+将X发送给我们的效率更高
+it's more efficient to send X to our
+
+103
+00:06:41,099 --> 00:06:43,765
+低级别的朋友比完整的朋友
+friend in low rank form than in full
+
+104
+00:06:43,770 --> 00:06:48,175
+排名形式好，所以这当然是一个
+rank form okay so this of course by a
+
+105
+00:06:48,180 --> 00:06:52,064
+很少的计算只是告诉我们
+little calculation just shows us that
+
+106
+00:06:52,069 --> 00:06:54,625
+如果等级不到一半
+provided the rank is less than half the
+
+107
+00:06:54,630 --> 00:06:57,714
+我们称之为矩阵的大小
+size of the matrix we are calling the
+
+108
+00:06:57,719 --> 00:06:58,785
+矩阵
+matrix
+
+109
+00:06:58,790 --> 00:07:05,505
+我们现在经常在实践中排名
+ranked now often in practice we demand
+
+110
+00:07:05,510 --> 00:07:13,325
+我们要求K更小
+more we demand that K is much smaller
+
+111
+00:07:13,330 --> 00:07:16,155
+比这个数字还要多得多
+than this number so that it's far more
+
+112
+00:07:16,160 --> 00:07:19,485
+高效地发送我们的朋友矩阵
+efficient to send our friend the matrix
+
+113
+00:07:19,490 --> 00:07:22,185
+X等级低于外国形式
+X in low rank form than in foreign form
+
+114
+00:07:22,190 --> 00:07:25,605
+好吧所以Kuo筒子架使用了这个词
+okay so the Kuo creel use of the word
+
+115
+00:07:25,610 --> 00:07:28,965
+低等级就是这种情况
+low rank is it's kind of this situation
+
+116
+00:07:28,970 --> 00:07:32,255
+但这是对它的严格定义
+but this is the strict definition of it
+
+117
+00:07:32,260 --> 00:07:37,995
+好吧那么低等级矩阵看起来怎么样
+okay so what do low rank matrices look
+
+118
+00:07:38,000 --> 00:07:42,045
+喜欢和做那我有一些照片
+like and to do that I have some pictures
+
+119
+00:07:42,050 --> 00:07:45,315
+为了你我世界上有一些旗帜
+for you I have some flags the world
+
+120
+00:07:45,320 --> 00:07:50,505
+标志所以这些都是矩阵X
+flags so these are all matrices X these
+
+121
+00:07:50,510 --> 00:07:52,395
+例子，因为他们是旗帜碰巧
+examples because they're Flags happen to
+
+122
+00:07:52,400 --> 00:07:55,545
+不是正方形我希望你们都能看到
+not be square I hope you can all see
+
+123
+00:07:55,550 --> 00:08:00,135
+这是最重要的一点
+this but what the top row here are all
+
+124
+00:08:00,140 --> 00:08:03,515
+矩阵有极低排名
+matrices there are extremely low rank
+
+125
+00:08:03,520 --> 00:08:06,975
+例如奥地利国旗，如果你想
+for example the Austria flag if you want
+
+126
+00:08:06,980 --> 00:08:09,255
+把它发送给你的朋友那个矩阵
+to send that to your friend that matrix
+
+127
+00:08:09,260 --> 00:08:12,195
+排名第1，所以你所要做的就是
+is of Rank 1 so all you have to do is
+
+128
+00:08:12,200 --> 00:08:15,075
+向你的朋友发送你需要的两个向量
+send your friend two vectors you have to
+
+129
+00:08:15,080 --> 00:08:16,785
+告诉你的朋友列空间和
+tell your friend the column space and
+
+130
+00:08:16,790 --> 00:08:19,215
+该行的空间，这里只有
+the row space and there's only the
+
+131
+00:08:19,220 --> 00:08:21,645
+尺寸是两者之一
+dimensions are one of both for the
+
+132
+00:08:21,650 --> 00:08:23,925
+英国国旗你需要发两个
+English flag you need to send them two
+
+133
+00:08:23,930 --> 00:08:28,965
+列向量和两个行向量u​​1V.
+column vectors and two row vectors u 1 V
+
+134
+00:08:28,970 --> 00:08:33,525
+1u2和V2，当我们走下这一排
+1 u 2 and V 2 and as we go down this row
+
+135
+00:08:33,530 --> 00:08:36,285
+他们慢慢充实，充满了等级
+they get slowly full and full of rank so
+
+136
+00:08:36,290 --> 00:08:39,525
+例如日本国旗很低
+the Japanese flag for example is low
+
+137
+00:08:39,530 --> 00:08:43,155
+排名但不是我们不是那么小
+rank but not us not that small the
+
+138
+00:08:43,160 --> 00:08:45,045
+苏格兰国旗基本上是满级
+Scottish flag is essentially full rank
+
+139
+00:08:45,050 --> 00:08:48,465
+所以发送你的效率非常低效
+so it's very inefficient to send your
+
+140
+00:08:48,470 --> 00:08:50,895
+朋友是低级别的苏格兰国旗
+friend the Scottish flag in low rank
+
+141
+00:08:50,900 --> 00:08:52,605
+形成你最好几乎发送
+form you're better off sending almost
+
+142
+00:08:52,610 --> 00:08:57,225
+每一个条目所以低排名
+every single entry so what do low rank
+
+143
+00:08:57,230 --> 00:09:10,455
+矩阵看起来像
+matrices look like
+
+144
+00:09:10,460 --> 00:09:14,995
+好吧，如果矩阵是非常低的等级
+well if the matrix is extremely low rank
+
+145
+00:09:15,000 --> 00:09:17,695
+比如排名第一，那么当你看到那个
+like rank one then when you look at that
+
+146
+00:09:17,700 --> 00:09:20,125
+这里的矩阵像旗帜一样
+matrix like here like the flag it's a
+
+147
+00:09:20,130 --> 00:09:24,625
+与坐标高度一致
+highly aligned with the the coordinates
+
+148
+00:09:24,630 --> 00:09:28,375
+行和列所以如果是的话
+with the rows and columns so if it's
+
+149
+00:09:28,380 --> 00:09:32,745
+排名第一，矩阵高度一致
+rank one the matrix is highly aligned
+
+150
+00:09:32,750 --> 00:09:41,845
+像奥地利国旗，当然还有
+like the Austria flag and of course as
+
+151
+00:09:41,850 --> 00:09:43,885
+我们在这里添加越来越多的排名了
+we adding more and more rank here the
+
+152
+00:09:43,890 --> 00:09:46,825
+例如，情况有点模糊
+situation gets a bit blurry for example
+
+153
+00:09:46,830 --> 00:09:48,595
+一旦我们进入中等级别
+once we get into the medium rank
+
+154
+00:09:48,600 --> 00:09:51,175
+这是一个圆圈的情况
+situation which is a circle it's very
+
+155
+00:09:51,180 --> 00:09:53,035
+很难看出圆圈实际上是
+hard to see that the circle is actually
+
+156
+00:09:53,040 --> 00:09:57,745
+事实上低级别，但我想做什么
+a fact low rank but what I wanted to do
+
+157
+00:09:57,750 --> 00:09:59,875
+试着理解为什么苏格兰人
+was try to understand why the Scottish
+
+158
+00:09:59,880 --> 00:10:02,035
+弗兰克苏格兰国旗或对角线
+Frank the Scottish flag or diagonal
+
+159
+00:10:02,040 --> 00:10:05,935
+模式尤其是一个坏榜样
+patterns are particularly a bad example
+
+160
+00:10:05,940 --> 00:10:08,905
+为了低排名所以我打算拿下
+for low rank so I'm going to take the
+
+161
+00:10:08,910 --> 00:10:13,405
+三角旗检查更多
+triangular flag to examine that more
+
+162
+00:10:13,410 --> 00:10:18,565
+仔细所以三角旗吧
+carefully so the triangular flag it
+
+163
+00:10:18,570 --> 00:10:21,085
+貌似我拿一个方阵和
+looks like I take a square matrix and
+
+164
+00:10:21,090 --> 00:10:27,085
+我们在下半部分的颜色还可以
+our color in the bottom half okay so
+
+165
+00:10:27,090 --> 00:10:29,755
+这个矩阵是in的矩阵
+this matrix is the matrix of ones in
+
+166
+00:10:29,760 --> 00:10:38,295
+在对角线下面
+below the diagonal
+
+167
+00:10:38,300 --> 00:10:40,725
+而且我对这个矩阵感兴趣
+and I'm interested in this matrix and in
+
+168
+00:10:40,730 --> 00:10:42,825
+尤其是它的奇异值尝试
+particular its singular values to try to
+
+169
+00:10:42,830 --> 00:10:46,245
+理解为什么对角线模式不是
+understand why diagonal patterns are not
+
+170
+00:10:46,250 --> 00:10:49,595
+特别适用于低等级
+particularly useful for low rank
+
+171
+00:10:49,600 --> 00:10:55,305
+压缩和这个矩阵
+compression and this this matrix of all
+
+172
+00:10:55,310 --> 00:10:57,405
+有一个非常好的财产，如果
+ones has a really nice property that if
+
+173
+00:10:57,410 --> 00:11:00,945
+我把它反过来看起来很像
+I take its inverse it looks a lot like
+
+174
+00:11:00,950 --> 00:11:03,885
+接近鳃最喜欢的矩阵
+getting close to gills favorite matrix
+
+175
+00:11:03,890 --> 00:11:07,665
+所以如果我采用这个矩阵的逆
+so if I take the inverse of this matrix
+
+176
+00:11:07,670 --> 00:11:10,455
+它有一个逆，因为它有一个
+it has an inverse because it's got ones
+
+177
+00:11:10,460 --> 00:11:17,925
+在对角线上然后它的反转是
+on the diagonal then its inverse is the
+
+178
+00:11:17,930 --> 00:11:22,425
+以下人们熟悉的矩阵
+following matrix which people familiar
+
+179
+00:11:22,430 --> 00:11:24,345
+有限差分格式将
+with finite difference schemes will
+
+180
+00:11:24,350 --> 00:11:27,315
+注意到它和之间的熟悉程度
+notice the familiarity between that and
+
+181
+00:11:27,320 --> 00:11:30,095
+一阶有限差分
+the first order finite difference
+
+182
+00:11:30,100 --> 00:11:34,005
+逼近特别是如果我走了
+approximation in particular if I go a
+
+183
+00:11:34,010 --> 00:11:35,865
+在其中两个中进一步发展
+bit further in times two of these
+
+184
+00:11:35,870 --> 00:11:41,555
+一起做这个然后就是这样
+together and do this then this is
+
+185
+00:11:41,560 --> 00:11:44,735
+基本上是吉尔最喜欢的矩阵
+essentially Gil's favourite matrix
+
+186
+00:11:44,740 --> 00:11:51,665
+除了一个条目恰好是不同的
+except one entry happens to be different
+
+187
+00:11:51,670 --> 00:11:55,455
+最终成为这个矩阵好吧
+ends up being this matrix okay which is
+
+188
+00:11:55,460 --> 00:11:58,325
+非常接近二阶中央
+very close to the second order central
+
+189
+00:11:58,330 --> 00:12:01,965
+有限差分矩阵和人有
+finite difference matrix and people have
+
+190
+00:12:01,970 --> 00:12:04,545
+非常好地研究了矩阵和公正
+very well studied that matrix and just
+
+191
+00:12:04,550 --> 00:12:06,945
+知道这是我的增益值的奇异
+know it's I gain values its singular
+
+192
+00:12:06,950 --> 00:12:08,955
+价值观，他们知道这一切
+values they know everything about that
+
+193
+00:12:08,960 --> 00:12:11,925
+矩阵，你会记得，如果我们
+matrix and you'll remember that if we
+
+194
+00:12:11,930 --> 00:12:16,365
+知道像x这样的矩阵的特征值
+know the eigenvalues of a matrix like x
+
+195
+00:12:16,370 --> 00:12:19,845
+转置x我们知道奇异值
+transpose x we know the singular values
+
+196
+00:12:19,850 --> 00:12:25,545
+因此，这允许我们通过显示
+of x so this allows us to show by the
+
+197
+00:12:25,550 --> 00:12:28,065
+事实上，我们知道这是奇异的
+fact that we know that that the singular
+
+198
+00:12:28,070 --> 00:12:33,105
+这个矩阵的值都不是很
+values of this matrix are not very
+
+199
+00:12:33,110 --> 00:12:35,595
+适合低级别他们都非零
+amenable to low rank they're all nonzero
+
+200
+00:12:35,600 --> 00:12:41,325
+他们甚至没有腐烂所以我得到了
+and they don't even decay so I'm getting
+
+201
+00:12:41,330 --> 00:12:46,485
+这个电话我打电话给吉尔和吉尔说
+this phone I rang up Gil and Gil tells
+
+202
+00:12:46,490 --> 00:12:53,885
+我这些数字
+me these numbers
+
+203
+00:12:53,890 --> 00:12:56,685
+这使我们制定出什么
+that allows us to work out exactly what
+
+204
+00:12:56,690 --> 00:12:58,455
+这个矩阵的奇异值是
+the singular values of this matrix are
+
+205
+00:12:58,460 --> 00:13:00,405
+从连接到有限
+from the connection to finite
+
+206
+00:13:00,410 --> 00:13:03,675
+差异，所以我们可以理解为什么
+differences and so we can understand why
+
+207
+00:13:03,680 --> 00:13:05,295
+看着这个不好看
+this is not good by looking at the
+
+208
+00:13:05,300 --> 00:13:07,635
+奇异值所以第一个奇异
+singular values so the first singular
+
+209
+00:13:07,640 --> 00:13:10,485
+x的值来自此表达式
+value of x is from this expression is
+
+210
+00:13:10,490 --> 00:13:14,235
+将大约像2n个以上
+going to be approximately like 2n over
+
+211
+00:13:14,240 --> 00:13:17,745
+pi又从这个表达中再次出现了
+pi and from this expression again the
+
+212
+00:13:17,750 --> 00:13:18,615
+最后一个人
+last guy
+
+213
+00:13:18,620 --> 00:13:23,265
+x的最后一个角度值是
+the last angular value of x is going to
+
+214
+00:13:23,270 --> 00:13:27,495
+约为1/2，所以这些单数
+be approximately 1/2 so these singular
+
+215
+00:13:27,500 --> 00:13:29,445
+价值都很大，他们没有得到
+values are all large they're not getting
+
+216
+00:13:29,450 --> 00:13:33,045
+如果我绘制这些单数，则接近0
+close to 0 if I plotted these singular
+
+217
+00:13:33,050 --> 00:13:38,025
+图表上的值是正确的，所以这里是
+values on a graph right so here's the
+
+218
+00:13:38,030 --> 00:13:40,935
+第一个奇异值第二个和第二个
+first singular value the second and the
+
+219
+00:13:40,940 --> 00:13:44,445
+N那么图表会是什么样子
+N then what would the graph look like
+
+220
+00:13:44,450 --> 00:13:51,885
+好的情节这些数字除以
+well plot these numbers are divided by
+
+221
+00:13:51,890 --> 00:13:54,765
+这家伙让他们都受到限制
+this guy so that they all are bounded
+
+222
+00:13:54,770 --> 00:13:59,055
+由于介于1和0的
+between 1 and 0 because of the
+
+223
+00:13:59,060 --> 00:14:01,035
+归一化，因为我除以西格玛
+normalization because I divided by Sigma
+
+224
+00:14:01,040 --> 00:14:05,025
+X中的1个，所以我们可以绘制它们和它们
+1 of X and so we can plot them and they
+
+225
+00:14:05,030 --> 00:14:12,295
+看起来会像这样的东西
+will look like this kind of thing
+
+226
+00:14:12,300 --> 00:14:16,525
+好的，这个数字恰好在这里
+okay this number happens to be here
+
+227
+00:14:16,530 --> 00:14:20,445
+他们在那里成为超过4米的PI
+where they they come to be PI over 4 M
+
+228
+00:14:20,450 --> 00:14:23,215
+好吧，这是我把这个数字除以
+okay which is me dividing this number by
+
+229
+00:14:23,220 --> 00:14:27,655
+这个号码大概还可以
+this number approximately okay so
+
+230
+00:14:27,660 --> 00:14:30,175
+三角形图案非常糟糕
+triangular patterns are extremely bad
+
+231
+00:14:30,180 --> 00:14:33,835
+对于低等级我们需要的东西或我们最少
+for low rank we need things or we least
+
+232
+00:14:33,840 --> 00:14:35,875
+直觉地认为我们需要的东西
+intuitively think that we need things
+
+233
+00:14:35,880 --> 00:14:39,265
+与行和列对齐但是
+aligned with the rows and columns but
+
+234
+00:14:39,270 --> 00:14:42,595
+圆形情况恰好也是
+the circle case is happens to also be
+
+235
+00:14:42,600 --> 00:14:48,445
+低等级，所以发生了什么事
+low rank and so what happened to the
+
+236
+00:14:48,450 --> 00:14:56,295
+日本国旗为什么是日本国旗
+Japanese flag why is the Japanese flag
+
+237
+00:14:56,300 --> 00:15:02,065
+方便低排名这是
+convenient for low rank well it's the
+
+238
+00:15:02,070 --> 00:15:03,865
+事实上它是一个圆圈而且有很多
+fact that it's a circle and there's lots
+
+239
+00:15:03,870 --> 00:15:06,745
+如果我试着，那么圆圈中的对称性
+of symmetry in a circle so if I try to
+
+240
+00:15:06,750 --> 00:15:10,675
+看一下圆圈的等级吧
+look at the rank of a circle the
+
+241
+00:15:10,680 --> 00:15:17,205
+日本国旗然后我可以约束这个级别
+Japanese flag then I can bound this rank
+
+242
+00:15:17,210 --> 00:15:22,195
+通过将日本国旗分解成
+by decomposing the Japanese flag into
+
+243
+00:15:22,200 --> 00:15:25,105
+两件事情所以这将是少
+two things so this is going to be less
+
+244
+00:15:25,110 --> 00:15:29,725
+超过或等于两个等级的等级
+than or equal to the rank of sum of two
+
+245
+00:15:29,730 --> 00:15:32,425
+矩阵，我会这样做的
+matrices and I'll do it so that the
+
+246
+00:15:32,430 --> 00:15:34,435
+分解工作我有
+decomposition works out I have the
+
+247
+00:15:34,440 --> 00:15:38,065
+我要削减排名第一
+circle I'm going to cut out a rank one
+
+248
+00:15:38,070 --> 00:15:40,945
+生活在这个中间的一块
+piece that lives in the middle of this
+
+249
+00:15:40,950 --> 00:15:48,625
+圈好了，我要剪掉一个
+circle okay and I'm gonna cut out a
+
+250
+00:15:48,630 --> 00:15:54,085
+从那个圆圈的内部广场
+square from the interior of that circle
+
+251
+00:15:54,090 --> 00:15:57,025
+好吧，我当然可以搞清楚了
+okay and I can figure out of course the
+
+252
+00:15:57,030 --> 00:15:58,825
+排名只是这些的总和为界
+rank is just bounded by the sum of those
+
+253
+00:15:58,830 --> 00:16:02,545
+两个级别这个人受到排名的限制
+two ranks this guy is bounded by rank
+
+254
+00:16:02,550 --> 00:16:05,005
+一个因为它与...高度一致
+one because it's highly aligned with the
+
+255
+00:16:05,010 --> 00:16:15,975
+因此，这个家伙被排名第一
+grid so this guy is bounded by rank one
+
+256
+00:16:15,980 --> 00:16:27,985
+这件事是加一个，现在我有
+this thing yeah plus one and now I have
+
+257
+00:16:27,990 --> 00:16:30,445
+试图了解这个的等级
+to try to understand the rank of this
+
+258
+00:16:30,450 --> 00:16:34,435
+现在这件作品有很多
+piece now this piece has lots of
+
+259
+00:16:34,440 --> 00:16:38,365
+对称性例如我们知道
+symmetry for example we know that the
+
+260
+00:16:38,370 --> 00:16:40,735
+该矩阵的等级是维度
+rank of that matrix is the dimension of
+
+261
+00:16:40,740 --> 00:16:43,645
+海岸柱空间和
+the Coast the column space and the
+
+262
+00:16:43,650 --> 00:16:46,915
+行空间的维度，所以当我们
+dimension of the row space so when we
+
+263
+00:16:46,920 --> 00:16:48,925
+因为对称性而看这个矩阵
+look at this matrix because of symmetry
+
+264
+00:16:48,930 --> 00:16:53,455
+如果我把这个矩阵分成两半
+if I divide this matrix in half along
+
+265
+00:16:53,460 --> 00:16:56,635
+列左侧的所有列
+the columns all the columns on the left
+
+266
+00:16:56,640 --> 00:16:59,935
+出现这样的列权
+appear on the right so the columns for
+
+267
+00:16:59,940 --> 00:17:02,005
+例如，这个矩阵的等级是
+example the rank of this matrix is the
+
+268
+00:17:02,010 --> 00:17:04,824
+与该矩阵的排名相同，因为
+same as the rank of that matrix because
+
+269
+00:17:04,829 --> 00:17:07,944
+我没有改变列空间没关系
+I didn't change the column space okay
+
+270
+00:17:07,949 --> 00:17:11,324
+现在我又去了，沿着行划分
+now I go again and divide along the rows
+
+271
+00:17:11,329 --> 00:17:16,405
+现在这个道路的维度
+and now the road dimension of this
+
+272
+00:17:16,410 --> 00:17:19,165
+矩阵与上半部分相同
+matrix is the same as the top half
+
+273
+00:17:19,170 --> 00:17:21,204
+因为我消灭了那些我没有的东西
+because as I wipe out those I didn't
+
+274
+00:17:21,209 --> 00:17:22,555
+更改行空间的维度
+change the dimension of the row space
+
+275
+00:17:22,560 --> 00:17:25,005
+因为行的顶部是相同的
+because the rows are the same top bottom
+
+276
+00:17:25,010 --> 00:17:27,954
+所以这就成了那个等级
+and so this becomes the rank of that
+
+277
+00:17:27,959 --> 00:17:31,435
+那里的小小矩阵因为
+tiny little matrix there and because
+
+278
+00:17:31,440 --> 00:17:34,935
+它很小，不会有更高的等级
+it's small it won't have to larger rank
+
+279
+00:17:34,940 --> 00:17:40,195
+所以这肯定比我少
+so this is definitely less than if I
+
+280
+00:17:40,200 --> 00:17:44,965
+把它分成一个小家伙吧
+divide that up a little guy here it
+
+281
+00:17:44,970 --> 00:17:50,305
+看起来像那个加上那里的另一个人
+looks like that plus the other guy there
+
+282
+00:17:50,310 --> 00:17:55,825
+看起来像
+looks like
+
+283
+00:17:55,830 --> 00:18:02,725
+加一个当然是行
+that plus one and so of course the rows
+
+284
+00:18:02,730 --> 00:18:06,495
+列是该矩阵的行空间
+the column the row space of this matrix
+
+285
+00:18:06,500 --> 00:18:08,665
+不能很高，因为这是一个
+cannot be very high because this is a
+
+286
+00:18:08,670 --> 00:18:11,275
+非常薄的矩阵有很多零
+very thin matrix there's lots of zeros
+
+287
+00:18:11,280 --> 00:18:14,125
+在那个矩阵中只有几个等等
+in that matrix only a few ones and so
+
+288
+00:18:14,130 --> 00:18:15,985
+你可以继续做一些技巧
+you can go along and do a bit of trick
+
+289
+00:18:15,990 --> 00:18:19,105
+试图弄清楚有多少行
+to try to figure out what how many rows
+
+290
+00:18:19,110 --> 00:18:23,125
+在这个矩阵中非零并且有点
+are nonzero in this matrix and a bit of
+
+291
+00:18:23,130 --> 00:18:26,395
+技巧告诉你它取决于
+trick tells you well it depends on the
+
+292
+00:18:26,400 --> 00:18:29,815
+这个原始圆的半径，如果我
+radius of this original circle so if I
+
+293
+00:18:29,820 --> 00:18:32,155
+本作的原始半径R
+make the original radius R of this
+
+294
+00:18:32,160 --> 00:18:35,725
+日本国旗然后你的约束
+Japanese flag then the bound that you
+
+295
+00:18:35,730 --> 00:18:39,465
+最终得到的将是这个矩阵R.
+end up getting will be for this matrix R
+
+296
+00:18:39,470 --> 00:18:43,975
+1个减去平方根2超过2此
+1 minus square root 2 over 2 for this
+
+297
+00:18:43,980 --> 00:18:46,675
+家伙有点更好的确保
+guy a bit of trig better make sure
+
+298
+00:18:46,680 --> 00:18:48,985
+这是一个整数，然后再来一次
+that's an integer and then again here
+
+299
+00:18:48,990 --> 00:18:51,135
+它是相同的，但对于列空间
+it's the same but for the column space
+
+300
+00:18:51,140 --> 00:18:56,575
+所以这就是我正在做的好事
+so this is me just doing trick ok and
+
+301
+00:18:56,580 --> 00:18:58,345
+它恰好在排名上受到约束
+that's a bound on the rank it happens to
+
+302
+00:18:58,350 --> 00:19:00,525
+非常好，如果你锻炼身体
+be extremely good and if you work out
+
+303
+00:19:00,530 --> 00:19:03,175
+这个等级是什么，并试图回顾
+what that rank is and try to look back
+
+304
+00:19:03,180 --> 00:19:05,335
+你会发现它非常有效率
+you'll find it's extremely efficient to
+
+305
+00:19:05,340 --> 00:19:08,185
+送日本国旗给你的朋友在
+send the Japanese flag to your friend in
+
+306
+00:19:08,190 --> 00:19:11,605
+低等级形式，因为它不是满级
+low rank form because it's not full rank
+
+307
+00:19:11,610 --> 00:19:13,855
+因为这些数字太小了
+because these numbers are so small so
+
+308
+00:19:13,860 --> 00:19:15,745
+这此出来是像
+this this comes out to be like
+
+309
+00:19:15,750 --> 00:19:21,865
+大约比1/2小得多
+approximately 1/2 so much smaller than
+
+310
+00:19:21,870 --> 00:19:24,505
+你会期待什么，因为记住了
+what you would expect because remember a
+
+311
+00:19:24,510 --> 00:19:27,415
+圆几乎是反版
+circle is almost the anti version of
+
+312
+00:19:27,420 --> 00:19:29,845
+与网格对齐但是是的
+aligned with the grid but yeah it's
+
+313
+00:19:29,850 --> 00:19:34,125
+仍然低排名好
+still low rank ok
+
+314
+00:19:34,130 --> 00:19:39,505
+现在我们提出了大多数矩阵
+now most matrices that we come up with
+
+315
+00:19:39,510 --> 00:19:42,325
+在计算数学中并不完全是一个
+in computational math are not exactly a
+
+316
+00:19:42,330 --> 00:19:47,835
+有限等级它们具有数值等级
+finite rank they are of numerical rank
+
+317
+00:19:47,840 --> 00:19:54,985
+所以我就这么定义了
+and so I just defined that so the
+
+318
+00:19:54,990 --> 00:19:58,345
+矩阵的数值排名非常
+numerical rank of a matrix it's very
+
+319
+00:19:58,350 --> 00:20:00,025
+除了我们允许之外，类似于排名
+similar to the rank except we allow
+
+320
+00:20:00,030 --> 00:20:02,155
+我们自己有点摆动的空间
+ourselves a little bit of wiggle room
+
+321
+00:20:02,160 --> 00:20:05,155
+当我们定义它，从而使量
+when we define it and so that amount of
+
+322
+00:20:05,160 --> 00:20:09,445
+wiggleroom将是一个名为的参数
+wiggle room will be a parameter called
+
+323
+00:20:09,450 --> 00:20:12,415
+洞叫Epsilon好吧那是一个
+hole called Epsilon okay that's a
+
+324
+00:20:12,420 --> 00:20:14,245
+我正在考虑将epsilon视为一种
+tolerance I'm thinking of epsilon as a
+
+325
+00:20:14,250 --> 00:20:17,815
+宽容是摆动的量
+tolerance that's the amount of wiggle
+
+326
+00:20:17,820 --> 00:20:23,395
+房间我会给自己好的，我们
+room I'm gonna give myself okay and we
+
+327
+00:20:23,400 --> 00:20:26,565
+说数字排名
+say that the numerical rank
+
+328
+00:20:26,570 --> 00:20:29,065
+我会在那里放一个epsilon来表示一个
+I'll put an epsilon there to denote a
+
+329
+00:20:29,070 --> 00:20:35,065
+如果K是第一个，则数值等级为K.
+numerical rank is K if K is the first
+
+330
+00:20:35,070 --> 00:20:37,315
+奇异值或最后一个奇异
+singular value or the last singular
+
+331
+00:20:37,320 --> 00:20:39,685
+以下是epsilon以上的值
+value above epsilon in the following
+
+332
+00:20:39,690 --> 00:20:41,755
+感觉我正在复制上面的定义
+sense I'm copying the definition above
+
+333
+00:20:41,760 --> 00:20:45,085
+但如果使用epsilon而不是零
+but with epsilon is instead of zeros if
+
+334
+00:20:45,090 --> 00:20:50,985
+这个奇异值小于epsilon
+this singular value is less than epsilon
+
+335
+00:20:50,990 --> 00:20:54,825
+相对而且案件不是
+relatively and the case one was not
+
+336
+00:20:54,830 --> 00:20:59,035
+下面所以k加1是第一个单数
+below so k plus 1 is the first singular
+
+337
+00:20:59,040 --> 00:21:01,795
+这个亲戚的价值低于epsilon
+value below epsilon in this relative
+
+338
+00:21:01,800 --> 00:21:09,385
+感觉当然是0x的等级如果
+sense so of course the rank of 0x if
+
+339
+00:21:09,390 --> 00:21:11,785
+这被定义为与它相同
+that was defined it's the same as the
+
+340
+00:21:11,790 --> 00:21:15,145
+X的等级所以这只是允许的
+rank of X so this is just allowing
+
+341
+00:21:15,150 --> 00:21:18,145
+我们自己有些摆动，但这是
+ourselves some wiggle room but this is
+
+342
+00:21:18,150 --> 00:21:19,675
+实际上我们更感兴趣的是
+actually what we're interested more in
+
+343
+00:21:19,680 --> 00:21:22,135
+在实践中我不一定要
+in practice I don't want to necessarily
+
+344
+00:21:22,140 --> 00:21:25,015
+把我的朋友发送到确切的标志
+send my friend the flag to exact
+
+345
+00:21:25,020 --> 00:21:27,205
+我真的很高兴
+precision I would actually be happy to
+
+346
+00:21:27,210 --> 00:21:30,325
+向我的朋友发送最多16位数的旗帜
+send my friend the flag up to 16 digits
+
+347
+00:21:30,330 --> 00:21:32,545
+例如，它们不是精确的
+of precision for example they're not
+
+348
+00:21:32,550 --> 00:21:33,895
+要告诉之间的区别
+going to tell the difference between
+
+349
+00:21:33,900 --> 00:21:36,565
+那两个旗帜，如果我可以逃脱
+those two flags and if I can get away
+
+350
+00:21:36,570 --> 00:21:39,985
+压缩矩阵更多
+with compressing the matrix a lot more
+
+351
+00:21:39,990 --> 00:21:41,485
+一旦我有回旋余地的一点点
+once I have a little bit of wiggle room
+
+352
+00:21:41,490 --> 00:21:48,865
+那将是一件好事，所以我们也是如此
+that would be a good thing so what so we
+
+353
+00:21:48,870 --> 00:21:59,005
+从方舟知道一个金元那个
+know from the ark a kin-yuen that the
+
+354
+00:21:59,010 --> 00:22:01,705
+奇异的价值告诉我们我们能做得多好
+singular values tell us how well we can
+
+355
+00:22:01,710 --> 00:22:05,335
+通过低秩矩阵近似X.
+approximate X by a low rank matrix in
+
+356
+00:22:05,340 --> 00:22:10,545
+特别是我们知道k加1
+particular we know that the k plus 1
+
+357
+00:22:10,550 --> 00:22:14,755
+x的奇异值告诉我们X的好坏
+singular value of x tells us how well X
+
+358
+00:22:14,760 --> 00:22:19,335
+可以通过秩K矩阵来近似
+can be approximated by a rank K matrix
+
+359
+00:22:19,340 --> 00:22:22,215
+好吧，例如当排名是
+okay for example when the rank was
+
+360
+00:22:22,220 --> 00:22:27,304
+正好K西格玛K加1是0和
+exactly K the Sigma K plus 1 was 0 and
+
+361
+00:22:27,309 --> 00:22:29,924
+然后我们发现这是0
+then this came out to be 0 and we found
+
+362
+00:22:29,929 --> 00:22:33,374
+这里X恰好是一个等级K矩阵
+there X was exactly a rank K matrix here
+
+363
+00:22:33,379 --> 00:22:35,355
+因为我们有摆动的房间
+because we have the wiggle room the
+
+364
+00:22:35,360 --> 00:22:37,845
+epsilon我们得到的近似值不是
+epsilon we get an approximation not an
+
+365
+00:22:37,850 --> 00:22:43,575
+确切地说，这告诉我们我们有多好
+exact so this is telling us how well we
+
+366
+00:22:43,580 --> 00:22:49,294
+可以通过秩K矩阵近似X.
+can approximate X by a rank K matrix
+
+367
+00:22:49,299 --> 00:22:52,335
+好的，这就是奇异值
+okay that's what the singular values are
+
+368
+00:22:52,340 --> 00:22:57,644
+告诉我们，这样我们就可以尝试了
+telling us and so this allows us to try
+
+369
+00:22:57,649 --> 00:22:59,894
+我们最好压缩矩阵但使用
+our best to compress matrices but use
+
+370
+00:22:59,899 --> 00:23:04,575
+低秩近似而不是做
+low-rank approximation rather than doing
+
+371
+00:23:04,580 --> 00:23:08,744
+确切的事情，当然还有一个
+things exactly and of course on a
+
+372
+00:23:08,749 --> 00:23:10,575
+我们使用浮点时的计算机
+computer when we're using floating-point
+
+373
+00:23:10,580 --> 00:23:14,235
+算术或计算机，因为我们
+arithmetic or on a computer because we
+
+374
+00:23:14,240 --> 00:23:17,864
+总是将数字舍入到最近的16
+always round numbers to the nearest 16
+
+375
+00:23:17,869 --> 00:23:21,225
+如果epsilon是16位数，则为数字
+digit number if epsilon was 16 digits
+
+376
+00:23:21,230 --> 00:23:23,294
+你的电脑将不能告诉
+your computer wouldn't be able to tell
+
+377
+00:23:23,299 --> 00:23:29,565
+X或X之间的差异等级K.
+the difference between X or X the rank K
+
+378
+00:23:29,570 --> 00:23:32,534
+如果这个数字是近似值
+approximation if this number was
+
+379
+00:23:32,539 --> 00:23:35,565
+满意这表达你的电脑
+satisfied this expression your computer
+
+380
+00:23:35,570 --> 00:23:37,605
+会认为x和XK是一样的
+would think of x and XK as the same
+
+381
+00:23:37,610 --> 00:23:40,364
+矩阵因为它不可避免地会变圆
+matrix because it would inevitably round
+
+382
+00:23:40,369 --> 00:23:46,244
+这对Epsilon内的epsilon都没关系
+both to epsilon within Epsilon okay so
+
+383
+00:23:46,249 --> 00:23:49,004
+什么样的矩阵在数字上
+what kind of matrices are numerically of
+
+384
+00:23:49,009 --> 00:24:01,175
+降低
+lower
+
+385
+00:24:01,180 --> 00:24:06,165
+当然所有低级矩阵都是
+of course all low rank matrices are
+
+386
+00:24:06,170 --> 00:24:09,165
+数字上的低等级因为绝对
+numerically of low rank because absolute
+
+387
+00:24:09,170 --> 00:24:16,545
+摆动的房间只能帮助你
+the wiggle room can only help you but
+
+388
+00:24:16,550 --> 00:24:18,335
+它的远不止于此
+it's far more than that
+
+389
+00:24:18,340 --> 00:24:20,895
+有很多满级矩阵
+there are many full rank matrices
+
+390
+00:24:20,900 --> 00:24:22,845
+没有任何单数的矩阵
+matrices that don't have any singular
+
+391
+00:24:22,850 --> 00:24:25,245
+值为0但是单数
+values that are 0 but the singular
+
+392
+00:24:25,250 --> 00:24:28,695
+价值迅速衰减到零
+values decay rapidly to zero that are
+
+393
+00:24:28,700 --> 00:24:31,365
+具有低数值的满秩矩阵
+full rank matrices with low numerical
+
+394
+00:24:31,370 --> 00:24:34,155
+排名因为摆动空间所以
+rank because of the wiggle room so for
+
+395
+00:24:34,160 --> 00:24:39,015
+例如这里是典型的矩阵
+example here is the classic matrix that
+
+396
+00:24:39,020 --> 00:24:44,145
+如果我给你这个，这适合这个政权
+fits this regime if I give you this this
+
+397
+00:24:44,150 --> 00:24:51,435
+被称为希尔伯特矩阵，这是一个
+is called the Hilbert matrix this is a
+
+398
+00:24:51,440 --> 00:24:53,775
+碰巧有极端的矩阵
+matrix that happens to have extremely
+
+399
+00:24:53,780 --> 00:24:57,825
+低数值排名，但实际上
+low numerical rank but it's actually
+
+400
+00:24:57,830 --> 00:25:01,245
+满级，这意味着我可以
+full rank which means that I can
+
+401
+00:25:01,250 --> 00:25:06,135
+通过秩K矩阵近似h2
+approximate h2 by a rank K matrix where
+
+402
+00:25:06,140 --> 00:25:09,075
+K非常小，但为什么呢
+K is quite small very well but why did
+
+403
+00:25:09,080 --> 00:25:11,055
+你给我一些摆动的空间，但它是
+you give me some wiggle room but it's
+
+404
+00:25:11,060 --> 00:25:13,755
+从某种意义上说，不是低等级矩阵
+not a low rank matrix in the sense that
+
+405
+00:25:13,760 --> 00:25:16,095
+如果epsilon为0，那么你不允许
+if epsilon was 0 here you didn't allow
+
+406
+00:25:16,100 --> 00:25:17,835
+我是一个单数的蠕动室
+me the wriggle room all the singular
+
+407
+00:25:17,840 --> 00:25:21,575
+这个矩阵的值是正的
+values of this matrix are positive so
+
+408
+00:25:21,580 --> 00:25:26,655
+它的低数值秩但不是的
+it's of low numerical rank but not of
+
+409
+00:25:26,660 --> 00:25:29,085
+它不是另一个低等级矩阵
+it's not a low rank matrix the other
+
+410
+00:25:29,090 --> 00:25:32,445
+经典案例中的经典案例
+classical case the classic example which
+
+411
+00:25:32,450 --> 00:25:34,905
+在这方面激发了很多研究
+motivated a lot of the research in this
+
+412
+00:25:34,910 --> 00:25:38,205
+区域是矩阵上的随机区域，所以这里是
+area was the random on matrix so here is
+
+413
+00:25:38,210 --> 00:25:49,425
+vandermonde矩阵是N乘n版本
+the vandermonde matrix an N by n version
+
+414
+00:25:49,430 --> 00:25:56,385
+我认为消费税是真实的
+of it I think of the excise is real this
+
+415
+00:25:56,390 --> 00:26:01,145
+非常多
+is very much
+
+416
+00:26:01,150 --> 00:26:03,645
+这是出现时的矩阵
+this is the matrix that comes up when
+
+417
+00:26:03,650 --> 00:26:05,675
+你试着做多项式插值
+you try to do polynomial interpolation
+
+418
+00:26:05,680 --> 00:26:11,235
+在实际情况下，这是一个非常糟糕的
+at real points this is an extremely bad
+
+419
+00:26:11,240 --> 00:26:13,415
+矩阵处理因为它是
+matrix to deal with because it's
+
+420
+00:26:13,420 --> 00:26:16,785
+在数字上低等级，通常是你
+numerically low rank and often you
+
+421
+00:26:16,790 --> 00:26:18,555
+实际上想要解决一个线性系统
+actually want to solve a linear system
+
+422
+00:26:18,560 --> 00:26:22,515
+用这个矩阵和数字低等级
+with this matrix and numerical low rank
+
+423
+00:26:22,520 --> 00:26:24,555
+暗示这是非常难的
+implies that it's extremely hard to
+
+424
+00:26:24,560 --> 00:26:30,435
+因此这是低等级数值低
+invert so this is low rank numerical low
+
+425
+00:26:30,440 --> 00:26:31,785
+排名并不总是对你好
+rank is not always good for you
+
+426
+00:26:31,790 --> 00:26:39,995
+好的，我们经常希望我们想要逆
+okay often we want we want the inverse
+
+427
+00:26:40,000 --> 00:26:47,705
+存在，但很难，因为
+which exists but it's difficult because
+
+428
+00:26:47,710 --> 00:27:05,145
+因为他很低，所以人们有
+because he has low okay so people have
+
+429
+00:27:05,150 --> 00:27:06,675
+一直试图理解为什么这些
+been trying to understand why these
+
+430
+00:27:06,680 --> 00:27:10,605
+矩阵在数值上是低等级的
+matrices are numerically of low rank for
+
+431
+00:27:10,610 --> 00:27:15,065
+多年和经典的原因
+a number of years and the classic reason
+
+432
+00:27:15,070 --> 00:27:17,775
+为什么有这么多的低阶矩阵
+why there are so many low rank matrices
+
+433
+00:27:17,780 --> 00:27:21,105
+因为世界是平稳的
+is because the the world is smooth as
+
+434
+00:27:21,110 --> 00:27:24,755
+人们说他们说世界是平稳的
+people say they say the world is smooth
+
+435
+00:27:24,760 --> 00:27:30,765
+这就是为什么数值矩阵低的原因
+that's why matrices of numerical low
+
+436
+00:27:30,770 --> 00:27:36,945
+排名并说明我的观点
+rank and to illustrate that point I will
+
+437
+00:27:36,950 --> 00:27:38,315
+举个例子
+do an example
+
+438
+00:27:38,320 --> 00:27:40,845
+这是经典的理解
+this is classically understood
+
+439
+00:27:40,850 --> 00:27:49,635
+一个名叫Reid1983的男人就是这样
+a man called Reid 1983 and that's this
+
+440
+00:27:49,640 --> 00:27:51,885
+这就是他的理由，我有一个
+this is what his reason was I have a
+
+441
+00:27:51,890 --> 00:27:54,345
+JohnReid的照片他不是他不是
+picture of John Reid he doesn't he's not
+
+442
+00:27:54,350 --> 00:27:56,745
+非常有名，所以我想尽量确保
+very famous so I like try to make sure
+
+443
+00:27:56,750 --> 00:28:00,175
+他的照片四处传播
+his picture gets around
+
+444
+00:28:00,180 --> 00:28:01,795
+它正在弹钢琴就像一个人
+it's playing the piano that's like one
+
+445
+00:28:01,800 --> 00:28:03,055
+那能找到的唯一的照片
+of the only pictures that could find of
+
+446
+00:28:03,060 --> 00:28:06,925
+他这么干嘛，为什么呢
+him so what is in this reason why do
+
+447
+00:28:06,930 --> 00:28:10,515
+人们说这很好，这是一个例子
+people say this well here's an example
+
+448
+00:28:10,520 --> 00:28:13,255
+如果我采取一个说明它
+that illustrates it if I take a
+
+449
+00:28:13,260 --> 00:28:20,065
+两个变量的多项式和I的变量
+polynomial in two variables and I for
+
+450
+00:28:20,070 --> 00:28:21,805
+例如，这是两个多项式
+example this is a polynomial of two
+
+451
+00:28:21,810 --> 00:28:25,615
+变量和我的X矩阵来自
+variables and my X matrix comes from
+
+452
+00:28:25,620 --> 00:28:29,685
+采样多项式是整数
+sampling that polynomial are integers
+
+453
+00:28:29,690 --> 00:28:39,685
+例如，这个矩阵然后那个矩阵
+for example this matrix then that matrix
+
+454
+00:28:39,690 --> 00:28:45,595
+碰巧在数学上排名很低
+happens to be of low rank mathematically
+
+455
+00:28:45,600 --> 00:28:50,365
+低等级与epsilon等于零的原因
+of low rank with epsilon equals zero why
+
+456
+00:28:50,370 --> 00:28:53,395
+如果我把X写成一个就好了
+is that well if I write down X as a as
+
+457
+00:28:53,400 --> 00:28:55,195
+就矩阵而言，您可以轻松看到
+in terms of matrices you can easily see
+
+458
+00:28:55,200 --> 00:28:58,105
+它所以这是由所有的矩阵起来
+it so this is made up of a matrix of all
+
+459
+00:28:58,110 --> 00:29:06,235
+那些加上J的矩阵，所以它是12
+ones plus a matrix of J's so that's 1 2
+
+460
+00:29:06,240 --> 00:29:11,755
+多达n12多达n因为每
+up to n 1 2 up to n because the every
+
+461
+00:29:11,760 --> 00:29:13,435
+该矩阵的输入仅取决于
+entry of that matrix just depends on the
+
+462
+00:29:13,440 --> 00:29:17,095
+行索引然后这家伙取决于
+row index and then this guy depends on
+
+463
+00:29:17,100 --> 00:29:20,575
+既J和K，所以这是一个乘法
+both J and K so this is a multiplication
+
+464
+00:29:20,580 --> 00:29:27,375
+表右，所以这是n24到2Nn
+table right so this is n 2 4 up to 2 N n
+
+465
+00:29:27,380 --> 00:29:35,395
+2nnsquareok清楚所有的矩阵
+2n n square ok clearly the matrix of all
+
+466
+00:29:35,400 --> 00:29:42,715
+者是一个秩一点矩阵具有相同的
+ones is a rank one matrix the same with
+
+467
+00:29:42,720 --> 00:29:44,935
+这家伙列空间只是
+this guy the column space is just of
+
+468
+00:29:44,940 --> 00:29:48,565
+尺寸1，这个家伙发生了
+dimension 1 and this guy happens that
+
+469
+00:29:48,570 --> 00:29:50,815
+最后一个人也恰好是排名
+the last guy also happens to be of rank
+
+470
+00:29:50,820 --> 00:29:54,405
+1，因为我可以写在这个矩阵
+1 because I can write this matrix in
+
+471
+00:29:54,410 --> 00:30:02,425
+等级1形式是列向量Rho
+Rank 1 form which is a column vector Rho
+
+472
+00:30:02,430 --> 00:30:08,165
+矢量所以这个矩阵X的等级为3
+vector so this matrix X is of rank 3
+
+473
+00:30:08,170 --> 00:30:15,245
+我猜最多迈克3是怎么回事
+I guess at most Mike 3 is what about
+
+474
+00:30:15,250 --> 00:30:20,705
+肖肖尼现在好吧，当然这不是
+Shoshone okay now of course this isn't
+
+475
+00:30:20,710 --> 00:30:23,765
+得到数字低排名，所以让我们
+got to numerical low rank yet so let's
+
+476
+00:30:23,770 --> 00:30:29,795
+ReidReid知道，让自己在那里
+get ourselves there so Reid Reid knew
+
+477
+00:30:29,800 --> 00:30:32,705
+这对他说自己好不好
+this and he said to himself okay well if
+
+478
+00:30:32,710 --> 00:30:36,335
+如果X实际上我可以近似
+I can approximate if X is actually
+
+479
+00:30:36,340 --> 00:30:38,945
+来自抽样功能和我
+coming from sampling a function and I
+
+480
+00:30:38,950 --> 00:30:41,075
+通过多项式逼近该函数
+approximate that function by polynomial
+
+481
+00:30:41,080 --> 00:30:43,925
+然后我会让自己变得低级别
+then I'm going to get myself a low-rank
+
+482
+00:30:43,930 --> 00:30:46,865
+近似并得到一个约束
+approximation and get a bound on the
+
+483
+00:30:46,870 --> 00:30:52,985
+数字排名如此一般如此我
+numerical rank so so in general if I
+
+484
+00:30:52,990 --> 00:30:55,735
+给你一个两个变量的多项式
+give you a polynomial of two variables
+
+485
+00:30:55,740 --> 00:30:59,915
+可以写下来的度M
+which can be written down its degree M
+
+486
+00:30:59,920 --> 00:31:05,495
+在x和y中，让我们说保留这些
+in both x and y let's say keep these
+
+487
+00:31:05,500 --> 00:31:09,655
+索引远离矩阵索引I.
+indexes away from the matrix index I
+
+488
+00:31:09,660 --> 00:31:13,865
+给你这样的多项式，我走了
+give you this such polynomial and I go
+
+489
+00:31:13,870 --> 00:31:19,645
+离开，我取样并制作矩阵X.
+away and I sample it and make a matrix X
+
+490
+00:31:19,650 --> 00:31:23,225
+然后通过查看每个术语X.
+then X by looking at each term
+
+491
+00:31:23,230 --> 00:31:26,065
+就像我在那里一样，我们会有
+individually like I did there we'll have
+
+492
+00:31:26,070 --> 00:31:30,905
+数学上低等级与epsilon
+low rank mathematically with epsilon
+
+493
+00:31:30,910 --> 00:31:34,805
+等于零，我们至多M的平方
+equals zero we have at most M Squared
+
+494
+00:31:34,810 --> 00:31:38,195
+排名如果M是三或四或十
+rank and if M is three or four or ten it
+
+495
+00:31:38,200 --> 00:31:40,835
+因为这个X可能会很低
+possibly could be low because this X
+
+496
+00:31:40,840 --> 00:31:44,855
+可能是一个大矩阵好，所以我们
+could be a large matrix okay so what we
+
+497
+00:31:44,860 --> 00:31:47,285
+为希尔伯特矩阵所做的确定没问题
+did for the Hilbert matrix was said okay
+
+498
+00:31:47,290 --> 00:31:49,835
+好好看看那家伙看起来那个人
+well look at that guy that guy looks
+
+499
+00:31:49,840 --> 00:31:52,355
+就像它正在采样它看起来的功能
+like it's sampling a function it looks
+
+500
+00:31:52,360 --> 00:31:54,365
+就像它在X上对函数1进行采样一样
+like it's sampling the function 1 over X
+
+501
+00:31:54,370 --> 00:31:58,285
+加y减1，所以他对自己说
+plus y minus 1 so he said to himself
+
+502
+00:31:58,290 --> 00:32:03,575
+好吧，如果我看看希尔伯特，那就是X.
+well that X if I look at the Hilbert
+
+503
+00:32:03,580 --> 00:32:08,735
+矩阵然后是一个函数的抽样
+matrix then that is sampling a function
+
+504
+00:32:08,740 --> 00:32:13,325
+它恰好不是一个多项式它
+it happens to not be a polynomial it
+
+505
+00:32:13,330 --> 00:32:16,745
+碰巧是这个功能，但那是
+happens to be this function but that's
+
+506
+00:32:16,750 --> 00:32:19,085
+好的，因为采样多项式是
+okay because sampling polynomials are
+
+507
+00:32:19,090 --> 00:32:21,175
+整数整数给出
+integer integers gives
+
+508
+00:32:21,180 --> 00:32:24,595
+低排名可能正好采样顺畅
+low rank exactly maybe sampling smooth
+
+509
+00:32:24,600 --> 00:32:27,955
+像这样的函数函数可以
+functions functions like this can be
+
+510
+00:32:27,960 --> 00:32:29,815
+很好地近似于多项式和
+well approximated by polynomials and
+
+511
+00:32:29,820 --> 00:32:32,235
+因此具有较低的数值等级和
+therefore have low numerical rank and
+
+512
+00:32:32,240 --> 00:32:34,585
+这就是他在这种情况下所做的
+that's that's what he did in this case
+
+513
+00:32:34,590 --> 00:32:38,185
+所以这里他做得很好，他试图找到一个
+so here's he did fine he tried to find a
+
+514
+00:32:38,190 --> 00:32:42,205
+P是Fin的多项式近似
+P a polynomial approximation to F in
+
+515
+00:32:42,210 --> 00:32:44,485
+特别是他看着这个
+particular he looked at exactly this
+
+516
+00:32:44,490 --> 00:32:51,625
+那种近似所以他有一些
+kind of approximation so he has some
+
+517
+00:32:51,630 --> 00:32:54,895
+数字在这里，以便事情得到解决
+numbers here so that things get resolved
+
+518
+00:32:54,900 --> 00:32:59,665
+后来他试图找到一个这样做的P.
+later he tried to find a P that did this
+
+519
+00:32:59,670 --> 00:33:09,385
+那种近似然后他会
+kind of approximation and then he would
+
+520
+00:33:09,390 --> 00:33:14,215
+开发X的低秩近似
+develop a low-rank approximation to X by
+
+521
+00:33:14,220 --> 00:33:18,775
+抽样P所以他会说好的Y
+sampling P so he would say okay well Y
+
+522
+00:33:18,780 --> 00:33:26,455
+如果我让Y成为P的样本
+if I let Y be a sampling of P then from
+
+523
+00:33:26,460 --> 00:33:27,775
+事实上F是一个很好的近似值
+the fact that F is a good approximation
+
+524
+00:33:27,780 --> 00:33:30,145
+到PX是好的Y是好的
+to P X is a good Y is a good
+
+525
+00:33:30,150 --> 00:33:33,805
+近似于X，所以这有
+approximation to X and so this has
+
+526
+00:33:33,810 --> 00:33:42,325
+有限的等级你写下这个
+finite rank you wrote down that this
+
+527
+00:33:42,330 --> 00:33:47,635
+必须坚持，epsilon出现在这里
+must hold and the epsilon comes out here
+
+528
+00:33:47,640 --> 00:33:49,825
+因为我选择了这些因素
+because I do these factors were chosen
+
+529
+00:33:49,830 --> 00:33:52,885
+恰到好处地选择除以n
+just right the divided by n was chosen
+
+530
+00:33:52,890 --> 00:33:55,335
+所以epsilon就在那里出现了
+so that the epsilon came out just there
+
+531
+00:33:55,340 --> 00:33:58,165
+好吧这么多年了
+okay so for many years that was kind of
+
+532
+00:33:58,170 --> 00:33:59,875
+人们愿意的典型理由
+the canonical reason that people would
+
+533
+00:33:59,880 --> 00:34:03,265
+如果矩阵X是，那就好了
+give that well if the matrix X is
+
+534
+00:34:03,270 --> 00:34:07,585
+从平滑函数中采样然后我们
+sampled from a smooth function then we
+
+535
+00:34:07,590 --> 00:34:08,845
+可以通过a近似该函数
+can approximate that function by a
+
+536
+00:34:08,850 --> 00:34:13,045
+多项式并得到多项式秩
+polynomial and get polynomial rank
+
+537
+00:34:13,050 --> 00:34:16,375
+近似，因此矩阵
+approximations and therefore the matrix
+
+538
+00:34:16,380 --> 00:34:22,435
+X的数值排名很低
+X will be of low numerical rank there's
+
+539
+00:34:22,440 --> 00:34:26,315
+这个推理的问题
+an issue with this reasoning
+
+540
+00:34:26,320 --> 00:34:28,565
+特别是对于希尔伯特矩阵
+especially for the Hilbert matrix that
+
+541
+00:34:28,570 --> 00:34:31,715
+它实际上并没有那么好用
+it doesn't actually work that well so
+
+542
+00:34:31,720 --> 00:34:36,245
+例如，如果我把1000乘1000
+for example if I take the 1000 by 1000
+
+543
+00:34:36,250 --> 00:34:40,825
+希尔伯特矩阵，我看看它的排名
+Hilbert matrix and I look at its rank
+
+544
+00:34:40,830 --> 00:34:42,875
+好吧我已经告诉过你了
+okay well I've already told you this is
+
+545
+00:34:42,880 --> 00:34:46,924
+满级，你将获得一千个
+full rank you'll get a thousand all the
+
+546
+00:34:46,929 --> 00:34:51,155
+如果我看，奇异值是正的
+singular values are positive if I look
+
+547
+00:34:51,160 --> 00:34:56,075
+在这个1000的数字排名
+at the numerical rank of this 1000 by
+
+548
+00:34:56,080 --> 00:34:58,595
+1000希尔伯特矩阵，我计算它
+1000 Hilbert matrix and I compute it I
+
+549
+00:34:58,600 --> 00:35:01,145
+计算SVD，我看看有多少
+compute the SVD and I look at how many
+
+550
+00:35:01,150 --> 00:35:06,695
+在epsilon上面，epsilon是10到
+are above epsilon where epsilon is 10 to
+
+551
+00:35:06,700 --> 00:35:10,595
+减去15这意味着我可以
+the minus 15 so that means I can
+
+552
+00:35:10,600 --> 00:35:12,815
+由1000希尔伯特逼近1000
+approximate the 1,000 by 1,000 Hilbert
+
+553
+00:35:12,820 --> 00:35:16,535
+矩阵由秩28矩阵而且只给出
+matrix by rank 28 matrix and only give
+
+554
+00:35:16,540 --> 00:35:20,525
+一个精确到15的数字
+up a digit that will be exact to 15
+
+555
+00:35:20,530 --> 00:35:25,295
+这是一个巨大的数字，所以这是
+digits which is a huge amount so this is
+
+556
+00:35:25,300 --> 00:35:30,865
+我们从实践中得到的东西，但杂草
+what we get from in practice but weeds
+
+557
+00:35:30,870 --> 00:35:41,675
+这里的说法表明，军衔
+argument here shows that the rank of
+
+558
+00:35:41,680 --> 00:35:45,515
+这个矩阵的数值排名就是那个
+this matrix the numerical rank is that
+
+559
+00:35:45,520 --> 00:35:50,885
+最让它不会做了很好的工作在
+most so it doesn't do a very good job on
+
+560
+00:35:50,890 --> 00:35:55,765
+用于界定等级的希尔伯特矩阵
+the Hilbert matrix for bounding the rank
+
+561
+00:35:55,770 --> 00:35:59,135
+对，所以里德出现了这个
+right so Reed comes along takes this
+
+562
+00:35:59,140 --> 00:36:01,115
+函数他试图找到一个多项式
+function he tries to find a polynomial
+
+563
+00:36:01,120 --> 00:36:02,195
+这样做
+that does this
+
+564
+00:36:02,200 --> 00:36:05,015
+而10到15的他发现了
+whereas 10 to the minus 15 he finds that
+
+565
+00:36:05,020 --> 00:36:07,415
+他需要的项数，他
+he needs the number of terms that he
+
+566
+00:36:07,420 --> 00:36:10,645
+这个表达式的需求在这里
+needs in this expression here is around
+
+567
+00:36:10,650 --> 00:36:15,935
+719，因此这是排名
+719 and therefore that's the rank that
+
+568
+00:36:15,940 --> 00:36:18,515
+他在数字排名上受到了限制
+he gets the bound on the numerical rank
+
+569
+00:36:18,520 --> 00:36:22,955
+麻烦是719告诉我们的
+the trouble is that 719 tells us that
+
+570
+00:36:22,960 --> 00:36:25,445
+这个数字并不低
+the numerical this is not of low
+
+571
+00:36:25,450 --> 00:36:29,255
+数字排名，但我们知道它是如此
+numerical rank but we know it it so it's
+
+572
+00:36:29,260 --> 00:36:34,325
+这是令人不满意的原因所以有
+it's unsatisfactory reason so there's
+
+573
+00:36:34,330 --> 00:36:37,085
+有几个人试图上来
+been several people trying to come up
+
+574
+00:36:37,090 --> 00:36:40,185
+有更合适的理由
+with more appropriate reasons that
+
+575
+00:36:40,190 --> 00:36:45,555
+布莱恩在这里第二十八位，所以一位
+Blayne the twenty-eighth here and so one
+
+576
+00:36:45,560 --> 00:36:49,695
+我开始使用的原因是
+reason that has I've started to use is
+
+577
+00:36:49,700 --> 00:36:52,755
+另一个稍微不同的方式
+that another slightly different way of
+
+578
+00:36:52,760 --> 00:36:56,715
+看着要说的东西
+looking at things which is to say the
+
+579
+00:36:56,720 --> 00:37:09,584
+世界是学期现在西尔维斯特什么的
+world is semester now Sylvester what
+
+580
+00:37:09,589 --> 00:37:10,905
+这意味着什么是这个词
+does that mean what is the word
+
+581
+00:37:10,910 --> 00:37:13,125
+在这种情况下，西尔维斯特意味着它意味着
+Sylvester mean in this case it means
+
+582
+00:37:13,130 --> 00:37:15,614
+矩阵满足某种类型
+that the matrices satisfy a certain type
+
+583
+00:37:15,619 --> 00:37:17,864
+等式称为西尔维斯特
+of equation called the Sylvester
+
+584
+00:37:17,869 --> 00:37:22,655
+等式，所以原因是真的
+equation and so the reason is really
+
+585
+00:37:22,660 --> 00:37:27,395
+许多这些矩阵满足a
+many of these matrices satisfy a
+
+586
+00:37:27,400 --> 00:37:29,834
+西尔维斯特方程式并且需要
+Sylvester equation and that takes the
+
+587
+00:37:29,839 --> 00:37:45,165
+对于一些B和C来说形式还可以，所以X是
+form okay for some a B and C so X is
+
+588
+00:37:45,170 --> 00:37:47,235
+您想要展示的感兴趣的矩阵
+your matrix of interest you want to show
+
+589
+00:37:47,240 --> 00:37:51,555
+X的数值低等级和任务
+X's of numerical low rank and the task
+
+590
+00:37:51,560 --> 00:37:55,025
+在手边就是找到一个B和C这样的
+at hand is to find an a B and C so that
+
+591
+00:37:55,030 --> 00:38:00,225
+对于方程好吗X满足
+X satisfies that equation okay for
+
+592
+00:38:00,230 --> 00:38:02,354
+例如两个矩阵的所有矩阵
+example all the matrices the two
+
+593
+00:38:02,359 --> 00:38:05,045
+我已经登上了矩阵
+matrices I've had on the board
+
+594
+00:38:05,050 --> 00:38:09,735
+满足semestre方程西尔威斯特
+satisfy a semestre equation a sylvester
+
+595
+00:38:09,740 --> 00:38:11,805
+矩阵方程有aaB和a
+matrix equation there is an a a B and a
+
+596
+00:38:11,810 --> 00:38:15,185
+例如，他们这样做的C.
+C for which they do this for example
+
+597
+00:38:15,190 --> 00:38:18,165
+记住我们的希尔伯特矩阵
+remember the Hilbert matrix which we
+
+598
+00:38:18,170 --> 00:38:21,515
+有那里我会再次把它写下来
+have there I'll write it down again
+
+599
+00:38:21,520 --> 00:38:27,015
+满足这些条目所以我们所有
+satisfies has these entries so all we
+
+600
+00:38:27,020 --> 00:38:29,084
+需要做的是试图找出一个
+need to do is to try to figure out an a
+
+601
+00:38:29,089 --> 00:38:32,625
+和B然后是C，这样我们就可以做到
+and B and then a C so that we can make
+
+602
+00:38:32,630 --> 00:38:34,635
+它适合西尔维斯特方程式有很多
+it fit a Sylvester equation there's many
+
+603
+00:38:34,640 --> 00:38:36,975
+这样做的不同方式
+different ways of doing this the one
+
+604
+00:38:36,980 --> 00:38:40,695
+我喜欢的是以下内容
+that I like is the following
+
+605
+00:38:40,700 --> 00:38:43,814
+如果我把一个半在这里和三面翻
+what if I put a half here and three over
+
+606
+00:38:43,819 --> 00:38:49,555
+到这里一直到n减1/2
+to here all the way down to n minus 1/2
+
+607
+00:38:49,560 --> 00:38:54,335
+次此矩阵和我，所以这是
+times this matrix and I so this is
+
+608
+00:38:54,340 --> 00:38:58,685
+将此矩阵的顶部乘以1/2
+timesing the top of this matrix by 1/2
+
+609
+00:38:58,690 --> 00:39:01,595
+然后3超过2，然后5在2
+and then 3 over 2 and then 5 over 2
+
+610
+00:39:01,600 --> 00:39:03,515
+所以我们基本上把这个矩阵计时
+so we're basically timesing that matrix
+
+611
+00:39:03,520 --> 00:39:07,415
+该矩阵的每个条目由J减1/2
+each entry of this matrix by J minus 1/2
+
+612
+00:39:07,420 --> 00:39:11,975
+然后我做一些事情上如果有合适的
+and then I do something on the right if
+
+613
+00:39:11,980 --> 00:39:13,145
+在这里，我被允许做，因为
+here which I'm allowed to do because
+
+614
+00:39:13,150 --> 00:39:15,185
+我有B自由，我选择了这个
+I've got the B freedom and I choose this
+
+615
+00:39:15,190 --> 00:39:23,795
+是一样的了减号然后
+to be the same up to a minus sign then
+
+616
+00:39:23,800 --> 00:39:25,925
+当你想到它是什么时
+when you think about this what is it
+
+617
+00:39:25,930 --> 00:39:26,255
+干
+doing
+
+618
+00:39:26,260 --> 00:39:32,075
+这是JK条目的时间，这是由j
+it's timesing the JK entry this is by j
+
+619
+00:39:32,080 --> 00:39:34,415
+减去1/2，这就是这样做
+minus 1/2 that's what this is doing and
+
+620
+00:39:34,420 --> 00:39:37,175
+什么是它与JK的时间
+what's this doing its timesing the JK
+
+621
+00:39:37,180 --> 00:39:41,965
+由K减去1/2，所以这是总的来说
+entry by K minus 1/2 so this is in total
+
+622
+00:39:41,970 --> 00:39:46,235
+将JK输入加到J加K减去
+timesing the JK entry by J plus K minus
+
+623
+00:39:46,240 --> 00:39:49,985
+1/2减1/2这是减1所以这个
+1/2 minus 1/2 which is minus 1 so this
+
+624
+00:39:49,990 --> 00:39:52,925
+是J加K的JK入场时间
+is timesing the JK entry by J plus K
+
+625
+00:39:52,930 --> 00:39:56,345
+减1，所以它击败了分母
+minus 1 so it knocks out the denominator
+
+626
+00:39:56,350 --> 00:40:01,385
+我们从这个等式得到的是一个
+and what we get from this equation is a
+
+627
+00:40:01,390 --> 00:40:12,845
+一堆那些在这种情况下a和B.
+bunch of ones so in this case a and B
+
+628
+00:40:12,850 --> 00:40:15,575
+是对角线，C是所有的矩阵
+are diagonal and C is the matrix of all
+
+629
+00:40:15,580 --> 00:40:19,705
+好吧，我们也可以为范德曼做这件事
+ones ok we can also do this for vandeman
+
+630
+00:40:19,710 --> 00:40:25,205
+所以vanaman，你会记得看起来像
+so vanaman you'll remember looks like
+
+631
+00:40:25,210 --> 00:40:34,705
+这个，然后在这里我们有这个人
+this and then over here we have this guy
+
+632
+00:40:34,710 --> 00:40:38,705
+以多项式出现的矩阵
+the matrix that appears with polynomial
+
+633
+00:40:38,710 --> 00:40:42,935
+插好了，所以如果我想
+interpolation ok so if I think about
+
+634
+00:40:42,940 --> 00:40:46,205
+我也可以想出一个B和
+this I can also come up with an a B and
+
+635
+00:40:46,210 --> 00:40:50,765
+C，例如这里有效
+C and for example here's one that works
+
+636
+00:40:50,770 --> 00:40:58,865
+我可以把X贴在对角线上
+I can stick the X's on the diagonal
+
+637
+00:40:58,870 --> 00:41:01,755
+所以如果你想象那是什么
+so this is if you imagine what that
+
+638
+00:41:01,760 --> 00:41:03,975
+左边的矩阵正在做它
+matrix on the left is doing it's
+
+639
+00:41:03,980 --> 00:41:08,505
+将每列乘以向量Xok
+timesing each column by the vector X ok
+
+640
+00:41:08,510 --> 00:41:10,005
+所以这个矩阵的第一列
+so the first column of this matrix
+
+641
+00:41:10,010 --> 00:41:13,455
+X成为第二个向量X.
+becomes X the vector X the second
+
+642
+00:41:13,460 --> 00:41:16,695
+成为矢量x平方在哪里
+becomes the vector x squared where
+
+643
+00:41:16,700 --> 00:41:18,975
+平方是明智的，然后是
+squared is done entry wise and then the
+
+644
+00:41:18,980 --> 00:41:21,285
+第三个条目现在是X立方体，当我们
+third entry is now X cubed and when we
+
+645
+00:41:21,290 --> 00:41:24,885
+到最后是X到nok所以
+get to the last is X to the n ok so
+
+646
+00:41:24,890 --> 00:41:27,195
+这就像每列乘以
+that's like multiplied each column by
+
+647
+00:41:27,200 --> 00:41:31,575
+矢量X所以如果我想尝试来
+the vector X so if I want to try to come
+
+648
+00:41:31,580 --> 00:41:33,705
+了一个矩阵，还剩下些什么是
+up with a matrix so what's left is of
+
+649
+00:41:33,710 --> 00:41:37,095
+低级别就像我能做的那样
+low rank is like of this form what I can
+
+650
+00:41:37,100 --> 00:41:41,955
+做的是移动列，所以我注意到了
+do is shift the columns so I've noticed
+
+651
+00:41:41,960 --> 00:41:44,175
+这个产品在这里这个对角线
+that this product here this diagonal
+
+652
+00:41:44,180 --> 00:41:46,875
+矩阵已经使第一列X如此
+matrix has made the first column X so if
+
+653
+00:41:46,880 --> 00:41:48,285
+我想杀掉那个专栏
+I want to kill off that column I can
+
+654
+00:41:48,290 --> 00:41:51,105
+取第二列并将其置换为
+take the second column and permute it to
+
+655
+00:41:51,110 --> 00:41:52,905
+第一栏我可以拿第三栏
+the first column I can take the third
+
+656
+00:41:52,910 --> 00:41:55,095
+列并将其置换到第二个
+column and permute it to the second the
+
+657
+00:41:55,100 --> 00:41:57,045
+最后一栏推算将其置换为
+last column imputed permute it to the
+
+658
+00:41:57,050 --> 00:41:59,235
+倒数第二列，这将是
+penultimate column here and that will
+
+659
+00:41:59,240 --> 00:42:01,005
+实际上杀掉了我的很多东西
+actually kill off a lot of what I've
+
+660
+00:42:01,010 --> 00:42:03,945
+在这个矩阵就在这里创建，以便让
+created in this matrix right here so let
+
+661
+00:42:03,950 --> 00:42:07,595
+我写下来这是一种抑扬
+me write that down this is a circumflex
+
+662
+00:42:07,600 --> 00:42:16,305
+这样做就是排列
+this does that permutation this does
+
+663
+00:42:16,310 --> 00:42:18,135
+那个排列我放了一个减1
+that permutation I've put a minus 1
+
+664
+00:42:18,140 --> 00:42:19,725
+我可以在那里放任何号码
+there I could have put any number there
+
+665
+00:42:19,730 --> 00:42:22,725
+它没有任何区别但是这个
+it doesn't make any difference but this
+
+666
+00:42:22,730 --> 00:42:24,795
+是一个非常好的工作
+is the one that works out really nicely
+
+667
+00:42:24,800 --> 00:42:28,635
+现在这个0出了很多东西，因为
+now this 0 is out lots of things because
+
+668
+00:42:28,640 --> 00:42:30,495
+我做乘法的方式
+of the way I've done the multiplication
+
+669
+00:42:30,500 --> 00:42:32,805
+通过X和列的周向移动
+by X and the circum shift of the columns
+
+670
+00:42:32,810 --> 00:42:36,155
+所以第一列是0因为
+and so the first column is 0 because
+
+671
+00:42:36,160 --> 00:42:39,555
+此第一列是X此第一列
+this first column is X this first column
+
+672
+00:42:39,560 --> 00:42:43,695
+是X所以我的X减X这个专栏
+is X so I've got X minus X this column
+
+673
+00:42:43,700 --> 00:42:46,605
+是x平方减去x平方所以我得到0
+was x squared minus x squared so I got 0
+
+674
+00:42:46,610 --> 00:42:50,115
+我只是保持沿下去，直到那
+and I just keep going along until that
+
+675
+00:42:50,120 --> 00:42:52,335
+最后一列的最后一列是
+last column that last column is a
+
+676
+00:42:52,340 --> 00:42:54,225
+问题，因为这是最后一列
+problem because the last column of this
+
+677
+00:42:54,230 --> 00:42:57,765
+家伙是X到N，而我没有X
+guy is X to the N whereas I don't have X
+
+678
+00:42:57,770 --> 00:43:00,255
+到N和V所以有一些数字
+to the N and V so there's some numbers
+
+679
+00:43:00,260 --> 00:43:05,055
+好的
+here ok
+
+680
+00:43:05,060 --> 00:43:07,975
+你会发现两种情况都看得出来
+you'll notice that see in both cases
+
+681
+00:43:07,980 --> 00:43:11,305
+恰好是这些中的低秩矩阵
+happens to be a low rank matrix in these
+
+682
+00:43:11,310 --> 00:43:14,995
+这种情况发生的情况是等级1和
+cases that happens to be of Rank 1 and
+
+683
+00:43:15,000 --> 00:43:19,225
+所以人们想知道可能是它
+so people were wondering maybe it's
+
+684
+00:43:19,230 --> 00:43:20,845
+是与满足这些
+something to do with satisfying these
+
+685
+00:43:20,850 --> 00:43:24,535
+制造这些的方程式
+kind of equations that makes these
+
+686
+00:43:24,540 --> 00:43:27,045
+在实践中出现的矩阵
+matrices that appear in practice
+
+687
+00:43:27,050 --> 00:43:31,315
+数字上的低排名和经过很多次
+numerically of low rank and after a lot
+
+688
+00:43:31,320 --> 00:43:34,945
+在这方面的工作人们已经出现了
+of work in this area people have come up
+
+689
+00:43:34,950 --> 00:43:40,615
+有一个证明这个的界限
+with a bound that demonstrates that this
+
+690
+00:43:40,620 --> 00:43:43,075
+这些类型的方程是关键
+these kind of equations are key to
+
+691
+00:43:43,080 --> 00:43:47,415
+理解数值低等级
+understanding the numerical low rank so
+
+692
+00:43:47,420 --> 00:43:57,025
+如果X满足像学期一样的学期方程
+if X satisfies a semester equation like
+
+693
+00:43:57,030 --> 00:44:05,875
+这和一个是正常的
+this and a is normal
+
+694
+00:44:05,880 --> 00:44:07,825
+B是正常的我真的不想
+B is normal I don't really want to
+
+695
+00:44:07,830 --> 00:44:11,505
+专注于那两个条件
+concentrate on that those two conditions
+
+696
+00:44:11,510 --> 00:44:19,315
+这比人们有点学术
+it's a little bit academic then people
+
+697
+00:44:19,320 --> 00:44:21,295
+在单数上发现了一个界限
+have found a bound on the singular
+
+698
+00:44:21,300 --> 00:44:24,115
+任何满足此要求的矩阵的值
+values of any matrix that satisfies this
+
+699
+00:44:24,120 --> 00:44:29,665
+他们发现了这种表达方式
+kind of expression and they found this
+
+700
+00:44:29,670 --> 00:44:45,835
+更充分和约束确定所以这里的等级
+fuller and bound ok so here the rank of
+
+701
+00:44:45,840 --> 00:44:50,455
+C是关闭，因此去那里所以在我们的
+C is off so that goes there so in our
+
+702
+00:44:50,460 --> 00:44:53,635
+我们有R的两个例子就是1
+cases the two examples we have R is 1 so
+
+703
+00:44:53,640 --> 00:44:56,935
+我们可以忘记这个讨厌的家伙
+we can forget about our this nasty guy
+
+704
+00:44:56,940 --> 00:45:06,545
+这里叫做Ghazala关税号
+here is called Ghazala tariff number
+
+705
+00:45:06,550 --> 00:45:11,405
+e是一个集，其中包含的特征值
+e is a set that contains the eigenvalues
+
+706
+00:45:11,410 --> 00:45:16,865
+a和F是包含的集合
+of a and F is the set that contains the
+
+707
+00:45:16,870 --> 00:45:23,915
+B的特征值好吧现在看起来像
+eigenvalues of B okay now it looks like
+
+708
+00:45:23,920 --> 00:45:26,615
+我们通过获得绝对没有
+we have gained absolutely nothing by
+
+709
+00:45:26,620 --> 00:45:29,405
+这是因为我刚刚告诉你
+this down because I've just told you
+
+710
+00:45:29,410 --> 00:45:31,235
+奇异价值受佐拉关税的约束
+singular values are bound by Zola tariff
+
+711
+00:45:31,240 --> 00:45:34,175
+数字，这并不意味着什么
+numbers that doesn't mean anything to
+
+712
+00:45:34,180 --> 00:45:37,505
+这对我来说意味着什么，但是
+anyone it means a little bit to me but
+
+713
+00:45:37,510 --> 00:45:41,705
+没那么多，这个关键的约束
+not that much so the key to this bound
+
+714
+00:45:41,710 --> 00:45:45,065
+这是非常有用的原因是这样的
+the reason this is useful is that so
+
+715
+00:45:45,070 --> 00:45:48,275
+很多人都弄清楚了这些
+many people have worked out what these
+
+716
+00:45:48,280 --> 00:45:52,295
+佐拉关税数字实际上意味着没关系
+zola tariff numbers actually mean okay
+
+717
+00:45:52,300 --> 00:45:56,585
+因此，这些都是工作的两个关键人
+so these are two key people that worked
+
+718
+00:45:56,590 --> 00:45:59,975
+这个界限意味着什么，我们有
+out what this bound means and we have
+
+719
+00:45:59,980 --> 00:46:02,855
+获得了很多，因为人们已经
+gained a lot because people have been
+
+720
+00:46:02,860 --> 00:46:05,315
+研究这个数字就像一个
+studying this number this is like a
+
+721
+00:46:05,320 --> 00:46:09,395
+1870年人们关心的数字
+number that people cared about from 1870
+
+722
+00:46:09,400 --> 00:46:12,035
+直到现在和人们
+onwards to the present day and people
+
+723
+00:46:12,040 --> 00:46:14,165
+我非常好地研究了这个数字
+have studied this number extremely well
+
+724
+00:46:14,170 --> 00:46:17,495
+所以我们通过转动获得了一些东西
+so we've gained something by turning it
+
+725
+00:46:17,500 --> 00:46:20,075
+成为一个更抽象的问题的人
+into a more abstract problem that people
+
+726
+00:46:20,080 --> 00:46:23,375
+已经考虑过以前和现在我们
+have thought about previously and now we
+
+727
+00:46:23,380 --> 00:46:26,015
+可以去关于佐拉关税的文献
+can go to the literature on zola tariff
+
+728
+00:46:26,020 --> 00:46:28,055
+数字无论他们是什么并发现
+numbers whatever they are and discover
+
+729
+00:46:28,060 --> 00:46:31,505
+这个或整个工作的整个文献
+this whole literature of work on this or
+
+730
+00:46:31,510 --> 00:46:34,355
+关税号码和关键部分我会
+a tariff number and the key part I'll
+
+731
+00:46:34,360 --> 00:46:42,575
+告诉你关键是集E
+just tell you the key is that the sets E
+
+732
+00:46:42,580 --> 00:46:53,084
+和F分开
+and F are separated
+
+733
+00:46:53,089 --> 00:46:56,604
+例如，在希尔伯特矩阵中
+so for example in the Hilbert matrix the
+
+734
+00:46:56,609 --> 00:46:58,794
+a的本征值可以从中读出
+eigen values of a can be read off the
+
+735
+00:46:58,799 --> 00:47:07,814
+对角线它们之间是什么
+diagonal what are they they are between
+
+736
+00:47:07,819 --> 00:47:13,705
+减去1/2和n减去1/2并且
+minus 1/2 and n minus 1/2 and the
+
+737
+00:47:13,710 --> 00:47:19,225
+b的特征值位于集合中
+eigenvalues of b lie in the set minus
+
+738
+00:47:19,230 --> 00:47:25,135
+1/2减去n加1和关键原因
+1/2 minus n plus 1 and the key reason
+
+739
+00:47:25,140 --> 00:47:28,465
+为什么希尔伯特矩阵很低
+why the hilbert matrix is of low
+
+740
+00:47:28,470 --> 00:47:30,895
+数字排名是这些事实
+numerical rank is the fact that these
+
+741
+00:47:30,900 --> 00:47:33,804
+两套分离并且使
+two sets are separated and that makes
+
+742
+00:47:33,809 --> 00:47:35,844
+这是所有关税数量变小
+this is all a tariff number gets small
+
+743
+00:47:35,849 --> 00:47:39,534
+你可能会非常快速地使用k
+extremely quickly with k now you might
+
+744
+00:47:39,539 --> 00:47:41,655
+不知道为什么有一个问号
+wonder why there's a question mark on
+
+745
+00:47:41,660 --> 00:47:47,755
+铅笔的名字有非正式的诅咒
+pencils name there is unofficial curse
+
+746
+00:47:47,760 --> 00:47:51,594
+这已经持续了一段时间都
+that's been going on for a while both
+
+747
+00:47:51,599 --> 00:47:54,205
+这些人在工作时死亡
+these men died while working on the
+
+748
+00:47:54,210 --> 00:47:56,995
+纸牌问题他们都死在了
+solitaire problem they both died at the
+
+749
+00:47:57,000 --> 00:48:02,004
+31岁的一个人被一个人击中而死
+age of 31 one died by being hit by a
+
+750
+00:48:02,009 --> 00:48:05,475
+训练目前还不清楚他是否这样做
+train it's unclear whether he does
+
+751
+00:48:05,480 --> 00:48:10,104
+自杀或意外铅笔死亡
+suicidal or is accidental pencil died at
+
+752
+00:48:10,109 --> 00:48:12,594
+加拿大山区的年龄为31岁
+the age of 31 in the Canadian mountains
+
+753
+00:48:12,599 --> 00:48:14,804
+通过雪崩
+by an avalanche
+
+754
+00:48:14,809 --> 00:48:19,495
+我现在还不到31岁但是要去
+I am currently not yet 31 but going to
+
+755
+00:48:19,500 --> 00:48:22,645
+是31很快，我很害怕，我
+be 31 very soon and I'm scared that I
+
+756
+00:48:22,650 --> 00:48:29,725
+可以加入这个列表，但对于休伯特来说
+may join this list ok but for the Hubert
+
+757
+00:48:29,730 --> 00:48:32,245
+矩阵你从这个分析得到什么
+matrix what you get from this analysis
+
+758
+00:48:32,250 --> 00:48:35,955
+基于这两个人的工作是
+based on these two people's work is
+
+759
+00:48:35,960 --> 00:48:39,955
+数字排名和数据比比皆是
+abound on the numerical rank and the
+
+760
+00:48:39,960 --> 00:48:43,495
+你得到的等级是让我们说一个世界
+rank that you get is let's say a world
+
+761
+00:48:43,500 --> 00:48:50,594
+希尔伯特矩阵的记录界限是
+record bound for the Hilbert matrix is
+
+762
+00:48:50,599 --> 00:48:56,364
+34这是不太28尚未但是
+34 which is not quite 28 not yet but
+
+763
+00:48:56,369 --> 00:49:02,065
+它比2890更具描述性
+it's far more descriptive of 28 than 790
+
+764
+00:49:02,070 --> 00:49:06,445
+所以这种边界技术
+and so this technique of bounding
+
+765
+00:49:06,450 --> 00:49:08,305
+使用这些太阳能的奇异值
+singular values by using these solar
+
+766
+00:49:08,310 --> 00:49:10,465
+关税数字开始增加
+tariff numbers is starting to gain
+
+767
+00:49:10,470 --> 00:49:13,375
+人气，因为我们终于可以回答
+popularity because we can finally answer
+
+768
+00:49:13,380 --> 00:49:16,375
+对自己为什么有这么多低
+to ourselves why there are so many low
+
+769
+00:49:16,380 --> 00:49:18,025
+出现的等级矩阵
+rank matrices that appear in
+
+770
+00:49:18,030 --> 00:49:23,595
+计算数学，它都是基于
+computational math and it's all based on
+
+771
+00:49:23,600 --> 00:49:29,395
+231岁的人死了，如果你死了
+231 year olds that died and so if you
+
+772
+00:49:29,400 --> 00:49:30,895
+无所谓，你什么时候做
+ever wonder when you're doing
+
+773
+00:49:30,900 --> 00:49:32,725
+计算科学时排名较低
+computational science when a lower rank
+
+774
+00:49:32,730 --> 00:49:35,275
+出现，平滑性论证
+appears and the smoothness argument does
+
+775
+00:49:35,280 --> 00:49:37,405
+你不工作，你可能会认为
+not work for you you might like to think
+
+776
+00:49:37,410 --> 00:49:41,245
+关于左拉关税和诅咒还好吧
+about Zola tariffs and the curse okay
+
+777
+00:49:41,250 --> 00:49:52,185
+非常感谢你现在的工作方式
+thank you very much how does it work now
+
+778
+00:49:52,190 --> 00:49:55,825
+好的，如果我们，我很乐意提问
+okay I'm happy to take questions if we
+
+779
+00:49:55,830 --> 00:50:01,095
+如果您有任何疑问，请等一下
+have a minute if you have any questions
+
+780
+00:50:01,100 --> 00:50:04,645
+好吧，我得到了我31岁的聚光灯
+well then I get a spotlight on I'm 31 in
+
+781
+00:50:04,650 --> 00:50:08,875
+12月所以他们在31岁时去世了
+December so they died at the age of 31
+
+782
+00:50:08,880 --> 00:50:12,535
+所以你知道明年是可怕的一年
+so you know next year is the scary year
+
+783
+00:50:12,540 --> 00:50:16,405
+对我来说，我不会在任何地方开车
+for me so I will be not driving anywhere
+
+784
+00:50:16,410 --> 00:50:21,620
+不会离开我的房子，直到我32变
+
+785
+00:50:16,410 --> 00:50:32,120
+not leaving my house until I become 32
+
+786
+00:50:32,130 --> 00:50:34,190
+您
+you
+

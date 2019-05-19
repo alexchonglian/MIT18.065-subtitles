@@ -1,0 +1,4838 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,955
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,960 --> 00:00:25,795
+所以大家好，我是AlanEdelman和
+so hi everybody I'm Alan Edelman and
+
+10
+00:00:25,800 --> 00:00:27,875
+帮助了一点教这门课
+helped a little bit to teach this class
+
+11
+00:00:27,880 --> 00:00:31,175
+去年但很高兴看到它
+last year but happy to see that it's
+
+12
+00:00:31,180 --> 00:00:33,785
+今年这么好教授
+going great this year so professor
+
+13
+00:00:33,790 --> 00:00:37,385
+斯特朗来教你1806年的一些人
+Strang came to teach 1806 some of you
+
+14
+00:00:37,390 --> 00:00:39,905
+可能知道介绍线性
+may know the the introductory linear
+
+15
+00:00:39,910 --> 00:00:42,175
+代数课程和Strang教授来了
+algebra course and professor Strang came
+
+16
+00:00:42,180 --> 00:00:46,264
+通过并给出了这个伟大的示范
+by and gave this great demonstration
+
+17
+00:00:46,269 --> 00:00:47,554
+关于行等于列
+about the row rank equals the column
+
+18
+00:00:47,559 --> 00:00:49,175
+排名，我想知道，如果你这样做
+rank and I'm wondering if you did that
+
+19
+00:00:49,180 --> 00:00:51,154
+在这个课程中，他们随时都可以
+in this class at any time or would they
+
+20
+00:00:51,159 --> 00:00:54,185
+已经看到它在笔记中很好
+have seen that it's in the notes well in
+
+21
+00:00:54,190 --> 00:00:57,995
+无论如何，就像斯特朗教授一样
+in any event just as professor Strang
+
+22
+00:00:58,000 --> 00:01:01,505
+走了这里，我会抓住这个
+walked out so here I'll just grab this
+
+23
+00:01:01,510 --> 00:01:03,335
+这真的是我真的要开始了
+this is truly I was actually gonna start
+
+24
+00:01:03,340 --> 00:01:05,465
+编写代码来做四边形
+writing the code to do the quadrilateral
+
+25
+00:01:05,470 --> 00:01:06,905
+但是我没有足够的时间
+but I didn't have enough time you could
+
+26
+00:01:06,910 --> 00:01:09,065
+看到我开始，但这是重点
+see me starting but here's the point
+
+27
+00:01:09,070 --> 00:01:11,735
+五个这很容易，所以三角
+five for the triangle which was easy so
+
+28
+00:01:11,740 --> 00:01:13,144
+这与朱莉娅的故事有什么关系
+that what's the story with Julia in this
+
+29
+00:01:13,149 --> 00:01:14,765
+上课了他们用了一点还是一点
+class have they used it a little or a
+
+30
+00:01:14,770 --> 00:01:17,405
+很多或在实验室中你使用过Julia但是
+lot or in the labs you've used Julia but
+
+31
+00:01:17,410 --> 00:01:21,394
+那只是MATLAB，所以那是
+that was just MATLAB so that was but
+
+32
+00:01:21,399 --> 00:01:26,555
+好吧，所以斯特朗教授表示
+okay so so so professor Strang showed
+
+33
+00:01:26,560 --> 00:01:29,015
+这个证明他会放下一个
+this proof where he would he put down a
+
+34
+00:01:29,020 --> 00:01:31,025
+三乘三矩阵它排名第二
+three by three matrix it had rank two
+
+35
+00:01:31,030 --> 00:01:33,635
+并且他展示了你知道的
+and he showed the you know took the
+
+36
+00:01:33,640 --> 00:01:35,254
+你知道前两个的列
+columns that were you know the first two
+
+37
+00:01:35,259 --> 00:01:37,594
+列是独立的，而且是
+columns were independent and and was
+
+38
+00:01:37,599 --> 00:01:39,215
+你很容易知道它很容易显示出来
+easy you know it was easy to show the
+
+39
+00:01:39,220 --> 00:01:41,555
+行排名等于后面的列排名
+row rank equals the column rank after
+
+40
+00:01:41,560 --> 00:01:43,415
+我问道，StrangRoy教授出去了
+professor Strang Roy went out I asked
+
+41
+00:01:43,420 --> 00:01:46,314
+那会对零矩阵起作用吗？
+would that work for the zero matrix so
+
+42
+00:01:46,319 --> 00:01:50,495
+所以这里的零矩阵和自
+so here's the the zero matrix and since
+
+43
+00:01:50,500 --> 00:01:51,545
+我真的不告诉你的证明
+I'm not really telling you the proof
+
+44
+00:01:51,550 --> 00:01:55,534
+我只想说如果我要交配
+I'll just say if I were to put a mate if
+
+45
+00:01:55,539 --> 00:01:57,665
+我是按字面意思制作矩阵的
+I were to make a matrix of the literally
+
+46
+00:01:57,670 --> 00:01:59,974
+这个矩阵的独立列是什么
+independent columns of this matrix what
+
+47
+00:01:59,979 --> 00:02:01,135
+我会这样做吗？
+would I do
+
+48
+00:02:01,140 --> 00:02:04,805
+所以这可能看起来很棘手
+so it's zero sort of a might seem tricky
+
+49
+00:02:04,810 --> 00:02:07,385
+这不是那么棘手，但事实并非如此
+it's not really that tricky but this is
+
+50
+00:02:07,390 --> 00:02:09,624
+你走出去的那一刻我做了什么
+what I did the moment you walked out so
+
+51
+00:02:09,629 --> 00:02:12,064
+所以是的，所以我有三个这三个
+so yeah so I've got this three by three
+
+52
+00:02:12,069 --> 00:02:14,975
+矩阵，我需要迈出第一步
+matrix and I need to make a first step
+
+53
+00:02:14,980 --> 00:02:17,555
+在我需要的证据中
+in and whatever the proof was I needed
+
+54
+00:02:17,560 --> 00:02:20,975
+取字面上的列
+to take the columns of the the literally
+
+55
+00:02:20,980 --> 00:02:22,765
+该矩阵的独立列和
+independent columns of this matrix and
+
+56
+00:02:22,770 --> 00:02:26,765
+把它们放在自己的矩阵中
+place them in a matrix of their own what
+
+57
+00:02:26,770 --> 00:02:29,465
+我会这样做是一个空矩阵
+would I do it would be an empty matrix
+
+58
+00:02:29,470 --> 00:02:30,814
+什么是这个空的大小
+what would be the size of this empty
+
+59
+00:02:30,819 --> 00:02:35,995
+矩阵不完全为零，因为
+matrix not exactly zero by zero because
+
+60
+00:02:36,000 --> 00:02:39,125
+每一列都在我们的每一列
+where every every column is still in our
+
+61
+00:02:39,130 --> 00:02:41,945
+三，你看到了我希望的正确答案
+three you see so the right answer I hope
+
+62
+00:02:41,950 --> 00:02:44,435
+这是有道理的是三乘三
+this makes sense is a three by zero
+
+63
+00:02:44,440 --> 00:02:47,135
+空矩阵，这是一个概念
+empty matrix and that's a concept that
+
+64
+00:02:47,140 --> 00:02:49,625
+存在于MATLAB和Julia及其中
+exists in MATLAB and in Julia and in
+
+65
+00:02:49,630 --> 00:02:51,785
+Python我觉得我很有信心
+Python I think I'm sure and in any
+
+66
+00:02:51,790 --> 00:02:54,245
+计算机语言，所以如果你有一个完整的
+computer language so if you had a full
+
+67
+00:02:54,250 --> 00:02:56,945
+秩3x3矩阵线性独立
+rank 3x3 matrix the linearly independent
+
+68
+00:02:56,950 --> 00:02:58,325
+如果你，列将是三乘三
+columns would be three by three if you
+
+69
+00:02:58,330 --> 00:02:59,885
+排名第二的是三乘二
+had a rank two would be three by two
+
+70
+00:02:59,890 --> 00:03:02,075
+他们已经有一个等级一个矩阵它会是
+they've had a rank one matrix it'd be
+
+71
+00:03:02,080 --> 00:03:04,685
+如果我没有列，那就三个一个
+three by one so if I had no columns
+
+72
+00:03:04,690 --> 00:03:07,565
+零三有意义并完成
+three by zero makes sense and to finish
+
+73
+00:03:07,570 --> 00:03:09,785
+再次证明我不是在说这些
+the proof again I'm not telling these
+
+74
+00:03:09,790 --> 00:03:11,165
+学生们显然是在笔记中
+students it's in the notes apparently
+
+75
+00:03:11,170 --> 00:03:13,595
+下一个矩阵是R和零
+the next matrix would be R and of zero
+
+76
+00:03:13,600 --> 00:03:15,575
+三，当然你和你相乘
+three and of course you multiply and you
+
+77
+00:03:15,580 --> 00:03:17,645
+获得零的三乘三矩阵，
+get a three by three matrix of zeros so
+
+78
+00:03:17,650 --> 00:03:19,355
+很有趣地看到，该证明还
+it's fun to see that that proof still
+
+79
+00:03:19,360 --> 00:03:20,915
+即使没有零矩阵也能工作
+works even for the zero matrix without
+
+80
+00:03:20,920 --> 00:03:25,135
+任何真正的年龄，所以这就是今天嗯
+any real age so that was just today um
+
+81
+00:03:25,140 --> 00:03:30,005
+让我另一件事是让我可以
+let me the other thing is let me can I
+
+82
+00:03:30,010 --> 00:03:33,454
+说一两句关于最近的事情
+say a word or two about recent stuff
+
+83
+00:03:33,459 --> 00:03:36,425
+关于朱莉娅所以我开始整理一个
+about Julia so I start to put together a
+
+84
+00:03:36,430 --> 00:03:39,245
+说它还没准备好，但我会
+talk it's not really ready yet but I'll
+
+85
+00:03:39,250 --> 00:03:42,065
+无论如何要与你分享，所以谷歌做了
+share it with you anyway so Google did
+
+86
+00:03:42,070 --> 00:03:44,495
+朱莉娅世界上周对我很感兴趣
+the Julia world a big favor last week I
+
+87
+00:03:44,500 --> 00:03:47,855
+这意味着这是巨大的，所以你们都知道
+mean this is huge so you all know
+
+88
+00:03:47,860 --> 00:03:49,505
+机器学习很可能很热
+machine learning is hot that's probably
+
+89
+00:03:49,510 --> 00:03:51,755
+为什么你可能在这堂课
+why you're here in this class I probably
+
+90
+00:03:51,760 --> 00:03:55,535
+不必告诉你，但我
+don't have to tell you and yet I
+
+91
+00:03:55,540 --> 00:03:57,905
+如果你们中的一些人不会感到惊讶
+wouldn't be surprised if a number of you
+
+92
+00:03:57,910 --> 00:03:59,675
+对整个这一切都有点希望
+were sort of wish the whole this whole
+
+93
+00:03:59,680 --> 00:04:01,385
+class是Python或者其他东西
+class was in Python or something or
+
+94
+00:04:01,390 --> 00:04:03,005
+也许MATLAB左右我不怀疑
+maybe MATLAB or so I don't doubt that
+
+95
+00:04:03,010 --> 00:04:06,514
+你们中的一些人可能想要那样做
+some of you might have wanted that to
+
+96
+00:04:06,519 --> 00:04:11,255
+发生了，我们受到轰炸
+happen and we get sort of bombarded with
+
+97
+00:04:11,260 --> 00:04:15,005
+你知道为什么Python不是那么多
+with you know why not Python not so much
+
+98
+00:04:15,010 --> 00:04:16,534
+MATLAB了，但你知道为什么不
+MATLAB anymore but you know why not
+
+99
+00:04:16,539 --> 00:04:18,275
+Python是那种而来的问题
+Python is sort of the issue that comes
+
+100
+00:04:18,280 --> 00:04:23,315
+很多，我可以说话直到奶牛
+up a lot and I could talk til the cows
+
+101
+00:04:23,320 --> 00:04:24,695
+回家但没有人会相信我
+come home but nobody would believe me
+
+102
+00:04:24,700 --> 00:04:28,414
+但谷歌上周出来并表示
+but Google came out last week and said
+
+103
+00:04:28,419 --> 00:04:29,645
+说到机器
+that that when it comes to machine
+
+104
+00:04:29,650 --> 00:04:31,205
+学习那里真的有两种语言
+learning there really are two languages
+
+105
+00:04:31,210 --> 00:04:33,575
+它足够强大，可以做机器
+that are powerful enough to do machine
+
+106
+00:04:33,580 --> 00:04:36,875
+学习做机器学习的各种
+learning to do machine learning kinds of
+
+107
+00:04:36,880 --> 00:04:38,795
+你想做的事情和一些事情
+things that you want to do and in some
+
+108
+00:04:38,800 --> 00:04:41,224
+感受今天其余的讲座
+sense the the rest of today's lecture
+
+109
+00:04:41,229 --> 00:04:42,755
+我将给予的意志将是
+that I'm going to give will will be
+
+110
+00:04:42,760 --> 00:04:45,695
+也许这是插图，但如果你
+maybe illustrations of this but if you
+
+111
+00:04:45,700 --> 00:04:47,105
+希望你能去看看他们的
+want you can go and look at their their
+
+112
+00:04:47,110 --> 00:04:48,795
+博客在这里
+blog here
+
+113
+00:04:48,800 --> 00:04:50,564
+他们做的是他们基本上是这样的
+what they do is they basically sort of
+
+114
+00:04:50,569 --> 00:04:52,545
+用一大堆开始比赛
+start the the race with a whole bunch of
+
+115
+00:04:52,550 --> 00:04:54,105
+编程语言有Python
+programming languages there's Python
+
+116
+00:04:54,110 --> 00:04:57,045
+他们是我们的JavaJavaScript
+there's our Java JavaScript they they're
+
+117
+00:04:57,050 --> 00:04:58,724
+你知道他们有点看
+you know they they they sort of look at
+
+118
+00:04:58,729 --> 00:05:00,974
+所有这些语言，如果你读
+all of these languages and if you read
+
+119
+00:05:00,979 --> 00:05:02,145
+你会看到的博客，但我们会
+the blog you'll see but we're gonna
+
+120
+00:05:02,150 --> 00:05:04,124
+根据技术优点和过滤它们
+filter them out on technical merits and
+
+121
+00:05:04,129 --> 00:05:06,735
+然后很多人就会消失
+and right away a lot of them disappear
+
+122
+00:05:06,740 --> 00:05:09,045
+包括Python和Java
+including Python and Java
+
+123
+00:05:09,050 --> 00:05:10,844
+如果你去，他们实际上会花钱
+and and they actually spend if you go to
+
+124
+00:05:10,849 --> 00:05:12,194
+博客，你会看到他们花了很多钱
+the blog you'll see they spend a great
+
+125
+00:05:12,199 --> 00:05:14,654
+因为有关Python故事的时间问题
+deal of time on the Python story because
+
+126
+00:05:14,659 --> 00:05:16,004
+他们知道人们会想要
+they know that people are gonna want to
+
+127
+00:05:16,009 --> 00:05:17,564
+听到一个正确我的意思是，如果人们
+hear that one right I mean if people
+
+128
+00:05:17,569 --> 00:05:18,914
+想要被说服，所以有
+want to be convinced and so there's
+
+129
+00:05:18,919 --> 00:05:21,555
+实际上多个屏幕已满
+actually multiple screens full on the
+
+130
+00:05:21,560 --> 00:05:23,205
+Python之所以不好
+the reason why Python is just not good
+
+131
+00:05:23,210 --> 00:05:26,085
+足够机器学习所以他们
+enough for machine learning so they they
+
+132
+00:05:26,090 --> 00:05:29,534
+留下语言留下juliaswiftc++
+leave for languages left julia swift c++
+
+133
+00:05:29,539 --> 00:05:31,814
+和防锈，然后进行排序，他们的下一个
+and rust and then sort of they the next
+
+134
+00:05:31,819 --> 00:05:33,944
+如果你去的那部分
+sort of part of the if you go to the
+
+135
+00:05:33,949 --> 00:05:36,825
+他们过滤的博客的下一部分
+next part of of the blog they filter on
+
+136
+00:05:36,830 --> 00:05:38,805
+可用性然后再两个咬一口
+usability and then two more so to bite
+
+137
+00:05:38,810 --> 00:05:39,814
+灰尘
+the dust
+
+138
+00:05:39,819 --> 00:05:44,115
+所以c++和锈就消失了
+so c++ and rust disappeared and then
+
+139
+00:05:44,120 --> 00:05:45,795
+他们去说，这些都是
+they go on to say that these are the
+
+140
+00:05:45,800 --> 00:05:47,775
+只有他们认为的两种语言
+only two languages they feel are
+
+141
+00:05:47,780 --> 00:05:50,175
+适合机器学习和
+appropriate for machine learning and
+
+142
+00:05:50,180 --> 00:05:52,745
+他们把这个很好的报价你知道了
+they put this nice quote you know that
+
+143
+00:05:52,750 --> 00:05:55,154
+你知道它有很多共同之处
+that you know it shares many common
+
+144
+00:05:55,159 --> 00:05:57,314
+价值观，他们实际上继续下去
+values and they actually go on and about
+
+145
+00:05:57,319 --> 00:05:59,115
+什么机器学习真正需要和
+what machine learning really needs and
+
+146
+00:05:59,120 --> 00:06:01,395
+你知道吗，我建议你看看
+you know yeah i'd recommend you look at
+
+147
+00:06:01,400 --> 00:06:03,224
+它然后最终当然是他们
+it and then finally of course they're
+
+148
+00:06:03,229 --> 00:06:06,615
+要迅速推动他们的那些
+gonna push swift which they which they
+
+149
+00:06:06,620 --> 00:06:08,594
+应该这样他们有更多的blahblah
+should so they had some more blahblah
+
+150
+00:06:08,599 --> 00:06:10,425
+有关更多的人正在使用可能迅速
+about more people are using swift maybe
+
+151
+00:06:10,430 --> 00:06:13,814
+这是真的我不知道，但是你
+it's true i don't know but so that you
+
+152
+00:06:13,819 --> 00:06:16,154
+知道他们真的会说的是
+know they're gonna they really said is
+
+153
+00:06:16,159 --> 00:06:17,685
+他们对swift和。更熟悉
+they're more familiar with swift and
+
+154
+00:06:17,690 --> 00:06:19,515
+如果我是的话，你知道的朱莉娅
+julia which you know if i if I were
+
+155
+00:06:19,520 --> 00:06:20,685
+说我会说我比我更熟悉
+speaking I'd say I'm more familiar than
+
+156
+00:06:20,690 --> 00:06:23,414
+朱莉娅比斯威夫特所以也许这是公平的
+Julia than Swift so maybe it's fair and
+
+157
+00:06:23,419 --> 00:06:26,205
+然后我开始放一点卡通片
+then I started to put a little cartoon
+
+158
+00:06:26,210 --> 00:06:27,435
+关于编程心理学
+on the psychology of programming
+
+159
+00:06:27,440 --> 00:06:29,024
+语言只是因为它的类型
+languages just because it's it's sort of
+
+160
+00:06:29,029 --> 00:06:31,125
+我和所有人碰到的东西
+a something that I bump into with all
+
+161
+00:06:31,130 --> 00:06:33,705
+人们总是说所有语言的时间
+the time people always say all languages
+
+162
+00:06:33,710 --> 00:06:34,904
+同样好，它不是真的
+are equally good it doesn't really
+
+163
+00:06:34,909 --> 00:06:37,754
+但事实是，如果你不这样做
+matter but the truth is if you don't
+
+164
+00:06:37,759 --> 00:06:39,194
+如果提到一个，请提一种语言
+mention a language if you mention a
+
+165
+00:06:39,199 --> 00:06:40,395
+你尚未使用的语言
+language that you're not using yet
+
+166
+00:06:40,400 --> 00:06:43,274
+你至少要把它调出来
+you're gonna tune it out at least until
+
+167
+00:06:43,279 --> 00:06:45,795
+谷歌出现就是这样
+Google comes along so that that's where
+
+168
+00:06:45,800 --> 00:06:48,705
+我们还好，我就这么说
+we are okay enough about I just put this
+
+169
+00:06:48,710 --> 00:06:51,164
+我知道在你身边测试它
+together I know testing it out on you
+
+170
+00:06:51,169 --> 00:06:55,455
+现在好了，现在让我这样做两个
+all right now so now let me do so two
+
+171
+00:06:55,460 --> 00:06:58,334
+更多的数学事物，所以第一
+more mathematical things so the first
+
+172
+00:06:58,339 --> 00:07:00,844
+我想做的事情是和你谈谈
+thing I want to do is talk to you about
+
+173
+00:07:00,849 --> 00:07:02,564
+前进模式自动
+forward mode automatic
+
+174
+00:07:02,569 --> 00:07:03,944
+分化所以，如果你做了任何
+differentiation so if you've done any
+
+175
+00:07:03,949 --> 00:07:05,834
+自动折旧当然可以
+automatic depreciation of course okay so
+
+176
+00:07:05,839 --> 00:07:07,754
+我觉得这很有趣，我希望你能
+I think this is pretty fun I hope you'll
+
+177
+00:07:07,759 --> 00:07:08,355
+喜欢它
+like it
+
+178
+00:07:08,360 --> 00:07:11,295
+我有一个笔记本，朱莉娅向前跑
+I have a notebook and Julia run forward
+
+179
+00:07:11,300 --> 00:07:12,765
+模式自动分化和
+mode automatic differentiation and the
+
+180
+00:07:12,770 --> 00:07:16,295
+这个笔记本因为我而走到一起
+this notebook came together because I
+
+181
+00:07:16,300 --> 00:07:19,394
+我试图了解什么是大事
+was trying to understand what the big
+
+182
+00:07:19,399 --> 00:07:21,825
+交易是很长一段时间，我有一个
+deal was for a long time and and I had a
+
+183
+00:07:21,830 --> 00:07:23,355
+小麻烦我的意思是它就是这个
+little trouble I mean it's it's the
+
+184
+00:07:23,360 --> 00:07:24,825
+通常的故事，我们是逐行的
+usual story we're on a line-by-line
+
+185
+00:07:24,830 --> 00:07:27,434
+水平它很容易理解，但喜欢
+level it's easy to understand but like
+
+186
+00:07:27,439 --> 00:07:28,964
+这是什么大不了的一部分
+what's the big deal part that's that
+
+187
+00:07:28,969 --> 00:07:30,674
+有时候更难掌握和
+sometimes the harder thing to grasp and
+
+188
+00:07:30,679 --> 00:07:32,444
+和我要去的第一本笔记本
+and and the first notebook I'm gonna
+
+189
+00:07:32,449 --> 00:07:36,224
+告诉你是我的结果
+show you is sort of the result of my
+
+190
+00:07:36,229 --> 00:07:38,114
+试图抓住那样的东西
+trying to grasp like what was the the
+
+191
+00:07:38,119 --> 00:07:41,504
+这里的真实照片和我的第二件事
+real picture here and the second thing I
+
+192
+00:07:41,509 --> 00:07:42,494
+我想我会在黑板上做
+think I'll just do on the blackboard
+
+193
+00:07:42,499 --> 00:07:43,904
+它还没有真正准备好，但我会
+it's not even really ready yet but I'll
+
+194
+00:07:43,909 --> 00:07:45,884
+无论如何，它会释放给你们
+sort of unleash it on you folks anyway
+
+195
+00:07:45,889 --> 00:07:49,575
+是告诉你如何做一个特定的
+is to show you how to do a particular
+
+196
+00:07:49,580 --> 00:07:51,765
+自动向后模式的示例
+example of backward mode automatically
+
+197
+00:07:51,770 --> 00:07:53,325
+反向传播的发音
+pronounciation the backpropagation let
+
+198
+00:07:53,330 --> 00:07:54,764
+你在神经网络和II猜测中看到了
+you see in a neural net and I I guess
+
+199
+00:07:54,769 --> 00:07:56,114
+你已经看到了一些自己的东西
+you have seen some their own that's here
+
+200
+00:07:56,119 --> 00:07:59,054
+实际上他们现在可能是每个人的
+so actually they might now everybody's
+
+201
+00:07:59,059 --> 00:08:01,274
+看到神经网我觉得你知道两个
+seen neural nets I think you know two
+
+202
+00:08:01,279 --> 00:08:02,384
+从现在起几年，它将处于高度低点
+years from now it'll be in height low
+
+203
+00:08:02,389 --> 00:08:03,735
+高中和那里三年
+high schools and three years from there
+
+204
+00:08:03,740 --> 00:08:04,844
+将在幼儿园我不知道
+will be in kindergartens I don't know
+
+205
+00:08:04,849 --> 00:08:06,795
+每个人都看到神经网似乎是
+everybody see neural nets seem to be
+
+206
+00:08:06,800 --> 00:08:08,534
+那种他们并不难
+sort of they're not that hard to
+
+207
+00:08:08,539 --> 00:08:12,194
+明白没关系，让我开始吧
+understand okay so let me let me start
+
+208
+00:08:12,199 --> 00:08:15,494
+关闭的事情，真的是两件事
+things off and really the two things
+
+209
+00:08:15,499 --> 00:08:17,944
+我要说服你的是
+that I'd left to convince you of is
+
+210
+00:08:17,949 --> 00:08:20,474
+让我在这里找到我的订单
+let's let me just find here's my ordered
+
+211
+00:08:20,479 --> 00:08:23,204
+如果事情是我真的两件事
+if thing the two things that I really
+
+212
+00:08:23,209 --> 00:08:25,605
+想要说服你，也许你
+want to convince you of and maybe you
+
+213
+00:08:25,610 --> 00:08:30,394
+已经相信其中一些是那个
+already believe some of this is one that
+
+214
+00:08:30,399 --> 00:08:32,414
+好吧，也许你还不相信这一点
+well maybe you don't believe this yet
+
+215
+00:08:32,419 --> 00:08:35,055
+但是语言很重要
+but that the language matters in a
+
+216
+00:08:35,060 --> 00:08:37,904
+正确的数学意义
+mathematical sense that the right the
+
+217
+00:08:37,909 --> 00:08:40,694
+正确的计算机语言可以做到
+right the right computer language can do
+
+218
+00:08:40,699 --> 00:08:43,184
+更多的是为你而不仅仅是采取一些
+more for you than just take some
+
+219
+00:08:43,189 --> 00:08:44,865
+黑板上的算法和实现
+algorithm on a blackboard and implement
+
+220
+00:08:44,870 --> 00:08:46,785
+它可以做到它可以做更多
+it you could do it could do much more
+
+221
+00:08:46,790 --> 00:08:49,004
+这是我希望的
+and this is something that that I hope
+
+222
+00:08:49,009 --> 00:08:51,795
+举几个例子和另一个例子
+to give a few examples of and the other
+
+223
+00:08:51,800 --> 00:08:53,985
+我打赌你们都相信的事情
+thing that I bet you all are believed
+
+224
+00:08:53,990 --> 00:08:57,285
+现在因为你已经上过这堂课了
+now because you've been in this class is
+
+225
+00:08:57,290 --> 00:08:59,535
+那是线性代数的基础
+that that linear algebra is the basis
+
+226
+00:08:59,540 --> 00:09:01,305
+一切每门课程应该开始
+for everything every course should start
+
+227
+00:09:01,310 --> 00:09:03,764
+线性代数我的意思是它
+with linear algebra I mean that's it to
+
+228
+00:09:03,769 --> 00:09:05,865
+我感觉这是一次不幸的事故
+me it feels like a unfortunate accident
+
+229
+00:09:05,870 --> 00:09:08,745
+那个线性代数来的历史
+of history that that linear algebra came
+
+230
+00:09:08,750 --> 00:09:11,415
+由于太多原因等等太晚了
+too late for too many reasons and and so
+
+231
+00:09:11,420 --> 00:09:13,505
+经常会有更好的事情
+very often things that would be better
+
+232
+00:09:13,510 --> 00:09:15,915
+与线性代数做得都
+done with linear algebra are
+
+233
+00:09:15,920 --> 00:09:18,465
+不，而且我的意思是，如果对我来说
+not and and and I mean it if to me it
+
+234
+00:09:18,470 --> 00:09:19,574
+感觉就像没有做物理
+feels like doing physics without
+
+235
+00:09:19,579 --> 00:09:21,045
+微积分就像我只是不明白
+calculus like I just don't get it
+
+236
+00:09:21,050 --> 00:09:22,514
+就像我知道高中那样做但是它
+like I know high schools do that but it
+
+237
+00:09:22,519 --> 00:09:24,375
+只是看起来不对，你知道我喜欢
+just seems wrong you know it to me like
+
+238
+00:09:24,380 --> 00:09:26,595
+你知道所有的工程
+you know all of engineering all it
+
+239
+00:09:26,600 --> 00:09:28,245
+应该都是线性代数我的意思是我
+should all be linear algebra I mean I'm
+
+240
+00:09:28,250 --> 00:09:30,584
+我只相信几乎所有可能都没有
+I just believe that almost all maybe not
+
+241
+00:09:30,589 --> 00:09:32,774
+所有，但比大多数颇多
+all but quite a lot more than most
+
+242
+00:09:32,779 --> 00:09:35,894
+人们意识到我会说好的，所以让
+people realize I would say okay so let
+
+243
+00:09:35,899 --> 00:09:37,625
+我从自动差异开始
+me start with automatic differentiation
+
+244
+00:09:37,630 --> 00:09:41,565
+所以我要从这个故事开始
+so so I'm gonna start by this story by
+
+245
+00:09:41,570 --> 00:09:43,574
+告诉你我会去
+telling you that I would go to
+
+246
+00:09:43,579 --> 00:09:44,985
+会议我会去数字
+conferences I would go to numerical
+
+247
+00:09:44,990 --> 00:09:46,905
+分析会议我会听到人们的意见
+analysis conferences I would hear people
+
+248
+00:09:46,910 --> 00:09:49,035
+谈论自动分化我是
+talk about automatic differentiation I'm
+
+249
+00:09:49,040 --> 00:09:50,384
+说实话，我正在看我的电子邮件
+gonna be honest I was reading my email I
+
+250
+00:09:50,389 --> 00:09:51,824
+进行了调整出像谁在乎像
+was tuned out like who cares about like
+
+251
+00:09:51,829 --> 00:09:54,074
+我知道微积分我可以教
+I know calculus I could you could teach
+
+252
+00:09:54,079 --> 00:09:56,024
+一台电脑，我不知道我是谁
+a computer to do it I don't you know I'm
+
+253
+00:09:56,029 --> 00:09:57,975
+对我来说似乎很容易，我的意思是我确定
+seems pretty easy to me I mean I'm sure
+
+254
+00:09:57,980 --> 00:09:59,235
+有技术细节，但它
+there are technical details but it
+
+255
+00:09:59,240 --> 00:10:01,215
+教一个人似乎并不那么有趣
+didn't seem that interesting to teach a
+
+256
+00:10:01,220 --> 00:10:03,795
+计算机区分我有点
+computer to differentiate I sort of
+
+257
+00:10:03,800 --> 00:10:05,175
+认为它是相同的微积分
+figured that it was the same calculus
+
+258
+00:10:05,180 --> 00:10:06,735
+我在学习微积分时学到了什么
+that I learned when I took a calculus
+
+259
+00:10:06,740 --> 00:10:08,535
+你知道的课，你知道你
+class you know here you know you you've
+
+260
+00:10:08,540 --> 00:10:10,065
+记住这张桌子，你教给它一个
+memorized this table you teach it to a
+
+261
+00:10:10,070 --> 00:10:11,985
+电脑，你知道你学习链
+computer you know you learn the chain
+
+262
+00:10:11,990 --> 00:10:13,305
+规则和产品规则和
+rule and the product rule and the
+
+263
+00:10:13,310 --> 00:10:15,134
+商数规则并且你碰到了你
+quotient rule and bump you you did the
+
+264
+00:10:15,139 --> 00:10:16,694
+电脑正在做我想做的事
+computer is doing just what I would do
+
+265
+00:10:16,699 --> 00:10:19,035
+它用纸和铅笔这么重要我
+it with paper and pencil so a big deal I
+
+266
+00:10:19,040 --> 00:10:21,135
+是不是我没注意到任何一个
+was I didn't pay attention and in any
+
+267
+00:10:21,140 --> 00:10:22,665
+事件有说有点有
+event there was said a little there was
+
+268
+00:10:22,670 --> 00:10:23,834
+这个小神经元在我的背后
+this little neuron in the back of my
+
+269
+00:10:23,839 --> 00:10:25,485
+大脑说嘿，也许我错了
+brain that said hey maybe I'm wrong
+
+270
+00:10:25,490 --> 00:10:27,225
+也许它正在做有限的差异你
+maybe it's doing finite differences you
+
+271
+00:10:27,230 --> 00:10:28,755
+知道你采取的那种事情
+know the sort of thing where you take
+
+272
+00:10:28,760 --> 00:10:32,295
+你把dy-by-dx带入了
+the the the you take the d-y-by-dx in
+
+273
+00:10:32,300 --> 00:10:33,855
+一些数字方式，你做的
+some numerical way it's you do the
+
+274
+00:10:33,860 --> 00:10:36,855
+有限差异和激进
+finite differences and in the radical
+
+275
+00:10:36,860 --> 00:10:38,175
+分析他们应该告诉你
+analysis they're supposed to tell you
+
+276
+00:10:38,180 --> 00:10:39,435
+你知道如果你的H太大了吗？
+you know if H is too big you get
+
+277
+00:10:39,440 --> 00:10:40,785
+如果你有一件T太截断误差
+truncation error if you have a t too
+
+278
+00:10:40,790 --> 00:10:42,465
+小你得到了舍入错误和
+small you get roundoff error and the
+
+279
+00:10:42,470 --> 00:10:43,845
+真相是没有人告诉过你是什么
+truth is nobody ever tells you what's a
+
+280
+00:10:43,850 --> 00:10:45,764
+好年龄，但你去数字
+good age but you go to numerical
+
+281
+00:10:45,769 --> 00:10:47,505
+分析课希望有人会
+analysis class hoping somebody would
+
+282
+00:10:47,510 --> 00:10:49,875
+告诉你，但无论如何，所以我
+tell you but but in any event so I
+
+283
+00:10:49,880 --> 00:10:50,925
+想也许就是这样的
+thought maybe it was that kind of a
+
+284
+00:10:50,930 --> 00:10:54,495
+数值有限差分和和
+numerical finite difference and and and
+
+285
+00:10:54,500 --> 00:10:56,565
+我认为对我来说最大的惊喜是
+and I think the big surprise for me was
+
+286
+00:10:56,570 --> 00:10:59,084
+自动分化是
+that automatic differentiation was
+
+287
+00:10:59,089 --> 00:11:01,365
+既不是第一件事，也不是第二件事
+neither the first nor the second thing
+
+288
+00:11:01,370 --> 00:11:02,985
+实际上还有第三件事
+that there's actually a third thing
+
+289
+00:11:02,990 --> 00:11:03,975
+有些不同
+something different
+
+290
+00:11:03,980 --> 00:11:05,954
+那不是第一个或第二个
+that's neither the first or the second
+
+291
+00:11:05,959 --> 00:11:08,564
+我发现那令人着迷和
+that I found that fascinating and and
+
+292
+00:11:08,569 --> 00:11:11,415
+也许我甚至会告诉你它是如何击中的
+maybe I'll even tell you how how it hit
+
+293
+00:11:11,420 --> 00:11:12,824
+我知道这就是故事
+me in the head that this was the story
+
+294
+00:11:12,829 --> 00:11:14,774
+因为我真的没有注意
+because I really wasn't paying attention
+
+295
+00:11:14,779 --> 00:11:18,465
+但我喜欢这种奇异的价值
+but I loved the singular value
+
+296
+00:11:18,470 --> 00:11:20,024
+分解我很高兴看到这一点
+decomposition I'm glad to see that
+
+297
+00:11:20,029 --> 00:11:22,785
+人们正在绘制抛物线和四分之一
+people are drawing parabolas and quarter
+
+298
+00:11:22,790 --> 00:11:24,255
+圆和搞清楚什么的
+circles and figuring out what the the
+
+299
+00:11:24,260 --> 00:11:27,524
+这个东西是最小的SVD值
+minimum SVD value is this thing right is
+
+300
+00:11:27,529 --> 00:11:28,875
+只是你知道的
+is just you know the
+
+301
+00:11:28,880 --> 00:11:30,855
+只是你知道上帝给人类的礼物
+it's justyou know God's gift to mankind
+
+302
+00:11:30,860 --> 00:11:35,204
+它只是一个很好的分解和一个
+it's just a good factorization and one
+
+303
+00:11:35,209 --> 00:11:37,514
+我会玩的东西
+of the things that I would I was playing
+
+304
+00:11:37,519 --> 00:11:39,855
+与朱莉娅一起计算
+with with with Julia was to calculate
+
+305
+00:11:39,860 --> 00:11:43,574
+SVD的雅可比矩阵也是如此
+the the Jacobian matrix for the SVD so
+
+306
+00:11:43,579 --> 00:11:46,574
+所以你知道所有的矩阵因子分解
+so you know all matrix factorizations
+
+307
+00:11:46,579 --> 00:11:48,314
+只是改变变量就是这样
+are just changes of variables right so
+
+308
+00:11:48,319 --> 00:11:50,144
+如果你有一个正方形的话
+if you have an if you have a square
+
+309
+00:11:50,149 --> 00:11:53,175
+矩阵n由SVD宝贝我确定你
+matrix n by n the SVD babe I'm sure you
+
+310
+00:11:53,180 --> 00:11:55,365
+知道这是你知道的U矩阵
+know this is you know the the U matrix
+
+311
+00:11:55,370 --> 00:11:57,074
+实际上是n倍n减去1比2
+is really n times n minus one over two
+
+312
+00:11:57,079 --> 00:11:59,384
+变量也是V和Sigma所具有的
+variables so is the V and the Sigma has
+
+313
+00:11:59,389 --> 00:12:01,334
+有n个变量把它们放在一起
+got n variables put it all together you
+
+314
+00:12:01,339 --> 00:12:03,345
+N平方所以它只是一个变化
+got N squared so it's just a change of
+
+315
+00:12:03,350 --> 00:12:04,574
+变量和每次改变
+variables and every time you change
+
+316
+00:12:04,579 --> 00:12:07,574
+变量你可以形成那个大矩阵n
+variables you can form that big matrix n
+
+317
+00:12:07,579 --> 00:12:09,704
+你知道N平方的平方
+squared by N squared of the you know
+
+318
+00:12:09,709 --> 00:12:13,215
+dy/dx计算其决定因素并得到
+dy/dx compute its determinants and get
+
+319
+00:12:13,220 --> 00:12:14,595
+答案，我想让你知道
+an answer and and I want you to know
+
+320
+00:12:14,600 --> 00:12:16,004
+我真想知道的是什么
+what that I wanted to actually knew the
+
+321
+00:12:16,009 --> 00:12:17,745
+对于和我想的理论回答
+theoretical answer for that and I wanted
+
+322
+00:12:17,750 --> 00:12:19,754
+看电脑确认一下
+to see a computer confirm that
+
+323
+00:12:19,759 --> 00:12:22,965
+理论答案和我谈到了一些
+theoretical answer and I spoke to some
+
+324
+00:12:22,970 --> 00:12:25,365
+在非非洲写过奥托蒂芬的人
+people who who wrote Otto Tiffin in non
+
+325
+00:12:25,370 --> 00:12:27,615
+giulia语言和我很惊讶
+giulia languages and I was surprised by
+
+326
+00:12:27,620 --> 00:12:30,134
+答案他们说哦，是的，我们可以
+the answer they said oh yeah we could
+
+327
+00:12:30,139 --> 00:12:32,595
+教我们系统的答案我说
+teach the answer to our system I said
+
+328
+00:12:32,600 --> 00:12:33,704
+你是什么意思，你可以教导
+what do you mean you could teach the
+
+329
+00:12:33,709 --> 00:12:34,905
+回答为什么不只是计算
+answer why doesn't just compute the
+
+330
+00:12:34,910 --> 00:12:36,285
+回答你要教的答案
+answer what you have to teach the answer
+
+331
+00:12:36,290 --> 00:12:38,834
+我认为那是错的，因为在
+I thought that was all wrong because in
+
+332
+00:12:38,839 --> 00:12:40,215
+朱莉娅，我们没有必要教它
+Julia we didn't have to teach it it
+
+333
+00:12:40,220 --> 00:12:42,014
+实际上它实际上会计算它
+actually it would actually calculate it
+
+334
+00:12:42,019 --> 00:12:44,264
+哦，然后我开始明白了
+oh and then I started to understand a
+
+335
+00:12:44,269 --> 00:12:45,615
+更多关于auto-da-fé的内容
+little bit more about what auto-da-fé
+
+336
+00:12:45,620 --> 00:12:47,235
+正在做和朱莉娅正在做的事情
+was doing and what Julia was doing and
+
+337
+00:12:47,240 --> 00:12:49,305
+所以这就是这款笔记本的样子
+so this is how this notebook came to be
+
+338
+00:12:49,310 --> 00:12:52,215
+所以，让我开始，我说太多了
+so let me start I'm saying too much let
+
+339
+00:12:52,220 --> 00:12:54,254
+我从一个可能的例子开始
+me start with an example that that might
+
+340
+00:12:54,259 --> 00:12:57,285
+有点打击家，所以我要去计算
+kind of hit home so I'm going to compute
+
+341
+00:12:57,290 --> 00:12:59,084
+x的平方根我真的很简单
+the square root of x I'm a real simple
+
+342
+00:12:59,089 --> 00:13:00,405
+例如你知道平方根很漂亮
+example you know square roots pretty
+
+343
+00:13:00,410 --> 00:13:02,295
+我最老的时候会很容易的
+easy I'm gonna take when the oldest
+
+344
+00:13:02,300 --> 00:13:03,824
+人类已知的算法
+algorithms known to mankind
+
+345
+00:13:03,829 --> 00:13:05,985
+巴比伦人的平方根算法吧
+the Babylonians square root algorithm it
+
+346
+00:13:05,990 --> 00:13:07,184
+说你知道从一个开始开始
+says you know start with a starting
+
+347
+00:13:07,189 --> 00:13:09,254
+猜猜可能它有点太低了
+guess T maybe it's a little bit too low
+
+348
+00:13:09,259 --> 00:13:11,684
+对于x的平方根，得到x超过T所以
+for the square root of x get x over T so
+
+349
+00:13:11,689 --> 00:13:13,665
+这将是太大继续前进，
+that would be too large go ahead and
+
+350
+00:13:13,670 --> 00:13:15,824
+取平均值，并重复没关系，这是
+take the average and repeat okay this is
+
+351
+00:13:15,829 --> 00:13:17,144
+相当于牛顿的方法
+equivalent to a Newton's method for
+
+352
+00:13:17,149 --> 00:13:19,725
+求平方根，你知道这是
+taking the square root and you know it's
+
+353
+00:13:19,730 --> 00:13:21,975
+已经知道了几千年人类如此
+been known for millennia to mankind so
+
+354
+00:13:21,980 --> 00:13:24,824
+你不知道它不是非常糟糕
+it's not a terribly you know it's not
+
+355
+00:13:24,829 --> 00:13:26,925
+无论如何最新的研究
+the latest research by any means for
+
+356
+00:13:26,930 --> 00:13:30,134
+计算平方根，但它的工作原理
+computing square roots but it it works
+
+357
+00:13:30,139 --> 00:13:32,805
+非常有效，这里有点
+very effectively and here's a little
+
+358
+00:13:32,810 --> 00:13:36,225
+Julia代码实际上会很好
+Julia code that actually will well will
+
+359
+00:13:36,230 --> 00:13:37,785
+实现它可能看起来像代码
+implement it it probably looks like code
+
+360
+00:13:37,790 --> 00:13:40,634
+用任何语言，所以我要开始
+in any language so I'm gonna start off
+
+361
+00:13:40,639 --> 00:13:42,075
+一个人
+at one so
+
+362
+00:13:42,080 --> 00:13:44,145
+从字面上看，我只需要一个加号
+literally I'm just gonna take one plus
+
+363
+00:13:44,150 --> 00:13:46,115
+起始值X除以2
+the starting value X and divide by two
+
+364
+00:13:46,120 --> 00:13:50,265
+然后我会重复好的，你
+and then I'm gonna repeat okay and you
+
+365
+00:13:50,270 --> 00:13:52,305
+你知道我们可以，我们可以检查
+know you can we we can check that the
+
+366
+00:13:52,310 --> 00:13:55,185
+算法在这里工作的alphasPI等
+algorithm works here's alphas PI and so
+
+367
+00:13:55,190 --> 00:13:56,865
+我将采用巴比伦算法和
+I'll take the Babylonian algorithm and
+
+368
+00:13:56,870 --> 00:13:58,395
+将它与朱莉的内置和你比较
+compare it to Julie's built-in and you
+
+369
+00:13:58,400 --> 00:14:01,545
+看到它给这里给出了正确的答案
+see it gives gives the right answer here
+
+370
+00:14:01,550 --> 00:14:03,075
+它是你知道的两个平方根
+it is with square root of two you know
+
+371
+00:14:03,080 --> 00:14:04,455
+总是很好检查你的代码
+always good to check your your code
+
+372
+00:14:04,460 --> 00:14:08,925
+工作还好，即使我喜欢看东西
+works okay even I like to see things
+
+373
+00:14:08,930 --> 00:14:13,305
+图形所以我跑了算法
+graphically so I ran the algorithm for
+
+374
+00:14:13,310 --> 00:14:15,075
+很多X值，你甚至可以
+lots of values of X and you could even I
+
+375
+00:14:15,080 --> 00:14:17,985
+喜欢做这个，我有种想，在
+love doing this I kind of wished that in
+
+376
+00:14:17,990 --> 00:14:19,995
+前面讲我这是什么，如果
+the previous talk I was this is what if
+
+377
+00:14:20,000 --> 00:14:21,675
+我只工作速度不够快我
+I'd only worked fast enough I was
+
+378
+00:14:21,680 --> 00:14:22,965
+实际上我去建了一个粘糊糊的
+actually I went to build a little gooey
+
+379
+00:14:22,970 --> 00:14:24,495
+我可以在哪里移动点数
+where I could move the points and in
+
+380
+00:14:24,500 --> 00:14:26,205
+你眼前，也许你有一个在
+front of your eyes maybe you have one in
+
+381
+00:14:26,210 --> 00:14:28,335
+MATLAB我打赌你这样做，但我想
+MATLAB I bet you do but I wanted to
+
+382
+00:14:28,340 --> 00:14:29,595
+建立它，但他们没有快速到达那里
+build it but they didn't get there fast
+
+383
+00:14:29,600 --> 00:14:32,565
+不够好，但在这里，这是一个诸如此类的事情
+enough but here this is a sort of thing
+
+384
+00:14:32,570 --> 00:14:34,185
+我想看到我收敛
+and I'd like to see the convergence I
+
+385
+00:14:34,190 --> 00:14:35,295
+意思是所以你可以看到数字
+mean so you could see the digits
+
+386
+00:14:35,300 --> 00:14:37,815
+将抛物线收敛于
+converging the the the parabola on the
+
+387
+00:14:37,820 --> 00:14:39,225
+底部黑色是的平方根
+bottom the black is the square root of
+
+388
+00:14:39,230 --> 00:14:41,505
+当然所以它就是这样的
+course so there it is there's the
+
+389
+00:14:41,510 --> 00:14:44,625
+我想得到的巴比伦算法
+Babylonian algorithm I would like to get
+
+390
+00:14:44,630 --> 00:14:47,475
+平方根的导数但是
+the derivative of square root but the
+
+391
+00:14:47,480 --> 00:14:49,665
+游戏规则是我不会去的
+rules of the game are I'm not going to
+
+392
+00:14:49,670 --> 00:14:51,675
+类型方法一或方法二我不是
+type method one or method two I'm not
+
+393
+00:14:51,680 --> 00:14:53,325
+去做你永远不会看到我输入1/2
+going to do you'll never see me type 1/2
+
+394
+00:14:53,330 --> 00:14:55,035
+X到负1/2，这对你来说都是正确的
+X to the minus 1/2 that's right you all
+
+395
+00:14:55,040 --> 00:14:56,775
+知道这是我不会的衍生物
+know that's the derivative I will not
+
+396
+00:14:56,780 --> 00:14:58,605
+打字，我不会，它不会来
+type that I will not it's not gonna come
+
+397
+00:14:58,610 --> 00:15:00,705
+Juliaok和第二个
+anywhere from Julia ok and the second
+
+398
+00:15:00,710 --> 00:15:01,815
+事情是我不会做有限的事情
+thing is I'm not gonna do a finite
+
+399
+00:15:01,820 --> 00:15:03,915
+区别我会没事拿到
+difference all right I'm gonna get that
+
+400
+00:15:03,920 --> 00:15:06,375
+平方根，但不是通过某种方式
+square root but not by by by sort of
+
+401
+00:15:06,380 --> 00:15:08,145
+要么是我确定你的两件事
+either the two things that I'm sure you
+
+402
+00:15:08,150 --> 00:15:11,085
+会想到没问题但是这是怎么回事
+would think of alright but here's how
+
+403
+00:15:11,090 --> 00:15:13,185
+我要去做，而且我要去做
+I'm gonna do it and and I'm gonna do a
+
+404
+00:15:13,190 --> 00:15:14,355
+朱莉娅码点点就会有
+little bit of Julia code there'll be
+
+405
+00:15:14,360 --> 00:15:15,675
+八条朱莉娅，但我不会
+eight lines of Julia but I'm not gonna
+
+406
+00:15:15,680 --> 00:15:17,145
+完全说它是如何工作的我会
+completely say how it works yet I'll
+
+407
+00:15:17,150 --> 00:15:19,275
+也许我会让你陷入悬念
+I'll keep you in suspense for maybe
+
+408
+00:15:19,280 --> 00:15:20,625
+大约五分钟，然后我会说
+about five minutes and then I'll tell
+
+409
+00:15:20,630 --> 00:15:21,765
+你是如何工作的
+you how it how it works
+
+410
+00:15:21,770 --> 00:15:24,255
+好吧所以这里有八行朱莉娅
+all right so here's eight lines of Julia
+
+411
+00:15:24,260 --> 00:15:26,925
+代码，这将得到平方根
+code that will get me the square root so
+
+412
+00:15:26,930 --> 00:15:29,445
+在这三行中，我要创造一个
+in these three lines I'm gonna create a
+
+413
+00:15:29,450 --> 00:15:33,525
+朱莉娅类型我要把它称为d4
+julia type i'm gonna call it a d4 for a
+
+414
+00:15:33,530 --> 00:15:35,955
+双数这是去一个名字
+dual number which is a name that goes
+
+415
+00:15:35,960 --> 00:15:39,375
+回到至少一个世纪或许更多
+back at least a century maybe more so
+
+416
+00:15:39,380 --> 00:15:41,985
+我要创建一个d型和所有这些
+i'm gonna create a d type and all this
+
+417
+00:15:41,990 --> 00:15:46,065
+是一对漂浮物好吧所以它是一个
+is is a pair of floats okay so um it's a
+
+418
+00:15:46,070 --> 00:15:47,775
+它会带有一对花车的元组
+tuple with a pair of floats it's gonna
+
+419
+00:15:47,780 --> 00:15:49,545
+可这将是某种
+be it's going to be some sort of
+
+420
+00:15:49,550 --> 00:15:51,375
+数值函数和导数对
+numerical function and derivative pair
+
+421
+00:15:51,380 --> 00:15:53,805
+好吧，我的八条线中有三条是
+all right so three of my eight lines is
+
+422
+00:15:53,810 --> 00:15:55,605
+创造一个d--这意味着享受你的
+to create a d-- this means enjoy your
+
+423
+00:15:55,610 --> 00:15:56,174
+语言
+language
+
+424
+00:15:56,179 --> 00:15:58,424
+这意味着使用数字的子类型
+this means to use a subtype of a number
+
+425
+00:15:58,429 --> 00:15:59,624
+所以我们会把它当成一个数字
+so we're gonna treat it like a number
+
+426
+00:15:59,629 --> 00:16:01,664
+对，我们希望能够增加倍数
+right we want to be able to add multiply
+
+427
+00:16:01,669 --> 00:16:04,514
+并划分这些有序的对，但
+and divide these these ordered pairs but
+
+428
+00:16:04,519 --> 00:16:06,284
+它只是一对数字而不是
+it's just a pair of numbers right don't
+
+429
+00:16:06,289 --> 00:16:08,144
+得到-不要朱莉娅吓唬你，只是
+get--don't the Julia scare you it's just
+
+430
+00:16:08,149 --> 00:16:09,584
+函数导数数字对
+a function derivative numerical pair
+
+431
+00:16:09,589 --> 00:16:12,014
+好吧，这些其他五行是什么
+okay and what's these other five lines
+
+432
+00:16:12,019 --> 00:16:14,684
+好吧，我想教它一些规则
+well I want to teach it to some rule in
+
+433
+00:16:14,689 --> 00:16:17,594
+商数规则让大家记住
+the quotient rule so you all remember
+
+434
+00:16:17,599 --> 00:16:19,244
+总和规则我猜这很容易
+the sum rule I guess that's the easy one
+
+435
+00:16:19,249 --> 00:16:21,704
+该商数规则仍然还是有
+the quotient rule is still I still have
+
+436
+00:16:21,709 --> 00:16:23,504
+你知道我高中的老师
+the my teacher from high school you know
+
+437
+00:16:23,509 --> 00:16:24,914
+你知道，在我耳后响起
+ringing in the back of my ear you know
+
+438
+00:16:24,919 --> 00:16:26,024
+分母时候，它是
+the denominator times it was the
+
+439
+00:16:26,029 --> 00:16:27,434
+分子减去你所有的分子
+numerator minus the numerator you all
+
+440
+00:16:27,439 --> 00:16:28,544
+有顺口溜和你的工作你
+have that jingle and you're working your
+
+441
+00:16:28,549 --> 00:16:30,524
+大脑过于我打赌你被划分
+brain too I bet you do divided by the
+
+442
+00:16:30,529 --> 00:16:31,484
+分母平方
+denominator squared
+
+443
+00:16:31,489 --> 00:16:35,024
+甚至不能把它弄出来我的头，以便最大
+can't even get it out of my head so up
+
+444
+00:16:35,029 --> 00:16:39,524
+所以有商数规则等等
+so so there's the quotient rule and so
+
+445
+00:16:39,529 --> 00:16:40,664
+我们在这五行中做了什么
+what are we doing in these five lines
+
+446
+00:16:40,669 --> 00:16:44,054
+首先，我想超载
+well first of all I want to overload
+
+447
+00:16:44,059 --> 00:16:45,734
+加分和其他一些东西
+plus and divide and a few other things
+
+448
+00:16:45,739 --> 00:16:48,884
+朱莉娅要我说你确定吗
+and Julia wants me to say are you sure
+
+449
+00:16:48,889 --> 00:16:50,744
+所以你说的方式是肯定的
+so the way you say are you sure is that
+
+450
+00:16:50,749 --> 00:16:52,664
+我要进口加分并除以你
+I'm going to import plus and divide you
+
+451
+00:16:52,669 --> 00:16:53,834
+知道，因为这是危险的
+know because it'd be dangerous to play
+
+452
+00:16:53,839 --> 00:16:56,954
+加上所以我在这里加两个
+with plus so here I'm gonna the plus two
+
+453
+00:16:56,959 --> 00:16:58,394
+双数字我们要添加
+dual numbers we're gonna add the
+
+454
+00:16:58,399 --> 00:17:00,284
+功能和衍生物分为两个
+function and the derivatives divide two
+
+455
+00:17:00,289 --> 00:17:01,874
+双重数字，我们将分裂
+dual numbers we're gonna divide the
+
+456
+00:17:01,879 --> 00:17:03,764
+函数值和分母时间
+function values and denominator times
+
+457
+00:17:03,769 --> 00:17:05,204
+分子等等，但你明白了
+the numerator blah blah but you get it
+
+458
+00:17:05,209 --> 00:17:09,314
+好吧，八条线中有六条线
+okay that's six of the eight lines the
+
+459
+00:17:09,319 --> 00:17:12,105
+第七行是我有双号
+seventh line is if I have a dual number
+
+460
+00:17:12,110 --> 00:17:14,174
+我想转换它，你知道如何
+I wanted to to convert it you know how
+
+461
+00:17:14,179 --> 00:17:15,345
+就像轮子嵌入了
+like the wheels are embedded in the
+
+462
+00:17:15,350 --> 00:17:17,294
+复杂是你知道你只是我们必须
+complex is you know you just we have to
+
+463
+00:17:17,299 --> 00:17:19,995
+告诉朱莉娅拿一个双号和
+tell Julia to to take a dual number and
+
+464
+00:17:20,000 --> 00:17:22,274
+在坚持一个零，然后再双
+stick a zero in in and then then dual
+
+465
+00:17:22,279 --> 00:17:23,985
+数字和常规数字可以完成
+numbers and regular numbers can complete
+
+466
+00:17:23,990 --> 00:17:26,654
+很好地在一起，这实际上
+nicely together and this this actually
+
+467
+00:17:26,659 --> 00:17:28,935
+如果我是真的说的话
+is the thing that actually says if I
+
+468
+00:17:28,940 --> 00:17:30,134
+在一个数字中有一个双号
+have a dual number in a number in
+
+469
+00:17:30,139 --> 00:17:32,174
+操作推动他们这样的工作为
+operation promote them so the work as
+
+470
+00:17:32,179 --> 00:17:35,835
+双号码所以八行的代码，以便
+dual numbers so eight lines of code so
+
+471
+00:17:35,840 --> 00:17:37,325
+我要告诉你的第一件事就是
+the first thing I'm gonna tell you is
+
+472
+00:17:37,330 --> 00:17:40,455
+我要提醒你，你永远不会知道我
+I'm going to remind you you never know I
+
+473
+00:17:40,460 --> 00:17:42,044
+从来没有输入一半X到负1/2
+never typed one-half X to the minus 1/2
+
+474
+00:17:42,049 --> 00:17:44,475
+你不同意我没有进口的人吗？
+do you agree no one I'm not importing
+
+475
+00:17:44,480 --> 00:17:45,884
+任何包装都不会像它来的那样
+any packages it's not like it's coming
+
+476
+00:17:45,889 --> 00:17:47,565
+从我不是偷偷摸摸的
+in from the I'm not sneaking it in from
+
+477
+00:17:47,570 --> 00:17:47,924
+旁边
+the side
+
+478
+00:17:47,929 --> 00:17:49,935
+减去一个房子没有1/2X.
+there's no 1/2 X to the minus a house
+
+479
+00:17:49,940 --> 00:17:55,095
+当然没有任何数字
+and there's certainly not any numerical
+
+480
+00:17:55,100 --> 00:17:57,345
+衍生品或者恰到好处
+derivatives either right just the just
+
+481
+00:17:57,350 --> 00:17:59,534
+可以说是几乎感觉到的规则
+just arguably a rule that almost feels
+
+482
+00:17:59,539 --> 00:18:00,884
+符号中的商数规则
+symbolic the quotient rule in the
+
+483
+00:18:00,889 --> 00:18:02,715
+添加规则，但没有数字
+addition rule but but no numerical
+
+484
+00:18:02,720 --> 00:18:06,065
+这里的有限差异还可以
+finite differences at all here okay so
+
+485
+00:18:06,070 --> 00:18:09,225
+所以首先让我告诉你
+so first of all let me show you here
+
+486
+00:18:09,230 --> 00:18:14,655
+我正在接受我的申请
+that I'm taking the I'm applying the
+
+487
+00:18:14,660 --> 00:18:16,275
+没有重写的巴比伦算法
+Babylonian algorithm without rewriting
+
+488
+00:18:16,280 --> 00:18:18,855
+在我们之前的代码到双号
+code to a dual number now before we
+
+489
+00:18:18,860 --> 00:18:20,205
+将它应用于数字，但现在我要去了
+applied it to numbers but now I'm gonna
+
+490
+00:18:20,210 --> 00:18:21,315
+将它应用于这个双重数字
+apply it to this dual number they're
+
+491
+00:18:21,320 --> 00:18:24,225
+刚发明我将在49岁时申请
+just invented I'm gonna apply it at 49
+
+492
+00:18:24,230 --> 00:18:26,565
+一个因为我知道答案，然后我就是
+one cuz I know the answer and then I'm
+
+493
+00:18:26,570 --> 00:18:28,545
+要把它与我拿一个进行比较
+gonna compare it with I'm taking one
+
+494
+00:18:28,550 --> 00:18:30,495
+x的平方根的一半只是为了
+half of a square root of x just for
+
+495
+00:18:30,500 --> 00:18:32,385
+比较目的是正确而非不是
+comparison purposes right and not not in
+
+496
+00:18:32,390 --> 00:18:34,185
+我自己的算法，当然你看到了
+my own algorithm and of course you see
+
+497
+00:18:34,190 --> 00:18:36,525
+我正在神奇地做对了
+that I'm getting magically the right
+
+498
+00:18:36,530 --> 00:18:39,225
+没有任何答案你应该好奇
+answer without ever so you should wonder
+
+499
+00:18:39,230 --> 00:18:40,785
+我怎么做的我是怎么得到的
+how did I do that how did I get the
+
+500
+00:18:40,790 --> 00:18:42,525
+衍生品，我们可以采取任何数字你
+derivative we could take any number you
+
+501
+00:18:42,530 --> 00:18:45,015
+如果您愿意的话，就像这里的一百个
+like here's a hundred if you prefer to
+
+502
+00:18:45,020 --> 00:18:47,355
+看到一个像pi这样的数字我们可以做到这一点
+see a number like pi we can do that I
+
+503
+00:18:47,360 --> 00:18:49,685
+意思是你知道我们可以做到这一切
+mean you know we can do it every like
+
+504
+00:18:49,690 --> 00:18:52,245
+它会起作用所以你看到了
+it's going to work so there you see that
+
+505
+00:18:52,250 --> 00:18:54,045
+这是pi和此的平方根
+this is the square root of pi and this
+
+506
+00:18:54,050 --> 00:18:55,335
+将是一个一半以上的平方根
+would be one half over the square root
+
+507
+00:18:55,340 --> 00:18:57,345
+pi数字，所以你看到它
+of pi numerically so and you see it
+
+508
+00:18:57,350 --> 00:19:00,135
+将这些数字与这些数字相匹配
+matches these these numbers to enough
+
+509
+00:19:00,140 --> 00:19:01,695
+实际上所有数字都是数字
+digits in fact all the digits actually
+
+510
+00:19:01,700 --> 00:19:04,395
+是的，所以这件事神奇地工作好了
+yeah so this thing magically worked okay
+
+511
+00:19:04,400 --> 00:19:05,625
+你应该都在想这是怎么回事
+you should all be wondering how did that
+
+512
+00:19:05,630 --> 00:19:06,135
+发生
+happen
+
+513
+00:19:06,140 --> 00:19:09,375
+对，我没有重写任何代码我
+right I didn't rewrite any code I
+
+514
+00:19:09,380 --> 00:19:10,905
+实际上写了一个代码来计算一个
+actually wrote a code to just compute a
+
+515
+00:19:10,910 --> 00:19:12,705
+平方根我从来没有写过
+square root I never could never wrote a
+
+516
+00:19:12,710 --> 00:19:14,325
+用于计算平方导数的代码
+code to compute the derivative of square
+
+517
+00:19:14,330 --> 00:19:16,635
+根源和顺便说一下这是一个
+roots and and by the way this is a
+
+518
+00:19:16,640 --> 00:19:18,675
+那一点点朱莉娅的魔力
+little bit of the Julia magic that that
+
+519
+00:19:18,680 --> 00:19:20,985
+我们正在推动数字是非常
+we're pushing numerically that very
+
+520
+00:19:20,990 --> 00:19:23,895
+经常在这个世界上人们会
+often and in this world people will
+
+521
+00:19:23,900 --> 00:19:25,395
+写一个代码来做某事然后如果
+write a code to do something and then if
+
+522
+00:19:25,400 --> 00:19:26,565
+你想做更像get的事情
+you wanted to do something more like get
+
+523
+00:19:26,570 --> 00:19:27,945
+有人写另一个的衍生物
+a derivative somebody writes another
+
+524
+00:19:27,950 --> 00:19:31,395
+与朱莉娅的代码经常可以
+code with Julia very often you can
+
+525
+00:19:31,400 --> 00:19:33,375
+实际上保持原始代码如果
+actually keep to the original code if
+
+526
+00:19:33,380 --> 00:19:34,815
+你只需要使用它和正常
+you just use it properly and
+
+527
+00:19:34,820 --> 00:19:36,885
+聪明地你可以做神奇的事情
+intelligently you can do magic things
+
+528
+00:19:36,890 --> 00:19:38,805
+没有编写新代码，你会看到
+without writing new codes and you'll see
+
+529
+00:19:38,810 --> 00:19:41,325
+这又是一点点但是这里
+this again in a little bit but here's
+
+530
+00:19:41,330 --> 00:19:43,575
+你的衍生物知道这是
+the derivative of you know this this is
+
+531
+00:19:43,580 --> 00:19:45,165
+的x的平方根的1/2的情节
+the plot of 1/2 of the square root of x
+
+532
+00:19:45,170 --> 00:19:47,175
+在黑色，你可以看到
+in black and again you could see the
+
+533
+00:19:47,180 --> 00:19:49,725
+在这里好好收敛我好
+convergence over here all right well I'm
+
+534
+00:19:49,730 --> 00:19:51,735
+仍然不会告诉你为什么它的工作原理
+still not going to show you why it works
+
+535
+00:19:51,740 --> 00:19:53,265
+只是还没有我保证我会和它的
+just yet I promise I will and it's
+
+536
+00:19:53,270 --> 00:19:56,255
+可能还要多几分钟但是
+probably a few more minutes more but
+
+537
+00:19:56,260 --> 00:19:59,055
+我首先要做的是我想
+what I will do first is is I'd like to
+
+538
+00:19:59,060 --> 00:20:00,555
+向你展示大多数人的东西
+show you something that most people
+
+539
+00:20:00,560 --> 00:20:02,385
+不要看我从不看它我
+don't ever look at I never look at it I
+
+540
+00:20:02,390 --> 00:20:04,035
+想展示你在这里是相同的
+want to show you here's the same
+
+541
+00:20:04,040 --> 00:20:07,125
+巴比伦代码我想告诉你
+Babylonian code I want to show you the
+
+542
+00:20:07,130 --> 00:20:10,275
+用于计算的汇编程序
+assembler for the computation of the
+
+543
+00:20:10,280 --> 00:20:12,315
+派生所以我要经营巴比伦人
+derivative so I'm gonna run Babylonian
+
+544
+00:20:12,320 --> 00:20:16,005
+在双重数字上，我们会
+on a dual dual number and we're gonna
+
+545
+00:20:16,010 --> 00:20:19,275
+看这里，我不知道是否有人
+look here and I don't know if anybody
+
+546
+00:20:19,280 --> 00:20:20,745
+这里读取汇编程序我打赌有
+here reads assembler I'm betting there's
+
+547
+00:20:20,750 --> 00:20:22,695
+实际上是零或一个人
+zero or one of you actually
+
+548
+00:20:22,700 --> 00:20:23,865
+读了这些东西你们有多少人读过
+reads this stuff how many of you read
+
+549
+00:20:23,870 --> 00:20:28,125
+汇编程序好吧我们得到它不是0-1
+assembler okay we have got it wasn't 0-1
+
+550
+00:20:28,130 --> 00:20:29,895
+我们有一半是他的一半
+we had a half right there's a half he's
+
+551
+00:20:29,900 --> 00:20:31,425
+有点像这样的箭头
+kind of going like this here's the arrow
+
+552
+00:20:31,430 --> 00:20:33,375
+这是他喜欢的一个好吗
+here's one he's like this okay
+
+553
+00:20:33,380 --> 00:20:35,355
+所以我认为零的是正确的
+so so I think zero ones like the right
+
+554
+00:20:35,360 --> 00:20:38,025
+有点但我敢打赌，如果我，你会相信我
+bit but I'll bet you'll believe me if I
+
+555
+00:20:38,030 --> 00:20:40,575
+告诉你，当你有短
+tell you that when you have short
+
+556
+00:20:40,580 --> 00:20:42,195
+这样的汇编程序并不是很好
+assembler like this and it's not very
+
+557
+00:20:42,200 --> 00:20:44,445
+很久以后你就拥有了高效的代码
+long then you have efficient code but
+
+558
+00:20:44,450 --> 00:20:46,215
+它非常紧，它运行速度非常快
+it's very tight it'll run very fast
+
+559
+00:20:46,220 --> 00:20:47,955
+所以不管这件事是做什么的
+so whatever this thing is doing it's
+
+560
+00:20:47,960 --> 00:20:50,385
+简而言之，你不会得到任何
+short and this you won't get from any
+
+561
+00:20:50,390 --> 00:20:53,145
+其他语言如果你确实尝试过
+other language if you did try to do the
+
+562
+00:20:53,150 --> 00:20:54,525
+Python中我也向你保证
+same thing in Python I promise you
+
+563
+00:20:54,530 --> 00:20:56,175
+他们将成为屏幕和屏幕
+they'll be screens and screens and
+
+564
+00:20:56,180 --> 00:20:58,005
+即使你，屏幕也很丰富
+screens full of stuff if even if you
+
+565
+00:20:58,010 --> 00:21:02,805
+能得到它所以这就是巴比伦人
+could get it so so here's the Babylonian
+
+566
+00:21:02,810 --> 00:21:05,565
+双数的算法就在这里
+algorithm on the dual number and here it
+
+567
+00:21:05,570 --> 00:21:07,845
+是一个汇编程序，它很短，所以
+is an assembler and it's short so so the
+
+568
+00:21:07,850 --> 00:21:09,195
+我说的另一件事不仅仅是
+other thing I'm saying is not only does
+
+569
+00:21:09,200 --> 00:21:10,995
+它有效，但朱莉也成功了
+it work but Julie also makes it
+
+570
+00:21:11,000 --> 00:21:14,115
+在我终于告诉你之前，这样有效率
+efficient so before I finally tell you
+
+571
+00:21:14,120 --> 00:21:15,875
+真正发生了什么以及它为何起作用
+what's really going on and why it works
+
+572
+00:21:15,880 --> 00:21:19,035
+我要抓一个Python符号包
+I'm gonna grab a Python symbolic package
+
+573
+00:21:19,040 --> 00:21:21,395
+这将与朱莉娅和
+which will work nicely with Julia and
+
+574
+00:21:21,400 --> 00:21:26,685
+我将通过运行相同的代码
+I'm going to run the same code through
+
+575
+00:21:26,690 --> 00:21:29,865
+Python象征性，并告诉你什么
+the Python symbolic and show you what
+
+576
+00:21:29,870 --> 00:21:31,575
+这些是你的迭代
+the these are the iterations that you
+
+577
+00:21:31,580 --> 00:21:33,705
+得到这是一个Khaleesi的
+get so this is a Khaleesi the the
+
+578
+00:21:33,710 --> 00:21:35,655
+迭代朝向平方根和
+iterations towards the square root and
+
+579
+00:21:35,660 --> 00:21:36,705
+这是迭代的
+here are the iterations of the
+
+580
+00:21:36,710 --> 00:21:37,905
+实际存在的衍生物
+derivative that's actually being
+
+581
+00:21:37,910 --> 00:21:41,085
+计算得到的，这里的关键点是
+calculated um and the key point here is
+
+582
+00:21:41,090 --> 00:21:43,785
+当然，我们不是这个象征性的
+of course we're not this is a symbolic
+
+583
+00:21:43,790 --> 00:21:45,525
+计算我们没有做一个象征性的
+computation we're not doing a symbolic
+
+584
+00:21:45,530 --> 00:21:47,295
+计算这是数学上的
+computation this is mathematically
+
+585
+00:21:47,300 --> 00:21:49,755
+相当于我们得到的功能
+equivalent to the function we would get
+
+586
+00:21:49,760 --> 00:21:51,855
+如果我们喜欢绘制它或什么的
+if we were to like plot it or something
+
+587
+00:21:51,860 --> 00:21:53,715
+但当然我们不是象征性的
+but of course we're not symbolic
+
+588
+00:21:53,720 --> 00:21:55,725
+我的意思是计算效率非常低
+computation is very inefficient I mean
+
+589
+00:21:55,730 --> 00:21:57,375
+你得到这些大系数我的意思
+you get these big coefficients I mean
+
+590
+00:21:57,380 --> 00:21:59,325
+看看这个号码是什么这五
+look at this number what is this five
+
+591
+00:21:59,330 --> 00:22:01,425
+无论如何，你得到的是万元
+million or something anyway you get
+
+592
+00:22:01,430 --> 00:22:03,615
+这些人甚至是这些大数字
+these big numbers these people even
+
+593
+00:22:03,620 --> 00:22:04,905
+这里更大的数字看这些巨大的
+bigger numbers here look at these huge
+
+594
+00:22:04,910 --> 00:22:07,035
+数字正确，它需要很多
+numbers right the it takes a lot of
+
+595
+00:22:07,040 --> 00:22:09,615
+存储我正在拖动这些X.
+storage I'm dragging these X's along
+
+596
+00:22:09,620 --> 00:22:11,865
+记忆力有很大的拖累我的意思是这个
+there's a big drag on memory I mean this
+
+597
+00:22:11,870 --> 00:22:13,905
+不是办法，这就是为什么我们做的
+is not the way that this is why we do
+
+598
+00:22:13,910 --> 00:22:16,455
+数值计算但是什么
+numerical computation but what the
+
+599
+00:22:16,460 --> 00:22:18,015
+巴比伦算法在没有
+Babylonian algorithm in the absence of
+
+600
+00:22:18,020 --> 00:22:20,405
+任何舍入都等同于计算
+any roundoff is equivalent to computing
+
+601
+00:22:20,410 --> 00:22:22,995
+你知道它正在计算的线上面
+you know above the line it's computing
+
+602
+00:22:23,000 --> 00:22:25,455
+平方根在这里，然后在这里
+the square root here and then below here
+
+603
+00:22:25,460 --> 00:22:27,315
+这是这些都是对迭代
+this is these are the iterates towards
+
+604
+00:22:27,320 --> 00:22:28,845
+导数所以它实际上并非如此
+the derivative so it's not actually
+
+605
+00:22:28,850 --> 00:22:32,175
+将X1/2X计算为负1/2
+calculating X 1/2 X to the minus 1/2
+
+606
+00:22:32,180 --> 00:22:33,735
+它实际上在做一些迭代的事情
+it's actually doing something iterative
+
+607
+00:22:33,740 --> 00:22:36,735
+差不多是1/2
+that is approximating 1/2
+
+608
+00:22:36,740 --> 00:22:39,405
+-好吧，让我现在告诉你
+- all right well let me tell you now let
+
+609
+00:22:39,410 --> 00:22:41,985
+我有点揭示正在发生的事情
+me sort of reveal what's going on just
+
+610
+00:22:41,990 --> 00:22:44,174
+所以我可以告诉你它是怎么回事
+so that I can kind of show you how it's
+
+611
+00:22:44,179 --> 00:22:46,665
+得到答案，就像我说的那样
+getting the answer and like I said it
+
+612
+00:22:46,670 --> 00:22:48,945
+是SVD那种说服我的
+was the SVD that sort of convinced me
+
+613
+00:22:48,950 --> 00:22:50,265
+这是怎么发生的，因为SVD是
+how this was happening cuz the SVD is
+
+614
+00:22:50,270 --> 00:22:51,795
+也像这样的迭代算法
+also an iterative algorithm like this
+
+615
+00:22:51,800 --> 00:22:53,565
+巴比伦方根，但它是
+Babylonian square root but but it's
+
+616
+00:22:53,570 --> 00:22:54,885
+更容易向您展示与之相关的观点
+easier to show you the point with the
+
+617
+00:22:54,890 --> 00:22:57,975
+胡扯和平方根所以我要做
+baloney and square root so I'm gonna do
+
+618
+00:22:57,980 --> 00:22:59,265
+我永远不想做的事情
+something that I would never want to do
+
+619
+00:22:59,270 --> 00:23:01,485
+这是明确写出衍生物
+which is explicitly write a derivative
+
+620
+00:23:01,490 --> 00:23:04,005
+巴比伦算法和我正在做的事情
+Babylonian algorithm and what I'm doing
+
+621
+00:23:04,010 --> 00:23:05,955
+我要采用2x的衍生规格
+is I'm gonna take the derivative spec 2x
+
+622
+00:23:05,960 --> 00:23:09,135
+我的代码的每一行，所以你知道如果
+of every line of my code so you know if
+
+623
+00:23:09,140 --> 00:23:10,665
+每条偶数或奇数线我都不知道
+every even or odd line I never know
+
+624
+00:23:10,670 --> 00:23:13,275
+什么是偶数或奇数，但是
+what's even or odd anymore but the
+
+625
+00:23:13,280 --> 00:23:14,955
+原始代码行有一个flex
+original line of code had one flex over
+
+626
+00:23:14,960 --> 00:23:15,975
+两个现在我要采取衍生物
+two now I'm going to take the derivative
+
+627
+00:23:15,980 --> 00:23:18,554
+或者在这里获得1/2
+or get 1/2 here
+
+628
+00:23:18,559 --> 00:23:20,745
+如果我拿这个代码我就有这行代码
+I had this line of code if I take the
+
+629
+00:23:20,750 --> 00:23:23,145
+衍生物我会使用的
+derivative I'll use the the the the
+
+630
+00:23:23,150 --> 00:23:25,455
+商数规则，这将是
+quotient rule and this would be the
+
+631
+00:23:25,460 --> 00:23:28,755
+如果我运行这个代码我会是衍生的
+derivative if I run this code what I'm
+
+632
+00:23:28,760 --> 00:23:31,605
+有效的做法是我只是善用
+effectively doing is I'm just using good
+
+633
+00:23:31,610 --> 00:23:33,554
+旧的加时间和分裂没有
+old plus and times and divide nothing
+
+634
+00:23:33,559 --> 00:23:35,595
+看上去没有平方根
+fancy there's not a square root to be
+
+635
+00:23:35,600 --> 00:23:38,775
+看到但我正在做的是当我跑我的
+seen but what I'm doing is as I run my
+
+636
+00:23:38,780 --> 00:23:41,945
+算法我也在运行我其实
+algorithm I'm also running I'm actually
+
+637
+00:23:41,950 --> 00:23:45,045
+如果我这样计算衍生物的话
+computing the derivative as I go so if I
+
+638
+00:23:45,050 --> 00:23:46,395
+有这种无限的算法
+have this infinite algorithm it's going
+
+639
+00:23:46,400 --> 00:23:48,285
+收敛到平方根此
+to converge to the square root this the
+
+640
+00:23:48,290 --> 00:23:50,115
+衍生算法将收敛于
+derivative algorithm will converge to
+
+641
+00:23:50,120 --> 00:23:52,785
+平方根的衍生物，但
+the derivative of the square roots but
+
+642
+00:23:52,790 --> 00:23:55,215
+我不是我没有使用其他任何东西
+I'm not I'm not using anything other
+
+643
+00:23:55,220 --> 00:23:57,915
+比加减次数除以得分
+than plus minus times and divide to make
+
+644
+00:23:57,920 --> 00:24:00,495
+如果你重写任何代码就会发生这种情况
+that happen so if you rewrite any code
+
+645
+00:24:00,500 --> 00:24:02,685
+在任何情况下你都可以迭代任何代码
+at all you could have any code iterative
+
+646
+00:24:02,690 --> 00:24:04,665
+有限的，如果你只是无所谓
+finite it doesn't matter if you just
+
+647
+00:24:04,670 --> 00:24:05,835
+把衍生品带回你的
+take the derivatives back to your
+
+648
+00:24:05,840 --> 00:24:08,174
+你的代码的每一行的变量，然后
+variable of every line of your code then
+
+649
+00:24:08,179 --> 00:24:10,845
+你可以得到一个衍生品，就像我一样
+you can get a derivative out and as I
+
+650
+00:24:10,850 --> 00:24:12,525
+说这不是象征性的衍生品
+said it's not a symbolic derivative like
+
+651
+00:24:12,530 --> 00:24:14,804
+你知道所有的1801或其他什么
+you know all of 1801 or whatever
+
+652
+00:24:14,809 --> 00:24:16,215
+无论我们在哪里教微积分这些天
+wherever we teach calculus these days
+
+653
+00:24:16,220 --> 00:24:18,405
+它不是像数字导数那样的
+and it's not a numerical derivative like
+
+654
+00:24:18,410 --> 00:24:19,965
+在你知道的数字课程中
+in a numerical courses that you know the
+
+655
+00:24:19,970 --> 00:24:23,174
+18.3XYZ是不同的
+18.3 a X Y Z's whatever it's a different
+
+656
+00:24:23,179 --> 00:24:26,505
+野兽它是它的使用
+beast it's the it's it's using the the
+
+657
+00:24:26,510 --> 00:24:28,965
+在加法法则商法则
+quotient rule in the addition rule at
+
+658
+00:24:28,970 --> 00:24:31,715
+的每一步得到的答案
+every step of the way to get the answer
+
+659
+00:24:31,720 --> 00:24:34,875
+所以，你知道这是这个d-bob
+so and you know here's this d-bob
+
+660
+00:24:34,880 --> 00:24:36,105
+学习算法，你可以看到它
+learning algorithm you could see it
+
+661
+00:24:36,110 --> 00:24:37,455
+跑步，我会得到它给予权利
+running and I'll get it gives the right
+
+662
+00:24:37,460 --> 00:24:39,554
+回答我必须先执行代码
+answer I have to execute the code first
+
+663
+00:24:39,559 --> 00:24:41,655
+得到正确答案，但你看到了
+to get the right answer but you see it
+
+664
+00:24:41,660 --> 00:24:44,054
+给它给出正确的答案好吧哦
+gives it gives the right answer okay oh
+
+665
+00:24:44,059 --> 00:24:45,975
+我只是在伊斯坦布尔，我可以
+I was just in Istanbul and I they could
+
+666
+00:24:45,980 --> 00:24:48,255
+挑战我做招牌我忘了
+challenge me to do sign I forgot about
+
+667
+00:24:48,260 --> 00:24:50,264
+它仍然在苏玛我的笔记本
+that it's still in the Summa notebook I
+
+668
+00:24:50,269 --> 00:24:52,304
+它在我工作的每个人面前
+it in front of everybody it worked I got
+
+669
+00:24:52,309 --> 00:24:55,244
+一个cosign好，但让我通过所有
+a cosign okay but let me pass all of
+
+670
+00:24:55,249 --> 00:25:00,224
+那么那么让我回去告诉你
+that so so so so let me go back and tell
+
+671
+00:25:00,229 --> 00:25:03,104
+那么这一切如何运作良好
+you then how is this all working well
+
+672
+00:25:03,109 --> 00:25:04,664
+发生了什么让我们回到原点
+what's happening let's go back to the
+
+673
+00:25:04,669 --> 00:25:06,554
+八行代码，现在也许你
+eight lines of code and now maybe you
+
+674
+00:25:06,559 --> 00:25:09,764
+可以看到发生了什么事情
+could see what's happening the where's
+
+675
+00:25:09,769 --> 00:25:11,084
+我的八行代码来自于
+my eight lines of code from the very
+
+676
+00:25:11,089 --> 00:25:13,334
+一开始，我本可以看到
+beginning and I could have watched the
+
+677
+00:25:13,339 --> 00:25:14,445
+时间我想告诉你这个
+time I want to show you this one other
+
+678
+00:25:14,450 --> 00:25:16,874
+太有希望我会有足够的东西
+thing too so hopefully I'll have enough
+
+679
+00:25:16,879 --> 00:25:20,654
+是时候这样做但是在这里让我们看看
+time to do that but here let's see we
+
+680
+00:25:20,659 --> 00:25:23,584
+强大的大西洋代码在哪里
+were mighty Atlantic code where are they
+
+681
+00:25:23,589 --> 00:25:25,874
+在这里，我们去你这里的事件
+here we go you're here the events of
+
+682
+00:25:25,879 --> 00:25:29,014
+代码所以我正在做的不是
+code so what I'm doing is instead of
+
+683
+00:25:29,019 --> 00:25:31,664
+通过获取所有代码来重写
+rewriting all your code by taking the
+
+684
+00:25:31,669 --> 00:25:33,374
+以人的方式衍生出每一条线
+derivative of every line the human way
+
+685
+00:25:33,379 --> 00:25:36,074
+我是说为什么不能用这个软件
+I'm saying that why can't the software
+
+686
+00:25:36,079 --> 00:25:37,874
+只是以某种自动方式做到这一点
+just do this in some automatic way and
+
+687
+00:25:37,879 --> 00:25:38,624
+这是自动的地方
+this is where the automatic
+
+688
+00:25:38,629 --> 00:25:40,994
+分化进入旧的
+differentiation comes in and in the old
+
+689
+00:25:40,999 --> 00:25:42,315
+所有的人在过去的日子
+old days when people in all the
+
+690
+00:25:42,320 --> 00:25:44,144
+数字代码在Fortran那里
+numerical code was in Fortran there
+
+691
+00:25:44,149 --> 00:25:45,244
+将是这些源到源
+would be these source-to-source
+
+692
+00:25:45,249 --> 00:25:47,494
+实际输入的翻译
+translators that would actually input
+
+693
+00:25:47,499 --> 00:25:52,364
+代码和代码的输出衍生物
+code and output derivatives of code the
+
+694
+00:25:52,369 --> 00:25:55,394
+giulia方式更现代的方式是让
+giulia way the more modern way is to let
+
+695
+00:25:55,399 --> 00:25:57,104
+JIT编译器就是这样做的
+the JIT compiler kind of do that for you
+
+696
+00:25:57,109 --> 00:25:59,804
+所以在这里我需要它加分和
+so here I need it plus and divide of
+
+697
+00:25:59,809 --> 00:26:01,244
+当然我想添加减号和
+course I would want to add minus and
+
+698
+00:26:01,249 --> 00:26:04,874
+次，但你只需要添加一对夫妇
+times but you just add a couple of
+
+699
+00:26:04,879 --> 00:26:08,174
+事情，然后撞你知道你
+things and then bump the you know you
+
+700
+00:26:08,179 --> 00:26:10,185
+不必改写D巴比伦人
+don't have to rewrite the D Babylonian
+
+701
+00:26:10,190 --> 00:26:12,134
+因为这种类型的巴比伦人
+because the Babylonian with this type
+
+702
+00:26:12,139 --> 00:26:15,315
+我会为你做的工作好吗
+will just will do the work for you okay
+
+703
+00:26:15,320 --> 00:26:16,544
+这就是善的魔力所在
+and that's where the magic of a good
+
+704
+00:26:16,549 --> 00:26:18,344
+的软件都会有，所以你
+piece of software will have it so you
+
+705
+00:26:18,349 --> 00:26:19,784
+不必写翻译你
+don't have to write a translator you
+
+706
+00:26:19,789 --> 00:26:23,924
+没有手写的，你只要给
+don't have to handwrite it you just give
+
+707
+00:26:23,929 --> 00:26:25,514
+一些规则，你让
+sort of the rules and you let the
+
+708
+00:26:25,519 --> 00:26:26,714
+电脑做对了我的意思就是这样
+computer do it right I mean that's what
+
+709
+00:26:26,719 --> 00:26:28,124
+计算机应该擅长和
+computers are supposed to be good at and
+
+710
+00:26:28,129 --> 00:26:30,315
+这就是所有发生的事情
+so that's that's what's happening all
+
+711
+00:26:30,320 --> 00:26:33,884
+对，这就是前进模式
+right so that's that's forward mode
+
+712
+00:26:33,889 --> 00:26:35,984
+自动分化我有10个
+automatic differentiation I've got 10
+
+713
+00:26:35,989 --> 00:26:37,904
+分钟往回走左右，但让我
+minutes to go backwards so but let me
+
+714
+00:26:37,909 --> 00:26:38,804
+看看有没有人有
+see if there's any anybody have any
+
+715
+00:26:38,809 --> 00:26:41,144
+关于这一点的问题，这是真的
+questions about this this it's really
+
+716
+00:26:41,149 --> 00:26:42,315
+神奇的权利，但它非常棒
+magic right but it's pretty wonderful
+
+717
+00:26:42,320 --> 00:26:45,614
+魔术和你知道我不知道
+magic and and and you know I don't know
+
+718
+00:26:45,619 --> 00:26:46,804
+你听说过机器学习的内容
+what you've heard about machine learning
+
+719
+00:26:46,809 --> 00:26:49,544
+但说实话
+but to be honest
+
+720
+00:26:49,549 --> 00:26:52,094
+机器学习这些天就是它
+machine learning these days it's it's
+
+721
+00:26:52,099 --> 00:26:54,614
+这是你知道忘记了
+it's it's you know forgetting about
+
+722
+00:26:54,619 --> 00:26:56,264
+你是否知道人类将毫无用处
+whether you know humans will be useless
+
+723
+00:26:56,269 --> 00:26:57,945
+我不相信，但是
+which I don't believe by the way but but
+
+724
+00:26:57,950 --> 00:26:59,924
+关于机器的重要事情
+the the the the big thing about machine
+
+725
+00:26:59,929 --> 00:27:02,144
+学习是真的只是一个大的
+learning is that it's really just a big
+
+726
+00:27:02,149 --> 00:27:04,125
+一切都是正确的优化
+optimization that's all it is right
+
+727
+00:27:04,130 --> 00:27:07,395
+你遇到的最小/最大问题
+big minimum/maximum problem where you've
+
+728
+00:27:07,400 --> 00:27:08,865
+所有从微积分中知道你是什么
+all known from calculus that what you
+
+729
+00:27:08,870 --> 00:27:10,335
+需要做的就是拿你知道的衍生物
+need to do is take derivatives you know
+
+730
+00:27:10,340 --> 00:27:12,765
+将它们设置为零，你就知道了
+set them to zero right you know in the
+
+731
+00:27:12,770 --> 00:27:14,145
+多元的情况下，这是一个梯度你
+case of multivariate it's a gradient you
+
+732
+00:27:14,150 --> 00:27:17,475
+把它设置为零，所以真的这一切
+set it to zero and so really all of this
+
+733
+00:27:17,480 --> 00:27:19,815
+机器学习所有的大故事和
+machine learning all the big stories and
+
+734
+00:27:19,820 --> 00:27:21,885
+最终的一切都归结为一个
+everything in the end comes down to a
+
+735
+00:27:21,890 --> 00:27:23,505
+自动微分是排序的
+automatic differentiation is sort of
+
+736
+00:27:23,510 --> 00:27:25,065
+喜欢整体的主力
+like the the workhorse of the whole
+
+737
+00:27:25,070 --> 00:27:26,475
+事情，所以如果我们可以有一个
+thing and so if we could have a a
+
+738
+00:27:26,480 --> 00:27:28,695
+给你那个主力的语言
+language that gives you that workhorse
+
+739
+00:27:28,700 --> 00:27:30,705
+以一种好的方式然后机器学习
+in a good way then machine learning
+
+740
+00:27:30,710 --> 00:27:32,745
+这样做真的有点好处
+really sort of benefits from that so so
+
+741
+00:27:32,750 --> 00:27:34,575
+我希望你们都能看到全局
+I hope you all see the the big picture
+
+742
+00:27:34,580 --> 00:27:36,825
+机器学习真的来了
+of machine learning it really does come
+
+743
+00:27:36,830 --> 00:27:38,745
+向下走衍生工具这
+down to taking derivatives that that's
+
+744
+00:27:38,750 --> 00:27:41,895
+这就是你的结局
+that's the end of that's how you
+
+745
+00:27:41,900 --> 00:27:44,625
+否则，优化任何快速问题
+optimize any quick questions otherwise
+
+746
+00:27:44,630 --> 00:27:46,095
+我要转换主题，我要去
+I'm gonna switch topics and I'm going to
+
+747
+00:27:46,100 --> 00:27:52,815
+移动到黑板是啊有一个
+move to the blackboard yeah there's a
+
+748
+00:27:52,820 --> 00:27:54,375
+基本上让你去的技巧
+trick that basically lets you go to
+
+749
+00:27:54,380 --> 00:27:55,605
+更高的订单是的，你基本上可以
+higher orders yeah you can basically
+
+750
+00:27:55,610 --> 00:27:58,935
+使它成为两个第一顺序的组合
+make it a combo of two first order
+
+751
+00:27:58,940 --> 00:28:02,115
+衍生物，所以是的，它可以做到
+derivatives so yeah it can be done did
+
+752
+00:28:02,120 --> 00:28:11,445
+你有一个我们正在使用的问题
+you have a question oh we're using for
+
+753
+00:28:11,450 --> 00:28:22,005
+使用类型所以这是最大的伎俩
+using types so so it's the biggest trick
+
+754
+00:28:22,010 --> 00:28:24,585
+在世界上，这不是一件小事
+in the world it's not this little thing
+
+755
+00:28:24,590 --> 00:28:28,475
+做一个类型来做你的想法
+the idea of making a type to do what you
+
+756
+00:28:28,480 --> 00:28:30,585
+你有没有看到这个chroniker产品
+did you see chroniker products in this
+
+757
+00:28:30,590 --> 00:28:36,345
+类没有什么好嗯，让我看看
+class what no okay um let me see what
+
+758
+00:28:36,350 --> 00:28:38,565
+你会在这看到什么耶
+what would you have seen in this yeah
+
+759
+00:28:38,570 --> 00:28:42,044
+你看到了三角形矩阵吗？
+did you see tridiagonal matrices your
+
+760
+00:28:42,049 --> 00:28:45,135
+最喜欢的好，所以这里是一个
+favorite okay so here so here's a
+
+761
+00:28:45,140 --> 00:28:48,705
+内置类型让我们说n是不是
+built-in type let's say n is it doesn't
+
+762
+00:28:48,710 --> 00:28:51,005
+必须是四个我要创造一个
+have to be four I'm gonna create a
+
+763
+00:28:51,010 --> 00:28:54,065
+Strang矩阵如果我拼写正确的话
+Strang matrix if I could spell it right
+
+764
+00:28:54,070 --> 00:28:57,435
+它将是一个sim三角形
+and it's going to be a sim tri diagonal
+
+765
+00:28:57,440 --> 00:29:01,965
+这是一种朱莉娅型，我们将创造
+which is a julia type and we will create
+
+766
+00:29:01,970 --> 00:29:07,725
+N的两个x和n的n
+two x ones of N and minus ones of n
+
+767
+00:29:07,730 --> 00:29:11,385
+减一，现在这里的类型我的意思是这个
+minus one now here's a type I mean this
+
+768
+00:29:11,390 --> 00:29:13,095
+是内置的，但你可以创建
+is built-in but you could have created
+
+769
+00:29:13,100 --> 00:29:16,995
+它本身也很容易，我不这样做
+it yourself just as easily and I don't
+
+770
+00:29:17,000 --> 00:29:17,924
+喜欢打电话
+like calling
+
+771
+00:29:17,929 --> 00:29:19,575
+这当然不是一个密集的矩阵
+this it's certainly not a dense matrix
+
+772
+00:29:19,580 --> 00:29:21,075
+而且我不喜欢称之为稀疏
+and I don't like calling it a sparse
+
+773
+00:29:21,080 --> 00:29:23,205
+矩阵我更喜欢称之为结构化
+matrix I prefer to call it a structured
+
+774
+00:29:23,210 --> 00:29:26,264
+矩阵虽然稀疏这个词是一个
+matrix though the word sparse it's a
+
+775
+00:29:26,269 --> 00:29:28,244
+这里有点棘手，但我之所以如此
+little tricky here but the reason why I
+
+776
+00:29:28,249 --> 00:29:29,764
+不喜欢称之为稀疏矩阵
+don't like to call this a sparse matrix
+
+777
+00:29:29,769 --> 00:29:34,215
+是因为我们没有存储索引
+is because we're not storing indices in
+
+778
+00:29:34,220 --> 00:29:35,264
+任何我的意思是有很多想象力
+any I mean there's a lot of fancy
+
+779
+00:29:35,269 --> 00:29:37,364
+存储指数的方案
+schemes for storing indices for for
+
+780
+00:29:37,369 --> 00:29:39,884
+分数稀疏的矩阵很好
+sparse matrices well the score store is
+
+781
+00:29:39,889 --> 00:29:42,164
+一个对角线矢量，这两个是
+a diagonal vector there's the two's on
+
+782
+00:29:42,169 --> 00:29:44,355
+对角线有一个四向量
+the diagonal there's a four vector with
+
+783
+00:29:44,360 --> 00:29:47,534
+四个二，这里是三个向量
+four twos and here's a three vector for
+
+784
+00:29:47,539 --> 00:29:49,274
+对角线，你知道你没有
+the off diagonal and you know you don't
+
+785
+00:29:49,279 --> 00:29:51,075
+以最稀疏的方式拥有它两次
+have it twice by the way most sparse
+
+786
+00:29:51,080 --> 00:29:53,355
+矩阵结构会
+matrix structures would would would
+
+787
+00:29:53,360 --> 00:29:56,235
+你会知道减去的吗？
+would have you know the the minus ones
+
+788
+00:29:56,240 --> 00:29:59,264
+矢量两次超级和次级但
+vector twice the super and the sub but
+
+789
+00:29:59,269 --> 00:30:00,855
+真的只有季度信息
+really only the quarter information
+
+790
+00:30:00,860 --> 00:30:05,174
+这需要的是存储并在某种程度上一个
+that's needed is stored and in a way one
+
+791
+00:30:05,179 --> 00:30:09,494
+在julia中使用的类型基本上就是你
+uses types in julia to basically you
+
+792
+00:30:09,499 --> 00:30:11,835
+只存储你所需要的不是更多
+only store what you need not more and
+
+793
+00:30:11,840 --> 00:30:14,114
+然后你定义你的运作
+then you define your operations to work
+
+794
+00:30:14,119 --> 00:30:18,644
+所以，例如，如果我要带你
+so for example if i were to take you
+
+795
+00:30:18,649 --> 00:30:21,374
+知道斯特朗逆时间如此
+know Strang inverse time so anything
+
+796
+00:30:21,379 --> 00:30:23,804
+在这里是你知道的随机条款
+with here's you know terms of random for
+
+797
+00:30:23,809 --> 00:30:26,235
+我会做一个线性的解决方案
+I'm gonna do a linear solve you would
+
+798
+00:30:26,240 --> 00:30:28,095
+要使用特殊的回斯拉夫说
+want to use a special back Slav that
+
+799
+00:30:28,100 --> 00:30:29,955
+知道矩阵是对称的
+knew that the matrix was a symmetric
+
+800
+00:30:29,960 --> 00:30:33,044
+这是一个很重要的故事
+tri-diagonal so it's a big story of
+
+801
+00:30:33,049 --> 00:30:35,924
+能够创建类型并使用它们
+being able to create types and use them
+
+802
+00:30:35,929 --> 00:30:39,195
+为了你自己的目的，你不知道
+for your own purposes without you know
+
+803
+00:30:39,200 --> 00:30:41,315
+任何浪费，这是一种事情
+any wastage and this is a sort of thing
+
+804
+00:30:41,320 --> 00:30:44,054
+虽然你可以用语言来做
+that while you can do it in languages
+
+805
+00:30:44,059 --> 00:30:46,965
+如果你是桌子，就像MATLAB中的Python一样
+like Python in MATLAB if you were table
+
+806
+00:30:46,970 --> 00:30:48,674
+看看汇编程序和那个级别
+look at the assembler and that level
+
+807
+00:30:48,679 --> 00:30:50,235
+永远不会让你呀
+never let you Python you just would
+
+808
+00:30:50,240 --> 00:30:52,815
+后悔但是你会看到
+regret it but you would you would see
+
+809
+00:30:52,820 --> 00:30:55,605
+这是多少开销
+just how much overhead there is in doing
+
+810
+00:30:55,610 --> 00:30:57,494
+这样就没有性能提升
+this so there'd be no performance gain
+
+811
+00:30:57,499 --> 00:31:00,825
+但在某种程度上，这就是你想要的
+but in a way what this is what you want
+
+812
+00:31:00,830 --> 00:31:01,965
+做你想用这些东西来
+to do you want to use these things to
+
+813
+00:31:01,970 --> 00:31:04,994
+匹配数学和所以那样
+match the mathematics and and so that's
+
+814
+00:31:04,999 --> 00:31:06,394
+真的是能够做到的好事
+really the nice thing to be able to do
+
+815
+00:31:06,399 --> 00:31:08,534
+没事我只有五分钟我
+all right I only have five minutes I
+
+816
+00:31:08,539 --> 00:31:09,975
+不知道我是不是要把它拉下来
+don't know if I'm gonna pull this off
+
+817
+00:31:09,980 --> 00:31:11,804
+但我会告诉我能不能给你
+but I'll let me see if I could give you
+
+818
+00:31:11,809 --> 00:31:14,894
+在她的五分钟内的主要想法
+the main idea in five minutes of her
+
+819
+00:31:14,899 --> 00:31:16,845
+沉浸式模式差异，但在这里
+immersed mode differentiations but here
+
+820
+00:31:16,850 --> 00:31:18,914
+只要你熟悉神经
+as long as you are familiar with neural
+
+821
+00:31:18,919 --> 00:31:21,164
+网络让我看看我是否能做到这一点
+networks let me see if I can do this
+
+822
+00:31:21,169 --> 00:31:23,325
+我很快就会开始
+very quickly I'm going to start with
+
+823
+00:31:23,330 --> 00:31:26,114
+scalars好吧我会做一个神经
+scalars okay I'm gonna do a neural
+
+824
+00:31:26,119 --> 00:31:28,575
+所有标量的网络，但仅限于
+network of all scalars but only for
+
+825
+00:31:28,580 --> 00:31:29,924
+简单的初学者，但我认为
+simplicity for starters but I think
+
+826
+00:31:29,929 --> 00:31:31,365
+你会发现这可能是一般性的
+you're gonna see that this can general
+
+827
+00:31:31,370 --> 00:31:33,315
+两个真实的向量和矩阵
+two vectors and matrices which are real
+
+828
+00:31:33,320 --> 00:31:35,625
+神经网络，所以我要做的
+neural networks so what I'm going to do
+
+829
+00:31:35,630 --> 00:31:38,835
+我想要想象我们有我们的
+is I want to imagine that we have our
+
+830
+00:31:38,840 --> 00:31:42,345
+输入将有一堆标量
+inputs will have a bunch of scalar
+
+831
+00:31:42,350 --> 00:31:47,205
+权重和偏见所以这里是w1和我
+weights and biases so here's w1 and I'll
+
+832
+00:31:47,210 --> 00:31:50,475
+上升到W和B所以我们有一个
+go up to W and B all right so we have a
+
+833
+00:31:50,480 --> 00:31:53,685
+一堆重量和偏见在这里没关系
+bunch of weights and biases here okay
+
+834
+00:31:53,690 --> 00:31:59,115
+我们也将有一个x1
+and we'll also have an x1 which will
+
+835
+00:31:59,120 --> 00:32:01,635
+排序开始我们的神经网络
+sort of start off our neural network and
+
+836
+00:32:01,640 --> 00:32:03,855
+我们要计算我会写的
+we're going to compute I'll write in
+
+837
+00:32:03,860 --> 00:32:05,685
+有点朱莉娅喜欢或MATLAB黑色
+sort of Julia like or MATLAB black
+
+838
+00:32:05,690 --> 00:32:10,905
+I的符号等于1到n我会
+notation for I equals 1 through n I will
+
+839
+00:32:10,910 --> 00:32:17,295
+通过我的一些功能来更新X.
+update X by taking some function of my
+
+840
+00:32:17,300 --> 00:32:20,595
+当前输入可能是这样的
+current input maybe something like this
+
+841
+00:32:20,600 --> 00:32:22,905
+什么功能H使用我不
+and what function H to use I don't
+
+842
+00:32:22,910 --> 00:32:25,304
+在过去真的太在意了
+really care too much in the old days
+
+843
+00:32:25,309 --> 00:32:27,255
+人们常常谈论乙状结肠
+people used to talk about the sigmoid
+
+844
+00:32:27,260 --> 00:32:32,715
+现在的功能是最大值为0
+function nowadays it's the maximum of 0
+
+845
+00:32:32,720 --> 00:32:35,985
+和T一直在使用它
+and T that gets used all the time it's
+
+846
+00:32:35,990 --> 00:32:39,855
+得到了这个荒谬的名字
+got this ridiculous name rel U which I I
+
+847
+00:32:39,860 --> 00:32:41,835
+无论如何他们真的受不了
+really can't stand but anyway they
+
+848
+00:32:41,840 --> 00:32:44,835
+纠正线性单位但无论如何我
+rectified linear unit but in any event I
+
+849
+00:32:44,840 --> 00:32:46,815
+意思是它只是一个功能
+mean it it it's just a function that's
+
+850
+00:32:46,820 --> 00:32:50,085
+你知道的TT大于等于更大
+you know T of T is greater than equal to
+
+851
+00:32:50,090 --> 00:32:57,405
+00，如果不是这样，但无论什么功能
+0 0 if not so so but whatever function
+
+852
+00:32:57,410 --> 00:33:00,825
+你喜欢在这里我只是要
+and you like and here I'm just gonna
+
+853
+00:33:00,830 --> 00:33:03,375
+最终你也可以更新Taemin
+update Taemin ultimately you might also
+
+854
+00:33:03,380 --> 00:33:06,645
+有一些数据Y，你想
+have some data Y and you would like to
+
+855
+00:33:06,650 --> 00:33:08,115
+如果一切都像我说的那样的标量
+if everything is a scalar like I said
+
+856
+00:33:08,120 --> 00:33:09,525
+这可以很快推广
+this could be generalized pretty quickly
+
+857
+00:33:09,530 --> 00:33:13,845
+但我们能做的就是尽量减少
+but what we can do is we we can minimize
+
+858
+00:33:13,850 --> 00:33:18,585
+比如你知道的1/2Y减去XM平方
+say 1/2 Y minus X M squared you know in
+
+859
+00:33:18,590 --> 00:33:19,665
+你想要找到的
+the you're going to want to find the
+
+860
+00:33:19,670 --> 00:33:21,645
+数据可以最大限度地减少这一切
+data that would minimize that ok all
+
+861
+00:33:21,650 --> 00:33:23,625
+这推广到矩阵和向量
+this generalizes to matrices and vectors
+
+862
+00:33:23,630 --> 00:33:27,495
+这是大多数神经网络做得好的
+which is what most neural nets do ok and
+
+863
+00:33:27,500 --> 00:33:30,495
+自从我不会有
+since since since I'm not going to have
+
+864
+00:33:30,500 --> 00:33:31,965
+很多时候也许我可以只是有点
+a lot of time maybe I can just sort of
+
+865
+00:33:31,970 --> 00:33:34,395
+如果我去的话，切入追逐
+cut to the chase if I were to
+
+866
+00:33:34,400 --> 00:33:37,995
+区分我在这里的关键线
+differentiate the key line here I've got
+
+867
+00:33:38,000 --> 00:33:40,275
+这里有一点朱莉娅，但如果我是
+a little bit of Julia here but if I were
+
+868
+00:33:40,280 --> 00:33:41,715
+区分重点线会是什么
+to differentiate the key line what would
+
+869
+00:33:41,720 --> 00:33:43,905
+我写道，我会在这里写得很好
+I write I would write well here actually
+
+870
+00:33:43,910 --> 00:33:45,044
+让我用
+let me use the
+
+871
+00:33:45,049 --> 00:33:47,804
+通常的记谱法让我有DeltaIB了
+usual notation let me have Delta IB the
+
+872
+00:33:47,809 --> 00:33:53,345
+WXh的黄金我加双好了，这就是
+H prime of WX i plus bi okay so that's
+
+873
+00:33:53,350 --> 00:33:57,674
+这是DeltaI然后你可以看到
+that's Delta I and then you can see that
+
+874
+00:33:57,679 --> 00:34:02,674
+DXI加上一个是DeltaI，我会拥有
+DX I plus one is Delta I and I'll have
+
+875
+00:34:02,679 --> 00:34:09,374
+DWIXI加DXIWI加dbi将是
+DWI X I plus D X I WI plus d bi would be
+
+876
+00:34:09,379 --> 00:34:12,975
+差异这将是如何
+the differential this would be how how
+
+877
+00:34:12,980 --> 00:34:15,884
+我几乎做到了这就是这样的善良
+I'm almost done that's the goodness so
+
+878
+00:34:15,889 --> 00:34:17,804
+如果我做一点改变我喜欢
+if I make a little change I like to
+
+879
+00:34:17,809 --> 00:34:19,664
+想到这就像点0:01的变化
+think of this as like point 0:01 changes
+
+880
+00:34:19,669 --> 00:34:21,525
+我不喜欢我不喜欢无穷小
+I don't like I don't like infinitesimal
+
+881
+00:34:21,530 --> 00:34:23,114
+一旦说到我的想法就像点O一样说
+said like point O once it's how I think
+
+882
+00:34:23,119 --> 00:34:24,614
+他们但你做了一点改变
+of them but you make a little change
+
+883
+00:34:24,619 --> 00:34:25,695
+这里有点变化
+here a little change here a little
+
+884
+00:34:25,700 --> 00:34:27,525
+在这里改变你在这里得到改变
+change here you get a change here you
+
+885
+00:34:27,530 --> 00:34:31,185
+你明白了，你知道你会得到这个
+you'll get this you know you'll get this
+
+886
+00:34:31,190 --> 00:34:34,035
+线性的这个线性函数
+linear this linear function of the
+
+887
+00:34:34,040 --> 00:34:36,344
+扰动在这里给你扰动
+perturbations here gives you perturb
+
+888
+00:34:36,349 --> 00:34:39,015
+这里很好，我只有一个
+ations here ok well I've only got one
+
+889
+00:34:39,020 --> 00:34:40,304
+分钟，所以我要写出这一切
+minute so I'm gonna write all this out
+
+890
+00:34:40,309 --> 00:34:41,834
+用线性代数因为一切
+with linear algebra because everything
+
+891
+00:34:41,839 --> 00:34:43,185
+用线性写出来更好
+is better when written out with linear
+
+892
+00:34:43,190 --> 00:34:47,955
+代数所以我要写下我的意思
+algebra so I'm gonna write down that I'm
+
+893
+00:34:47,960 --> 00:34:50,624
+要写下我实际上
+gonna write down that I'm actually
+
+894
+00:34:50,629 --> 00:34:54,765
+对最后一个元素感兴趣但是dxdn
+interested in the last element but dxd n
+
+895
+00:34:54,770 --> 00:34:57,915
+加1将是平等的，我会
+plus 1 is going to equal and I'm gonna
+
+896
+00:34:57,920 --> 00:34:59,625
+这里有几个矩阵让我
+have a couple of matrices here let me
+
+897
+00:34:59,630 --> 00:35:02,255
+只是让结构正确
+just sort of get the structure right
+
+898
+00:35:02,260 --> 00:35:06,074
+这将是TX2DXn再加1
+this will be T X 2 DX n plus 1 again
+
+899
+00:35:06,079 --> 00:35:10,955
+对不起压扁好吧但是
+sorry for the squishing okay but and
+
+900
+00:35:10,960 --> 00:35:14,205
+这里其实我想用块
+here in fact I'd like to use block
+
+901
+00:35:14,210 --> 00:35:17,354
+矩阵稍微如此，我会在这里
+matrices a little bit so here I'm gonna
+
+902
+00:35:17,359 --> 00:35:20,475
+有DW1DB1我会放弃偏见
+have DW 1 DB 1 I'm gonna put the bias
+
+903
+00:35:20,480 --> 00:35:23,775
+一起抱歉这个烂摊子和DW
+together sorry for the mess but and DW
+
+904
+00:35:23,780 --> 00:35:27,435
+和DBn朱莉娅让你做块
+and DB n Julia lets you make block
+
+905
+00:35:27,440 --> 00:35:28,995
+矩阵，你可以实际使用它们
+matrices and you can actually use them
+
+906
+00:35:29,000 --> 00:35:30,885
+直接有一种特殊的类型权利
+directly there'd be a special type right
+
+907
+00:35:30,890 --> 00:35:33,135
+没关系，然后你在这里发生了什么
+there okay and then what goes here you
+
+908
+00:35:33,140 --> 00:35:34,334
+实际上可以看到它会是什么
+could actually see what it would be
+
+909
+00:35:34,339 --> 00:35:36,044
+我希望我做得对，但是
+would be I hope I'm doing it right but
+
+910
+00:35:36,049 --> 00:35:39,104
+有一个delta1X1和Delta和X.
+there'd be a delta 1 X 1 and Delta and X
+
+911
+00:35:39,109 --> 00:35:41,584
+N和这将是对角矩阵
+N and this would be a diagonal matrix
+
+912
+00:35:41,589 --> 00:35:44,285
+好的，然后我在这里有什么
+okay and then what do I have over here
+
+913
+00:35:44,290 --> 00:35:49,304
+在这里，我有DeltaWS，如果你
+here I'd have the Delta WS and if you
+
+914
+00:35:49,309 --> 00:35:51,945
+检查你会发现这将是我
+check you'll see that this will be I'm
+
+915
+00:35:51,950 --> 00:35:53,324
+拿不到指数权和我
+not gonna get the indices right and I
+
+916
+00:35:53,329 --> 00:35:54,375
+没时间，所以我要写
+don't have time so I'm just gonna write
+
+917
+00:35:54,380 --> 00:35:56,265
+就像这样，现在我要去
+it like this and now I'm just going to
+
+918
+00:35:56,270 --> 00:35:58,365
+告诉你故事的结局
+give you the end of the story
+
+919
+00:35:58,370 --> 00:36:00,675
+你可以把所有这些写成DX
+at a time you could write all this as DX
+
+920
+00:36:00,680 --> 00:36:03,195
+等于对角线矩阵乘以
+is equal to a diagonal matrix times the
+
+921
+00:36:03,200 --> 00:36:05,385
+参数的导数加上a
+derivative of the parameters plus a
+
+922
+00:36:05,390 --> 00:36:08,595
+再次下三角矩阵乘以DX
+lower triangular matrix times D X again
+
+923
+00:36:08,600 --> 00:36:10,845
+所以如果你想解决这个问题
+and so if you want to solve this linear
+
+924
+00:36:10,850 --> 00:36:12,405
+代数只做后向传播
+algebra just does the back propagation
+
+925
+00:36:12,410 --> 00:36:20,685
+你有我减去LDX是DP或DX会
+you have I minus L DX is d DP or DX will
+
+926
+00:36:20,690 --> 00:36:26,085
+如果我只是我减去L反DDP
+be I minus L inverse D DP and if I only
+
+927
+00:36:26,090 --> 00:36:28,065
+想要最后一个元素让我们说E和as
+want the last element let's say E and as
+
+928
+00:36:28,070 --> 00:36:29,805
+拉出最后一个的向量
+the vector that pulls out the last
+
+929
+00:36:29,810 --> 00:36:32,475
+元素那么这就是我要去的
+element then this is all I'm going to
+
+930
+00:36:32,480 --> 00:36:34,515
+需要得到我所有的衍生品和
+need to get all my derivatives and
+
+931
+00:36:34,520 --> 00:36:35,625
+这个故事的寓意我是什么？
+what's the moral of the story I
+
+932
+00:36:35,630 --> 00:36:37,515
+为一分钟而道歉但是
+apologize for going one minute over but
+
+933
+00:36:37,520 --> 00:36:40,005
+道德的故事，而不是返回
+the moral the story is instead of back
+
+934
+00:36:40,010 --> 00:36:43,175
+通过自己的辛勤劳动传播
+propagating through your own hard work
+
+935
+00:36:43,180 --> 00:36:45,765
+你可能知道，当你解决一个
+you probably know that when you solve a
+
+936
+00:36:45,770 --> 00:36:48,285
+下三角矩阵的人
+lower triangular matrix people over a
+
+937
+00:36:48,290 --> 00:36:50,475
+编写代码，回传下层
+written code that backhauls the lower
+
+938
+00:36:50,480 --> 00:36:53,175
+三角矩阵背面大背
+triangular matrix the back the big back
+
+939
+00:36:53,180 --> 00:36:55,335
+这件作品已经实施了
+piece has already been implemented for
+
+940
+00:36:55,340 --> 00:36:57,945
+你为什么要重新发明轮子呢？
+you why do it why reinvent the wheel in
+
+941
+00:36:57,950 --> 00:36:59,955
+线性背面的反向传播
+back propagation at the back of linear
+
+942
+00:36:59,960 --> 00:37:01,725
+代数已经有你看到我的后背
+algebra already has the back you see I
+
+943
+00:37:01,730 --> 00:37:03,945
+意思是如果你只是这样做而你做到了
+mean so if you just do this and you do
+
+944
+00:37:03,950 --> 00:37:05,355
+它用一种语言让你充实
+it in a language to let you get full
+
+945
+00:37:05,360 --> 00:37:08,655
+你不需要做的全面表现
+full performance you don't need to do
+
+946
+00:37:08,660 --> 00:37:10,275
+你自己的反传，因为a
+your own back propagation because a
+
+947
+00:37:10,280 --> 00:37:12,945
+简单的反斜杠会为你做到这一点，所以我
+simple backslash will do it for you so I
+
+948
+00:37:12,950 --> 00:37:14,445
+为过去而道歉我知道是否
+apologize for going over I know if
+
+949
+00:37:14,450 --> 00:37:15,795
+斯特朗教授得到了一些最后的话
+professor Strang got some final words
+
+950
+00:37:15,800 --> 00:37:19,485
+但无论如何线性代数是一个
+but but anyway the linear algebra is a
+
+951
+00:37:19,490 --> 00:37:21,015
+一切都是秘密的
+secret to everything that's that's the
+
+952
+00:37:21,020 --> 00:37:24,715
+大信息
+big message
+
+953
+00:37:24,720 --> 00:37:30,905
+[掌声]
+[Applause]
+
+954
+00:37:30,910 --> 00:37:34,725
+因为这是我们的最后两分钟或者减去
+since it's our last two minutes or minus
+
+955
+00:37:34,730 --> 00:37:39,225
+1806年的两分钟五让我只是我
+two minutes of 1806 five let me just I
+
+956
+00:37:39,230 --> 00:37:41,295
+希望你们喜欢它我当然
+hope you guys enjoyed it I certainly
+
+957
+00:37:41,300 --> 00:37:44,985
+尽管你可以告诉它教导这个
+enjoyed as you could tell teaching this
+
+958
+00:37:44,990 --> 00:37:49,065
+上课看看它会如何发展和写作
+class seeing how it would go and writing
+
+959
+00:37:49,070 --> 00:37:49,755
+关于它
+about it
+
+960
+00:37:49,760 --> 00:37:52,275
+所以我会告诉你的是关于
+so I'll let you know was about the
+
+961
+00:37:52,280 --> 00:37:54,555
+写作，同时我会得到你的
+writing and meanwhile I'll get your
+
+962
+00:37:54,560 --> 00:37:57,045
+写我的项目
+writing on the projects which I
+
+963
+00:37:57,050 --> 00:37:59,865
+非常感谢，当然
+appreciate very much and of course
+
+964
+00:37:59,870 --> 00:38:02,895
+成绩将会很好，我
+grades are going to come out well and I
+
+965
+00:38:02,900 --> 00:38:05,685
+希望您喜欢它，谢谢大家
+hope you've enjoyed it so thank you all
+
+966
+00:38:05,690 --> 00:38:06,990
+right thanks
+
+967
+00:38:05,690 --> 00:38:12,619
+好的，谢谢
+
+968
+00:38:07,000 --> 00:38:12,619
+[掌声]
+[Applause]
+

@@ -1,0 +1,3693 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,695
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,700 --> 00:00:23,955
+好吧，让我重新开始
+okay let me start again
+
+10
+00:00:23,960 --> 00:00:29,144
+感谢Rao教授的帮助
+thanks for helping with Professor Rao
+
+11
+00:00:29,149 --> 00:00:32,054
+并在最后两个实验室工作
+and working on the labs the last two
+
+12
+00:00:32,059 --> 00:00:36,075
+次我说实验室真的
+times I was saying the labs were really
+
+13
+00:00:36,080 --> 00:00:39,195
+为他的班级，这是90分钟
+for his class which is 90 minutes so
+
+14
+00:00:39,200 --> 00:00:41,295
+我们有点没时间了
+that we were kind of running out of time
+
+15
+00:00:41,300 --> 00:00:45,525
+只是回答你所知道的那些问题
+just answering those questions you know
+
+16
+00:00:45,530 --> 00:00:48,225
+让系统说OK继续下去
+getting the system to say ok keep going
+
+17
+00:00:48,230 --> 00:00:54,315
+无论如何，他会发展那些和我
+anyway he's going to develop those and I
+
+18
+00:00:54,320 --> 00:00:56,745
+认为这样会有好事
+think there'll be a good thing so
+
+19
+00:00:56,750 --> 00:01:01,725
+实际上我和第二个实验室一样
+actually the second lab I was as I was
+
+20
+00:01:01,730 --> 00:01:05,054
+看着它我在想数学
+watching it I I was thinking of a math
+
+21
+00:01:05,059 --> 00:01:08,385
+问题，我可以就此向您汇报
+question and may I report to you on that
+
+22
+00:01:08,390 --> 00:01:13,025
+数学问题所以记得实验室是
+math question so remember the lab was
+
+23
+00:01:13,030 --> 00:01:16,544
+完成矩阵你有一些
+completing a matrix you've got some
+
+24
+00:01:16,549 --> 00:01:19,575
+条目，你可以放入任何其他
+entries and you can put in any other
+
+25
+00:01:19,580 --> 00:01:23,625
+在其他位置和条目
+entries in the other positions and the
+
+26
+00:01:23,630 --> 00:01:25,665
+问题是，你能完成它的
+question was can you complete it to a
+
+27
+00:01:25,670 --> 00:01:30,825
+排名一个矩阵，所以这里是什么
+rank one matrix and so what was here's
+
+28
+00:01:30,830 --> 00:01:34,455
+我的问题是什么立场是好的
+my question what positions are ok and
+
+29
+00:01:34,460 --> 00:01:37,035
+你可能不会是什么位置
+what positions could you maybe not be
+
+30
+00:01:37,040 --> 00:01:40,715
+能够完成一级矩阵
+able to complete to a rank one matrix
+
+31
+00:01:40,720 --> 00:01:45,335
+例子是最好的所以我是
+examples are the best okay so so I'm
+
+32
+00:01:45,340 --> 00:01:50,285
+看这个问题，好吧
+looking at this question here ok so
+
+33
+00:01:50,290 --> 00:01:55,125
+假设我正在寻找排名第一
+suppose I I'm looking for a rank one
+
+34
+00:01:55,130 --> 00:01:59,315
+X列y转置形式的矩阵
+matrix of the form X column y transpose
+
+35
+00:01:59,320 --> 00:02:04,845
+或UV转置我想我们就是那些
+or UV transpose I guess we're those are
+
+36
+00:02:04,850 --> 00:02:09,034
+我们用来进行UV转置的字母
+the letters we're used to UV transpose
+
+37
+00:02:09,039 --> 00:02:13,725
+这当然意味着每个IJ
+and that means of course that a IJ each
+
+38
+00:02:13,730 --> 00:02:15,015
+一个IJ
+a IJ
+
+39
+00:02:15,020 --> 00:02:24,315
+是UI时间VJ正确所以我们得到了我们
+is UI times VJ right so we've got we're
+
+40
+00:02:24,320 --> 00:02:33,255
+能够选择我们有M使用让我问
+able to choose we have M used let me ask
+
+41
+00:02:33,260 --> 00:02:36,705
+我可以提出一个问题，让我来吧
+a question could I complete so let me
+
+42
+00:02:36,710 --> 00:02:41,745
+取m等于n等于3所以3乘3矩阵
+take m equal n equals 3 so 3 by 3 matrix
+
+43
+00:02:41,750 --> 00:02:45,705
+我会给你我的罪减1
+I'm gonna give you my sin minus 1 which
+
+44
+00:02:45,710 --> 00:02:55,905
+是3加3减去15个职位和
+is 3 plus 3 minus 1 5 positions and
+
+45
+00:02:55,910 --> 00:03:04,625
+假设I+4并给出一些非零值
+suppose I + 4 and give some non zeros in
+
+46
+00:03:04,630 --> 00:03:09,725
+其中5个职位
+which 5 positions
+
+47
+00:03:09,730 --> 00:03:14,745
+所以Y是数字M加n的地方
+so Y is where is that number M plus n
+
+48
+00:03:14,750 --> 00:03:18,285
+因为我有，所以减去1来
+minus 1 coming from well because I have
+
+49
+00:03:18,290 --> 00:03:22,905
+m使用，我有羡慕对于等级1
+M use and I have envies for for Rank 1
+
+50
+00:03:22,910 --> 00:03:27,465
+矩阵我从1变为MJ从1变为1
+matrix I goes from 1 to M J goes from 1
+
+51
+00:03:27,470 --> 00:03:31,995
+到N所以我有M+n，但显然有
+to N so I have M + n but obviously there
+
+52
+00:03:32,000 --> 00:03:36,105
+我可以让我可以要求
+I could I could make I could require the
+
+53
+00:03:36,110 --> 00:03:38,775
+首先你是一个1，换句话说
+first you to be a 1 in other words when
+
+54
+00:03:38,780 --> 00:03:41,145
+我将那些乘以一度
+I'm multiplying those there's one degree
+
+55
+00:03:41,150 --> 00:03:45,375
+那种重复的自由
+of freedom that that is sort of repeated
+
+56
+00:03:45,380 --> 00:03:52,725
+在这里，因为如果我只是给你
+here because if I'm just given you if
+
+57
+00:03:52,730 --> 00:03:57,045
+无论如何，我只是给你一个
+I'm just give just in the one anyway you
+
+58
+00:03:57,050 --> 00:04:02,415
+看到我可以重新调整使用量
+see it that that I can rescale the use
+
+59
+00:04:02,420 --> 00:04:06,675
+所以第一个u是1和那个
+so that the first u is a 1 and and that
+
+60
+00:04:06,680 --> 00:04:11,915
+离开我M+n-1所以我可以给你
+leaves me M + n - 1 so could I give you
+
+61
+00:04:11,920 --> 00:04:16,215
+这五个数字也可以
+these five numbers and could you
+
+62
+00:04:16,220 --> 00:04:20,595
+完成到一级矩阵所以
+complete that to a rank one matrix so
+
+63
+00:04:20,600 --> 00:04:22,815
+那些是非零的，为什么我说没有
+those are non zeros why do I say none
+
+64
+00:04:22,820 --> 00:04:26,895
+零，因为如果那个号码发生了
+zeros because if that number happened to
+
+65
+00:04:26,900 --> 00:04:29,224
+是零，我有坏
+be a zero I'd have bad
+
+66
+00:04:29,229 --> 00:04:31,474
+如果我开了一个和我
+if I prescribed that one and I
+
+67
+00:04:31,479 --> 00:04:36,214
+规定它为零然后如果每个
+prescribed it to be zero then if every
+
+68
+00:04:36,219 --> 00:04:37,894
+列必须是其中的倍数
+column has to be a multiple of that
+
+69
+00:04:37,899 --> 00:04:40,295
+列这些都必须为零
+column these would all have to be zero
+
+70
+00:04:40,300 --> 00:04:44,164
+所以我不希望我能够
+so I don't want that I want to be able
+
+71
+00:04:44,169 --> 00:04:48,485
+因此，规定五个数字
+to prescribe five numbers and therefore
+
+72
+00:04:48,490 --> 00:04:53,094
+他们最好不要零也好
+they better better not be zero okay
+
+73
+00:04:53,099 --> 00:04:55,594
+你能完成那份工作吗？
+could you complete the job with that
+
+74
+00:04:55,599 --> 00:05:01,384
+我认为你可以选择五个职位
+choice of of five positions I think you
+
+75
+00:05:01,389 --> 00:05:03,844
+可能因为你会如何决定
+could because how would you decide on
+
+76
+00:05:03,849 --> 00:05:08,134
+这个数字我至少是一种方式
+that number well I'm at least one way to
+
+77
+00:05:08,139 --> 00:05:11,015
+看看它是什么数字
+look at it is what would that number be
+
+78
+00:05:11,020 --> 00:05:16,144
+那就是这个号码
+there so this is that number would be
+
+79
+00:05:16,149 --> 00:05:19,954
+选择那里只有一个选择
+chosen there be one and only one choice
+
+80
+00:05:19,959 --> 00:05:23,075
+因为这将给予排名第一
+for that that would give rank one in
+
+81
+00:05:23,080 --> 00:05:25,834
+事实上，2比2的决定因素
+fact that little 2 by 2 determinant
+
+82
+00:05:25,839 --> 00:05:32,735
+必须是0好写所有
+would have to be 0 well write the all
+
+83
+00:05:32,740 --> 00:05:34,864
+所有列都应该是行
+the rows all the columns are supposed to
+
+84
+00:05:34,869 --> 00:05:38,164
+是所有行的一列的倍数
+be multiples of one column all the rows
+
+85
+00:05:38,169 --> 00:05:40,054
+应该是一行的倍数
+are supposed to be multiples of one row
+
+86
+00:05:40,059 --> 00:05:45,964
+所有这两个人都是我们的等级1
+all the two by twos are our rank 1
+
+87
+00:05:45,969 --> 00:05:48,454
+他们都是2并且排名第2
+they're all and rank 1 for a 2 by 2
+
+88
+00:05:48,459 --> 00:05:52,175
+意味着决定因素0所以我会知道什么
+means determinant 0 so I would know what
+
+89
+00:05:52,180 --> 00:05:54,605
+一个必须是数字将
+that one had to be that number would
+
+90
+00:05:54,610 --> 00:06:01,864
+必须是1121211
+have to be a 1 2 times a 2 1 over a 1 1
+
+91
+00:06:01,869 --> 00:06:08,944
+那是因为我必须得到每2个
+that's because I have to get a every 2
+
+92
+00:06:08,949 --> 00:06:11,314
+如果我，那么2个行列式必须为0
+by 2 determinant has to be 0 here if I
+
+93
+00:06:11,319 --> 00:06:14,074
+想要排名1我不能忍受任何两个
+want Rank 1 I can't stand any two by
+
+94
+00:06:14,079 --> 00:06:17,194
+两个是可逆的
+twos that are that are invertible
+
+95
+00:06:17,199 --> 00:06:20,795
+矩阵因此所有决定因素都必须如此
+matrices so all the determinants have to
+
+96
+00:06:20,800 --> 00:06:21,425
+是0
+be 0
+
+97
+00:06:21,430 --> 00:06:24,814
+好的，当然还有这3个数字
+ok and of course then these 3 numbers
+
+98
+00:06:24,819 --> 00:06:28,894
+我会允许我填写那3个
+would allow me to fill in there those 3
+
+99
+00:06:28,899 --> 00:06:30,574
+数字将允许我填补
+numbers would allow me to fill that
+
+100
+00:06:30,579 --> 00:06:33,514
+我可以填写那3个数字
+those 3 numbers well I may fill that
+
+101
+00:06:33,519 --> 00:06:38,464
+它很容易，所以我可以看到
+it'd be easy easy so that I can see that
+
+102
+00:06:38,469 --> 00:06:41,365
+这些是有效的5个职位
+those are 5 positions that work
+
+103
+00:06:41,370 --> 00:06:44,225
+现在给我五个不会的职位
+now give me five positions that won't
+
+104
+00:06:44,230 --> 00:06:48,515
+工作所以这很好，现在检查我
+work so this is good this is check now I
+
+105
+00:06:48,520 --> 00:06:51,505
+想要一个我无法工作的地方
+want one that where I can't make it work
+
+106
+00:06:51,510 --> 00:06:56,725
+所以让我给那个数字，这个数字
+so let me give that number that number
+
+107
+00:06:56,730 --> 00:07:00,695
+好吧好吧我正在寻找一些东西
+okay well so I'm looking for something
+
+108
+00:07:00,700 --> 00:07:03,725
+失败的一组职位失败了
+that fails a set of positions that fails
+
+109
+00:07:03,730 --> 00:07:06,875
+然后我想能够测试吗
+and then I want to be able to test does
+
+110
+00:07:06,880 --> 00:07:09,785
+这组职位适合任何非
+the set of positions work for any non
+
+111
+00:07:09,790 --> 00:07:14,825
+零或它不能正常工作所以我想要
+zeros or does it not work okay so I want
+
+112
+00:07:14,830 --> 00:07:16,925
+互相了解我在寻找什么
+to get one another what am I looking for
+
+113
+00:07:16,930 --> 00:07:20,305
+这是另一个有效的
+here another a different one that works
+
+114
+00:07:20,310 --> 00:07:23,855
+好吧那么还有什么可以分开的
+okay so what else would work apart from
+
+115
+00:07:23,860 --> 00:07:27,395
+让我们看看我想我接受那一个
+that let's see I suppose I take that one
+
+116
+00:07:27,400 --> 00:07:30,595
+那我在那个位置怎么样？
+now what about that position there I
+
+117
+00:07:30,600 --> 00:07:33,935
+不能选择一个合适的，我必须
+must not choose that one right I must
+
+118
+00:07:33,940 --> 00:07:35,785
+不要选择那个，因为那会
+not choose that one because that would
+
+119
+00:07:35,790 --> 00:07:39,275
+完成两个两个，如果我给了
+complete a two by two and if if I gave
+
+120
+00:07:39,280 --> 00:07:41,465
+错误的数字是决定因素
+the wrong numbers the determinant
+
+121
+00:07:41,470 --> 00:07:43,235
+不会是零，我会失败
+wouldn't be zero and I would be failed
+
+122
+00:07:43,240 --> 00:07:45,605
+所以我不能给我那个位置
+so I must not give that position maybe I
+
+123
+00:07:45,610 --> 00:07:47,915
+也许我可以给那个位置
+could give that position maybe I could
+
+124
+00:07:47,920 --> 00:07:52,505
+如果我有这些，那么给这个怎么样
+give this one how's that if I had those
+
+125
+00:07:52,510 --> 00:07:55,025
+五，我能完成它
+five would I be able to complete it
+
+126
+00:07:55,030 --> 00:08:01,325
+看起来不错，反正它看起来好让的
+looks good anyway it looks good let's
+
+127
+00:08:01,330 --> 00:08:03,955
+看看我将如何完成它
+see how would I go about completing that
+
+128
+00:08:03,960 --> 00:08:07,055
+让我们看看我能不知道那是什么
+let's see I could I would know what that
+
+129
+00:08:07,060 --> 00:08:09,565
+数字必须来自这两个两个
+number had to be from this two by two
+
+130
+00:08:09,570 --> 00:08:12,305
+从这两个两个我想知道
+from this two by two I would know that
+
+131
+00:08:12,310 --> 00:08:17,555
+这先生的数字现在这个和
+number from this sir where now this and
+
+132
+00:08:17,560 --> 00:08:21,485
+这个和现在这不是什么好事
+this and this now that's not any good
+
+133
+00:08:21,490 --> 00:08:25,355
+我现在该怎么办才能得到如何
+what do I do now to get how would I get
+
+134
+00:08:25,360 --> 00:08:26,345
+这个号码
+this number
+
+135
+00:08:26,350 --> 00:08:33,335
+哦好吧我想我必须这样才能搞定
+oh okay I guess I have to use so to get
+
+136
+00:08:33,340 --> 00:08:36,724
+这将完成那个或两个
+this would complete that or this two by
+
+137
+00:08:36,729 --> 00:08:38,675
+两个哦是的没关系没问题
+two oh yeah okay no problem
+
+138
+00:08:38,680 --> 00:08:41,065
+永远不会完成那个权利
+that would never complete that one right
+
+139
+00:08:41,070 --> 00:08:45,155
+但是这个我不认为我能得到
+but this one I don't think I can get
+
+140
+00:08:45,160 --> 00:08:49,505
+我马上就知道了
+immediately but I can get it once I know
+
+141
+00:08:49,510 --> 00:08:52,325
+这些显然我可以得到那个我
+these then obviously I can get that I
+
+142
+00:08:52,330 --> 00:08:54,875
+可以做到这一点，所以我必须
+can get that right so I have to
+
+143
+00:08:54,880 --> 00:08:57,394
+这是一种很好的组合
+it's a sort of nice combinatorial
+
+144
+00:08:57,399 --> 00:09:00,845
+五个职位的问题
+problem which which five positions will
+
+145
+00:09:00,850 --> 00:09:03,694
+工作哪五个五个不行
+work which five which five will not work
+
+146
+00:09:03,699 --> 00:09:08,314
+我怎么说，或者当然是这样的
+how do I tell so or of course that's for
+
+147
+00:09:08,319 --> 00:09:14,915
+3x3是的，所以让我有一个更大的
+3x3 yeah so let me I had a like a bigger
+
+148
+00:09:14,920 --> 00:09:18,454
+让我让我升级到4x4
+example let me let me move up to 4x4 so
+
+149
+00:09:18,459 --> 00:09:22,954
+所以现在这里有我的想法
+so now here's here comes the idea that I
+
+150
+00:09:22,959 --> 00:09:26,045
+昨晚从数学教授那里学到的
+learned last night from a math professor
+
+151
+00:09:26,050 --> 00:09:28,685
+谁做组合s--所以这些
+who does combinatoric s-- so these
+
+152
+00:09:28,690 --> 00:09:30,925
+做他们认识的组合学的人
+people who do combinatorics they've know
+
+153
+00:09:30,930 --> 00:09:33,215
+我们其他人没有的东西
+stuff that the rest of us don't
+
+154
+00:09:33,220 --> 00:09:38,074
+好的，所以这是他的观点
+okay so here's the his his view is to
+
+155
+00:09:38,079 --> 00:09:44,584
+采取有这些将是行一二
+take have these would be rows one two
+
+156
+00:09:44,589 --> 00:09:48,305
+三，我可能会添加另一行让我
+three I may I may add another row let me
+
+157
+00:09:48,310 --> 00:09:52,774
+做一个4x4和这些将是一个列
+do a 4x4 and these would be columns one
+
+158
+00:09:52,779 --> 00:09:55,024
+二三四
+two three four
+
+159
+00:09:55,029 --> 00:09:59,495
+好吧，现在我正在寻找七个如此
+okay now I'm looking for seven so so if
+
+160
+00:09:59,500 --> 00:10:02,555
+我订了一个条目，我会把它放在边缘
+I prescribed an entry I'll put in a edge
+
+161
+00:10:02,560 --> 00:10:05,975
+他们之间让我让我炒作炒作
+between them so let me let me hype hype
+
+162
+00:10:05,980 --> 00:10:11,944
+这个最多4x4是啊是的，这是一个很好的
+this one up to 4x4 yeah yeah it's a good
+
+163
+00:10:11,949 --> 00:10:16,134
+其实我只是画这幅画
+one actually I'll just draw this picture
+
+164
+00:10:16,139 --> 00:10:19,355
+所以假设我开了一个哦
+so suppose I prescribed the one one oh
+
+165
+00:10:19,360 --> 00:10:21,605
+是的，在这里，我会告诉你什么
+yeah and over here I'll show you what
+
+166
+00:10:21,610 --> 00:10:24,215
+我这样做是为了让我加入一个
+I've done so that I'm putting in the one
+
+167
+00:10:24,220 --> 00:10:27,774
+一个位置我正在寻找七个权利
+one position I'm looking for seven right
+
+168
+00:10:27,779 --> 00:10:31,295
+四加四减一七数
+four plus four minus one seven numbers
+
+169
+00:10:31,300 --> 00:10:32,345
+好的
+okay
+
+170
+00:10:32,350 --> 00:10:35,884
+然后我会把这个放在第二行
+then I'll put in this is Row two column
+
+171
+00:10:35,889 --> 00:10:38,764
+一排两列的一个，这将是
+one row two column one that would be
+
+172
+00:10:38,769 --> 00:10:43,954
+那时我会把两到四个放进去
+there then I'll put in a two to four so
+
+173
+00:10:43,959 --> 00:10:49,264
+那将是第二排第四列
+that would be Row two column four then
+
+174
+00:10:49,269 --> 00:10:53,105
+我会在3到4，这样
+I'll put in a three to four so that
+
+175
+00:10:53,110 --> 00:10:56,884
+将是第3行第4列，最后我会
+would be Row 3 column 4 and finally I'll
+
+176
+00:10:56,889 --> 00:11:03,035
+让我们看看我做了多少
+put in let's see so how many have I done
+
+177
+00:11:03,040 --> 00:11:05,045
+一两三四我必须得到
+one two three four and I've got to get
+
+178
+00:11:05,050 --> 00:11:08,795
+多达七个规定7
+up to seven prescribe seven
+
+179
+00:11:08,800 --> 00:11:12,155
+好吧，让我，我的意思是我会放脚
+well let me I mean I'll put a foot
+
+180
+00:11:12,160 --> 00:11:16,855
+Mauryan还好，我给了第四排
+Mauryan okay so so on row four I gave
+
+181
+00:11:16,860 --> 00:11:23,644
+两个三个和四个我输入了这个
+two three and four and did I put in this
+
+182
+00:11:23,649 --> 00:11:33,694
+一个是的我做得很好所以我现在
+one yes I did okay well so I've now
+
+183
+00:11:33,699 --> 00:11:38,394
+我可以订七七个号码
+prescribed seven seven numbers could I
+
+184
+00:11:38,399 --> 00:11:42,954
+完成矩阵以对一个矩阵进行排名
+complete the matrix to rank one matrix
+
+185
+00:11:42,959 --> 00:11:46,564
+你是怎么看待数学问题的
+how you see the math question if I'm
+
+186
+00:11:46,569 --> 00:11:49,984
+在那里我有7个职位
+given seven positions there I can this
+
+187
+00:11:49,989 --> 00:11:51,634
+是另一种看待同样的方式
+is another way to look at the same
+
+188
+00:11:51,639 --> 00:11:55,324
+图片这是我放在一边的
+picture this is I put in an edge for
+
+189
+00:11:55,329 --> 00:11:58,804
+每一个X所以，如果我有七个X，我就得到了
+every X so if I have seven X's I've got
+
+190
+00:11:58,809 --> 00:12:03,304
+七个边缘，这称为a
+seven edges and and this is called a
+
+191
+00:12:03,309 --> 00:12:07,204
+二分图所以它是我得到的图
+bipartite graph so it's a graph I've got
+
+192
+00:12:07,209 --> 00:12:09,845
+四个节点这里有四个节点，所以我
+four nodes here four nodes here so I
+
+193
+00:12:09,850 --> 00:12:11,004
+有八个节点
+have eight nodes
+
+194
+00:12:11,009 --> 00:12:14,855
+它是一个二分图，因为它
+it's a bipartite graph because the the
+
+195
+00:12:14,860 --> 00:12:17,165
+节点我有超过节点的一部分
+nodes I have one part of nodes over
+
+196
+00:12:17,170 --> 00:12:20,134
+这里有一部分节点是二分的
+there one part of nodes here bipartite
+
+197
+00:12:20,139 --> 00:12:23,494
+意思是两个部分，所以行给我一个
+means two parts so the rows give me one
+
+198
+00:12:23,499 --> 00:12:26,884
+列给我的部分边缘
+part of the edges the columns give me
+
+199
+00:12:26,889 --> 00:12:29,074
+边缘的另一部分和所有
+the other part of the edges and all the
+
+200
+00:12:29,079 --> 00:12:32,855
+在我不是的部分之间进行连接
+connections go between the parts I'm not
+
+201
+00:12:32,860 --> 00:12:37,535
+我没有从行中的任意行
+I don't have any lines from from a row
+
+202
+00:12:37,540 --> 00:12:41,764
+因为所有的代码都是
+to a row because all the whole code is
+
+203
+00:12:41,769 --> 00:12:47,044
+这告诉我那些在哪里
+that this tells me what where those
+
+204
+00:12:47,049 --> 00:12:51,244
+七个职位现在好，我只是
+seven positions are okay now I'm just
+
+205
+00:12:51,249 --> 00:12:54,244
+要问你我可以完成
+going to ask you can I complete the
+
+206
+00:12:54,249 --> 00:12:58,624
+我可以完成矩阵图
+graph can I complete the matrix can I
+
+207
+00:12:58,629 --> 00:13:04,444
+完整的秩一个矩阵有什么好
+complete rank one matrix there okay what
+
+208
+00:13:04,449 --> 00:13:07,595
+你是否认为如此真实
+do you think so the and the real
+
+209
+00:13:07,600 --> 00:13:10,684
+问题是什么是什么规则
+question is what's the rule what what
+
+210
+00:13:10,689 --> 00:13:14,184
+什么是我什么时候能不能看到的
+what's the how can I see when I can't
+
+211
+00:13:14,189 --> 00:13:17,374
+完成矩阵得到的东西在
+complete the matrix something gets in
+
+212
+00:13:17,379 --> 00:13:19,924
+这里的道路是神在路上的样子
+the way here what God in the way was
+
+213
+00:13:19,929 --> 00:13:22,275
+这个2x2
+this 2x2
+
+214
+00:13:22,280 --> 00:13:25,965
+实际上我问过这个问题
+and actually I asked the question on
+
+215
+00:13:25,970 --> 00:13:29,175
+电子邮件是我可以随时完成它
+email is it can I always complete it
+
+216
+00:13:29,180 --> 00:13:29,595
+是啊
+yeah
+
+217
+00:13:29,600 --> 00:13:31,215
+所以，让我这就是我的问题
+so let me that would be the question I
+
+218
+00:13:31,220 --> 00:13:33,885
+可以问你我可以随时完成
+could ask you can I always complete the
+
+219
+00:13:33,890 --> 00:13:37,875
+图你完成矩阵有
+graph you complete the matrix to have
+
+220
+00:13:37,880 --> 00:13:42,705
+当我没有遇到时排名第1
+Rank 1 when there when I don't run into
+
+221
+00:13:42,710 --> 00:13:46,565
+这就是我要避免的一切
+this is that all I have to avoid a
+
+222
+00:13:46,570 --> 00:13:50,355
+两个两个我在哪里给了三个
+two-by-two where I've given three where
+
+223
+00:13:50,360 --> 00:13:52,305
+我给了所有四个参赛作品，所以是的
+I'm given all four entries so yeah here
+
+224
+00:13:52,310 --> 00:13:55,775
+这个II能够如此完成
+this I I was able to complete yeah so so
+
+225
+00:13:55,780 --> 00:14:01,925
+抱歉，如果我得到了，我们就做一个
+sorry duh let's do one if I if I'm given
+
+226
+00:14:01,930 --> 00:14:07,955
+那些条目，也许还有其他一些我
+those entries and maybe some others I
+
+227
+00:14:07,960 --> 00:14:11,465
+总共猜七是失败了
+guess seven altogether that's a failure
+
+228
+00:14:11,470 --> 00:14:16,305
+对我，如果我不能处方任何非
+right I if I can't prescribe any non
+
+229
+00:14:16,310 --> 00:14:18,735
+因为这七个职位的零
+zeros in those seven positions because
+
+230
+00:14:18,740 --> 00:14:21,735
+如果我可能会开出任何非零值
+if I prescribe any non zeros I probably
+
+231
+00:14:21,740 --> 00:14:25,085
+我不会有零决定因素
+won't have a zero determinant here I
+
+232
+00:14:25,090 --> 00:14:29,265
+不会对该列排名第一
+won't have rank one that that column
+
+233
+00:14:29,270 --> 00:14:31,275
+将不会是那个的倍数
+will be will not be a multiple of that
+
+234
+00:14:31,280 --> 00:14:34,095
+无论我在这里做什么，我都搞砸了
+column whatever I do here I've screwed
+
+235
+00:14:34,100 --> 00:14:42,075
+已经这样就失败了
+up already so that's a fail okay right
+
+236
+00:14:42,080 --> 00:14:45,105
+我该如何让我拍摄这张照片
+and how do I let me take that picture
+
+237
+00:14:45,110 --> 00:14:47,745
+然后把它变成这张照片
+and and turn it into this picture
+
+238
+00:14:47,750 --> 00:14:52,665
+所以行列，所以如果我采取这七个
+so rows columns so if I take these seven
+
+239
+00:14:52,670 --> 00:14:58,035
+那是第1排1234所以第1排去了
+that's Row 1 Row 1 2 3 4 so Row 1 goes
+
+240
+00:14:58,040 --> 00:15:04,035
+到1和2行2到1和2行3
+to 1 and 2 Row 2 goes to 1 and 2 Row 3
+
+241
+00:15:04,040 --> 00:15:12,425
+转到4，第4行转到3和4
+goes to 4 and Row 4 goes to 3 and 4
+
+242
+00:15:12,430 --> 00:15:16,305
+这是一个失败，我怎么知道它
+that's a failure and how do I know it's
+
+243
+00:15:16,310 --> 00:15:19,725
+一个失败我想现在拿出来
+a failure I want to now come up with the
+
+244
+00:15:19,730 --> 00:15:23,475
+答案拿出答案，如果我
+answer come up with the answer so if I
+
+245
+00:15:23,480 --> 00:15:27,075
+给任何7个职位或任何M加n
+give any 7 positions or any M plus n
+
+246
+00:15:27,080 --> 00:15:30,675
+减去我可以创造的1个位置
+minus 1 positions like that I can create
+
+247
+00:15:30,680 --> 00:15:34,155
+像这样的图只是跟随
+a graph like that just following the
+
+248
+00:15:34,160 --> 00:15:36,084
+你看到那些的规则
+rule that you saw those
+
+249
+00:15:36,089 --> 00:15:40,134
+七个位置给了我七个优势
+seven positions gave me seven edges in
+
+250
+00:15:40,139 --> 00:15:42,744
+我的图表，它是一个二分图
+my graph and it's a bipartite graph
+
+251
+00:15:42,749 --> 00:15:45,504
+因为每个边缘都来自这个部分
+because every edge goes from this part
+
+252
+00:15:45,509 --> 00:15:50,064
+到这一部分，这是一个失败
+over to this part and that's a failure
+
+253
+00:15:50,069 --> 00:15:54,504
+它失败的原因是
+and the reason it's a failure is the
+
+254
+00:15:54,509 --> 00:15:58,314
+我失败的原因是我有
+reason it's a failure is that I have
+
+255
+00:15:58,319 --> 00:16:02,485
+这是一个循环，如果我穿过对面
+here a cycle if I go across down across
+
+256
+00:16:02,490 --> 00:16:04,675
+我回来了，我开始了
+down I come back where I started that
+
+257
+00:16:04,680 --> 00:16:15,925
+将是一个循环等于失败大
+would be a cycle equals failure big
+
+258
+00:16:15,930 --> 00:16:18,295
+每个人都看到我不能给这四个
+everybody sees I can't give these four
+
+259
+00:16:18,300 --> 00:16:23,394
+数字一般我都要马宁
+numbers generally I would have to manin
+
+260
+00:16:23,399 --> 00:16:25,285
+你们三个我没有任何自由
+you three I don't have any freedom left
+
+261
+00:16:25,290 --> 00:16:28,944
+那第四个和看的方式
+where that fourth one and the way to see
+
+262
+00:16:28,949 --> 00:16:32,485
+在这张照片中就是那样的
+that in this picture is that that's that
+
+263
+00:16:32,490 --> 00:16:34,434
+这是一个循环，所以这里是
+there's a cycle so here's the
+
+264
+00:16:34,439 --> 00:16:39,674
+教授那个组合的东西
+combinatoric thing that that Professor
+
+265
+00:16:39,679 --> 00:16:45,405
+波斯纳COFF告诉我昨晚你
+Posner COFF told me about last night you
+
+266
+00:16:45,410 --> 00:16:49,254
+如果和，可以完成一级矩阵
+can complete to a rank one matrix if and
+
+267
+00:16:49,259 --> 00:16:54,924
+只有在没有循环的情况下才是这样的
+only if no cycles so that was a that was
+
+268
+00:16:54,929 --> 00:16:58,105
+这是我刚刚回答的问题
+a that's a just answered my question
+
+269
+00:16:58,110 --> 00:16:58,884
+完美
+perfectly
+
+270
+00:16:58,889 --> 00:17:02,054
+这个是我可以完成的一个
+this one is one where I can complete and
+
+271
+00:17:02,059 --> 00:17:07,584
+它有一个循环周期意味着你来了
+it's got a cycle cycle meaning you come
+
+272
+00:17:07,589 --> 00:17:11,304
+回到你开始的地方，但是我
+back to where you started but so I I
+
+273
+00:17:11,309 --> 00:17:14,215
+想到也许这样我对他的问题
+thought maybe so my question to him
+
+274
+00:17:14,220 --> 00:17:19,495
+你可以随时完成它
+which was was can you always complete it
+
+275
+00:17:19,500 --> 00:17:22,215
+如果在途中没有两个两个
+if there are no two by twos in the way
+
+276
+00:17:22,220 --> 00:17:27,804
+他的回答告诉我，也许是
+and his answers told me that maybe the
+
+277
+00:17:27,809 --> 00:17:30,085
+两个两个可以没关系但是那里
+two by twos could be okay but there
+
+278
+00:17:30,090 --> 00:17:32,635
+可能是一个更长周期的更大周期
+could be a bigger cycle a longer cycle
+
+279
+00:17:32,640 --> 00:17:35,515
+那会搞砸你让我闭上
+that would screw you up so let me close
+
+280
+00:17:35,520 --> 00:17:39,685
+与那种类型的例子
+with with an example of that sort
+
+281
+00:17:39,690 --> 00:17:45,445
+所以这将再次失败
+so this is going to be fail again
+
+282
+00:17:45,450 --> 00:17:52,654
+但是没有2x2在其他方面负责
+but but no 2x2 is responsible in other
+
+283
+00:17:52,659 --> 00:17:56,585
+言语它会失败我将无法做到
+words it's gonna fail I won't be able to
+
+284
+00:17:56,590 --> 00:18:00,544
+完成此矩阵即使如此有
+complete this matrix even so there
+
+285
+00:18:00,549 --> 00:18:04,115
+是不是任何完成的两个由两个2乘
+aren't any completed two by twos a 2 by
+
+286
+00:18:04,120 --> 00:18:07,054
+a2by2我立即知道失败了
+a 2 by 2 I knew immediately was failure
+
+287
+00:18:07,059 --> 00:18:11,495
+所以，让我看看我能做到这一点没关系
+so let me see if I can do that okay okay
+
+288
+00:18:11,500 --> 00:18:15,515
+所以这是一个失败的行12这是行
+so here's a failure Row 1 2 this is rows
+
+289
+00:18:15,520 --> 00:18:22,024
+1234这是列1234和
+1 2 3 4 and this is columns 1 2 3 4 and
+
+290
+00:18:22,029 --> 00:18:25,595
+我想我会在那里得到一个
+I think I'm gonna have a 1 given there
+
+291
+00:18:25,600 --> 00:18:29,105
+是的我以前开始这样做了
+and yeah I sort of started this before
+
+292
+00:18:29,110 --> 00:18:42,695
+2到1和4＆3到4和4
+and 2 goes to 1 & 4 & 3 goes to 4 and 4
+
+293
+00:18:42,700 --> 00:18:50,345
+去那个安全的赌注现在我好了
+goes to that safe bet okay now I've only
+
+294
+00:18:50,350 --> 00:18:54,845
+投入245我允许7但我
+put in 2 4 5 and I'm allowed 7 but I
+
+295
+00:18:54,850 --> 00:18:58,774
+想我已经在这里出事所以让
+think I'm already in trouble here so let
+
+296
+00:18:58,779 --> 00:19:01,685
+我让我得出这样的照片在这个如此
+me let me draw this picture for this so
+
+297
+00:19:01,690 --> 00:19:07,705
+这是行1234，这是列
+this is rows 1 2 3 4 and this is columns
+
+298
+00:19:07,710 --> 00:19:11,644
+1234现在我怎么办？
+1 2 3 4 and now what if I I've
+
+299
+00:19:11,649 --> 00:19:18,215
+规定一个我知道的
+prescribed that one I know that goes
+
+300
+00:19:18,220 --> 00:19:21,394
+从哦，我忘记了正确的方法
+from oh my forgotten the right way to do
+
+301
+00:19:21,399 --> 00:19:27,185
+照片我的bybite我的二分
+the picture my by.bite my bipartite
+
+302
+00:19:27,190 --> 00:19:30,904
+图不是应该如此
+graph wasn't what it should have been so
+
+303
+00:19:30,909 --> 00:19:37,774
+1234现在我好了
+that 1 2 3 4 okay now I'm going to do
+
+304
+00:19:37,779 --> 00:19:40,804
+的二分图图像即
+the the bipartite graph picture that
+
+305
+00:19:40,809 --> 00:19:47,274
+跟这张照片一样1211221
+goes with this picture so 1 2 1 1 2 2 1
+
+306
+00:19:47,279 --> 00:19:52,925
+224我要做什么
+2 2 4 what I'm gonna do
+
+307
+00:19:52,930 --> 00:19:55,655
+我只想说一下我要做的事情
+let me just say what I'm gonna do I'm
+
+308
+00:19:55,660 --> 00:19:59,465
+在这里创造一个长度的循环
+gonna create a cycle over here of length
+
+309
+00:19:59,470 --> 00:20:03,785
+6长度为4的循环是我得到的
+6 a cycle of length 4 is what I got from
+
+310
+00:20:03,790 --> 00:20:09,905
+一个2乘2乘2乘2给我一个
+a 2 by 2 by 2 by 2 that took me 1 one
+
+311
+00:20:09,910 --> 00:20:12,065
+回来的另一个回来
+way back another back another back
+
+312
+00:20:12,070 --> 00:20:14,375
+另一个我完成了一个循环，我回来了
+another I completed a cycle I came back
+
+313
+00:20:14,380 --> 00:20:15,515
+到我开始的地方
+to where I started
+
+314
+00:20:15,520 --> 00:20:18,995
+现在我想要一个只有四条边
+with just four edges now I want a
+
+315
+00:20:19,000 --> 00:20:22,685
+用6完成一个完整的循环
+complete one complete a cycle with 6
+
+316
+00:20:22,690 --> 00:20:25,775
+边缘，以便让我，让我把它收回去了
+edges so let me let me draw it in the
+
+317
+00:20:25,780 --> 00:20:27,815
+那么现在我要放了
+picture here then now I'm going to put
+
+318
+00:20:27,820 --> 00:20:34,805
+一个边缘从四个回到一个所以11
+an edge from four back to one so so 1 1
+
+319
+00:20:34,810 --> 00:20:45,695
+21124221224如果我有任何东西
+2 1 1 2 4 2 2 1 2 2 4 if I got any yeah
+
+320
+00:20:45,700 --> 00:20:47,885
+我想12
+I think 1 2
+
+321
+00:20:47,890 --> 00:20:53,315
+该死的我不想要一个短暂的周期
+goddamn I didn't want a short cycle I
+
+322
+00:20:53,320 --> 00:20:55,655
+如果你想要一个更大更长的周期让我
+want a bigger longer cycle let me if you
+
+323
+00:20:55,660 --> 00:20:59,675
+让我得到这样的事情，所以224是
+let me get the darn thing so 2 2 4 is
+
+324
+00:20:59,680 --> 00:21:02,315
+不是我想要的所以我在这里开始一个循环
+not what I want so I here start a cycle
+
+325
+00:21:02,320 --> 00:21:06,425
+OK去的地方回头去的地方去
+ok go somewhere go back go somewhere go
+
+326
+00:21:06,430 --> 00:21:09,755
+回到某个地方回去吧我
+back go somewhere go back now there I
+
+327
+00:21:09,760 --> 00:21:13,685
+得到它长度6长度6所以现在让我
+got it length 6 length 6 so now let me
+
+328
+00:21:13,690 --> 00:21:16,205
+把X放在他们现在属于的地方
+put the X's in where they belong now so
+
+329
+00:21:16,210 --> 00:21:18,395
+一个连接到一个和四个
+one is connected to one and four that's
+
+330
+00:21:18,400 --> 00:21:27,785
+右2连接到2和43不连接
+right 2 is connected to 2 and 4 3 is not
+
+331
+00:21:27,790 --> 00:21:29,615
+连接到任何人让我们放
+connected to anybody let's let's put
+
+332
+00:21:29,620 --> 00:21:33,755
+一个在和4被连接到1和
+that one in and 4 is connected to 1 and
+
+333
+00:21:33,760 --> 00:21:36,935
+24连接到1和2
+2 4 is connected to 1 & 2
+
+334
+00:21:36,940 --> 00:21:42,245
+好吧，我相信这个我相信那张照片
+ok I believe this I believe that picture
+
+335
+00:21:42,250 --> 00:21:46,385
+现在我的主张就是这张照片
+goes with that picture now my claim is
+
+336
+00:21:46,390 --> 00:21:51,365
+那里没有没有2
+that there are no there there's no 2 by
+
+337
+00:21:51,370 --> 00:21:54,875
+2在这里立即显示我
+2 in here that shows me immediately
+
+338
+00:21:54,880 --> 00:22:00,485
+失败但我会失败我无法生存
+failure but I will fail I can't live
+
+339
+00:22:00,490 --> 00:22:01,205
+接着就，随即
+with that
+
+340
+00:22:01,210 --> 00:22:04,305
+那些看起来像8的人
+with those that looks like 8
+
+341
+00:22:04,310 --> 00:22:11,145
+抱歉，我只想要七个，所以我
+sorry I've got I only want seven so I
+
+342
+00:22:11,150 --> 00:22:18,765
+我应该对不起三四
+just shall I just take sorry three four
+
+343
+00:22:18,770 --> 00:22:20,625
+而且不应该有正确的好吗
+and that shouldn't be there right okay
+
+344
+00:22:20,630 --> 00:22:21,875
+谢谢
+thanks
+
+345
+00:22:21,880 --> 00:22:25,845
+好吧，你看，我不是一个组合
+all right you see I'm not a combinatoric
+
+346
+00:22:25,850 --> 00:22:29,145
+人，但它是如此美丽有
+person but it's so beautiful to have the
+
+347
+00:22:29,150 --> 00:22:32,595
+灵感将图片转换为
+inspiration to convert that picture to
+
+348
+00:22:32,600 --> 00:22:35,715
+这张照片然后意识到了
+this picture and then realize that a
+
+349
+00:22:35,720 --> 00:22:39,435
+这张照片中的问题是一个循环
+problem in this picture is a cycle in
+
+350
+00:22:39,440 --> 00:22:41,435
+这张照片就是整个信息
+this picture that's the whole message
+
+351
+00:22:41,440 --> 00:22:45,135
+这就是我的时候的全部信息
+that's the whole message that when I'm
+
+352
+00:22:45,140 --> 00:22:48,915
+看这里一个循环意味着我就是我
+looking here a cycle means that I'm I've
+
+353
+00:22:48,920 --> 00:22:52,785
+建立在一个随机的要求
+built in a requirement which random
+
+354
+00:22:52,790 --> 00:22:55,575
+非零不会满足所以你看到了
+non-zeros won't satisfy so you see that
+
+355
+00:22:55,580 --> 00:23:04,305
+无论如何你看到周期1123456
+anyway you see the cycle 1 1 2 3 4 5 6
+
+356
+00:23:04,310 --> 00:23:07,785
+是的，所以那里有一个循环
+yeah yeah so there's a cycle there so
+
+357
+00:23:07,790 --> 00:23:13,245
+不知怎的，那些6X是我们的
+somehow those 6 X's whichever they are I
+
+358
+00:23:13,250 --> 00:23:16,575
+猜不到除了23遮阳板3所以我可以
+guess not all but 2 3 visor 3 so I could
+
+359
+00:23:16,580 --> 00:23:19,725
+我可以带走这一部分
+take I could take away this part of the
+
+360
+00:23:19,730 --> 00:23:25,095
+图表，只有3和3和那里
+graph and just have 3 and 3 and there
+
+361
+00:23:25,100 --> 00:23:27,075
+那里将是6个数字，那就是
+would be 6 numbers in there and that's
+
+362
+00:23:27,080 --> 00:23:32,105
+两个男人是啊好吧我会停在那里
+two men yeah ok ok I'm gonna stop there
+
+363
+00:23:32,110 --> 00:23:36,215
+正好在课程的一半但是
+exactly halfway through the class but
+
+364
+00:23:36,220 --> 00:23:38,295
+好吧，我会在那里停下来
+well I'm gonna stop there with a
+
+365
+00:23:38,300 --> 00:23:40,635
+我不知道的问题我不知道
+question which I don't know I don't know
+
+366
+00:23:40,640 --> 00:23:43,365
+如果我敢发出另一个问题
+if I dare send another question that
+
+367
+00:23:43,370 --> 00:23:45,225
+教授海报咖啡回答
+professor poster coffee who answered
+
+368
+00:23:45,230 --> 00:23:48,075
+这一个完美但问题
+this one perfectly but the question
+
+369
+00:23:48,080 --> 00:23:50,985
+你什么时候可以完成一个等级
+would be when could you complete a rank
+
+370
+00:23:50,990 --> 00:23:54,795
+2矩阵什么位置可以你
+2 matrix what what positions could you
+
+371
+00:23:54,800 --> 00:23:58,965
+填写并能够达到排名2
+fill in and be able to reach rank 2 that
+
+372
+00:23:58,970 --> 00:24:02,235
+我不知道会不会有麻烦
+would be trouble right I don't know
+
+373
+00:24:02,240 --> 00:24:04,955
+无论如何我们会去那里
+where we would go with that but anyway
+
+374
+00:24:04,960 --> 00:24:08,415
+但这对我们来说是18或65的净值
+but that's a net for us for 18 or 65
+
+375
+00:24:08,420 --> 00:24:10,845
+这是我自然而然的问题
+that's the natural question when could I
+
+376
+00:24:10,850 --> 00:24:14,595
+我们排名1对我们而言非常特别
+we rank 1 is super special for us and
+
+377
+00:24:14,600 --> 00:24:17,384
+等级2或等级
+rank 2 or rank
+
+378
+00:24:17,389 --> 00:24:21,464
+是一般情况是的如此
+would be the general case yeah so so
+
+379
+00:24:21,469 --> 00:24:27,904
+他们现在是很好的数学问题2
+they're good math questions now topic 2
+
+380
+00:24:27,909 --> 00:24:36,464
+卷积所以第一个实验室
+convolution so the first lab in the
+
+381
+00:24:36,469 --> 00:24:39,604
+当然正好有一个
+course just happened to have a
+
+382
+00:24:39,609 --> 00:24:42,284
+卷积并使用该词等
+convolution and use that word and so on
+
+383
+00:24:42,289 --> 00:24:51,674
+但我们没有，但我们没有连接
+but we did not but we didn't connect
+
+384
+00:24:51,679 --> 00:24:53,864
+那个讲座所以现在我想
+that with the lectures so now I'd like
+
+385
+00:24:53,869 --> 00:24:56,504
+谈论有关的卷积
+to talk about convolutions which are
+
+386
+00:24:56,509 --> 00:24:59,654
+非常重要，他们是
+extremely important and they are
+
+387
+00:24:59,659 --> 00:25:03,584
+在机器学习中很重要因为
+important in machine learning because
+
+388
+00:25:03,589 --> 00:25:11,315
+他们给你一套重量
+they give you a set of weights
+
+389
+00:25:11,320 --> 00:25:18,284
+连接它们是一种有效的方式-
+connecting they're an efficient way to -
+
+390
+00:25:18,289 --> 00:25:21,254
+让我告诉你让我告诉你好
+let me show you let me show you ok
+
+391
+00:25:21,259 --> 00:25:31,874
+所以卷积矩阵，这将是
+so a convolution matrix and this will be
+
+392
+00:25:31,879 --> 00:25:36,854
+循环卷积配合确定和
+a cyclic convolution mate ok and the
+
+393
+00:25:36,859 --> 00:25:42,584
+字循环的简写
+word the shorthand for cyclic
+
+394
+00:25:42,589 --> 00:25:45,134
+卷积矩阵是循环的，所以
+convolution matrix is circulant so what
+
+395
+00:25:45,139 --> 00:25:48,754
+是一个循环，我们称之为Ca
+is a circulant we'll call it C a
+
+396
+00:25:48,759 --> 00:25:53,414
+circulant有一些羽毛球对角线
+circulant has some mminton diagonals
+
+397
+00:25:53,419 --> 00:25:56,854
+这就是卷积意味着矩阵的意义
+that's what convolution means matrix was
+
+398
+00:25:56,859 --> 00:26:01,114
+卷积意味着不变
+convolution means constant
+
+399
+00:26:01,119 --> 00:26:11,124
+沿着每个对角线
+down each diagonal
+
+400
+00:26:11,129 --> 00:26:18,004
+和循环意味着完整的循环
+and cyclic means complete circle around
+
+401
+00:26:18,009 --> 00:26:27,034
+再次对角线对角线圈
+again the diagonals diagonals circle
+
+402
+00:26:27,039 --> 00:26:34,354
+身边那么让我们告诉你我的意思是这样
+around so let us show you what I mean so
+
+403
+00:26:34,359 --> 00:26:37,234
+四乘四比方说，所以它有一些
+four by four let's say so it has some
+
+404
+00:26:37,239 --> 00:26:41,254
+进入这里有一个对角线是
+entry to there's one diagonal here is
+
+405
+00:26:41,259 --> 00:26:46,864
+另一个对角线，所以现在我不断
+another diagonal so now I have constant
+
+406
+00:26:46,869 --> 00:26:48,994
+对角线，但如果它将是一个
+diagonals but if it's going to be a
+
+407
+00:26:48,999 --> 00:26:51,624
+循环矩阵，这是最好的
+circulant matrix and this is the best
+
+408
+00:26:51,629 --> 00:26:55,955
+世界上的矩阵族
+family of matrices in the world the
+
+409
+00:26:55,960 --> 00:26:58,654
+代数对这些来说太棒了
+algebra is just terrific for these
+
+410
+00:26:58,659 --> 00:27:00,714
+矩阵，这就是为什么他们是
+matrices and that's why they're the
+
+411
+00:27:00,719 --> 00:27:05,104
+这是信号处理的核心所以
+heart of signal processing so so this is
+
+412
+00:27:05,109 --> 00:27:07,354
+一个恒定的对角矩阵，但事实并非如此
+a constant diagonal matrix but it's not
+
+413
+00:27:07,359 --> 00:27:10,565
+还有一个对角圆圈的循环器
+yet a circulant that diagonal circles
+
+414
+00:27:10,570 --> 00:27:15,094
+每个人都要完成
+around to put to be completed every
+
+415
+00:27:15,099 --> 00:27:18,664
+对角线有四个条目，所以让我
+diagonal has four entries here so let me
+
+416
+00:27:18,669 --> 00:27:22,894
+拿另一个说一个然后那个
+take another one say one one then that
+
+417
+00:27:22,899 --> 00:27:26,315
+围绕a11和这个家伙
+would circle around a11 and this guy
+
+418
+00:27:26,320 --> 00:27:33,864
+可能是0，这是一个循环矩阵
+could be 0 there's a circulant matrix
+
+419
+00:27:33,869 --> 00:27:39,964
+你明白了你的条目
+you understand then what the entry you
+
+420
+00:27:39,969 --> 00:27:43,834
+只需要四个数字说第一个
+only need four numbers say the first
+
+421
+00:27:43,839 --> 00:27:45,634
+如果您指定了，则列
+column if you if you prescribed the
+
+422
+00:27:45,639 --> 00:27:48,364
+然后是循环矩阵的第一列
+first column of a circulant matrix then
+
+423
+00:27:48,369 --> 00:27:50,884
+你已经告诉了MATLAB所有的例子
+you've told MATLAB for example all all
+
+424
+00:27:50,889 --> 00:27:53,164
+它需要知道你是否告诉它
+it needs to know if you tell it one
+
+425
+00:27:53,169 --> 00:27:55,924
+列可以获取所有其他列
+column it can get all the other columns
+
+426
+00:27:55,929 --> 00:27:58,834
+只是通过循环移位，第一个
+just by cyclic shift there's the first
+
+427
+00:27:58,839 --> 00:28:03,334
+第2列015第二列是20
+column 2 0 1 5 the second column is 2 0
+
+428
+00:28:03,339 --> 00:28:07,955
+15向下移动通过1的下一列是
+1 5 shifted down by 1 the next column is
+
+429
+00:28:07,960 --> 00:28:11,825
+再次向下移动12015和
+again shifted down by 1 2 0 1 5 and the
+
+430
+00:28:11,830 --> 00:28:15,185
+最后一栏是2015所以他们都是
+last column is 2 0 1 5 so they're all
+
+431
+00:28:15,190 --> 00:28:21,285
+循环移位后的相同列
+the same columns after a cyclic shift
+
+432
+00:28:21,290 --> 00:28:25,505
+所以这里的关键矩阵真的是一个
+so the key matrix in this is really a
+
+433
+00:28:25,510 --> 00:28:30,555
+循环移位矩阵称零为零
+cyclic shift matrix say zero one zero
+
+434
+00:28:30,560 --> 00:28:34,905
+零零零所以它只是说一个
+zero zero zero so it just says one
+
+435
+00:28:34,910 --> 00:28:42,485
+非零对角线然后它是循环的
+nonzero diagonal and then it's cyclic
+
+436
+00:28:42,490 --> 00:28:47,375
+你看，实际上这个矩阵C就是我
+you see that in fact this matrix C is I
+
+437
+00:28:47,380 --> 00:28:51,825
+可以从P和P产生这个矩阵C.
+can produce this matrix C from P and P
+
+438
+00:28:51,830 --> 00:28:54,735
+平方是的，我可以放入什么
+squared yeah can I just put in what
+
+439
+00:28:54,740 --> 00:28:59,955
+P平方节拍我会写在这里
+would P squared beats I'll write it here
+
+440
+00:28:59,960 --> 00:29:03,975
+在保持我们的同时保持这一点
+without keeping that while keeping our
+
+441
+00:29:03,980 --> 00:29:07,275
+关注P所以如果我将那个矩阵平方化了什么
+eye on P so if I square that matrix what
+
+442
+00:29:07,280 --> 00:29:11,175
+我会得到矩阵这是一个
+matrix would I get so it's this is a
+
+443
+00:29:11,180 --> 00:29:15,285
+如果我再次换一个，则换一个
+shift by one if I shift by one again
+
+444
+00:29:15,290 --> 00:29:17,745
+这又是P的倍增
+that's multiplying again by P so that
+
+445
+00:29:17,750 --> 00:29:19,275
+会给我P平方
+would give me P squared
+
+446
+00:29:19,280 --> 00:29:26,795
+什么是好的，所以
+what what's in the what's in the okay so
+
+447
+00:29:26,800 --> 00:29:32,625
+现在发生了什么，它转移了两个我
+what happens now it's shift by two I
+
+448
+00:29:32,630 --> 00:29:37,785
+想是这样所以这将是0010这
+guess so so this will be 0 0 1 0 this
+
+449
+00:29:37,790 --> 00:29:42,015
+将是0001然后我是它的循环
+will be 0 0 0 1 then I'm its cyclic
+
+450
+00:29:42,020 --> 00:29:45,075
+仍然如此，我把它放在那里
+still so I'm put in the ones there and
+
+451
+00:29:45,080 --> 00:29:53,025
+然后只需填写零，所以P
+then just fill in the zero ok so P
+
+452
+00:29:53,030 --> 00:29:56,295
+平方从2开始转移
+squared shift by 2 you start out with
+
+453
+00:29:56,300 --> 00:30:05,945
+这一个是的，是的，是的确定好的
+this one yep is that right yes yes ok ok
+
+454
+00:30:05,950 --> 00:30:08,985
+是的，让我们来做吧
+yeah let's just let's just make it
+
+455
+00:30:08,990 --> 00:30:13,985
+将矢量X乘以X1X2X3
+multiply a vector X naught X 1 X 2 X 3
+
+456
+00:30:13,990 --> 00:30:21,465
+它的作用是什么呢？
+what it what it does is it puts it well
+
+457
+00:30:21,470 --> 00:30:23,895
+我已经在这里用2开始编号
+I've started the numbering with 2 here X
+
+458
+00:30:23,900 --> 00:30:28,275
+2X3
+2 X 3
+
+459
+00:30:28,280 --> 00:30:34,745
+x0和x1因此它将它移动了两次
+x0 and x1 so it shifted it by two and
+
+460
+00:30:34,750 --> 00:30:39,765
+并周期性地得到了x2x3
+and cyclically so the x2 x3 that got
+
+461
+00:30:39,770 --> 00:30:41,745
+从底部移开回到了
+shifted off the bottom come back to the
+
+462
+00:30:41,750 --> 00:30:47,325
+顶部没关系，我想先展示一下
+top okay what I want to show the first
+
+463
+00:30:47,330 --> 00:30:52,635
+财产是循环的，所以我想
+property is of circulant so so suppose I
+
+464
+00:30:52,640 --> 00:30:59,865
+所以矩阵中有矩阵
+have matrices see in the circular so
+
+465
+00:30:59,870 --> 00:31:13,695
+事实上1C倍d也是圆形的，从而
+fact 1 C times D is also a circular so
+
+466
+00:31:13,700 --> 00:31:16,545
+如果我乘以循环矩阵，我得到
+if I multiply circulant matrices I get
+
+467
+00:31:16,550 --> 00:31:19,485
+更多的循环矩阵和身份
+more circulant matrices and the identity
+
+468
+00:31:19,490 --> 00:31:21,885
+是一个循环矩阵我有一点
+is a circulant matrix I have a little
+
+469
+00:31:21,890 --> 00:31:24,195
+矩阵组是最好的小组
+group of matrices the best little group
+
+470
+00:31:24,200 --> 00:31:28,455
+我可以将两个矩阵相乘
+of matrices there is I can multiply two
+
+471
+00:31:28,460 --> 00:31:31,335
+小伙子们，我得到另一个
+guys in the group and I get another one
+
+472
+00:31:31,340 --> 00:31:34,005
+在小组中为什么CD也是一个
+in the group well why is CD also a
+
+473
+00:31:34,010 --> 00:31:38,535
+循环让我们看看能不能理解为什么
+circulant let's see can we see why that
+
+474
+00:31:38,540 --> 00:31:44,205
+事实是真的我想这是我的方式
+fact is true I guess here's my way to
+
+475
+00:31:44,210 --> 00:31:47,715
+看看它是一个循环矩阵让我放
+look at it a circulant matrix let me put
+
+476
+00:31:47,720 --> 00:31:53,715
+它每个都把它放在一个循环矩阵
+it put it here a circulant matrix every
+
+477
+00:31:53,720 --> 00:31:59,295
+循环矩阵是Cnaught次
+circulant matrix is C naught times the
+
+478
+00:31:59,300 --> 00:32:04,025
+身份循环加C1次
+identity circulant plus C 1 times the
+
+479
+00:32:04,030 --> 00:32:07,845
+单班加C加倍的2倍
+single shift plus C 2 times the double
+
+480
+00:32:07,850 --> 00:32:11,405
+换班加C三倍班次
+shift plus C 3 times the triple shift
+
+481
+00:32:11,410 --> 00:32:15,225
+那就是放C的方法
+that that's what it takes to put C
+
+482
+00:32:15,230 --> 00:32:18,615
+那些没有C1C2和C3
+naught C 1 C 2 and C 3 on those
+
+483
+00:32:18,620 --> 00:32:21,975
+对角线C很明显就是上了
+diagonals C naught is obviously on the
+
+484
+00:32:21,980 --> 00:32:26,415
+主对角线C1P记住P是什么
+main diagonal C 1 P remember what P is
+
+485
+00:32:26,420 --> 00:32:31,475
+将Cone放在下一个对角线上
+that puts C one on the next diagonal
+
+486
+00:32:31,480 --> 00:32:36,725
+然后C2P平方，当我对此
+then C 2 P squared when i square this
+
+487
+00:32:36,730 --> 00:32:40,335
+我已经换了一个所以它会放
+I've shifted by one more so it will put
+
+488
+00:32:40,340 --> 00:32:41,985
+C2即将死亡
+C 2 on that dying
+
+489
+00:32:41,990 --> 00:32:44,595
+最后c3会进入那些
+and finally c3 would go in those
+
+490
+00:32:44,600 --> 00:32:53,054
+因此每个循环矩阵都是一个
+positions so every circulant matrix is a
+
+491
+00:32:53,059 --> 00:32:57,915
+P中的多项式在单个移位中
+polynomial in P in a single shift this
+
+492
+00:32:57,920 --> 00:33:01,695
+这是一个转变的任何组合
+is any combination of shifts this is a
+
+493
+00:33:01,700 --> 00:33:04,005
+单班，这是一个双重转变
+single shift that's a double shift
+
+494
+00:33:04,010 --> 00:33:05,955
+这是一个零转换
+that's a triple shift that's a zero
+
+495
+00:33:05,960 --> 00:33:09,965
+转移，如果我采取组合，我得到我
+shift and if I take combinations i get i
+
+496
+00:33:09,970 --> 00:33:15,735
+得到一个循环矩阵所以我现在可以
+get a circulant matrix so so now I can
+
+497
+00:33:15,740 --> 00:33:19,005
+看看为什么CD也是一个循环因素
+see why CD is also a circulant because
+
+498
+00:33:19,010 --> 00:33:26,615
+这是P中的多项式，这是一个
+this is a polynomial in P and this is a
+
+499
+00:33:26,620 --> 00:33:31,935
+P中的多项式和乘法时的多项式
+polynomial in P and when I multiply
+
+500
+00:33:31,940 --> 00:33:36,335
+那些我在P中得到一个多项式
+those together I get a polynomial in P
+
+501
+00:33:36,340 --> 00:33:42,705
+但通常如果我乘以三度
+but usually if I multiply a third degree
+
+502
+00:33:42,710 --> 00:33:45,765
+多项式由我们另外三度
+polynomial by us another third degree
+
+503
+00:33:45,770 --> 00:33:49,215
+多项式所以说我正在看四
+polynomial so say I'm looking at four by
+
+504
+00:33:49,220 --> 00:33:52,365
+四个循环矩阵，所以这将是
+four circulant matrices so this would be
+
+505
+00:33:52,370 --> 00:33:58,595
+多项式PNP三度三度
+a polynomial P NP a third degree three
+
+506
+00:33:58,600 --> 00:34:02,775
+这将是多项式度数3
+and this would be a polynomial degree 3
+
+507
+00:34:02,780 --> 00:34:07,035
+所以这会给我一个多项式
+so that would give me a polynomial of
+
+508
+00:34:07,040 --> 00:34:10,995
+6级，但我不希望那样
+degree 6 but I don't want that that's
+
+509
+00:34:11,000 --> 00:34:14,174
+不知怎的，我必须定义乘法
+somehow I have to define multiplication
+
+510
+00:34:14,179 --> 00:34:18,374
+所以我希望这是这些程度
+so that I want this to be degree these
+
+511
+00:34:18,379 --> 00:34:24,154
+都应该是4乘4矩阵
+are all supposed to be 4 by 4 matrices
+
+512
+00:34:24,159 --> 00:34:25,965
+就像那个
+just like that one
+
+513
+00:34:25,970 --> 00:34:29,835
+这是身份的两倍加上5P加
+that's twice the identity plus 5 P plus
+
+514
+00:34:29,840 --> 00:34:33,644
+1P平方加0P立方并假设我
+1 P squared plus 0 P cubed and suppose I
+
+515
+00:34:33,649 --> 00:34:36,614
+然后，我将再次得到的广场
+square that then again I'm going to get
+
+516
+00:34:36,619 --> 00:34:39,465
+循环矩阵，我不想要它
+a circulant matrix and I don't want it
+
+517
+00:34:39,470 --> 00:34:42,884
+升到7级我想让你知道我
+to go up to degree 7 I want you know I
+
+518
+00:34:42,889 --> 00:34:47,265
+只是想在我的多项式四个学期
+just want four terms in my polynomial
+
+519
+00:34:47,270 --> 00:34:50,414
+我只想要主要的对角线
+I just want the main diagonal in the
+
+520
+00:34:50,419 --> 00:34:53,505
+接下来的三个对角线然后循环
+next three diagonals and then cyclic
+
+521
+00:34:53,510 --> 00:34:56,114
+骑自行车绕完成矩阵，
+cycling around completes the matrix so
+
+522
+00:34:56,119 --> 00:35:01,395
+为什么我怎么得到哈哈
+why what's how do I get ha ha
+
+523
+00:35:01,400 --> 00:35:11,955
+如何获得学位三分
+how to get degree threes that's the
+
+524
+00:35:11,960 --> 00:35:14,265
+问题就可以你刚才告诉我
+question then can you just tell me the
+
+525
+00:35:14,270 --> 00:35:20,685
+回答所以我倍增是的让我们
+answer so I'm multiplying yeah let's
+
+526
+00:35:20,690 --> 00:35:24,105
+只是做一个例子，所以我看到的不是C1
+just do an example so I've seen not C 1
+
+527
+00:35:24,110 --> 00:35:31,725
+pc2P平方C3P立方次D.
+p c 2 P squared C 3 P cubed times D
+
+528
+00:35:31,730 --> 00:35:36,975
+没有加P1P加D2P平方和
+naught plus P 1 P plus D 2 P squared and
+
+529
+00:35:36,980 --> 00:35:42,855
+D3P立方因此P为P而P为4
+D 3 P cubed so that's P is this P is 4
+
+530
+00:35:42,860 --> 00:35:54,495
+通过4轮循环好转，我正在写
+by 4 circular shift okay and I'm writing
+
+531
+00:35:54,500 --> 00:35:57,885
+所述4乘4矩阵这种方式，这是本
+the 4 by 4 matrix that way this is this
+
+532
+00:35:57,890 --> 00:36:03,015
+应该是当然的身份好了，
+should be the identity of course okay so
+
+533
+00:36:03,020 --> 00:36:05,354
+当我繁衍那些家伙为什么我不这样做
+when I multiply those guys why do I not
+
+534
+00:36:05,359 --> 00:36:10,625
+拿到学位6，为什么我这是为什么
+get degree 6 why am i why is that
+
+535
+00:36:10,630 --> 00:36:15,645
+产品如P立方倍P立方C3P.
+product like P cubed times P cubed C 3 P
+
+536
+00:36:15,650 --> 00:36:19,535
+立方体NT3P立方体，给我C3D3
+cubed NT 3 P cube that gives me C 3 D 3
+
+537
+00:36:19,540 --> 00:36:21,614
+P到6次方
+P to the 6th power
+
+538
+00:36:21,619 --> 00:36:27,135
+怎么了我该怎么办是的
+so what's up what do I do yeah yes
+
+539
+00:36:27,140 --> 00:36:30,285
+那是周期性部分的关键
+that's the key that's the periodic part
+
+540
+00:36:30,290 --> 00:36:34,565
+P到4等于身份谢谢你
+P to the 4 equal the identity thank ya
+
+541
+00:36:34,570 --> 00:36:37,965
+所以P到第六项真的是P
+so the P to the sixth term is really a P
+
+542
+00:36:37,970 --> 00:36:41,235
+平方项P到第五项是
+squared term the P to the fifth term is
+
+543
+00:36:41,240 --> 00:36:44,415
+真的是P到P到第四学期
+really a P term the P to the fourth term
+
+544
+00:36:44,420 --> 00:36:48,945
+真的是0到0的P所以是的
+is really a P to the 0 term so yeah so
+
+545
+00:36:48,950 --> 00:36:52,604
+我只是在做我正在做的事情
+I'm I'm just doing I'm doing what I'm
+
+546
+00:36:52,609 --> 00:36:56,864
+做循环卷积实际上让我
+doing cyclic convolution actually let me
+
+547
+00:36:56,869 --> 00:37:01,284
+只是说当我倍增的时候
+just say when I'm multiplying yeah
+
+548
+00:37:01,289 --> 00:37:04,925
+所以我现在告诉你我能做什么
+so I'm now I'm telling you what I can
+
+549
+00:37:04,930 --> 00:37:06,844
+首先告诉你卷积是什么和
+first tell you what convolution is and
+
+550
+00:37:06,849 --> 00:37:09,364
+那么什么循环卷积是这
+then what cyclic convolution is and this
+
+551
+00:37:09,369 --> 00:37:11,465
+是真的听这个，因为它是
+is real listen up to this because it's
+
+552
+00:37:11,470 --> 00:37:13,645
+知道这是件好事
+it's a good thing to know
+
+553
+00:37:13,650 --> 00:37:16,984
+是的首先是卷积
+yeah so first of all convolution
+
+554
+00:37:16,989 --> 00:37:18,814
+所以我们假设我想接受
+so we suppose I want to take the
+
+555
+00:37:18,819 --> 00:37:23,584
+这是三个一二的卷积
+convolution of three one two that's
+
+556
+00:37:23,589 --> 00:37:25,955
+通常是卷积的符号
+often the symbol for convolution with
+
+557
+00:37:25,960 --> 00:37:35,104
+四个六个一个没关系，那怎么办我怎么样
+four six one okay so how do i how what
+
+558
+00:37:35,109 --> 00:37:37,534
+这是否意味着我有一个矢量
+does that mean I've got a vector so
+
+559
+00:37:37,539 --> 00:37:39,604
+什么对我有什么好处隐藏在那里
+what's high for me what's hiding there
+
+560
+00:37:39,609 --> 00:37:46,205
+是多项式三加X加二
+is is polynomials three plus X plus two
+
+561
+00:37:46,210 --> 00:37:52,084
+x平方乘以4加6x加1x
+x squared times four plus 6x plus one x
+
+562
+00:37:52,089 --> 00:37:54,994
+平方，我只是将它们相乘
+squared and I just multiply them out and
+
+563
+00:37:54,999 --> 00:38:03,695
+我得到五，所以我得到3次4给我一个
+I get five so I get 3 times 4 gives me a
+
+564
+00:38:03,700 --> 00:38:09,544
+123次6x是18x但我也有
+12 3 times 6x is 18x but I've also got
+
+565
+00:38:09,549 --> 00:38:15,064
+从这里开始4倍，所以我得到22X所以我只是
+4x from here so I've got 22 X so I just
+
+566
+00:38:15,069 --> 00:38:18,064
+做多项式的乘法
+do that multiplication of polynomials
+
+567
+00:38:18,069 --> 00:38:21,994
+和我在做什么是卷积
+and what I'm doing is convolution with
+
+568
+00:38:21,999 --> 00:38:25,024
+向量，这是你写的方式
+the vectors and here's the way you wrote
+
+569
+00:38:25,029 --> 00:38:29,274
+它在一年级
+it in in first grade
+
+570
+00:38:29,279 --> 00:38:33,774
+好的，所以这里的一年级还好
+okay so here's first grade okay
+
+571
+00:38:33,779 --> 00:38:37,564
+2128这是你还没学会的
+212 8 this is you haven't learned to
+
+572
+00:38:37,569 --> 00:38:41,314
+随身携带，所以12在那里12
+carry yeah so 12 goes in there as 12
+
+573
+00:38:41,319 --> 00:38:50,104
+然后1是461和3是12183然后
+then 1 is 4 6 1 & 3 is 12 18 3 and then
+
+574
+00:38:50,109 --> 00:38:59,195
+你加起来所以你有2131722和12
+you add up so you have 2 13 17 22 and 12
+
+575
+00:38:59,200 --> 00:39:02,284
+让我这样，这就是答案
+let me just so so that that's the answer
+
+576
+00:39:02,289 --> 00:39:05,135
+还有，他们的卷积我想我
+there that their convolution I guess I
+
+577
+00:39:05,140 --> 00:39:09,814
+必须从是啊123次4
+have to take it from yeah 12 3 times 4
+
+578
+00:39:09,819 --> 00:39:13,415
+现在给了12次3次6次加1次4次
+gave 12 now 3 times 6 plus 1 times 4
+
+579
+00:39:13,420 --> 00:39:15,035
+那是22
+that's the 22
+
+580
+00:39:15,040 --> 00:39:17,575
+哦，是的，我们已经开始了，但现在
+oh yeah we already started here but now
+
+581
+00:39:17,580 --> 00:39:22,255
+那之后是什么，为什么我说七
+what's after that 17 why did I say seven
+
+582
+00:39:22,260 --> 00:39:26,915
+牙齿哦八加六加三
+teeth oh eight plus six plus three
+
+583
+00:39:26,920 --> 00:39:27,815
+谢谢
+Thanks
+
+584
+00:39:27,820 --> 00:39:31,415
+十七，然后十二加一
+seventeen and then twelve plus one
+
+585
+00:39:31,420 --> 00:39:39,905
+十三，然后-那是非循环的
+thirteen and then - that's non-cyclic so
+
+586
+00:39:39,910 --> 00:39:42,605
+如果我想要它，那就是卷积哦
+that's convolution oh if I if I want it
+
+587
+00:39:42,610 --> 00:39:48,145
+非循环我不放圆圈
+to be non-cyclic I don't put a circle in
+
+588
+00:39:48,150 --> 00:39:50,735
+所以这是普通人的象征
+so that's a symbol for ordinary
+
+589
+00:39:50,740 --> 00:39:53,375
+如果您执行MATLAB命令，则进行卷积
+convolution if you do the MATLAB command
+
+590
+00:39:53,380 --> 00:39:57,215
+如果你给它卷积的CoNV
+Co NV for convolution if you gave it
+
+591
+00:39:57,220 --> 00:40:00,535
+那些矢量它会给你五个
+those vectors it would give you five a
+
+592
+00:40:00,540 --> 00:40:03,455
+结果有五个组件的向量
+vector with five components as a result
+
+593
+00:40:03,460 --> 00:40:08,785
+但是如果你现在让我做六个像
+but if you now let me make it six like
+
+594
+00:40:08,790 --> 00:40:11,315
+好的，那么现在会发生什么
+okay so what's going to happen now when
+
+595
+00:40:11,320 --> 00:40:14,885
+我让它循环，所以这代表12
+I make it cyclic so this represents 12
+
+596
+00:40:14,890 --> 00:40:20,975
+22P17P平方13P立方和什么
+22 P 17 P squared 13 P cubed and what
+
+597
+00:40:20,980 --> 00:40:24,305
+如果我正在做的话，那就是13P立方体
+happens what's 13 P cubed if I'm doing
+
+598
+00:40:24,310 --> 00:40:28,535
+如果n是3而我正在做3乘3矩阵
+if n is 3 and I'm doing 3 by 3 matrices
+
+599
+00:40:28,540 --> 00:40:36,005
+然后13P立方体与13右P相同
+then 13 P cube is the same as 13 right P
+
+600
+00:40:36,010 --> 00:40:39,275
+立方体是我所以13将回到那里
+cube is I so the 13 will go back there
+
+601
+00:40:39,280 --> 00:40:43,115
+2将是P4，它会去
+and the 2 will be P 4th and it'll go
+
+602
+00:40:43,120 --> 00:40:49,145
+回到P所以现在用卷积
+back as P so so the now with convolution
+
+603
+00:40:49,150 --> 00:40:56,765
+循环卷积给出12和132522
+cyclic convolution gives 12 and 13 25 22
+
+604
+00:40:56,770 --> 00:41:03,875
+和224和17好吧所以我得到了我
+and 224 and the 17 okay so I've get I'm
+
+605
+00:41:03,880 --> 00:41:08,255
+我只是回到长度为3的向量
+getting back a vector of length 3 I just
+
+606
+00:41:08,260 --> 00:41:09,845
+如果我有3乘3，我想做什么
+as I want to do if I have a 3 by 3
+
+607
+00:41:09,850 --> 00:41:15,395
+矩阵卷积循环循环
+matrix convolution cyclic circulant
+
+608
+00:41:15,400 --> 00:41:17,705
+矩阵是那三个对角线和
+matrix were those three diagonals and
+
+609
+00:41:17,710 --> 00:41:19,925
+这三个对角线，我想要的
+these three diagonals and I want the
+
+610
+00:41:19,930 --> 00:41:21,875
+回答是三个矩阵3
+answer to be a three by three matrix
+
+611
+00:41:21,880 --> 00:41:26,915
+这些对角线是如此再次矩阵
+were these diagonals so again matrix
+
+612
+00:41:26,920 --> 00:41:28,595
+乘法
+multiplication
+
+613
+00:41:28,600 --> 00:41:31,565
+循环矩阵完全对应
+circulant matrices corresponds exactly
+
+614
+00:41:31,570 --> 00:41:36,395
+周期性地乘以多项式
+to multiplying polynomials cyclically
+
+615
+00:41:36,400 --> 00:41:41,705
+那是循环卷积然后
+and that's cyclic convolution and then
+
+616
+00:41:41,710 --> 00:41:43,985
+只有一个小技巧，看看是否
+there's just one little trick to see if
+
+617
+00:41:43,990 --> 00:41:46,355
+你相信我的数字是正确的
+you've got the numbers right I believe
+
+618
+00:41:46,360 --> 00:41:50,675
+如果3加1，那应该是真的
+that it should be true that if 3 plus 1
+
+619
+00:41:50,680 --> 00:41:56,075
+加2是64加6加1是11和我
+plus 2 is 6 4 plus 6 plus 1 is 11 and I
+
+620
+00:41:56,080 --> 00:41:59,345
+相信那些应该添加到
+believe that those should add to add to
+
+621
+00:41:59,350 --> 00:42:06,625
+什么我希望他们添加266
+what what do I hope that they add 266
+
+622
+00:42:06,630 --> 00:42:10,865
+这样做我有点紧张
+I'm a little nervous about doing it but
+
+623
+00:42:10,870 --> 00:42:17,675
+我想我们可以，所以4950966检查
+I think we can yeah so 49 50 966 check
+
+624
+00:42:17,680 --> 00:42:21,185
+是的所以数字是总和
+yeah so the the digits the sum of the
+
+625
+00:42:21,190 --> 00:42:25,685
+一个因子的数字乘以总和
+digits of one factor multiplies the sum
+
+626
+00:42:25,690 --> 00:42:27,395
+的另一个因素的数字
+of the digits of the other factor to
+
+627
+00:42:27,400 --> 00:42:29,735
+给出数字的总和
+give the sum of the digits in the
+
+628
+00:42:29,740 --> 00:42:32,285
+卷积，这是真的
+convolution and that would be true
+
+629
+00:42:32,290 --> 00:42:34,625
+我们是否做了循环
+whether we doing cyclic which is
+
+630
+00:42:34,630 --> 00:42:38,015
+把13和管子带回来或
+bringing the 13 and the tube back in or
+
+631
+00:42:38,020 --> 00:42:41,555
+不循环我们有五个
+not cyclic where where we have five
+
+632
+00:42:41,560 --> 00:42:45,215
+数字是的，所以这实际上是一个
+numbers yeah so that's that's actually a
+
+633
+00:42:45,220 --> 00:42:49,385
+检查一点，我不知道是否
+check that little that I don't know if
+
+634
+00:42:49,390 --> 00:42:51,905
+你曾经想到过这一点
+you've ever thought about that in second
+
+635
+00:42:51,910 --> 00:42:53,635
+年级
+grade
+
+636
+00:42:53,640 --> 00:42:57,635
+乘以这些数字乘以
+multiplying these numbers multiplying
+
+637
+00:42:57,640 --> 00:43:01,175
+这个数字被这个数字和获取
+that number by that number and getting
+
+638
+00:43:01,180 --> 00:43:04,805
+一些答案，可能是一半
+some answer which probably half the
+
+639
+00:43:04,810 --> 00:43:09,035
+类没有得到正确的那么五年级
+class did not get right then 5th grade
+
+640
+00:43:09,040 --> 00:43:12,755
+他们有点得到它但是
+they've they're kind of getting it but
+
+641
+00:43:12,760 --> 00:43:15,695
+如果他们知道支票就可以了
+if they knew a check so they could have
+
+642
+00:43:15,700 --> 00:43:18,665
+刚添加这些数字以获得11
+just added these numbers to get 11 added
+
+643
+00:43:18,670 --> 00:43:21,455
+这些数字得到6乘以那些
+these numbers to get 6 multiplied those
+
+644
+00:43:21,460 --> 00:43:25,295
+获得66并检查那些
+to get 66 and check that that those
+
+645
+00:43:25,300 --> 00:43:30,125
+添加266我从来没有发生在我身上
+added 266 I'd never had occurred to me
+
+646
+00:43:30,130 --> 00:43:32,795
+我承认和二年级都没有
+I admit and second grade neither but
+
+647
+00:43:32,800 --> 00:43:36,605
+这是一件好事，现在你已经知道你
+it's a good thing now you know now you
+
+648
+00:43:36,610 --> 00:43:42,685
+可以通过二年级，所以这是
+can pass second grade okay so so this is
+
+649
+00:43:42,690 --> 00:43:46,415
+循环卷积的图片和我
+the picture for cyclic convolution and I
+
+650
+00:43:46,420 --> 00:43:48,335
+还剩下几分钟告诉你
+just have a few minutes left to tell you
+
+651
+00:43:48,340 --> 00:43:50,675
+关于特征值和特征向量
+about the eigenvalues and eigenvectors
+
+652
+00:43:50,680 --> 00:43:55,835
+这些矩阵所以你能告诉我们什么
+of these matrices so what can you tell
+
+653
+00:43:55,840 --> 00:43:59,135
+我关于特征值，我说的
+me about the eigenvalues and i say the
+
+654
+00:43:59,140 --> 00:44:03,845
+特征向量我有一个矩阵p发生
+eigenvectors i have a matrix p happens
+
+655
+00:44:03,850 --> 00:44:06,905
+作为一个排列矩阵，但它是一个
+to be a permutation matrix but it's a
+
+656
+00:44:06,910 --> 00:44:10,835
+矩阵然后我把这个多项式
+matrix then I take this polynomial in
+
+657
+00:44:10,840 --> 00:44:14,645
+什么可以告诉我什么矩阵
+the matrix what can you tell me about
+
+658
+00:44:14,650 --> 00:44:20,405
+这个矩阵的特征向量C所以我
+the eigenvectors of this matrix C so I
+
+659
+00:44:20,410 --> 00:44:24,635
+写我的C看起来像
+have write my C looks like looks like
+
+660
+00:44:24,640 --> 00:44:26,135
+那个，我问你的
+that and I'm asking you for the
+
+661
+00:44:26,140 --> 00:44:29,015
+那个特征向量，我就是这么说的
+eigenvectors of that and I'm saying that
+
+662
+00:44:29,020 --> 00:44:32,915
+这是一个是多项式的和
+that is a is a sum of is a polynomial
+
+663
+00:44:32,920 --> 00:44:40,105
+P的权力总和实际上是这样的
+sum of powers of P like so in fact
+
+664
+00:44:40,110 --> 00:44:43,615
+这里的数字刚刚从对角线上掉下来
+numbers here just come off the diagonals
+
+665
+00:44:43,620 --> 00:44:50,675
+那么特征向量呢？
+so what about the eigenvectors well that
+
+666
+00:44:50,680 --> 00:44:53,135
+是一个特征向量，它是真正的向量
+is an eigenvector that's true the vector
+
+667
+00:44:53,140 --> 00:44:56,105
+所有的人将与特征向量
+of all ones will be an eigenvector with
+
+668
+00:44:56,110 --> 00:45:01,925
+什么特征值实际是啊是啊所以我
+what eigenvalue actually yeah yeah so I
+
+669
+00:45:01,930 --> 00:45:05,965
+我想让你看到的是
+what I wanted to want you to see is the
+
+670
+00:45:05,970 --> 00:45:09,395
+C的特征向量与
+eigenvectors of C are the same as the
+
+671
+00:45:09,400 --> 00:45:11,825
+如果我有一个P的特征向量
+eigenvectors of P if I have an
+
+672
+00:45:11,830 --> 00:45:13,775
+p的特征向量也是一个
+eigenvector of p that's also an
+
+673
+00:45:13,780 --> 00:45:16,175
+p平方和P立方的特征向量
+eigenvector of p squared and P cubed and
+
+674
+00:45:16,180 --> 00:45:25,465
+P的特征向量的组合
+a combination so eigenvectors of P are
+
+675
+00:45:25,470 --> 00:45:31,805
+座位的特征向量
+eigenvectors of seats
+
+676
+00:45:31,810 --> 00:45:34,085
+那么问题是什么呢
+so then the question is what are the
+
+677
+00:45:34,090 --> 00:45:37,145
+P的特征向量你明白我的意思
+eigenvectors of P you see what I mean
+
+678
+00:45:37,150 --> 00:45:39,785
+它不是真的没关系
+that it doesn't it didn't really matter
+
+679
+00:45:39,790 --> 00:45:43,445
+如果我正在寻找特征向量的东西
+if I'm looking for eigenvectors what
+
+680
+00:45:43,450 --> 00:45:47,315
+那些数字是重点
+those numbers were the point is that
+
+681
+00:45:47,320 --> 00:45:49,985
+这些数字在对角线上是恒定的
+those numbers were constant on diagonals
+
+682
+00:45:49,990 --> 00:45:53,645
+因此他们我拥有它
+and that they therefore they I have it's
+
+683
+00:45:53,650 --> 00:45:56,795
+由一个内置的矩阵P构建而成
+built out of one matrix P built out of
+
+684
+00:45:56,800 --> 00:45:59,255
+一个矩阵P所以我所要做的就是
+one matrix P so if all I have to do is
+
+685
+00:45:59,260 --> 00:46:03,395
+P是的的特征向量所以这是
+the eigenvectors of P yep so that's the
+
+686
+00:46:03,400 --> 00:46:05,795
+这里的最后一步是什么
+final step here what are the
+
+687
+00:46:05,800 --> 00:46:13,835
+p的特征向量和特征值
+eigenvectors and eigenvalues of p so
+
+688
+00:46:13,840 --> 00:46:24,935
+特征向量p的特征值等于11
+eigenvectors eigenvalues for p equal 1 1
+
+689
+00:46:24,940 --> 00:46:34,715
+1和1说，否则0所以有人
+1 and 1 say and otherwise 0 so somebody
+
+690
+00:46:34,720 --> 00:46:38,545
+提到了1111的向量
+mentioned that the vector of 1 1 1 1
+
+691
+00:46:38,550 --> 00:46:43,115
+这是一个特征向量，因为如果我
+that that is an eigenvector because if I
+
+692
+00:46:43,120 --> 00:46:45,095
+做那个乘法它改变了这一点
+do that multiplication it shifts this
+
+693
+00:46:45,100 --> 00:46:47,525
+矢量向下和循环周围但是
+vector down and cyclically around but
+
+694
+00:46:47,530 --> 00:46:51,485
+这只是带回相同的矢量
+that just brings back the same vector so
+
+695
+00:46:51,490 --> 00:46:59,245
+lambda是1，这是一个特征向量
+lambda is 1 and that's an eigenvector
+
+696
+00:46:59,250 --> 00:47:04,595
+特征值为1，但这是4乘4
+with eigenvalue 1 but this is a 4 by 4
+
+697
+00:47:04,600 --> 00:47:05,525
+矩阵
+matrix
+
+698
+00:47:05,530 --> 00:47:10,955
+哦，现在你猜1个减1负
+oh now you're guessing 1 minus 1 1 minus
+
+699
+00:47:10,960 --> 00:47:17,315
+1有趣的好吧告诉我一个
+1 interesting well right tell me an
+
+700
+00:47:17,320 --> 00:47:24,155
+如果你想要兄弟，那么特征向量4减去1
+eigenvector 4 minus 1 if you want to bro
+
+701
+00:47:24,160 --> 00:47:28,205
+只是在那里交替标志让我
+just alternating signs there so let me
+
+702
+00:47:28,210 --> 00:47:33,965
+让我做倍增时间1
+let me do that multiplication times 1
+
+703
+00:47:33,970 --> 00:47:37,535
+减11减去1我当然没有
+minus 1 1 minus 1 of course I don't have
+
+704
+00:47:37,540 --> 00:47:40,235
+做这个乘法我只是去
+to do this multiplication I'm just going
+
+705
+00:47:40,240 --> 00:47:42,605
+转移这个，所以我要转移它
+to shift this so I'm going to shift that
+
+706
+00:47:42,610 --> 00:47:43,975
+下
+down
+
+707
+00:47:43,980 --> 00:47:47,815
+1减11并循环周围和
+1 minus 1 1 and cyclically around and
+
+708
+00:47:47,820 --> 00:47:51,595
+现在它的特征值是什么
+now what's the eigenvalue it is an
+
+709
+00:47:51,600 --> 00:47:54,565
+特征向量和特征值是什么
+eigenvector and what's the eigenvalue
+
+710
+00:47:54,570 --> 00:47:58,375
+这使得该矢量的多个
+that makes what multiple of that vector
+
+711
+00:47:58,380 --> 00:48:07,825
+给出了这个向量减去1的结果
+gives that gives that vector minus 1 so
+
+712
+00:48:07,830 --> 00:48:12,145
+这是一个好主意，但剩下的
+that was a good idea but the rest of
+
+713
+00:48:12,150 --> 00:48:16,965
+你说的是一个坏主意，因为
+what you said was was a bad idea because
+
+714
+00:48:16,970 --> 00:48:20,275
+我们必须看下一个特征向量
+we've got to look the next eigen vectors
+
+715
+00:48:20,280 --> 00:48:24,955
+我们必须在别的地方
+are got to be somewhere else we've just
+
+716
+00:48:24,960 --> 00:48:27,114
+有一个特征值出现在1那里，
+got one eigenvalue there on 1 there and
+
+717
+00:48:27,119 --> 00:48:30,265
+我们还没有得到其他两个还等什么
+we haven't got the other two so what are
+
+718
+00:48:30,270 --> 00:48:33,375
+另外两个特征值
+the other two eigenvalues of this
+
+719
+00:48:33,380 --> 00:48:40,104
+排列矩阵一个是正​​确的
+permutation matrix one that's right
+
+720
+00:48:40,109 --> 00:48:43,614
+我们在一个循环的世界画一个圆圈
+we're in a circulant world draw a circle
+
+721
+00:48:43,619 --> 00:48:47,275
+所以特征向量是四个根
+so the eigenvectors are the four roots
+
+722
+00:48:47,280 --> 00:48:52,015
+一个复合体，一个又一个
+of one complex so one and minus one
+
+723
+00:48:52,020 --> 00:48:55,525
+你有这些是lambda，但是
+you've got these are the lambdas but the
+
+724
+00:48:55,530 --> 00:49:01,135
+其他的是我和我是的，为什么
+other ones are i and- i yeah yep why
+
+725
+00:49:01,140 --> 00:49:04,675
+不让我离开，直到因为时间到让
+don't I leave until since time's up let
+
+726
+00:49:04,680 --> 00:49:08,035
+我离开星期五的特征值
+me leave until Friday the eigen values
+
+727
+00:49:08,040 --> 00:49:14,695
+和一般的特征向量
+and eigen vectors for in general for
+
+728
+00:49:14,700 --> 00:49:18,205
+任意大小，但这是一张图片
+arbitrary size but that's a picture of
+
+729
+00:49:18,210 --> 00:49:22,045
+特征我们接近于本征
+the eigen we're close to the eigen
+
+730
+00:49:22,050 --> 00:49:24,825
+每个人的向量和特征值
+vectors and eigen values of every all
+
+731
+00:49:24,830 --> 00:49:28,095
+循环具有相同的特征向量
+circulant have the same eigen vectors
+
+732
+00:49:28,100 --> 00:49:32,635
+所有的循环都有特征向量
+all circulant have that eigenvector also
+
+733
+00:49:32,640 --> 00:49:35,005
+所有循环都有四个四分之一
+four by four all circulant have that
+
+734
+00:49:35,010 --> 00:49:37,465
+特征向量四乘四，我们会发现
+eigenvector four by four and we'll find
+
+735
+00:49:37,470 --> 00:49:39,685
+另外两个好，所以我会见到你
+the other two okay so I'll see you
+
+736
+00:49:39,690 --> 00:49:44,335
+周五为那些和卷积
+Friday for those and the convolution
+
+737
+00:49:44,340 --> 00:49:47,770
+rule which is the most important rule in
+
+738
+00:49:44,340 --> 00:49:52,790
+规则这是最重要的规则
+
+739
+00:49:47,780 --> 00:49:52,790
+信号处理好的谢谢
+signal processing okay thanks
+

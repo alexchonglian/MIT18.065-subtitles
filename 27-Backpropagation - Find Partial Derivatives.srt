@@ -1,0 +1,3718 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将有助于MIT开放课程继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:22,114
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:22,119 --> 00:00:24,664
+好的，我们走了
+okay here we go
+
+10
+00:00:24,669 --> 00:00:29,655
+今天的所有设置和两个主题是
+all set and two topics for today one is
+
+11
+00:00:29,660 --> 00:00:33,935
+回到SRA教授的演讲
+to go back to Professor SRA's lecture
+
+12
+00:00:33,940 --> 00:00:39,315
+这是上周五，他答应了
+that was last Friday and he promised a
+
+13
+00:00:39,320 --> 00:00:43,245
+定理和证明，今天早上他
+theorem and proof and this morning he
+
+14
+00:00:43,250 --> 00:00:47,025
+把它发给我，这就是收敛
+sent it to me so it's the convergence
+
+15
+00:00:47,030 --> 00:00:49,275
+它证明了它的融合
+it's proving the convergence of
+
+16
+00:00:49,280 --> 00:00:52,095
+随机梯度下降和真的
+stochastic gradient descent and really
+
+17
+00:00:52,100 --> 00:00:55,815
+什么是重要的可能和有用的不是
+what's important maybe and useful is not
+
+18
+00:00:55,820 --> 00:00:58,695
+这么多的证明细节
+so much the details of the proof which
+
+19
+00:00:58,700 --> 00:01:02,925
+我只是学习但是假设
+I'm just learning but the assumptions
+
+20
+00:01:02,930 --> 00:01:05,444
+你知道这里的逻辑是什么
+you know what's the logic here what do
+
+21
+00:01:05,449 --> 00:01:09,555
+你必须假设渐变到
+you have to assume about the gradient to
+
+22
+00:01:09,560 --> 00:01:13,245
+以及获得该算法的算法
+and about the algorithm to get the
+
+23
+00:01:13,250 --> 00:01:18,375
+回答，但现在我回头看
+answer and but now I actually look back
+
+24
+00:01:18,380 --> 00:01:24,315
+在他的演讲视频中，它是
+at the video of his lecture and it was
+
+25
+00:01:24,320 --> 00:01:28,335
+优秀的，我看它有
+excellent and as I look at it there were
+
+26
+00:01:28,340 --> 00:01:31,185
+讲座后面的几件事
+a couple of things later in the lecture
+
+27
+00:01:31,190 --> 00:01:34,635
+我认为会做出很好的项目
+that I thought would make good projects
+
+28
+00:01:34,640 --> 00:01:37,695
+所以我不知道是否有人仍然开放
+so I don't know if anybody is still open
+
+29
+00:01:37,700 --> 00:01:42,345
+如何在项目上做什么，但在这里
+to what to do on a project but here here
+
+30
+00:01:42,350 --> 00:01:45,525
+是我的两个想法，如果你是的话
+are my two ideas and and if you if
+
+31
+00:01:45,530 --> 00:01:46,875
+你已经完成了你的项目
+you've already finished your project
+
+32
+00:01:46,880 --> 00:01:52,364
+通过考虑其中一个来获得A+
+well get an A+ by considering one of
+
+33
+00:01:52,369 --> 00:01:55,305
+这些让你记住，这将是
+these so you remember and this will
+
+34
+00:01:55,310 --> 00:01:57,885
+提醒你讲课的内容
+remind you of the of the lecture which
+
+35
+00:01:57,890 --> 00:02:00,065
+是一件好事，所以你记得那个
+is a good thing so you remember that
+
+36
+00:02:00,070 --> 00:02:04,095
+问题一是是否在
+question one was whether in the
+
+37
+00:02:04,100 --> 00:02:07,275
+随机部分你做完之后
+stochastic part do you after you've
+
+38
+00:02:07,280 --> 00:02:08,114
+取样
+sampled
+
+39
+00:02:08,119 --> 00:02:11,384
+一个或一些小批量，但让我们只是
+one or some mini batch but let's just
+
+40
+00:02:11,389 --> 00:02:13,124
+说一个
+say one
+
+41
+00:02:13,129 --> 00:02:16,994
+损失函数来自一个
+of the loss functions coming from one
+
+42
+00:02:16,999 --> 00:02:19,094
+样本你还记得整点
+sample you remember the whole point is
+
+43
+00:02:19,099 --> 00:02:23,684
+如果我们做的所有zillions样品
+that if we do all zillions samples at
+
+44
+00:02:23,689 --> 00:02:26,354
+每次迭代我们真的很慢
+every iteration we're really really slow
+
+45
+00:02:26,359 --> 00:02:30,555
+所以随机的想法是随机的
+so the stochastic idea is to randomly
+
+46
+00:02:30,560 --> 00:02:35,085
+挑选一个或一小批样品
+pick one or a mini batch of the samples
+
+47
+00:02:35,090 --> 00:02:39,824
+并且只是减少他们的损失就交易
+and and just reduce their loss just deal
+
+48
+00:02:39,829 --> 00:02:43,005
+与他们的损失说平方损失
+with their the loss say the square loss
+
+49
+00:02:43,010 --> 00:02:46,634
+或者稍后我们会看到交叉熵损失
+or later we'll see cross-entropy loss
+
+50
+00:02:46,639 --> 00:02:52,574
+但无论成本如何，只需做一些
+but whatever the cost is just do a few
+
+51
+00:02:52,579 --> 00:02:56,294
+或一个然后问题是在之后
+or one and then the question was after
+
+52
+00:02:56,299 --> 00:02:58,094
+你完成了那个你把它放回去的那个
+you've done that one you put it back in
+
+53
+00:02:58,099 --> 00:03:02,204
+锅和你每次品尝
+the pot and every time you sample over
+
+54
+00:03:02,209 --> 00:03:04,874
+整个系列，但那是
+the whole collection but that's
+
+55
+00:03:04,879 --> 00:03:09,904
+贵或者你只是列出一个
+expensive or do you just make a list of
+
+56
+00:03:09,909 --> 00:03:14,055
+所有的随机顺序的随机列表
+random list of random order of all the
+
+57
+00:03:14,060 --> 00:03:17,654
+样品并通过它们
+samples and go through them which is
+
+58
+00:03:17,659 --> 00:03:20,835
+然后没有替换，这是排序
+then without replacement which is sort
+
+59
+00:03:20,840 --> 00:03:25,814
+那是半非法的
+of semi illegal that is the the the
+
+60
+00:03:25,819 --> 00:03:32,474
+随机化中的逻辑问你
+logic in in the randomization asks you
+
+61
+00:03:32,479 --> 00:03:35,624
+每次更换，但没有人这样做
+to replace every time but nobody does it
+
+62
+00:03:35,629 --> 00:03:39,014
+等待成本可能不值得
+wait costs a lot probably not worth it
+
+63
+00:03:39,019 --> 00:03:42,404
+所以这个项目就是你想的
+so the project would be suppose you take
+
+64
+00:03:42,409 --> 00:03:46,115
+一千或说一百
+a thousand or say just a hundred hundred
+
+65
+00:03:46,120 --> 00:03:51,574
+随机数字说你用MATLAB
+random numbers say say you use MATLAB
+
+66
+00:03:51,579 --> 00:03:56,745
+随机只是命令R，所以你得到
+random just the command R and so you get
+
+67
+00:03:56,750 --> 00:03:59,794
+R和平均数为一半的数字
+numbers whose averages a half from R and
+
+68
+00:03:59,799 --> 00:04:04,064
+他们介于0和1之间，所以我们知道什么
+they're between 0 & 1 ok so we know what
+
+69
+00:04:04,069 --> 00:04:07,574
+平均值是让我们计算两个
+the average is so let's compute it two
+
+70
+00:04:07,579 --> 00:04:13,544
+一种方法是不更换，那就是
+ways one is by not replacing and that's
+
+71
+00:04:13,549 --> 00:04:18,014
+有趣的人，你这么做
+the interesting one do you so so to take
+
+72
+00:04:18,019 --> 00:04:20,714
+一百个样本我猜我们知道
+a hundred samples well I guess we know
+
+73
+00:04:20,719 --> 00:04:23,055
+在我们完成之后
+that after we've got through the full
+
+74
+00:04:23,060 --> 00:04:26,355
+百我们准备得到的
+hundred we're gonna get exactly the
+
+75
+00:04:26,360 --> 00:04:27,255
+现在
+right now
+
+76
+00:04:27,260 --> 00:04:32,414
+但无论如何我的问题是
+but anyway there my question would be
+
+77
+00:04:32,419 --> 00:04:36,555
+多大的差别，你看到在
+how much difference do you see in in the
+
+78
+00:04:36,560 --> 00:04:39,375
+最终的方法所以法律规模很大
+eventual approach so the law of large
+
+79
+00:04:39,380 --> 00:04:42,224
+数字我想我们会告诉我们得到一个
+numbers I guess would tell us we get a
+
+80
+00:04:42,229 --> 00:04:48,495
+这些数字的平均值为1/2
+average of 1/2 for these numbers with
+
+81
+00:04:48,500 --> 00:04:51,795
+均匀分布在0和1之间
+uniform distribution between 0 and 1
+
+82
+00:04:51,800 --> 00:04:53,595
+我应该在这里写任何东西吗？
+should I be writing anything here
+
+83
+00:04:53,600 --> 00:04:57,615
+也许我应该没事，所以我就是这样
+maybe I should okay so I'm this is
+
+84
+00:04:57,620 --> 00:05:09,224
+项目一个你选择数字K哪个
+project one you pick numbers a K which
+
+85
+00:05:09,229 --> 00:05:17,284
+R是R并且从R开始均匀地在01上
+is R and from R and so uniformly on 0 1
+
+86
+00:05:17,289 --> 00:05:24,075
+001，然后将我的问题是什么
+0 0 1 and then I my question is what
+
+87
+00:05:24,080 --> 00:05:29,414
+关于收敛到最后的
+about convergence to the the final the
+
+88
+00:05:29,419 --> 00:05:31,895
+平均值是1/2
+average is 1/2
+
+89
+00:05:31,900 --> 00:05:35,295
+它说可能是一个简单的例子，但是
+it says maybe too simple an example but
+
+90
+00:05:35,300 --> 00:05:38,085
+我们可以看到的会发生什么
+could we see what happens for the
+
+91
+00:05:38,090 --> 00:05:44,955
+和你一样的平均收敛
+convergence of the average as you either
+
+92
+00:05:44,960 --> 00:05:47,594
+做替换或不做替换
+do replacements or don't do replacements
+
+93
+00:05:47,599 --> 00:05:50,445
+然后其实我想看一个
+and then in fact I would like to see a
+
+94
+00:05:50,450 --> 00:05:54,015
+看起来像他的那些人
+figure that looks like those in his
+
+95
+00:05:54,020 --> 00:05:56,865
+讲课记得了，他开始了它
+lecture t remember he started it
+
+96
+00:05:56,870 --> 00:06:02,315
+在某处开始然后在这里
+somewhere start and then here's the
+
+97
+00:06:02,320 --> 00:06:07,365
+完成，但你记得那是随机的
+finish but you remember that stochastic
+
+98
+00:06:07,370 --> 00:06:09,435
+梯度下降有点漂亮
+gradient descent was kind of a pretty
+
+99
+00:06:09,440 --> 00:06:12,465
+一开始就很有效了
+effective at the beginning well the
+
+100
+00:06:12,470 --> 00:06:14,115
+开始那些可能是一百
+beginning those might be a hundred
+
+101
+00:06:14,120 --> 00:06:18,914
+迭代每一个Epoque一个运行
+iterations each one Epoque one one run
+
+102
+00:06:18,919 --> 00:06:21,645
+通过完整的数字，然后当它
+through the full number but then when it
+
+103
+00:06:21,650 --> 00:06:24,905
+它开始越来越近了
+got to here got closer it started
+
+104
+00:06:24,910 --> 00:06:29,025
+振作起来，你记得他确定了
+oscillating you remember he identified
+
+105
+00:06:29,030 --> 00:06:32,855
+事物周围的混乱区域
+the region of confusion around the thing
+
+106
+00:06:32,860 --> 00:06:38,145
+我的建议只是我认为那些
+well my suggestion is just I think those
+
+107
+00:06:38,150 --> 00:06:40,455
+您可以访问视频
+videos should be accessible to you on
+
+108
+00:06:40,460 --> 00:06:44,895
+他们是恒星，所以我很乐意
+are they on stellar yeah so I'd love to
+
+109
+00:06:44,900 --> 00:06:53,504
+看到那种行为有些好
+see that behavior in some some good
+
+110
+00:06:53,509 --> 00:06:55,395
+这种行为的例子和一些
+examples of that behavior and some
+
+111
+00:06:55,400 --> 00:06:57,795
+要使用的图片，这将是一个
+pictures to use so that would be one
+
+112
+00:06:57,800 --> 00:07:00,795
+和安德烈斯的想法哦，是的也是
+idea with Andres oh yeah that's also
+
+113
+00:07:00,800 --> 00:07:06,914
+想法的想法是好的开始
+idea to idea to is the is the good start
+
+114
+00:07:06,919 --> 00:07:11,595
+再坏的结束为一个随机
+and then the bad finish for a stochastic
+
+115
+00:07:11,600 --> 00:07:14,025
+渐变血统，当然还有魔力
+gradient descent and of course the magic
+
+116
+00:07:14,030 --> 00:07:18,615
+即使没有这个魔法的话
+words in even without this the magic
+
+117
+00:07:18,620 --> 00:07:24,305
+单词和计算是提前停止
+words and computations is early stopping
+
+118
+00:07:24,310 --> 00:07:36,465
+我们不太适合所以我们想要
+we we don't over fit so we wanted to
+
+119
+00:07:36,470 --> 00:07:39,944
+无论如何早点停下来，提前停下来
+stop early anyway and early stopping
+
+120
+00:07:39,949 --> 00:07:41,775
+就像一个好主意一样
+just as like a good idea
+
+121
+00:07:41,780 --> 00:07:45,645
+因为如果那是什么，那就是
+for if that's what if that's what the
+
+122
+00:07:45,650 --> 00:07:51,555
+接近X星的那个
+approach to the to the X star that
+
+123
+00:07:51,560 --> 00:07:54,075
+你正在寻找这将是
+you're looking for the this would be the
+
+124
+00:07:54,080 --> 00:07:57,765
+地方，这就是这X
+place where the this is where that's X
+
+125
+00:07:57,770 --> 00:08:02,654
+我们是毕业生F和X星的明星
+star where we're grad F and X star is
+
+126
+00:08:02,659 --> 00:08:06,935
+哦，这就是最低点
+near oh that's that's the minimum point
+
+127
+00:08:06,940 --> 00:08:13,125
+那个Arg男人究竟是男人
+that's Arg men are men exactly what
+
+128
+00:08:13,130 --> 00:08:15,944
+我们正在寻找的，我们并不觉得
+we're looking for and we don't find it
+
+129
+00:08:15,949 --> 00:08:16,784
+很好
+very well
+
+130
+00:08:16,789 --> 00:08:21,974
+但我们接近它快好了2
+but we get close to it fast okay two
+
+131
+00:08:21,979 --> 00:08:28,125
+关于项目的想法，所以也许我会
+ideas on project so just so maybe I'll
+
+132
+00:08:28,130 --> 00:08:32,985
+转到今天主题的主题
+go to the main topic of today the topic
+
+133
+00:08:32,990 --> 00:08:36,615
+我答应了反向传播的想法
+I promised the idea of back propagation
+
+134
+00:08:36,620 --> 00:08:45,945
+计算这一切都是为了计算
+to compute this is all to compute
+
+135
+00:08:45,950 --> 00:08:50,725
+gradF梯度所有的导数
+grad F the gradient all the derivatives
+
+136
+00:08:50,730 --> 00:09:02,125
+这是DFDX1到DFDXM
+this is this is the DF DX 1 to DF DX M
+
+137
+00:09:02,130 --> 00:09:12,055
+也许我会说我有MM功能的地方
+maybe I'll say where I have M M features
+
+138
+00:09:12,060 --> 00:09:16,015
+forfor是为了样品好，所以这是
+for for is for the sample okay so that's
+
+139
+00:09:16,020 --> 00:09:19,555
+反向传播就是这样
+back propagation and that's the thing
+
+140
+00:09:19,560 --> 00:09:25,225
+它的发现或重新发现放
+whose discovery or rediscovery put
+
+141
+00:09:25,230 --> 00:09:29,455
+没有那个的地图上的神经网络
+neural nets on the map without that's
+
+142
+00:09:29,460 --> 00:09:31,435
+当然要找到关键的计算方法
+the key calculation of course to find
+
+143
+00:09:31,440 --> 00:09:33,985
+最陡下降的梯度
+the gradient in the steepest descent
+
+144
+00:09:33,990 --> 00:09:36,535
+算法每一步都需要一个渐变
+algorithm every step needs a gradient
+
+145
+00:09:36,540 --> 00:09:40,735
+如果你不能快速计算它
+and if you can't compute it quickly
+
+146
+00:09:40,740 --> 00:09:45,895
+你是个坏人，但是你
+you're you're in bad shape so but you
+
+147
+00:09:45,900 --> 00:09:49,975
+可以通过这种自动计算它
+can compute it quickly by this automatic
+
+148
+00:09:49,980 --> 00:09:54,235
+反向模式的区别
+differentiation in Reverse mode which is
+
+149
+00:09:54,240 --> 00:09:57,565
+否则我不认为那些
+otherwise known those I don't think that
+
+150
+00:09:57,570 --> 00:10:03,235
+人们也许Hinton是第一个
+people maybe Hinton was the first was
+
+151
+00:10:03,240 --> 00:10:11,575
+在深入发展的领导者
+the leader in in the in developing deep
+
+152
+00:10:11,580 --> 00:10:14,815
+神经网络深度学习和他
+neural nets deep learning and he
+
+153
+00:10:14,820 --> 00:10:17,875
+实现了，所以我给了他很大的荣誉
+realized so I give him big credit for
+
+154
+00:10:17,880 --> 00:10:20,395
+该反传会工作，
+that back propagation would work and
+
+155
+00:10:20,400 --> 00:10:24,655
+会给他快速的渐变但是它
+would give him fast gradients but it
+
+156
+00:10:24,660 --> 00:10:29,215
+实际上之前已经研究过
+actually had been studied before under
+
+157
+00:10:29,220 --> 00:10:32,455
+名称ad自动区分所以
+the name ad automatic differentiation so
+
+158
+00:10:32,460 --> 00:10:35,055
+优点只是告诉你这个想法
+merit just tell you that idea
+
+159
+00:10:35,060 --> 00:10:39,355
+有些人可能知道它可能知道
+some of you may know it may know about
+
+160
+00:10:39,360 --> 00:10:42,105
+它可能比我更了解并且可能知道
+it may know more than I and might know
+
+161
+00:10:42,110 --> 00:10:48,325
+好的网站看到这个
+good a good website to see this
+
+162
+00:10:48,330 --> 00:10:49,585
+描述
+description
+
+163
+00:10:49,590 --> 00:10:52,345
+当然还有一部分
+there'll be of course a section of the
+
+164
+00:10:52,350 --> 00:10:55,945
+已经是你的笔记了
+book of the notes already you you
+
+165
+00:10:55,950 --> 00:10:58,215
+已经拥有了它部分，这是
+already have it section this is
+
+166
+00:10:58,220 --> 00:11:05,205
+在7.2中这是深入的章节
+in 7.2 so this is the chapter on deep
+
+167
+00:11:05,210 --> 00:11:08,805
+学习和第一部分是关于
+learning and the first section was about
+
+168
+00:11:08,810 --> 00:11:11,865
+你记得X的结构
+the structure of f of X and you remember
+
+169
+00:11:11,870 --> 00:11:13,935
+关于f结构的关键点
+the key point about the structure of f
+
+170
+00:11:13,940 --> 00:11:18,045
+X是我会从X和开始
+of X is that it would I start with X and
+
+171
+00:11:18,050 --> 00:11:21,585
+应用X的一些函数f1和那个
+apply some function f1 of X and to that
+
+172
+00:11:21,590 --> 00:11:24,915
+我应用了X的一些函数f2
+I apply some function f2 of X and to
+
+173
+00:11:24,920 --> 00:11:28,725
+我应用了F3F3的一些功能
+that I apply some function of F 3 F 3 of
+
+174
+00:11:28,730 --> 00:11:31,785
+XF的1F2，这就是事情
+F 2 of F 1 of X and that's the thing
+
+175
+00:11:31,790 --> 00:11:35,835
+我需要的衍生物，所以我只是
+whose derivative I need so I'll just
+
+176
+00:11:35,840 --> 00:11:38,325
+拿你熟悉的普通衍生物
+take ordinary derivative you know well
+
+177
+00:11:38,330 --> 00:11:40,305
+偏导数真的是因为我
+partial derivatives really because I
+
+178
+00:11:40,310 --> 00:11:42,915
+是的，我最好说的偏导数，以便
+yeah I better say partial derivatives so
+
+179
+00:11:42,920 --> 00:11:51,945
+假设X是一对XY的例子
+suppose X is a pair XY example so so
+
+180
+00:11:51,950 --> 00:11:57,135
+在这里让我通过例子向你展示
+here let me show you by example so
+
+181
+00:11:57,140 --> 00:12:03,585
+假设X的f让我采取简单的方法
+suppose f of X is let me take a simple
+
+182
+00:12:03,590 --> 00:12:12,045
+示例X立方倍X加2y即可
+example X cubed times X plus 2y okay so
+
+183
+00:12:12,050 --> 00:12:14,625
+我想以这种方式思考这个功能
+I want to think of that function the way
+
+184
+00:12:14,630 --> 00:12:18,345
+任何人都会像建造一样
+anybody would as being built as the
+
+185
+00:12:18,350 --> 00:12:21,675
+两个功能的产品，所以有一个
+product of two functions so there's a
+
+186
+00:12:21,680 --> 00:12:25,215
+产品规则进入衍生品
+product rule to get into the derivative
+
+187
+00:12:25,220 --> 00:12:28,845
+然后我们需要每个的衍生物
+and then we need the derivatives of each
+
+188
+00:12:28,850 --> 00:12:32,475
+因此，有一个权力规则和一个
+piece so there's a power rule and a
+
+189
+00:12:32,480 --> 00:12:36,975
+线性和线性组合规则
+linear and a linear combination rule so
+
+190
+00:12:36,980 --> 00:12:38,895
+它有一些我们使用的规则
+it's got a few of the rules that we use
+
+191
+00:12:38,900 --> 00:12:44,265
+并且重点是思考
+and point is to think about the
+
+192
+00:12:44,270 --> 00:12:47,145
+X和f的f的计算
+computation of f of X and the
+
+193
+00:12:47,150 --> 00:12:52,545
+DFDX的计算和计算
+computation of DF DX and the computation
+
+194
+00:12:52,550 --> 00:12:56,145
+DFTY是那些衍生物
+of DFT Y those are the derivatives that
+
+195
+00:12:56,150 --> 00:12:59,915
+我们需要这是我们需要的功能
+we need this is the function we need and
+
+196
+00:12:59,920 --> 00:13:02,945
+如何快速完成这些计算
+how to do those computations quickly
+
+197
+00:13:02,950 --> 00:13:09,005
+好的，这是第7.2节我
+okay so and this is section 7.2 which I
+
+198
+00:13:09,010 --> 00:13:11,774
+从中受益匪浅
+which benefited a lot from
+
+199
+00:13:11,779 --> 00:13:17,175
+博客我不是博客读者或博客
+a blog I'm not a blog reader or a blog
+
+200
+00:13:17,180 --> 00:13:23,355
+作家，但不知何故，我发现这个博客，
+writer but somehow I found this blog so
+
+201
+00:13:23,360 --> 00:13:32,584
+让我把它的克里斯托弗
+let me put its Christopher
+
+202
+00:13:32,589 --> 00:13:37,425
+奥拉夫是他的名字，他真的写道
+Olaf is his name and he's really writes
+
+203
+00:13:37,430 --> 00:13:41,024
+清除事情让他做出贡献
+to clear things so he he he contributes
+
+204
+00:13:41,029 --> 00:13:43,785
+他为一家大公司工作
+he works for one of the big companies
+
+205
+00:13:43,790 --> 00:13:47,595
+你知道更深入的研究吗？
+and does you know the deeper research
+
+206
+00:13:47,600 --> 00:13:50,954
+但他也是一个非常好的暴露者
+but he's also a really good expose etre
+
+207
+00:13:50,959 --> 00:13:55,814
+他现在使用的网站是
+and the the website that he now uses is
+
+208
+00:13:55,819 --> 00:14:01,064
+叫做蒸馏点什么，但我想
+called distill dot something but I think
+
+209
+00:14:01,069 --> 00:14:05,024
+也许这个博客是较早之前的
+maybe this blog was earlier before the
+
+210
+00:14:05,029 --> 00:14:07,605
+开始蒸馏，但可能会加载
+start of distill but it might be loaded
+
+211
+00:14:07,610 --> 00:14:10,905
+到提制反正就是这样的地方
+onto distill anyway that's that's where
+
+212
+00:14:10,910 --> 00:14:14,314
+我得到了这个简单的描述
+I got this simple description of
+
+213
+00:14:14,319 --> 00:14:18,495
+反向传播让我们做微积分
+backpropagation let's just do calculus
+
+214
+00:14:18,500 --> 00:14:21,735
+首先，如果我有一个
+for first of all if I just have a
+
+215
+00:14:21,740 --> 00:14:23,985
+甚至一个变量的功能
+function of maybe even one variable
+
+216
+00:14:23,990 --> 00:14:27,374
+DFDX的衍生物是什么？
+what's the derivative what is DF DX here
+
+217
+00:14:27,379 --> 00:14:29,954
+只是想要记住是什么
+just to realize just to remember what is
+
+218
+00:14:29,959 --> 00:14:30,254
+它
+it
+
+219
+00:14:30,259 --> 00:14:34,655
+我们必须做什么计算DFDX
+what calculation we have to do so DF DX
+
+220
+00:14:34,660 --> 00:14:40,274
+这是n等于一个变量所以
+this is with n equal one one variable so
+
+221
+00:14:40,279 --> 00:14:46,064
+我会使用普通衍生物而不是
+I'll I use ordinary derivative and not
+
+222
+00:14:46,069 --> 00:14:48,884
+偏导数，但这是什么
+partial derivative but this is then what
+
+223
+00:14:48,889 --> 00:14:53,264
+我这就是真的有工作要做，但
+I that's what really has to be done but
+
+224
+00:14:53,269 --> 00:14:55,694
+那是什么的衍生物
+just what's the derivative of that of a
+
+225
+00:14:55,699 --> 00:14:59,384
+当然，功能链很好
+chain of functions well of course the
+
+226
+00:14:59,389 --> 00:15:02,204
+链规则所以椅子是什么的
+chain rule so the chair what does the
+
+227
+00:15:02,209 --> 00:15:09,754
+连锁规则说我区分f3我
+chain rule say I differentiate f3 I
+
+228
+00:15:09,759 --> 00:15:13,574
+不知道是什么我也很好，我把
+don't know what do I well well I put
+
+229
+00:15:13,579 --> 00:15:17,405
+它与...有所区别
+that it's differentiated with respect to
+
+230
+00:15:17,410 --> 00:15:21,644
+f3DF3df2就是我应该放的
+f3 DF 3 d f2 is that what I should put
+
+231
+00:15:21,649 --> 00:15:24,315
+好
+ok
+
+232
+00:15:24,320 --> 00:15:28,515
+我在哪里评估该衍生物
+and where do I evaluate that derivative
+
+233
+00:15:28,520 --> 00:15:37,105
+所以是的，所以我不在X评价它
+so so so yeah I don't evaluate it at X
+
+234
+00:15:37,110 --> 00:15:40,225
+对，我是不同的有效F-所以
+right I'm different effective F - so do
+
+235
+00:15:40,230 --> 00:15:45,535
+我在F的F到X这个评估它
+I evaluate it at F to of F 1 of X this
+
+236
+00:15:45,540 --> 00:15:51,885
+是链规则得到一点点的地方
+is where the chain rule gets a little
+
+237
+00:15:51,890 --> 00:16:00,435
+cheney好吧那我们知道DF2DF1
+cheney okay then we know that DF 2 DF 1
+
+238
+00:16:00,440 --> 00:16:04,405
+现在又在F1处进行了评估
+and again that's now evaluated at F 1 of
+
+239
+00:16:04,410 --> 00:16:10,725
+X然后最终因子是DF1是X.
+X and then the final factor is DF 1 be X
+
+240
+00:16:10,730 --> 00:16:15,475
+在X评估我们是什么
+evaluated at X that's somehow what we
+
+241
+00:16:15,480 --> 00:16:18,745
+必须做，这只是一个
+have to do and that's just for an
+
+242
+00:16:18,750 --> 00:16:22,255
+普通的一个变量函数和我
+ordinary one variable function and I
+
+243
+00:16:22,260 --> 00:16:24,505
+这里有两个变量函数和
+have here a two variable function and
+
+244
+00:16:24,510 --> 00:16:27,175
+深度学习有一百万变量
+deep learning has a million variable
+
+245
+00:16:27,180 --> 00:16:32,845
+功能所以我想我们不会去
+function so let's I think we won't go to
+
+246
+00:16:32,850 --> 00:16:36,105
+一百万，但我们可以管理两个让我们
+a million but two we can manage so let's
+
+247
+00:16:36,110 --> 00:16:39,955
+让我们来计算那些让我们计算的东西吧
+let's let's compute those let's compute
+
+248
+00:16:39,960 --> 00:16:53,515
+该函数首先计算F所以
+the function first of all compute F so
+
+249
+00:16:53,520 --> 00:17:00,535
+我给了X等于2和y等于说
+I'm given X equal say 2 and y equals say
+
+250
+00:17:00,540 --> 00:17:08,505
+3，我将创造一个什么样的
+3 and what do I'm gonna create a
+
+251
+00:17:08,510 --> 00:17:13,074
+计算图所以这只是为了
+computational graph so this is just to
+
+252
+00:17:13,079 --> 00:17:16,215
+画画，所以我确实要走绘制
+draw so I'm actually going to draw the
+
+253
+00:17:16,220 --> 00:17:26,634
+计算图
+computational graph
+
+254
+00:17:26,639 --> 00:17:35,435
+为4f计算然后它将是
+to compute for for 4f and then it'll be
+
+255
+00:17:35,440 --> 00:17:37,744
+找到该图的变体
+a variation of that graph to find the
+
+256
+00:17:37,749 --> 00:17:41,164
+衍生品，但让我们开始吧
+derivatives but so let's just start with
+
+257
+00:17:41,169 --> 00:17:44,705
+该图首先为该函数
+the graph first of all for the function
+
+258
+00:17:44,710 --> 00:17:47,075
+因为我们将再次需要它
+because we're gonna need that so again
+
+259
+00:17:47,080 --> 00:17:51,215
+这是X立方但这么好吧，我写的
+it's X cubed but so okay I write that
+
+260
+00:17:51,220 --> 00:17:57,475
+再次功能X立方次X加2y
+function again X cubed times X plus 2y
+
+261
+00:17:57,480 --> 00:18:01,114
+所以我认为我们要迈出第一步
+so I think we're going to the first step
+
+262
+00:18:01,119 --> 00:18:06,904
+将找到X加X立方体
+will be to find X plus X cubed that
+
+263
+00:18:06,909 --> 00:18:12,065
+因素将是8，我们必须
+factor which will be 8 and we have to
+
+264
+00:18:12,070 --> 00:18:16,624
+找到另一个因素X加2y然后
+find the other factor X plus 2y so then
+
+265
+00:18:16,629 --> 00:18:19,715
+我要去那里使用Y和X这些
+I'm going to that uses Y and X so these
+
+266
+00:18:19,720 --> 00:18:23,465
+是其向前发展的有向图
+are its a directed graph going forward
+
+267
+00:18:23,470 --> 00:18:27,185
+用这个计算使得X加2y
+with this computation so X plus 2 y
+
+268
+00:18:27,190 --> 00:18:30,935
+等于它是两个和六个哦
+equals whatever it is two and six oh
+
+269
+00:18:30,940 --> 00:18:32,965
+八再没有辉煌
+eight again not brilliant
+
+270
+00:18:32,970 --> 00:18:43,975
+我在这里要改变的是3y3y
+what shall I change here make it 3 y 3y
+
+271
+00:18:43,980 --> 00:18:47,494
+只是在这里所以得到不同数量
+just to get a different number here so
+
+272
+00:18:47,499 --> 00:18:51,485
+现在X是2y是3我得到11这是一个很好的
+now X is 2 y is 3 I get 11 that's a good
+
+273
+00:18:51,490 --> 00:18:56,424
+数
+number
+
+274
+00:18:56,429 --> 00:19:03,514
+好到目前为止这么好，现在是下一步
+ok so far so good and now the next step
+
+275
+00:19:03,519 --> 00:19:05,855
+在这张图上将是我有一个
+on this graph will be to I have a
+
+276
+00:19:05,860 --> 00:19:09,845
+那些将要去的产品
+product of those so that will go to the
+
+277
+00:19:09,850 --> 00:19:21,294
+产品F等于1188的8倍
+product F equals 8 times 1188
+
+278
+00:19:21,299 --> 00:19:26,195
+好的，所以我们得到答案88你愿意吗？
+ok so we've got the answer 88 would you
+
+279
+00:19:26,200 --> 00:19:30,065
+通常我不会那么乱
+which mess normally I wouldn't take that
+
+280
+00:19:30,070 --> 00:19:34,235
+计算F的大部分书
+much of a book to compute F
+
+281
+00:19:34,240 --> 00:19:40,504
+我会说2个立方次2加3
+I would have said 2 cubed times 2 plus 3
+
+282
+00:19:40,509 --> 00:19:43,744
+第3次，我已经简化了
+times 3 and I'd have simplified that to
+
+283
+00:19:43,749 --> 00:19:51,124
+8次11，如果是的话，我会得到88次
+8 times 11 and I would have got 88 so if
+
+284
+00:19:51,129 --> 00:19:53,614
+我们只是正常写作会
+we were just writing normally that would
+
+285
+00:19:53,619 --> 00:19:57,304
+做到这一点，但是这是对图片
+do it but this is the picture of the
+
+286
+00:19:57,309 --> 00:20:01,554
+计算图确定好不错
+computational graph ok good good good
+
+287
+00:20:01,559 --> 00:20:05,674
+现在它是衍生品的两个衍生品
+now it's the derivatives two derivatives
+
+288
+00:20:05,679 --> 00:20:09,304
+假设我们在fdy中找到FDX
+to find the F DX in the f dy suppose we
+
+289
+00:20:09,309 --> 00:20:11,935
+先行前进
+go forward first
+
+290
+00:20:11,940 --> 00:20:14,855
+我的观点将会是伟大的
+my point is going to be or the great
+
+291
+00:20:14,860 --> 00:20:17,884
+重点是落后是更好的逆转
+point is that backward is better reverse
+
+292
+00:20:17,889 --> 00:20:20,764
+模式更好，但我们不知道是什么
+mode is better but we don't know what
+
+293
+00:20:20,769 --> 00:20:22,774
+这意味着直到我们向前迈进
+that means until we've gone forward so
+
+294
+00:20:22,779 --> 00:20:25,355
+让我继续前进，所以现在我要走了
+let me go forward so now I'm gonna go
+
+295
+00:20:25,360 --> 00:20:30,815
+向前
+forward
+
+296
+00:20:30,820 --> 00:20:35,364
+[掌声]
+[Applause]
+
+297
+00:20:35,369 --> 00:20:41,034
+那么我们怎样才能让FDX好呢
+so what do we what let's do the F DX ok
+
+298
+00:20:41,039 --> 00:20:44,134
+每个人都对DFDX有所了解
+everybody's up for DF DX the partial
+
+299
+00:20:44,139 --> 00:20:48,605
+衍生规格2x所以这里我们有X.
+derivative spec 2x so here we have X
+
+300
+00:20:48,610 --> 00:21:00,735
+等于2和y等于3
+equal 2 and y equals 3
+
+301
+00:21:00,740 --> 00:21:08,575
+好的，然后我必须认为我采取
+okay and then I've got to figure I take
+
+302
+00:21:08,580 --> 00:21:12,115
+该步骤的衍生物是第一个
+the derivative of that step the first
+
+303
+00:21:12,120 --> 00:21:15,715
+步骤是X2x立方，所以我需要
+step was X 2x cubed so I need the
+
+304
+00:21:15,720 --> 00:21:19,735
+衍生广告的全部意义在于
+derivative the whole point of ad is that
+
+305
+00:21:19,740 --> 00:21:23,875
+计算的每次计算
+the computation every computation of a
+
+306
+00:21:23,880 --> 00:21:27,115
+衍生品像这样打破了
+derivative breaks down like this and a
+
+307
+00:21:27,120 --> 00:21:33,235
+非常简单的作品和衍生品
+very simple pieces and the derivatives
+
+308
+00:21:33,240 --> 00:21:35,695
+那些简单的部分也很简单
+of those simple pieces are also simple
+
+309
+00:21:35,700 --> 00:21:38,815
+碎片所以重点是打破
+pieces so the whole point is to break
+
+310
+00:21:38,820 --> 00:21:44,305
+要适当地替换那里
+the to replace appropriately the there
+
+311
+00:21:44,310 --> 00:21:48,565
+是那些中间步骤
+was those intermediate steps with
+
+312
+00:21:48,570 --> 00:21:51,265
+导数，以便计算X.
+derivatives so so as to compute the X
+
+313
+00:21:51,270 --> 00:21:56,395
+所以我必须使用这个事实
+derivative so so I have to use the fact
+
+314
+00:21:56,400 --> 00:22:00,865
+x的导数与...相关
+that the derivative of x cubed with
+
+315
+00:22:00,870 --> 00:22:03,055
+尊重X哦我最好做偏
+respect to X oh I better do partial
+
+316
+00:22:03,060 --> 00:22:05,905
+X立方体的衍生部分凹槽
+derivative partial grooves of X cubed
+
+317
+00:22:05,910 --> 00:22:10,315
+加标2x或3x平方所以现在我就是我
+spiked 2x or 3x squared so now I'll I'm
+
+318
+00:22:10,320 --> 00:22:12,955
+抱歉，可能是一个公式，然后是一个
+sorry up put maybe a formula and then a
+
+319
+00:22:12,960 --> 00:22:21,715
+号码，以便给出给出3倍
+number so that gives that gives 3 times
+
+320
+00:22:21,720 --> 00:22:29,725
+412和x立方的衍生物
+4 12 and the derivative of x cubed with
+
+321
+00:22:29,730 --> 00:22:38,815
+尊重Y给出0然后再给出
+respect to Y gives 0 right and then the
+
+322
+00:22:38,820 --> 00:22:43,365
+导数所以我正在做X衍生物
+derivative so I'm doing the X derivative
+
+323
+00:22:43,370 --> 00:22:47,415
+所以Y的导数相对于X.
+so the derivative of Y with respect to X
+
+324
+00:22:47,420 --> 00:22:54,535
+如果我是的，你能告诉我吗？
+is you get to tell me if I'm if I'm
+
+325
+00:22:54,540 --> 00:22:59,365
+计算偏导数是0是0
+computing partial derivatives is 0 is 0
+
+326
+00:22:59,370 --> 00:23:03,805
+Y和X是独立的，就是这样
+Y and X are independent and that's this
+
+327
+00:23:03,810 --> 00:23:07,135
+在我看来，原因，
+is the reason in my view that the
+
+328
+00:23:07,140 --> 00:23:10,485
+前进的方法是浪费，因为
+forward method is is wasteful because
+
+329
+00:23:10,490 --> 00:23:13,165
+我要做另一个
+I'm gonna have to do another
+
+330
+00:23:13,170 --> 00:23:17,125
+其他y导数的图表
+graph for the y derivative in other
+
+331
+00:23:17,130 --> 00:23:19,675
+跟踪跟踪x的单词
+words tracking the tracking the x
+
+332
+00:23:19,680 --> 00:23:22,825
+衍生品从来没有很多东西
+derivatives a whole lot of stuff never
+
+333
+00:23:22,830 --> 00:23:26,395
+离开地面，所以它永远不应该
+got off the ground so it never should
+
+334
+00:23:26,400 --> 00:23:30,625
+无论如何都看着它，但我做到了
+have looked at it so anyway but I do
+
+335
+00:23:30,630 --> 00:23:34,545
+需要
+need
+
+336
+00:23:34,550 --> 00:23:41,695
+我会有这个X加3y所以也许我
+I'll have this X plus 3y so maybe I
+
+337
+00:23:41,700 --> 00:23:43,555
+不知道是否消除，我认为
+don't know whether to erase that I think
+
+338
+00:23:43,560 --> 00:23:46,375
+我只是因为我不知道该怎么做
+I will just because I don't know what to
+
+339
+00:23:46,380 --> 00:23:51,955
+是的，所以现在就让我吧
+do with it there yeah so now now let me
+
+340
+00:23:51,960 --> 00:23:58,095
+拿那些我真正需要的是
+take the ones that I really need is
+
+341
+00:23:58,100 --> 00:24:02,425
+关于x加X的导数
+derivative with respect to X of x plus
+
+342
+00:24:02,430 --> 00:24:09,925
+3Y为1，因此，让我
+3y which is 1 and so that gives me the
+
+343
+00:24:09,930 --> 00:24:17,395
+回答1对任何X实际上还好，现在
+answer 1 for any X actually okay and now
+
+344
+00:24:17,400 --> 00:24:18,325
+什么
+what
+
+345
+00:24:18,330 --> 00:24:22,975
+哦，我是的，我真的不需要这些
+oh I yeah I'm really I don't need these
+
+346
+00:24:22,980 --> 00:24:28,095
+这是浪费时间不是吗
+the this is a waste of time isn't it
+
+347
+00:24:28,100 --> 00:24:33,415
+是否只有我想要的X衍生物
+is it only X derivatives I want anyway
+
+348
+00:24:33,420 --> 00:24:35,865
+让我们继续吧
+let's just keep going
+
+349
+00:24:35,870 --> 00:24:38,665
+你可以看到这需要一点点
+you can see this takes a little
+
+350
+00:24:38,670 --> 00:24:41,935
+组织，我没有练习
+organization and I'm not practiced with
+
+351
+00:24:41,940 --> 00:24:44,575
+它所以我要做什么我正在寻找
+it so what am I going to do I'm looking
+
+352
+00:24:44,580 --> 00:24:48,145
+对于我的X衍生得使用
+for the X derivative of I've got to use
+
+353
+00:24:48,150 --> 00:24:50,815
+现在我找到了产品规则X.
+a product rule now I found the X
+
+354
+00:24:50,820 --> 00:24:54,985
+该因子的导数是X的12
+derivative of that factor was 12 the X
+
+355
+00:24:54,990 --> 00:24:58,975
+该因子的导数是1，现在
+derivative of this factor is 1 and now
+
+356
+00:24:58,980 --> 00:25:04,105
+产品的X衍生物也是如此
+the X derivative of the product so so
+
+357
+00:25:04,110 --> 00:25:08,275
+现在我要做某种产品规则
+now I'm gonna do a somehow product rule
+
+358
+00:25:08,280 --> 00:25:15,475
+这个产品的X衍生物我
+the the X derivative of this product I
+
+359
+00:25:15,480 --> 00:25:18,265
+给这两个术语起一个名字
+sort of given these two terms a name
+
+360
+00:25:18,270 --> 00:25:21,505
+让我打电话让我先打个电话
+let let me call let me call that first
+
+361
+00:25:21,510 --> 00:25:24,945
+术语X立方体和第二个术语
+term X cube and the second term
+
+362
+00:25:24,950 --> 00:25:29,895
+x+31：f所以我会称之为两个
+x + 3 1 : f so I'll call that the two
+
+363
+00:25:29,900 --> 00:25:36,785
+这两个术语CNS所以我现在需要得到我
+the two terms CNS so I now need to get I
+
+364
+00:25:36,790 --> 00:25:41,295
+现在需要得到这样的CD
+now need to get so that's the CD s this
+
+365
+00:25:41,300 --> 00:25:47,235
+是DCDX这是DCDX和这个
+is DC DX right this is DC DX and this
+
+366
+00:25:47,240 --> 00:25:56,805
+一个是dsDX和CD我为什么需要
+one is d s DX and the CD why do I need
+
+367
+00:25:56,810 --> 00:26:00,155
+知道我很抱歉我是这个
+to know that I'm sorry I'm this
+
+368
+00:26:00,160 --> 00:26:02,865
+计算图已经抛出了我但是
+computational graph has thrown me but
+
+369
+00:26:02,870 --> 00:26:05,085
+现在我想使用产品规则
+now now I want to use the product rule
+
+370
+00:26:05,090 --> 00:26:09,975
+而且我正在使用X衍生物，所以我
+and I'm taking X derivatives right so I
+
+371
+00:26:09,980 --> 00:26:13,995
+应该有计算C和s啊是的我
+should have computed C and s ah yes I
+
+372
+00:26:14,000 --> 00:26:15,855
+看到我有你需要的那些
+see I've got a you need those in the
+
+373
+00:26:15,860 --> 00:26:18,135
+产品规则，所以我应该计算
+product rule so I should have computed
+
+374
+00:26:18,140 --> 00:26:30,495
+看到8+s是正确的5
+see as being 8 + s as being 5 that right
+
+375
+00:26:30,500 --> 00:26:37,515
+2+311是的，我需要八个人
+2 + 3 11 yeah I needed the eight in the
+
+376
+00:26:37,520 --> 00:26:44,565
+哦，我刚刚开始跑步了
+oh what's up I've just been running
+
+377
+00:26:44,570 --> 00:26:48,315
+在这里没有让自己进入
+along here without getting myself in the
+
+378
+00:26:48,320 --> 00:26:51,585
+整个图片是的8和11是对的但是
+whole picture yeah 8 and 11 is right but
+
+379
+00:26:51,590 --> 00:26:53,445
+现在我正在寻找衍生品
+now I'm looking for the derivatives
+
+380
+00:26:53,450 --> 00:26:55,845
+对，所以我不会增加那些
+right so I don't multiply those that's
+
+381
+00:26:55,850 --> 00:27:01,035
+不是产品规则所以产品规则
+not the product rule so the product rule
+
+382
+00:27:01,040 --> 00:27:08,505
+是什么时候这样的产品规则
+is what s times so so this product rule
+
+383
+00:27:08,510 --> 00:27:11,265
+我应该做这个组合
+I should I have to do this combination
+
+384
+00:27:11,270 --> 00:27:20,385
+这是现在的产品规则
+of this is now the product rule for the
+
+385
+00:27:20,390 --> 00:27:26,985
+C次的衍生物，所以我想要CD
+derivative of C times s so I want C D s
+
+386
+00:27:26,990 --> 00:27:31,815
+DX+sDCDX我想我现在正在进行中
+DX + s DC DX I think I'm on track now
+
+387
+00:27:31,820 --> 00:27:36,165
+现在我想输入数字
+and now I want to put in numbers
+
+388
+00:27:36,170 --> 00:27:43,305
+所以C是8，SDX我们计算了Ds
+so C is 8 the SDX have we computed D s
+
+389
+00:27:43,310 --> 00:27:51,015
+DX是的，DX是1而现在是自己的
+DX yes the s DX is 1 and now s itself is
+
+390
+00:27:51,020 --> 00:27:56,985
+计算为11和DCDX我们计算为
+computed as 11 and DC DX we computed as
+
+391
+00:27:56,990 --> 00:28:02,475
+12II不敢看有我我我
+12 I I don't dare look have I am I am i
+
+392
+00:28:02,480 --> 00:28:08,475
+我不认为我会得到哦不，我
+I don't think I'm gonna get oh no I
+
+393
+00:28:08,480 --> 00:28:10,245
+不知道答案是什么，但对不起我
+don't know what the answer yet sorry I'm
+
+394
+00:28:10,250 --> 00:28:15,255
+不要试图让你们得到88分
+not trying to get 88 right you guys are
+
+395
+00:28:15,260 --> 00:28:20,235
+没有帮助你看到我遇到麻烦但是
+not helping you see I'm in trouble but
+
+396
+00:28:20,240 --> 00:28:23,175
+我在这里想象的是8
+what I what I imagine here is that's 8
+
+397
+00:28:23,180 --> 00:28:27,945
+那是132所以我得到了140公顷
+and that's 132 so I'm getting 140 ha is
+
+398
+00:28:27,950 --> 00:28:29,925
+有可能那就是
+there any possibility that that's the
+
+399
+00:28:29,930 --> 00:28:30,765
+正确答案
+right answer
+
+400
+00:28:30,770 --> 00:28:36,045
+对于DFDX的D，这是DFDXI.
+for D for D F D X this is DF DX I
+
+401
+00:28:36,050 --> 00:28:41,775
+通过观察我的斗争来计算你
+computed you by watching me struggle
+
+402
+00:28:41,780 --> 00:28:48,735
+在这里，你看到了我每一步的想法
+here you're seeing the idea I every step
+
+403
+00:28:48,740 --> 00:28:52,545
+我采取每一步的衍生物
+I take the derivative of each step so it
+
+404
+00:28:52,550 --> 00:28:56,025
+是一个功率步骤X立方体所以我有一个3倍
+was a power step X cube so I had a 3x
+
+405
+00:28:56,030 --> 00:28:59,735
+平方和一步，所以我有一个1
+squared and a some step so I had a 1
+
+406
+00:28:59,740 --> 00:29:03,275
+然后我下一步是
+then I the next step was a
+
+407
+00:29:03,280 --> 00:29:06,705
+乘法，所以我需要产品
+multiplication so I needed the product
+
+408
+00:29:06,710 --> 00:29:10,515
+规则我将这些分开
+rule for that I have these separate
+
+409
+00:29:10,520 --> 00:29:14,625
+数字，所以我把它们放进去，所以它是一个
+numbers so I put them in and so it's a
+
+410
+00:29:14,630 --> 00:29:18,375
+我们只完成了计算图
+the computational graph finished we only
+
+411
+00:29:18,380 --> 00:29:23,325
+需要两个级别，我们得到8和130
+needed two levels and we got 8 and 130
+
+412
+00:29:23,330 --> 00:29:28,185
+140可以，但我们没有得到FD为什么
+to 140 okay but we didn't get the FD why
+
+413
+00:29:28,190 --> 00:29:35,955
+是的，为此，我需要另一个需要
+yes and for that I'd need another need
+
+414
+00:29:35,960 --> 00:29:42,555
+再次重做这个，我不想
+to redo this again and I don't want to
+
+415
+00:29:42,560 --> 00:29:45,675
+这样做我宁愿反过来
+do that I would rather do the reverse
+
+416
+00:29:45,680 --> 00:29:48,525
+模式并立即那就是做这两个动作
+mode and do them both at once that's the
+
+417
+00:29:48,530 --> 00:29:49,575
+河的一点
+point of the river
+
+418
+00:29:49,580 --> 00:29:51,645
+抚平的效率非常高这是很
+smooth it's very efficient it's very
+
+419
+00:29:51,650 --> 00:29:55,815
+高效的实际计算
+efficient actually computing the
+
+420
+00:29:55,820 --> 00:29:59,835
+完成后完成渐变
+gradient after you've done the done the
+
+421
+00:29:59,840 --> 00:30:02,475
+首先为功能计算工作
+work for the function computing first
+
+422
+00:30:02,480 --> 00:30:04,635
+衍生工具，你可以计算出N个第一
+derivatives you could compute n first
+
+423
+00:30:04,640 --> 00:30:07,755
+约四或五的衍生物
+derivatives with about like four or five
+
+424
+00:30:07,760 --> 00:30:10,965
+倍的成本不会结束倍，这是
+times the cost not end times that that's
+
+425
+00:30:10,970 --> 00:30:12,105
+对我来说很神奇
+amazing to me
+
+426
+00:30:12,110 --> 00:30:15,255
+这是我可以计算的惊人
+that is amazing that that I can compute
+
+427
+00:30:15,260 --> 00:30:22,155
+梯度非常有效地通过将其通过
+the gradient very efficiently by it by
+
+428
+00:30:22,160 --> 00:30:24,285
+后面的道具所以我必须这样做
+the back prop so I have to you have to
+
+429
+00:30:24,290 --> 00:30:28,425
+告诉你向后的方式，但我是
+show you the backwards way but so I'm
+
+430
+00:30:28,430 --> 00:30:32,055
+只是，只是我只是要跟随
+just yeah just I'm just going to follow
+
+431
+00:30:32,060 --> 00:30:35,265
+所有的路径向后，以便我得到
+all the paths backwards so that I get
+
+432
+00:30:35,270 --> 00:30:39,285
+DFDX和DF都是你看到的
+both DF DX and D F dy just by you see
+
+433
+00:30:39,290 --> 00:30:41,835
+我的想法是采取衍生物
+the idea is to take the derivative of
+
+434
+00:30:41,840 --> 00:30:45,555
+每一步都是真正的小步骤
+each step each small step that's really
+
+435
+00:30:45,560 --> 00:30:48,285
+我们在微积分中做什么你知道如果你
+what we do in calculus you know if you
+
+436
+00:30:48,290 --> 00:30:50,085
+想想微积分的开始
+think about the start of a calculus
+
+437
+00:30:50,090 --> 00:30:52,425
+当然你的衍生品是做什么的
+course what do you what derivatives do
+
+438
+00:30:52,430 --> 00:30:55,875
+我们实际上知道我们实际上是否使用XF
+we actually know do we actually use X F
+
+439
+00:30:55,880 --> 00:31:00,135
+在X加DeltaX减F我们是什么
+at X plus Delta X minus F do we what
+
+440
+00:31:00,140 --> 00:31:06,435
+我们研究出来的衍生品我们做了
+derivatives do we grind out we do the
+
+441
+00:31:06,440 --> 00:31:11,235
+每个微积分的X到N的导数
+derivatives of X to the N every calculus
+
+442
+00:31:11,240 --> 00:31:13,545
+本书以x平方和和。开头
+book starts with x squared and and and
+
+443
+00:31:13,550 --> 00:31:15,975
+找到一个导数X到n然后你
+finds a derivative X to the n then you
+
+444
+00:31:15,980 --> 00:31:22,065
+做正义X和加X然后其他人
+do sine X and plus X then what others
+
+445
+00:31:22,070 --> 00:31:23,235
+还有吗
+are there anymore
+
+446
+00:31:23,240 --> 00:31:28,965
+即使是对X的X好处也是如此
+even e to the X good e to the X and it's
+
+447
+00:31:28,970 --> 00:31:32,205
+新生中的反函数日志
+the inverse function log in freshman
+
+448
+00:31:32,210 --> 00:31:36,165
+微积分你总是写Ln只是为了
+calculus you always write Ln just to be
+
+449
+00:31:36,170 --> 00:31:39,495
+过时没关系，现在可能是
+out of date okay and now that may be the
+
+450
+00:31:39,500 --> 00:31:43,395
+列表是它，然后链规则在那里
+list is it and then the chain rule there
+
+451
+00:31:43,400 --> 00:31:48,455
+还有其他你真正做过的事
+are there others that you actually do a
+
+452
+00:31:48,460 --> 00:31:51,375
+实际上e到X的计算是
+computation of actually e to the X is
+
+453
+00:31:51,380 --> 00:31:54,135
+酒店所定义的其
+defined by the property that its
+
+454
+00:31:54,140 --> 00:31:57,705
+衍生物是X到X然后你
+derivative is e to the X and then you
+
+455
+00:31:57,710 --> 00:32:01,095
+发现X必须是什么，正弦X
+discover what log X has to be and sine X
+
+456
+00:32:01,100 --> 00:32:02,985
+你是怎么做的
+you how do you do
+
+457
+00:32:02,990 --> 00:32:06,405
+X加DeltaX将比较减去
+of X plus Delta X will compare minus
+
+458
+00:32:06,410 --> 00:32:08,955
+X的正弦你怎么找到你知道的
+sine of X how do you find the you know
+
+459
+00:32:08,960 --> 00:32:12,185
+艰难的方式一劳永逸
+the hard way once and for all way you
+
+460
+00:32:12,190 --> 00:32:15,855
+画一个小单位圆圈，然后弄乱
+draw a little unit circle and and mess
+
+461
+00:32:15,860 --> 00:32:19,545
+你会发现一些角度
+with some some angles and you discover
+
+462
+00:32:19,550 --> 00:32:21,585
+该正弦的衍生物是
+that the derivative of the sine is the
+
+463
+00:32:21,590 --> 00:32:26,174
+余弦，如果你已经定义了标志
+cosine that's if you've defined the sign
+
+464
+00:32:26,179 --> 00:32:30,735
+来自右边a的比例
+from as a ratio of sides in a in a right
+
+465
+00:32:30,740 --> 00:32:32,445
+三角形，当然你可以定义它
+triangle of course you could define it
+
+466
+00:32:32,450 --> 00:32:34,605
+作为一个无限的系列然后你会
+as an infinite series and then you would
+
+467
+00:32:34,610 --> 00:32:40,785
+回到刚好那么好用的那样
+be back to just using that okay so so
+
+468
+00:32:40,790 --> 00:32:42,885
+微积分正是我们正在做的事情
+calculus does exactly what we're doing
+
+469
+00:32:42,890 --> 00:32:47,174
+这里通过链找到所有衍生物
+here finds all derivatives by the chain
+
+470
+00:32:47,179 --> 00:32:52,965
+规则适用于它拥有的几个规则
+rule applied to a few ones that it has
+
+471
+00:32:52,970 --> 00:32:56,865
+已经详细研究，但切线
+has worked out in detail but tangent of
+
+472
+00:32:56,870 --> 00:33:02,804
+X我们将使用商法则割线
+X we would use the quotient rule secant
+
+473
+00:33:02,809 --> 00:33:05,174
+我们将使用商一规则
+of X we would use the quotient rule one
+
+474
+00:33:05,179 --> 00:33:08,385
+过余弦和我们使用的产品
+over cosine and the products we use the
+
+475
+00:33:08,390 --> 00:33:12,315
+产品规则所以真正的微积分倾向于
+product rule so really calculus tends to
+
+476
+00:33:12,320 --> 00:33:17,595
+你看的时候看起来相当简单
+seem fairly simple after when you look
+
+477
+00:33:17,600 --> 00:33:22,935
+回来看看你到底做了什么
+back to see what actually you did and
+
+478
+00:33:22,940 --> 00:33:24,615
+然后整合什么是积分
+then integration what is integral
+
+479
+00:33:24,620 --> 00:33:27,585
+关于或多或少猜测的微积分
+calculus about more or less guessing the
+
+480
+00:33:27,590 --> 00:33:30,435
+你必须回答你
+answer right you you you have to
+
+481
+00:33:30,440 --> 00:33:32,415
+集成了XDX的f
+integrate f of X DX
+
+482
+00:33:32,420 --> 00:33:35,835
+你真的和你有什么关系
+and you have so really what you what you
+
+483
+00:33:35,840 --> 00:33:38,325
+要做的就是想想什么
+have to do is sort of think okay what
+
+484
+00:33:38,330 --> 00:33:41,085
+有这个衍生物有什么功能
+had this derivative what function had
+
+485
+00:33:41,090 --> 00:33:45,825
+那衍生物和乱七八糟的东西
+that derivative and mess around and get
+
+486
+00:33:45,830 --> 00:33:52,275
+它真的是它呃它就是它
+it so that's really it's uh it's it's a
+
+487
+00:33:52,280 --> 00:33:55,455
+新生当然我觉得还好，所以我在哪里
+freshman course I guess okay so where am
+
+488
+00:33:55,460 --> 00:33:57,155
+一世
+I
+
+489
+00:33:57,160 --> 00:34:00,554
+向后右，这是仍然的事情
+backward right that's the thing still to
+
+490
+00:34:00,559 --> 00:34:03,545
+如何落后的系统工作
+do how does the backward system work
+
+491
+00:34:03,550 --> 00:34:06,855
+好吧，我会尽力尝试
+okay I'll try it try my best
+
+492
+00:34:06,860 --> 00:34:09,815
+好的，所以这里是这个大目标
+okay so here's the here's the big goal
+
+493
+00:34:09,820 --> 00:34:22,124
+返回所以反向模式广告权利让我
+back so reverse mode ad right and let me
+
+494
+00:34:22,129 --> 00:34:25,844
+让自己有点注意
+make myself a little note a little
+
+495
+00:34:25,849 --> 00:34:27,584
+没注意再给你一个
+little notice to give you another
+
+496
+00:34:27,589 --> 00:34:32,505
+您执行订单的示例
+example where the order that you do the
+
+497
+00:34:32,510 --> 00:34:36,154
+计算有很大的不同我
+computations makes a big difference I
+
+498
+00:34:36,159 --> 00:34:39,225
+意思是这不是很明显，这将
+mean and that's not obvious that it will
+
+499
+00:34:39,230 --> 00:34:41,505
+对，数学中有很多东西
+right there are many things in math that
+
+500
+00:34:41,510 --> 00:34:45,344
+你可以按任何顺序做它
+you could do in either order and it it
+
+501
+00:34:45,349 --> 00:34:47,295
+从逻辑上看，你已经完成了
+seems like logically you've done the
+
+502
+00:34:47,300 --> 00:34:50,475
+同样的事情，另一个和另一个
+same things so another another and
+
+503
+00:34:50,480 --> 00:34:55,575
+更简单的例子，显示了一种方式
+simpler example which shows how one way
+
+504
+00:34:55,580 --> 00:34:57,825
+可能比另一个快得多
+could be fast away faster than another
+
+505
+00:34:57,830 --> 00:35:01,265
+方式是当我将两个矩阵相乘时
+way is when I'm multiplying two matrices
+
+506
+00:35:01,270 --> 00:35:06,015
+三个矩阵，所以我乘三
+three matrices so I'm multiplying three
+
+507
+00:35:06,020 --> 00:35:08,955
+矩阵B次C和C
+matrices a times B times C and the
+
+508
+00:35:08,960 --> 00:35:12,285
+问题是我先做BC然后再做
+question is do I do B C first and then
+
+509
+00:35:12,290 --> 00:35:16,455
+乘以a或者我先做B和
+multiply by a or do I do a B first and
+
+510
+00:35:16,460 --> 00:35:20,805
+再乘上C和当然，我的
+then multiply that by C and of course I
+
+511
+00:35:20,810 --> 00:35:24,555
+按照ABC的顺序保持它们的顺序
+kept them in order in the order ABC but
+
+512
+00:35:24,560 --> 00:35:28,594
+计算的顺序可以是
+the order of computations can be
+
+513
+00:35:28,599 --> 00:35:32,025
+不同的是你得到的相同
+different then you get the same you get
+
+514
+00:35:32,030 --> 00:35:34,635
+正确回答两种方式，但那些可以
+the right answer both ways but those can
+
+515
+00:35:34,640 --> 00:35:36,854
+完全不同的一个
+be completely completely different one
+
+516
+00:35:36,859 --> 00:35:39,405
+可一千倍比快
+can be a thousand times faster than the
+
+517
+00:35:39,410 --> 00:35:43,545
+其他所以这只是为了显示它
+other so that's just to show actually it
+
+518
+00:35:43,550 --> 00:35:47,625
+有点连接到这个
+kind of connects to this and there is
+
+519
+00:35:47,630 --> 00:35:51,285
+还有另外一个，所以我也会这样做
+also another so I'll I'll do that too
+
+520
+00:35:51,290 --> 00:35:54,245
+而这也是这个例子
+and there's also this so this is example
+
+521
+00:35:54,250 --> 00:35:58,485
+这意味着两个例子
+example two where this is meant to be
+
+522
+00:35:58,490 --> 00:36:04,715
+示例一和示例三将是
+example one and example three would be
+
+523
+00:36:04,720 --> 00:36:07,725
+它会导致称为伴随的东西
+it leads to something called the adjoint
+
+524
+00:36:07,730 --> 00:36:12,935
+微分方程中的方法
+method in in in differential equations
+
+525
+00:36:12,940 --> 00:36:18,995
+或者在计算中的优化
+or in in optimization in in computing in
+
+526
+00:36:19,000 --> 00:36:24,285
+最大化计算最佳-是的
+computing optimum in maximizing - yeah
+
+527
+00:36:24,290 --> 00:36:28,425
+并且具有相同的他们是真的
+and that has the same they're really the
+
+528
+00:36:28,430 --> 00:36:32,595
+它提高速度的根本原因是
+underlying reason it gives a speed up is
+
+529
+00:36:32,600 --> 00:36:35,955
+它在产品中做出了正确的选择
+it makes the right choice in a product
+
+530
+00:36:35,960 --> 00:36:40,005
+三件事是的，这样就足够了
+of three things yeah so it'll be enough
+
+531
+00:36:40,010 --> 00:36:43,635
+做一个例子-好吧让
+to do example one an example - okay let
+
+532
+00:36:43,640 --> 00:36:48,315
+我一个小时的例子
+me go with the example one hour all
+
+533
+00:36:48,320 --> 00:36:50,205
+这是现在的反向传播
+right this is now back propagation
+
+534
+00:36:50,210 --> 00:36:53,895
+最后我们做到了没关系，所以我该怎么做
+finally we got to it okay so how do i
+
+535
+00:36:53,900 --> 00:37:01,785
+我如何嗯，我看我看我的
+how do i well i look at my look at my
+
+536
+00:37:01,790 --> 00:37:06,305
+注意到我这样做是好的
+notes it's how I do it okay
+
+537
+00:37:06,310 --> 00:37:09,525
+所以笔记，这是部分七点
+so the notes this is section seven point
+
+538
+00:37:09,530 --> 00:37:12,345
+这两个计算图和
+two does these computational graphs and
+
+539
+00:37:12,350 --> 00:37:19,065
+然后这里是反向模式，所以它开始
+then here is reverse mode so it starts
+
+540
+00:37:19,070 --> 00:37:21,825
+在这里，我将使用
+over here with so I'm going to use the
+
+541
+00:37:21,830 --> 00:37:26,145
+链规则所以DFDF是一个然后和
+chain rule so DF DF is one and then and
+
+542
+00:37:26,150 --> 00:37:31,905
+然后我会倒退-而我
+then I going going backwards - and I
+
+543
+00:37:31,910 --> 00:37:34,035
+必须使用当然我必须拥有
+have to use of course I have to I have
+
+544
+00:37:34,040 --> 00:37:37,485
+采取我必须找到的衍生物
+to take the derivatives I have to find
+
+545
+00:37:37,490 --> 00:37:39,765
+使用正确的规则所以我必须使用
+use the right rule so I have to use the
+
+546
+00:37:39,770 --> 00:37:42,315
+产品规则，然后很快我将不得不
+product rule and then soon I'll have to
+
+547
+00:37:42,320 --> 00:37:45,315
+使用这些权力规则和线性规则
+use these power rule and linear rules so
+
+548
+00:37:45,320 --> 00:37:48,585
+当然没有改变的是
+of course no change there the change is
+
+549
+00:37:48,590 --> 00:37:52,905
+通过倒退哦我没有
+that by going backwards oh I did I don't
+
+550
+00:37:52,910 --> 00:37:55,425
+知道我是否完成了那句话
+know if I completed that sentence that I
+
+551
+00:37:55,430 --> 00:37:58,935
+可以找到百分之一
+could find the hundred partial
+
+552
+00:37:58,940 --> 00:38:00,975
+如果函数依赖于导数
+derivatives if the function depended on
+
+553
+00:38:00,980 --> 00:38:04,685
+一百个变量大约五次
+a hundred variables in about five times
+
+554
+00:38:04,690 --> 00:38:08,295
+一个变量的成本三到三
+the cost of one variable three three to
+
+555
+00:38:08,300 --> 00:38:11,145
+这样的成本的五倍
+five times the cost of one so so that
+
+556
+00:38:11,150 --> 00:38:13,575
+你会期待一百个
+you would expect a hundred a hundred
+
+557
+00:38:13,580 --> 00:38:16,155
+连锁规则将花费一百倍
+chain rules would cost a hundred times
+
+558
+00:38:16,160 --> 00:38:20,835
+但是你看到我们正在重复使用这些碎片
+but but you see we're reusing the pieces
+
+559
+00:38:20,840 --> 00:38:25,895
+在链中，只是有一个更大的
+in the chain and just having a larger
+
+560
+00:38:25,900 --> 00:38:28,935
+我们的连锁店更宽，但不会更长
+our chain is wider but it's not longer
+
+561
+00:38:28,940 --> 00:38:31,965
+并且它不会重复，所以我在这里
+and it's not repeated anyway so here I'm
+
+562
+00:38:31,970 --> 00:38:40,025
+将使用DFDC和DF的任何东西
+gonna use whatever it is DF DC and DF
+
+563
+00:38:40,030 --> 00:38:47,075
+在S记住，在等什么我
+the s remembering that so what in my
+
+564
+00:38:47,080 --> 00:38:53,655
+是的好，所以DFD是DC是和s
+yeah okay so so DF D is DC is s and the
+
+565
+00:38:53,660 --> 00:38:56,685
+FPS是C因为因为
+FPS is C that was because because
+
+566
+00:38:56,690 --> 00:39:01,185
+因为˚F开始了作为C倍的IT
+because F started out as C times s it
+
+567
+00:39:01,190 --> 00:39:03,225
+是一个产品没关系
+was a product okay
+
+568
+00:39:03,230 --> 00:39:06,975
+那么我们现在必须对它们进行评估
+then we've got to evaluate those now
+
+569
+00:39:06,980 --> 00:39:08,985
+我再看看我是不是
+I'll look again to see that I'm
+
+570
+00:39:08,990 --> 00:39:10,755
+希望写下一些
+hopefully writing down some of the
+
+571
+00:39:10,760 --> 00:39:17,595
+正确的事情好吧现在我已经做了什么
+correct things okay so now I've what
+
+572
+00:39:17,600 --> 00:39:19,695
+我接下来写的是FTC
+I've written down next is the FTC is
+
+573
+00:39:19,700 --> 00:39:24,585
+关于那个例子的五个或者五个
+five or no five on the on that example
+
+574
+00:39:24,590 --> 00:39:34,625
+这是什么FTC是C是X立方
+what is it here the FTC is C is X cubed
+
+575
+00:39:34,630 --> 00:39:37,605
+所以DF哦对不起
+so DF oh sorry
+
+576
+00:39:37,610 --> 00:39:42,855
+DFT是啊我想要我正在寻找s
+DF T yeah I want s I'm looking for s
+
+577
+00:39:42,860 --> 00:39:51,375
+在这里，我正在寻找屁股，所以我
+here yep I'm looking for ass so I'm
+
+578
+00:39:51,380 --> 00:39:56,355
+寻找s，那是X加三
+looking for s and that's X plus three
+
+579
+00:39:56,360 --> 00:40:04,815
+为什么我这样做很好，我想要的
+why am I doing this well I I want in the
+
+580
+00:40:04,820 --> 00:40:07,635
+结束以获得衍生品的尊重
+end to get the derivatives with respect
+
+581
+00:40:07,640 --> 00:40:11,325
+到X和为什么整个梯度好吧我
+to X and why the whole gradient okay I
+
+582
+00:40:11,330 --> 00:40:13,845
+我们认为我们是第一个正确的
+think we're started right the first
+
+583
+00:40:13,850 --> 00:40:17,525
+衍生物是写CNS然后
+derivatives is to write C NS and then
+
+584
+00:40:17,530 --> 00:40:20,445
+让我离开这些箱子打开刚
+let me leave these boxes open just to
+
+585
+00:40:20,450 --> 00:40:23,765
+得到照片然后我会去做
+get the picture then I'm going to do
+
+586
+00:40:23,770 --> 00:40:39,535
+然后我需要DCdXDCDYDsDX
+then I'll need DC d X DC D Y D s DX
+
+587
+00:40:39,540 --> 00:40:44,805
+和DSD为什么我认为这是正确的
+and DSD why I think that's right
+
+588
+00:40:44,810 --> 00:40:49,195
+写在这里我有CNS的产品
+write that here I had a product of CNS
+
+589
+00:40:49,200 --> 00:40:52,825
+所以我需要在这里有两个衍生品
+so I needed to had two derivatives here
+
+590
+00:40:52,830 --> 00:40:57,865
+我有CNS各自区分所以我
+I have CNS each to differentiate so I
+
+591
+00:40:57,870 --> 00:41:00,235
+得到x和ay导数x
+get to have an x and a y derivative x
+
+592
+00:41:00,240 --> 00:41:02,965
+和ay衍生物，现在就是它
+and a y derivative and now it just it's
+
+593
+00:41:02,970 --> 00:41:04,555
+只是把它们放进去
+just a matter of putting in those
+
+594
+00:41:04,560 --> 00:41:06,745
+数字和跟随链
+numbers and following the chain
+
+595
+00:41:06,750 --> 00:41:14,725
+倒退也许我不会放
+backwards maybe I'm not going to put
+
+596
+00:41:14,730 --> 00:41:17,665
+这些数字是因为我，如果我没有
+those numbers in because I if I didn't
+
+597
+00:41:17,670 --> 00:41:20,755
+达到140你不会相信回来
+reach 140 you wouldn't believe in back
+
+598
+00:41:20,760 --> 00:41:24,205
+传播，这就像一个
+propagation and that would be like an
+
+599
+00:41:24,210 --> 00:41:29,575
+愉快的结局，所以我会离开你把
+unhappy outcome so I'll leave you to put
+
+600
+00:41:29,580 --> 00:41:33,145
+他们可能或笔记有一个
+them in maybe or the notes have a
+
+601
+00:41:33,150 --> 00:41:36,145
+你可以看到但你做的单独的例子
+separate example that you can see but do
+
+602
+00:41:36,150 --> 00:41:38,725
+你会看到我要找的重点
+you see the point that I'm going to find
+
+603
+00:41:38,730 --> 00:41:44,395
+所有到最后我都会找到
+all the in the end I'm going to find the
+
+604
+00:41:44,400 --> 00:41:51,475
+FDX和fdy来自
+F DX and the f dy from the from the
+
+605
+00:41:51,480 --> 00:41:56,265
+链从一个链而不是没有链
+chain all in from one chain and not not
+
+606
+00:41:56,270 --> 00:41:59,365
+不是来自单独的链4x和a
+not from a separate chain 4x and a
+
+607
+00:41:59,370 --> 00:42:02,755
+y的独立链是那个对我来说
+separate chain for y that's that's to me
+
+608
+00:42:02,760 --> 00:42:06,295
+这是反向模式的重点
+that's the point of reverse mode it's a
+
+609
+00:42:06,300 --> 00:42:10,515
+一点点魔力，但你看到了
+little bit of magic but you see the
+
+610
+00:42:10,520 --> 00:42:15,085
+这个成分和你们中的一些人
+steps the ingredient and and some of you
+
+611
+00:42:15,090 --> 00:42:17,305
+之前知道也许已经看到了这
+know have seen this before and maybe
+
+612
+00:42:17,310 --> 00:42:20,665
+知道更好的阐述我发现了这个
+know a better exposition I found this
+
+613
+00:42:20,670 --> 00:42:24,385
+克里斯托弗奥拉的博客清楚和这些
+blog by Christopher Ola clear and these
+
+614
+00:42:24,390 --> 00:42:26,635
+你会看到非常简单的事情很清楚
+very simple things you'll see are clear
+
+615
+00:42:26,640 --> 00:42:31,555
+在笔记中，但可能是另一个博客
+in the notes but maybe another blog
+
+616
+00:42:31,560 --> 00:42:35,665
+使得它带来了其他的点，使
+makes it brings out other points to make
+
+617
+00:42:35,670 --> 00:42:38,575
+在这里制作它可能并不明显
+to make here it's not obvious maybe that
+
+618
+00:42:38,580 --> 00:42:42,085
+我可以有一百个变量和
+I could have a hundred variables and and
+
+619
+00:42:42,090 --> 00:42:45,535
+并在四或五个计算
+and do the calculation in four or five
+
+620
+00:42:45,540 --> 00:42:49,575
+将成本计算四到五倍
+times the cost for four or five times
+
+621
+00:42:49,580 --> 00:42:52,595
+而不是一百
+being instead of a hundred
+
+622
+00:42:52,600 --> 00:42:57,515
+是的，但我可以，我也可以
+yeah but it's possible okay so can I
+
+623
+00:42:57,520 --> 00:43:06,275
+今天接近这个怎么可能
+come close today with this one how could
+
+624
+00:43:06,280 --> 00:43:08,495
+那些与你不同的计算方式
+those be different your computing the
+
+625
+00:43:08,500 --> 00:43:14,285
+相同的数字相同的AIjbjkSIque
+same numbers the same AI j bj k SI que
+
+626
+00:43:14,290 --> 00:43:17,885
+eles和并做这个总和，但它是
+eles and and doing this sums but it's
+
+627
+00:43:17,890 --> 00:43:20,735
+当然是不同的所以我们就这样做
+certainly is different so let's just do
+
+628
+00:43:20,740 --> 00:43:30,875
+那好吧我会在这里做，然后在
+that okay I'll do it here and then at
+
+629
+00:43:30,880 --> 00:43:32,435
+正确的时间，我猜它会
+the right time and I guess it'll be
+
+630
+00:43:32,440 --> 00:43:35,255
+在Rao教授和周五之后
+after professor Rao and on Friday and
+
+631
+00:43:35,260 --> 00:43:39,725
+星期一我会回到Fras教授那里
+Monday I'll come back to professors Fras
+
+632
+00:43:39,730 --> 00:43:45,745
+一个收敛的简短证明
+short proof of the convergence of a
+
+633
+00:43:45,750 --> 00:43:48,695
+随机梯度下降整体
+stochastic gradient descent the whole
+
+634
+00:43:48,700 --> 00:43:51,815
+重点是向您展示假设的作用
+point is to show you what assumptions do
+
+635
+00:43:51,820 --> 00:43:53,915
+你需要一些假设
+you need you need some assumptions on
+
+636
+00:43:53,920 --> 00:43:56,885
+梯度上的一些假设
+the gradient some assumptions on the
+
+637
+00:43:56,890 --> 00:44:00,275
+步长，他们是一个很好的证据
+step size and they've for a good proof
+
+638
+00:44:00,280 --> 00:44:03,395
+所有的假设都融合在一起，唐
+all the assumptions fit together and Don
+
+639
+00:44:03,400 --> 00:44:06,395
+得出结论和结论
+outcomes the conclusion and the
+
+640
+00:44:06,400 --> 00:44:08,225
+结论会有多快
+conclusion would be how fast it
+
+641
+00:44:08,230 --> 00:44:11,735
+收敛随机梯度下降所以
+converges stochastic gradient descent so
+
+642
+00:44:11,740 --> 00:44:15,845
+有一些是预期的
+there's some there's some s expected
+
+643
+00:44:15,850 --> 00:44:18,905
+因为它是随机的，我们期待的
+things because it's stochastic we expect
+
+644
+00:44:18,910 --> 00:44:23,795
+关于平均值和平均值的一些假设
+some assumptions about the mean and the
+
+645
+00:44:23,800 --> 00:44:27,695
+方差进入证明
+variance to go into the into the proof
+
+646
+00:44:27,700 --> 00:44:31,055
+所以你会看到，但也许也是如此
+so you'll see that but maybe it's too
+
+647
+00:44:31,060 --> 00:44:33,865
+今天很多，所以今天我只会
+much for today so for today I'll just
+
+648
+00:44:33,870 --> 00:44:38,425
+回过头来，我甚至可以穿上它
+come back to that I might even put it on
+
+649
+00:44:38,430 --> 00:44:45,245
+这是如此的恒星而且近在咫尺
+stellar and just close with this so
+
+650
+00:44:45,250 --> 00:44:53,405
+假设a是M乘nB是n乘P而C是
+suppose a is M by n B is n by P and C is
+
+651
+00:44:53,410 --> 00:44:57,445
+P由Q好吗
+P by Q okay
+
+652
+00:44:57,450 --> 00:45:02,755
+找到一个步骤需要多少步骤
+how many steps does it take to find a
+
+653
+00:45:02,760 --> 00:45:05,275
+倍B倍C的产物
+times B times C the product of those
+
+654
+00:45:05,280 --> 00:45:10,304
+如果我这样走的话我会好三个矩阵
+three matrices well if I go this way I
+
+655
+00:45:10,309 --> 00:45:13,945
+必须倍增我必须首先做BC
+have to multiply a I have to do BC first
+
+656
+00:45:13,950 --> 00:45:18,265
+所以不列颠哥伦比亚省需要多少次操
+so BC costs how many operations to
+
+657
+00:45:18,270 --> 00:45:25,074
+乘上时间是nPQ不错
+multiply that times that n PQ nice
+
+658
+00:45:25,079 --> 00:45:31,195
+公式nPQ为什么我能做得好
+formula n PQ why is that well I could
+
+659
+00:45:31,200 --> 00:45:36,135
+说答案是由Q和
+say that the answer is is n by Q and
+
+660
+00:45:36,140 --> 00:45:39,054
+那里的每个数字都有一个内在的
+every number in there was an inner
+
+661
+00:45:39,059 --> 00:45:44,415
+行和列的长度为P的乘积
+product of a row and column of length P
+
+662
+00:45:44,420 --> 00:45:50,965
+所以我有NQ内部产品和每个
+so I have NQ inner products and each one
+
+663
+00:45:50,970 --> 00:45:59,275
+成本P乘以广告然后现在
+costs P multiply ads and then so now now
+
+664
+00:45:59,280 --> 00:46:04,405
+我有现在的BC，所以就是这样
+I have BC which will be now so it's so
+
+665
+00:46:04,410 --> 00:46:09,505
+现在我有Mbyn然后我有Mby
+now I have M by n then then I have M by
+
+666
+00:46:09,510 --> 00:46:15,114
+n是C乘以B的时间
+n which is the a times B by C which is
+
+667
+00:46:15,119 --> 00:46:20,485
+现在我是Q，这是BC这是ABC和
+now n by Q that's BC this is ABC so and
+
+668
+00:46:20,490 --> 00:46:25,794
+这个花费了M的成本
+this one costs what's the cost here M by
+
+669
+00:46:25,799 --> 00:46:29,935
+由Q同样的规则，即将是M.
+n n by Q by the same rule that'll be M
+
+670
+00:46:29,940 --> 00:46:36,594
+和Q好这是这是第一个方法
+and Q good that's that's the first way a
+
+671
+00:46:36,599 --> 00:46:41,455
+现在公元前第二种方式是B次
+times BC now the second way is a B times
+
+672
+00:46:41,460 --> 00:46:45,715
+C，让我再次写入N和
+C and let me write in again and by N and
+
+673
+00:46:45,720 --> 00:46:52,965
+通过PP的Q，所以现在我先做这个
+by P P by Q so now I'm doing this first
+
+674
+00:46:52,970 --> 00:46:58,104
+所以B费用再次告诉我现在是什么
+so a B costs tell me again now what's
+
+675
+00:46:58,109 --> 00:47:01,165
+矩阵成本的规则
+the rule for the cost of a matrix
+
+676
+00:47:01,170 --> 00:47:07,235
+乘以MNpm和p
+multiplication MN p m and p
+
+677
+00:47:07,240 --> 00:47:15,364
+然后我就把M增加了
+and then then I have I'm multiplying M
+
+678
+00:47:15,369 --> 00:47:20,735
+通过P，这是一个B乘以P的Q，那是C所以
+by P that's a B times P by Q that's C so
+
+679
+00:47:20,740 --> 00:47:29,075
+我有MPQ所以我一起拥有它
+I have M P Q so I have that together
+
+680
+00:47:29,080 --> 00:47:34,195
+与或一起与
+with that or that together with that
+
+681
+00:47:34,200 --> 00:47:41,614
+将这两个或这两个相加
+that sum those two or these two and
+
+682
+00:47:41,619 --> 00:47:45,425
+他们是不同的，让我们放手吧
+they're different and let's just let's
+
+683
+00:47:45,430 --> 00:47:47,225
+只是认识到最重要的
+just recognize the most important
+
+684
+00:47:47,230 --> 00:47:50,975
+例如，假设C是列向量C.
+example suppose C is a column vector C
+
+685
+00:47:50,980 --> 00:47:54,395
+对于列向量，所以Q就是一个
+for a column vector so Q is one there's
+
+686
+00:47:54,400 --> 00:47:58,415
+只有一列，所以如果Q是这样的话
+only one column so if Q is 1 this way
+
+687
+00:47:58,420 --> 00:48:06,305
+NP让我们专注于这一点
+did NP let's just specialize to that so
+
+688
+00:48:06,310 --> 00:48:15,354
+专门用于2C等于列向量
+specialize to 2 C equal a column vector
+
+689
+00:48:15,359 --> 00:48:19,535
+这意味着Q是你只有
+which means that Q is 1 you only have
+
+690
+00:48:19,540 --> 00:48:25,685
+一列，所以然后BC是对的
+one column so then a times B C is versus
+
+691
+00:48:25,690 --> 00:48:31,925
+ABC时代所以我们就可以认识到这
+a B times C so let's just figure that
+
+692
+00:48:31,930 --> 00:48:37,435
+当Q为1时出来，所以nPQ只是np和
+out when Q is 1 so n PQ is just n p and
+
+693
+00:48:37,440 --> 00:48:48,265
+mNQ只是MN，其中B是M和Poh
+m NQ is just MN where a B is M and P oh
+
+694
+00:48:48,270 --> 00:48:53,515
+那已经是一场糟糕的灾难了
+that's a bad one disaster already
+
+695
+00:48:53,520 --> 00:48:56,975
+乘以这两个可能是两个
+multiplying those are potentially two
+
+696
+00:48:56,980 --> 00:49:00,364
+大矩阵乘以列向量
+big matrices multiplying a column vector
+
+697
+00:49:00,369 --> 00:49:02,525
+所以我在这里做了一个矩阵
+so here I've done a matrix
+
+698
+00:49:02,530 --> 00:49:04,265
+乘法我从来没有做过
+multiplication I never should have done
+
+699
+00:49:04,270 --> 00:49:08,255
+这是它给我的矩阵向量
+that this is a matrix vector it gives me
+
+700
+00:49:08,260 --> 00:49:10,445
+一个向量，然后这是一个矩阵
+a vector and then this is a matrix
+
+701
+00:49:10,450 --> 00:49:14,495
+矢量，所以我得到了很好的数字，但我
+vector so I get nice numbers here but I
+
+702
+00:49:14,500 --> 00:49:18,035
+得到一个B的可怕数字然后我
+get a terrible number for a B and then I
+
+703
+00:49:18,040 --> 00:49:20,824
+乘以C
+multiply that by C
+
+704
+00:49:20,829 --> 00:49:30,905
+所以这是MPQmPQ所以MP是因子分解
+so that's M PQ m P Q so MP is factoring
+
+705
+00:49:30,910 --> 00:49:37,474
+因为如果我把它写成n次n
+out so if I if I write it as n times n
+
+706
+00:49:37,479 --> 00:49:44,645
+加上P对比这个是M的
+plus P versus this one is M that's
+
+707
+00:49:44,650 --> 00:49:52,344
+分解时间M不是的
+factoring out times M no yeah
+
+708
+00:49:52,349 --> 00:50:04,344
+什么在这里，对不起，我在做什么
+what's up here yep sorry what am i doing
+
+709
+00:50:04,349 --> 00:50:05,675
+是啊
+yeah
+
+710
+00:50:05,680 --> 00:50:08,754
+它是P从这一个因素出来的因素
+is it P that factors out from this one
+
+711
+00:50:08,759 --> 00:50:18,534
+好吧P次n加M对不起
+okay P times n plus M sorry
+
+712
+00:50:18,539 --> 00:50:31,444
+无论如何，区别在于它
+anyway the difference is over it again
+
+713
+00:50:31,449 --> 00:50:35,185
+或者是，让我再让我这样做
+or or right let me let me do this again
+
+714
+00:50:35,190 --> 00:50:39,935
+如果Q是1，如果我这样走，那就是我的
+if Q is 1 if I go this way was that's my
+
+715
+00:50:39,940 --> 00:50:43,794
+Q为1时的最终总数就是这个
+final total when Q was 1 and that's this
+
+716
+00:50:43,799 --> 00:50:48,274
+知道M因子n加P
+that's know M factors out times n plus P
+
+717
+00:50:48,279 --> 00:50:54,514
+哎呦只是这是哦不适用的因素了
+whoops just this is oh no n factors out
+
+718
+00:50:54,519 --> 00:50:57,474
+对不起n因子n加P和
+sorry n factors out times n plus P and
+
+719
+00:50:57,479 --> 00:51:06,675
+所有这些都是这样的
+this way was was all these things
+
+720
+00:51:06,680 --> 00:51:11,385
+M和P因素都没问题
+both the M and the P factor out okay
+
+721
+00:51:11,390 --> 00:51:23,185
+谢谢时间加Q和Q加
+thanks times and plus Q and plus Q was
+
+722
+00:51:23,190 --> 00:51:30,505
+一个好的，重点是我们有
+one okay the whole point is we've got
+
+723
+00:51:30,510 --> 00:51:32,995
+这三个可怕的倍增
+this horrible multiplication of three
+
+724
+00:51:33,000 --> 00:51:38,245
+大数字，这只有两个大
+big numbers and this only had two big
+
+725
+00:51:38,250 --> 00:51:40,675
+这是他的命令
+numbers so this was his orders of
+
+726
+00:51:40,680 --> 00:51:43,255
+比这更快，当然
+magnitude faster than that and of course
+
+727
+00:51:43,260 --> 00:51:45,295
+你会做计算得知
+you would have done the calculation that
+
+728
+00:51:45,300 --> 00:51:48,325
+你会把这个列乘以的方式
+way you would have multiplied the column
+
+729
+00:51:48,330 --> 00:51:51,235
+通过矩阵向量来获得另一列
+vector by a matrix to get another column
+
+730
+00:51:51,240 --> 00:51:53,185
+矢量，你是乘以那个
+vector and you were to multiply that by
+
+731
+00:51:53,190 --> 00:51:55,334
+获取另一列向量的矩阵
+a matrix to get another column vector
+
+732
+00:51:55,339 --> 00:51:59,334
+在这里，你疯狂地繁殖两个大
+where here you crazily multiply two big
+
+733
+00:51:59,339 --> 00:52:02,485
+矩阵在一起，然后得到一个列
+matrices together and then got a column
+
+734
+00:52:02,490 --> 00:52:05,175
+矢量所以这是有有一个
+vector so it was the there's there's a
+
+735
+00:52:05,180 --> 00:52:09,295
+坏动作好的，谢谢，所以我们已经过去了
+bad move okay thanks so we're off past
+
+736
+00:52:09,300 --> 00:52:12,594
+这个ABC的时间只是为了显示
+the time on this ABC it's just to show
+
+737
+00:52:12,599 --> 00:52:16,344
+那是一个非常熟悉的计算你
+that on a very familiar calculation you
+
+738
+00:52:16,349 --> 00:52:19,185
+必须以正确的顺序进行
+have to do it in the right order and
+
+739
+00:52:19,190 --> 00:52:22,135
+反向传播是正确的顺序
+backpropagation is the right order for
+
+740
+00:52:22,140 --> 00:52:25,344
+偏导数好吧谢谢你
+partial derivatives okay thank you and
+
+741
+00:52:25,349 --> 00:52:30,834
+所以周五携带笔记本电脑并期待
+so bring laptops Friday and look forward
+
+742
+00:52:30,839 --> 00:52:36,170
+to to professor Ralph give him a good
+
+743
+00:52:30,839 --> 00:52:38,480
+拉尔夫教授给了他一个好的
+
+744
+00:52:36,180 --> 00:52:38,480
+欢迎
+welcome
+

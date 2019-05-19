@@ -1,0 +1,3928 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将有助于MIT开放课程继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:28,144
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:28,149 --> 00:00:34,325
+这是他们主题部分的一部分
+that's a part of their subject part of
+
+10
+00:00:34,330 --> 00:00:38,505
+深入学习，因为我们到达那里，它是
+deep learning as we get there and it's
+
+11
+00:00:38,510 --> 00:00:40,395
+可能是前一天的好话题
+probably a good topic for the day before
+
+12
+00:00:40,400 --> 00:00:43,605
+春假，因为很多人会
+spring break because lots of you will
+
+13
+00:00:43,610 --> 00:00:46,845
+当然看到你会看到
+have seen of course you will have seen
+
+14
+00:00:46,850 --> 00:00:50,415
+样本平均值的平均
+the sample mean the average of the of
+
+15
+00:00:50,420 --> 00:00:56,775
+数据，所以我们有，你会知道
+the data so we we have and you'll know
+
+16
+00:00:56,780 --> 00:01:01,005
+关于预期的意思让我完成
+about the expected mean let me complete
+
+17
+00:01:01,010 --> 00:01:08,205
+什么是预期的意思所以这是
+that what's the expected mean so this is
+
+18
+00:01:08,210 --> 00:01:12,495
+我们所期望的价值X的期望
+the expectation of the value X where we
+
+19
+00:01:12,500 --> 00:01:18,224
+得到x1的概率P1属于X.
+get x 1 with probability P 1 belong to X
+
+20
+00:01:18,229 --> 00:01:21,435
+n概率为Pn所以我们只想要
+n with probability P n so we just want
+
+21
+00:01:21,440 --> 00:01:25,785
+说出我们的平均输出量是多少
+to say what's our average out output
+
+22
+00:01:25,790 --> 00:01:29,294
+平均结果，我们加权
+average outcome and we weight it by
+
+23
+00:01:29,299 --> 00:01:34,325
+他们的概率是P1X1加
+their probabilities so it's P 1 X 1 plus
+
+24
+00:01:34,330 --> 00:01:39,765
+沿加PN×N个所以这是
+along plus P n X n so that's the
+
+25
+00:01:39,770 --> 00:01:46,635
+x的期望值你舒服
+expected value of x do you comfortable
+
+26
+00:01:46,640 --> 00:01:49,275
+用那个符号e，因为那就像
+with that symbol e because that's like
+
+27
+00:01:49,280 --> 00:01:52,095
+到处都有方便的速记
+everywhere it gives a handy shorthand
+
+28
+00:01:52,100 --> 00:01:55,605
+例如，方差是预期的
+for example the variance is the expected
+
+29
+00:01:55,610 --> 00:02:01,114
+什么的价值
+value of what
+
+30
+00:02:01,119 --> 00:02:04,745
+方差是基于预期值
+the variance is an expected value based
+
+31
+00:02:04,750 --> 00:02:08,765
+关于广场的这些概率
+on these probabilities of the square of
+
+32
+00:02:08,770 --> 00:02:11,344
+距离所以每个人都记得它
+the distance so everybody remembers it's
+
+33
+00:02:11,349 --> 00:02:14,825
+涉及广场，这是距离
+involves square and it's the distance
+
+34
+00:02:14,830 --> 00:02:19,984
+从平均而来，所以我让我打电话
+from the mean from so I'm let me call
+
+35
+00:02:19,989 --> 00:02:22,715
+这个状态M也许只是为了拥有一个
+this state M maybe just to have a
+
+36
+00:02:22,720 --> 00:02:25,954
+较小的字母，但我可以这么做
+smaller letter but I could put so it's
+
+37
+00:02:25,959 --> 00:02:30,514
+距平均值减去M的距离
+the distance from the mean minus M it's
+
+38
+00:02:30,519 --> 00:02:33,234
+预期值的平均值
+the expected value the average value of
+
+39
+00:02:33,239 --> 00:02:37,954
+X减去M平方并且一般来说
+X minus M Squared and in general of
+
+40
+00:02:37,959 --> 00:02:41,794
+当然预期这种协方差
+course the expected this covariance
+
+41
+00:02:41,799 --> 00:02:44,855
+矩阵我可以表达任何
+matrix I could express with that any
+
+42
+00:02:44,860 --> 00:02:47,555
+符号，但让我把它拉伸为
+notation but let me just stretch it as
+
+43
+00:02:47,560 --> 00:02:51,395
+至于什么是预期值
+far as what would be the expected value
+
+44
+00:02:51,400 --> 00:02:57,995
+X的任何功能以及我们有着N
+of any function of X well we've got n
+
+45
+00:02:58,000 --> 00:03:02,855
+可能的输出x1到xn我们看f
+possible outputs x1 to xn we look at f
+
+46
+00:03:02,860 --> 00:03:06,125
+x1到xn的f
+of x1 up to f of xn
+
+47
+00:03:06,130 --> 00:03:09,215
+我们等待那些可能性
+we wait those by the probabilities that
+
+48
+00:03:09,220 --> 00:03:12,755
+它们发生了，所以这将让我做
+they happen so this would be let me make
+
+49
+00:03:12,760 --> 00:03:15,665
+这封电子邮件只是一个小角落
+just a little corner for this e letter
+
+50
+00:03:15,670 --> 00:03:20,074
+所以这将是概率
+so this would be the probability that
+
+51
+00:03:20,079 --> 00:03:27,125
+这是f的值的x1倍
+that is f of x1 times the value of the
+
+52
+00:03:27,130 --> 00:03:30,415
+值F在x1所以这是
+value F at x1 so this is the
+
+53
+00:03:30,420 --> 00:03:33,995
+来自x1的可能性和贡献
+contribution from the x1 possibility and
+
+54
+00:03:34,000 --> 00:03:38,544
+现在我们将它们全部包括在内，所以它将是F
+now we include them all so it'll be F
+
+55
+00:03:38,549 --> 00:03:43,014
+X的输出f以概率PN结束
+output f of X ends with probability PN
+
+56
+00:03:43,019 --> 00:03:48,305
+如果X的X是X减去M平方
+and if that f of X is X minus M squared
+
+57
+00:03:48,310 --> 00:03:52,104
+然后我们得到了我们期望的东西，让我
+then we get what we expect and let me
+
+58
+00:03:52,109 --> 00:03:56,014
+记住，所以我只想保留
+remember that so I just want to keep
+
+59
+00:03:56,019 --> 00:04:03,305
+方差去所以这是它的总和
+going with variance so it's the sum it's
+
+60
+00:04:03,310 --> 00:04:06,544
+第一个概率乘以第一个
+the first probability times the first
+
+61
+00:04:06,549 --> 00:04:11,925
+输出减去均方
+output minus the mean squared
+
+62
+00:04:11,930 --> 00:04:15,715
+最后的概率次数
+the last probability times that last
+
+63
+00:04:15,720 --> 00:04:19,195
+输出xn减去M平方
+output xn minus M Squared
+
+64
+00:04:19,200 --> 00:04:21,945
+每个人都应该知道一秒钟
+and everybody should know a second
+
+65
+00:04:21,950 --> 00:04:25,555
+表达第二种做法
+expression the second way to do that cut
+
+66
+00:04:25,560 --> 00:04:29,035
+只是如果我写出来的话就是总和
+the sum it's just if I just write out
+
+67
+00:04:29,040 --> 00:04:32,575
+这些广场，并结合他们一点
+those squares and combine them a little
+
+68
+00:04:32,580 --> 00:04:35,125
+另外，我得到了第二个表达
+differently I get a second expression
+
+69
+00:04:35,130 --> 00:04:39,295
+这通常很有用
+which is really useful often a little
+
+70
+00:04:39,300 --> 00:04:41,815
+更快地计算，所以我可以这样做
+faster to compute so can I just do that
+
+71
+00:04:41,820 --> 00:04:47,965
+这就是X1平方减去2X1
+so that's that's X 1 squared minus 2 X 1
+
+72
+00:04:47,970 --> 00:04:53,815
+M1加M1平方右，然后保存
+M 1 plus M 1 squared right and then save
+
+73
+00:04:53,820 --> 00:04:59,505
+我在这里pnxxn平方减去2xnn
+me here pn x xn squared minus 2 xn n
+
+74
+00:04:59,510 --> 00:05:06,645
+再加上M平了很好
+plus M Squared good with it
+
+75
+00:05:06,650 --> 00:05:13,015
+抱歉加上哦对不起
+sorry plus n oh sorry
+
+76
+00:05:13,020 --> 00:05:21,474
+哦，不，我的意思是我，哦，这只是一个名字
+oh no I mean am i oh it's just a name
+
+77
+00:05:21,479 --> 00:05:24,625
+正确的谢谢你也谢谢你
+correct thank you thank you just too
+
+78
+00:05:24,630 --> 00:05:31,735
+我们该死的好确定可以采取的总和，所以我
+damn good ok can we take that sum so I
+
+79
+00:05:31,740 --> 00:05:37,945
+如果我拿这些，得到P1X1平方
+get P 1 X 1 squared if I take these the
+
+80
+00:05:37,950 --> 00:05:45,115
+第一个人，所以我已经解释了这一点
+first guys so I've accounted for this
+
+81
+00:05:45,120 --> 00:05:53,805
+现在我将减2P1X1M
+and this now I'll take minus 2 P 1 X 1 M
+
+82
+00:05:53,810 --> 00:06:09,365
+所以P1X1M加PnX结束M.
+so P 1 X 1 M plus P n X ends M
+
+83
+00:06:09,370 --> 00:06:11,895
+我只是写出来而且我是
+I'm just writing it all out and I'm
+
+84
+00:06:11,900 --> 00:06:15,075
+要重新组合它，所以现在我有P1M.
+gonna recombine it so now I have P 1 M
+
+85
+00:06:15,080 --> 00:06:19,365
+平方加P2m平方加Pnm
+squared plus P 2 m squared plus P n m
+
+86
+00:06:19,370 --> 00:06:24,795
+平方所以我从P1M得到了什么
+squared so what do I have from the P 1 M
+
+87
+00:06:24,800 --> 00:06:30,725
+一直到PnMSquared平方
+Squared all the way up to P n M Squared
+
+88
+00:06:30,730 --> 00:06:35,625
+你和我在一起所以MSquared是弗里克
+are you with me so M Squared is a Frick
+
+89
+00:06:35,630 --> 00:06:38,115
+在每个学期，所以我会有一个M.
+is in every term so I'm gonna have an M
+
+90
+00:06:38,120 --> 00:06:43,965
+平方，它乘以P1是多少
+Squared and what's it multiplied by P 1
+
+91
+00:06:43,970 --> 00:06:48,315
+这里P2这里Pn我在这里添加它们
+here P 2 here P n here I add those up
+
+92
+00:06:48,320 --> 00:06:51,645
+我得到1就是这样
+and I get 1 so that's it
+
+93
+00:06:51,650 --> 00:06:55,545
+好的，现在我只是简化这件事
+ok and now I'll just simplify this thing
+
+94
+00:06:55,550 --> 00:06:58,785
+所以这是真正的预期值
+so this is really the expected value of
+
+95
+00:06:58,790 --> 00:07:03,095
+我在这里看到了什么
+what what am i seeing in this in this
+
+96
+00:07:03,100 --> 00:07:08,235
+将x约为期望值
+term the about the expected value of x
+
+97
+00:07:08,240 --> 00:07:11,255
+平方
+squared right
+
+98
+00:07:11,260 --> 00:07:14,625
+与X的预期值不同
+different from the expected value of X
+
+99
+00:07:14,630 --> 00:07:18,075
+减去M平方当然这只是
+minus M Squared of course this is just
+
+100
+00:07:18,080 --> 00:07:20,655
+从这里开始的第一个任期，但现在做什么
+the first term from here but now what do
+
+101
+00:07:20,660 --> 00:07:22,905
+我得到这个第二项井
+I get for this second term well the
+
+102
+00:07:22,910 --> 00:07:25,785
+重点是M出来所以这是
+point is that M comes out so this is
+
+103
+00:07:25,790 --> 00:07:30,555
+减去和M和a2以及它做什么
+minus and M and a 2 and what it what do
+
+104
+00:07:30,560 --> 00:07:33,915
+我离开了，所以我已经用完了M我
+I have left so I've used up the M I've
+
+105
+00:07:33,920 --> 00:07:38,535
+用完2P1X1加P和Xn
+used up the 2 P 1 X 1 plus P and X n
+
+106
+00:07:38,540 --> 00:07:43,485
+什么是每个人都应该付出的代价
+what's that everybody should just pay
+
+107
+00:07:43,490 --> 00:07:45,975
+注意这个微不足道我的意思是我们
+attention to this trivial I mean we're
+
+108
+00:07:45,980 --> 00:07:48,675
+只是在这里做高中代数但是
+just doing high school algebra here but
+
+109
+00:07:48,680 --> 00:07:53,175
+但P1X1到P和Xn是M所以我
+but P 1 X 1 up to P and X n is M so I
+
+110
+00:07:53,180 --> 00:07:57,165
+还有另一个MMSquared那里，我
+have another M M Squared there and I've
+
+111
+00:07:57,170 --> 00:07:59,105
+一加上M个平方
+a plus M Squared
+
+112
+00:07:59,110 --> 00:08:03,545
+从最后，所以你看到它
+from the end so you see that it is
+
+113
+00:08:03,550 --> 00:08:06,915
+另一个表达式的期望值
+another expression the expected value of
+
+114
+00:08:06,920 --> 00:08:12,635
+x平方减去M平方代数
+x squared minus M Squared just algebra
+
+115
+00:08:12,640 --> 00:08:20,025
+那就是这个，所以如果
+that that is the same as this so that if
+
+116
+00:08:20,030 --> 00:08:21,765
+你碰巧有一个方便的方法
+you happen to have a handy way to
+
+117
+00:08:21,770 --> 00:08:22,615
+计算
+compute
+
+118
+00:08:22,620 --> 00:08:24,955
+x的预期值平方你
+the expected value of x squared you
+
+119
+00:08:24,960 --> 00:08:26,845
+只会减去M平方而你
+would just subtract M squared and you'd
+
+120
+00:08:26,850 --> 00:08:30,865
+和它一样是的，只是
+have the same as this yeah it's just
+
+121
+00:08:30,870 --> 00:08:33,085
+代数没关系
+algebra okay
+
+122
+00:08:33,090 --> 00:08:35,724
+我可以让我们更深入一点
+can i let's let's go a little deeper
+
+123
+00:08:35,729 --> 00:08:41,175
+如果我能找到它，可以在这里找点东西
+with something here if I can find it
+
+124
+00:08:41,180 --> 00:08:44,774
+有两个很大的不平等
+there are two great inequalities in
+
+125
+00:08:44,779 --> 00:08:47,965
+统计数据和第一个是由于
+statistics and the first one is due to
+
+126
+00:08:47,970 --> 00:08:50,845
+马尔科夫和我不知道你是否知道
+Markov and I don't know if you know
+
+127
+00:08:50,850 --> 00:08:57,795
+马尔科夫不平等它很容易出来
+Markov inequality it it comes out easily
+
+128
+00:08:57,800 --> 00:09:02,605
+事实上我太喜欢我喜欢我了
+in fact too easily I like I'm kind of
+
+129
+00:09:02,610 --> 00:09:07,225
+现在对此讨论感到高兴
+happy with the discussion in this is now
+
+130
+00:09:07,230 --> 00:09:10,675
+我跳到了第五部分
+I'm jumped to section five over the book
+
+131
+00:09:10,680 --> 00:09:16,105
+所以我需要发布第5节
+so I'll need to post section 5 which is
+
+132
+00:09:16,110 --> 00:09:19,405
+概率和统计数据，你会
+probability and statistics and you'll
+
+133
+00:09:19,410 --> 00:09:23,035
+看到这个Markov不等式所以它就是这样
+see this Markov inequality so it just
+
+134
+00:09:23,040 --> 00:09:27,175
+涉及这些东西，这就是为什么我会
+involves this stuff so that's why I'll
+
+135
+00:09:27,180 --> 00:09:28,305
+现在去做吧
+go do it now
+
+136
+00:09:28,310 --> 00:09:37,345
+马尔科夫不平等他是一个伟大的俄罗斯人
+Markov inequality he was a great Russian
+
+137
+00:09:37,350 --> 00:09:42,225
+数学家或大概在1900年和
+mathematician or probably about 1900 and
+
+138
+00:09:42,230 --> 00:09:45,865
+我们将看到马尔可夫链和马尔科夫
+we will see Markov chains and Markov
+
+139
+00:09:45,870 --> 00:09:48,385
+流程是美丽的线性
+processes that's beautiful linear
+
+140
+00:09:48,390 --> 00:09:51,235
+代数但是这个小的不等式是
+algebra but this little inequality is
+
+141
+00:09:51,240 --> 00:09:54,175
+不是它正在玩的矩阵
+not matrices it's just playing with
+
+142
+00:09:54,180 --> 00:10:02,685
+这些但它适用于两个
+these but and it applies to two
+
+143
+00:10:02,690 --> 00:10:07,795
+非负面事件，所以我会赢
+non-negative events so I'm gonna win
+
+144
+00:10:07,800 --> 00:10:15,145
+我应该说所有的X都适用
+shall I say applies when all the X all
+
+145
+00:10:15,150 --> 00:10:20,155
+输出大于等于零
+the outputs are greater equal zero so
+
+146
+00:10:20,160 --> 00:10:22,825
+这将是我要去的
+it's going to be a it's gonna I'm gonna
+
+147
+00:10:22,830 --> 00:10:26,845
+使用这个事实所以它不适用于
+use that fact so it doesn't apply to to
+
+148
+00:10:26,850 --> 00:10:32,395
+类似于高斯的东西，因为它们是
+something like Gaussian because they're
+
+149
+00:10:32,400 --> 00:10:34,735
+高斯输出一路从
+Gaussian the outputs go all the way from
+
+150
+00:10:34,740 --> 00:10:35,965
+减去无穷大和
+minus infinity to and
+
+151
+00:10:35,970 --> 00:10:39,264
+它确实适用于很多
+finiti it does apply to a lot of
+
+152
+00:10:39,269 --> 00:10:43,405
+重要的，简单的，所以我
+important ones and simple one so I'm
+
+153
+00:10:43,410 --> 00:10:45,954
+只是说让我们假设我愿意
+just saying let's suppose I would give
+
+154
+00:10:45,959 --> 00:10:49,735
+这种有限概率的证明
+the proof for this finite probability
+
+155
+00:10:49,740 --> 00:10:54,204
+并且有类似的证据相似
+and there'd be a similar proof similar
+
+156
+00:10:54,209 --> 00:10:55,884
+这里到处讨论
+discussion everywhere here
+
+157
+00:10:55,889 --> 00:10:58,675
+对于连续概率那么做什么呢
+for continuous probability so what does
+
+158
+00:10:58,680 --> 00:11:01,944
+马尔科夫说让我确定我做对了
+Markov say let me be sure I get it right
+
+159
+00:11:01,949 --> 00:11:06,745
+因为我不是一个职业在这个它是
+because I'm not a pro at this it it's
+
+160
+00:11:06,750 --> 00:11:08,365
+自然要估算
+natural to want to estimate the
+
+161
+00:11:08,370 --> 00:11:16,975
+X大于等于的概率
+probability that X is greater equals
+
+162
+00:11:16,980 --> 00:11:20,725
+一些数字a了解什么是
+some number a get some idea what's the
+
+163
+00:11:20,730 --> 00:11:24,055
+X大于等于a的概率
+probability of X being greater equal a
+
+164
+00:11:24,060 --> 00:11:27,144
+所以我们知道什么是肯定的
+so what do we know there's a certainly a
+
+165
+00:11:27,149 --> 00:11:31,884
+数字为0到1之间的数字
+number between 0 & 1 that number is
+
+166
+00:11:31,889 --> 00:11:33,504
+随着增加而变小
+going to get smaller as a increases
+
+167
+00:11:33,509 --> 00:11:37,134
+因为我们将要询问
+because we're going to be asking for
+
+168
+00:11:37,139 --> 00:11:42,925
+更多，如果我采取说两次
+more if if if I take a to be say twice
+
+169
+00:11:42,930 --> 00:11:47,545
+平均值好，是的，我想我接受了
+the mean well yeah suppose I take a to
+
+170
+00:11:47,550 --> 00:11:50,934
+什么是我能做到的两倍
+be twice the mean what what so can I
+
+171
+00:11:50,939 --> 00:11:53,454
+估计概率可能是多少
+estimate what that probability could be
+
+172
+00:11:53,459 --> 00:11:57,415
+这就是马尔科夫所做的事情
+and that's what Markov has done he says
+
+173
+00:11:57,420 --> 00:12:05,095
+但这种可能性是至少在
+the probability of that is at least at
+
+174
+00:12:05,100 --> 00:12:08,235
+最抱歉
+most sorry
+
+175
+00:12:08,240 --> 00:12:13,215
+看我以前至少有一个橡皮擦
+see I used to have an eraser at least
+
+176
+00:12:13,220 --> 00:12:20,304
+对不起，是的，是的，或者更少
+sorry at most yes got it is less or
+
+177
+00:12:20,309 --> 00:12:26,965
+等于平均x-bar是另一种方式
+equal to the mean x-bar is another way
+
+178
+00:12:26,970 --> 00:12:31,524
+写下平均值除以a和this
+to write the mean divided by a and this
+
+179
+00:12:31,529 --> 00:12:37,194
+这是一个或多个的平均值
+is this is the mean over a or it's the
+
+180
+00:12:37,199 --> 00:12:41,634
+在x的预期值，我们可以看到
+expected value of x over a we could see
+
+181
+00:12:41,639 --> 00:12:43,015
+其中任何一个
+any of those
+
+182
+00:12:43,020 --> 00:12:52,195
+符号还可以，正如我们所期望的那样
+notations okay and as we expect as a
+
+183
+00:12:52,200 --> 00:12:56,695
+增加了这个概率
+increases the probability this this
+
+184
+00:12:56,700 --> 00:12:58,555
+数字下降概率发生了
+number goes down the probability goes
+
+185
+00:12:58,560 --> 00:13:02,905
+超过一个，这是一个漂亮的
+down of exceeding a so that's a pretty
+
+186
+00:13:02,910 --> 00:13:07,105
+得到这个概率的简单估计
+simple estimate to get this probability
+
+187
+00:13:07,110 --> 00:13:10,105
+仅就数字a而言
+just in terms of the number a which has
+
+188
+00:13:10,110 --> 00:13:11,995
+进来是因为它是其中的一部分
+to come in because it's part of the
+
+189
+00:13:12,000 --> 00:13:16,375
+问题和我X好吧所以让我
+question and the me X okay so let me
+
+190
+00:13:16,380 --> 00:13:22,765
+举一个例子为等于三好吗
+take an example as a equals three okay
+
+191
+00:13:22,770 --> 00:13:26,905
+所以我要去尝试我会只为
+so I'm going to try I'm gonna just for
+
+192
+00:13:26,910 --> 00:13:29,875
+例子假设a是我想要的三个
+example suppose a was three I want to
+
+193
+00:13:29,880 --> 00:13:34,135
+表明XX的概率
+show that the probability of X X being
+
+194
+00:13:34,140 --> 00:13:38,815
+大于或等于三是没关系
+greater than or equal to three yeah okay
+
+195
+00:13:38,820 --> 00:13:42,955
+所以让我们，我们不知道，我们没有
+so let's we we don't know we don't have
+
+196
+00:13:42,960 --> 00:13:45,505
+如果我们写的话，许多事实都可以使用
+many facts to work with so if we write
+
+197
+00:13:45,510 --> 00:13:49,155
+那些下来我们应该看到原因没关系
+those down we should see the reason okay
+
+198
+00:13:49,160 --> 00:13:54,595
+所以我知道平均值是X的一个
+so I know that the mean is a of X so
+
+199
+00:13:54,600 --> 00:13:57,745
+让我们看看我是否会接受我是的
+let's see I'm am I gonna take yeah I'm
+
+200
+00:13:57,750 --> 00:14:03,235
+例如，让我们采取平均值
+gonna for example let's take the mean to
+
+201
+00:14:03,240 --> 00:14:09,085
+是一个好的所以我会想象
+be one okay so I'm gonna imagine that
+
+202
+00:14:09,090 --> 00:14:13,795
+平均值是一个，我要求的
+the mean is one and that I'm asking for
+
+203
+00:14:13,800 --> 00:14:17,005
+X会变大的机会是什么？
+what's the chance that X will be bigger
+
+204
+00:14:17,010 --> 00:14:23,055
+超过三，我会估计
+than three and I'll get an estimate of
+
+205
+00:14:23,060 --> 00:14:27,975
+三分之一，所以我试图展示
+one-third so I'm trying to show to show
+
+206
+00:14:27,980 --> 00:14:35,275
+X的概率大于等于3
+the probability of X greater equal three
+
+207
+00:14:35,280 --> 00:14:40,795
+小于或等于我说的意思
+is less or equal to the mean I'm saying
+
+208
+00:14:40,800 --> 00:14:43,855
+是一个是三个，所以有更少或
+is one a is three so there's less or
+
+209
+00:14:43,860 --> 00:14:48,325
+等于1/3现在为什么这是真的那样
+equal 1/3 now why is that true that's
+
+210
+00:14:48,330 --> 00:14:51,715
+我有什么表现好我认为是
+what I have to show okay I think is that
+
+211
+00:14:51,720 --> 00:14:55,005
+如果我写下我所知道的，我会看到它
+if I write down what I know I'll see it
+
+212
+00:14:55,010 --> 00:14:56,894
+好的
+okay
+
+213
+00:14:56,899 --> 00:15:01,795
+好吧，让我让我加油吧
+all right so let me let me just raise
+
+214
+00:15:01,800 --> 00:15:04,225
+有这么一点点，我有一个房间
+that a little so that I have a room to
+
+215
+00:15:04,230 --> 00:15:09,175
+写这么知道我知道的
+write so what do I know I know the
+
+216
+00:15:09,180 --> 00:15:12,715
+肉的定义所以我知道X.
+definition of the meat so I know that X
+
+217
+00:15:12,720 --> 00:15:23,865
+1次P1加X2P2加X3P3
+1 times P 1 plus X 2 P 2 plus X 3 P 3
+
+218
+00:15:23,870 --> 00:15:29,514
+让我在这里被带走X5p
+allow me to get carried away here X 5 p
+
+219
+00:15:29,519 --> 00:15:36,925
+5说是我所写的是什么
+5 say is is what so what I've written
+
+220
+00:15:36,930 --> 00:15:39,834
+这是我的假设
+down there is the mean and I'm assuming
+
+221
+00:15:39,839 --> 00:15:42,415
+这是1，所以这是我的事实
+that to be 1 so this is the fact that I
+
+222
+00:15:42,420 --> 00:15:48,535
+知道是1，我想要的是什么
+know is 1 and what is it that I want to
+
+223
+00:15:48,540 --> 00:15:52,014
+证明我想知道的概率
+prove I want to know the probability of
+
+224
+00:15:52,019 --> 00:15:55,644
+更大等于3所以是什么
+being greater equals 3 so what's the
+
+225
+00:15:55,649 --> 00:15:59,274
+概率结果将是
+probability that the result will be
+
+226
+00:15:59,279 --> 00:16:06,445
+大于等于3它是P3所以这是
+greater equal 3 it's P 3 so this this is
+
+227
+00:16:06,450 --> 00:16:11,274
+说P3加P对于那些是
+saying that P 3 plus P for those this is
+
+228
+00:16:11,279 --> 00:16:13,074
+这些是这些概率
+these are the probabilities these are
+
+229
+00:16:13,079 --> 00:16:15,385
+不同的方式，我可能是
+the different ways that I might be
+
+230
+00:16:15,390 --> 00:16:18,204
+更大等于3，我声称
+greater equals 3 and I'm claiming that
+
+231
+00:16:18,209 --> 00:16:26,785
+这个数字少于或等于我喜欢的1/3
+that's less or equal 1/3 what I liked
+
+232
+00:16:26,790 --> 00:16:30,355
+关于这种基本方法是这样的
+about this elementary approach is that
+
+233
+00:16:30,360 --> 00:16:35,055
+我已经说明了这些事实
+I've stated these facts these
+
+234
+00:16:35,060 --> 00:16:39,824
+概率假设和和
+probability assumptions and and and
+
+235
+00:16:39,829 --> 00:16:43,255
+结论直接以数字表示
+conclusions directly in terms of numbers
+
+236
+00:16:43,260 --> 00:16:46,495
+所以我只想表明如果是这样的话
+so I just want to show that if this is
+
+237
+00:16:46,500 --> 00:16:49,295
+那是真的
+true then that's true
+
+238
+00:16:49,300 --> 00:16:54,245
+哦，让我们来看看，我想我在想，
+oh let's see I guess I'm thinking that
+
+239
+00:16:54,250 --> 00:16:57,785
+对不起，我甚至更加特别
+the I'm sorry I even took a more special
+
+240
+00:16:57,790 --> 00:17:04,475
+我正在考虑x1为1X的情况
+case I'm taking the case where x1 is 1 X
+
+241
+00:17:04,480 --> 00:17:14,345
+2是2×3是3×4是4，X5是5
+2 is 2 X 3 is 3 X 4 is 4 and X 5 is 5 so
+
+242
+00:17:14,350 --> 00:17:17,525
+满足我的条件满足
+that satisfies satisfies my condition
+
+243
+00:17:17,530 --> 00:17:24,575
+输出1234或5是
+that the the outputs 1 2 3 4 or 5 are
+
+244
+00:17:24,580 --> 00:17:30,665
+所有马尔可夫马尔科夫只适用于
+all Markov Markov only applies when
+
+245
+00:17:30,670 --> 00:17:34,835
+他们都等于0所以我不得不这样做
+they're all greater equals 0 so I had to
+
+246
+00:17:34,840 --> 00:17:37,265
+拿一个我只是想象这个
+take a so I'm just imagining this
+
+247
+00:17:37,270 --> 00:17:40,085
+特殊情况下可能的输出
+special case where the possible outputs
+
+248
+00:17:40,090 --> 00:17:43,925
+是12345他们的概率是P.
+are 1 2 3 4 5 their probabilities are P
+
+249
+00:17:43,930 --> 00:17:50,465
+1P2P3P4P5平均值为1和什么
+1 P 2 P 3 P 4 P 5 the mean is 1 and what
+
+250
+00:17:50,470 --> 00:17:52,175
+我要表明的是概率
+I want to show is that the probability
+
+251
+00:17:52,180 --> 00:17:57,335
+的大于3小于或等于
+of being greater than 3 is less or equal
+
+252
+00:17:57,340 --> 00:18:02,065
+1/3，你能把这两个放在一起吗？
+1/3 and can you put together these two
+
+253
+00:18:02,070 --> 00:18:07,055
+你能断定这给予我们要
+can you conclude given this we want to
+
+254
+00:18:07,060 --> 00:18:09,965
+得出这样的结论让我退后一步
+conclude that let me just step back a
+
+255
+00:18:09,970 --> 00:18:10,765
+分钟
+minute
+
+256
+00:18:10,770 --> 00:18:17,315
+所以我们知道的就是我们所知道的
+so we're what do we know here we know
+
+257
+00:18:17,320 --> 00:18:19,775
+这是第一行，我们想要证明
+this the first line and we want to prove
+
+258
+00:18:19,780 --> 00:18:24,715
+第二行我们还知道一件事
+the second line we know one more thing
+
+259
+00:18:24,720 --> 00:18:27,545
+所有的概率我们都知道
+all the probabilities well we know the
+
+260
+00:18:27,550 --> 00:18:29,375
+概率加1，我们知道
+probabilities add to 1 and we know
+
+261
+00:18:29,380 --> 00:18:31,925
+他们都等于0，所以让我吧
+they're all greater equals 0 so let me
+
+262
+00:18:31,930 --> 00:18:34,655
+把这些事实在这里也
+put those facts in here too
+
+263
+00:18:34,660 --> 00:18:42,005
+我们知道P1加P2加P3加
+we know that P 1 plus P 2 plus P 3 plus
+
+264
+00:18:42,010 --> 00:18:47,075
+B4加B5是我们知道的1和我们
+B 4 plus B 5 is 1 that we know and we
+
+265
+00:18:47,080 --> 00:18:53,915
+也知道所有的豌豆都更大
+also know that all the peas are greater
+
+266
+00:18:53,920 --> 00:19:02,565
+等于或等于0好吧好吧
+than or equal to 0 okay okay
+
+267
+00:19:02,570 --> 00:19:08,515
+所以我们走了，我想我的想法就是这个
+so here we go I think my my idea is this
+
+268
+00:19:08,520 --> 00:19:12,295
+难道，这就是看三次p3
+is this is looking at three times P 3
+
+269
+00:19:12,300 --> 00:19:16,165
+再加上B4+P5所以我要拿3P
+plus B 4 + P 5 so I'm going to take 3 P
+
+270
+00:19:16,170 --> 00:19:22,735
+3加3P4远离此，所以这将
+3 plus 3 P 4 away from this so this will
+
+271
+00:19:22,740 --> 00:19:35,125
+说P1加2P2加3块礁
+say P 1 plus 2 P 2 plus 3 of piece reef
+
+272
+00:19:35,130 --> 00:19:40,945
+加上第4页以及第5页我只是捡了3
+plus P 4 plus P 5 I'm just picking out 3
+
+273
+00:19:40,950 --> 00:19:41,965
+那些家伙
+of those guys
+
+274
+00:19:41,970 --> 00:19:45,595
+加上我还有一个P4来解释
+plus I have one more P 4 to account for
+
+275
+00:19:45,600 --> 00:20:02,475
+还有两个P5现在给了一个好的
+and two more P 5 gives one okay good now
+
+276
+00:20:02,480 --> 00:20:07,405
+这就是我想要证明的
+this is what I'm trying to prove so that
+
+277
+00:20:07,410 --> 00:20:09,205
+我在这里试图证明这一点
+is here I'm trying to prove that this
+
+278
+00:20:09,210 --> 00:20:13,165
+事情是我想要证明的东西
+thing is what am I trying to prove about
+
+279
+00:20:13,170 --> 00:20:16,525
+这个数字，你很抱歉我在说话
+that number and you're sorry I'm talking
+
+280
+00:20:16,530 --> 00:20:18,685
+很多，但现在我真的来了
+a lot but now I've really come to the
+
+281
+00:20:18,690 --> 00:20:21,505
+指出马尔科夫告诉我的是什么
+point what what is Markov telling me
+
+282
+00:20:21,510 --> 00:20:24,775
+关于那个更少或更少的数字
+about that number that's that is less or
+
+283
+00:20:24,780 --> 00:20:27,865
+等于感谢好吧我正在努力证明
+equal to thanks okay I'm trying to prove
+
+284
+00:20:27,870 --> 00:20:32,035
+这是一个小于或等于一个
+that this is less or equal one that's
+
+285
+00:20:32,040 --> 00:20:37,555
+什么马尔科夫告诉我，但假设它是
+what Markov tells me but suppose it was
+
+286
+00:20:37,560 --> 00:20:38,575
+不止一个
+greater than one
+
+287
+00:20:38,580 --> 00:20:41,125
+你看到问题了吗？
+do you see the problem you see why it
+
+288
+00:20:41,130 --> 00:20:48,835
+不能大于一，因为为什么
+can't be greater than one because why
+
+289
+00:20:48,840 --> 00:20:52,445
+所有其他术语都是更大的等于
+all the other terms are greater equals
+
+290
+00:20:52,450 --> 00:20:52,975
+零
+zero
+
+291
+00:20:52,980 --> 00:20:55,054
+概率大于或等于零
+probabilities are greater or equal zero
+
+292
+00:20:55,059 --> 00:20:57,995
+这些都是更大的等于零和
+these are all greater equal zero and the
+
+293
+00:20:58,000 --> 00:21:00,755
+为了这个，总的东西增加了一个
+total thing adds to one so that this
+
+294
+00:21:00,760 --> 00:21:03,445
+片必须是较小等于所述一个
+piece has to be lesser equal the one
+
+295
+00:21:03,450 --> 00:21:07,414
+这是正确的，是的，所以很多
+that's right that's it yeah so a lot of
+
+296
+00:21:07,419 --> 00:21:12,125
+谈论那里简单的想法，你会看到
+talking there simple idea and you'll see
+
+297
+00:21:12,130 --> 00:21:16,404
+正是这个例子写下来的
+the exactly this example written down in
+
+298
+00:21:16,409 --> 00:21:21,065
+注意没关系然后你会看到更多
+notes okay and then you'll see a more
+
+299
+00:21:21,070 --> 00:21:23,705
+马尔可夫不等式的传统证明
+conventional proof of Markov inequality
+
+300
+00:21:23,710 --> 00:21:29,465
+采取任何简单的不平等步骤
+by taking any simple inequality steps
+
+301
+00:21:29,470 --> 00:21:32,105
+但是在某种程度上更加神秘
+but there's somehow more mysterious for
+
+302
+00:21:32,110 --> 00:21:34,085
+我这是明确的
+me this was explicit
+
+303
+00:21:34,090 --> 00:21:39,065
+好的，所以马库夫chebychev是
+okay so that's Markov chebychev is the
+
+304
+00:21:39,070 --> 00:21:42,635
+其他伟大的俄罗斯可能的名单
+other great russian probable list of the
+
+305
+00:21:42,640 --> 00:21:57,575
+时间和他得到了他的不平等
+time and he gets his his inequality so
+
+306
+00:21:57,580 --> 00:21:59,705
+有两个是马尔科夫
+there are the two there's markov
+
+307
+00:21:59,710 --> 00:22:03,544
+不平等让我再次写下来
+inequality let me write it down again
+
+308
+00:22:03,549 --> 00:22:08,365
+它在这里是马尔科夫不平等
+what it was here was markov inequality
+
+309
+00:22:08,370 --> 00:22:13,174
+关于挫败假设chebychev
+on the barkoff assumption chebychev
+
+310
+00:22:13,179 --> 00:22:14,674
+没有做出这样的假设
+doesn't make that assumption
+
+311
+00:22:14,679 --> 00:22:25,774
+所以现在不能假设输出
+so now no no assumption that the outputs
+
+312
+00:22:25,779 --> 00:22:30,485
+是等于它不现在没事来
+are equals it doesn't come in okay now
+
+313
+00:22:30,490 --> 00:22:33,394
+什么是chebychev试图估计
+what is chebychev trying to estimate
+
+314
+00:22:33,399 --> 00:22:34,475
+好的
+okay
+
+315
+00:22:34,480 --> 00:22:37,085
+让我们转向chebychev，那就是
+let's move to chebychev and that's the
+
+316
+00:22:37,090 --> 00:22:44,385
+最后一个人
+last guy
+
+317
+00:22:44,390 --> 00:22:48,595
+所以他对蒂米·查韦斯感兴趣
+so he Timmy Chavez into it interested in
+
+318
+00:22:48,600 --> 00:22:55,975
+X减去的概率概率
+the probability probability that X minus
+
+319
+00:22:55,980 --> 00:23:03,914
+对我来说，我可以使用它的平均值
+the mean M can I use that for me is
+
+320
+00:23:03,919 --> 00:23:11,215
+可能大于或等于该
+probably greater or equal to a the
+
+321
+00:23:11,220 --> 00:23:16,044
+是一种距离的概率
+probability of being sort of a distance
+
+322
+00:23:16,049 --> 00:23:19,975
+一个从外地开会，以便再次为他们
+a away from the meet so again as they
+
+323
+00:23:19,980 --> 00:23:23,515
+增加我问的更多我问它
+increases I'm asking more I'm asking it
+
+324
+00:23:23,520 --> 00:23:26,185
+远离平均和
+to be further away from the mean and the
+
+325
+00:23:26,190 --> 00:23:29,065
+概率会下降，然后是
+probability will drop and then the
+
+326
+00:23:29,070 --> 00:23:32,725
+问题是我们可以这样估计这个
+question is can we estimate this so this
+
+327
+00:23:32,730 --> 00:23:35,775
+是一个不同的估计，但它是相似的
+is a different estimate but it's similar
+
+328
+00:23:35,780 --> 00:23:39,775
+类似的问题和什么是胖乎乎的
+similar question and what's chubby
+
+329
+00:23:39,780 --> 00:23:42,205
+杰夫的回答这个所以这是
+Jeff's answer for this so this is the
+
+330
+00:23:42,210 --> 00:23:46,664
+这个概率我必须忍受大
+probability of this I have to put up big
+
+331
+00:23:46,669 --> 00:23:50,245
+这一切都是一口气的
+that's all one grit one mouthful the
+
+332
+00:23:50,250 --> 00:23:56,155
+这个X减去M的概率
+probability of being that this X minus M
+
+333
+00:23:56,160 --> 00:24:00,355
+大于等于好，并再次
+is greater equal to a okay and again
+
+334
+00:24:00,360 --> 00:24:05,325
+我们将会有更少或相等
+we're gonna have is less or equal to
+
+335
+00:24:05,330 --> 00:24:13,664
+Sigma平方现在超过了一个正方形
+Sigma squared now comes in over a square
+
+336
+00:24:13,669 --> 00:24:19,285
+所以这是雪佛兰的cheff，我只是采取
+so that's Chevy cheff and I just take
+
+337
+00:24:19,290 --> 00:24:23,025
+今天是时候做这两个因为了
+time today to do these two because
+
+338
+00:24:23,030 --> 00:24:27,765
+他们是它们涉及的分析有
+they're they involve analysis there
+
+339
+00:24:27,770 --> 00:24:31,645
+有基本的工具排序的
+there are basic tools as sort of the
+
+340
+00:24:31,650 --> 00:24:33,145
+如果你是第一件事，你会想到
+first thing you think of if you're
+
+341
+00:24:33,150 --> 00:24:35,935
+试图估计一个概率
+trying to estimate a probability does it
+
+342
+00:24:35,940 --> 00:24:40,435
+适合马尔科夫，只有马尔科夫
+fit Markov and it only Markov only
+
+343
+00:24:40,440 --> 00:24:45,265
+适用所以我将只适用于当放
+applies so I'll put only applies when
+
+344
+00:24:45,270 --> 00:24:47,125
+X都大于或等于零
+the X's are all greater or equal zero
+
+345
+00:24:47,130 --> 00:24:51,174
+这适合chebychev现在我们是
+here does it fit chebychev and now we're
+
+346
+00:24:51,179 --> 00:24:53,395
+采取绝对值，所以我们不是
+taking absolute values so we're not
+
+347
+00:24:53,400 --> 00:24:55,885
+关注X的大小
+concerned about the size of X
+
+348
+00:24:55,890 --> 00:24:58,435
+我们正在与他们保持距离
+and we're taking the distance from em so
+
+349
+00:24:58,440 --> 00:25:01,315
+我们显然是在世界的
+we're obviously in the world of
+
+350
+00:25:01,320 --> 00:25:04,465
+差异我们离他们的距离还可以
+variances we're distances from em okay
+
+351
+00:25:04,470 --> 00:25:08,905
+和chebychev的证据来了
+and and the proof of chebychev is comes
+
+352
+00:25:08,910 --> 00:25:12,025
+直接来自马尔科夫所以我们为什么
+directly from Markov so so why we're
+
+353
+00:25:12,030 --> 00:25:17,215
+要适用马尔科夫这么好的事情
+going to apply Markov so good thing that
+
+354
+00:25:17,220 --> 00:25:25,674
+马尔科夫先来了-现在让我说
+Markov came first - now let me just say
+
+355
+00:25:25,679 --> 00:25:37,645
+这个权利-a-a-一个新的让我打电话
+this right - a - a - a new let me call
+
+356
+00:25:37,650 --> 00:25:45,595
+它这将是一个新的输出和它
+it Y this will be a new output and it
+
+357
+00:25:45,600 --> 00:25:57,475
+将是X减去M平方所以如果我
+will be X minus M Squared so that's if I
+
+358
+00:25:57,480 --> 00:26:00,235
+当然具有相同的可能性
+of course with the same probability so
+
+359
+00:26:00,240 --> 00:26:07,465
+为什么我是x均匀的平方和
+why I is x i- m the mean squared and the
+
+360
+00:26:07,470 --> 00:26:14,804
+相同的概率相同的概率P.
+same probabilities same probabilities P
+
+361
+00:26:14,809 --> 00:26:21,375
+好吧所以我想如果我要申请
+okay so I guess if I'm going to apply
+
+362
+00:26:21,380 --> 00:26:24,955
+我只想接受它需要一个
+I'm just going to take that it takes a
+
+363
+00:26:24,960 --> 00:26:32,125
+明智的，而不是这里的X.
+wise here instead of the X's here so and
+
+364
+00:26:32,130 --> 00:26:36,595
+然后应用马尔科夫，那么什么是X吧，如果
+then apply Markov so what is X bar so if
+
+365
+00:26:36,600 --> 00:26:38,485
+我想申请Markov我必须要想
+I want to apply Markov I have to figure
+
+366
+00:26:38,490 --> 00:26:41,575
+在这里我必须得到X的平均值
+out the mean of X over here I have to
+
+367
+00:26:41,580 --> 00:26:47,515
+弄清楚Y的意思是
+figure out the mean of Y what is the
+
+368
+00:26:47,520 --> 00:26:53,085
+的Y指的是平均值的总和
+mean of Y the mean value the sum of
+
+369
+00:26:53,090 --> 00:27:02,065
+概率x明智
+probabilities x wise
+
+370
+00:27:02,070 --> 00:27:06,545
+你应该认识到这是
+you're supposed to recognize it this is
+
+371
+00:27:06,550 --> 00:27:12,815
+概率和我的y的总和
+the sum of probabilities and my y's are
+
+372
+00:27:12,820 --> 00:27:20,525
+xi减去均方，所以这个
+the x i minus the mean squared so this
+
+373
+00:27:20,530 --> 00:27:25,325
+这就是这件事的意思
+is the mean for this this this y thing
+
+374
+00:27:25,330 --> 00:27:28,505
+我带来的是那个公式
+that I've brought in has that formula
+
+375
+00:27:28,510 --> 00:27:30,845
+我们认识到这个数量是多少
+and we recognize what that quantity is
+
+376
+00:27:30,850 --> 00:27:35,495
+这就是西格玛平方西格玛的平方
+that is that Sigma squared Sigma squared
+
+377
+00:27:35,500 --> 00:27:38,285
+对于原始X来说就是这样
+for the original X's so that's just
+
+378
+00:27:38,290 --> 00:27:43,475
+这是非常大，所以平均是西格玛是
+that's great so the mean is Sigma is the
+
+379
+00:27:43,480 --> 00:27:47,015
+老西格玛广场那些感叹
+old Sigma square those are exclamation
+
+380
+00:27:47,020 --> 00:27:51,665
+标记好，所以我现在看到了
+marks okay so then I do you see that now
+
+381
+00:27:51,670 --> 00:27:55,025
+马尔科夫看起来像或chebychev是
+Markov is looking like or chebychev is
+
+382
+00:27:55,030 --> 00:27:59,795
+看起来像马尔科夫，因为在这里
+looking like Markov because here over
+
+383
+00:27:59,800 --> 00:28:03,185
+这里将是我现在想要的X.
+here will be the X now I want the
+
+384
+00:28:03,190 --> 00:28:11,525
+y的期望值超过让我们看看是的
+expected value of y over let's see yep
+
+385
+00:28:11,530 --> 00:28:15,185
+所以预期的Y就是这样
+so the expected Y is going to be that
+
+386
+00:28:15,190 --> 00:28:18,005
+现在我有什么要分开的呢
+and now what do I have to divide by I
+
+387
+00:28:18,010 --> 00:28:21,005
+想知道某事的可能性
+want to know probabilities of something
+
+388
+00:28:21,010 --> 00:28:23,825
+这个东西越大越大
+being bigger of this thing being bigger
+
+389
+00:28:23,830 --> 00:28:28,895
+不是现在，但我看在Y的这样
+than a but now I'm looking at the Y's so
+
+390
+00:28:28,900 --> 00:28:33,575
+如果X减去M的概率是
+the probability of if X minus M is
+
+391
+00:28:33,580 --> 00:28:37,265
+大于或等于然后X减去
+greater than or equal to a then X minus
+
+392
+00:28:37,270 --> 00:28:40,655
+XI减去MSquared大于等于a
+X I minus M Squared is greater equal a
+
+393
+00:28:40,660 --> 00:28:48,755
+平方如此，所以我在这里为我做了一个
+squared so so I my my a over here for X
+
+394
+00:28:48,760 --> 00:28:53,165
+我现在正在解决这个问题
+is now turning in this problem where I'm
+
+395
+00:28:53,170 --> 00:28:55,415
+看起来概率大于等于a
+looking a probability greater equal a
+
+396
+00:28:55,420 --> 00:29:00,185
+但是，这就是a
+but squaring it this the is the a
+
+397
+00:29:00,190 --> 00:29:01,894
+平方
+squared
+
+398
+00:29:01,899 --> 00:29:07,365
+所以马克夫在这里适用于Y.
+so that's Markov applied to Y here's
+
+399
+00:29:07,370 --> 00:29:09,914
+马尔科夫应用于X和X必须是
+Markov applied to X and X had to be
+
+400
+00:29:09,919 --> 00:29:11,445
+更大等于零
+greater equals zero
+
+401
+00:29:11,450 --> 00:29:14,685
+所以在这里chebychev拿了一个Y.
+so over here chebychev took a Y which
+
+402
+00:29:14,690 --> 00:29:17,235
+那么大于等于零
+was greater equals zero then just
+
+403
+00:29:17,240 --> 00:29:21,855
+应用马尔可夫并认识到了什么
+applied Markov and recognized that what
+
+404
+00:29:21,860 --> 00:29:25,935
+平均值是他的变量Xmy
+that the mean was of his variable X my
+
+405
+00:29:25,940 --> 00:29:29,445
+我的X减去MSquared就是西格玛
+my X minus M Squared was exactly Sigma
+
+406
+00:29:29,450 --> 00:29:38,024
+平方而且它再次掉出来了
+squared and it fell out so again here is
+
+407
+00:29:38,029 --> 00:29:44,404
+马尔科夫的一个非常简单的证明然后
+a very simple proof for Markov and then
+
+408
+00:29:44,409 --> 00:29:47,445
+每个人都同意chebychev跟随
+everybody agrees that chebychev follows
+
+409
+00:29:47,450 --> 00:29:50,024
+马克诺夫马克，所以那些
+right away from Markov ok so those are
+
+410
+00:29:50,029 --> 00:29:54,794
+现在另一个是两个基本的不平等
+two basic inequalities now the other
+
+411
+00:29:54,799 --> 00:29:59,595
+话题，我想处理是
+topic that I wanted to to deal with was
+
+412
+00:29:59,600 --> 00:30:02,745
+你必须的协方差协方差矩阵
+covariance covariance matrix you have to
+
+413
+00:30:02,750 --> 00:30:05,585
+变得舒服或者那是什么
+get like comfortable or what is that
+
+414
+00:30:05,590 --> 00:30:08,895
+什么是协方差好的
+what's the covariance okay
+
+415
+00:30:08,900 --> 00:30:15,865
+[掌声]
+[Applause]
+
+416
+00:30:15,870 --> 00:30:25,685
+所以协方差协方差矩阵和它
+so covariance covariance matrix and it
+
+417
+00:30:25,690 --> 00:30:32,255
+当我有MM的时候，M将是M.
+will be M by M when I have M M sort of
+
+418
+00:30:32,260 --> 00:30:41,885
+实验M立刻让我带走了我
+experiments M at once let me take a me
+
+419
+00:30:41,890 --> 00:30:45,215
+把两个你放在一起你会看到一切
+put the two you you'll see everything
+
+420
+00:30:45,220 --> 00:30:49,715
+对于m等于2，所以这是我们的
+for m equal to two so it's a we're
+
+421
+00:30:49,720 --> 00:30:53,005
+预计由两个矩阵得到两个
+expecting to get a two by two matrix and
+
+422
+00:30:53,010 --> 00:30:56,585
+我们从什么开始，我们开始我们
+what are we starting with we start we're
+
+423
+00:30:56,590 --> 00:30:59,465
+我们一次做两个实验
+doing two experiments at once so we have
+
+424
+00:30:59,470 --> 00:31:09,355
+两个输出两个输出X和y
+two outputs two outputs an X and the y
+
+425
+00:31:09,360 --> 00:31:12,185
+所以X是X的输出
+so the X's are the outputs from the X
+
+426
+00:31:12,190 --> 00:31:16,025
+实验Y是输出
+experiment the Y's are the output from
+
+427
+00:31:16,030 --> 00:31:19,025
+来自第二次实验我们是
+the from a second experiment we're
+
+428
+00:31:19,030 --> 00:31:22,685
+翻转两个硬币让我们接受
+flipping two coins so let's take that
+
+429
+00:31:22,690 --> 00:31:30,755
+例如两个硬币硬币一个零或
+example two coins coin one gets zero or
+
+430
+00:31:30,760 --> 00:31:40,465
+一个人的概率1/2硬币到
+one with people probability 1/2 coin to
+
+431
+00:31:40,470 --> 00:31:47,075
+0或1，概率为1/2，所以他们是
+0 or 1 with probability 1/2 so they're
+
+432
+00:31:47,080 --> 00:31:53,185
+公平的硬币，但我没有说的是
+fair coins but what I haven't said is
+
+433
+00:31:53,190 --> 00:31:56,425
+两者之间是否存在联系？
+are there is there a connection between
+
+434
+00:31:56,430 --> 00:32:01,085
+输出这是X这是Y.
+the output this is the X this is the Y
+
+435
+00:32:01,090 --> 00:32:05,705
+如果我将硬币粘在一起，那么
+is if I glue the coins together then the
+
+436
+00:32:05,710 --> 00:32:07,775
+我认为这两个输出是一样的
+two outputs are the same I think this
+
+437
+00:32:07,780 --> 00:32:12,695
+对我来说，这是一个模型问题
+for me this is a model question that
+
+438
+00:32:12,700 --> 00:32:15,115
+揭示了协方差的主要观点
+brings out the main point of covariance
+
+439
+00:32:15,120 --> 00:32:20,465
+如果我分开翻转两个硬币
+if I flip two coins separately quite
+
+440
+00:32:20,470 --> 00:32:23,765
+独立然后没有
+independently then there's no
+
+441
+00:32:23,770 --> 00:32:25,924
+[音乐]
+[Music]
+
+442
+00:32:25,929 --> 00:32:29,764
+我不能不知道为什么来自
+I can't I don't know more about why from
+
+443
+00:32:29,769 --> 00:32:32,225
+知道X，如果我知道一个人的答案
+knowing X if I know the answer to one
+
+444
+00:32:32,230 --> 00:32:34,414
+翻转它并没有告诉我任何事情
+flip it doesn't tell me anything about
+
+445
+00:32:34,419 --> 00:32:37,914
+第二个如果他们是独立的
+the second if they're independent
+
+446
+00:32:37,919 --> 00:32:41,284
+不相关，但如果两个硬币是
+uncorrelated but if the two coins are
+
+447
+00:32:41,289 --> 00:32:46,924
+粘在一起，然后头，所以上来
+glued together then heads so come up for
+
+448
+00:32:46,929 --> 00:32:47,705
+两个硬币
+both coins
+
+449
+00:32:47,710 --> 00:32:49,505
+我将只有两个
+it'll be I'll only have two
+
+450
+00:32:49,510 --> 00:32:51,725
+可能是头脑或头脑的可能性
+possibilities that'll be heads heads or
+
+451
+00:32:51,730 --> 00:32:54,065
+尾巴让我让我写下来
+tails tails let me let me write down
+
+452
+00:32:54,070 --> 00:32:57,654
+有两种不同的情景
+that there was two different scenarios
+
+453
+00:32:57,659 --> 00:33:04,235
+如此脱胶，我从没想过要写
+so unglued I never expected to write
+
+454
+00:33:04,240 --> 00:33:10,835
+数学课上的那个词，我是什么
+that word in a math class and what am I
+
+455
+00:33:10,840 --> 00:33:13,804
+写下来我要写
+going to write down I'm going to write
+
+456
+00:33:13,809 --> 00:33:22,804
+向下一个带有硬币头尾的矩阵
+down a matrix with heads tails for coin
+
+457
+00:33:22,809 --> 00:33:28,625
+1和硬币2的头和尾，所以
+1 and heads and tails for coin 2 so the
+
+458
+00:33:28,630 --> 00:33:31,955
+可能性是硬币得到的头
+possibilities are coin one gets heads
+
+459
+00:33:31,960 --> 00:33:33,634
+而第二点得到的是什么
+and point two gets heads what's the
+
+460
+00:33:33,639 --> 00:33:36,485
+这是脱胶的概率
+probability of that this is the unglued
+
+461
+00:33:36,490 --> 00:33:39,065
+案件所以我要创造一点
+case so I'm gonna create a little
+
+462
+00:33:39,070 --> 00:33:42,725
+关节概率矩阵
+probability matrix of joint
+
+463
+00:33:42,730 --> 00:33:45,784
+概率这是真正的关键词
+probabilities that's really the key word
+
+464
+00:33:45,789 --> 00:33:49,024
+你是的，我在这里讨论
+that you yeah that I'm discussing here
+
+465
+00:33:49,029 --> 00:33:54,965
+联合概率让我们完成
+joint probabilities so let's complete
+
+466
+00:33:54,970 --> 00:33:59,134
+那个矩阵所以我有脱胶硬币
+that matrix so I have unglued coins
+
+467
+00:33:59,139 --> 00:34:02,044
+独立的硬币我把它们翻了个什么
+independent coins I flip them both what
+
+468
+00:34:02,049 --> 00:34:04,445
+获得成功的机会是什么？
+what is the chances of getting heads on
+
+469
+00:34:04,450 --> 00:34:10,324
+两者都有1/4的机会是什么
+both 1/4 what are the chances of what do
+
+470
+00:34:10,329 --> 00:34:11,285
+我放在这里
+I put in here
+
+471
+00:34:11,290 --> 00:34:14,404
+这意味着在第一枚硬币和头上
+this means heads on the first coin and
+
+472
+00:34:14,409 --> 00:34:16,384
+第二女王和王后的尾巴
+tails on the second Queen and the
+
+473
+00:34:16,389 --> 00:34:22,445
+那概率为1/4和1/4位置
+probability of that is 1/4 and 1/4 here
+
+474
+00:34:22,450 --> 00:34:25,715
+和1/4在这里所以我有四个
+and 1/4 here so I've there four
+
+475
+00:34:25,720 --> 00:34:29,045
+这是我投入一个2x2的可能性
+possibilities which I put into a 2x2
+
+476
+00:34:29,050 --> 00:34:32,255
+矩阵而不是长矢量我的两个
+matrix instead of a long vector my two
+
+477
+00:34:32,260 --> 00:34:34,745
+头部有四种可能性
+four possibilities are heads heads has
+
+478
+00:34:34,750 --> 00:34:37,745
+尾巴尾巴尾巴尾巴
+heads tails tails heads and tails tails
+
+479
+00:34:37,750 --> 00:34:39,215
+他们有平等的
+and they have equal
+
+480
+00:34:39,220 --> 00:34:44,904
+概率为1/4，但现在如果他们被胶合了
+probability 1/4 but now if they're glued
+
+481
+00:34:44,909 --> 00:34:48,424
+第一个硬币头上的头部和尾部
+heads and tails on the first coin heads
+
+482
+00:34:48,429 --> 00:34:53,075
+在第一个上的第二个尾巴
+and tails on the second on the first
+
+483
+00:34:53,080 --> 00:34:56,285
+硬币头和尾巴在第二枚硬币上
+coin heads and tails on the second coin
+
+484
+00:34:56,290 --> 00:35:01,625
+好吧，现在我放在那里，所以
+okay now what do I put in there so the
+
+485
+00:35:01,630 --> 00:35:03,695
+两个硬币粘在一起是什么
+two coins are glued together what is the
+
+486
+00:35:03,700 --> 00:35:10,295
+他们俩都有可能成为什么样的人
+chance that they both come up heads what
+
+487
+00:35:10,300 --> 00:35:13,625
+如果一个人出现，那就是对了一半
+half right one half if one comes up
+
+488
+00:35:13,630 --> 00:35:14,045
+头
+heads
+
+489
+00:35:14,050 --> 00:35:16,745
+另一种是粘在它它会
+the other one is glued to it it will
+
+490
+00:35:16,750 --> 00:35:19,735
+还有什么是概率
+also what what's the probability of
+
+491
+00:35:19,740 --> 00:35:22,985
+头上的尾巴头上有一条尾巴
+heads tails heads on one tails on the
+
+492
+00:35:22,990 --> 00:35:25,775
+其他当然是零谢谢
+other is of course zero thanks
+
+493
+00:35:25,780 --> 00:35:30,245
+这里是0，这里是1/2，所以我的意思
+and here's 0 and here 1/2 so what I've
+
+494
+00:35:30,250 --> 00:35:34,205
+创造了2个可能加2
+created are those 2 possible plus 2
+
+495
+00:35:34,210 --> 00:35:38,755
+不同的设置两种不同的场景
+different setups two different scenarios
+
+496
+00:35:38,760 --> 00:35:42,725
+脱胶和粘合，在这一个我们
+unglued and glued and in this one we
+
+497
+00:35:42,730 --> 00:35:47,315
+有，但每个每个实验装置
+have but each each experimental setup
+
+498
+00:35:47,320 --> 00:35:52,075
+有它的联合概率矩阵
+has its matrix of joint probabilities
+
+499
+00:35:52,080 --> 00:35:55,025
+这是事情是这样的，有
+that's that's the thing that there are
+
+500
+00:35:55,030 --> 00:35:58,745
+这里有四个数字我们有四个数字
+four numbers here four numbers we have
+
+501
+00:35:58,750 --> 00:36:03,035
+所有的可能性，我们有任何任何
+all possibilities we have any any
+
+502
+00:36:03,040 --> 00:36:05,975
+可能的X和同时任何
+possible X and at the same time any
+
+503
+00:36:05,980 --> 00:36:10,565
+可能Y所以假设我们假设了我们
+possible Y so suppose we had suppose we
+
+504
+00:36:10,570 --> 00:36:14,765
+正在运行三个实验，我们
+were running three experiments and we
+
+505
+00:36:14,770 --> 00:36:21,005
+很好，那会是什么
+had well so what would be the what would
+
+506
+00:36:21,010 --> 00:36:23,885
+如果我跑三个就是这种情况
+be the situation if I was running three
+
+507
+00:36:23,890 --> 00:36:27,094
+用独立的三个实验
+experiments with an independent three
+
+508
+00:36:27,099 --> 00:36:30,545
+独立的公平硬币，所以我有
+independent fair coins so I'd have I'd
+
+509
+00:36:30,550 --> 00:36:33,755
+在这张脱胶的照片中，但我愿意
+be in this unglued picture but I would
+
+510
+00:36:33,760 --> 00:36:37,594
+有三个不同的实验
+have three different experiments that
+
+511
+00:36:37,599 --> 00:36:41,975
+我正在运行什么会是什么
+I'm running then what what's what would
+
+512
+00:36:41,980 --> 00:36:44,705
+我会怎样看待他们
+be what would I be looking at them just
+
+513
+00:36:44,710 --> 00:36:47,844
+整个想法是看看这是什么
+the whole idea is to see what is this
+
+514
+00:36:47,849 --> 00:36:52,535
+像联合概率一样假设我有
+like joint probability so suppose I have
+
+515
+00:36:52,540 --> 00:36:53,135
+三
+three
+
+516
+00:36:53,140 --> 00:37:03,034
+硬币unglue然后我想知道喜欢
+coin unglue then I want to know like
+
+517
+00:37:03,039 --> 00:37:06,425
+有可能获得头脑
+some probability of getting heads on the
+
+518
+00:37:06,430 --> 00:37:08,584
+第一个头在第二个头上
+first heads on the second heads on the
+
+519
+00:37:08,589 --> 00:37:11,735
+第三个就是给我这个
+third will be what just to give me that
+
+520
+00:37:11,740 --> 00:37:14,794
+数字是什么概率
+number what will be the probability of
+
+521
+00:37:14,799 --> 00:37:16,745
+这三个人都是独立的
+that all three of them independently
+
+522
+00:37:16,750 --> 00:37:21,274
+八点好，但现在我的
+come up heads one eight okay but now my
+
+523
+00:37:21,279 --> 00:37:27,485
+问题是，这样我有什么话，我
+question is so what do I have then I
+
+524
+00:37:27,490 --> 00:37:30,784
+有尾巴的概率
+have probability of heads of say tails
+
+525
+00:37:30,789 --> 00:37:35,314
+我们在这里有三个指数
+heads heads I've got three indices here
+
+526
+00:37:35,319 --> 00:37:38,375
+最终降到尾巴的概率
+eventually down to probability of tails
+
+527
+00:37:38,380 --> 00:37:41,014
+每个人在最后看到的尾巴尾巴
+tails tails everybody sees at the end of
+
+528
+00:37:41,019 --> 00:37:43,655
+这些数字将是1/8但是
+the numbers are going to be 1/8 but
+
+529
+00:37:43,660 --> 00:37:48,895
+什么是适合他们的地方
+what's the what's where those fit in
+
+530
+00:37:48,900 --> 00:37:51,544
+它们不适合矩阵，因为我已经
+they don't fit in a matrix because I've
+
+531
+00:37:51,549 --> 00:37:57,245
+这里有三个指数，所以我想是什么
+got three indices here so I guess what
+
+532
+00:37:57,250 --> 00:37:59,165
+我们今天看到我有点意识到了
+we're seeing I sort of realized today
+
+533
+00:37:59,170 --> 00:38:02,104
+我们第一次看到一个张量
+we're seeing for the first time a tensor
+
+534
+00:38:02,109 --> 00:38:09,754
+张量是一种三向结构
+a tensor is a three-way structure
+
+535
+00:38:09,759 --> 00:38:13,175
+三元矩阵你可以这么说我们
+three-way matrix you could say so we
+
+536
+00:38:13,180 --> 00:38:18,274
+我想我想到了这一点
+have I guess I think of the of this
+
+537
+00:38:18,279 --> 00:38:23,705
+而不是像那样的广场
+instead of a square like that an
+
+538
+00:38:23,710 --> 00:38:27,334
+普通矩阵我不得不想到立方体
+ordinary matrix I have to think of cube
+
+539
+00:38:27,339 --> 00:38:31,475
+我有一个带有两个的立方体
+right I have a cube with with with two
+
+540
+00:38:31,480 --> 00:38:38,965
+行两列和Evers
+rows two columns and to what Evers
+
+541
+00:38:38,970 --> 00:38:42,695
+层有人可能会说，为层
+layers somebody might say layers for
+
+542
+00:38:42,700 --> 00:38:46,715
+那你看到的基质
+that do you see that the the matrix has
+
+543
+00:38:46,720 --> 00:38:52,385
+成为
+become
+
+544
+00:38:52,390 --> 00:38:58,864
+一个三通的东西和一个紧张的
+a three-way thing a tenser and the
+
+545
+00:38:58,869 --> 00:39:02,044
+那个缩小的条目，所以它是两个
+entries in that tenser so it's two by
+
+546
+00:39:02,049 --> 00:39:08,764
+两个两个而不是M由n代表a
+two by two that instead of M by n for a
+
+547
+00:39:08,769 --> 00:39:10,984
+矩阵我必须给你数量
+matrix I have to give you the number of
+
+548
+00:39:10,989 --> 00:39:13,054
+行和列数和
+rows and number of columns and the
+
+549
+00:39:13,059 --> 00:39:17,304
+层数进入电路板以便
+number of layers going into the board so
+
+550
+00:39:17,309 --> 00:39:20,915
+以你知道的方式行
+rows going one way you know
+
+551
+00:39:20,920 --> 00:39:24,905
+列行然后是层
+columns rows and then layers are going
+
+552
+00:39:24,910 --> 00:39:27,635
+深，所以我将它会有十
+deep so I will that it will have a ten
+
+553
+00:39:27,640 --> 00:39:34,445
+树，当然在这个简单的情况下
+trees and of course in this simple case
+
+554
+00:39:34,450 --> 00:39:40,804
+每将一个八这在
+each will be one eight in this in that
+
+555
+00:39:40,809 --> 00:39:44,165
+在那个unglue完全独立的方式
+in that unglue totally independent way
+
+556
+00:39:44,170 --> 00:39:47,945
+但是你可以想象一下
+but but then you can imagine some
+
+557
+00:39:47,950 --> 00:39:50,494
+依赖说得好，如果我这样做
+dependence say well if I so what would
+
+558
+00:39:50,499 --> 00:39:56,094
+如果我把第一和第三枚硬币粘在一起，就会发生
+happen if I glued coins one and three I
+
+559
+00:39:56,099 --> 00:39:59,284
+仍然会有一个张量仍然有一个
+would still have a tensor still have a
+
+560
+00:39:59,289 --> 00:40:02,725
+所有的二乘两乘张量
+two by two by two tensor of all the
+
+561
+00:40:02,730 --> 00:40:07,205
+现在的可能性，但其中一些是
+possibilities now but some of those are
+
+562
+00:40:07,210 --> 00:40:09,514
+将有概率为零联合
+going to have probability zero the joint
+
+563
+00:40:09,519 --> 00:40:12,304
+如果我把硬币粘在一起的可能性
+probability if I've glued coin one to
+
+564
+00:40:12,309 --> 00:40:15,415
+然后硬币三的概率
+coin three then the probability of
+
+565
+00:40:15,420 --> 00:40:20,044
+在一个共同的头看到的一切
+jointly seeing heads on one whatever on
+
+566
+00:40:20,049 --> 00:40:24,875
+三个上面的两个尾巴将为零
+two tails on three will be zero right
+
+567
+00:40:24,880 --> 00:40:28,145
+因为如果我坚持下去就不会发生这种情况
+because that can't happen if I've glued
+
+568
+00:40:28,150 --> 00:40:30,304
+硬币一和三，所以我会有八个
+coins one and three so I'll have eight
+
+569
+00:40:30,309 --> 00:40:35,165
+条目在这里的，这是
+entries in here in the this is the
+
+570
+00:40:35,170 --> 00:40:40,324
+脱胶情况，然后我可以有
+unglued case and then I could have the
+
+571
+00:40:40,329 --> 00:40:46,205
+两个硬币是胶水的情况和我一样
+case where two coins are glue and as I
+
+572
+00:40:46,210 --> 00:40:51,034
+说我认为我会有四个
+say I think the the I would have four
+
+573
+00:40:51,039 --> 00:40:57,675
+我可能有四分之一的四分之一
+I'd have one quarter four times probably
+
+574
+00:40:57,680 --> 00:41:03,824
+然后，如果我有任何备用胶水，我会胶水
+and then if I had any spare glue I glue
+
+575
+00:41:03,829 --> 00:41:09,975
+所有三个硬币我翻转卡住了
+all three coins I flip that stuck
+
+576
+00:41:09,980 --> 00:41:14,024
+在一起，我永远不会得到头脑
+together thing and I never get heads
+
+577
+00:41:14,029 --> 00:41:17,354
+尾巴只有我的可能性
+tails heads right only possibilities I
+
+578
+00:41:17,359 --> 00:41:20,024
+让我们的脑袋头顶和尾巴
+get our heads heads heads and tails
+
+579
+00:41:20,029 --> 00:41:21,765
+尾巴因为它们被胶合而尾巴
+tails tails because they're glued
+
+580
+00:41:21,770 --> 00:41:25,695
+那么情况会怎样
+together so what would be the situation
+
+581
+00:41:25,700 --> 00:41:32,205
+三个硬币哦，将是什么
+for three coins ooh what will be the
+
+582
+00:41:32,210 --> 00:41:36,225
+矩阵中关节中的条目
+entries in the joint in the matrix of
+
+583
+00:41:36,230 --> 00:41:38,145
+联合概率将是什么
+joint probabilities what will be the
+
+584
+00:41:38,150 --> 00:41:40,215
+联合概率所以他们的联合
+joint probabilities so they joint the
+
+585
+00:41:40,220 --> 00:41:42,255
+头部头部的概率我已经
+probability of heads heads heads I've
+
+586
+00:41:42,260 --> 00:41:46,564
+从这三个人看到的头将是1/2
+seen heads from all three will be 1/2
+
+587
+00:41:46,569 --> 00:41:50,354
+1/2因为我正在翻转这种沉重的混合物
+1/2 because I'm flipping this heavy mix
+
+588
+00:41:50,359 --> 00:41:58,475
+三个硬币在一起我得1/2两次
+of three coins together I get 1/2 twice
+
+589
+00:41:58,480 --> 00:42:04,024
+好吧，其实我这是一个好人
+okay actually I this is a good
+
+590
+00:42:04,029 --> 00:42:07,245
+以某种方式介绍张量因素
+introduction to tensors in a way because
+
+591
+00:42:07,250 --> 00:42:09,395
+理解的第一步
+the the first step in understanding
+
+592
+00:42:09,400 --> 00:42:14,435
+张量是考虑三向矩阵
+tensors is to think of 3-way matrices
+
+593
+00:42:14,440 --> 00:42:18,314
+想想你了解我们的三方事物
+think of 3-way things what you know we
+
+594
+00:42:18,319 --> 00:42:21,255
+只是没有那样做，现在我们有
+just haven't done that and now we have
+
+595
+00:42:21,260 --> 00:42:24,195
+这样做，当然还有在哪里或
+to do it and of course for where or
+
+596
+00:42:24,200 --> 00:42:30,435
+无论如何，张量现在被理解为好
+anyway tensors are now understood okay
+
+597
+00:42:30,440 --> 00:42:34,425
+所以这些是非常的张量
+so this these are tensors with very
+
+598
+00:42:34,430 --> 00:42:38,205
+特别简单的事情好吧现在我有
+special simple things okay so now I have
+
+599
+00:42:38,210 --> 00:42:43,574
+说什么是协方差矩阵但是
+to say what is the covariance matrix but
+
+600
+00:42:43,579 --> 00:42:46,804
+什么是协方差矩阵，所以现在我
+what's the covariance matrix so now I'm
+
+601
+00:42:46,809 --> 00:42:48,915
+准备好了，我会把它放在这里
+ready for that and I'll put it here
+
+602
+00:42:48,920 --> 00:42:55,045
+那是最后一个话题
+that's the final topic
+
+603
+00:42:55,050 --> 00:43:04,805
+所以我说的是协方差矩阵
+so the covariance matrix so I'm saying
+
+604
+00:43:04,810 --> 00:43:08,495
+矩阵，因为我只是要有
+matrix because I'm just gonna have yeah
+
+605
+00:43:08,500 --> 00:43:11,645
+协方差矩阵是的，它会去
+the covariance matrix yeah it's going to
+
+606
+00:43:11,650 --> 00:43:20,825
+是两个或四个两个硬币所以它是
+be two by two or four two coins so it is
+
+607
+00:43:20,830 --> 00:43:25,864
+它将是一个三个硬币的矩阵
+a matrix for three coins it will be
+
+608
+00:43:25,869 --> 00:43:30,005
+三乘三，但它是一个矩阵没关系
+three by three but it is a matrix okay
+
+609
+00:43:30,010 --> 00:43:33,035
+那么它是如何定义的，我是什么
+so what how is it defined and what am I
+
+610
+00:43:33,040 --> 00:43:34,864
+打电话给我，我想我会称之为V.
+going to call it I think I'll call it V
+
+611
+00:43:34,869 --> 00:43:39,364
+四个因为它真的是关键的想法
+for four because it really the key ideas
+
+612
+00:43:39,369 --> 00:43:44,495
+方差协方差告诉我们
+variance covariance is is telling us
+
+613
+00:43:44,500 --> 00:43:48,745
+我们也对此感兴趣
+that we're also interested in the
+
+614
+00:43:48,750 --> 00:43:54,305
+委员会联合结果x和ay
+committee the joint outcome an x and a y
+
+615
+00:43:54,310 --> 00:43:59,765
+好的，所以这是一个方差，所以我
+okay so what so it's a variance so I'm
+
+616
+00:43:59,770 --> 00:44:05,165
+我将加入所有可能的我和
+going to add up over all possible I and
+
+617
+00:44:05,170 --> 00:44:12,685
+J对所有可能的结果抱歉
+J over all sorry all possible outcomes
+
+618
+00:44:12,690 --> 00:44:24,455
+是的，所有可能的XI和YJ，所以我
+yeah all possible X I and YJ so I'm
+
+619
+00:44:24,460 --> 00:44:27,005
+在这两个实验中运行六个
+running the six these two experiments at
+
+620
+00:44:27,010 --> 00:44:29,795
+从实验之一，同时
+the same time from experiment one the
+
+621
+00:44:29,800 --> 00:44:32,345
+输出和X从实验到
+outputs and X from experiment to the
+
+622
+00:44:32,350 --> 00:44:40,685
+Y的输出那么PIJ是什么
+outputs of Y then what is P I J what
+
+623
+00:44:40,690 --> 00:44:45,215
+这个符号意味着那就是那个
+does that symbol mean that's that's the
+
+624
+00:44:45,220 --> 00:44:50,375
+在我们的2x2矩阵中，像那个或那个人
+guy in our 2x2 matrix like that one or
+
+625
+00:44:50,380 --> 00:44:51,625
+一个
+that one
+
+626
+00:44:51,630 --> 00:44:56,614
+根据胶合或不那么粘
+depending on the gluing or not gluing so
+
+627
+00:44:56,619 --> 00:44:59,945
+PIJ这是让我说出这是什么
+P IJ this is let me say what it is this
+
+628
+00:44:59,950 --> 00:45:04,815
+这是X的概率
+is this probability that X
+
+629
+00:45:04,820 --> 00:45:10,035
+是XI和第二个输出
+is X I and the second output that this
+
+630
+00:45:10,040 --> 00:45:15,495
+是YJ，让我给我一个
+is YJ and let me give me a second
+
+631
+00:45:15,500 --> 00:45:17,955
+我要记住的例子
+example to keep in mind suppose I'm
+
+632
+00:45:17,960 --> 00:45:22,155
+看着年龄和身高，所以假设X.
+looking at age and height so suppose X
+
+633
+00:45:22,160 --> 00:45:27,045
+是样本的年龄
+is the age of the of the sample the
+
+634
+00:45:27,050 --> 00:45:34,155
+人和Y是我想要的高度
+person and Y is the height then I want
+
+635
+00:45:34,160 --> 00:45:37,905
+我想知道那个分数有多少
+to I want to know so what fraction have
+
+636
+00:45:37,910 --> 00:45:40,485
+一定的年龄和一定的高度是
+a certain age and a certain height it's
+
+637
+00:45:40,490 --> 00:45:42,885
+每一个我都在看着每一对年龄
+every I I'm looking at every pair age
+
+638
+00:45:42,890 --> 00:45:47,685
+身高11岁，身高4英尺
+and height age 11 height four feet age
+
+639
+00:45:47,690 --> 00:45:51,855
+12身高5英尺11岁身高4
+12 height five feet age 11 height four
+
+640
+00:45:51,860 --> 00:45:56,115
+每个组合五英尺，所以pIJ是
+five feet each combination so pIJ is the
+
+641
+00:45:56,120 --> 00:45:58,665
+这些都会发生的概率
+probability that these will both happen
+
+642
+00:45:58,670 --> 00:46:07,905
+既如此有什么事情，你只是我我会
+both so what could you just I I'm gonna
+
+643
+00:46:07,910 --> 00:46:11,775
+在这里添加更多但是那个联合
+add more to it here but but that joint
+
+644
+00:46:11,780 --> 00:46:14,625
+概率非常重要，所以我
+probability is really important so I'm
+
+645
+00:46:14,630 --> 00:46:17,295
+会问你更多关于那个假设的问题
+gonna ask you more about that suppose
+
+646
+00:46:17,300 --> 00:46:21,045
+我把这些PIJ和我添加
+that I take these P I J's and that I add
+
+647
+00:46:21,050 --> 00:46:27,225
+在其他情况下，P1J加上P2J加上P3J.
+up P 1 J plus P 2 J plus P 3 J in other
+
+648
+00:46:27,230 --> 00:46:32,955
+我把pIJx'总结给我，所以我就是这样
+words I sum the pIJ x' over I so I'm
+
+649
+00:46:32,960 --> 00:46:41,235
+看着我的矩阵行的行我这样
+looking at a row row I of my matrix so
+
+650
+00:46:41,240 --> 00:46:45,045
+刚才看到的让我问这个问题
+what just saw let me ask the question if
+
+651
+00:46:45,050 --> 00:46:49,685
+我也许我必须把它放在其他地方
+I maybe I have to put it somewhere else
+
+652
+00:46:49,690 --> 00:46:56,655
+什么是什么意味着什么
+what is what what means what's the
+
+653
+00:46:56,660 --> 00:47:05,195
+PIJ总和在眼睛上的意义
+meaning of the sum of P IJ over the eyes
+
+654
+00:47:05,200 --> 00:47:10,395
+这个数量是什么样的
+what does that quantity look like so
+
+655
+00:47:10,400 --> 00:47:13,155
+这是一个概率圣战是
+that's a probability pIJ is the
+
+656
+00:47:13,160 --> 00:47:15,705
+得到某个我的概率
+probability of getting a certain I on a
+
+657
+00:47:15,710 --> 00:47:18,575
+某些J，但现在我包括了
+certain J but now I'm including
+
+658
+00:47:18,580 --> 00:47:21,865
+所有的眼睛，所以我在那里看到了什么
+all the eyes so what am i seeing there
+
+659
+00:47:21,870 --> 00:47:24,095
+什么PJ
+what PJ
+
+660
+00:47:24,100 --> 00:47:31,145
+谢谢PJ，这就是他的J
+thanks PJ this is he J that's the
+
+661
+00:47:31,150 --> 00:47:34,535
+在第二个看J的概率
+probability of seeing J in the second
+
+662
+00:47:34,540 --> 00:47:36,905
+伙计，因为如果我，我必须看到一些东西
+guy because I had to see something if I
+
+663
+00:47:36,910 --> 00:47:40,055
+在第二个看到J我是被允许的
+see J in the second one I I'm allowed to
+
+664
+00:47:40,060 --> 00:47:42,335
+在第一个看到任何东西但是
+see anything here in the first one but
+
+665
+00:47:42,340 --> 00:47:44,885
+我正在添加所有这些，所以这就是
+I'm adding those all up so that's the
+
+666
+00:47:44,890 --> 00:47:45,335
+点
+point
+
+667
+00:47:45,340 --> 00:47:48,695
+这些会被称为在边缘人
+those would be called the marginals in
+
+668
+00:47:48,700 --> 00:47:53,345
+我的矩阵我会加在一起
+my matrices I would be adding up along a
+
+669
+00:47:53,350 --> 00:47:58,625
+行或将上下柱那些
+row or adding up down a column those are
+
+670
+00:47:58,630 --> 00:48:04,385
+称联合的边缘
+called the marginal of the joint
+
+671
+00:48:04,390 --> 00:48:07,655
+概率因此边际将是
+probabilities so the marginals would be
+
+672
+00:48:07,660 --> 00:48:11,135
+个人概率PI和PJ
+the individual probabilities P I and PJ
+
+673
+00:48:11,140 --> 00:48:15,785
+在进行两次实验的情况下
+in the case of two experiments going on
+
+674
+00:48:15,790 --> 00:48:18,965
+与此同时耶就像新
+at the same time yeah just like new
+
+675
+00:48:18,970 --> 00:48:22,175
+今天的想法一切都已经有点
+ideas everything today has been sort of
+
+676
+00:48:22,180 --> 00:48:25,055
+直截了当但不一样好
+straightforward but it's different okay
+
+677
+00:48:25,060 --> 00:48:28,265
+现在我要完成定义
+now I'm going to complete the definition
+
+678
+00:48:28,270 --> 00:48:31,775
+这个协方差矩阵所以它正在发生
+of this covariance matrix so it's going
+
+679
+00:48:31,780 --> 00:48:38,645
+是的，我想要一个正方形，所以它
+to be it I want to have a square so it's
+
+680
+00:48:38,650 --> 00:48:44,285
+将来，它应该是这样的
+going to be and and it should be this is
+
+681
+00:48:44,290 --> 00:48:48,155
+漂亮x和x的平均值意味着一个我
+pretty X and the mean of x mean one I
+
+682
+00:48:48,160 --> 00:48:53,645
+可以把它称为x和y的平均值
+could call it a mean of x and y the
+
+683
+00:48:53,650 --> 00:48:58,205
+距Y平均值的距离
+distance from the mean of Y times so
+
+684
+00:48:58,210 --> 00:49:01,235
+这将是列时间相同的行
+it's going to be column times a row same
+
+685
+00:49:01,240 --> 00:49:06,605
+X减XY减去均值的平均值
+X minus the mean of X Y minus the mean
+
+686
+00:49:06,610 --> 00:49:19,305
+YXIYJ
+of Y X I Y J
+
+687
+00:49:19,310 --> 00:49:26,065
+所以你能不能看看这个公式
+so can can you look at this formula so
+
+688
+00:49:26,070 --> 00:49:29,245
+这是两个两个实验两个
+this is with two two experiments two
+
+689
+00:49:29,250 --> 00:49:34,725
+实验两个硬币来实验我
+experiments two coins to experiment I
+
+690
+00:49:34,730 --> 00:49:37,645
+得到一个2乘2的矩阵，每个人都看到了
+get a 2 by 2 matrix everybody sees that
+
+691
+00:49:37,650 --> 00:49:43,095
+列乘以2乘2矩阵和
+a column times a row 2 by 2 matrix and
+
+692
+00:49:43,100 --> 00:49:45,955
+让我们只看到这将是一个一个
+let's just see what would be the one one
+
+693
+00:49:45,960 --> 00:49:49,465
+在那个矩阵中输入将会是什么
+entry in that matrix what what will in
+
+694
+00:49:49,470 --> 00:49:53,065
+这是协方差矩阵，那是什么
+this is the covariance matrix so what is
+
+695
+00:49:53,070 --> 00:49:55,735
+在那个矩阵中的一个条目所以
+the one one entry in that matrix so the
+
+696
+00:49:55,740 --> 00:49:57,835
+一个条目来自那个时代
+one one entry is coming from that times
+
+697
+00:49:57,840 --> 00:50:00,985
+这是事情的平方时间
+that which is that thing squared times
+
+698
+00:50:00,990 --> 00:50:04,675
+所有PIJ的这些加起来你是什么
+all the P IJ's add them up what do you
+
+699
+00:50:04,680 --> 00:50:08,605
+我认为我得到了变化
+think I get for that I get the variance
+
+700
+00:50:08,610 --> 00:50:13,675
+X实验的标准
+of the X experiment the standard
+
+701
+00:50:13,680 --> 00:50:18,025
+因此VI有X实验的方差
+variance of the X experiment so V I have
+
+702
+00:50:18,030 --> 00:50:22,525
+告诉你V现在有什么V这个
+to tell you what V is now there V this
+
+703
+00:50:22,530 --> 00:50:27,835
+是V2乘2矩阵在这里我得到了
+is V 2 by 2 matrix up here I get the
+
+704
+00:50:27,840 --> 00:50:31,015
+X实验的方差我该怎么做
+variance of the X experiment what do I
+
+705
+00:50:31,020 --> 00:50:34,455
+在这里得到Y的方差
+get down here the variance of the Y
+
+706
+00:50:34,460 --> 00:50:37,705
+单独进行实验，因为它是明智的x
+experiment by itself because it's wise x
+
+707
+00:50:37,710 --> 00:50:40,765
+明智的，让我这样进入
+wise that give me the to to entry so
+
+708
+00:50:40,770 --> 00:50:44,575
+这只是SigmaY平方SigmaY.
+this is just Sigma Y squared Sigma Y
+
+709
+00:50:44,580 --> 00:50:51,775
+方可以，但新奇是1/2和
+square ok but the novelty is the 1/2 and
+
+710
+00:50:51,780 --> 00:50:54,385
+它是对称的，所以它是对称的
+it'll be symmetric so it's a symmetric
+
+711
+00:50:54,390 --> 00:50:58,345
+矩阵所以这是V转置我只是我们
+matrix so this is V transpose I just we
+
+712
+00:50:58,350 --> 00:51:02,305
+必须看到这里，所以我已经IJ倍了
+have to see here so I've p IJ times the
+
+713
+00:51:02,310 --> 00:51:07,075
+这家伙的距离超过这个家伙
+distance of this guy times this guy
+
+714
+00:51:07,080 --> 00:51:09,825
+这就是将要出现的内容
+that's what's going to show up in the
+
+715
+00:51:09,830 --> 00:51:15,595
+1/2位置它将在第1行中
+1/2 position it'll be in row 1 that'll
+
+716
+00:51:15,600 --> 00:51:19,425
+在第2列中，它就是X
+be in column 2 it's the X it's the
+
+717
+00:51:19,430 --> 00:51:23,005
+距离那么那么会是什么的
+distances so so what will it be in the
+
+718
+00:51:23,010 --> 00:51:28,215
+脱胶硬币独立硬币的情况
+case of unglued coins independent coins
+
+719
+00:51:28,220 --> 00:51:31,435
+0我的意思是我只是感觉像我一样
+0 I mean I was just feeling like 0 I
+
+720
+00:51:31,440 --> 00:51:32,875
+还没有完成计算
+haven't done the computation
+
+721
+00:51:32,880 --> 00:51:35,935
+但我知道，当我独立时
+but I know that when I have independent
+
+722
+00:51:35,940 --> 00:51:38,844
+实验那么这其中的协方差
+experiments then this covariance which
+
+723
+00:51:38,849 --> 00:51:42,084
+每个人都会写作SigmaXY和
+everybody would write as Sigma X Y and
+
+724
+00:51:42,089 --> 00:51:45,264
+在这里它是对称的Sigma
+it's the same here it's symmetric Sigma
+
+725
+00:51:45,269 --> 00:51:48,504
+YX如果你喜欢那些那些
+YX if you like so that those those
+
+726
+00:51:48,509 --> 00:51:53,064
+下标告诉我总和
+subscripts are telling me that the sum
+
+727
+00:51:53,069 --> 00:51:56,635
+豌豆联合概率次数
+of the peas joint probabilities times
+
+728
+00:51:56,640 --> 00:51:59,244
+X从它的距离意味着
+the distance of X from its mean the
+
+729
+00:51:59,249 --> 00:52:01,945
+Y与其平均值的距离加起来
+distance of Y from its mean added up
+
+730
+00:52:01,950 --> 00:52:05,334
+所有可能性都是如此
+over all the possibilities so the case
+
+731
+00:52:05,339 --> 00:52:09,354
+在独立的情况下脱胶硬币
+of unglued coins in case of independent
+
+732
+00:52:09,359 --> 00:52:14,784
+在那种情况下那些是0可能是
+ones in that case those are 0 may be
+
+733
+00:52:14,789 --> 00:52:17,484
+值得写出你想的
+worth just writing that out you would
+
+734
+00:52:17,489 --> 00:52:22,014
+得到0所以你有一个对角矩阵
+get 0 so you have a diagonal matrix the
+
+735
+00:52:22,019 --> 00:52:23,814
+对角矩阵就是这样
+diagonal matrix is just the very
+
+736
+00:52:23,819 --> 00:52:25,794
+单独的差异，因为这就是全部
+separate variances because that's all
+
+737
+00:52:25,799 --> 00:52:27,984
+两个独立的实验是
+the two independent experiments are
+
+738
+00:52:27,989 --> 00:52:30,804
+独立，所以你真的可以期待
+independent so all you can really expect
+
+739
+00:52:30,809 --> 00:52:33,984
+信息是Sigmax平方和
+to information is Sigma x squared and
+
+740
+00:52:33,989 --> 00:52:37,104
+西格玛Y平方，但如果这两个硬币
+Sigma Y squared but if the two coins are
+
+741
+00:52:37,109 --> 00:52:42,804
+粘在一起然后如果两个
+glued together then what if the two
+
+742
+00:52:42,809 --> 00:52:45,175
+硬币粘在一起很好让我
+coins are glued together well let me
+
+743
+00:52:45,180 --> 00:52:46,945
+只是说因为时间到了
+just say cuz time is up
+
+744
+00:52:46,950 --> 00:52:50,274
+如果这两个矩阵将是单数
+this matrix will be singular if the two
+
+745
+00:52:50,279 --> 00:52:52,665
+硬币粘在一起，这将是
+coins were glued together this would be
+
+746
+00:52:52,670 --> 00:52:56,244
+这里的决定因素是0
+the determinant would be 0 here the
+
+747
+00:52:56,249 --> 00:53:01,784
+胶合情况下的SigmaXY将是
+Sigma XY in the glued case would be
+
+748
+00:53:01,789 --> 00:53:04,945
+平方将与西格玛相同
+squared would would be the same as Sigma
+
+749
+00:53:04,950 --> 00:53:10,974
+x平方西格玛Y平方实际上我们是
+x squared Sigma Y square actually we're
+
+750
+00:53:10,979 --> 00:53:13,375
+可能得到所有这一个季度
+probably getting all these 1 quarters
+
+751
+00:53:13,380 --> 00:53:17,574
+并且那将是有道理的
+and and that would make sense so the the
+
+752
+00:53:17,579 --> 00:53:22,165
+如此，我们就这样结束了
+case of a so we just end with this
+
+753
+00:53:22,170 --> 00:53:27,504
+声明这个矩阵是积极的
+statement this matrix is positive
+
+754
+00:53:27,509 --> 00:53:30,895
+半定的总是正半
+semi-definite always positive semi
+
+755
+00:53:30,900 --> 00:53:33,205
+确定总是因为它是专栏
+definite always because it's column
+
+756
+00:53:33,210 --> 00:53:36,804
+时间行我们知道这是正半
+times row we know that's positive semi
+
+757
+00:53:36,809 --> 00:53:39,625
+明确的，它乘以数字
+definite and it's multiplied by numbers
+
+758
+00:53:39,630 --> 00:53:42,024
+更大等于0所以它是一个组合
+greater equals 0 so it's a combination
+
+759
+00:53:42,029 --> 00:53:46,044
+Rank1正半定的所以它是
+of Rank 1 positive semi definite so it's
+
+760
+00:53:46,049 --> 00:53:46,675
+正
+positive
+
+761
+00:53:46,680 --> 00:53:50,485
+它是半定的或肯定的
+semi-definite or positive definite it's
+
+762
+00:53:50,490 --> 00:53:52,875
+肯定是肯定的
+certainly positive definite in the
+
+763
+00:53:52,880 --> 00:53:57,375
+独立的情况，它的对角线和
+independent case when it's diagonal and
+
+764
+00:53:57,380 --> 00:53:59,995
+硬币完全依赖的情况
+totally dependent case when the coins
+
+765
+00:54:00,000 --> 00:54:03,085
+完全粘在一起即会
+are completely stuck together that will
+
+766
+00:54:03,090 --> 00:54:07,215
+当这些是半确定的情况
+be the semi definite case when these
+
+767
+00:54:07,220 --> 00:54:10,185
+条目实际上都是相同的
+entries would all be the same actually
+
+768
+00:54:10,190 --> 00:54:14,695
+所以这是第一次看协方差
+so so that's a first look at covariance
+
+769
+00:54:14,700 --> 00:54:17,455
+矩阵是第一个引入张量的矩阵
+matrices a first it brought in tensors
+
+770
+00:54:17,460 --> 00:54:19,765
+它带来了联合概率它
+it brought in joint probabilities it
+
+771
+00:54:19,770 --> 00:54:22,045
+引入列时间行
+brought in column times row
+
+772
+00:54:22,050 --> 00:54:26,065
+它保持了我们认可的对称带
+it kept symmetry band we recognized
+
+773
+00:54:26,070 --> 00:54:29,095
+正定或正半
+positive definite or positive semi
+
+774
+00:54:29,100 --> 00:54:29,755
+定
+definite
+
+775
+00:54:29,760 --> 00:54:31,765
+所以在部分硬币之间
+so in between coins that were partly
+
+776
+00:54:31,770 --> 00:54:34,405
+胶合部分独立但不是
+glued partly independent but not
+
+777
+00:54:34,410 --> 00:54:37,435
+然后完全独立的实验
+completely independent experiments then
+
+778
+00:54:37,440 --> 00:54:39,895
+这个数字会更小
+this number would be smaller the
+
+779
+00:54:39,900 --> 00:54:43,375
+决定因素将是这不会
+determinant would be this wouldn't be
+
+780
+00:54:43,380 --> 00:54:45,385
+零，但它会小于这些
+zero but it would be smaller than these
+
+781
+00:54:45,390 --> 00:54:47,785
+数字是的没关系
+numbers yeah okay
+
+782
+00:54:47,790 --> 00:54:51,865
+我们跑了四分钟就过去了
+we're run four minutes over you're very
+
+783
+00:54:51,870 --> 00:54:55,225
+善意的说有一个美好的休息
+kind to say so have a wonderful break
+
+784
+00:54:55,230 --> 00:54:59,270
+and I'll see you a week from Monday good
+
+785
+00:54:55,230 --> 00:55:02,000
+我会从星期一见到你好一周
+
+786
+00:54:59,280 --> 00:55:02,000
+谢谢
+thanks
+

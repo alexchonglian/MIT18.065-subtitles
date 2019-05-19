@@ -1,0 +1,2488 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:22,465
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:22,470 --> 00:00:28,325
+好吧现在聚集图表所以这个
+okay now clustering for graphs so this
+
+10
+00:00:28,330 --> 00:00:31,655
+这是一个重要的话题之一
+is a topic this is one of the important
+
+11
+00:00:31,660 --> 00:00:34,985
+你可以尝试用图表做的事情
+things you can try to do with a graph so
+
+12
+00:00:34,990 --> 00:00:45,215
+你有一个大图，让我有种
+you have a large graph let me kind of
+
+13
+00:00:45,220 --> 00:00:55,385
+将它分成两个群可以，所以你
+divide it into two clusters okay so you
+
+14
+00:00:55,390 --> 00:00:58,235
+得到一个巨大的图形，然后将工作就是
+get a giant graph and then the job is to
+
+15
+00:00:58,240 --> 00:01:00,395
+从中得出一些意义
+make some sense out of it and one
+
+16
+00:01:00,400 --> 00:01:03,365
+可能的步骤是能够细分
+possible step is to be able to subdivide
+
+17
+00:01:03,370 --> 00:01:11,254
+如果我看到这里有一个切口
+it if as I see here there's a cut
+
+18
+00:01:11,259 --> 00:01:15,305
+在两个相当相等的部分之间
+between two reasonably equal parts of
+
+19
+00:01:15,310 --> 00:01:17,735
+图表合理地相同
+the graph reasonably reasonably same
+
+20
+00:01:17,740 --> 00:01:21,935
+大小，因此该图表可以
+size and therefore that graph could be
+
+21
+00:01:21,940 --> 00:01:25,625
+两部分研究所以问题是
+studied in two pieces so the question is
+
+22
+00:01:25,630 --> 00:01:29,365
+你如何通过a找到这样的切割
+how do you find such a cut by a by a
+
+23
+00:01:29,370 --> 00:01:32,075
+算法什么是一个算法，将
+algorithm what's an algorithm that would
+
+24
+00:01:32,080 --> 00:01:35,495
+发现这样切，所以这是一个问题
+find that cut so the so that's a problem
+
+25
+00:01:35,500 --> 00:01:38,195
+让我们说我们正在寻找两个四个
+let's say we're looking for two four
+
+26
+00:01:38,200 --> 00:01:46,835
+四个两个集群我们可以寻找更多
+four two clusters we could look for more
+
+27
+00:01:46,840 --> 00:01:48,845
+集群，但让我们说我们想看
+clusters but let's say we want to look
+
+28
+00:01:48,850 --> 00:01:51,275
+对于两个集群，我们在尝试什么
+for two clusters so what are we trying
+
+29
+00:01:51,280 --> 00:01:55,805
+我们要尽量减少这个
+to do we're trying to minimize so this
+
+30
+00:01:55,810 --> 00:02:06,175
+是问题，所以我们寻找发现
+is the problem then so we look for find
+
+31
+00:02:06,180 --> 00:02:11,555
+位置x和y让我们说两个
+positions x and y let's say two which
+
+32
+00:02:11,560 --> 00:02:14,725
+将成为中心，可以这么说
+will be the center's so to speak of the
+
+33
+00:02:14,730 --> 00:02:20,305
+而且真的只是这些点是啊
+and really it's just these points yeah
+
+34
+00:02:20,310 --> 00:02:24,484
+这样就可以得到数据了
+that so that the data is the points and
+
+35
+00:02:24,489 --> 00:02:26,645
+边缘一直是节点和
+the edges as always the nodes and the
+
+36
+00:02:26,650 --> 00:02:29,285
+边虽然所以问题是找到x
+edges though so the problem is to find x
+
+37
+00:02:29,290 --> 00:02:35,895
+和y以便最小化
+and y so that to minimize
+
+38
+00:02:35,900 --> 00:02:44,264
+所以这是AI与X点的距离
+so it's a distance of points AI from X
+
+39
+00:02:44,269 --> 00:02:48,234
+也许应该强调我们处于高位
+maybe should emphasize we're in high
+
+40
+00:02:48,239 --> 00:02:53,605
+尺寸加上其他的距离
+dimensions plus the distance of other
+
+41
+00:02:53,610 --> 00:02:57,165
+因此AI将成为这些点
+points so the AI will be these points
+
+42
+00:02:57,170 --> 00:03:02,035
+这些节点和bi将是这些
+these nodes and the bi will be these
+
+43
+00:03:02,040 --> 00:03:08,604
+节点加上BI减去y的平方和
+nodes plus the sum of BI minus y squared
+
+44
+00:03:08,609 --> 00:03:13,824
+你这里了解规则
+and you understand the rule here that
+
+45
+00:03:13,829 --> 00:03:21,014
+蜜蜂的A联盟
+the together the the A's Union the bees
+
+46
+00:03:21,019 --> 00:03:26,574
+给我所有节点，我想是
+give me all nodes and I guess to be
+
+47
+00:03:26,579 --> 00:03:34,645
+完成a的a与a的交叉
+complete the a's the a's intersect the
+
+48
+00:03:34,650 --> 00:03:39,895
+蜜蜂是空的只是你期望的
+bees is empty just just what you expect
+
+49
+00:03:39,900 --> 00:03:43,044
+我把A和B分成了
+I'm dividing the A's and the B's into
+
+50
+00:03:43,049 --> 00:03:47,634
+两组，我正在选择x和ay
+two groups and I'm picking an x and a y
+
+51
+00:03:47,639 --> 00:03:50,695
+因此，这些群体的中心
+sort of at the center of those groups so
+
+52
+00:03:50,700 --> 00:03:56,365
+这是最低限度，所以我想
+that that is a minimum so I want to
+
+53
+00:03:56,370 --> 00:04:01,435
+最小化，也许我想
+minimize and also I probably want to
+
+54
+00:04:01,440 --> 00:04:04,704
+施加一些条件的数量
+impose some condition that the number of
+
+55
+00:04:04,709 --> 00:04:07,225
+A的是相当接近的数
+A's is reasonably close to the number of
+
+56
+00:04:07,230 --> 00:04:11,574
+蜜蜂换句话说，我不想只是
+bees in other words I don't want just
+
+57
+00:04:11,579 --> 00:04:14,335
+那将是一个和所有其余的
+that to be the a and all the rest to be
+
+58
+00:04:14,340 --> 00:04:16,675
+蜜蜂不会是一个
+the bees that would be not a
+
+59
+00:04:16,680 --> 00:04:21,805
+令人满意的聚类我正在寻找
+satisfactory clustering I'm looking for
+
+60
+00:04:21,810 --> 00:04:26,515
+群集是大小合适的群集
+clusters that are good sized clusters so
+
+61
+00:04:26,520 --> 00:04:30,384
+最小化，所以有很多
+minimize that okay so there are a lot of
+
+62
+00:04:30,389 --> 00:04:35,444
+有些不同的算法
+different algorithms to do it some are
+
+63
+00:04:35,449 --> 00:04:40,275
+更直接地攻击这个问题
+more directly attacking this problem
+
+64
+00:04:40,280 --> 00:04:44,904
+其他人使用我们关联的矩阵
+others use matrices that we associate
+
+65
+00:04:44,909 --> 00:04:47,455
+用图，从而让我告诉你
+with the graph so let me tell you about
+
+66
+00:04:47,460 --> 00:04:48,404
+两个或三个
+two or three
+
+67
+00:04:48,409 --> 00:04:50,355
+那些算法和你，如果你已经
+those algorithms and and you if you've
+
+68
+00:04:50,360 --> 00:04:53,355
+看过本研究有一个图表课程
+seen studied had a course in graph
+
+69
+00:04:53,360 --> 00:04:55,424
+理论你可能已经看过了
+theory this you may already have seen
+
+70
+00:04:55,429 --> 00:04:59,704
+这个问题首先是问题
+this problem first question would be
+
+71
+00:04:59,709 --> 00:05:03,254
+假设我认为这些是A和
+suppose I decide these are the A's and
+
+72
+00:05:03,259 --> 00:05:05,084
+那些是蜜蜂或其他一些
+those are the bees or some other
+
+73
+00:05:05,089 --> 00:05:07,334
+决定可能是其他一些
+decision yeah probably some other
+
+74
+00:05:07,339 --> 00:05:09,704
+决定我不想解决
+decisions I don't want to solve the
+
+75
+00:05:09,709 --> 00:05:11,474
+我开始之前的问题
+problem before I even start
+
+76
+00:05:11,479 --> 00:05:15,164
+所以一些A和一些B会是什么
+so some A's and some B's what would be
+
+77
+00:05:15,169 --> 00:05:17,174
+你曾经是X的最佳选择
+the best choice of the X once you've
+
+78
+00:05:17,179 --> 00:05:19,694
+决定A和什么是
+decided on the A's and what would be the
+
+79
+00:05:19,699 --> 00:05:22,244
+在Y的最佳选择，一旦你决定
+best choice of the Y once you've decided
+
+80
+00:05:22,249 --> 00:05:26,654
+在B上，以便我们可以回答这个问题
+on the B's so so that we can answer that
+
+81
+00:05:26,659 --> 00:05:31,574
+问我们是否知道这两个问题
+question just if we knew the the two
+
+82
+00:05:31,579 --> 00:05:36,374
+小组我们可以看到他们应该在哪里
+groups we could see where they should be
+
+83
+00:05:36,379 --> 00:05:38,804
+以第一组为中心
+centered with the first group centered
+
+84
+00:05:38,809 --> 00:05:41,954
+在X，第二组以Y和为中心
+at X the second group centered at Y and
+
+85
+00:05:41,959 --> 00:05:47,764
+什么是我的中心让我们说
+what is centering me so let's just say
+
+86
+00:05:47,769 --> 00:05:57,884
+所以我想我在这里说的是这样的
+so I think what I'm saying here is so
+
+87
+00:05:57,889 --> 00:06:04,274
+考虑到一个是A的，这是一个一上来
+given the a's the a's this is a one up
+
+88
+00:06:04,279 --> 00:06:11,855
+说AK什么是最好的就是最好的
+to say a k what is the best is the best
+
+89
+00:06:11,860 --> 00:06:19,184
+x只是为了使那部分正确而且
+x to just to make that part right and
+
+90
+00:06:19,189 --> 00:06:21,004
+答案是你知道吗？
+the answer is do do you know
+
+91
+00:06:21,009 --> 00:06:24,704
+几何上X应该在这里X是
+geometrically what X should be here X is
+
+92
+00:06:24,709 --> 00:06:28,514
+所以，如果我有一堆积分和
+the so if I have a bunch of points and
+
+93
+00:06:28,519 --> 00:06:30,795
+我正在寻找中间的那些
+I'm looking for the middle of those
+
+94
+00:06:30,800 --> 00:06:35,564
+将X点指向一个好的X点
+points the point X a good point X to say
+
+95
+00:06:35,569 --> 00:06:37,545
+好吧，这是它的中间部分
+okay that's the middle it'll make the
+
+96
+00:06:37,550 --> 00:06:41,204
+我认为平方距离的总和
+sum of the distances I think squared I
+
+97
+00:06:41,209 --> 00:06:43,154
+希望我是对的
+hope I'm right about that
+
+98
+00:06:43,159 --> 00:06:50,584
+至少X是什么是什么
+a minimum what's the what is X it is the
+
+99
+00:06:50,589 --> 00:06:54,554
+质心质心是X字
+the centroid centroid is the word X is
+
+100
+00:06:54,559 --> 00:06:58,875
+质心
+the centroids
+
+101
+00:06:58,880 --> 00:07:03,495
+的的A的，什么是
+of the of the A's and what is the
+
+102
+00:07:03,500 --> 00:07:07,275
+质心让我们看得好，也许我没有
+centroid let's see well maybe I don't
+
+103
+00:07:07,280 --> 00:07:09,365
+知道x和y我们是不是一个好选择
+know if x and y we're a good choice but
+
+104
+00:07:09,370 --> 00:07:16,185
+让我看看我猜它是什么
+look let me see what I guess it's the
+
+105
+00:07:16,190 --> 00:07:21,375
+平均值a它是A的总和
+average a it's the sum of the A's of
+
+106
+00:07:21,380 --> 00:07:24,945
+这些A是那些是矢量的
+these A's those are those are vectors of
+
+107
+00:07:24,950 --> 00:07:32,045
+当然，由A的I数除以
+course divided by the number of A's I
+
+108
+00:07:32,050 --> 00:07:34,805
+我想我其实很快
+think actually I was just quickly
+
+109
+00:07:34,810 --> 00:07:38,735
+今天早上回顾所以我不是
+reviewing this morning so I'm not
+
+110
+00:07:38,740 --> 00:07:42,645
+完全在这个质心的顶部，我是什么
+totally on top of this centroid what I'm
+
+111
+00:07:42,650 --> 00:07:44,925
+打算谈谈我的算法
+going to talk the algorithm that I'm
+
+112
+00:07:44,930 --> 00:07:48,195
+要谈的是K井K.
+going to talk about is the K well K
+
+113
+00:07:48,200 --> 00:07:53,505
+意味着它总是在这里被召唤
+means it's always called and here it
+
+114
+00:07:53,510 --> 00:07:59,385
+将是K将是我刚才拥有的两个
+will be the K will be two I just have
+
+115
+00:07:59,390 --> 00:08:03,795
+两个分为两组a和B.
+two partitioning into two sets a and B
+
+116
+00:08:03,800 --> 00:08:06,975
+所以我只是K是仅有2好是什么
+so I just K is just 2 okay what's the
+
+117
+00:08:06,980 --> 00:08:14,225
+算法好，如果我选择了一个
+algorithm well if if I've chosen a
+
+118
+00:08:14,230 --> 00:08:16,575
+分区A的和B的有
+partition the A's and the B's have
+
+119
+00:08:16,580 --> 00:08:19,695
+将它们分开然后告诉我什么
+separated them then that tells me what
+
+120
+00:08:19,700 --> 00:08:25,065
+X和y应该是，但现在是什么
+the X and the y should be but now what
+
+121
+00:08:25,070 --> 00:08:27,045
+我会做下一个，所以这将是一个
+do I do next so is this going to be a
+
+122
+00:08:27,050 --> 00:08:29,885
+我现在是一个交替的分区
+sort of an alternating partition now I
+
+123
+00:08:29,890 --> 00:08:33,375
+采取这两个质心，所以第一步
+take those two centroids so so step one
+
+124
+00:08:33,380 --> 00:08:43,214
+是原谅YZ和B找到他们的
+is forgiven YZ and B's find their
+
+125
+00:08:43,219 --> 00:08:51,545
+质心X和什么和那个基本的
+centroids X and what and that elementary
+
+126
+00:08:51,550 --> 00:08:57,675
+然后第二步给出了
+then the second step is given the
+
+127
+00:08:57,680 --> 00:09:04,695
+给出那些位置的质心x和y
+centroids x and y given those positions
+
+128
+00:09:04,700 --> 00:09:07,965
+给定x和y它们不会是质心
+given x and y they won't be centroids
+
+129
+00:09:07,970 --> 00:09:10,395
+一旦你看到x发生了什么
+once when you see what happens given x
+
+130
+00:09:10,400 --> 00:09:11,975
+和y
+and y
+
+131
+00:09:11,980 --> 00:09:22,575
+我们形成最好的分区
+we do we form form the best partition
+
+132
+00:09:22,580 --> 00:09:32,475
+最好的集群好吧，所以我们有一步
+best clusters okay so step one we we had
+
+133
+00:09:32,480 --> 00:09:34,785
+猜测最好的集群是什么
+a guess at what the best clusters were
+
+134
+00:09:34,790 --> 00:09:38,985
+我们现在找到了他们的质心
+and we found their centroids now we
+
+135
+00:09:38,990 --> 00:09:41,805
+从质心开始，我们形成新的
+start with the centroids and we form new
+
+136
+00:09:41,810 --> 00:09:44,535
+再次集群，如果这些集群是
+clusters again and if these clusters are
+
+137
+00:09:44,540 --> 00:09:47,085
+和我们开始时一样
+the same as the ones we started with
+
+138
+00:09:47,090 --> 00:09:48,465
+与他们然后算法有
+with them then the algorithm has
+
+139
+00:09:48,470 --> 00:09:52,185
+融合但可能不会是这些
+converged but probably won't be these
+
+140
+00:09:52,190 --> 00:09:54,825
+集群所以你必须告诉我什么
+clusters so you'll have to tell me what
+
+141
+00:09:54,830 --> 00:09:57,555
+如果我是最好的集群，我的意思是什么
+what I mean by the best clusters if I'm
+
+142
+00:09:57,560 --> 00:10:00,435
+如果我有两点x和y我
+if I've got the two points x and y I
+
+143
+00:10:00,440 --> 00:10:03,405
+想要我要分开的所有点
+want the points I want to separate all
+
+144
+00:10:03,410 --> 00:10:05,565
+围绕X聚集到该点
+the points that cluster around X to the
+
+145
+00:10:05,570 --> 00:10:09,945
+那些聚集在Y周围的人然后他们
+ones that cluster around Y and then they
+
+146
+00:10:09,950 --> 00:10:11,925
+可能与我原来的不同
+probably different from my original
+
+147
+00:10:11,930 --> 00:10:15,675
+从现在开始我现在有了新的东西，我再说一遍
+start so now I've got new now I repeat
+
+148
+00:10:15,680 --> 00:10:19,725
+第一步，但让我们想想怎么做
+step one so but let's just think how do
+
+149
+00:10:19,730 --> 00:10:24,375
+我形成最佳群以及我坐
+i form the best clusters well I take a
+
+150
+00:10:24,380 --> 00:10:27,735
+点，我必须决定它是否去
+point and I have to decide does it go
+
+151
+00:10:27,740 --> 00:10:30,225
+与X或它在X去
+with X or does it go with in the X
+
+152
+00:10:30,230 --> 00:10:32,085
+群集或它是否进入群集
+cluster or does it go in the cluster
+
+153
+00:10:32,090 --> 00:10:37,095
+在Y附近，我该怎么做才决定
+around Y so how do I decide that just
+
+154
+00:10:37,100 --> 00:10:41,255
+无论哪一个都接近每一个
+whichever one is closer to so each each
+
+155
+00:10:41,260 --> 00:10:49,575
+要与每个节点一起使用II
+point goes with each node you should I I
+
+156
+00:10:49,580 --> 00:10:56,075
+可以说每个节点都跟着
+could say each node goes with the the
+
+157
+00:10:56,080 --> 00:11:04,495
+更接近x和y
+closer of x and y
+
+158
+00:11:04,500 --> 00:11:09,455
+应该是那样的点
+so points that should have been that are
+
+159
+00:11:09,460 --> 00:11:11,225
+现在我们要接近X了
+closer to X now we're going to put them
+
+160
+00:11:11,230 --> 00:11:14,795
+在X周围的集群中，并做到这一点
+in the cluster around X and does that
+
+161
+00:11:14,800 --> 00:11:16,165
+解决问题
+solve the problem
+
+162
+00:11:16,170 --> 00:11:19,685
+不，因为它可能，但它可能
+no because well it might but it might
+
+163
+00:11:19,690 --> 00:11:27,055
+不是我们要回来一个步骤
+not the we have to come back to step one
+
+164
+00:11:27,060 --> 00:11:29,915
+我们现在已经改变了他们的集群
+we've now changed their clusters they'll
+
+165
+00:11:29,920 --> 00:11:33,274
+有不同的质心，所以我们重复
+have different centroids so we repeat
+
+166
+00:11:33,279 --> 00:11:35,735
+第一步找到他们的质心
+step one find their centroids for the
+
+167
+00:11:35,740 --> 00:11:38,165
+然后我们来两个新的集群
+two new clusters then we come to step
+
+168
+00:11:38,170 --> 00:11:41,015
+两个找到应该配合的
+two find the ones that should go with
+
+169
+00:11:41,020 --> 00:11:44,765
+两个质心来回我
+the two centroids and back and forth I
+
+170
+00:11:44,770 --> 00:11:47,524
+不知道我不认为有一个很好的
+don't know I don't think there's a nice
+
+171
+00:11:47,529 --> 00:11:50,195
+收敛理论或收益率
+theory of convergence or rate of
+
+172
+00:11:50,200 --> 00:11:52,955
+收敛所有这个问题
+convergence all the questions that this
+
+173
+00:11:52,960 --> 00:11:57,265
+当然总是问，但这是非常的
+course is always asking but it's a very
+
+174
+00:11:57,270 --> 00:12:02,735
+流行算法K-机构K将
+popular algorithm k-means K would be to
+
+175
+00:12:02,740 --> 00:12:08,495
+有K群可以，所以我不是
+have K clusters okay so that's a I'm not
+
+176
+00:12:08,500 --> 00:12:10,715
+去讨论我宁愿讨论
+going to discuss the I'd rather discuss
+
+177
+00:12:10,720 --> 00:12:13,535
+其他一些方法来解决这个问题
+some other ways to do this to solve this
+
+178
+00:12:13,540 --> 00:12:17,945
+问题，但这是一种黑客
+problem but that's one sort of hack that
+
+179
+00:12:17,950 --> 00:12:23,195
+工作得很好，所以第二种方法
+works quite well okay so second approach
+
+180
+00:12:23,200 --> 00:12:29,005
+是下一秒才会到来的
+is is what it's coming next second
+
+181
+00:12:29,010 --> 00:12:40,165
+解决方法，它被称为
+solution method and it's called the
+
+182
+00:12:40,170 --> 00:12:48,894
+谱聚类
+spectral clustering
+
+183
+00:12:48,899 --> 00:12:53,704
+这是方法的名称和之前的名称
+that's the name of the method and before
+
+184
+00:12:53,709 --> 00:12:56,764
+我记下你做什么做什么的
+I write down what you do what does the
+
+185
+00:12:56,769 --> 00:12:59,644
+字光谱意味着你看到光谱
+word spectral mean you see spectral
+
+186
+00:12:59,649 --> 00:13:03,125
+图论谱谱聚类与in
+graph theory spectral clustering and in
+
+187
+00:13:03,130 --> 00:13:05,884
+你看到的其他数学部分
+other parts of mathematics you see that
+
+188
+00:13:05,889 --> 00:13:09,185
+你在哪里看到我给出的谱定理
+where you see spectral theorem I gave
+
+189
+00:13:09,190 --> 00:13:11,704
+你最多，我把它描述为
+you the most and I described it as the
+
+190
+00:13:11,709 --> 00:13:16,235
+最重要的也许是线性定理
+most important perhaps theorem in linear
+
+191
+00:13:16,240 --> 00:13:21,084
+代数中至少有一个是前三名
+algebra at least one of the top three is
+
+192
+00:13:21,089 --> 00:13:23,555
+所以我会把它写在这里，因为它是
+so I'll write it over here because it's
+
+193
+00:13:23,560 --> 00:13:28,084
+不是这不是它是一样的
+not it doesn't this is a it's the same
+
+194
+00:13:28,089 --> 00:13:35,644
+字谱很好让我问一下
+word spectral well let me ask the
+
+195
+00:13:35,649 --> 00:13:37,954
+再问一下这个词是什么
+question again what's that word spectral
+
+196
+00:13:37,959 --> 00:13:40,894
+什么意思是手段
+about what does that mean that means
+
+197
+00:13:40,899 --> 00:13:44,134
+如果我有一个矩阵，我想
+that if I have a matrix and I want to
+
+198
+00:13:44,139 --> 00:13:47,704
+说说它的频谱是什么
+talk about its spectrum what is the
+
+199
+00:13:47,709 --> 00:13:52,355
+矩阵的光谱就是它
+spectrum of the matrix it is the the
+
+200
+00:13:52,360 --> 00:13:56,255
+特征值因此谱理论谱
+eigenvalues so spectral theory spectral
+
+201
+00:13:56,260 --> 00:13:59,735
+聚类使用的是特征值
+clustering is using the eigenvalues of
+
+202
+00:13:59,740 --> 00:14:03,905
+一些矩阵就是那个光谱
+some matrix that's what that spectral is
+
+203
+00:14:03,910 --> 00:14:06,394
+告诉我是的光谱定理
+telling me yeah so the spectral theorem
+
+204
+00:14:06,399 --> 00:14:10,855
+当然是对称矩阵
+of course is that for a symmetric matrix
+
+205
+00:14:10,860 --> 00:14:17,485
+特征值是真实的和
+s the eigenvalues are real and the
+
+206
+00:14:17,490 --> 00:14:23,675
+特征向量是正交的而不是
+eigenvectors are orthogonal and don't
+
+207
+00:14:23,680 --> 00:14:29,105
+忘记真实的完整陈述是什么
+forget what the real full statement is
+
+208
+00:14:29,110 --> 00:14:31,915
+在这里，因为可能会重复
+here because there could be repeated
+
+209
+00:14:31,920 --> 00:14:35,465
+真正的特征值和什么是
+real eigenvalues and what does the
+
+210
+00:14:35,470 --> 00:14:37,954
+谱定理告诉我对称性
+spectral theorem tell me for symmetric
+
+211
+00:14:37,959 --> 00:14:43,355
+如果lambda等于5则为矩阵
+matrices if that if lambda equal five is
+
+212
+00:14:43,360 --> 00:14:48,985
+如果它是四次，则重复四次
+repeated four times if it's a four times
+
+213
+00:14:48,990 --> 00:14:53,405
+给出的等式的解
+solution of the equation that gives
+
+214
+00:14:53,410 --> 00:14:56,375
+特征值那么结论是什么
+eigenvalues then what's the conclusion
+
+215
+00:14:56,380 --> 00:14:59,725
+然后有四个独立的
+then there are four independent
+
+216
+00:14:59,730 --> 00:15:01,084
+我正交
+orthogonal I
+
+217
+00:15:01,089 --> 00:15:04,954
+矢量与它一起去我们不能这么说
+vectors to go with it we can't say that
+
+218
+00:15:04,959 --> 00:15:05,944
+关于矩阵
+about matrices
+
+219
+00:15:05,949 --> 00:15:08,915
+关于所有矩阵，但我们可以说
+about all matrices but we can say it
+
+220
+00:15:08,920 --> 00:15:12,965
+关于所有对称矩阵，事实上
+about all symmetric matrices and in fact
+
+221
+00:15:12,970 --> 00:15:15,454
+这些本征矢量是正交的，以便
+those eigenvectors are orthogonal so
+
+222
+00:15:15,459 --> 00:15:18,215
+我们甚至会说更多我们能找到的东西
+we're even saying more we can find for
+
+223
+00:15:18,220 --> 00:15:21,004
+与a一起使用的正交特征向量
+orthogonal eigenvectors that go with a
+
+224
+00:15:21,009 --> 00:15:25,684
+与特征值的多重好吗
+with a multiplicity for eigenvalues okay
+
+225
+00:15:25,689 --> 00:15:28,235
+这是光谱定理谱
+that's spectral theorem spectral
+
+226
+00:15:28,240 --> 00:15:37,615
+聚类开始于
+clustering starts with the with the
+
+227
+00:15:37,620 --> 00:15:47,254
+图拉普拉斯矩阵我记得
+graph laplacian matrix may I remember
+
+228
+00:15:47,259 --> 00:15:50,514
+那个矩阵是什么因为那是
+what that matrix is because that's the
+
+229
+00:15:50,519 --> 00:15:55,804
+这是线性的关键连接
+that's the key connection of linear
+
+230
+00:15:55,809 --> 00:15:58,564
+代数到图论是
+algebra to graph theory is the
+
+231
+00:15:58,569 --> 00:16:00,545
+此图拉普利安的属性
+properties of this graph laplacian
+
+232
+00:16:00,550 --> 00:16:04,655
+矩阵好吧让我说L为
+matrix okay so let me say L for
+
+233
+00:16:04,660 --> 00:16:09,694
+laplacian使矩阵单向
+laplacian so that matrix one way to
+
+234
+00:16:09,699 --> 00:16:14,554
+将它描述为转置a
+describe it is as a transpose a where a
+
+235
+00:16:14,559 --> 00:16:24,924
+是曲线图的关联矩阵或
+is the incidence matrix of the graph or
+
+236
+00:16:24,929 --> 00:16:29,704
+我们将看到的另一种方式是D
+another way we'll see is two is the D
+
+237
+00:16:29,709 --> 00:16:41,915
+对角线的度矩阵
+the degree matrix that's diagonal
+
+238
+00:16:41,920 --> 00:16:44,655
+我会举一个例子来提醒一下
+and I'll do an example just to remind
+
+239
+00:16:44,660 --> 00:16:48,494
+你-我不知道我叫什么
+you - the I don't know what I've called
+
+240
+00:16:48,499 --> 00:16:54,314
+这个我应该叫它为B.
+this one shall I call it B for the
+
+241
+00:16:54,319 --> 00:16:59,285
+那个时刻和B是什么矩阵
+moment and what matrix is B that's the
+
+242
+00:16:59,290 --> 00:17:08,924
+邻接矩阵真的你应该知道
+adjacency matrix really you should know
+
+243
+00:17:08,929 --> 00:17:15,044
+这四个矩阵他们是关键的四个
+these four matrices they're the key four
+
+244
+00:17:15,049 --> 00:17:18,255
+与任何图形相关联的矩阵
+matrices associated with any graph the
+
+245
+00:17:18,260 --> 00:17:25,274
+入射矩阵是M个n行边缘
+incidence matrix that's M by n row edges
+
+246
+00:17:25,279 --> 00:17:31,515
+和节点边缘和节点，所以它
+and nodes edges and nodes so it's
+
+247
+00:17:31,520 --> 00:17:35,355
+矩形，但我正在形成一个转置
+rectangular but I'm forming a transpose
+
+248
+00:17:35,360 --> 00:17:38,205
+我在这里，所以我形成一个对称的
+ru here so I'm forming a symmetric
+
+249
+00:17:38,210 --> 00:17:40,875
+正半定矩阵
+positive semi definite matrix
+
+250
+00:17:40,880 --> 00:17:45,885
+所以这个小花朵是对称的
+so this this little blossom is symmetric
+
+251
+00:17:45,890 --> 00:17:51,404
+积极的半明确是的，让我让
+positive semi definite yeah let me let
+
+252
+00:17:51,409 --> 00:17:53,475
+我只记得所有这些矩阵
+me just recall what all these matrices
+
+253
+00:17:53,480 --> 00:18:01,445
+是为了一个简单的图表
+are for for a simple graph
+
+254
+00:18:01,450 --> 00:18:08,764
+好的，所以我只是画一个图表好吧
+okay so I'll just draw a graph alright
+
+255
+00:18:08,769 --> 00:18:15,494
+好吧所以发生率矩阵有1个
+okay so the incidence matrix there are 1
+
+256
+00:18:15,499 --> 00:18:23,235
+2345个边缘所以5行有4个
+2 3 4 5 edges so 5 rows there are 4
+
+257
+00:18:23,240 --> 00:18:30,105
+节点123和4所以4列和a
+nodes 1 2 3 and 4 so 4 columns and a
+
+258
+00:18:30,110 --> 00:18:34,185
+典型的行将是边缘1
+typical row would be edge 1 going from
+
+259
+00:18:34,190 --> 00:18:37,065
+节点1到节点2所以它会有一个
+node 1 to node 2 so it would have a
+
+260
+00:18:37,070 --> 00:18:42,044
+减1和1在那里，让我采取
+minus 1 and a 1 there and let me take
+
+261
+00:18:42,049 --> 00:18:46,754
+它的两个从1到3节点，所以我们
+its two going from 1 to node 3 so we'd
+
+262
+00:18:46,759 --> 00:18:51,705
+那里有一个减1和1
+have a minus 1 and a 1 there so so
+
+263
+00:18:51,710 --> 00:18:57,554
+这就是发生率矩阵，确定是什么
+that's the incidence matrix a ok what's
+
+264
+00:18:57,559 --> 00:18:59,804
+程度矩阵很简单
+the degree matrix that's simple
+
+265
+00:18:59,809 --> 00:19:06,244
+度数矩阵a转置a
+the degree matrix well a transpose a
+
+266
+00:19:06,249 --> 00:19:11,764
+这是Mbyn这是n由M所以它是
+this is M by n this is n by M so it's
+
+267
+00:19:11,769 --> 00:19:22,424
+在这种情况下，它通过n确定4乘4
+it's n by n ok in this case 4 by 4 so
+
+268
+00:19:22,429 --> 00:19:25,215
+度矩阵将是4乘4和
+the degree matrix will be 4 by 4 and by
+
+269
+00:19:25,220 --> 00:19:27,614
+他和它会告诉我们的程度
+him and it will tell us the degree of
+
+270
+00:19:27,619 --> 00:19:30,374
+这意味着我们只计算它
+that which means which we just count the
+
+271
+00:19:30,379 --> 00:19:34,034
+边缘所以它的3个边缘没有23
+edges so it's 3 edges going in no 2 3
+
+272
+00:19:34,039 --> 00:19:39,315
+进入节点3的边只有2条边
+edges going in node 3 has just 2 edges
+
+273
+00:19:39,320 --> 00:19:43,364
+并且节点4只有2条边缘
+and node 4 has just 2 edges it so that's
+
+274
+00:19:43,369 --> 00:19:46,784
+程度矩阵然后是邻接
+the degree matrix and then the adjacency
+
+275
+00:19:46,789 --> 00:19:50,945
+我称之为B的矩阵也是4乘4
+matrix that I've called B is also 4 by 4
+
+276
+00:19:50,950 --> 00:19:57,404
+它是什么告诉我们哪个节点是
+and what is it it tells us which node is
+
+277
+00:19:57,409 --> 00:20:00,705
+连接到哪个节点所以我不这样做
+connected to which node so and I don't
+
+278
+00:20:00,710 --> 00:20:06,105
+允许节点边缘
+allow nodes edges
+
+279
+00:20:06,110 --> 00:20:09,284
+将O连接到自身以使其为零
+that connect an O to itself so zeros on
+
+280
+00:20:09,289 --> 00:20:10,005
+对角线
+the diagonal
+
+281
+00:20:10,010 --> 00:20:13,725
+连接到哪个节点的数量
+how many so which nodes are connected to
+
+282
+00:20:13,730 --> 00:20:16,725
+节点一井两个和四个
+node one well all of two and four and
+
+283
+00:20:16,730 --> 00:20:19,154
+三个连接到一个所以我有
+three are connected to one so I have
+
+284
+00:20:19,159 --> 00:20:25,185
+那三个节点都没有
+ones there no to all three nodes are
+
+285
+00:20:25,190 --> 00:20:28,635
+连接-不-所以我会有第二个
+connected - no - so I'll have the second
+
+286
+00:20:28,640 --> 00:20:31,274
+列和行将包含所有三个
+column and row will have all three ones
+
+287
+00:20:31,279 --> 00:20:36,195
+怎么没有三个没关系只边缘
+how about no three okay only only edges
+
+288
+00:20:36,200 --> 00:20:40,034
+只有两条边连接到
+only two edges are connected only to
+
+289
+00:20:40,039 --> 00:20:44,355
+只有两个节点连接到三个节点
+only two nodes are connected to three
+
+290
+00:20:44,360 --> 00:20:47,534
+一，二，但不是四，一，二
+one and two but not four so one and two
+
+291
+00:20:47,539 --> 00:20:52,544
+我有，但不是四个好，所以这是
+I have but not four okay so that's the
+
+292
+00:20:52,549 --> 00:20:57,455
+邻接矩阵就是这么认为的
+adjacency matrix is that right think so
+
+293
+00:20:57,460 --> 00:21:01,865
+这是度矩阵是这样的
+this is the degree matrix this is the
+
+294
+00:21:01,870 --> 00:21:06,764
+关联矩阵和该公式给出
+incidence matrix and that formula gives
+
+295
+00:21:06,769 --> 00:21:10,034
+我laplacian好吧，让我们写一下
+me the laplacian okay let's just write
+
+296
+00:21:10,039 --> 00:21:16,514
+如果我使用了laplacian那么
+down the laplacian so if I use the
+
+297
+00:21:16,519 --> 00:21:20,355
+度减去B中，很容易的
+degree minus B that that's easy the
+
+298
+00:21:20,360 --> 00:21:24,404
+度数是332和2现在我有这些
+degrees were 3 3 2 & 2 now I have these
+
+299
+00:21:24,409 --> 00:21:36,385
+弊端和那些0好的
+minuses and those those were 0 ok
+
+300
+00:21:36,390 --> 00:21:39,335
+这是一个积极的半明确
+so that's a positive semi-definite
+
+301
+00:21:39,340 --> 00:21:43,165
+矩阵是一个正定矩阵
+matrix is it a positive definite matrix
+
+302
+00:21:43,170 --> 00:21:47,705
+所以我们会让我问你是不是很奇怪
+so we'll let me ask you is it singular
+
+303
+00:21:47,710 --> 00:21:48,935
+或者它不是单数
+or is it not singular
+
+304
+00:21:48,940 --> 00:21:51,755
+是否在其零空间或中有一个向量
+is there a vector in its null space or
+
+305
+00:21:51,760 --> 00:21:54,055
+它的零空间中没有向量
+is there not a vector in its null space
+
+306
+00:21:54,060 --> 00:22:02,855
+你可以解决dx等于全零和
+can you solve d x equals all zeroes and
+
+307
+00:22:02,860 --> 00:22:06,815
+当然，你们每个人都可以看到这一点
+of course you can everybody sees that
+
+308
+00:22:06,820 --> 00:22:12,875
+所有人的矢量将是一个
+the vector of all ones will be a
+
+309
+00:22:12,880 --> 00:22:18,065
+解决D到2l我很抱歉我应该
+solution to D to 2l I'm sorry I should
+
+310
+00:22:18,070 --> 00:22:25,535
+在这里说LLx等于0Lx等于
+be saying L here L x equals 0 L x equals
+
+311
+00:22:25,540 --> 00:22:35,255
+0表示一维的整行
+0 for a whole line of a one-dimensional
+
+312
+00:22:35,260 --> 00:22:42,805
+并且L的零空间具有维度
+and the null space of L is has dimension
+
+313
+00:22:42,810 --> 00:22:48,535
+1它有一个基础向量1111和
+1 it's got one basis vector 1 1 1 1 and
+
+314
+00:22:48,540 --> 00:22:52,795
+这将永远发生在a
+that will always happen with a with a
+
+315
+00:22:52,800 --> 00:22:56,435
+使用我创建的图表设置
+with the graph set up that I've created
+
+316
+00:22:56,440 --> 00:23:00,335
+好的，这是第一个事实
+ok so that's the first fact that this
+
+317
+00:23:00,340 --> 00:23:06,355
+正半正定矩阵Las
+positive semi definite matrix L as
+
+318
+00:23:06,360 --> 00:23:12,895
+lambda1等于0，特征向量为
+lambda 1 equals 0 and the eigenvector is
+
+319
+00:23:12,900 --> 00:23:18,665
+常数cccc是一维特征
+constant cccc the one-dimensional eigen
+
+320
+00:23:18,670 --> 00:23:22,025
+空间或1111是典型的
+space or 1 1 1 1 is a typical
+
+321
+00:23:22,030 --> 00:23:29,855
+特征向量现在回到图表
+eigenvector ok now back to graph
+
+322
+00:23:29,860 --> 00:23:34,015
+将图的概念聚类为图
+clustering the idea of graph a graph
+
+323
+00:23:34,020 --> 00:23:39,005
+集群是看费德勒
+clustering is to look at the Fiedler
+
+324
+00:23:39,010 --> 00:23:45,115
+本征矢量这就是所谓的X2是
+eigen vector this is called X 2 is the
+
+325
+00:23:45,120 --> 00:23:48,435
+下一个特征向量是
+next eigenvector is the
+
+326
+00:23:48,440 --> 00:23:55,335
+最小的特征向量
+the eigenvector for the smallest
+
+327
+00:23:55,340 --> 00:23:59,975
+λmin的正特征值
+positive eigenvalue for lambda min
+
+328
+00:23:59,980 --> 00:24:03,705
+排除0所以最小的特征值
+excluding 0 so the smallest eigenvalue
+
+329
+00:24:03,710 --> 00:24:14,175
+l最小特征值及其特征值
+of l the smallest eigenvalue and its
+
+330
+00:24:14,180 --> 00:24:16,785
+特征向量这被称为Fiedler
+eigenvector this is called the Fiedler
+
+331
+00:24:16,790 --> 00:24:19,835
+以捷克命名的矢量
+vector named after the Czech
+
+332
+00:24:19,840 --> 00:24:26,595
+数学家伟大伟大的人
+mathematician a great great a great man
+
+333
+00:24:26,600 --> 00:24:29,805
+在线性代数中，他研究了这一点
+in linear algebra and he studied this
+
+334
+00:24:29,810 --> 00:24:33,255
+矢量这种情况所以每个人
+vector this situation so everybody who
+
+335
+00:24:33,260 --> 00:24:38,775
+知道laplacian知道的图形
+knows about the graph laplacian is aware
+
+336
+00:24:38,780 --> 00:24:42,465
+它的第一个特征值为零，
+that its first eigenvalue is zero and
+
+337
+00:24:42,470 --> 00:24:46,035
+下一个特征值是重要的
+that the next eigenvalue is is important
+
+338
+00:24:46,040 --> 00:24:51,975
+是啊
+yeah
+
+339
+00:24:51,980 --> 00:24:59,274
+拉普拉斯方程式是的，所以是的
+to Laplace's equation yes so yeah that's
+
+340
+00:24:59,279 --> 00:25:04,784
+一个好问题，为什么这个名字的名字
+a good question so why the word the name
+
+341
+00:25:04,789 --> 00:25:12,235
+拉普拉斯马马虎虎
+laplacian so-so
+
+342
+00:25:12,240 --> 00:25:17,874
+是啊，这是一个很好的问题，因此
+yeah that's a good question so the
+
+343
+00:25:17,879 --> 00:25:20,304
+熟悉的东西，所以它连接到
+familiar thing so it connects to
+
+344
+00:25:20,309 --> 00:25:23,185
+拉普拉斯的有限差分方程
+Laplace's finite difference equation
+
+345
+00:25:23,190 --> 00:25:24,624
+因为我们在谈论矩阵
+because we're talking about matrices
+
+346
+00:25:24,629 --> 00:25:28,154
+这里而不是衍生品而不是功能
+here and not derivatives not functions
+
+347
+00:25:28,159 --> 00:25:31,855
+那么为什么laplacian这个词如果我如此
+so why the word laplacian well so if I
+
+348
+00:25:31,860 --> 00:25:35,004
+如果我的图表是合成的，那就有规律
+have a regular if my graph is composed
+
+349
+00:25:35,009 --> 00:25:41,664
+这样就有一个包含25个节点的图形
+of so there's a graph with with 25 nodes
+
+350
+00:25:41,669 --> 00:25:48,325
+这是4倍520约40
+and 4 times 5 20 about 40 this is
+
+351
+00:25:48,330 --> 00:25:57,014
+可能有大约40个边和25个节点
+probably has about 40 edges and 25 nodes
+
+352
+00:25:57,019 --> 00:26:02,095
+当然我可以构建它的图形
+and of course I can construct its graph
+
+353
+00:26:02,100 --> 00:26:07,754
+所有这四个矩阵都是它的
+all those four matrices for it it's it's
+
+354
+00:26:07,759 --> 00:26:11,185
+关联矩阵的度矩阵
+incidence matrix its degree matrix of
+
+355
+00:26:11,190 --> 00:26:13,815
+学位将适用于所有这些
+the degree will be for at all these
+
+356
+00:26:13,820 --> 00:26:17,004
+内部点数度为3点
+inside points the degree will be 3 at
+
+357
+00:26:17,009 --> 00:26:19,825
+这些边界点的程度将是
+these boundary points the degree will be
+
+358
+00:26:19,830 --> 00:26:23,455
+2在这些角落但是什么
+2 at these corner points but the what
+
+359
+00:26:23,460 --> 00:26:30,235
+将矩阵L看起来像那么还等什么
+will the matrix L look like so so what
+
+360
+00:26:30,240 --> 00:26:37,404
+是L，这将告诉你它为什么
+is L and that will tell you why it has
+
+361
+00:26:37,409 --> 00:26:41,965
+这个名字laplacian所以矩阵L会
+this name laplacian so the matrix L will
+
+362
+00:26:41,970 --> 00:26:44,874
+有4个权利的学位将在
+have the degree 4 right will be on the
+
+363
+00:26:44,879 --> 00:26:49,185
+对角线来自D另一个
+diagonal that's coming from D the other
+
+364
+00:26:49,190 --> 00:26:53,924
+减去的是来自的
+the minus ones that come from be the
+
+365
+00:26:53,929 --> 00:26:56,845
+邻接矩阵将与。相关联
+adjacency matrix will be associated with
+
+366
+00:26:56,850 --> 00:27:01,644
+这些节点否则全部为零，从而
+those nodes and otherwise all zeros so
+
+367
+00:27:01,649 --> 00:27:04,835
+这是L的典型行
+this is a typical row of L
+
+368
+00:27:04,840 --> 00:27:07,624
+Elle的典型角色以此为中心
+typical role of Elle centered at that
+
+369
+00:27:07,629 --> 00:27:11,465
+节点也许那个节点号为510
+node so maybe that's node number five 10
+
+370
+00:27:11,470 --> 00:27:16,085
+这将是25个中的13个
+13 that's 13 out of 25 that would would
+
+371
+00:27:16,090 --> 00:27:18,455
+告诉你这个，对不起那些
+show you this and that sorry those are
+
+372
+00:27:18,460 --> 00:27:23,975
+减去那些减去那么一个4a4
+minus ones minus ones so a 4 a 4 in the
+
+373
+00:27:23,980 --> 00:27:27,485
+在对角线和4减去那些
+on the diagonal and 4 minus ones that's
+
+374
+00:27:27,490 --> 00:27:30,754
+图表的模型问题
+the model problem for when the graph is
+
+375
+00:27:30,759 --> 00:27:34,744
+一个网格方格，你是否关联
+a grid square grid and do you associate
+
+376
+00:27:34,749 --> 00:27:37,054
+拉普拉斯方程所以这是
+that with Laplace's equation so this is
+
+377
+00:27:37,059 --> 00:27:41,284
+这就是拉普拉斯的原因
+the this is the reason that the Laplace
+
+378
+00:27:41,289 --> 00:27:45,605
+为什么加号会因为而加入呢？
+why why the plus gets in it because
+
+379
+00:27:45,610 --> 00:27:48,065
+拉普拉斯方程的微分
+Laplace's equation the differential
+
+380
+00:27:48,070 --> 00:27:50,705
+方程式是二阶导数
+equation is second derivative with
+
+381
+00:27:50,710 --> 00:27:53,134
+尊重x平方和第二个
+respect to x squared and the second
+
+382
+00:27:53,139 --> 00:27:55,924
+导数特殊y平方为0
+derivative the special y squared is 0
+
+383
+00:27:55,929 --> 00:28:01,894
+我们这里有什么为Lu等于0
+and what we have here is L u equals 0
+
+384
+00:28:01,899 --> 00:28:06,244
+它是矢量的离散拉普拉斯
+it's discrete laplacian the vector
+
+385
+00:28:06,249 --> 00:28:09,634
+laplacian图拉普拉斯所在的地方
+laplacian the graph laplacian where the
+
+386
+00:28:09,639 --> 00:28:12,965
+第二个X衍生物被减去
+second X derivative is replaced by minus
+
+387
+00:28:12,970 --> 00:28:16,355
+1至-1和第二Y衍生物
+1 to minus 1 and the second Y derivative
+
+388
+00:28:16,360 --> 00:28:20,644
+由-1减1秒代替
+is replaced by minus 1 to minus 1 second
+
+389
+00:28:20,649 --> 00:28:22,955
+X和y的差异
+differences in the X and the y
+
+390
+00:28:22,960 --> 00:28:27,695
+方向，所以是的，所以这是
+directions so that's yeah so that's the
+
+391
+00:28:27,700 --> 00:28:30,695
+这就是laplace的解释
+that's the explanation for laplace it's
+
+392
+00:28:30,700 --> 00:28:34,774
+离散的laplace离散或
+a discrete laplace discrete or the
+
+393
+00:28:34,779 --> 00:28:40,835
+有限差分拉普拉斯现在好了
+finite difference Laplace okay now to
+
+394
+00:28:40,840 --> 00:28:47,044
+我必须告诉你什么是什么
+finish I have to tell you what the what
+
+395
+00:28:47,049 --> 00:28:50,044
+群集如何决定群集
+clusters how do you decide the clusters
+
+396
+00:28:50,049 --> 00:28:54,965
+从L如何提出两个集群
+from L how does L propose two clusters
+
+397
+00:28:54,970 --> 00:29:00,935
+A和B的，而且这里是
+the A's and the B's and and here's the
+
+398
+00:29:00,940 --> 00:29:06,424
+回答他们来自这个特征向量
+answer they come from this eigenvector
+
+399
+00:29:06,429 --> 00:29:09,634
+你看到的fiedler特征向量
+the fiedler eigenvectors you look at
+
+400
+00:29:09,639 --> 00:29:12,245
+那个特征向量
+that eigenvector
+
+401
+00:29:12,250 --> 00:29:16,115
+它有一些积极的和一些消极的
+it's got some positive and some negative
+
+402
+00:29:16,120 --> 00:29:20,235
+组件具有正面的组件
+components the components with positive
+
+403
+00:29:20,240 --> 00:29:23,325
+这个特征向量的数量所以
+numbers of this eigenvector so the
+
+404
+00:29:23,330 --> 00:29:37,245
+积极的X的积极成分
+positive the positive components of X so
+
+405
+00:29:37,250 --> 00:29:41,945
+这个特征向量的这种耶和
+of this yeah of this eigenvector and
+
+406
+00:29:41,950 --> 00:29:44,585
+这有负面的组成部分
+there are negative components of this
+
+407
+00:29:44,590 --> 00:29:46,635
+特征向量和那两个
+eigenvector and those are the two
+
+408
+00:29:46,640 --> 00:29:54,735
+群集，所以这就是群集
+clusters so there so it's the cluster is
+
+409
+00:29:54,740 --> 00:29:57,034
+这两个集群是由
+the two clusters are decided by the
+
+410
+00:29:57,039 --> 00:30:00,495
+特征向量由符号加或减
+eigenvector by the signs plus or minus
+
+411
+00:30:00,500 --> 00:30:04,274
+组件的标志加号
+signs of the components the plus signs
+
+412
+00:30:04,279 --> 00:30:06,435
+去1，减号进入
+going 1 and the minus signs go into
+
+413
+00:30:06,440 --> 00:30:09,105
+另一个，你必须尝试
+another and you have to experiment to
+
+414
+00:30:09,110 --> 00:30:12,975
+看到那会成功我不知道
+see that that would succeed I don't know
+
+415
+00:30:12,980 --> 00:30:15,095
+它实际上会做些什么
+what it would do on this actually
+
+416
+00:30:15,100 --> 00:30:18,794
+因为几乎没有分裂成两个
+because that's hardly splits up into two
+
+417
+00:30:18,799 --> 00:30:22,304
+我想也许是分裂
+I suppose maybe the split is along a
+
+418
+00:30:22,309 --> 00:30:25,005
+这样或那样的线来得到我
+line like that or something to to get I
+
+419
+00:30:25,010 --> 00:30:26,774
+不知道那是什么聚类
+don't know what clustering that's that
+
+420
+00:30:26,779 --> 00:30:29,685
+这不是一个自然的图表
+this is not a graph that is naturally
+
+421
+00:30:29,690 --> 00:30:34,695
+群集但你仍然可以做两个
+clustered but you could still do two
+
+422
+00:30:34,700 --> 00:30:38,585
+它的k-means你仍然可以做
+k-means on it you could still do
+
+423
+00:30:38,590 --> 00:30:41,385
+光谱聚类，你会发现
+spectral clustering and you would find
+
+424
+00:30:41,390 --> 00:30:43,245
+这个特征向量现在有什么意义
+this eigenvector now what's the point
+
+425
+00:30:43,250 --> 00:30:46,394
+关于这个特征向量，我将完成
+about this eigenvector there I'll finish
+
+426
+00:30:46,399 --> 00:30:49,515
+在一瞬间我们对此了解多少
+in one moment what do we know about that
+
+427
+00:30:49,520 --> 00:30:53,534
+特征向量与那个相比
+eigenvector as compared to that one so
+
+428
+00:30:53,539 --> 00:30:55,965
+这是一个特征向量，所有人都让我
+here was an eigenvector all ones let me
+
+429
+00:30:55,970 --> 00:30:59,835
+只是使它在所有的一个一个一个一个一个
+just make it all one one one one one in
+
+430
+00:30:59,840 --> 00:31:05,024
+该照片在这里是25周的人是一对
+that picture it's 25 ones here's a the
+
+431
+00:31:05,029 --> 00:31:08,385
+下一个特征向量和什么是
+next eigenvector up and what's the
+
+432
+00:31:08,390 --> 00:31:10,455
+这两个特征向量之间的关系
+relation between those two eigenvectors
+
+433
+00:31:10,460 --> 00:31:15,615
+升它们是正交
+of L they are orthogonal
+
+434
+00:31:15,620 --> 00:31:17,804
+这些是对称的特征向量
+these are eigenvectors of a symmetric
+
+435
+00:31:17,809 --> 00:31:21,435
+矩阵因此它们是正交的
+matrix so they're orthogonal so that
+
+436
+00:31:21,440 --> 00:31:24,725
+意味着与这个家伙正交
+means to be orthogonal to this guy
+
+437
+00:31:24,730 --> 00:31:27,284
+意味着您的组件添加到零
+means that your components added to zero
+
+438
+00:31:27,289 --> 00:31:30,585
+右边的矢量与所有的矢量正交
+right a vector is orthogonal to all ones
+
+439
+00:31:30,590 --> 00:31:33,615
+这个点积只是加起来的
+that dot product is just add up the
+
+440
+00:31:33,620 --> 00:31:35,595
+组件所以我们有一堆
+components so we have a bunch of
+
+441
+00:31:35,600 --> 00:31:37,244
+积极的组成部分和一堆
+positive components and a bunch of
+
+442
+00:31:37,249 --> 00:31:39,284
+负面成分他们有相同
+negative components they have the same
+
+443
+00:31:39,289 --> 00:31:43,095
+总和，因为因为点积与
+sum because because the dot product with
+
+444
+00:31:43,100 --> 00:31:46,065
+那是零和那两个组成部分
+that is zero and those two components
+
+445
+00:31:46,070 --> 00:31:49,774
+这两组组件是你的
+those two sets of components are your to
+
+446
+00:31:49,779 --> 00:31:53,205
+告诉你光谱中的两个星团
+tell you the two clusters in spectral
+
+447
+00:31:53,210 --> 00:31:56,945
+集群所以它非常漂亮
+clustering so it's a pretty nifty
+
+448
+00:31:56,950 --> 00:32:00,605
+它确实要求你计算一个算法
+algorithm it does ask you to compute an
+
+449
+00:32:00,610 --> 00:32:05,414
+特征向量，当然需要
+eigen vector and that of course takes
+
+450
+00:32:05,419 --> 00:32:07,874
+时间，然后有三分之一以上
+time and then there's a third more
+
+451
+00:32:07,879 --> 00:32:12,465
+直接算法来做到这一点
+direct algorithm to to do this
+
+452
+00:32:12,470 --> 00:32:14,894
+实际上有优化问题
+optimization problem well actually there
+
+453
+00:32:14,899 --> 00:32:17,504
+这是一个很重要的问题
+are many this is an important problem so
+
+454
+00:32:17,509 --> 00:32:19,695
+有很多提出的算法很好
+there are many proposed algorithms good
+
+455
+00:32:19,700 --> 00:32:22,575
+好吧，我正在关闭那里有一场决赛
+okay I'm closing up there was a final
+
+456
+00:32:22,580 --> 00:32:27,605
+对于k-means肯定是肯定的
+question yeah well certainly for k-means
+
+457
+00:32:27,610 --> 00:32:30,554
+现在，如果我不得不做三个集群
+now if i had to do three clusters with
+
+458
+00:32:30,559 --> 00:32:33,274
+fiedler我会看前三个
+fiedler i would look at the first three
+
+459
+00:32:33,279 --> 00:32:36,284
+特征向量和第一个
+eigenvectors and well the first one
+
+460
+00:32:36,289 --> 00:32:38,355
+就什么都不是，我会看看
+would be nothing and i would look at the
+
+461
+00:32:38,360 --> 00:32:41,235
+接下来的两个，这将很漂亮
+next two and that would be pretty
+
+462
+00:32:41,240 --> 00:32:44,504
+如果我想要六个集群，那就成功了
+successful if I wanted six clusters it
+
+463
+00:32:44,509 --> 00:32:47,144
+可能会在脱落
+probably would fall off in in the
+
+464
+00:32:47,149 --> 00:32:50,355
+在聚类的质量是的，但
+quality of the the clustering yeah but
+
+465
+00:32:50,360 --> 00:32:52,185
+当然我会看看
+that certainly I would look at the
+
+466
+00:32:52,190 --> 00:32:56,174
+最低六个特征向量并得到
+lowest six eigenvectors and get
+
+467
+00:32:56,179 --> 00:33:00,735
+在某个地方是的，所以没关系，所以这是一个
+somewhere yeah right so okay so that's a
+
+468
+00:33:00,740 --> 00:33:04,394
+话题重要话题我有点标准
+topic important topic I sort of standard
+
+469
+00:33:04,399 --> 00:33:10,534
+应用图论中的主题没关系
+topic in applied graph theory okay so
+
+470
+00:33:10,539 --> 00:33:14,674
+说你星期三我希望我希望
+say your Wednesday I'm hoping I'm hoping
+
+471
+00:33:14,679 --> 00:33:19,274
+星期三所以阿德尔曼教授有
+on Wednesday so professor Adelman has
+
+472
+00:33:19,279 --> 00:33:25,325
+告诉我一个新的，最佳的方式来看待
+told me a new and optimal way to look at
+
+473
+00:33:25,330 --> 00:33:29,764
+反向传播你的问题
+the problem of back propagation you
+
+474
+00:33:29,769 --> 00:33:32,924
+如果你记得回传
+remember back propagation if you
+
+475
+00:33:32,929 --> 00:33:34,904
+记住你没有的讲座
+remember the lecture on it you don't
+
+476
+00:33:34,909 --> 00:33:37,154
+难道你不想记住
+don't you don't want to remember the
+
+477
+00:33:37,159 --> 00:33:38,505
+讲授它，它
+lecture on it it
+
+478
+00:33:38,510 --> 00:33:42,555
+这是一个棘手的杂乱的事情
+it's it's a tricky messy thing to
+
+479
+00:33:42,560 --> 00:33:47,175
+解释，但他说，如果我解释它
+explain but he says if I explain it
+
+480
+00:33:47,180 --> 00:33:50,655
+在线性代数中使用Julia就是这样
+using Julia in linear algebra it's it's
+
+481
+00:33:50,660 --> 00:33:53,745
+如此清晰，我们会给他一个机会
+clear so we'll give him a chance on
+
+482
+00:33:53,750 --> 00:33:57,035
+周三表明那一点
+Wednesday to show that that
+
+483
+00:33:57,040 --> 00:34:01,155
+革命性的方法
+revolutionary approach to to the
+
+484
+00:34:01,160 --> 00:34:04,215
+反向传播的解释和I.
+explanation of back propagation and I
+
+485
+00:34:04,220 --> 00:34:07,965
+希望我告诉他他可以有一半
+hope for I told him he could have half
+
+486
+00:34:07,970 --> 00:34:11,085
+一个小时，项目需要一些
+an hour and projects would take some
+
+487
+00:34:11,090 --> 00:34:15,045
+我希望现在我们不得不狂野
+time I hope now we've had to with wild
+
+488
+00:34:15,050 --> 00:34:19,355
+掌声所以我希望我们能得到更多
+applause so I hope we get a couple more
+
+489
+00:34:19,360 --> 00:34:23,055
+在我们上一节课上好的，请看星期三
+in our last class okay see you Wednesday
+
+490
+00:34:23,060 --> 00:34:26,175
+如果你有好的话，如果你带好
+and if you bring well if you have
+
+491
+00:34:26,180 --> 00:34:29,925
+项目准备好在线发送给我
+projects ready send them to me online
+
+492
+00:34:29,930 --> 00:34:33,795
+也许打印输出也是如此
+and maybe a printout as well that would
+
+493
+00:34:33,800 --> 00:34:36,585
+如果你没有准备就好，那就太棒了
+be terrific if you don't have them ready
+
+494
+00:34:36,590 --> 00:34:41,655
+他们可以按小时去信封
+by the hour they can go the envelope
+
+495
+00:34:41,660 --> 00:34:43,605
+在我办公室外面会收到它们
+outside my office would receive them
+
+496
+00:34:43,610 --> 00:34:45,970
+good so I'll see you Wednesday for the
+
+497
+00:34:43,610 --> 00:34:48,790
+好的，所以周三我会见到你的
+
+498
+00:34:45,980 --> 00:34:48,790
+最后一堂课
+final class
+

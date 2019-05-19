@@ -1,0 +1,5213 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:36,845
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:36,850 --> 00:00:41,175
+所以他慷慨地同意今天来
+so he graciously agreed to come today
+
+10
+00:00:41,180 --> 00:01:06,795
+等一切准备就绪，然后在
+and so everything is ready then and in
+
+11
+00:01:06,800 --> 00:01:15,684
+你的截止就像是155啊
+your cutoff is like 155 yeah
+
+12
+00:01:15,689 --> 00:01:19,105
+为什么会这样
+why is there
+
+13
+00:01:19,110 --> 00:01:23,755
+你知道有人改变了分辨率
+you know somebody changed the resolution
+
+14
+00:01:23,760 --> 00:01:28,165
+看来不过这没什么不不
+it seems but that's fine doesn't doesn't
+
+15
+00:01:28,170 --> 00:01:32,145
+打扰我们，所以我要告诉你
+bother us so I'm gonna tell you about
+
+16
+00:01:32,150 --> 00:01:35,055
+让我们说最古老的一个
+let's say one of the most ancient
+
+17
+00:01:35,060 --> 00:01:37,585
+优化方法比简单方法简单得多
+optimization methods much simpler than
+
+18
+00:01:37,590 --> 00:01:40,645
+实际上你是更先进的方法
+in fact the more advanced methods you
+
+19
+00:01:40,650 --> 00:01:43,975
+已经在课堂上见过
+have already seen in class and
+
+20
+00:01:43,980 --> 00:01:46,875
+有趣的是这种更古老的方法
+interestingly this more ancient method
+
+21
+00:01:46,880 --> 00:01:50,965
+仍然是培训的方法
+remains the method for training
+
+22
+00:01:50,970 --> 00:01:54,595
+大型机器学习系统和
+large-scale machine learning systems and
+
+23
+00:01:54,600 --> 00:01:56,545
+所以有历史的点点
+so there's a little bit of history
+
+24
+00:01:56,550 --> 00:01:58,615
+我不会去太多
+around that I'm not gonna go too much
+
+25
+00:01:58,620 --> 00:02:02,965
+走进了历史，但底线
+into the history but the bottom line
+
+26
+00:02:02,970 --> 00:02:06,985
+可能吉尔也提到了
+which probably Gil has also mentioned to
+
+27
+00:02:06,990 --> 00:02:09,805
+你在课堂上，至少是大的
+you in class that at least for large
+
+28
+00:02:09,810 --> 00:02:13,435
+数据科学问题到底是什么
+data science problems in the end stuff
+
+29
+00:02:13,440 --> 00:02:14,665
+减少解决优化问题
+reduces to solving an optimization
+
+30
+00:02:14,670 --> 00:02:18,385
+问题和当前时间这些
+problem and in current times these
+
+31
+00:02:18,390 --> 00:02:21,165
+优化问题非常大
+optimization problems are pretty large
+
+32
+00:02:21,170 --> 00:02:25,764
+所以人们真的开始喜欢的东西
+so people actually started liking stuff
+
+33
+00:02:25,769 --> 00:02:28,615
+像发明的梯度下降
+like gradient descent which was invented
+
+34
+00:02:28,620 --> 00:02:32,125
+由Cauchy回来当天，这是
+by Cauchy back in the day and this is
+
+35
+00:02:32,130 --> 00:02:35,365
+我是如何写出抽象问题的
+how I'm writing the abstract problem and
+
+36
+00:02:35,370 --> 00:02:38,065
+我想看到的是否合适
+what I wanna see is okay is it fitting
+
+37
+00:02:38,070 --> 00:02:40,345
+在页面上这是我的实现
+on the page this is my implementation in
+
+38
+00:02:40,350 --> 00:02:44,065
+梯度下降的MATLAB只是设置
+MATLAB of gradient descent just to set
+
+39
+00:02:44,070 --> 00:02:45,505
+你知道这个东西的阶段
+the stage that you know this stuff
+
+40
+00:02:45,510 --> 00:02:47,035
+看起来真的很简单你已经看过了
+really looks simple you've already seen
+
+41
+00:02:47,040 --> 00:02:50,625
+梯度下降，今天基本上
+gradient descent and today essentially
+
+42
+00:02:50,630 --> 00:02:55,255
+简而言之，真正发生了什么变化
+in a nutshell what really changes in
+
+43
+00:02:55,260 --> 00:02:57,234
+这种梯度下降的实现
+this implementation of gradient descent
+
+44
+00:02:57,239 --> 00:03:01,425
+今天就是这个部分
+today is this part that's it
+
+45
+00:03:01,430 --> 00:03:04,585
+所以你看过梯度下降我只是
+so you've seen gradient descent I'm only
+
+46
+00:03:04,590 --> 00:03:07,014
+要改变这一行和
+going to change this one line and the
+
+47
+00:03:07,019 --> 00:03:10,075
+令人惊讶的是，改变那一行
+change of that one line surprisingly is
+
+48
+00:03:10,080 --> 00:03:12,805
+让你知道所有的深度学习
+driving you know all the deep learning
+
+49
+00:03:12,810 --> 00:03:15,234
+工具箱和所有大型机器
+toolboxes and all of large scale machine
+
+50
+00:03:15,239 --> 00:03:16,915
+学习等这是一个
+learning etc this is an
+
+51
+00:03:16,920 --> 00:03:19,635
+过度简化但道德上就是这样
+oversimplification but morally that's it
+
+52
+00:03:19,640 --> 00:03:24,764
+让我们来看看发生了什么，所以我
+so let's look at what's happening so I
+
+53
+00:03:24,769 --> 00:03:28,075
+很快就会变得非常具体
+will become very concrete pretty soon
+
+54
+00:03:28,080 --> 00:03:31,345
+但抽象地说，我希望你看
+but abstractly what I want you to look
+
+55
+00:03:31,350 --> 00:03:32,735
+在是
+at is the
+
+56
+00:03:32,740 --> 00:03:35,725
+我们遇到的各种优化问题
+kinds of optimization problems we are
+
+57
+00:03:35,730 --> 00:03:38,975
+在机器学习中解决，我会
+solving in machine learning and I'll
+
+58
+00:03:38,980 --> 00:03:41,855
+给你非常具体的例子
+give you very concrete examples of these
+
+59
+00:03:41,860 --> 00:03:44,345
+优化问题让你可以
+optimization problems so that you can
+
+60
+00:03:44,350 --> 00:03:47,435
+更好地与他们联系，但我只是
+relate to them better but I'm just
+
+61
+00:03:47,440 --> 00:03:49,895
+把它写成所有的关键主题
+writing this as the key topic that all
+
+62
+00:03:49,900 --> 00:03:52,865
+我要去的优化问题
+the optimization problems that I'm going
+
+63
+00:03:52,870 --> 00:03:55,235
+今天谈谈他们看起来像那样
+to talk about today they look like that
+
+64
+00:03:55,240 --> 00:03:59,765
+我们试图在成本上找到一个x
+we're trying to find an x over a cost
+
+65
+00:03:59,770 --> 00:04:02,045
+功能可以是成本函数
+function where the cost function can be
+
+66
+00:04:02,050 --> 00:04:05,405
+在现代机器中写成一笔钱
+written as a sum in modern day machine
+
+67
+00:04:05,410 --> 00:04:07,115
+学习说法这些也被称为
+learning parlance these are also called
+
+68
+00:04:07,120 --> 00:04:09,725
+遇到的有限和问题
+finite sum problems in case you run into
+
+69
+00:04:09,730 --> 00:04:12,425
+这个词和这个叫有限
+that term and this is called finite
+
+70
+00:04:12,430 --> 00:04:16,085
+因为n在这里纯有限
+because n is finite here in pure
+
+71
+00:04:16,090 --> 00:04:18,695
+优化理论说法n可以
+optimization Theory parlance n can
+
+72
+00:04:18,700 --> 00:04:20,975
+实际上去无限，然后他们
+actually go to infinity and then they
+
+73
+00:04:20,980 --> 00:04:22,105
+被称为随机优化
+are called stochastic optimization
+
+74
+00:04:22,110 --> 00:04:25,955
+只有术语的问题，如果有的话
+problems just for terminology if while
+
+75
+00:04:25,960 --> 00:04:27,965
+在互联网上搜索你遇到了一些
+searching the internet you run into some
+
+76
+00:04:27,970 --> 00:04:30,215
+这样的术语让你有点了解
+such terminology so you kind of know
+
+77
+00:04:30,220 --> 00:04:35,825
+它意味着什么所以这里是我们的设置
+what it means so here is our set up in
+
+78
+00:04:35,830 --> 00:04:39,035
+机器学习我们有一堆
+machine learning we have a bunch of
+
+79
+00:04:39,040 --> 00:04:45,455
+我在这张幻灯片上训练数据好了
+training data ok on this slide I am
+
+80
+00:04:45,460 --> 00:04:48,065
+调用x1到xn这些是
+calling x1 through xn these are the
+
+81
+00:04:48,070 --> 00:04:50,555
+稍后训练数据原始功能
+training data the raw features later
+
+82
+00:04:50,560 --> 00:04:52,715
+实际上我停止为他们写X.
+actually I stopped writing X for them
+
+83
+00:04:52,720 --> 00:04:54,485
+并用字母A写出来但是
+and write them with the letter A but
+
+84
+00:04:54,490 --> 00:04:58,685
+希望没关系，所以x1到xn
+hopefully that's okay so x1 through xn
+
+85
+00:04:58,690 --> 00:05:02,195
+这些可能只是原始图像
+these could be just raw images for
+
+86
+00:05:02,200 --> 00:05:04,385
+imagenet中的实例或其他图像
+instance in imagenet or some other image
+
+87
+00:05:04,390 --> 00:05:06,515
+数据集可能有文本文件
+data set there could be text documents
+
+88
+00:05:06,520 --> 00:05:09,635
+它们可以是y1到yn中的任何东西
+they could be anything y1 through yn in
+
+89
+00:05:09,640 --> 00:05:12,425
+经典机器学习想到它们
+classical machine learning think of them
+
+90
+00:05:12,430 --> 00:05:16,565
+加上减1标签猫不是猫或在
+as plus minus 1 labels cat not cat or in
+
+91
+00:05:16,570 --> 00:05:19,685
+回归设置为一些实数
+a regression setup as some real number
+
+92
+00:05:19,690 --> 00:05:22,865
+所以我们有D的训练数据
+so that's a training data we have D
+
+93
+00:05:22,870 --> 00:05:26,045
+尺寸原始矢量和那些和
+dimensional raw vectors and of those and
+
+94
+00:05:26,050 --> 00:05:28,415
+我们有相应的标签可以
+we have corresponding labels which can
+
+95
+00:05:28,420 --> 00:05:31,085
+要么是加1减1
+be either plus minus 1 in a
+
+96
+00:05:31,090 --> 00:05:33,065
+分类设置或实数
+classification setting or a real number
+
+97
+00:05:33,070 --> 00:05:35,315
+在回归设置中它是那种
+in a regression setting it's kind of
+
+98
+00:05:35,320 --> 00:05:38,045
+对我现在的讲座来说并不重要
+immaterial for my lecture right now so
+
+99
+00:05:38,050 --> 00:05:41,945
+这是输入和任何人
+that's the input and whenever anybody
+
+100
+00:05:41,950 --> 00:05:45,155
+说大型机器学习什么
+says large-scale machine learning what
+
+101
+00:05:45,160 --> 00:05:46,475
+我们真的是说
+do we really mean
+
+102
+00:05:46,480 --> 00:05:51,125
+我们的意思是，无论是N和d可
+what we mean is that both N and D can be
+
+103
+00:05:51,130 --> 00:05:53,425
+大，那么这意味着什么
+large so what does that mean in words
+
+104
+00:05:53,430 --> 00:05:56,465
+有n是训练数据的数量
+there n is the number of training data
+
+105
+00:05:56,470 --> 00:06:00,155
+点，因此n可能是这些天什么
+points so n could be these days what
+
+106
+00:06:00,160 --> 00:06:02,105
+百万千万
+million ten million hundred million
+
+107
+00:06:02,110 --> 00:06:03,845
+取决于计算机和数据有多大
+depends on how big computers and data
+
+108
+00:06:03,850 --> 00:06:07,565
+你得到的东西，所以n可以是巨大的
+sets you got so n can be huge d the
+
+109
+00:06:07,570 --> 00:06:09,515
+维度我们的向量
+dimensionality the vectors that we are
+
+110
+00:06:09,520 --> 00:06:11,975
+与原工作的载体，可以
+working with the raw vectors that can
+
+111
+00:06:11,980 --> 00:06:15,425
+如果X是一个也很大
+also be pretty large think if X is an
+
+112
+00:06:15,430 --> 00:06:18,035
+图像，如果它是一个百万像素的图像哇
+image if it's a megapixel image wow
+
+113
+00:06:18,040 --> 00:06:21,925
+如果你是的话，这些就像一百万
+these like a million already if you are
+
+114
+00:06:21,930 --> 00:06:24,635
+有人喜欢kritio或Facebook或者
+somebody like kriti o or Facebook or
+
+115
+00:06:24,640 --> 00:06:26,465
+谷歌和你在网上服务
+Google and you're serving web
+
+116
+00:06:26,470 --> 00:06:30,835
+广告d这些都是特征
+advertisements D these are the features
+
+117
+00:06:30,840 --> 00:06:34,385
+也能像在连7亿
+could be like in 700 million even a
+
+118
+00:06:34,390 --> 00:06:37,435
+他们编码各种各样的十亿
+billion where they encode all sorts of
+
+119
+00:06:37,440 --> 00:06:39,845
+他们收集的令人讨厌的东西和信息
+nasty stuff and information they collect
+
+120
+00:06:39,850 --> 00:06:42,665
+关于你作为用户如此多的讨厌
+about you as users so so many nasty
+
+121
+00:06:42,670 --> 00:06:44,825
+他们可以收集的东西，所以DNN是
+things they can collect right so DNN are
+
+122
+00:06:44,830 --> 00:06:48,035
+巨大的，因为D和n都是
+huge and it's because both D and n are
+
+123
+00:06:48,040 --> 00:06:51,785
+我们有兴趣思考
+huge we are interested in thinking of
+
+124
+00:06:51,790 --> 00:06:53,705
+大规模的优化方法
+optimization methods for large-scale
+
+125
+00:06:53,710 --> 00:06:56,015
+机器学习，可以处理这样的
+machine learning that can handle such
+
+126
+00:06:56,020 --> 00:07:00,245
+大DNL和这推动了很多
+big dnl and this is driving a lot of
+
+127
+00:07:00,250 --> 00:07:01,535
+研究也在理论计算机上
+research also in theoretical computer
+
+128
+00:07:01,540 --> 00:07:03,965
+科学包括搜索子
+science including the search for sub
+
+129
+00:07:03,970 --> 00:07:06,125
+各种线性时间算法
+linear time algorithms in all sorts of
+
+130
+00:07:06,130 --> 00:07:08,105
+哈希技巧中的数据结构就是这样
+data structures in hashing tricks just
+
+131
+00:07:08,110 --> 00:07:12,455
+对付这两个量等等
+to deal with these two quantities so
+
+132
+00:07:12,460 --> 00:07:15,505
+这是一个示例超级玩具示例和
+here is an example super toy example and
+
+133
+00:07:15,510 --> 00:07:17,915
+我希望你知道我能做到的
+I hope really you know by that I can
+
+134
+00:07:17,920 --> 00:07:20,225
+稍后挤一点证明
+squeeze in a little bit of a proof later
+
+135
+00:07:20,230 --> 00:07:22,805
+在接近年底我会在这里进行表决
+on towards the end I'll take a vote here
+
+136
+00:07:22,810 --> 00:07:24,425
+在课堂上看看你是否感兴趣
+in class to see if you are interested
+
+137
+00:07:24,430 --> 00:07:27,815
+让我们来看看最经典的问题
+let's look at the most classic question
+
+138
+00:07:27,820 --> 00:07:31,925
+最小二乘回归是一个矩阵
+least squares regression is a matrix of
+
+139
+00:07:31,930 --> 00:07:34,595
+观察或抱歉测量B是
+observations or sorry measurements B are
+
+140
+00:07:34,600 --> 00:07:36,575
+你想要解决的观察结果
+the observations you're trying to solve
+
+141
+00:07:36,580 --> 00:07:38,045
+斧头减去B整个正方形
+ax minus B whole square
+
+142
+00:07:38,050 --> 00:07:40,595
+当然是一个线性方程组
+of course a linear system of equations
+
+143
+00:07:40,600 --> 00:07:42,365
+线性的最经典问题
+the most classical problem in linear
+
+144
+00:07:42,370 --> 00:07:43,895
+代数也可以这样写
+algebra can also be written like that
+
+145
+00:07:43,900 --> 00:07:50,135
+让我们说这可以有希望地扩大
+let's say this can be expanded hopefully
+
+146
+00:07:50,140 --> 00:07:54,475
+你对这个规范很满意
+you are comfortable with this norm right
+
+147
+00:07:54,480 --> 00:07:59,285
+所以x2square只是定义为
+so x2 square this is just defined as
+
+148
+00:07:59,290 --> 00:08:02,075
+这就是那种符号的定义
+that's the definition of that notation
+
+149
+00:08:02,080 --> 00:08:05,795
+但是我现在只写一次
+but I'll just write it only once now I
+
+150
+00:08:05,800 --> 00:08:09,215
+希望大家充分了解，如此
+hope you are fully familiar with that so
+
+151
+00:08:09,220 --> 00:08:11,915
+通过扩展我设法写
+by expanding that I managed to write
+
+152
+00:08:11,920 --> 00:08:15,245
+就我而言，最小二乘问题
+least squares problem in terms of what I
+
+153
+00:08:15,250 --> 00:08:18,575
+把有限和称为正确，这就是它
+call the finite sum right so it's just
+
+154
+00:08:18,580 --> 00:08:21,185
+在他们的结尾遍历所有行
+going over all the rows in a their end
+
+155
+00:08:21,190 --> 00:08:23,615
+让我们这么说，这是最少的
+rows let's say so that's the least
+
+156
+00:08:23,620 --> 00:08:25,475
+正方形经典最小二乘问题
+squares classical least squares problem
+
+157
+00:08:25,480 --> 00:08:28,865
+它假定我们这个有限的总和形式
+it assumes this finite sum form that we
+
+158
+00:08:28,870 --> 00:08:32,974
+关心另一个随机的例子
+care about another random example
+
+159
+00:08:32,979 --> 00:08:35,224
+所谓的拉，所以也许你有
+something called la so maybe you have if
+
+160
+00:08:35,229 --> 00:08:37,325
+你们中的任何人都玩过机器
+anybody of you has played with machine
+
+161
+00:08:37,330 --> 00:08:38,945
+你可以学习统计工具包
+learning statistics toolkits you may
+
+162
+00:08:38,950 --> 00:08:41,015
+见过laSollaSol
+have seen something called la Sol la Sol
+
+163
+00:08:41,020 --> 00:08:42,935
+基本上是最小二乘，但有
+is essentially least squares but there's
+
+164
+00:08:42,940 --> 00:08:47,285
+在结束另一个简单的术语，
+another simple term at the end that
+
+165
+00:08:47,290 --> 00:08:51,125
+再次看起来像我支持向量的F.
+again looks like F of I support vector
+
+166
+00:08:51,130 --> 00:08:55,175
+机器曾经超过他们的马
+machines once over horse of they're
+
+167
+00:08:55,180 --> 00:08:57,515
+还是人一个主力马谁
+still a workhorse horse of people who
+
+168
+00:08:57,520 --> 00:09:01,015
+处理中小型数据
+work with small to medium sized data
+
+169
+00:09:01,020 --> 00:09:03,665
+深度学习需要大量资金
+deep learning stuff requires huge amount
+
+170
+00:09:03,670 --> 00:09:05,465
+如果您有中小型数据
+of data if you have small to medium
+
+171
+00:09:05,470 --> 00:09:07,115
+数据逻辑回归量
+amount of data logistic regression
+
+172
+00:09:07,120 --> 00:09:09,545
+支持向量机等树木这
+support vector machines trees etc this
+
+173
+00:09:09,550 --> 00:09:11,795
+将是第一个去他们的方法
+will be a first go to methods they still
+
+174
+00:09:11,800 --> 00:09:14,645
+这些问题非常广泛使用
+very widely used these problems are
+
+175
+00:09:14,650 --> 00:09:17,665
+再次以损失的方式写下来
+again written in terms of a loss over
+
+176
+00:09:17,670 --> 00:09:21,515
+训练数据所以这又有了这个
+training data so this again has this
+
+177
+00:09:21,520 --> 00:09:23,405
+很棒的格式，我现在才会
+awesome format which I'll just now
+
+178
+00:09:23,410 --> 00:09:26,345
+记录在这里我甚至可能不需要
+record here I may not even need to
+
+179
+00:09:26,350 --> 00:09:28,115
+有时我会用它来写它
+repeat it sometimes I write it with a
+
+180
+00:09:28,120 --> 00:09:31,925
+你可能会想到一些正常化
+normalization you may wonder at some
+
+181
+00:09:31,930 --> 00:09:36,245
+指出为什么那个有限和问题和
+point why as that finite sum problem and
+
+182
+00:09:36,250 --> 00:09:39,425
+也许你想要它的例子
+maybe the example that you want it to
+
+183
+00:09:39,430 --> 00:09:45,965
+看到的是类似的东西如此之深
+see is something like that so deep
+
+184
+00:09:45,970 --> 00:09:47,945
+神经网络非常受欢迎
+neural networks that are very popular
+
+185
+00:09:47,950 --> 00:09:50,015
+这些天他们又是另一个
+these days they are just yet another
+
+186
+00:09:50,020 --> 00:09:53,855
+这个有限和问题的例子如何
+example of this finite sum problem how
+
+187
+00:09:53,860 --> 00:09:57,185
+他们是你的一个例子吗？
+are they an example of that so you have
+
+188
+00:09:57,190 --> 00:10:00,215
+n训练数据点有神经
+n training data points there's a neural
+
+189
+00:10:00,220 --> 00:10:02,825
+网络丢失就像交叉熵或什么
+network loss like cross-entropy or what
+
+190
+00:10:02,830 --> 00:10:05,105
+你有没有把损失交叉到任何一个
+have you squared loss cross into any
+
+191
+00:10:05,110 --> 00:10:08,585
+有点失落为什么眼睛是标签猫
+kind of loss why eyes are the labels cat
+
+192
+00:10:08,590 --> 00:10:10,475
+不是猫或其他什么或他们可能是她
+not cat or whatever or they may be her
+
+193
+00:10:10,480 --> 00:10:12,305
+多班
+multi class
+
+194
+00:10:12,310 --> 00:10:15,065
+然后你有一个传递函数
+and then you have a transfer function
+
+195
+00:10:15,070 --> 00:10:17,555
+称为深度神经网络
+called a deep neural network which takes
+
+196
+00:10:17,560 --> 00:10:20,405
+原始图像作为输入并生成一个
+raw images as input and generates a
+
+197
+00:10:20,410 --> 00:10:22,865
+预测这是否是狗或不
+prediction whether this is a dog or not
+
+198
+00:10:22,870 --> 00:10:25,615
+整件事我只是叫DNn
+that whole thing I'm just calling DN n
+
+199
+00:10:25,620 --> 00:10:28,024
+所以这是一个眼睛的功能
+so it's a function of a eyes which are
+
+200
+00:10:28,029 --> 00:10:30,875
+训练数据X的重量
+the training data X are the weight
+
+201
+00:10:30,880 --> 00:10:32,855
+我是神经网络的矩阵
+matrices of the neural network so I'm
+
+202
+00:10:32,860 --> 00:10:34,355
+只是压缩了整个神经网络
+just compressed the whole neural network
+
+203
+00:10:34,360 --> 00:10:35,375
+进入这种表示法
+into this notation
+
+204
+00:10:35,380 --> 00:10:37,805
+再一次，它只不过是一个例子
+once again it's nothing but an instance
+
+205
+00:10:37,810 --> 00:10:42,695
+有限的总和使FI在那里
+of that finite sum so that F I in there
+
+206
+00:10:42,700 --> 00:10:45,125
+捕获整个神经网络
+captures the entire neural network
+
+207
+00:10:45,130 --> 00:10:49,055
+建筑，但在数学上它是
+architecture but mathematically it's
+
+208
+00:10:49,060 --> 00:10:51,965
+仍然只是一个特定的例子
+still just one particular instance of
+
+209
+00:10:51,970 --> 00:10:55,834
+这个有限的总和问题和人
+this finite sum problem and in people
+
+210
+00:10:55,839 --> 00:10:58,205
+谁做了很多统计数据最多
+who do lot of statistics maximum
+
+211
+00:10:58,210 --> 00:11:01,805
+可能性估计这是对数
+likelihood estimation this is log
+
+212
+00:11:01,810 --> 00:11:05,855
+我们想要的n次观察的可能性
+likelihood over n observations we want
+
+213
+00:11:05,860 --> 00:11:08,705
+最大化对数可能性
+to maximize log likelihood once again
+
+214
+00:11:08,710 --> 00:11:12,425
+这只是一个有限的总和
+just a finite sum so pretty much most of
+
+215
+00:11:12,430 --> 00:11:14,795
+我们感兴趣的问题
+the problems that we are interested in
+
+216
+00:11:14,800 --> 00:11:17,285
+机器学习和统计时我
+machine learning and statistics when I
+
+217
+00:11:17,290 --> 00:11:19,025
+写下来把它们写成一个
+write them write them down as an
+
+218
+00:11:19,030 --> 00:11:20,705
+优化问题他们看起来像这样
+optimization problem they look like this
+
+219
+00:11:20,710 --> 00:11:24,185
+有限和问题，那是
+finite sum problems and that's the
+
+220
+00:11:24,190 --> 00:11:27,325
+发展专业的原因
+reason to develop specialized
+
+221
+00:11:27,330 --> 00:11:29,915
+这样的优化程序来解决
+optimization procedures to solve such
+
+222
+00:11:29,920 --> 00:11:33,755
+有限和问题，这就是SGD
+finite sum problems and that's where SGD
+
+223
+00:11:33,760 --> 00:11:37,175
+进来好了，所以这是一种只
+comes in ok so that's kind of just the
+
+224
+00:11:37,180 --> 00:11:39,665
+让我们来看看如何去
+backdrop let's look at now how to go
+
+225
+00:11:39,670 --> 00:11:44,785
+关于解决这些问题
+about solving these problems
+
+226
+00:11:44,790 --> 00:11:50,915
+所以希望这个迭代很熟悉
+so hopefully this iteration is familiar
+
+227
+00:11:50,920 --> 00:11:58,015
+你渐渐下降就好了
+to you gradient descent right ok so just
+
+228
+00:11:58,020 --> 00:12:02,495
+对于X的符号f指的是那个
+for notation f of X refers to that
+
+229
+00:12:02,500 --> 00:12:05,675
+X的整个总和FsubI指的是
+entire summation F sub I of X refers to
+
+230
+00:12:05,680 --> 00:12:09,635
+一个单一的组件好吧，如果你这样做
+a single component ok so if you were to
+
+231
+00:12:09,640 --> 00:12:12,454
+试着解决这个问题是为了尽量减少这一点
+try to solve that is to minimize this
+
+232
+00:12:12,459 --> 00:12:14,765
+成本函数神经网络SVM
+cost function neural network SVM
+
+233
+00:12:14,770 --> 00:12:17,845
+什么是你使用梯度下降
+what-have-you using gradient descent
+
+234
+00:12:17,850 --> 00:12:20,225
+这就是一次迭代的样子
+that's what one iteration would look
+
+235
+00:12:20,230 --> 00:12:24,334
+喜欢因为它是一个有限的和梯度
+like because it's a finite sum gradients
+
+236
+00:12:24,339 --> 00:12:25,925
+是线性运算符
+are linear operators
+
+237
+00:12:25,930 --> 00:12:27,995
+你知道总和的梯度就是总和
+you know gradient of the sum is the sum
+
+238
+00:12:28,000 --> 00:12:30,155
+梯度的渐变使得渐变
+of the gradients so that's gradient
+
+239
+00:12:30,160 --> 00:12:35,315
+你的血统，现在我只想问一个
+descent for you and now I'll just ask a
+
+240
+00:12:35,320 --> 00:12:37,775
+修辞问题，如果你把
+rhetoric question that if you put
+
+241
+00:12:37,780 --> 00:12:38,915
+自己在你的鞋子知道
+yourself in the shoes of you know
+
+242
+00:12:38,920 --> 00:12:42,005
+算法设计师你有些事情
+algorithm designers some things that you
+
+243
+00:12:42,010 --> 00:12:44,585
+可能想要考虑一下你可能没有的东西
+may want to think about what may you not
+
+244
+00:12:44,590 --> 00:12:47,705
+就像这个迭代一样大
+like about this iteration given that big
+
+245
+00:12:47,710 --> 00:12:50,075
+我告诉过你的BigD故事
+and Big D story that I told you so
+
+246
+00:12:50,080 --> 00:12:53,615
+任何人都有任何保留或约
+anybody have any reservations or about
+
+247
+00:12:53,620 --> 00:12:59,365
+这次迭代的缺点是任何评论
+drawbacks of this iteration any comments
+
+248
+00:12:59,370 --> 00:13:02,795
+这是一笔相当大的收入
+it's a pretty big sum especially
+
+249
+00:13:02,800 --> 00:13:11,395
+什么是一个很大的缺点和
+anything that is a big drawback and
+
+250
+00:13:11,400 --> 00:13:14,195
+这是最主要的缺点
+there is that is the prime drawback for
+
+251
+00:13:14,200 --> 00:13:16,925
+大规模的n可以是巨大的
+large scale that n can be huge there can
+
+252
+00:13:16,930 --> 00:13:19,685
+一些其他的缺点
+be variety of other drawbacks some of
+
+253
+00:13:19,690 --> 00:13:21,215
+这些你以前可能见过，如果
+those you may have seen previously if
+
+254
+00:13:21,220 --> 00:13:22,955
+当人们比较是否这样做
+when people compare whether to do
+
+255
+00:13:22,960 --> 00:13:26,275
+渐变或做牛顿等但是
+gradient or to do Newton etc but for
+
+256
+00:13:26,280 --> 00:13:29,345
+今天的目的是有限总和的大
+purpose of today for finite sums the big
+
+257
+00:13:29,350 --> 00:13:32,615
+缺点是在a处计算梯度
+drawback is computing gradient at a
+
+258
+00:13:32,620 --> 00:13:35,705
+单点这是下标XK
+single point this is a subscript XK
+
+259
+00:13:35,710 --> 00:13:38,945
+错过那里涉及计算
+missing there involves computing the
+
+260
+00:13:38,950 --> 00:13:41,105
+和的总和的梯度
+gradient of that entire sum that sum is
+
+261
+00:13:41,110 --> 00:13:44,795
+巨大，所以要做一个渐变
+huge so getting a single gradient to do
+
+262
+00:13:44,800 --> 00:13:47,645
+的梯度下降为单一步骤
+a single step of gradient descent for a
+
+263
+00:13:47,650 --> 00:13:51,275
+大数据集可能需要几个小时或
+large data set could take you hours or
+
+264
+00:13:51,280 --> 00:13:56,255
+天，这是一个主要的缺点，但随后
+days so that's a major drawback but then
+
+265
+00:13:56,260 --> 00:13:58,175
+好的，如果你发现了这个缺点
+okay if you identify that drawback
+
+266
+00:13:58,180 --> 00:14:03,125
+任何人都有任何想法如何反击
+anybody have any ideas how to counter
+
+267
+00:14:03,130 --> 00:14:05,735
+这个缺点至少可以说纯粹来自
+that drawback at least say purely from
+
+268
+00:14:05,740 --> 00:14:10,295
+我听说过工程学的观点
+an engineering perspective I heard
+
+269
+00:14:10,300 --> 00:14:14,915
+某物
+something
+
+270
+00:14:14,920 --> 00:14:21,225
+使用LexA和一批mash灯来
+using LexA and a batch of mash lights to
+
+271
+00:14:21,230 --> 00:14:25,064
+保卫我们，也许别人有
+defend us and maybe somebody else has
+
+272
+00:14:25,069 --> 00:14:27,014
+任何人都想要的基本相同的想法
+essentially the same idea anybody wants
+
+273
+00:14:27,019 --> 00:14:29,894
+建议如何规避那么大
+to suggest how to circumvent that big
+
+274
+00:14:29,899 --> 00:14:33,915
+在那里结束什么东西假设你
+end stuff in there anything suppose you
+
+275
+00:14:33,920 --> 00:14:46,685
+可以在这实现你会做什么
+can implement in this what would you do
+
+276
+00:14:46,690 --> 00:14:49,485
+完全n的andum样本所以这些是
+andum sample of the full n so these are
+
+277
+00:14:49,490 --> 00:14:54,165
+所有优秀的想法，因此你们大家
+all excellent ideas and hence you folks
+
+278
+00:14:54,170 --> 00:14:56,444
+在课堂上发现了最多
+in the class have discovered the most
+
+279
+00:14:56,449 --> 00:14:58,785
+优化机器的重要方法
+important method for optimizing machine
+
+280
+00:14:58,790 --> 00:15:00,855
+学习问题坐在这里几个
+learning problems sitting here in a few
+
+281
+00:15:00,860 --> 00:15:04,155
+时刻不是那么大，所以这一部分
+moments isn't that great so the part
+
+282
+00:15:04,160 --> 00:15:05,444
+缺少的当然是要做的
+that is missing is of course to make
+
+283
+00:15:05,449 --> 00:15:07,875
+这个想法的作用是什么呢？
+sense of does this idea work why does it
+
+284
+00:15:07,880 --> 00:15:12,584
+工作所以这个想法真的是在心里
+work so this idea is really at the heart
+
+285
+00:15:12,589 --> 00:15:17,144
+随机梯度下降所以让我们
+of stochastic gradient descent so let's
+
+286
+00:15:17,149 --> 00:15:20,504
+看，我也许可以给你看一个例子
+see I maybe I can show you an example
+
+287
+00:15:20,509 --> 00:15:26,415
+实际上，我会告诉你一个
+actually that I I'll show you a
+
+288
+00:15:26,420 --> 00:15:29,504
+模拟我发现有人很好
+simulation I found on somebody's nice
+
+289
+00:15:29,509 --> 00:15:35,415
+关于那个网页的确切的想法
+web page about that so exactly your idea
+
+290
+00:15:35,420 --> 00:15:38,024
+只是放入一些轻微的数学符号
+just put in slight mathematical notation
+
+291
+00:15:38,029 --> 00:15:42,045
+如果在每次迭代时我们都会这样做
+that what if at each iteration we
+
+292
+00:15:42,050 --> 00:15:45,644
+随机选择一些整数IK.
+randomly pick some integer I K out of
+
+293
+00:15:45,649 --> 00:15:49,875
+n个训练数据点和我们
+the n training data points and and we
+
+294
+00:15:49,880 --> 00:15:55,144
+而只是正确执行此更新
+instead just perform this update right
+
+295
+00:15:55,149 --> 00:15:58,485
+所以你的，而不是使用完整
+so you instead of using the full
+
+296
+00:15:58,490 --> 00:16:03,704
+渐变你只需计算渐变
+gradient you just compute the gradient
+
+297
+00:16:03,709 --> 00:16:05,655
+一个随机选择的数据点
+of a single randomly chosen data point
+
+298
+00:16:05,660 --> 00:16:09,405
+那么你对那个做了什么呢？
+so what have you done with that one
+
+299
+00:16:09,410 --> 00:16:12,225
+如果n，迭代现在快n倍
+iteration is now n times faster if n
+
+300
+00:16:12,230 --> 00:16:14,355
+是一百万或十亿哇
+were a million or a billion wow that's
+
+301
+00:16:14,360 --> 00:16:18,405
+超快，但为什么这应该工作
+super fast but why should this work
+
+302
+00:16:18,410 --> 00:16:21,245
+对
+right
+
+303
+00:16:21,250 --> 00:16:22,805
+我的意思是我可以做很多其他事情
+I mean I could have done many other
+
+304
+00:16:22,810 --> 00:16:24,514
+我能做的事情我可以
+things I could have constant I could
+
+305
+00:16:24,519 --> 00:16:27,185
+没有做任何更新，只是输出
+have not done any update and just output
+
+306
+00:16:27,190 --> 00:16:28,834
+零矢量，即使是偶数
+the zero vector that would take even
+
+307
+00:16:28,839 --> 00:16:31,324
+较短的时间，这也是一个想法意味着一个
+lesser time that's also an idea means a
+
+308
+00:16:31,329 --> 00:16:33,425
+糟糕的想法，但这是一个类似的想法
+bad idea but it's an idea in the similar
+
+309
+00:16:33,430 --> 00:16:35,254
+我可以做各种各样的联赛
+league I could have done a variety of
+
+310
+00:16:35,259 --> 00:16:37,535
+其他的事情，你为什么会认为
+other things why would you think that
+
+311
+00:16:37,540 --> 00:16:39,995
+只是你知道替换一些
+just you know replacing that some with
+
+312
+00:16:40,000 --> 00:16:44,555
+只有一个随机的例子可以让我们工作
+just one random example may work let's
+
+313
+00:16:44,560 --> 00:16:48,965
+查看更多有关那么一点点的
+see a little bit more about that so of
+
+314
+00:16:48,970 --> 00:16:53,824
+当然它快了n倍，关键
+course it's n times faster and the key
+
+315
+00:16:53,829 --> 00:16:55,834
+现在问我们这里的问题
+question for us here right now the
+
+316
+00:16:55,839 --> 00:16:58,595
+科学问题是这样做的
+scientific question is does this make
+
+317
+00:16:58,600 --> 00:17:01,894
+感觉它具有很大的工程意义
+sense it makes great engineering sense
+
+318
+00:17:01,899 --> 00:17:03,934
+它是算法还是数学
+does it make algorithmic or mathematical
+
+319
+00:17:03,939 --> 00:17:10,265
+感让这个想法在做的东西的
+sense so this idea of doing stuff in the
+
+320
+00:17:10,270 --> 00:17:11,824
+实际上是随机的
+stochastic manner was actually
+
+321
+00:17:11,829 --> 00:17:13,834
+最初由罗宾斯在Monro提出
+originally proposed by Robbins in Monro
+
+322
+00:17:13,839 --> 00:17:17,074
+在某个地方，我想在1951年左右，那就是
+somewhere I think around 1951 and that's
+
+323
+00:17:17,079 --> 00:17:19,204
+我们最先进的方法
+the most advanced method that we are
+
+324
+00:17:19,209 --> 00:17:23,554
+基本上使用目前所以我将展示
+essentially using currently so I'll show
+
+325
+00:17:23,559 --> 00:17:25,804
+你这个想法有意义但也许
+you that this idea makes sense but maybe
+
+326
+00:17:25,809 --> 00:17:29,215
+让我们先看一下比较
+let's first just look at a comparison of
+
+327
+00:17:29,220 --> 00:17:33,294
+SGD在这个梯度下降
+SGD with gradient descent in this
+
+328
+00:17:33,299 --> 00:17:40,955
+仿真所以这就是MATLAB代码
+simulation so this is that MATLAB code
+
+329
+00:17:40,960 --> 00:17:46,385
+梯度下降，这只是一个
+of gradient descent and this is just a
+
+330
+00:17:46,390 --> 00:17:48,034
+模拟梯度下降就像你一样
+simulation of gradient descent as you
+
+331
+00:17:48,039 --> 00:17:50,435
+选择一个不同的步长，即伽玛
+pick a different step size that gamma in
+
+332
+00:17:50,440 --> 00:17:53,255
+在那里你走向最佳的if
+there you move towards the optimum if
+
+333
+00:17:53,260 --> 00:17:57,245
+步长你小很多
+the step size is small you make many
+
+334
+00:17:57,250 --> 00:18:01,985
+小步骤进展，你到达那里
+small steps progress and you reach there
+
+335
+00:18:01,990 --> 00:18:04,265
+这是一个有条件的问题
+that's for a well-conditioned problem in
+
+336
+00:18:04,270 --> 00:18:06,664
+它会带来一个病态的问题
+an ill-conditioned problem it takes you
+
+337
+00:18:06,669 --> 00:18:09,215
+在神经网络类型中甚至更大
+even larger in a neural network type
+
+338
+00:18:09,220 --> 00:18:12,034
+你需要非凸的问题
+problem which is non convex you have to
+
+339
+00:18:12,039 --> 00:18:14,164
+通常使用较小的步长
+typically work with smaller step sizes
+
+340
+00:18:14,169 --> 00:18:15,605
+如果你采取更大的，你可以得到
+and if you take bigger ones you can get
+
+341
+00:18:15,610 --> 00:18:18,185
+疯狂的振荡，但那是渐变
+crazy oscillations but that's gradient
+
+342
+00:18:18,190 --> 00:18:24,034
+比较下降让我们希望如此
+descent in comparison let's hope that
+
+343
+00:18:24,039 --> 00:18:26,674
+这种加载正确，甚至有一个
+this loads correctly well there's even a
+
+344
+00:18:26,679 --> 00:18:29,255
+罗宾斯的核心图片
+picture of Robbins who's a core
+
+345
+00:18:29,260 --> 00:18:30,695
+随机梯度的发现者
+discoverer of the stochastic gradient
+
+346
+00:18:30,700 --> 00:18:33,784
+方法有一个很好的模拟
+method there's a nice simulation that
+
+347
+00:18:33,789 --> 00:18:35,075
+而不是我
+instead of me
+
+348
+00:18:35,080 --> 00:18:38,524
+国王那种确定性的血统
+King that kind of deterministic descent
+
+349
+00:18:38,529 --> 00:18:40,565
+在调用所有梯度下降之后
+after all gradient descent is called
+
+350
+00:18:40,570 --> 00:18:45,544
+在每一个步骤中，梯度下降
+gradient descent at every step it
+
+351
+00:18:45,549 --> 00:18:48,505
+下降它降低了成本函数
+descends it decreases the cost function
+
+352
+00:18:48,510 --> 00:18:50,945
+实际上是随机梯度下降
+stochastic gradient descent is actually
+
+353
+00:18:50,950 --> 00:18:53,615
+在每一步都没有用的用词不当
+a misnomer at every step it doesn't do
+
+354
+00:18:53,620 --> 00:18:55,894
+任何下降它不会减少
+any descent it does not decrease the
+
+355
+00:18:55,899 --> 00:18:57,755
+成本函数，所以你可以看到每一个
+cost function so you can see at every
+
+356
+00:18:57,760 --> 00:18:59,975
+那些是成本的轮廓
+step those are the contours of the cost
+
+357
+00:18:59,980 --> 00:19:01,565
+功能有时它有时会上升
+function sometimes it goes up sometimes
+
+358
+00:19:01,570 --> 00:19:04,804
+它下降它波动，但它
+it goes down it fluctuates around but it
+
+359
+00:19:04,809 --> 00:19:06,935
+一种随机似乎仍是
+kind of stochastically still seems to be
+
+360
+00:19:06,940 --> 00:19:11,005
+在最佳和最佳方面取得进展
+making progress towards the optimum and
+
+361
+00:19:11,010 --> 00:19:13,654
+随机梯度下降，因为它
+stochastic gradient descent because it's
+
+362
+00:19:13,659 --> 00:19:16,745
+不使用精确的渐变只是工作
+not using exact gradients just working
+
+363
+00:19:16,750 --> 00:19:20,435
+实际上，这些随机的例子
+with these random examples it actually
+
+364
+00:19:20,440 --> 00:19:24,294
+对步长更敏感
+is much more sensitive to step sizes and
+
+365
+00:19:24,299 --> 00:19:27,005
+你可以看到我增加步长
+you can see as I increase the step size
+
+366
+00:19:27,010 --> 00:19:29,945
+它的行为就像实际上一样
+its behavior this is like actually full
+
+367
+00:19:29,950 --> 00:19:33,005
+模拟玩具问题所以
+simulation for a toy problem so
+
+368
+00:19:33,010 --> 00:19:35,524
+最初所以我希望你注意到
+initially so what I want you to notice
+
+369
+00:19:35,529 --> 00:19:39,544
+让我通过这个，你知道一些
+is let me go through this you know a few
+
+370
+00:19:39,549 --> 00:19:43,414
+时代一直在看你的模式
+times keep looking at what patterns you
+
+371
+00:19:43,419 --> 00:19:45,274
+可能会注意到这条线是怎么回事
+may notice in how that line is
+
+372
+00:19:45,279 --> 00:19:48,095
+希望这足够大
+fluctuating hopefully this is big enough
+
+373
+00:19:48,100 --> 00:19:52,534
+对于每个人都可以看到这样的滑块
+for everybody to see okay so this slider
+
+374
+00:19:52,539 --> 00:19:54,394
+我正在转移只是步长
+that I'm shifting is just the step size
+
+375
+00:19:54,399 --> 00:19:56,644
+所以，让我在你遇到的情况下提醒你
+so let me just remind you in case you
+
+376
+00:19:56,649 --> 00:19:59,585
+忘记了我们正在运行XK的迭代
+forgot the iteration we are running XK
+
+377
+00:19:59,590 --> 00:20:04,654
+加1是XK减去一些好吧没关系
+plus 1 is XK minus some it okay okay
+
+378
+00:20:04,659 --> 00:20:07,404
+它被称为alpha有时候有些
+it's called alpha there times some
+
+379
+00:20:07,409 --> 00:20:12,274
+您计算的随机选择的数据点
+randomly chosen data point you compute
+
+380
+00:20:12,279 --> 00:20:15,394
+它的渐变这是SGD，这就是我们
+its gradient this is SGD that's what we
+
+381
+00:20:15,399 --> 00:20:20,345
+正在运行，我们扔掉了大量的
+are running and we threw away tons of
+
+382
+00:20:20,350 --> 00:20:22,115
+我们没有充分使用的信息
+information we didn't use the full
+
+383
+00:20:22,120 --> 00:20:25,835
+渐变我们只是使用这种原油
+gradient we just using this crude crude
+
+384
+00:20:25,840 --> 00:20:27,875
+渐变所以这个过程非常好
+gradient so this process is very
+
+385
+00:20:27,880 --> 00:20:30,335
+敏感的其他参数
+sensitive to the other parameter in the
+
+386
+00:20:30,340 --> 00:20:32,495
+系统，这是步长大小更
+system which is the step size much more
+
+387
+00:20:32,500 --> 00:20:34,325
+事实上，比梯度下降敏感
+sensitive than gradient descent in fact
+
+388
+00:20:34,330 --> 00:20:37,205
+当我改变步骤时你会看到
+and you let's see as I vary the step
+
+389
+00:20:37,210 --> 00:20:39,575
+大小看看你是否能注意到一些父母
+size see if you can notice some parents
+
+390
+00:20:39,580 --> 00:20:59,484
+如何尝试走向最佳状态
+on how it tries to go towards an optimum
+
+391
+00:20:59,489 --> 00:21:01,764
+也是这个的放大版本
+is a zoomed in version also of this
+
+392
+00:21:01,769 --> 00:21:07,394
+稍后在这里，很快就会到来
+later here and come to that shortly
+
+393
+00:21:07,399 --> 00:21:09,955
+我会再次重复，然后我会
+again I'll repeat again and then I'll
+
+394
+00:21:09,960 --> 00:21:11,874
+如果你，请问你的意见
+ask you for your observations if you
+
+395
+00:21:11,879 --> 00:21:15,744
+注意一些我不知道的模式
+notice some patterns I don't know if
+
+396
+00:21:15,749 --> 00:21:16,884
+他们知道你一定很明显
+they're necessarily apparent you know
+
+397
+00:21:16,889 --> 00:21:18,534
+这就是模式的原因，因为我
+that's the thing with patterns because I
+
+398
+00:21:18,539 --> 00:21:20,754
+知道答案，所以我看到了模式
+know the answer so I see the pattern if
+
+399
+00:21:20,759 --> 00:21:22,104
+你不知道你可能或可能的答案
+you don't know the answer you may or may
+
+400
+00:21:22,109 --> 00:21:23,994
+没有看到模式，但我想看看是否
+not see the pattern but I want to see if
+
+401
+00:21:23,999 --> 00:21:25,794
+你实际上看到我移动时的模式
+you actually see the pattern as I move
+
+402
+00:21:25,799 --> 00:21:30,384
+改变步长，也许就是这样
+change the step size so maybe that was
+
+403
+00:21:30,389 --> 00:21:31,974
+任何人都有足够的模拟
+enough simulation anybody have any
+
+404
+00:21:31,979 --> 00:21:33,534
+评论你可能采用何种模式
+comments on what kind of pattern you may
+
+405
+00:21:33,539 --> 00:21:49,914
+已观察到其他任何评论
+have observed any other comments there's
+
+406
+00:21:49,919 --> 00:21:51,414
+还有一件有趣的事情发生了
+one more interesting thing happening
+
+407
+00:21:51,419 --> 00:21:54,804
+这是一个非常非常典型的事情
+here which is a very very typical thing
+
+408
+00:21:54,809 --> 00:21:57,924
+为SGD中的原因之一人
+for SGD in one of the reasons why people
+
+409
+00:21:57,929 --> 00:22:01,284
+爱SGD让我再次这样做
+love SGD let me do that once again
+
+410
+00:22:01,289 --> 00:22:04,794
+简单地说这是一个很小的步长
+briefly okay this is tiny step size
+
+411
+00:22:04,799 --> 00:22:08,154
+接近零几乎为零并不完全正确
+almost zero close to zero is not exactly
+
+412
+00:22:08,159 --> 00:22:12,205
+零，所以你看看会发生什么
+zero so you see what happens for a very
+
+413
+00:22:12,210 --> 00:22:15,205
+它看起来很小
+tiny step size it doesn't look that
+
+414
+00:22:15,210 --> 00:22:17,424
+随机权利，但那是一种
+stochastic right but that's kind of
+
+415
+00:22:17,429 --> 00:22:19,884
+如果Takei是非常明显的话
+obvious from there if a Takei is very
+
+416
+00:22:19,889 --> 00:22:24,594
+很小，你几乎不会采取任何行动
+tiny you'll hardly make any move so
+
+417
+00:22:24,599 --> 00:22:28,464
+事实看起来非常稳定
+things will look very stable and in fact
+
+418
+00:22:28,469 --> 00:22:29,754
+随机梯度的速度
+the speed at which stochastic gradient
+
+419
+00:22:29,759 --> 00:22:32,424
+收敛这就是极其敏感的原因
+converges that's why extremely sensitive
+
+420
+00:22:32,429 --> 00:22:34,614
+如何选择它仍然的步长
+to how you pick the step size it's still
+
+421
+00:22:34,619 --> 00:22:36,144
+拿出一个开放的研究问题
+an open research problem to come up with
+
+422
+00:22:36,149 --> 00:22:37,794
+选择步长的最佳方法还可以
+the best way to pick step sizes okay so
+
+423
+00:22:37,799 --> 00:22:39,624
+虽然很简单，但事实并非如此
+it's even though it's simple it doesn't
+
+424
+00:22:39,629 --> 00:22:42,685
+意味着它是微不足道的，因为我改变了步骤
+mean it's trivial and as I vary the step
+
+425
+00:22:42,690 --> 00:22:47,394
+大小可以取得一些进展和它
+size okay to make some progress and it
+
+426
+00:22:47,399 --> 00:22:50,065
+走向解决方案你知道吗？
+goes towards the solution are you know
+
+427
+00:22:50,070 --> 00:22:51,594
+开始说它似乎是
+beginning to say that it seems to be
+
+428
+00:22:51,599 --> 00:22:54,384
+在...中取得更稳定的进展
+making a more stable progress in the
+
+429
+00:22:54,389 --> 00:22:57,774
+开始和接近时
+beginning and when it comes close to the
+
+430
+00:22:57,779 --> 00:23:02,124
+解决方案它的波动更大而且
+solution it's fluctuating more and the
+
+431
+00:23:02,129 --> 00:23:05,844
+步数越大，量越大
+bigger the step size the amount of
+
+432
+00:23:05,849 --> 00:23:08,574
+解决方案附近的波动是Wilder
+fluctuation near the solution is Wilder
+
+433
+00:23:08,579 --> 00:23:13,015
+因为他注意到那里只有一个
+as he noticed back there but one
+
+434
+00:23:13,020 --> 00:23:15,825
+非常有趣的事情或多或少
+very interesting thing is more or less
+
+435
+00:23:15,830 --> 00:23:18,565
+不断有更大的波动
+constant there is more fluctuation also
+
+436
+00:23:18,570 --> 00:23:20,215
+在外面但你看到了
+on the outside but you see that the
+
+437
+00:23:20,220 --> 00:23:22,554
+最初的部分似乎仍在制作中
+initial part still seems to be making
+
+438
+00:23:22,559 --> 00:23:24,715
+非常好的进步和你来
+pretty good progress and as you come
+
+439
+00:23:24,720 --> 00:23:26,875
+接近解决它更波动
+close to the solution it fluctuates more
+
+440
+00:23:26,880 --> 00:23:29,965
+这是一个非常典型的典型
+and that is a very principally typical
+
+441
+00:23:29,970 --> 00:23:31,945
+随机梯度下降的行为
+behavior of stochastic gradient descent
+
+442
+00:23:31,950 --> 00:23:36,445
+在开始的时候，使快速
+that in the beginning it makes rapid
+
+443
+00:23:36,450 --> 00:23:38,784
+大踏步走，这样你就可以看到你的训练
+strides so you may see your training
+
+444
+00:23:38,789 --> 00:23:42,085
+损失减少哎呦超快，然后
+loss decrease whoops super fast and then
+
+445
+00:23:42,090 --> 00:23:47,125
+有点你知道peterout就是这个
+kind of you know peter out and it's this
+
+446
+00:23:47,130 --> 00:23:49,135
+让人们感到特别的行为
+particular behavior which got people
+
+447
+00:23:49,140 --> 00:23:51,715
+超级兴奋，嘿机器
+super excited that hey in machine
+
+448
+00:23:51,720 --> 00:23:53,274
+学习我们正在与各种各样的工作
+learning we are working with all sorts
+
+449
+00:23:53,279 --> 00:23:55,524
+大数据我只想快速和
+of big data I just want a quick and
+
+450
+00:23:55,529 --> 00:23:58,435
+在我的培训训练我脏进展
+dirty progress on my training training I
+
+451
+00:23:58,440 --> 00:24:01,044
+不关心怎样以最好的
+don't care about getting to the best
+
+452
+00:24:01,049 --> 00:24:04,135
+最佳，因为在机器学习你
+optimum because in machine learning you
+
+453
+00:24:04,140 --> 00:24:05,904
+不要只关心解决
+don't just care about solving the
+
+454
+00:24:05,909 --> 00:24:07,615
+你真正关心的优化问题
+optimization problem you actually care
+
+455
+00:24:07,620 --> 00:24:10,885
+关于找到运作良好的解决方案
+about finding solutions that work well
+
+456
+00:24:10,890 --> 00:24:13,135
+在看不见的数据上，这意味着你没有
+on unseen data so that means you don't
+
+457
+00:24:13,140 --> 00:24:15,235
+想过度适应和解决
+want to over fit and solve the
+
+458
+00:24:15,240 --> 00:24:17,725
+优化问题非常好
+optimization problem supremely well so
+
+459
+00:24:17,730 --> 00:24:19,705
+快速初始化是很棒的
+it's great to make rapid initial
+
+460
+00:24:19,710 --> 00:24:21,534
+进展以及如果在那之后进展
+progress and if after that progress
+
+461
+00:24:21,539 --> 00:24:24,225
+彼得斯出来没关系
+Peters out it's okay
+
+462
+00:24:24,230 --> 00:24:27,174
+这种直觉主义的陈述是
+this intuitionistic statements that are
+
+463
+00:24:27,179 --> 00:24:30,355
+在一些很好的情况下制作像凸
+making in some nice cases like convex
+
+464
+00:24:30,360 --> 00:24:31,914
+可以优化问题
+optimization problems one can
+
+465
+00:24:31,919 --> 00:24:34,255
+数学完全量化这一块
+mathematically fully quantify this one
+
+466
+00:24:34,260 --> 00:24:36,985
+可以证明定理量化它的东西
+can prove theorems to quantify its thing
+
+467
+00:24:36,990 --> 00:24:39,534
+我说的有多接近
+that I said in terms of how close how
+
+468
+00:24:39,539 --> 00:24:41,544
+速度快等特点，我们会看到一点点
+fast and so on we'll see a little bit of
+
+469
+00:24:41,549 --> 00:24:45,325
+这就是真正发生的事情
+that and this is what really happens to
+
+470
+00:24:45,330 --> 00:24:47,304
+SGD你知道它起初很好
+SGD you know it makes great initial
+
+471
+00:24:47,309 --> 00:24:51,835
+进步，无论你如何使用
+progress and regardless of how you use
+
+472
+00:24:51,840 --> 00:24:54,625
+步长接近最佳值
+step sizes close to the optimum it can
+
+473
+00:24:54,630 --> 00:24:57,085
+无论是遇到问题或进入某种
+either get stuck or enter some kind of
+
+474
+00:24:57,090 --> 00:24:59,654
+混乱的动态或只是表现得像疯了似的
+chaos dynamics or just behave like crazy
+
+475
+00:24:59,659 --> 00:25:04,765
+所以这是典型的SGD，让我们看看
+so that's typical of SGD and let's look
+
+476
+00:25:04,770 --> 00:25:09,585
+在没有任何轻微的数学洞察
+at no slight mathematical insight into
+
+477
+00:25:09,590 --> 00:25:12,375
+大概为什么会发生这种行为
+roughly why this behavior may happen
+
+478
+00:25:12,380 --> 00:25:16,015
+这是一个微不足道的一维
+this is a trivial 1 dimensional
+
+479
+00:25:16,020 --> 00:25:19,315
+优化问题，但它传达了
+optimization problem but it conveys the
+
+480
+00:25:19,320 --> 00:25:22,075
+显示此行为的原因
+crux of why this behavior is displayed
+
+481
+00:25:22,080 --> 00:25:24,384
+通过随机梯度法得到它
+by stochastic gradient methods that it
+
+482
+00:25:24,389 --> 00:25:26,515
+一开始工作得很好
+works really well in the beginning
+
+483
+00:25:26,520 --> 00:25:28,255
+那么天知道会发生什么事
+then it can God knows what happens when
+
+484
+00:25:28,260 --> 00:25:29,815
+它接近最佳状态
+it comes close to the optimum anything
+
+485
+00:25:29,820 --> 00:25:39,885
+可能发生让我们在那看行不行如此
+can happen so let's look at that okay so
+
+486
+00:25:39,890 --> 00:25:42,385
+让我们来看一个简单的一维
+let's look at a simple one dimensional
+
+487
+00:25:42,390 --> 00:25:45,745
+优化问题我会画一些
+optimization problem I'll kind of draw
+
+488
+00:25:45,750 --> 00:25:48,495
+它也许在另一边，这样
+it out maybe on the other side so that
+
+489
+00:25:48,500 --> 00:25:50,215
+这方面的人不是
+people on this side are not
+
+490
+00:25:50,220 --> 00:25:55,605
+处于不利地位，所以我只是抽出一个
+disadvantaged so I'll just draw out a
+
+491
+00:25:55,610 --> 00:25:58,675
+最小二乘问题X是一个
+least squares problem X is one
+
+492
+00:25:58,680 --> 00:26:00,925
+维先前我有人工智能
+dimensional previously I had AI
+
+493
+00:26:00,930 --> 00:26:03,745
+转X现在AI也是如此标
+transpose X now AI is also a scalar so
+
+494
+00:26:03,750 --> 00:26:10,485
+它只是1d所以一切都是1d所以
+it's just 1d stuff everything is 1d so
+
+495
+00:26:10,490 --> 00:26:15,985
+这是我们将AI设想为X的设置
+this is our set up think of AI into X
+
+496
+00:26:15,990 --> 00:26:19,825
+减去bi这些是二次函数
+minus bi these are quadratic functions
+
+497
+00:26:19,830 --> 00:26:24,615
+对，所以他们看起来像这样
+right so they look like this
+
+498
+00:26:24,620 --> 00:26:26,665
+对应不同的眼睛
+corresponding to different eyes there's
+
+499
+00:26:26,670 --> 00:26:28,965
+喜欢坐在一些不同的功能
+like some different functions sitting
+
+500
+00:26:28,970 --> 00:26:38,205
+等等，所以这些是我的不同
+and so on so these are my n different
+
+501
+00:26:38,210 --> 00:26:46,615
+损失功能，我想尽量减少
+loss functions and I want to minimize
+
+502
+00:26:46,620 --> 00:26:54,055
+那些我们知道我们实际上可以明确地
+those we know we can actually explicitly
+
+503
+00:26:54,060 --> 00:26:56,035
+计算该问题的解决方案
+compute the solution of that problem
+
+504
+00:26:56,040 --> 00:27:00,025
+对你设置，所以你设置衍生物
+right you set so you set the derivative
+
+505
+00:27:00,030 --> 00:27:03,595
+将f的f设为0，以便设置渐变
+of f of X to 0 so you set the gradient
+
+506
+00:27:03,600 --> 00:27:07,255
+对于X的0到0希望这很容易
+of f of X to 0 hopefully that's easy for
+
+507
+00:27:07,260 --> 00:27:10,255
+如果你这样做，你会这样做
+you to do so if you do that
+
+508
+00:27:10,260 --> 00:27:12,865
+分化将获得f的梯度
+differentiation will get gradient of f
+
+509
+00:27:12,870 --> 00:27:18,115
+X可以很好地给出
+of X will be just given by well you can
+
+510
+00:27:18,120 --> 00:27:19,495
+在你脑子里这样做我会写下来的
+do that in your head I'll just write it
+
+511
+00:27:19,500 --> 00:27:27,115
+明确AIX减去bi时间AI
+out explicitly AI X minus bi times AI is
+
+512
+00:27:27,120 --> 00:27:30,595
+等于0，你为X解决了这个问题
+equal to 0 and you solve that for X you
+
+513
+00:27:30,600 --> 00:27:34,435
+让X星成为最小的最佳
+get X star the optimum of this least
+
+514
+00:27:34,440 --> 00:27:36,475
+正方形问题，所以我们实际上
+squares problem right so we actually
+
+515
+00:27:36,480 --> 00:27:43,855
+知道如何轻松解决它
+know how to solve it pretty easily it's
+
+516
+00:27:43,860 --> 00:27:45,535
+实际上我得到了一个非常酷的例子
+a really cool example actually I got
+
+517
+00:27:45,540 --> 00:27:48,505
+来自Dimitri教授的教科书
+that from textbook by Professor Dimitri
+
+518
+00:27:48,510 --> 00:27:52,875
+对接英亩现在是一件非常有趣的事情
+butts acres now a very interesting thing
+
+519
+00:27:52,880 --> 00:27:54,805
+我们不会全力以赴
+we are not going to use the full
+
+520
+00:27:54,810 --> 00:27:56,785
+渐变我们只是你要使用
+gradient we are only you going to use
+
+521
+00:27:56,790 --> 00:27:59,035
+各个组件的渐变
+the gradients of individual components
+
+522
+00:27:59,040 --> 00:28:02,995
+是的，最小的是什么
+right so what does the minimum of an
+
+523
+00:28:03,000 --> 00:28:05,785
+个别组件看起来很好
+individual component look like well the
+
+524
+00:28:05,790 --> 00:28:07,615
+最小的单个组件是
+minimum of an individual component is
+
+525
+00:28:07,620 --> 00:28:09,595
+当我们可以设置这个东西时达到
+attained when we can set this thing to
+
+526
+00:28:09,600 --> 00:28:12,715
+零，如果你这个东西变成零
+zero and that thing becomes zero if you
+
+527
+00:28:12,720 --> 00:28:16,255
+只需选择X等于BI除以AI
+just pick X equal to B I divided by AI
+
+528
+00:28:16,260 --> 00:28:20,455
+对我们来说是一个单一的组成部分
+right so a single component we can be
+
+529
+00:28:20,460 --> 00:28:26,785
+通过这种选择最小化，这样你就可以做到
+minimized by that choice so you can do a
+
+530
+00:28:26,790 --> 00:28:28,585
+一点算术算术几何
+little bit of arithmetic mean geometric
+
+531
+00:28:28,590 --> 00:28:31,345
+用它来表示不等式
+mean type inequalities to draw this
+
+532
+00:28:31,350 --> 00:28:36,645
+图片
+picture
+
+533
+00:28:36,650 --> 00:28:40,855
+总的来说，我从1到n就是这样
+so overall I from 1 through n this is
+
+534
+00:28:40,860 --> 00:28:45,055
+这个比率AIbibi的最小值
+the minimum value of this ratio AI bi bi
+
+535
+00:28:45,060 --> 00:28:51,255
+让我们说这是最大值
+and let's say this is the max value of
+
+536
+00:28:51,260 --> 00:28:57,295
+AIbibi，我们知道封闭形式
+AI bi bi and we know that closed-form
+
+537
+00:28:57,300 --> 00:29:01,135
+解决方案是真正的解决方案
+solution that is the true solution so
+
+538
+00:29:01,140 --> 00:29:04,075
+你可以用一些代数来验证
+you can verify with some algebra that
+
+539
+00:29:04,080 --> 00:29:08,025
+该解决方案将位于此间隔期内
+that solution will lie in this interval
+
+540
+00:29:08,030 --> 00:29:13,375
+所以，让我们你可能想要这样
+so let's so you you may want to this is
+
+541
+00:29:13,380 --> 00:29:17,695
+一些微小的运动对你有希望
+a tiny exercise for you hopefully some
+
+542
+00:29:17,700 --> 00:29:19,885
+你喜欢像我这样的不平等吗？
+of you love inequalities like me so this
+
+543
+00:29:19,890 --> 00:29:22,675
+希望不是这么糟糕的运动
+is hopefully not such a bad exercise but
+
+544
+00:29:22,680 --> 00:29:25,525
+你可以验证在这个范围内
+you can verify that within this range of
+
+545
+00:29:25,530 --> 00:29:28,645
+个别分钟和最大值是
+the individual mins and max is where the
+
+546
+00:29:28,650 --> 00:29:30,205
+当然，综合解决方案也是如此
+combined solution lies so of course
+
+547
+00:29:30,210 --> 00:29:31,855
+直觉上你会有物理风格
+intuitively you would have physics style
+
+548
+00:29:31,860 --> 00:29:32,755
+以为你会猜到这一点
+thinking you would have guessed that
+
+549
+00:29:32,760 --> 00:29:38,035
+马上所以这意味着当你
+right away so it means when you are
+
+550
+00:29:38,040 --> 00:29:40,765
+外面的个人解决方案
+outside where the individual solutions
+
+551
+00:29:40,770 --> 00:29:45,985
+让我们称之为遥远的区域
+let's call this the far out zone and
+
+552
+00:29:45,990 --> 00:29:49,005
+这边也是远方的区域
+also this side is the far out zone and
+
+553
+00:29:49,010 --> 00:29:51,835
+这个区域内的真实
+this region within which the true
+
+554
+00:29:51,840 --> 00:29:54,655
+最低能骗你能说好这是
+minimum can lie you can say okay that's
+
+555
+00:29:54,660 --> 00:29:59,635
+混乱的地方为什么我要打电话
+the region of confusion why I'm calling
+
+556
+00:29:59,640 --> 00:30:02,155
+因为那里是混乱的地区
+it the region of confusion because there
+
+557
+00:30:02,160 --> 00:30:05,515
+通过最小化你的个人
+by minimizing an individual fi you're
+
+558
+00:30:05,520 --> 00:30:08,115
+不能分辨出什么是
+not going to be able to tell what is the
+
+559
+00:30:08,120 --> 00:30:13,195
+结合X星，这是所有和非常
+combined X star that's all and a very
+
+560
+00:30:13,200 --> 00:30:14,875
+有趣的事情发生在现在
+interesting thing happens now just to
+
+561
+00:30:14,880 --> 00:30:17,065
+获得一些数学洞察力
+gain some mathematical insight into that
+
+562
+00:30:17,070 --> 00:30:20,485
+模拟，我告诉你，如果你
+simulation that I showed you that if you
+
+563
+00:30:20,490 --> 00:30:24,685
+有一个超出此范围的标量X.
+have a scalar X that is outside this
+
+564
+00:30:24,690 --> 00:30:29,155
+混淆区域，表明如果
+region of confusion which states that if
+
+565
+00:30:29,160 --> 00:30:33,265
+你远离其中的地区
+you are far from the region within which
+
+566
+00:30:33,270 --> 00:30:34,945
+一个最佳的谎言，所以你很远
+an optimum can lie so you're far away
+
+567
+00:30:34,950 --> 00:30:36,865
+你刚开始进步了
+you've just started out your progress
+
+568
+00:30:36,870 --> 00:30:38,905
+你做了一个随机初始化最
+you made a random initialization most
+
+569
+00:30:38,910 --> 00:30:40,375
+可能离一个地方很远
+likely a far away from where the
+
+570
+00:30:40,380 --> 00:30:41,875
+解决方案是假设你在哪里
+solution is so suppose that's where you
+
+571
+00:30:41,880 --> 00:30:44,755
+当你在那么远的时候会发生什么
+are what happens when you're in that far
+
+572
+00:30:44,760 --> 00:30:46,945
+如果你在那么遥远的地方那么出去
+out region so if you're in that far out
+
+573
+00:30:46,950 --> 00:30:48,085
+区域
+region
+
+574
+00:30:48,090 --> 00:30:52,134
+你使用一些随机梯度
+you use a stochastic gradient of some
+
+575
+00:30:52,139 --> 00:30:56,455
+eyuth组件所以完全渐变
+eyuth component so the full gradient
+
+576
+00:30:56,460 --> 00:30:58,554
+看起来像一个随机
+will look like that a stochastic
+
+577
+00:30:58,559 --> 00:31:01,784
+渐变看起来像这个组件
+gradient looks like this one component
+
+578
+00:31:01,789 --> 00:31:05,364
+当你远在外面时
+and when you are far out outside that
+
+579
+00:31:05,369 --> 00:31:12,325
+最小和最大政权然后你可以检查
+min and Max regime then you can check by
+
+580
+00:31:12,330 --> 00:31:17,744
+只是看着它
+just by just looking at it that a
+
+581
+00:31:17,749 --> 00:31:20,604
+在遥远的随机梯度
+stochastic gradient in the far away
+
+582
+00:31:20,609 --> 00:31:23,815
+制度具有完全相同的符号
+regime has exactly the same sign as the
+
+583
+00:31:23,820 --> 00:31:24,974
+完全渐变
+full gradient
+
+584
+00:31:24,979 --> 00:31:27,384
+它说的是什么梯度下降
+what does gradient descent do it says
+
+585
+00:31:27,389 --> 00:31:28,914
+好好走向的方向
+well walk in the direction of the
+
+586
+00:31:28,919 --> 00:31:34,044
+负梯度，如果远离
+negative gradient and if far away from
+
+587
+00:31:34,049 --> 00:31:35,935
+的区域外的最佳
+the optimum outside the region of
+
+588
+00:31:35,940 --> 00:31:38,724
+混淆你的随机梯度
+confusion your stochastic gradient has
+
+589
+00:31:38,729 --> 00:31:41,455
+与真实梯度相同的符号可能
+the same sign as the true gradient may
+
+590
+00:31:41,460 --> 00:31:45,195
+它是以更线性的代数术语
+be in more linear algebra terms it makes
+
+591
+00:31:45,200 --> 00:31:48,084
+你知道它与之形成一个锐角
+you know it makes an acute angle with
+
+592
+00:31:48,089 --> 00:31:50,214
+你的渐变意味着即使
+your gradient that means if even though
+
+593
+00:31:50,219 --> 00:31:53,034
+随机梯度并不完全是
+a stochastic gradient is not exactly the
+
+594
+00:31:53,039 --> 00:31:56,364
+完全渐变它有一些组件
+full gradient it has some component in
+
+595
+00:31:56,369 --> 00:31:58,284
+这个真正的梯度的方向
+the direction of the true gradient this
+
+596
+00:31:58,289 --> 00:32:00,504
+在这里是1d它是完全相同的标志
+is 1d here it is exactly the same sign
+
+597
+00:32:00,509 --> 00:32:03,955
+在多个方面，这是一个想法
+in multiple dimensions this is the idea
+
+598
+00:32:03,960 --> 00:32:05,994
+它将有一些组件
+that it will have some component in the
+
+599
+00:32:05,999 --> 00:32:07,435
+当真正的梯度方向
+direction of the true gradient when
+
+600
+00:32:07,440 --> 00:32:12,774
+你很远，这意味着如果你那么
+you're far away which means if you then
+
+601
+00:32:12,779 --> 00:32:16,254
+使用该方向进行更新
+use that direction to make an update in
+
+602
+00:32:16,259 --> 00:32:20,065
+那种风​​格你最终会变得坚实
+that style you will end up making solid
+
+603
+00:32:20,070 --> 00:32:25,284
+进步和美丽是在时间
+progress and the beauty is in the time
+
+604
+00:32:25,289 --> 00:32:28,344
+它本来会让你做一个单一的
+it would have taken you to do one single
+
+605
+00:32:28,349 --> 00:32:30,744
+批梯度下降迭代远
+iteration of batch gradient descent far
+
+606
+00:32:30,749 --> 00:32:32,964
+你可以做百万随机步骤
+away you can do million stochastic steps
+
+607
+00:32:32,969 --> 00:32:34,374
+每一步都会取得一些进展
+and each step will make some progress
+
+608
+00:32:34,379 --> 00:32:36,955
+这就是为什么我们看到这种戏剧性的原因
+and that's why you we see this dramatic
+
+609
+00:32:36,960 --> 00:32:41,154
+这是第一种情况
+initial again this is in the 1d case
+
+610
+00:32:41,159 --> 00:32:43,674
+这在数学上是明确的
+this is explicit mathematically in the
+
+611
+00:32:43,679 --> 00:32:46,075
+高D情况这是更直观的确定
+high D case this is more intuitive ok
+
+612
+00:32:46,080 --> 00:32:48,474
+没有关于角度的进一步假设
+without further assumptions about angles
+
+613
+00:32:48,479 --> 00:32:51,264
+等人无法做出如此广泛的主张
+etc one can't make such a broad claim
+
+614
+00:32:51,269 --> 00:32:52,914
+但直觉上这就是正在发生的事情
+but intuitively this is what's happening
+
+615
+00:32:52,919 --> 00:32:55,914
+为什么你看到这个令人敬畏的初始
+on why you see this awesome initial
+
+616
+00:32:55,919 --> 00:32:58,705
+速度
+speed
+
+617
+00:32:58,710 --> 00:33:00,865
+一旦你进入了该地区
+and once you inside the region of
+
+618
+00:33:00,870 --> 00:33:06,765
+混乱然后这种行为破裂了
+confusion then this behavior breaks down
+
+619
+00:33:06,770 --> 00:33:08,935
+我们有一些随机梯度
+some stochastic gradient we have the
+
+620
+00:33:08,940 --> 00:33:10,615
+一些可能与完全梯度相同的符号
+same sign as the full gradient some may
+
+621
+00:33:10,620 --> 00:33:12,775
+不，这就是为什么你可以疯了
+not and that's why you can get at crazy
+
+622
+00:33:12,780 --> 00:33:17,005
+因此这个简单的1d例子
+fluctuations so this simple 1d example
+
+623
+00:33:17,010 --> 00:33:20,785
+那种确切地告诉你我们看到了什么
+kind of exactly shows you what we saw in
+
+624
+00:33:20,790 --> 00:33:24,955
+那张照片和人们真的很喜欢
+that picture and people really loved
+
+625
+00:33:24,960 --> 00:33:27,055
+这个初步进展因为我们经常
+this initial progress because often we
+
+626
+00:33:27,060 --> 00:33:28,825
+也做早点停止你知道火车
+also do early stopping you know train
+
+627
+00:33:28,830 --> 00:33:31,195
+一段时间然后你说好的我
+for some time and then you say ok I'm
+
+628
+00:33:31,200 --> 00:33:39,355
+如果你纯粹是一个人那么重要的话
+done so importantly if you are purely an
+
+629
+00:33:39,360 --> 00:33:41,995
+优化人没有这么想
+optimization person not thinking so much
+
+630
+00:33:42,000 --> 00:33:44,785
+请在机器学习方面
+in terms of machine learning when please
+
+631
+00:33:44,790 --> 00:33:46,315
+请记住，随机梯度
+keep in mind that stochastic gradient
+
+632
+00:33:46,320 --> 00:33:49,555
+下降或随机梯度法是
+descent or stochastic gradient method is
+
+633
+00:33:49,560 --> 00:33:51,865
+没有这么好的优化方法
+not such a great optimization method
+
+634
+00:33:51,870 --> 00:33:53,965
+因为曾经在混乱的地区
+because once in the region of confusion
+
+635
+00:33:53,970 --> 00:33:56,955
+它可以永远地波动
+it can just fluctuate all over forever
+
+636
+00:33:56,960 --> 00:33:59,545
+在机器学习中你说哦
+and in machine learning you say oh the
+
+637
+00:33:59,550 --> 00:34:01,375
+混乱的地方，这很好
+region of confusion that's fine it'll
+
+638
+00:34:01,380 --> 00:34:03,175
+让我的方法健壮，让我的
+make my method robust gonna make my
+
+639
+00:34:03,180 --> 00:34:05,275
+神经网络训练更强大的意志
+neural network training more robust will
+
+640
+00:34:05,280 --> 00:34:07,075
+我们更广泛地概括了等等
+generalize better etcetera etcetera we
+
+641
+00:34:07,080 --> 00:34:10,795
+这样那取决于哪个框架
+like that so it depends on which frame
+
+642
+00:34:10,800 --> 00:34:14,305
+你好，所以就是这样
+of mind you are in ok so that's that's
+
+643
+00:34:14,310 --> 00:34:16,404
+关于随机性的令人敬畏的事情
+the awesome thing about the stochastic
+
+644
+00:34:16,409 --> 00:34:23,894
+渐变法所以我现在就给你了
+gradient method so I'll give you now the
+
+645
+00:34:23,899 --> 00:34:26,815
+关键数学思想背后的
+key mathematical ideas behind the
+
+646
+00:34:26,820 --> 00:34:29,005
+SGD的成功就像这一点
+success of SGD this was like little
+
+647
+00:34:29,010 --> 00:34:33,565
+插图非常抽象地这是一个
+illustration very abstractly this is an
+
+648
+00:34:33,570 --> 00:34:35,995
+整个机器记录的想法
+idea that records throughout machine
+
+649
+00:34:36,000 --> 00:34:38,335
+学习和整个理论
+learning and throughout theoretical
+
+650
+00:34:38,340 --> 00:34:41,394
+计算机科学和统计学随时都有
+computer science and statistics any time
+
+651
+00:34:41,399 --> 00:34:44,815
+你需要计算一个
+you're faced with the need to compute an
+
+652
+00:34:44,820 --> 00:34:47,875
+昂贵的数量诉诸于
+expensive quantity resort to
+
+653
+00:34:47,880 --> 00:34:49,914
+随机化加快了
+randomization to speed up the
+
+654
+00:34:49,919 --> 00:34:54,955
+计算SGD就是一个例子
+computation SGD is one example the true
+
+655
+00:34:54,960 --> 00:34:58,125
+渐变是很昂贵的计算，所以我们
+gradient was expensive to compute so we
+
+656
+00:34:58,130 --> 00:35:01,885
+创建一个真实的随机估计
+create a randomized estimate of the true
+
+657
+00:35:01,890 --> 00:35:04,615
+梯度和随机估计是
+gradient and the randomized estimate is
+
+658
+00:35:04,620 --> 00:35:08,685
+更快的计算和
+much faster to compute and
+
+659
+00:35:08,690 --> 00:35:10,525
+数学上会发生什么
+mathematically what will start happening
+
+660
+00:35:10,530 --> 00:35:12,235
+是
+is
+
+661
+00:35:12,240 --> 00:35:14,305
+这取决于如何好您的随机
+depending on how good your randomized
+
+662
+00:35:14,310 --> 00:35:16,975
+估计是你的方法可能会也可能不会
+estimate is your method may or may not
+
+663
+00:35:16,980 --> 00:35:21,625
+收敛到你正确的答案
+converge to the right answer so you of
+
+664
+00:35:21,630 --> 00:35:23,245
+当然，人们必须要小心什么
+course one has to be careful about what
+
+665
+00:35:23,250 --> 00:35:26,325
+一个人做出的特别随机估计
+particular randomized estimate one makes
+
+666
+00:35:26,330 --> 00:35:30,055
+所以，即使我真的很抽象
+so but really abstractly even if I
+
+667
+00:35:30,060 --> 00:35:32,875
+没有向你展示这个想法的主意
+hadn't shown you the main idea this idea
+
+668
+00:35:32,880 --> 00:35:35,604
+你可以申请许多其他设置，如果
+you can apply in many other settings if
+
+669
+00:35:35,609 --> 00:35:37,135
+你有一个困难的数量出现
+you have a difficult quantity come up
+
+670
+00:35:37,140 --> 00:35:40,675
+随机估计并保存
+with a randomized estimate and save on
+
+671
+00:35:40,680 --> 00:35:42,565
+计算这是非常重要的
+computation this is a very important
+
+672
+00:35:42,570 --> 00:35:44,995
+整个机器学习的主题
+theme throughout machine learning and
+
+673
+00:35:45,000 --> 00:35:48,864
+数据科学没关系，这是关键
+data science okay and this is the key
+
+674
+00:35:48,869 --> 00:35:52,584
+财产如此随机的梯度下降
+property so stochastic gradient descent
+
+675
+00:35:52,589 --> 00:35:56,875
+它使用随机梯度随机
+it uses stochastic gradients stochastic
+
+676
+00:35:56,880 --> 00:35:58,675
+在这里你只是非常松散地使用你知道
+is here just used very loosely you know
+
+677
+00:35:58,680 --> 00:36:00,435
+它只是意味着有一些随机化
+it just means there's some randomization
+
+678
+00:36:00,440 --> 00:36:02,094
+这就是它的意思
+that's all it means
+
+679
+00:36:02,099 --> 00:36:05,725
+而属性是关键属性
+and the property the key property that
+
+680
+00:36:05,730 --> 00:36:10,825
+我们有期待的
+we have is in expectation the
+
+681
+00:36:10,830 --> 00:36:12,415
+期望结束了
+expectation is over
+
+682
+00:36:12,420 --> 00:36:15,475
+无论你使用什么随机性，如果你
+whatever randomness you used so if you
+
+683
+00:36:15,480 --> 00:36:19,225
+选择你知道一些随机训练
+picked you know some random training
+
+684
+00:36:19,230 --> 00:36:21,565
+数据指出了百万那么
+data point out of the million then it is
+
+685
+00:36:21,570 --> 00:36:23,965
+期望超过概率
+the expectation is over the probability
+
+686
+00:36:23,970 --> 00:36:25,945
+分配什么样的
+distribution over what kind of
+
+687
+00:36:25,950 --> 00:36:28,165
+如果你喜欢挑选你使用的随机性
+randomness you used if you like picked
+
+688
+00:36:28,170 --> 00:36:30,475
+从一百万随机统一
+uniformly at random from a million
+
+689
+00:36:30,480 --> 00:36:32,575
+然后这个期望结束了
+points then this expectation is over
+
+690
+00:36:32,580 --> 00:36:34,795
+那个统一的概率但关键
+that uniform probability but the key
+
+691
+00:36:34,800 --> 00:36:39,594
+SGD或至少版本的财产
+property for SGD or at least the version
+
+692
+00:36:39,599 --> 00:36:41,815
+我正在谈论的新元是在
+of SGD i am talking about is that in
+
+693
+00:36:41,820 --> 00:36:44,815
+对随机性的期望
+expectation over that randomness the
+
+694
+00:36:44,820 --> 00:36:46,495
+你假装使用的东西
+thing that you are pretending to use
+
+695
+00:36:46,500 --> 00:36:48,354
+而不是真正的梯度
+instead of the true gradient in
+
+696
+00:36:48,359 --> 00:36:50,575
+期待实际上是真的
+expectation actually it is the true
+
+697
+00:36:50,580 --> 00:36:54,084
+渐变所以在统计语言这个
+gradient so in statistics language this
+
+698
+00:36:54,089 --> 00:36:56,935
+被称为随机梯度
+is called the stochastic gradient that
+
+699
+00:36:56,940 --> 00:36:59,844
+我们用的是的无偏估计
+we use is an unbiased estimate of the
+
+700
+00:36:59,849 --> 00:37:04,555
+真正的渐变，这是一个非常
+true gradient and this is a very
+
+701
+00:37:04,560 --> 00:37:06,354
+数学中的重要属性
+important property in the mathematical
+
+702
+00:37:06,359 --> 00:37:08,094
+随机梯度下降分析
+analysis of stochastic gradient descent
+
+703
+00:37:08,099 --> 00:37:12,265
+这是一个无偏见的估计和
+that it is an unbiased estimate and
+
+704
+00:37:12,270 --> 00:37:15,025
+任何时候你都可以直观地说出来
+intuitively speaking anytime you did any
+
+705
+00:37:15,030 --> 00:37:18,175
+在课堂上或书中或讲座中的证明
+proof in class or in the book or lecture
+
+706
+00:37:18,180 --> 00:37:21,205
+注意你在哪里使用true
+notes wherever where you were using true
+
+707
+00:37:21,210 --> 00:37:24,685
+渐变或多或少你可以做到这些
+gradients more or less you can do those
+
+708
+00:37:24,690 --> 00:37:26,114
+相同的证据更多
+same proofs more
+
+709
+00:37:26,119 --> 00:37:28,155
+少并不总是使用随机
+less not always using stochastic
+
+710
+00:37:28,160 --> 00:37:32,135
+通过封装替换渐变
+gradients by replace by encapsulating
+
+711
+00:37:32,140 --> 00:37:35,264
+一切都在期待中
+everything within expectations over the
+
+712
+00:37:35,269 --> 00:37:37,635
+随机性我会告诉你一个例子
+randomness I'll show you an example of
+
+713
+00:37:37,640 --> 00:37:40,064
+我的意思是我只是想做什么
+what I mean by that I'm just trying to
+
+714
+00:37:40,069 --> 00:37:46,415
+为您简化，特别是
+simplify that for you and in particular
+
+715
+00:37:46,420 --> 00:37:49,514
+unbiasness是伟大的，所以它意味着我
+the unbiasness is great so it means I
+
+716
+00:37:49,519 --> 00:37:53,264
+可以插入这些随机的
+can kind of plug in these stochastic
+
+717
+00:37:53,269 --> 00:37:55,334
+渐变代替真正的渐变
+gradients in place of the true gradient
+
+718
+00:37:55,339 --> 00:37:56,955
+而且我还在做一些有意义的事情
+and I'm still doing something meaningful
+
+719
+00:37:56,960 --> 00:37:59,774
+所以这是早些时候回答的问题
+so this is answering that earlier
+
+720
+00:37:59,779 --> 00:38:02,445
+问你知道为什么这个随机的东西
+question you know why this random stuff
+
+721
+00:38:02,450 --> 00:38:05,415
+为什么我们认为它可能会起作用但是
+why it should we think it may work but
+
+722
+00:38:05,420 --> 00:38:07,094
+还有另一个非常重要的方面
+there's another very important aspect to
+
+723
+00:38:07,099 --> 00:38:11,375
+它为什么它超出了unbiasness
+it why it works beyond this unbiasness
+
+724
+00:38:11,380 --> 00:38:15,794
+那噪音的数量还是喜欢的
+that the amount of noise or like the
+
+725
+00:38:15,799 --> 00:38:18,945
+随机性的量的量是
+amount of amount of stochasticity is
+
+726
+00:38:18,950 --> 00:38:21,284
+控制所以只是因为它是一个
+controlled so just because it is an
+
+727
+00:38:21,289 --> 00:38:25,994
+无偏估计并不意味着它
+unbiased estimate doesn't mean that it's
+
+728
+00:38:25,999 --> 00:38:29,324
+为了这个原因，为什么要这样做呢
+going to work that well why because it
+
+729
+00:38:29,329 --> 00:38:31,594
+可能仍然非常波动
+could still fluctuate hugely right
+
+730
+00:38:31,599 --> 00:38:33,945
+在这里减去无穷大
+essentially plus infinity here minus
+
+731
+00:38:33,950 --> 00:38:35,534
+无限这里你取一个平均值你
+infinity here you take an average you
+
+732
+00:38:35,539 --> 00:38:39,014
+得到零，这基本上是无偏见的
+get zero so that is essentially unbiased
+
+733
+00:38:39,019 --> 00:38:40,905
+但波动是巨大的
+but the fluctuation is gigantic
+
+734
+00:38:40,910 --> 00:38:43,635
+所以每当谈论估计时
+so whenever talking about estimates
+
+735
+00:38:43,640 --> 00:38:46,064
+什么是我们需要的其他关键数量
+what's the other key quantity we need to
+
+736
+00:38:46,069 --> 00:38:49,715
+关心超出预期
+care about beyond expectation
+
+737
+00:38:49,720 --> 00:38:52,985
+在通关和真正关键的事情
+in clearance and really the key thing
+
+738
+00:38:52,990 --> 00:38:55,955
+它决定了速度
+that governs the speed at which
+
+739
+00:38:55,960 --> 00:38:59,614
+随机梯度下降完成工作
+stochastic gradient descent does the job
+
+740
+00:38:59,619 --> 00:39:01,834
+我们希望它做的是多少
+that we want it to do is how much
+
+741
+00:39:01,839 --> 00:39:05,304
+随机梯度有变化
+variance do the stochastic gradient have
+
+742
+00:39:05,309 --> 00:39:08,794
+只是这个简单的统计点
+just this simple statistical point in
+
+743
+00:39:08,799 --> 00:39:11,675
+事实是一系列的核心
+fact is at the heart of a sequence of
+
+744
+00:39:11,680 --> 00:39:14,344
+过去五年的研究进展
+research progress in the past five years
+
+745
+00:39:14,349 --> 00:39:16,375
+在随机梯度领域
+in the field of stochastic gradient
+
+746
+00:39:16,380 --> 00:39:19,985
+人们真的努力
+where people have worked really hard to
+
+747
+00:39:19,990 --> 00:39:22,294
+拿出新的和更新的票友和
+come up with newer and newer fancier and
+
+748
+00:39:22,299 --> 00:39:24,205
+随机梯度的发烧友版本
+fancier versions of stochastic gradient
+
+749
+00:39:24,210 --> 00:39:28,265
+哪个有unbiasness属性但是
+which have the unbiasness property but
+
+750
+00:39:28,270 --> 00:39:30,125
+有越来越小的变种和
+have smaller and smaller variants and
+
+751
+00:39:30,130 --> 00:39:33,784
+你拥有的方差越小
+the smaller the variance you have the
+
+752
+00:39:33,789 --> 00:39:37,385
+你的随机梯度更好
+better your stochastic gradient is as a
+
+753
+00:39:37,390 --> 00:39:41,344
+替换真正的梯度和
+replacement of the true gradient and of
+
+754
+00:39:41,349 --> 00:39:42,725
+当然更好的是更换
+course the better is the replacement of
+
+755
+00:39:42,730 --> 00:39:45,455
+真正的渐变然后你真正得到
+the true gradient then you truly get
+
+756
+00:39:45,460 --> 00:39:51,635
+你知道n加速好吧
+that you know n time speed-up okay so
+
+757
+00:39:51,640 --> 00:39:53,225
+收敛的速度取决于如何
+the speed of convergence depends on how
+
+758
+00:39:53,230 --> 00:39:55,685
+嘈杂的随机梯度是它
+noisy the stochastic gradients are it
+
+759
+00:39:55,690 --> 00:39:57,544
+好像我走得太慢我不会
+seems like I'm going too slow I won't be
+
+760
+00:39:57,549 --> 00:40:00,215
+能够做一个证明我如果它吮吸，但
+able to do a proof i if it sucks but
+
+761
+00:40:00,220 --> 00:40:03,604
+我只是让我告诉你
+I'll but let's let me actually tell you
+
+762
+00:40:03,609 --> 00:40:06,455
+然后是关于而不是证据
+then about rather than the the proof
+
+763
+00:40:06,460 --> 00:40:09,094
+我想我会和Gil分享这个证据
+I think I'll share the proof with Gil
+
+764
+00:40:09,099 --> 00:40:11,375
+因为我想要的证明
+because the proof that I want to want
+
+765
+00:40:11,380 --> 00:40:15,094
+你实际上告诉你说话给了一个
+you to actually show you talk gives a
+
+766
+00:40:15,099 --> 00:40:17,735
+随机梯度的证明是
+proof of stochastic gradient is
+
+767
+00:40:17,740 --> 00:40:20,344
+凸起和非凸起都表现良好
+well-behaved on both convex and non
+
+768
+00:40:20,349 --> 00:40:22,294
+凸问题和我想要的证明
+convex problems and the proof I wanted
+
+769
+00:40:22,299 --> 00:40:24,064
+显示是非凸的情况
+to show was for the non convex case
+
+770
+00:40:24,069 --> 00:40:25,745
+因为它适用于神经网络
+because it applies to neural networks so
+
+771
+00:40:25,750 --> 00:40:27,604
+你可能对这个证据感到好奇
+you may be curious about that proof and
+
+772
+00:40:27,609 --> 00:40:29,344
+显而易见，证明更简单
+remarkably that proof is much simpler
+
+773
+00:40:29,349 --> 00:40:32,794
+比凸问题的情况所以让
+than the case of convex problems so let
+
+774
+00:40:32,799 --> 00:40:34,505
+我只提一些非常重要的
+me just mention some very important
+
+775
+00:40:34,510 --> 00:40:36,695
+关于随机梯度的点是如此均匀
+points about stochastic gradient so even
+
+776
+00:40:36,700 --> 00:40:38,074
+虽然这种方法一直存在
+though this method has been around since
+
+777
+00:40:38,079 --> 00:40:40,864
+1951年每个深度学习工具包都有它
+1951 every deep learning toolkit has it
+
+778
+00:40:40,869 --> 00:40:44,645
+我们在课堂上学习它有
+and we are studying it in class there
+
+779
+00:40:44,650 --> 00:40:47,135
+我们能说什么之间仍然存在差距
+are still gaps between what we can say
+
+780
+00:40:47,140 --> 00:40:48,395
+从理论上讲，会发生什么
+theoretically and what happens in
+
+781
+00:40:48,400 --> 00:40:51,215
+练习，我会告诉你那些差距
+practice and I'll show you those gaps
+
+782
+00:40:51,220 --> 00:40:53,405
+已经鼓励你去思考
+already and encourage you to think about
+
+783
+00:40:53,410 --> 00:40:54,604
+如果你愿意的话
+those if you wish
+
+784
+00:40:54,609 --> 00:40:56,614
+让我们回顾一下我们的问题，
+so let's look back at our problem and
+
+785
+00:40:56,619 --> 00:40:58,834
+告诉你两个变种，所以这里是
+tell you about two variants so here are
+
+786
+00:40:58,839 --> 00:41:01,594
+这两个变种我会问，如果有的话
+the two variants I'm going to ask if any
+
+787
+00:41:01,599 --> 00:41:03,785
+你熟悉这个变种
+of you is familiar with this variant
+
+788
+00:41:03,790 --> 00:41:07,595
+以某种方式或其他方式让我只是
+in some way or the other so let's I just
+
+789
+00:41:07,600 --> 00:41:09,635
+称之为可行，这里没有
+call it feasible here there are no
+
+790
+00:41:09,640 --> 00:41:11,375
+约束所以我从任何随机开始
+constraints so I start with any random
+
+791
+00:41:11,380 --> 00:41:15,665
+在深层网络中选择的矢量
+vector of your choice in deep network
+
+792
+00:41:15,670 --> 00:41:17,345
+训练你必须更努力地工作
+training you have to work harder and
+
+793
+00:41:17,350 --> 00:41:20,195
+那么这就是你正确运行的迭代
+then this is the iteration you run right
+
+794
+00:41:20,200 --> 00:41:23,225
+选项一和选项二所以选项一
+option one and option two so option one
+
+795
+00:41:23,230 --> 00:41:26,245
+说这是我们在课堂上的想法
+says that was the idea we had in class
+
+796
+00:41:26,250 --> 00:41:28,415
+随机挑选一些训练数据点
+randomly pick some training data point
+
+797
+00:41:28,420 --> 00:41:34,114
+用它随机梯度做什么呢
+use it stochastic gradient well what do
+
+798
+00:41:34,119 --> 00:41:37,085
+我们的意思是随便挑选你的那一刻
+we mean by randomly pick the moment you
+
+799
+00:41:37,090 --> 00:41:40,885
+使用你必须定义的随机词
+use the word random you have to define
+
+800
+00:41:40,890 --> 00:41:44,735
+什么是随机性，所以一个随机性
+what's the randomness so one randomness
+
+801
+00:41:44,740 --> 00:41:46,535
+是我们训练的统一概率
+is uniform probability of our n training
+
+802
+00:41:46,540 --> 00:41:49,835
+数据点是一个随机性的
+data points that is one randomness the
+
+803
+00:41:49,840 --> 00:41:53,435
+其他版本是你选择培训
+other version is you pick a training
+
+804
+00:41:53,440 --> 00:41:57,545
+没有替换的数据点所以我这样
+data point without replacement so I so
+
+805
+00:41:57,550 --> 00:41:59,495
+有替换意味着你只知道
+with replacement means you know just
+
+806
+00:41:59,500 --> 00:42:01,235
+每次画画时都是随机的
+uniformly at random each time you draw a
+
+807
+00:42:01,240 --> 00:42:02,855
+从1到n的数字使用那个
+number from one through n use that
+
+808
+00:42:02,860 --> 00:42:05,105
+随机梯度移动就意味着
+stochastic gradient move on which means
+
+809
+00:42:05,110 --> 00:42:06,905
+同样的观点很容易被选中
+the same point can easily be picked
+
+810
+00:42:06,910 --> 00:42:10,685
+两次也没有更换手段
+twice also and without replacement means
+
+811
+00:42:10,690 --> 00:42:12,815
+如果你选择了第三点
+if you've picked a point number three
+
+812
+00:42:12,820 --> 00:42:15,695
+你不会再去挑选它
+you're not going to pick it again until
+
+813
+00:42:15,700 --> 00:42:16,955
+你经历了整个训练
+you've gone through the entire training
+
+814
+00:42:16,960 --> 00:42:20,104
+数据集有两种类型
+data set those are two types of
+
+815
+00:42:20,109 --> 00:42:26,665
+随机性你会使用哪个版本
+randomness which version would you use
+
+816
+00:42:26,670 --> 00:42:29,135
+没有正确或错误的答案
+there is no right or wrong answer to
+
+817
+00:42:29,140 --> 00:42:31,354
+这个我只是采取了民意调查会是什么
+this I'm just taking a poll what would
+
+818
+00:42:31,359 --> 00:42:35,075
+你使用认为你正在写一个
+you use think that you're writing a
+
+819
+00:42:35,080 --> 00:42:39,095
+为此计划，也许真的想
+program for this and maybe think really
+
+820
+00:42:39,100 --> 00:42:41,645
+实际上实际上是这样的
+pragmatically practically so that's
+
+821
+00:42:41,650 --> 00:42:43,655
+足够暗示哪个版本会
+enough of an hint which version would
+
+822
+00:42:43,660 --> 00:42:47,825
+你使用我只是好奇谁会使用
+you use I'm just curious who would use
+
+823
+00:42:47,830 --> 00:42:53,225
+一请举手谁和谁
+one please raise hands who and the the
+
+824
+00:42:53,230 --> 00:42:55,655
+排除他们改革的赞美我
+exclusion the compliment they reform I
+
+825
+00:42:55,660 --> 00:42:56,585
+不知道也许有些人
+don't know maybe some people are
+
+826
+00:42:56,590 --> 00:43:00,125
+尚未决定谁会使用两个极少数
+undecided who would use two very few
+
+827
+00:43:00,130 --> 00:43:05,945
+人还好你们有多少人使用神经
+people okay how many of you use neural
+
+828
+00:43:05,950 --> 00:43:07,175
+网络培训工具包就好
+network training tool kits like
+
+829
+00:43:07,180 --> 00:43:10,864
+tensorflowpi火炬whatnot哪个
+tensorflow pi torch whatnot which
+
+830
+00:43:10,869 --> 00:43:15,485
+他们正在使用的版本
+version are they using
+
+831
+00:43:15,490 --> 00:43:18,135
+实际上是现实世界中的每个人
+actually every person in the real world
+
+832
+00:43:18,140 --> 00:43:21,735
+正在使用版本2你真的会
+is using version 2 are you really gonna
+
+833
+00:43:21,740 --> 00:43:25,005
+每次随机浏览你的RAAM
+randomly go through your RAAM each time
+
+834
+00:43:25,010 --> 00:43:27,795
+选择随机点，他们会杀了你的
+to pick random points they'll kill your
+
+835
+00:43:27,800 --> 00:43:31,215
+GPU表现就像什么
+GPU performance like anything what
+
+836
+00:43:31,220 --> 00:43:34,725
+人们做的是拿一个数据集使用前
+people do is take a data set use a pre
+
+837
+00:43:34,730 --> 00:43:37,035
+随机操作然后只是Boop
+shuffle operation and then just Boop
+
+838
+00:43:37,040 --> 00:43:39,135
+通过数据流什么的
+stream through the data what the
+
+839
+00:43:39,140 --> 00:43:41,295
+流经数据意味着没有
+streaming through the data mean without
+
+840
+00:43:41,300 --> 00:43:44,265
+实际上替换所有工具包
+replacement so all the toolkits actually
+
+841
+00:43:44,270 --> 00:43:45,555
+正在使用无替代品
+are using the without replacement
+
+842
+00:43:45,560 --> 00:43:49,155
+版本即使直观的租金
+version even though intuitively the rent
+
+843
+00:43:49,160 --> 00:43:51,435
+只是均匀随机感觉好得多和
+just uniform random feels much nicer and
+
+844
+00:43:51,440 --> 00:43:54,195
+那种感觉并非毫无根据，因为
+that feeling is not ill-founded because
+
+845
+00:43:54,200 --> 00:43:55,905
+这是我们知道的唯一版本
+that's the only version we know how to
+
+846
+00:43:55,910 --> 00:43:59,055
+以数学方式进行分析，即便如此
+analyze mathematically so even for this
+
+847
+00:43:59,060 --> 00:44:00,735
+方法大家研究它们
+method everybody studies it their
+
+848
+00:44:00,740 --> 00:44:03,315
+关于它的版本是百万篇论文
+million papers on it the version that is
+
+849
+00:44:03,320 --> 00:44:05,325
+在实践中使用的不是我们的版本
+used in practice is not the version we
+
+850
+00:44:05,330 --> 00:44:08,715
+知道如何分析它是一个重要的开放
+know how to analyze it's a major open
+
+851
+00:44:08,720 --> 00:44:10,035
+随机领域的问题
+problem in the field of stochastic
+
+852
+00:44:10,040 --> 00:44:12,585
+渐变来实际分析版本
+gradient to actually analyze the version
+
+853
+00:44:12,590 --> 00:44:15,735
+我们在实践中使用它是那种
+that we use in practice it's kind of
+
+854
+00:44:15,740 --> 00:44:18,555
+令人尴尬，但没有
+embarrassing but it's without
+
+855
+00:44:18,560 --> 00:44:20,835
+替换意味着非iid概率
+replacement means non iid probability
+
+856
+00:44:20,840 --> 00:44:23,205
+理论和非iid概率论是
+theory and non iid probability theory is
+
+857
+00:44:23,210 --> 00:44:24,405
+不那么容易
+not so easy
+
+858
+00:44:24,410 --> 00:44:28,005
+那个答案还可以，另一个
+that's the answer okay so the other
+
+859
+00:44:28,010 --> 00:44:29,865
+版本是这个迷你批量的想法
+version is this mini batch idea which
+
+860
+00:44:29,870 --> 00:44:35,015
+你真的提到早期是
+you mentioned really early on is that
+
+861
+00:44:35,020 --> 00:44:39,495
+而不是选择一个随机点我会
+rather than pick one random point I'll
+
+862
+00:44:39,500 --> 00:44:42,975
+选一个小批量，所以我有一百万
+pick a mini batch so I had a million
+
+863
+00:44:42,980 --> 00:44:44,925
+每次指出而不是挑选一个
+points each time instead of picking one
+
+864
+00:44:44,930 --> 00:44:47,415
+也许我会选择10或100或者千或者
+maybe I'll pick 10 or 100 or thousand or
+
+865
+00:44:47,420 --> 00:44:48,165
+你有什么
+what have you
+
+866
+00:44:48,170 --> 00:44:52,635
+所以这可以平均事物的平均值
+so this averages things averaging things
+
+867
+00:44:52,640 --> 00:44:55,155
+减少方差所以这实际上是这样
+reduces the variance so this is actually
+
+868
+00:44:55,160 --> 00:44:58,335
+一件好事，因为数量越多
+a good thing because the more quantities
+
+869
+00:44:58,340 --> 00:44:59,855
+你平均噪音越小
+you averaged the less noise you have
+
+870
+00:44:59,860 --> 00:45:02,475
+这就是发生的事情
+that's kind of what happens in
+
+871
+00:45:02,480 --> 00:45:05,475
+概率正确，所以我们挑选一个迷你
+probability right so we pick a mini
+
+872
+00:45:05,480 --> 00:45:11,295
+批量和随机估计现在是
+batch and the stochastic estimate now is
+
+873
+00:45:11,300 --> 00:45:13,485
+这一点，你知道不只是一个单一的梯度
+this you know not just a single gradient
+
+874
+00:45:13,490 --> 00:45:17,775
+但平均超过一个迷你一批这样的迷你
+but averaged over a mini batch so mini
+
+875
+00:45:17,780 --> 00:45:19,635
+一批大小的是纯香草
+batch of size one is the pure vanilla
+
+876
+00:45:19,640 --> 00:45:22,755
+SGDmini批量大小n没什么
+SGD mini batch of size n is nothing
+
+877
+00:45:22,760 --> 00:45:24,255
+除了纯粹的梯度下降
+other than pure gradient descent
+
+878
+00:45:24,260 --> 00:45:26,565
+介于两者之间的是什么人
+something in between is what people
+
+879
+00:45:26,570 --> 00:45:27,445
+实际使用
+actually use
+
+880
+00:45:27,450 --> 00:45:30,625
+而且只是理论分析
+and again the theoretical analysis only
+
+881
+00:45:30,630 --> 00:45:32,485
+如果选择小批量，则存在
+exists if the mini-batch is picked with
+
+882
+00:45:32,490 --> 00:45:36,415
+更换不是没有替换所以
+replacement not without replacement so
+
+883
+00:45:36,420 --> 00:45:38,275
+其中一个原因实际上是非常的
+one of the reasons actually a very
+
+884
+00:45:38,280 --> 00:45:42,084
+在理论上你不会获得重要的东西
+important thing in theory you don't gain
+
+885
+00:45:42,089 --> 00:45:45,084
+在计算收益方面太多了
+too much in terms of computational gains
+
+886
+00:45:45,089 --> 00:45:47,245
+利用mini实现收敛速度
+on convergence speed by using mini
+
+887
+00:45:47,250 --> 00:45:49,525
+比赛，但迷你批次真的
+matches but mini batches are really
+
+888
+00:45:49,530 --> 00:45:51,445
+至关重要，特别是你知道深刻
+crucial especially in you know deep
+
+889
+00:45:51,450 --> 00:45:54,685
+因为他们学习GPU风格的训练
+learning GPU style training because they
+
+890
+00:45:54,690 --> 00:45:58,314
+允许你每个人并行做事
+allow you to do things in parallel each
+
+891
+00:45:58,319 --> 00:46:01,614
+线程或每个核心或子核心或小
+thread or each core or sub core or small
+
+892
+00:46:01,619 --> 00:46:03,294
+芯片或你有什么依赖你
+chip or what-have-you depending on your
+
+893
+00:46:03,299 --> 00:46:05,935
+硬件可以与一个
+hardware can be working with one
+
+894
+00:46:05,940 --> 00:46:08,185
+随机梯度所以迷你批次是
+stochastic gradient so mini batch is the
+
+895
+00:46:08,190 --> 00:46:10,165
+迷你批次越大越多
+larger the mini batch the more things
+
+896
+00:46:10,170 --> 00:46:14,304
+你可以并行做这么小的批次
+you can do in parallel so mini batches
+
+897
+00:46:14,309 --> 00:46:19,314
+被人们极大地利用来给予
+are greatly exploited by people to give
+
+898
+00:46:19,319 --> 00:46:22,135
+你是一个廉价的并行版本
+you a cheap version of parallelism and
+
+899
+00:46:22,140 --> 00:46:23,755
+并行性发生在哪里
+where does the parallelism happen you
+
+900
+00:46:23,760 --> 00:46:27,385
+可以认为每个核心计算一个
+can think that each core computes a
+
+901
+00:46:27,390 --> 00:46:29,635
+随机梯度所以困难的部分是
+stochastic gradient so the hard part is
+
+902
+00:46:29,640 --> 00:46:33,324
+没有添加这些东西和制作
+not adding these things up and making
+
+903
+00:46:33,329 --> 00:46:35,245
+更新到X的难点是
+the update to X the hard part is
+
+904
+00:46:35,250 --> 00:46:38,155
+计算随机梯度，如果
+computing a stochastic gradient so if
+
+905
+00:46:38,160 --> 00:46:40,195
+你可以计算那些10000
+you can compute 10,000 of those in
+
+906
+00:46:40,200 --> 00:46:42,015
+并行，因为你有10,000个核心
+parallel because you have 10,000 cores
+
+907
+00:46:42,020 --> 00:46:44,935
+非常适合你，这就是原因
+great for you and that's the reason
+
+908
+00:46:44,940 --> 00:46:47,905
+人们喜欢使用小型批次但是
+people love using mini batches but a
+
+909
+00:46:47,910 --> 00:46:51,685
+好的一面在这里说这也是这个
+nice side remark here this is also this
+
+910
+00:46:51,690 --> 00:46:53,334
+让我们接近研究边缘
+brings us close to the research edge of
+
+911
+00:46:53,339 --> 00:46:57,025
+事情再次证明以及你爱用
+things again that well you'd love to use
+
+912
+00:46:57,030 --> 00:46:58,854
+非常大的迷你批次，所以你可以
+very large mini batches so that you can
+
+913
+00:46:58,859 --> 00:47:01,104
+完全最大化并行性
+fully max out on the parallelism
+
+914
+00:47:01,109 --> 00:47:02,604
+对你有用，也许你有一个
+available to you right maybe you have a
+
+915
+00:47:02,609 --> 00:47:05,755
+多GPU系统，如果你是朋友
+multi GPU system if you're friends with
+
+916
+00:47:05,760 --> 00:47:08,604
+NVDA或Google我只有两个GPU
+NVDA or Google I only have like two GPUs
+
+917
+00:47:08,609 --> 00:47:11,114
+但这取决于你有多少GPU
+but it depends on how many GPUs you have
+
+918
+00:47:11,119 --> 00:47:13,554
+你真的想要最大化
+you'd like to really max out on
+
+919
+00:47:13,559 --> 00:47:15,685
+并行性使你真的可以
+parallelism so that you can really
+
+920
+00:47:15,690 --> 00:47:18,415
+紧紧抓住大数据集
+crunch through big datasets as fast as
+
+921
+00:47:18,420 --> 00:47:20,485
+可能，但你知道会发生什么
+possible but you know what happens with
+
+922
+00:47:20,490 --> 00:47:24,885
+非常大的迷你批次，如果你有
+very large mini batches so if you have
+
+923
+00:47:24,890 --> 00:47:28,645
+非常大的迷你批次随机
+very large mini batches stochastic
+
+924
+00:47:28,650 --> 00:47:33,834
+渐变开始看起来更饱满
+gradient starts looking more like full
+
+925
+00:47:33,839 --> 00:47:35,275
+梯度下降，也称为
+gradient descent which is also called
+
+926
+00:47:35,280 --> 00:47:38,995
+批量梯度下降并不坏
+batch gradient descent that's not a bad
+
+927
+00:47:39,000 --> 00:47:41,165
+这是真棒优化的事情
+thing that's awesome for optimization
+
+928
+00:47:41,170 --> 00:47:44,165
+但这是一个奇怪的难题
+but it is a weird conundrum that happens
+
+929
+00:47:44,170 --> 00:47:46,475
+在训练深度神经网络这个
+in training deep neural networks this
+
+930
+00:47:46,480 --> 00:47:47,885
+问题类型我们不会有
+type of problem we wouldn't have for
+
+931
+00:47:47,890 --> 00:47:49,985
+凸优化但在深度神经网络中
+convex optimization but in deep neural
+
+932
+00:47:49,990 --> 00:47:51,844
+网络这真是令人不安的事情
+networks this is really disturbing thing
+
+933
+00:47:51,849 --> 00:47:55,175
+碰巧，如果你使用这个非常大
+happens that if you use this very large
+
+934
+00:47:55,180 --> 00:47:57,695
+迷你批次你的方法开始
+mini-batches your method starts
+
+935
+00:47:57,700 --> 00:47:59,554
+类似于梯度下降的意思
+resembling gradient descent that means
+
+936
+00:47:59,559 --> 00:48:02,854
+它会降低噪音，以便这样做
+it decreases noise so much so that this
+
+937
+00:48:02,859 --> 00:48:07,074
+混乱的地方缩小了这么多
+region of confusion shrinks so much
+
+938
+00:48:07,079 --> 00:48:09,814
+一切听起来不错，但最终结果
+which all sounds good but it ends up
+
+939
+00:48:09,819 --> 00:48:11,135
+是机器学习非常糟糕
+being really bad for machine learning
+
+940
+00:48:11,140 --> 00:48:13,054
+这就是我在机器中所说的
+that's what I said that in machine
+
+941
+00:48:13,059 --> 00:48:14,284
+学习你想要一些地区
+learning you want some region of
+
+942
+00:48:14,289 --> 00:48:16,745
+不确定性及其实际意义
+uncertainty and what it means actually
+
+943
+00:48:16,750 --> 00:48:20,794
+是很多人都在工作
+is a lot of people are have been working
+
+944
+00:48:20,799 --> 00:48:23,824
+在这包括在大公司那
+on this including at big companies that
+
+945
+00:48:23,829 --> 00:48:26,824
+如果你减少那个不确定的区域
+if you reduce that region of uncertainty
+
+946
+00:48:26,829 --> 00:48:29,885
+太多你最终过度拟合你的
+too much you end up overfitting your
+
+947
+00:48:29,890 --> 00:48:32,885
+神经网络，然后它开始
+neural network and then it starts
+
+948
+00:48:32,890 --> 00:48:36,364
+吮吸其测试数据看不见的数据
+sucking in its test data unseen data
+
+949
+00:48:36,369 --> 00:48:39,475
+性能所以尽管如此
+performance so even though for
+
+950
+00:48:39,480 --> 00:48:41,875
+并行编程优化
+parallelism programming optimization
+
+951
+00:48:41,880 --> 00:48:45,415
+理论大小批量很棒
+Theory big mini-batch is awesome
+
+952
+00:48:45,420 --> 00:48:49,645
+不幸的是要付出代价
+unfortunately there's price to be paid
+
+953
+00:48:49,650 --> 00:48:53,284
+它会伤害你的测试错误性能
+it hurts your test error performance and
+
+954
+00:48:53,289 --> 00:48:55,804
+有方法的人的种种都
+there all sorts of methods people are
+
+955
+00:48:55,809 --> 00:48:59,975
+试图做饭，包括萎缩
+trying to cook up including shrinking
+
+956
+00:48:59,980 --> 00:49:02,794
+数据相应或改变神经
+data accordingly or changing neural
+
+957
+00:49:02,799 --> 00:49:04,534
+网络架构和各种各样的
+network architecture and all sorts of
+
+958
+00:49:04,539 --> 00:49:06,125
+你可以提出想法的想法
+ideas you can cook up your ideas for
+
+959
+00:49:06,130 --> 00:49:08,074
+你最喜欢的建筑如何制作
+your favorite architecture how to make a
+
+960
+00:49:08,079 --> 00:49:09,844
+大型迷你批次没有伤害
+large mini batch without hurting the
+
+961
+00:49:09,849 --> 00:49:11,705
+最后的表现，但它仍然
+final performance but it's still
+
+962
+00:49:11,710 --> 00:49:14,885
+关于如何做一些公开的问题
+somewhat of an open question on how to
+
+963
+00:49:14,890 --> 00:49:18,245
+最佳选择哪个更大
+optimally select which many larger
+
+964
+00:49:18,250 --> 00:49:22,024
+小批量即使如此应该如此
+mini-batch so should be so even though
+
+965
+00:49:22,029 --> 00:49:23,435
+你看到这些想法很简单
+these ideas are simple you see that
+
+966
+00:49:23,440 --> 00:49:27,004
+每一个简单的想法都会导致整个潜艇
+every simple idea leads to an entire sub
+
+967
+00:49:27,009 --> 00:49:32,764
+SGD的面积所以这里很实用
+area of SGD so here are practical
+
+968
+00:49:32,769 --> 00:49:35,044
+人们有各种挑战
+challenges people have various
+
+969
+00:49:35,049 --> 00:49:37,114
+解决这些挑战的启发式方法
+heuristics for solving these challenges
+
+970
+00:49:37,119 --> 00:49:39,695
+你可以自己做饭，但事实并非如此
+you can cook up your own but it's not
+
+971
+00:49:39,700 --> 00:49:42,784
+一个想法总是有效，如果你
+that one idea always works so if you
+
+972
+00:49:42,789 --> 00:49:47,364
+看看SGD有什么动作部件
+look at SGD what are the moving parts
+
+973
+00:49:47,369 --> 00:49:51,064
+SGD中的运动部件是渐变的
+the moving parts in SGD the gradients
+
+974
+00:49:51,069 --> 00:49:53,074
+随机梯度步长
+stochastic gradients the step size the
+
+975
+00:49:53,079 --> 00:49:55,094
+小批量如此
+mini batch so
+
+976
+00:49:55,099 --> 00:49:57,344
+我应该如何选择步长
+how should I pick step sizes very
+
+977
+00:49:57,349 --> 00:50:00,375
+不平凡的问题不同深刻
+non-trivial problem different deep
+
+978
+00:50:00,380 --> 00:50:01,754
+学习工具包可能有所不同
+learning toolkits may have different
+
+979
+00:50:01,759 --> 00:50:04,274
+调整自动化的方法，但它是
+ways of automating that tuning but it's
+
+980
+00:50:04,279 --> 00:50:07,695
+其中一件令人痛苦的事情
+one of the painful things which
+
+981
+00:50:07,700 --> 00:50:09,734
+小批量使用更换
+mini-batch to use with replacement
+
+982
+00:50:09,739 --> 00:50:11,294
+没有替换我已经告诉你了
+without replacement I already showed you
+
+983
+00:50:11,299 --> 00:50:13,695
+但我应该如何使用哪个迷你批次
+but which mini-batch should I use how
+
+984
+00:50:13,700 --> 00:50:16,125
+大，这应该是一件容易的事
+large that should be again not an easy
+
+985
+00:50:16,130 --> 00:50:18,675
+问题来回答如何计算
+question to answer how to compute
+
+986
+00:50:18,680 --> 00:50:21,465
+任何人都知道随机梯度
+stochastic gradients does anybody know
+
+987
+00:50:21,470 --> 00:50:22,965
+如何计算随机梯度
+how stochastic gradients are computed
+
+988
+00:50:22,970 --> 00:50:29,314
+深入网络培训任何人都知道
+for deep Network training anybody know
+
+989
+00:50:29,319 --> 00:50:32,234
+有一个非常着名的算法叫做
+there is a very famous algorithm called
+
+990
+00:50:32,239 --> 00:50:35,294
+反向传播，即反向传播
+back propagation that back propagation
+
+991
+00:50:35,299 --> 00:50:37,574
+算法用于计算单个
+algorithm is used to compute a single
+
+992
+00:50:37,579 --> 00:50:41,145
+随机梯度有些人使用
+stochastic gradient some people use the
+
+993
+00:50:41,150 --> 00:50:43,514
+单词支持意味着SGD但是回来了
+word back prop to mean SGD but what back
+
+994
+00:50:43,519 --> 00:50:46,425
+道具真正的意思是一些某种
+prop really means is some some kind of
+
+995
+00:50:46,430 --> 00:50:48,195
+计算你的算法a
+algorithm which computes for you a
+
+996
+00:50:48,200 --> 00:50:52,304
+单随机梯度，因此你
+single stochastic gradient and hence you
+
+997
+00:50:52,309 --> 00:50:55,334
+知道这个tensorflow等这些工具包
+know this tensorflow etc these toolkits
+
+998
+00:50:55,339 --> 00:50:56,834
+他们提出了各种各样的方法
+they come up with all sorts of ways to
+
+999
+00:50:56,839 --> 00:50:59,205
+自动计算梯度
+automate the computation of a gradient
+
+1000
+00:50:59,210 --> 00:51:01,004
+因为这真的是主要的事情
+because really that's the main thing and
+
+1001
+00:51:01,009 --> 00:51:03,254
+然后其他想法，如渐变剪辑
+then other ideas like gradient clipping
+
+1002
+00:51:03,259 --> 00:51:04,935
+和动量等有一堆
+and momentum etc there's a bunch of
+
+1003
+00:51:04,940 --> 00:51:06,854
+其他想法和理论
+other ideas and the theoretical
+
+1004
+00:51:06,859 --> 00:51:09,125
+我刚才提到的挑战
+challenges I mentioned to you already
+
+1005
+00:51:09,130 --> 00:51:11,655
+证明它实际上是有效的
+proving that it works that it actually
+
+1006
+00:51:11,660 --> 00:51:13,214
+解决了它打算做的事情
+solves what it set out to do
+
+1007
+00:51:13,219 --> 00:51:16,274
+不幸的是我太慢了我做不到
+unfortunately I was too slow I couldn't
+
+1008
+00:51:16,279 --> 00:51:19,604
+向您展示令人敬畏的五行证明
+show you the awesome five line proof
+
+1009
+00:51:19,609 --> 00:51:21,584
+我认为SGD适用于神经系统
+that I have that SGD works for neural
+
+1010
+00:51:21,589 --> 00:51:25,514
+我的网络和理论分析
+networks and theoretical analysis as I
+
+1011
+00:51:25,519 --> 00:51:29,385
+说真的落后我也证明
+said it's really lagging my proof also
+
+1012
+00:51:29,390 --> 00:51:32,895
+使用替换和
+uses the with replacement and the
+
+1013
+00:51:32,900 --> 00:51:34,665
+没有替换版本的
+without replacement version which is the
+
+1014
+00:51:34,670 --> 00:51:38,984
+一个实际实现的那个
+one that is actually implemented there's
+
+1015
+00:51:38,989 --> 00:51:40,574
+在那方面进展甚微
+very little progress on that there is
+
+1016
+00:51:40,579 --> 00:51:42,195
+一些进展有一堆文件
+some progress there's a bunch of papers
+
+1017
+00:51:42,200 --> 00:51:44,324
+包括我们麻省理工学院的同事，但是
+including from our colleagues at MIT but
+
+1018
+00:51:44,329 --> 00:51:47,655
+它是相当未解决的，也是最大的
+it's quite unsolved and the biggest
+
+1019
+00:51:47,660 --> 00:51:50,864
+大多数人都在问的问题
+question which most of the people in
+
+1020
+00:51:50,869 --> 00:51:52,994
+机器学习目前很兴奋
+machine learning are currently excited
+
+1021
+00:51:52,999 --> 00:51:57,494
+关于这些日子就像是为什么
+about these days is stuff like why does
+
+1022
+00:51:57,499 --> 00:52:00,734
+SGD工作这么好神经网络，我们
+SGD work so well for neural networks we
+
+1023
+00:52:00,739 --> 00:52:03,014
+使用这种糟糕的优化方法吧
+use this crappy optimization method it
+
+1024
+00:52:03,019 --> 00:52:05,925
+一些拟合数据非常迅速
+very rapidly does some fitting data is
+
+1025
+00:52:05,930 --> 00:52:07,995
+大型神经网络很大
+large neural network is large
+
+1026
+00:52:08,000 --> 00:52:10,125
+然后这个神经网络结束了
+and then this neural network ends up
+
+1027
+00:52:10,130 --> 00:52:11,765
+具有很好的分类性能
+having great classification performance
+
+1028
+00:52:11,770 --> 00:52:13,665
+为什么会发生这种情况
+why is that happening
+
+1029
+00:52:13,670 --> 00:52:16,485
+它被称为试图解释构建一个
+it's called trying to explain build a
+
+1030
+00:52:16,490 --> 00:52:18,285
+泛化理论为什么会这样
+theory of generalization why does this
+
+1031
+00:52:18,290 --> 00:52:21,885
+一个SGD列车神经网络工作得更好
+an SGD train neural network work better
+
+1032
+00:52:21,890 --> 00:52:23,565
+比神经网络训练更多
+than neural networks train with more
+
+1033
+00:52:23,570 --> 00:52:25,875
+花哨的优化方法是一个
+fancy optimization methods it's a
+
+1034
+00:52:25,880 --> 00:52:28,095
+神秘和最谁走的人
+mystery and most of the people who take
+
+1035
+00:52:28,100 --> 00:52:29,925
+对理论机器学习的兴趣
+interest in theoretical machine learning
+
+1036
+00:52:29,930 --> 00:52:31,785
+和统计数据之一
+and statistics that is one of the
+
+1037
+00:52:31,790 --> 00:52:33,195
+他们试图理解的谜团
+mysteries they are trying to understand
+
+1038
+00:52:33,200 --> 00:52:37,295
+所以我认为这是我的SGD和
+so I think that's my story of SGD and
+
+1039
+00:52:37,300 --> 00:52:41,145
+这是我们跳过的部分，但没关系
+this is the part we skip but it's ok the
+
+1040
+00:52:41,150 --> 00:52:44,505
+SGD背后的直觉更多
+the intuition behind SGD is much more
+
+1041
+00:52:44,510 --> 00:52:59,470
+important than this so I think exactly
+
+1042
+00:52:44,510 --> 00:53:03,460
+比这更重要，所以我认为
+
+1043
+00:52:59,480 --> 00:53:03,460
+是的，我认为他们会很棒
+yeah I think so that they'll be great
+

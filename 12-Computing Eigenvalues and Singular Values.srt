@@ -1,0 +1,3893 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将有助于MIT开放课程继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:22,385
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:22,390 --> 00:00:27,975
+好的，所以我希望我们能拥有
+ok so I was hoping that we would have
+
+10
+00:00:27,980 --> 00:00:32,745
+准备下一个在线作业但是
+the next online assignment ready but
+
+11
+00:00:32,750 --> 00:00:36,105
+Julia6新版本正在减缓我们的速度
+Julia 6 the new version is slowing us
+
+12
+00:00:36,110 --> 00:00:44,075
+下来，它可能是下一次但是
+down and it'd probably be next time but
+
+13
+00:00:44,080 --> 00:00:47,925
+我的讲座当然是我的
+my lectures of course are well what I
+
+14
+00:00:47,930 --> 00:00:50,525
+想说或许这不是
+want to say perhaps is this isn't
+
+15
+00:00:50,530 --> 00:00:53,295
+打算成为数学课程
+intended to be a course in numerical
+
+16
+00:00:53,300 --> 00:00:56,945
+线性代数，但我以为我不能
+linear algebra but I thought I couldn't
+
+17
+00:00:56,950 --> 00:00:59,565
+让整个学期过去
+let the whole whole semester go by
+
+18
+00:00:59,570 --> 00:01:01,574
+没有说什么怎么样
+without saying something about how to
+
+19
+00:01:01,579 --> 00:01:06,395
+计算特征值和奇异值
+compute eigenvalues and singular values
+
+20
+00:01:06,400 --> 00:01:13,215
+当然你会打电话给AG或SVD或
+of course you're gonna call AG or SVD or
+
+21
+00:01:13,220 --> 00:01:19,415
+它们相当于Python或Julia但是
+they equivalent in Python or Julia but
+
+22
+00:01:19,420 --> 00:01:23,265
+实际上我们的QR分解
+actually the QR factorization that we
+
+23
+00:01:23,270 --> 00:01:26,265
+谈到我们谈到完全关闭
+spoke about that we spoke off entirely
+
+24
+00:01:26,270 --> 00:01:30,364
+关于上次是意外的关键
+about last time is the key unexpectedly
+
+25
+00:01:30,369 --> 00:01:36,885
+你意外地有一个矩阵a
+unexpectedly you have a matrix a whose
+
+26
+00:01:36,890 --> 00:01:39,555
+你想要的本征值让我们开始吧
+eigen values you want so let's start
+
+27
+00:01:39,560 --> 00:01:42,315
+具有特征值，它可能是一个
+with eigen values and it might be a
+
+28
+00:01:42,320 --> 00:01:46,245
+对称矩阵ii将留在
+symmetric matrix i-i'll stay with a
+
+29
+00:01:46,250 --> 00:01:48,735
+而不是因为它没有
+rather than s because it doesn't have to
+
+30
+00:01:48,740 --> 00:01:51,765
+是，但你得到特殊的总是你
+be but you get special always you get
+
+31
+00:01:51,770 --> 00:01:54,915
+如果矩阵是特殊的东西
+something special if the matrix is
+
+32
+00:01:54,920 --> 00:02:00,705
+对称确定所以这种计算方法
+symmetric ok so this method of computing
+
+33
+00:02:00,710 --> 00:02:03,555
+至少对我来说是特征值，我想
+eigen values to me at least and I think
+
+34
+00:02:03,560 --> 00:02:06,105
+有太多的人像这样出来了
+too many people came like out of the
+
+35
+00:02:06,110 --> 00:02:11,324
+前一段时间的蓝色，但不久前
+blue a while ago but not that long ago
+
+36
+00:02:11,329 --> 00:02:14,204
+而且效果很好
+and it worked very well
+
+37
+00:02:14,209 --> 00:02:14,985
+所以
+so
+
+38
+00:02:14,990 --> 00:02:17,415
+这就是它被称为QR的想法
+here's the idea it's called the QR
+
+39
+00:02:17,420 --> 00:02:20,765
+方法，因为你从保理开始
+method because you start by factoring
+
+40
+00:02:20,770 --> 00:02:25,275
+你的矩阵进入QR所以这是一个
+your matrix into QR so here's a that's
+
+41
+00:02:25,280 --> 00:02:28,145
+我们可以称之为零
+can we call it a zero
+
+42
+00:02:28,150 --> 00:02:31,575
+得到了一些我们从哪个矩阵开始
+got some matrix we start with whose
+
+43
+00:02:31,580 --> 00:02:34,335
+我们想要的特征值，我会称之为
+eigenvalues we want and I'll call these
+
+44
+00:02:34,340 --> 00:02:38,505
+Q0和R0，你还记得那是什么
+Q 0 and R 0 and you remember what that
+
+45
+00:02:38,510 --> 00:02:39,315
+手段
+means
+
+46
+00:02:39,320 --> 00:02:41,835
+那是什么躲在后面
+what that what what's hiding behind
+
+47
+00:02:41,840 --> 00:02:44,715
+那些我写的你的信
+those letters that I've written you have
+
+48
+00:02:44,720 --> 00:02:48,825
+像I一样可能对称的列
+the columns of a possibly symmetric as I
+
+49
+00:02:48,830 --> 00:02:56,015
+说但不是正交通常所以你
+said but not orthogonal usually so you
+
+50
+00:02:56,020 --> 00:02:59,445
+找到一个正交的基础
+find an orthogonal basis you
+
+51
+00:02:59,450 --> 00:03:01,635
+将它们正交化它们
+orthogonalize them you line them up
+
+52
+00:03:01,640 --> 00:03:03,945
+然后彼此垂直
+perpendicular to each other and then
+
+53
+00:03:03,950 --> 00:03:07,815
+有一个矩阵R正好发生
+there's a matrix R which is happens to
+
+54
+00:03:07,820 --> 00:03:12,975
+是连接上部的三角形
+be upper triangular that connects the
+
+55
+00:03:12,980 --> 00:03:16,665
+与正交不正交
+not orthogonal basis with the orthogonal
+
+56
+00:03:16,670 --> 00:03:23,505
+基础权利我们构建了我们的步骤
+basis right we we constructed our step
+
+57
+00:03:23,510 --> 00:03:29,865
+一步一步然后想法是写这些
+by step and then the idea is write these
+
+58
+00:03:29,870 --> 00:03:34,965
+以相反的顺序，这将是一个
+in the reverse order and that will be a
+
+59
+00:03:34,970 --> 00:03:41,865
+1在下一个确定，然后再次做到这一点，
+1 the next a ok and then do it again and
+
+60
+00:03:41,870 --> 00:03:42,855
+一次又一次
+again and again
+
+61
+00:03:42,860 --> 00:03:48,525
+所以我们当然希望那个
+and so we're hoping of course that the
+
+62
+00:03:48,530 --> 00:03:52,635
+特征值没有改变，我们希望如此
+eigenvalues didn't change we hoping that
+
+63
+00:03:52,640 --> 00:03:56,025
+我们可以用1来忘记0再次开始
+we can forget a 0 start again with a 1
+
+64
+00:03:56,030 --> 00:04:00,045
+并产生一个2并继续这样我们
+and produce a 2 and continue so we're
+
+65
+00:04:00,050 --> 00:04:01,935
+希望有两件事不会有希望
+hoping two things one will not be hope
+
+66
+00:04:01,940 --> 00:04:05,835
+我们可以看到特征值
+we can see that the eigenvalues the
+
+67
+00:04:05,840 --> 00:04:08,115
+1和n的特征值是
+eigenvalues of a 1 and a naught are the
+
+68
+00:04:08,120 --> 00:04:09,855
+相同的，所以我们并没有改变
+same so we have not changed the
+
+69
+00:04:09,860 --> 00:04:13,035
+特征值如果你，我们怎么看？
+eigenvalues how did we see that if you
+
+70
+00:04:13,040 --> 00:04:16,035
+不得不表明两个矩阵有
+had to show that two matrices had the
+
+71
+00:04:16,040 --> 00:04:19,544
+你会计算所有相同的特征值
+same eigenvalues would you compute all
+
+72
+00:04:19,549 --> 00:04:21,495
+特征值并比较他们
+the eigenvalues and compare them he'll
+
+73
+00:04:21,500 --> 00:04:24,135
+当然不是你会做什么的
+certainly not what would you do what's
+
+74
+00:04:24,140 --> 00:04:28,754
+通常的最佳测试通常的测试
+the best test the usual test the usual
+
+75
+00:04:28,759 --> 00:04:33,284
+你想的东西展现给他们
+thing you would want to show to they're
+
+76
+00:04:33,289 --> 00:04:33,765
+类似
+similar
+
+77
+00:04:33,770 --> 00:04:35,985
+这是正确的，所以声称就是这样
+that's right so the claim would be that
+
+78
+00:04:35,990 --> 00:04:40,694
+这两个矩阵是相似的权利，使
+these two matrices are similar right so
+
+79
+00:04:40,699 --> 00:04:42,914
+也许我们应该表明我们想要的
+maybe we should show that so we want to
+
+80
+00:04:42,919 --> 00:04:45,974
+以不同的方式写一个1所以这样
+write a 1 in a different way so so the
+
+81
+00:04:45,979 --> 00:04:52,274
+声明是1是类似于我们只是
+claim is a 1 is similar to a so we just
+
+82
+00:04:52,279 --> 00:04:56,205
+必须弄清楚我们必须得到1
+have to figure out we have to get a 1
+
+83
+00:04:56,210 --> 00:05:04,084
+然后转到0所以这里是1ok所以1
+and turn to a 0 so here is a 1 ok so a 1
+
+84
+00:05:04,089 --> 00:05:07,154
+那是我想表明那是对的
+that's I want to show that that's right
+
+85
+00:05:07,159 --> 00:05:14,714
+所以这是我们的0Q0但是什么是Q0来自
+so that's our 0 Q 0 but what is Q 0 from
+
+86
+00:05:14,719 --> 00:05:21,884
+这里Q0是我们的Q0是什么
+here Q 0 is what we is our Q 0 is what
+
+87
+00:05:21,889 --> 00:05:24,015
+我想要将0反转
+do I want I want to put our 0 inverse
+
+88
+00:05:24,020 --> 00:05:29,144
+所以我们的0现在为Q0我
+over there so so our 0 now for Q 0 I'm
+
+89
+00:05:29,149 --> 00:05:34,994
+要替代究竟什么是Q0的我
+gonna substitute so what is Q 0 its I
+
+90
+00:05:34,999 --> 00:05:37,305
+将该等式的两边乘以
+multiply both sides of that equation by
+
+91
+00:05:37,310 --> 00:05:44,865
+我们的0逆，所以Q0是0对不起我
+our 0 inverse so Q 0 is a 0 is sorry I
+
+92
+00:05:44,870 --> 00:05:51,194
+说a和写了一个000逆
+said said a and wrote Q a 0 r 0 inverse
+
+93
+00:05:51,199 --> 00:05:58,034
+适合q0我适合它
+right for for q0 i foot in what it
+
+94
+00:05:58,039 --> 00:06:01,414
+等于，而且已经完成了
+equals and that's done it
+
+95
+00:06:01,419 --> 00:06:06,735
+那正是告诉我一个1
+that's exactly telling me that a 1 which
+
+96
+00:06:06,740 --> 00:06:10,274
+这是等于这个，这是一个
+is this equals this and that's a
+
+97
+00:06:10,279 --> 00:06:12,704
+相似性转换我没有
+similarity transformation I have not
+
+98
+00:06:12,709 --> 00:06:16,084
+改变了特征值，这样就可以了
+changed the eigen values so that's ok
+
+99
+00:06:16,089 --> 00:06:20,054
+这是喜欢你的另一件事
+the other thing which is the like you
+
+100
+00:06:20,059 --> 00:06:22,634
+可以说这件事的奇迹是
+could say the miracle in this thing is
+
+101
+00:06:22,639 --> 00:06:26,164
+当我继续这样做的时候
+that when I continue to do that for
+
+102
+00:06:26,169 --> 00:06:31,425
+几乎每个矩阵都是矩阵开始的
+almost every matrix the matrices begin
+
+103
+00:06:31,430 --> 00:06:35,164
+丢掉对角线上的东西
+to lose stuff off the diagonal
+
+104
+00:06:35,169 --> 00:06:37,754
+尤其是在对角线以下
+especially below the diagonal by the
+
+105
+00:06:37,759 --> 00:06:42,265
+命令QR完成它
+ordering that that QR is done so it
+
+106
+00:06:42,270 --> 00:06:44,875
+你倾向于从矩阵a开​​始
+you tend to you start with a matrix a
+
+107
+00:06:44,880 --> 00:06:53,455
+结你得到一个矩阵a1就像
+knot you get a matrix a 1 which is like
+
+108
+00:06:53,460 --> 00:07:00,594
+这个部分有点小
+a little smaller here this part being
+
+109
+00:07:00,599 --> 00:07:03,504
+坚果特别小，你再做一次
+nuts especially smaller you do it again
+
+110
+00:07:03,509 --> 00:07:06,325
+这甚至更小，即便如此
+this is even smaller even so I put even
+
+111
+00:07:06,330 --> 00:07:10,465
+小一个甚至更小，你保持
+smaller a to even smaller and you keep
+
+112
+00:07:10,470 --> 00:07:16,555
+去而对于大多数矩阵结果
+going and for most matrices the result
+
+113
+00:07:16,560 --> 00:07:20,034
+是我不知道我们有多少步骤
+is that I don't know how many steps we
+
+114
+00:07:20,039 --> 00:07:24,055
+想要考虑，但我们相处得很好
+want to think of taking but we get quite
+
+115
+00:07:24,060 --> 00:07:29,154
+这里的小数字尤其如此
+small numbers here especially yeah so
+
+116
+00:07:29,159 --> 00:07:31,555
+一旦我们在这里得到一些小数字
+once we get small numbers here little
+
+117
+00:07:31,560 --> 00:07:32,395
+小量的
+Epsilon's
+
+118
+00:07:32,400 --> 00:07:36,085
+这是每个人的小写速记
+that's everybody's shorthand for small
+
+119
+00:07:36,090 --> 00:07:39,985
+数字你期望什么
+numbers what what would you expect to
+
+120
+00:07:39,990 --> 00:07:43,935
+在对角线上看到特征值
+see on the diagonal the eigenvalues
+
+121
+00:07:43,940 --> 00:07:47,245
+因为它具有与之相同的特征值
+because this has the same eigenvalues as
+
+122
+00:07:47,250 --> 00:07:49,495
+这就是这个和这些一点点
+this as this is this and these little
+
+123
+00:07:49,500 --> 00:07:52,525
+epsilon沙皇不会改变
+epsilon czar not going to change the
+
+124
+00:07:52,530 --> 00:07:54,654
+特征值太多，所以这些将会开启
+eigenvalues too much so these will be on
+
+125
+00:07:54,659 --> 00:08:00,625
+对角线将接近
+the diagonal will be close to the
+
+126
+00:08:00,630 --> 00:08:03,265
+特征值实际上发生了什么
+eigenvalues and actually what happens is
+
+127
+00:08:03,270 --> 00:08:06,685
+这是第一个
+this one comes first
+
+128
+00:08:06,690 --> 00:08:10,914
+首先我想这个是非常准确的
+that one is quite accurate first I guess
+
+129
+00:08:10,919 --> 00:08:15,384
+我们应该做一个简单的例子
+we should probably do a simple example
+
+130
+00:08:15,389 --> 00:08:20,754
+看到这种情况实际上我做了一个
+to see this happen actually I do an
+
+131
+00:08:20,759 --> 00:08:24,175
+注释中的例子，让我说一下
+example in the notes and let me say what
+
+132
+00:08:24,180 --> 00:08:28,034
+发生了所以我做了两个两个例子
+happens so I do a two by two example
+
+133
+00:08:28,039 --> 00:08:33,144
+这有点像costheta正弦
+which has something like cos theta sine
+
+134
+00:08:33,149 --> 00:08:38,605
+theta哦，我不知道我是什么
+theta oh I don't know what I've
+
+135
+00:08:38,610 --> 00:08:41,005
+忘了我拿了什么，我没有
+forgotten what I took and I don't have
+
+136
+00:08:41,010 --> 00:08:43,065
+那里有一个人的笔记
+that page of notes here somebody here
+
+137
+00:08:43,070 --> 00:08:46,455
+这里的东西在这里
+something here something here
+
+138
+00:08:46,460 --> 00:08:53,955
+作为一个不是，然后一个刚刚
+as a as a not and then a one after just
+
+139
+00:08:53,960 --> 00:09:02,855
+一步有正弦立方体那里和
+one step has sine cubed theta there and
+
+140
+00:09:02,860 --> 00:09:06,704
+那里的数字越来越多了
+numbers there that are getting a much
+
+141
+00:09:06,709 --> 00:09:08,834
+更接近特征值对不起这个
+closer to the eigenvalue sorry that this
+
+142
+00:09:08,839 --> 00:09:12,555
+这不是一个全面的例子，而是重点
+isn't a full-scale example but the point
+
+143
+00:09:12,560 --> 00:09:16,685
+这个例子就是这个
+of the example is here that this this
+
+144
+00:09:16,690 --> 00:09:22,834
+关闭对角线元素得到了被立方和
+off diagonal entry got gets cubed and
+
+145
+00:09:22,839 --> 00:09:26,204
+下一步将是第九步
+the next step will it'll be its ninth
+
+146
+00:09:26,209 --> 00:09:29,805
+权力，然后是第27个权力所以它
+power and then the 27th power so it's
+
+147
+00:09:29,810 --> 00:09:34,475
+真的很快就会到0而且这个
+really quickly going to 0 and this
+
+148
+00:09:34,480 --> 00:09:38,615
+这是因为立方收敛是这样的
+happens so with the cubic convergence is
+
+149
+00:09:38,620 --> 00:09:42,405
+你知道这是一个数字奖
+you know that's a prize in numerical
+
+150
+00:09:42,410 --> 00:09:47,765
+线性代数就这样发生了
+linear algebra so that's that happened
+
+151
+00:09:47,770 --> 00:09:52,475
+好的，所以这就到了现场
+okay so this arrived on the scene and
+
+152
+00:09:52,480 --> 00:09:55,785
+迅速吹掉所有其他方法
+quickly blew away all other methods that
+
+153
+00:09:55,790 --> 00:09:58,395
+被用来计算特征值
+were being used to compute eigenvalues
+
+154
+00:09:58,400 --> 00:10:03,795
+但数字人就是他们自己
+but numerical people being what they are
+
+155
+00:10:03,800 --> 00:10:06,615
+他们希望提高它喜欢的是有
+they wanted to improve it like is there
+
+156
+00:10:06,620 --> 00:10:09,704
+一个办法让它更快，横空出世
+a way to make it faster and turned out
+
+157
+00:10:09,709 --> 00:10:14,175
+事实证明，这更好
+there is it turned out that the better
+
+158
+00:10:14,180 --> 00:10:21,075
+方式基本上是相同的想法，但只是你
+way basically the same idea but just you
+
+159
+00:10:21,080 --> 00:10:26,225
+知道你总是在寻找一个简单的
+know you're always looking for a simple
+
+160
+00:10:26,230 --> 00:10:32,595
+改变，这是想法
+change and it was the idea of
+
+161
+00:10:32,600 --> 00:10:37,665
+尝试并转向引入转变
+introducing a shift was tried and turned
+
+162
+00:10:37,670 --> 00:10:43,065
+出去工作非常好所以这样
+out to work extremely well so so that's
+
+163
+00:10:43,070 --> 00:10:47,565
+这样的改进让我们知道了
+the improvement so so we take a one know
+
+164
+00:10:47,570 --> 00:10:50,915
+那么这种转变是如何运作的呢？
+so how does it how does this shift work
+
+165
+00:10:50,920 --> 00:10:55,545
+如果我有空间，而不是不是我
+so instead of a not i if i got space
+
+166
+00:10:55,550 --> 00:10:58,935
+在这里做这个而不是结我
+here to do do this instead of a knots i
+
+167
+00:10:58,940 --> 00:11:00,505
+不要
+take a not
+
+168
+00:11:00,510 --> 00:11:04,285
+-转移所以转移是一些倍数
+- shift so shift is some multiple of the
+
+169
+00:11:04,290 --> 00:11:07,975
+如果我只是移动一个矩阵的身份
+identity if I just move a matrix by a
+
+170
+00:11:07,980 --> 00:11:10,735
+身份的多重性发生了什么
+multiple of the identity what happens to
+
+171
+00:11:10,740 --> 00:11:12,805
+它的特征向量会发生什么
+its eigenvectors what happens to its
+
+172
+00:11:12,810 --> 00:11:15,655
+特征值非常简单
+eigenvalues something pretty simple
+
+173
+00:11:15,660 --> 00:11:18,735
+对，因为我只是换了si
+right because I'm just shifting by si
+
+174
+00:11:18,740 --> 00:11:22,645
+他们的特征向量会发生什么
+what happens to its eigenvectors they're
+
+175
+00:11:22,650 --> 00:11:25,585
+同样的这个以及发生了什么
+the same this and what happens to the
+
+176
+00:11:25,590 --> 00:11:31,105
+如果a，它们的特征值会改变
+eigenvalues they change by s this if a
+
+177
+00:11:31,110 --> 00:11:35,725
+不是v等于lambdav然后当我
+not v equal lambda v then when I
+
+178
+00:11:35,730 --> 00:11:37,555
+将此乘以V将有一个
+multiply this by V there will be an
+
+179
+00:11:37,560 --> 00:11:43,225
+额外它将是lambda减去s因为
+extra it'll be lambda minus s because
+
+180
+00:11:43,230 --> 00:11:46,915
+V的身份时间就是V，所以
+the identity times the V is just V so so
+
+181
+00:11:46,920 --> 00:11:48,625
+它只是移动所有的特征值
+the it just shifts all the eigenvalues
+
+182
+00:11:48,630 --> 00:11:52,825
+通过s，你试图转移你寻找一个
+by s and you try to shift you look for a
+
+183
+00:11:52,830 --> 00:11:55,825
+转移你如果你这将是伟大的
+shift you this would be great if you
+
+184
+00:11:55,830 --> 00:11:59,935
+我知道lambdana会在那里转移
+knew lambda n a shift there you would be
+
+185
+00:11:59,940 --> 00:12:03,385
+寻找0，那么如果他们转移
+looking for 0 then if you shifted them
+
+186
+00:12:03,390 --> 00:12:06,235
+所有这些lambda都证明了这一点
+all by that lambda and it turns out that
+
+187
+00:12:06,240 --> 00:12:08,875
+会加快速度，所以你工作
+would speed things up so so it you work
+
+188
+00:12:08,880 --> 00:12:12,685
+而现在我用这个矩阵代替
+instead with this matrix as now I'm
+
+189
+00:12:12,690 --> 00:12:15,085
+我再考虑Q无效R
+again I'm factoring in the Q naught R
+
+190
+00:12:15,090 --> 00:12:20,005
+没有，所以这是方法的工作
+naught so that's the work of the method
+
+191
+00:12:20,010 --> 00:12:23,905
+在每一步都在做克施密特
+is in doing gram-schmidt at every step
+
+192
+00:12:23,910 --> 00:12:27,105
+然后有一点工作
+and then there's a little work in
+
+193
+00:12:27,110 --> 00:12:35,545
+颠倒顺序然后我想
+reversing the order and then I want to
+
+194
+00:12:35,550 --> 00:12:38,395
+撤消班次，所以我这样做
+undo the shift so I so you do that
+
+195
+00:12:38,400 --> 00:12:40,765
+因素分解现在让我们看看你可能有
+factorization now let's see you may have
+
+196
+00:12:40,770 --> 00:12:43,705
+帮助我记住我应该做的事情
+to help me to remember what I should do
+
+197
+00:12:43,710 --> 00:12:48,805
+在这里，我将那些与我相反​​的因素分解
+here so I factor those I reverse those
+
+198
+00:12:48,810 --> 00:12:54,295
+然后我想我补充了这个转变
+and then I think I add back the shift
+
+199
+00:12:54,300 --> 00:13:01,855
+这是我的一个1，所以我花了我点头
+and that's my a 1 so I took a nod I
+
+200
+00:13:01,860 --> 00:13:04,995
+转移它，我工作了它是
+shifted it I worked with it q are
+
+201
+00:13:05,000 --> 00:13:08,575
+颠倒顺序是q加回来了
+reversed the order are q added back the
+
+202
+00:13:08,580 --> 00:13:12,055
+转移得到一个矩阵，我是什么
+shift to get a matrix and what what am i
+
+203
+00:13:12,060 --> 00:13:13,595
+当然希望
+of course hoping of
+
+204
+00:13:13,600 --> 00:13:17,375
+矩阵a1，他们不是我希望的
+the matrix a 1 and they not I'm hoping
+
+205
+00:13:17,380 --> 00:13:20,105
+他们仍然相似，我希望如此
+they're still similar I'm hoping so I
+
+206
+00:13:20,110 --> 00:13:23,194
+做了一个转变，我解除了转变，但是
+did a shift and I undid a shift and but
+
+207
+00:13:23,199 --> 00:13:27,245
+当然，在我做了QR之后
+of course after after doing a QR I have
+
+208
+00:13:27,250 --> 00:13:27,995
+去检查
+to check
+
+209
+00:13:28,000 --> 00:13:31,595
+这些真的仍然相似所以让我
+are these really still similar so let me
+
+210
+00:13:31,600 --> 00:13:34,685
+试着再次检查一下我能不能
+just try to check that one again can i
+
+211
+00:13:34,690 --> 00:13:39,725
+也许我只是坐在那里
+maybe I'll just it's sitting right there
+
+212
+00:13:39,730 --> 00:13:43,324
+所以让我再做一次，我希望如此
+so let me do it again I'm hoping that
+
+213
+00:13:43,329 --> 00:13:48,334
+我希望你知道的地方
+I'm hoping that something you know where
+
+214
+00:13:48,339 --> 00:13:50,975
+我们改变了哦是的我们在这里展示了
+did we change oh yeah here we showed
+
+215
+00:13:50,980 --> 00:13:54,935
+即A1是类似于一个结，我
+that a1 was similar to a knot and I'm
+
+216
+00:13:54,940 --> 00:13:57,625
+希望甚至可能仍然如此
+hoping that's probably still true even
+
+217
+00:13:57,630 --> 00:14:01,655
+你知道这种转变并没有弄乱
+you know the the shift didn't mess that
+
+218
+00:14:01,660 --> 00:14:05,644
+我们只是尝试所以不是没有那个R
+up let's just try so ain't no a that's R
+
+219
+00:14:05,649 --> 00:14:12,514
+没问题，没有加上si好了，现在
+naught Q naught plus si okay and now
+
+220
+00:14:12,519 --> 00:14:16,865
+我要做什么我会去做什么
+what am I going to do I'm going to what
+
+221
+00:14:16,870 --> 00:14:21,274
+在我弄清楚Q之前我做了什么
+did i do before I figured out what Q
+
+222
+00:14:21,279 --> 00:14:28,175
+没有人是你从此记得如此
+naught was from this you remember so so
+
+223
+00:14:28,180 --> 00:14:32,915
+这是我们的结，现在我必须放入Q.
+this is our knot now I have to put in Q
+
+224
+00:14:32,920 --> 00:14:35,105
+没问题，但问题就是这件事
+naught but Q naught is this thing
+
+225
+00:14:35,110 --> 00:14:37,495
+反向时间这是可行的
+inverse times this is this gonna work
+
+226
+00:14:37,500 --> 00:14:41,644
+我想要我，但我不认为我
+I'm I'm like hoping but I don't think I
+
+227
+00:14:41,649 --> 00:14:48,454
+想要得到它，不，不是没有问题
+wanted to get that no it's not Q naught
+
+228
+00:14:48,459 --> 00:14:55,415
+那里有什么我放在这里，如果它
+there what what do I put here and if it
+
+229
+00:14:55,420 --> 00:14:59,434
+不起作用我们会留下它
+doesn't work we'll leave it as an
+
+230
+00:14:59,439 --> 00:15:05,215
+运动好，所以是的因为我没有
+exercise okay so yeah cuz I didn't I
+
+231
+00:15:05,220 --> 00:15:08,285
+并没有某种方式开始
+didn't sort of start right somehow
+
+232
+00:15:08,290 --> 00:15:13,175
+好吧，但让我继续前进
+okay so but let me just push along to
+
+233
+00:15:13,180 --> 00:15:15,605
+看看会发生什么，所以我正在插电
+see what happens so I'm I'm plugging in
+
+234
+00:15:15,610 --> 00:15:18,754
+对于Q在这里，我正在插入这个
+for Q naught here I'm plugging in this
+
+235
+00:15:18,759 --> 00:15:20,764
+矩阵所以它不应该是
+matrix so it shouldn't have been
+
+236
+00:15:20,769 --> 00:15:24,905
+颠倒它的时间并不相反
+inverted it times are not inverse
+
+237
+00:15:24,910 --> 00:15:29,855
+谁知道它可能工作，谁知道这么
+who knows it might work who knows so
+
+238
+00:15:29,860 --> 00:15:33,185
+这是没有问题的，也不是
+that's the R naught Q naught right or is
+
+239
+00:15:33,190 --> 00:15:37,655
+每个人都跟我抱歉这个R.
+everybody with me sorry about this R
+
+240
+00:15:37,660 --> 00:15:41,014
+没有逆，然后我必须添加s
+naught inverse and then I have to add s
+
+241
+00:15:41,019 --> 00:15:46,985
+我，我做了什么
+I so what have I done
+
+242
+00:15:46,990 --> 00:15:51,485
+我只是喜欢相信这一点
+I'm just like pushed on believing that
+
+243
+00:15:51,490 --> 00:15:55,774
+这会起作用，因为它就是
+this would work because it it's the
+
+244
+00:15:55,779 --> 00:15:59,495
+现在经常使用的方法
+method that that is constantly used now
+
+245
+00:15:59,500 --> 00:16:05,285
+我有什么我有有它
+do I have what do I have there is it
+
+246
+00:16:05,290 --> 00:16:10,324
+工作这是我们的不是
+working this is our not a that was of
+
+247
+00:16:10,329 --> 00:16:12,845
+当然没有任何结果
+course a naught R naught a naught R
+
+248
+00:16:12,850 --> 00:16:17,824
+没有逆R没有一个R
+naught inverse R naught a naught R
+
+249
+00:16:17,829 --> 00:16:23,314
+没有反正的减去什么的
+naught inverse good minus s what's
+
+250
+00:16:23,319 --> 00:16:27,394
+什么是我从那里得到的
+what's what have I got there from from
+
+251
+00:16:27,399 --> 00:16:31,704
+不是-不知道那是什么
+the are not - si R naught what is that
+
+252
+00:16:31,709 --> 00:16:37,204
+那是-我看起来很成功他们不是
+that's - si I look success they are not
+
+253
+00:16:37,209 --> 00:16:39,004
+取消它们不是反向所以这个
+cancels they are not inverse so this
+
+254
+00:16:39,009 --> 00:16:43,564
+该术语来自那个-
+that term from from that that that is -
+
+255
+00:16:43,569 --> 00:16:47,795
+SI取消+S我完成哎哟
+si cancels + s I am finished and lo and
+
+256
+00:16:47,800 --> 00:16:52,925
+看，我们有相同的相似性，所以我们
+behold we have the same similarity so we
+
+257
+00:16:52,930 --> 00:16:55,745
+被多个人搞乱了
+messed around by a multiple of the
+
+258
+00:16:55,750 --> 00:17:01,225
+身份并没有它实际上
+identity and it didn't it it actually
+
+259
+00:17:01,230 --> 00:17:05,105
+如果我们这样做会使事情更快收敛
+makes the thing converge faster if we
+
+260
+00:17:05,110 --> 00:17:09,904
+选择好的转变，但基本上
+choose the shifts well and but basically
+
+261
+00:17:09,909 --> 00:17:13,054
+同样的想法仍然正常工作，所以这是
+the same idea still working ok so that's
+
+262
+00:17:13,059 --> 00:17:17,255
+这就是QR方法以及这就是
+that's the QR method well that's the
+
+263
+00:17:17,260 --> 00:17:20,784
+方法我们没有显示，也没有显示
+method we haven't shown and won't show
+
+264
+00:17:20,789 --> 00:17:26,375
+除了这一半完成了
+that except for this half half completed
+
+265
+00:17:26,380 --> 00:17:32,615
+例如，我不打算证明这一点
+example we I don't plan to to prove that
+
+266
+00:17:32,620 --> 00:17:36,395
+下三角形部分开始
+the lower triangular part begins to
+
+267
+00:17:36,400 --> 00:17:37,945
+消失
+disappear
+
+268
+00:17:37,950 --> 00:17:40,195
+变小和小和
+gets smaller and smaller and smaller and
+
+269
+00:17:40,200 --> 00:17:42,235
+那么特征值上弹出
+then the eigenvalues pop up on the
+
+270
+00:17:42,240 --> 00:17:49,515
+对角线它是惊人的惊人的好吧
+diagonal it's it's amazing amazing okay
+
+271
+00:17:49,520 --> 00:17:53,424
+现在我们还有其他改进吗？
+now is there any other improvement we
+
+272
+00:17:53,429 --> 00:17:58,135
+可以做到这样的方法和地点
+can make so that's the method and where
+
+273
+00:17:58,140 --> 00:18:00,294
+是工作和使用该方法
+is the work and in using that method
+
+274
+00:18:00,299 --> 00:18:02,965
+因为那是我们一直关注的
+because that's what we always focus on
+
+275
+00:18:02,970 --> 00:18:06,025
+我们在哪里花费电脑时间
+where we spending computer time
+
+276
+00:18:06,030 --> 00:18:08,895
+好吧，我们花了很多时间在电脑上
+well we're spending computer time in
+
+277
+00:18:08,900 --> 00:18:14,485
+做分数所以它
+doing the doing the factorization so it
+
+278
+00:18:14,490 --> 00:18:16,554
+没有任何费用可以转移
+didn't cost anything to shift by the
+
+279
+00:18:16,559 --> 00:18:18,835
+身份，但我们不得不考虑到这一点
+identity but then we had to factor that
+
+280
+00:18:18,840 --> 00:18:21,745
+在QnaughtRnaught然后它没有
+in the Q naught R naught then it didn't
+
+281
+00:18:21,750 --> 00:18:24,235
+花费很多钱来增加它们
+cost much to multiply them in the
+
+282
+00:18:24,240 --> 00:18:29,185
+相反的顺序所以工作是在QR所以
+opposite order so the work was in Q R so
+
+283
+00:18:29,190 --> 00:18:33,414
+我们能想到任何改进的事吗？
+could we think of anything to improve
+
+284
+00:18:33,419 --> 00:18:37,135
+我想我能想到的那个方面
+that aspect I think could we think of
+
+285
+00:18:37,140 --> 00:18:39,414
+什么都有，然后我们有一个
+anything there and then we've got a
+
+286
+00:18:39,419 --> 00:18:46,765
+如果是真的一流的方法
+really first class method well if the
+
+287
+00:18:46,770 --> 00:18:50,575
+矩阵我知道我们开始的矩阵
+matrix a I know ik the matrix we started
+
+288
+00:18:50,580 --> 00:18:59,575
+有一些零允许我们
+with had some zeros that that allowed us
+
+289
+00:18:59,580 --> 00:19:03,924
+跳过执行QR的步骤
+to skip steps in doing the QR
+
+290
+00:19:03,929 --> 00:19:07,044
+因素分解所以我要说的是什么
+factorization so so what am I gonna say
+
+291
+00:19:07,049 --> 00:19:13,164
+我要说一个或不是我们的原创
+I'm gonna say if a or a not our original
+
+292
+00:19:13,169 --> 00:19:16,435
+矩阵有一堆零，让我们说
+matrix has a bunch of zeros let's say
+
+293
+00:19:16,440 --> 00:19:17,995
+它有一大堆零的有
+it's got a whole lot of zeros there
+
+294
+00:19:18,000 --> 00:19:28,544
+也许这很好我在这里过度了我
+maybe it's well okay I overdid it here I
+
+295
+00:19:28,549 --> 00:19:33,985
+知道特征值，但是和
+know the eigenvalues right off but and
+
+296
+00:19:33,990 --> 00:19:37,465
+所以说实话，我不能这么说
+so the truth is I can't that saying that
+
+297
+00:19:37,470 --> 00:19:42,115
+如果它不会发生，但我们
+if that it's not going to happen but we
+
+298
+00:19:42,120 --> 00:19:47,565
+可以用一个额外的对角线得到零
+can get zeros with one extra diagonal
+
+299
+00:19:47,570 --> 00:19:50,485
+事实证明这是主要的
+that turns out so that here's the main
+
+300
+00:19:50,490 --> 00:19:51,355
+对角大家
+diagonal everybody
+
+301
+00:19:51,360 --> 00:19:55,554
+把目光投向主对角线和
+got his eye on the main diagonal and and
+
+302
+00:19:55,559 --> 00:20:02,395
+如果我能得到很多，那就是一个对角线
+and one diagonal if I can get a lot of
+
+303
+00:20:02,400 --> 00:20:06,804
+零，但我不能通过简单的计算
+zeros but I can't by simple computation
+
+304
+00:20:06,809 --> 00:20:10,885
+所以我会告诉你如何得到一个，但我
+so I'll show you how to get one but I
+
+305
+00:20:10,890 --> 00:20:12,745
+无法将所有负载都归零，因为
+can't get all loads to be zero because
+
+306
+00:20:12,750 --> 00:20:15,985
+然后我会让特征值合适
+then I would have the eigenvalues right
+
+307
+00:20:15,990 --> 00:20:19,285
+在那里，那我怎么知道我
+there and that well how do I know that I
+
+308
+00:20:19,290 --> 00:20:21,195
+难道你不知道在淘汰
+can't you know in an elimination
+
+309
+00:20:21,200 --> 00:20:25,075
+普通的解决斧头等于你真的
+ordinary solving ax equal B you really
+
+310
+00:20:25,080 --> 00:20:28,785
+确实达到了上三角形式
+do get to an upper triangular form right
+
+311
+00:20:28,790 --> 00:20:33,655
+一些运营商有些消除
+some operator some some elimination
+
+312
+00:20:33,660 --> 00:20:36,385
+你插走的步骤和你的矩阵
+steps you plug away and your matrix
+
+313
+00:20:36,390 --> 00:20:39,835
+成为上三角你和你
+becomes upper triangular you and you're
+
+314
+00:20:39,840 --> 00:20:41,205
+金色
+golden
+
+315
+00:20:41,210 --> 00:20:47,294
+但这太过于期待了
+but that's too much to expect here in
+
+316
+00:20:47,299 --> 00:20:51,445
+事实上我们知道我们不能简单地做到这一点
+fact we know we can't do it by simple
+
+317
+00:20:51,450 --> 00:20:53,695
+步骤因为如果我们能做到的话
+steps because if we could do it
+
+318
+00:20:53,700 --> 00:20:56,245
+如果我们能和你一起去找你
+if we could get to a you with with a
+
+319
+00:20:56,250 --> 00:20:58,945
+整个下三角部分为零
+whole lower triangular part zero we
+
+320
+00:20:58,950 --> 00:21:02,575
+会发现特征值和我们
+would have found the eigenvalues and we
+
+321
+00:21:02,580 --> 00:21:05,424
+知道特征值解决了一个系统
+know that the eigenvalues solve a system
+
+322
+00:21:05,429 --> 00:21:10,075
+求解n次方程式和我们
+solve an equation of nth degree and we
+
+323
+00:21:10,080 --> 00:21:14,485
+知道有人证明了一个世纪以来的世纪
+know somebody proved centuries a century
+
+324
+00:21:14,490 --> 00:21:17,605
+或者更久以前你无法解决的问题
+or more ago that you can't solve an
+
+325
+00:21:17,610 --> 00:21:19,794
+我们瞬间将它简单地等同于一点
+instant we equate in by simple little
+
+326
+00:21:19,799 --> 00:21:23,395
+正确的步骤，你知道这是谁和
+steps right do you know who that was and
+
+327
+00:21:23,400 --> 00:21:26,424
+并且你知道那个事实和
+and that you know that fact and and and
+
+328
+00:21:26,429 --> 00:21:30,835
+它适用于什么程度
+what degree does it apply to so that's
+
+329
+00:21:30,840 --> 00:21:34,315
+你有点重要的事实
+an important fact in that you sort of
+
+330
+00:21:34,320 --> 00:21:37,575
+接受数学，是的，你是什么
+pick up in in math yeah what are you
+
+331
+00:21:37,580 --> 00:21:41,205
+第五度啊所以5×5和
+fifth degree yeah so five by five and
+
+332
+00:21:41,210 --> 00:21:44,965
+这将是不可能的
+and up would be this is impossible
+
+333
+00:21:44,970 --> 00:21:49,465
+不可能不可能没有公式
+impossible impossible there's no formula
+
+334
+00:21:49,470 --> 00:22:00,085
+找到一个简单的公式为
+to find a simple formula for the for the
+
+335
+00:22:00,090 --> 00:22:01,605
+lambda表达式
+lambdas
+
+336
+00:22:01,610 --> 00:22:04,135
+并且类似地，天鹅座的
+and similarly for the Cygnus the
+
+337
+00:22:04,140 --> 00:22:07,335
+奇异的价值所以论证是
+singular values so the argument is
+
+338
+00:22:07,340 --> 00:22:12,285
+绝对是一种难度
+definitely a level of difficulty beyond
+
+339
+00:22:12,290 --> 00:22:15,385
+ax等于B逆矩阵或
+ax equal B the inverse matrix or
+
+340
+00:22:15,390 --> 00:22:18,235
+东西枢轴所有你能做的
+something the pivots all that you can do
+
+341
+00:22:18,240 --> 00:22:21,025
+确切地说，如果你做我们的算术
+exactly if you do exact arithmetic we
+
+342
+00:22:21,030 --> 00:22:29,065
+找不到lambdas，但我们
+cannot find the lambdas exactly but we
+
+343
+00:22:29,070 --> 00:22:34,105
+因为我们希望能够得到尽可能接近再见
+can get as close as we like bye-bye
+
+344
+00:22:34,110 --> 00:22:37,615
+继续使用QR方法，所以是的
+continuing with the QR method so yes in
+
+345
+00:22:37,620 --> 00:22:39,595
+换言之，所以我们不能让我们不得不
+other words so we can't get we have to
+
+346
+00:22:39,600 --> 00:22:43,555
+如果我们想要喜欢的话，我会满足于此
+settle for if we want to like at the
+
+347
+00:22:43,560 --> 00:22:46,465
+我们之前开始改进我们的矩阵
+beginning improve our matrix before we
+
+348
+00:22:46,470 --> 00:22:50,665
+开始做那些我们可以得到的东西
+start doing that stuff we can get it
+
+349
+00:22:50,670 --> 00:22:53,275
+有一个额外的对角线，你知道吗？
+with one extra diagonal and do you know
+
+350
+00:22:53,280 --> 00:22:54,775
+什么样的矩阵
+what kind of a matrix
+
+351
+00:22:54,780 --> 00:22:58,035
+什么名字，我不知道为什么
+what whose name and I don't know why
+
+352
+00:22:58,040 --> 00:23:00,195
+是的再说一遍
+yeah say it again
+
+353
+00:23:00,200 --> 00:23:03,205
+鞋帮hessenburg所以鞋帮就像
+upper hessen burg so upper is just like
+
+354
+00:23:03,210 --> 00:23:06,715
+上三角形它在那里，但关键
+upper triangular it's up there but key
+
+355
+00:23:06,720 --> 00:23:11,485
+正如我所说，这个人的名字是Hessen出生的
+person's name is Hessen birth i as i say
+
+356
+00:23:11,490 --> 00:23:17,335
+我就是这样的Hessenbert矩阵
+i'm that's a Hessen bert matrix so
+
+357
+00:23:17,340 --> 00:23:20,745
+hesterberg矩阵是一个矩阵
+hesterberg matrix is a matrix with one
+
+358
+00:23:20,750 --> 00:23:24,025
+三角加一个对角但是
+triangular plus one more diagonal but
+
+359
+00:23:24,030 --> 00:23:27,415
+很多零，你知道N的顺序
+lots of zeros you know order of N
+
+360
+00:23:27,420 --> 00:23:30,235
+像几乎一半的东西平方
+squared something like almost like half
+
+361
+00:23:30,240 --> 00:23:35,185
+N平方不大，但接近零
+N squared not quite but but close zeros
+
+362
+00:23:35,190 --> 00:23:38,215
+你能不能证明那些
+and you would you could show that those
+
+363
+00:23:38,220 --> 00:23:43,645
+零在QR中保留为零
+zeros stay zeros in Q R so that that
+
+364
+00:23:43,650 --> 00:23:46,615
+真的得到回报它减少削减了
+really pays off it cuts the cuts the
+
+365
+00:23:46,620 --> 00:23:50,715
+努力工作，这是
+work down significantly so that's the
+
+366
+00:23:50,720 --> 00:23:58,935
+完整的QR方法是第一步减少一个
+full QR method is is step one reduce a
+
+367
+00:23:58,940 --> 00:24:08,365
+到了esenberg形式的零和我
+to esenberg form with a zeros and when I
+
+368
+00:24:08,370 --> 00:24:11,155
+说减少我的意思是找到相似之处
+say reduce I mean find a similarity
+
+369
+00:24:11,160 --> 00:24:13,165
+改变当然因为我是我
+transformation of course because I'm I
+
+370
+00:24:13,170 --> 00:24:14,835
+想要特征值
+want the eigenvalues
+
+371
+00:24:14,840 --> 00:24:19,095
+这最终和他的我一样
+this to end up the same as the his'n I
+
+372
+00:24:19,100 --> 00:24:21,165
+我希望保持与我相同的特征值
+want to keep the same eigenvalues as I
+
+373
+00:24:21,170 --> 00:24:25,995
+去，然后第二步是QR就此
+go and then step two is QR on this
+
+374
+00:24:26,000 --> 00:24:33,615
+HessenBurgh矩阵与芯片这样的
+Hessen Burgh matrix with chips so that's
+
+375
+00:24:33,620 --> 00:24:37,155
+将编程的代码
+the code that would would be programmed
+
+376
+00:24:37,160 --> 00:24:43,155
+在项目中，这就是MATLAB和嗯
+in item a that's what MATLAB and well
+
+377
+00:24:43,160 --> 00:24:47,405
+真的MATLAB像其他人一样吸引人
+really MATLAB is appealing like other
+
+378
+00:24:47,410 --> 00:24:51,735
+矩阵系统很有吸引力
+matrix systems is appealing to la pack
+
+379
+00:24:51,740 --> 00:24:55,595
+和Linpack你认识的团队
+and Linpack you you know the team of
+
+380
+00:24:55,600 --> 00:24:58,535
+一种专业的数值分析师
+sort of professional numerical analysts
+
+381
+00:24:58,540 --> 00:25:01,815
+真的花了很多精力和时间
+really spend a lot of effort and time
+
+382
+00:25:01,820 --> 00:25:10,115
+这本书有十位作者
+that the book la pack has ten authors
+
+383
+00:25:10,120 --> 00:25:14,585
+而且你可以下载它
+and and you it's you you can download
+
+384
+00:25:14,590 --> 00:25:17,205
+任何这些代码都像
+any any of these codes like the
+
+385
+00:25:17,210 --> 00:25:21,555
+特征值代码，这就是matlab
+eigenvalue code so that's what matlab
+
+386
+00:25:21,560 --> 00:25:24,425
+这就是matlab自然而然的地方
+that's where matlab naturally that's
+
+387
+00:25:24,430 --> 00:25:31,275
+代码的圣经是好的，是的
+sort of the Bible for codes in okay yeah
+
+388
+00:25:31,280 --> 00:25:33,495
+我觉得这很有趣
+that's I think it's sort of interesting
+
+389
+00:25:33,500 --> 00:25:38,775
+知道并且还有一件好事
+to know and there's one more good thing
+
+390
+00:25:38,780 --> 00:25:42,465
+告诉你这个方法和它
+to tell you about this method and it
+
+391
+00:25:42,470 --> 00:25:45,885
+如果矩阵是对称的，则适用
+applies if the matrix is symmetric if
+
+392
+00:25:45,890 --> 00:25:48,705
+如果我们检查，矩阵是对称的
+the matrix is symmetric then if we check
+
+393
+00:25:48,710 --> 00:25:53,265
+所有这一切，我们可以发现，矩阵
+all this we could find that the matrices
+
+394
+00:25:53,270 --> 00:25:56,745
+如果结是对称的则保持对称
+stayed symmetric if a knot is symmetric
+
+395
+00:25:56,750 --> 00:25:59,325
+我可以检查你可以轻松检查
+I can check you could easily check
+
+396
+00:25:59,330 --> 00:26:01,275
+通过这个，你会发现
+through this and you will discover that
+
+397
+00:26:01,280 --> 00:26:08,655
+a1也是对称的，是的你可以
+a1 is also symmetric yes you can it
+
+398
+00:26:08,660 --> 00:26:11,445
+原来你有一个你可以改写
+turns out you have a you could rewrite
+
+399
+00:26:11,450 --> 00:26:14,055
+这具有Q零和Q化为乌有
+this with a Q naught and a Q naught
+
+400
+00:26:14,060 --> 00:26:18,465
+反过来另一边但是Q.
+inverse on the other side but that Q
+
+401
+00:26:18,470 --> 00:26:20,535
+没有逆是与Q无关
+naught inverse is the same as Q naught
+
+402
+00:26:20,540 --> 00:26:22,245
+转置，因为它是正交的
+transpose because it's an orthogonal
+
+403
+00:26:22,250 --> 00:26:26,325
+如果，矩阵和对称性将会失效
+matrix and symmetry would fall out so if
+
+404
+00:26:26,330 --> 00:26:29,745
+它是对称的，而它是hessin中的N.
+it's symmetric and the N it's in hessin
+
+405
+00:26:29,750 --> 00:26:33,495
+伯格形式，它保持对称
+Burgh form and it stays symmetric at
+
+406
+00:26:33,500 --> 00:26:36,195
+什么可以告诉我什么的每一步
+every step what what can you tell me
+
+407
+00:26:36,200 --> 00:26:41,205
+关于对称的esenberg矩阵
+about a symmetric esenberg matrix it's
+
+408
+00:26:41,210 --> 00:26:44,115
+只有得到你只是擦除所有这些
+only got yeah you just erase all these
+
+409
+00:26:44,120 --> 00:26:47,175
+如果那里有零，如果有
+if there are zeros there and if the
+
+410
+00:26:47,180 --> 00:26:52,235
+矩阵是对称的然后我们可以安全
+matrix is symmetric then we can safely
+
+411
+00:26:52,240 --> 00:26:55,455
+预测它只会有一个
+predict that it will only have one
+
+412
+00:26:55,460 --> 00:26:58,305
+一个非零对角线上方的对角线
+diagonal above one nonzero diagonal
+
+413
+00:26:58,310 --> 00:27:01,515
+实际上它会说主要的日子
+above the main day in fact it will say
+
+414
+00:27:01,520 --> 00:27:06,135
+对称所以现在我应该写
+symmetric so now I'll be should write
+
+415
+00:27:06,140 --> 00:27:11,225
+对称Katzenberg的矩阵和等于
+symmetric Katzenberg's matrix and equals
+
+416
+00:27:11,230 --> 00:27:22,475
+三对角主要是三对角线
+tri diagonal major yeah three diagonals
+
+417
+00:27:22,480 --> 00:27:25,395
+所以现在你真的减少了时间
+so now you really have reduced the time
+
+418
+00:27:25,400 --> 00:27:30,285
+做QR，所以我说你有一个三
+to do QR so I said you've got a tri
+
+419
+00:27:30,290 --> 00:27:33,315
+对角矩阵它将保持三对角线
+diagonal matrix it'll stay tri diagonal
+
+420
+00:27:33,320 --> 00:27:36,135
+在所有这些步骤中，你正在工作
+in all these steps so you're working
+
+421
+00:27:36,140 --> 00:27:39,045
+实际上只有三个n数
+with just three n numbers well actually
+
+422
+00:27:39,050 --> 00:27:42,285
+两个因为它们在对角线上面而且
+two n because they're diagonal above and
+
+423
+00:27:42,290 --> 00:27:44,685
+下面的对角线和你一样
+the diagonal below are the same you're
+
+424
+00:27:44,690 --> 00:27:46,695
+只使用两个n数字
+working with just two n numbers instead
+
+425
+00:27:46,700 --> 00:27:49,425
+N平方的顺序，它就像
+of order N squared and it just goes like
+
+426
+00:27:49,430 --> 00:27:53,445
+一枚炸弹让我对称
+a bomb so that's I for symmetric
+
+427
+00:27:53,450 --> 00:27:56,925
+矩阵，你看到它就是全部
+matrices and you see that it was all
+
+428
+00:27:56,930 --> 00:28:00,495
+真的是那里的核心
+based there really the heart of the the
+
+429
+00:28:00,500 --> 00:28:08,565
+算法的核心是QR好吧
+heart of the algorithm was QR okay so
+
+430
+00:28:08,570 --> 00:28:13,785
+这是我的一半课程报告
+that's my took half the class to report
+
+431
+00:28:13,790 --> 00:28:22,245
+在igwe找到的最喜欢的方式
+on the favorite way to igwe to find
+
+432
+00:28:22,250 --> 00:28:25,485
+特征值哦我应该说些什么
+eigenvalues oh I should say something
+
+433
+00:28:25,490 --> 00:28:29,955
+关于看到其他价值如此奇异
+about seen the other values so singular
+
+434
+00:28:29,960 --> 00:28:33,645
+值当然是奇异值
+values of course the the singular values
+
+435
+00:28:33,650 --> 00:28:38,115
+矩阵的特征值是a的特征值
+of the matrix are the eigenvalues of a
+
+436
+00:28:38,120 --> 00:28:39,524
+转置一个
+transpose a
+
+437
+00:28:39,529 --> 00:28:41,384
+平方根的平方根
+square root square root of those
+
+438
+00:28:41,389 --> 00:28:44,235
+特征值，但你不会这样做
+eigenvalues but you wouldn't do it that
+
+439
+00:28:44,240 --> 00:28:46,215
+你永远不会形成一个转置的方式
+way you would never form a transpose a
+
+440
+00:28:46,220 --> 00:28:48,764
+好吧，我没有提到另一个
+well I didn't mention that the other
+
+441
+00:28:48,769 --> 00:28:51,225
+你永远不会这样做的事情
+thing you would never ever ever do so
+
+442
+00:28:51,230 --> 00:28:54,225
+让我把它放在这里就像在
+let me just put it here this is like in
+
+443
+00:28:54,230 --> 00:29:00,975
+耻辱地解决这个问题
+disgrace to solve that equation it's
+
+444
+00:29:00,980 --> 00:29:03,674
+好的，你知道回到一年级
+like okay you know back to first grade
+
+445
+00:29:03,679 --> 00:29:09,065
+因为那不是很糟糕的
+because that's not it's very bad a
+
+446
+00:29:09,070 --> 00:29:12,345
+决定因素首先是它
+determinant come first of all it's
+
+447
+00:29:12,350 --> 00:29:15,304
+极其缓慢极为缓慢和
+extremely slow extremely slow and
+
+448
+00:29:15,309 --> 00:29:20,315
+确定它正在打包这一切
+determined it is packing all this
+
+449
+00:29:20,320 --> 00:29:23,674
+把信息放到最后
+squared pieces of information into end
+
+450
+00:29:23,679 --> 00:29:26,945
+系数，它是绝望的
+coefficients and it's hopelessly
+
+451
+00:29:26,950 --> 00:29:29,955
+病态，是的，你只是输了
+ill-conditioned yeah you just you lose
+
+452
+00:29:29,960 --> 00:29:32,504
+所有信息的时间，所以它真的
+information all the time so it's really
+
+453
+00:29:32,509 --> 00:29:36,374
+如果这是在相机上它更好
+my if this is going on camera it better
+
+454
+00:29:36,379 --> 00:29:39,495
+和X一起去相机，因为它
+go on camera with a with an X because it
+
+455
+00:29:39,500 --> 00:29:47,325
+不要这样做是的，所以我在哪里
+don't do it okay yeah so where was I
+
+456
+00:29:47,330 --> 00:29:53,835
+奇异值，所以转置一个
+singular values so a transpose a so
+
+457
+00:29:53,840 --> 00:29:57,674
+让我们再想想你能做些什么
+again let's think about what you could
+
+458
+00:29:57,679 --> 00:30:02,884
+在开始之前开始做
+do at the beginning before starting on
+
+459
+00:30:02,889 --> 00:30:06,735
+qr4用于转置a或用于矩阵
+qr4 for a transpose a or for the matrix
+
+460
+00:30:06,740 --> 00:30:12,134
+什么你可以用正交做什么
+a what what could you do with orthogonal
+
+461
+00:30:12,139 --> 00:30:15,105
+矩阵所以我猜我们做了什么
+matrices so so I guess what what did we
+
+462
+00:30:15,110 --> 00:30:17,924
+说关于对称矩阵，所以这里
+say about symmetric matrices so here's
+
+463
+00:30:17,929 --> 00:30:20,235
+我说过对称矩阵，如果
+what I said about symmetric matrices if
+
+464
+00:30:20,240 --> 00:30:23,235
+你给我一个对称矩阵我可以在
+you give me a symmetric matrix I can in
+
+465
+00:30:23,240 --> 00:30:26,024
+只需简单的一些简单步骤
+just a simple number of simple steps
+
+466
+00:30:26,029 --> 00:30:31,874
+使它成三角我无法做到
+make it tri diagonal I can't make it
+
+467
+00:30:31,879 --> 00:30:33,735
+对角线，因为那时我会找到
+diagonal because then I'd be finding the
+
+468
+00:30:33,740 --> 00:30:38,745
+特征值和亚伯是第一个
+eigenvalues and Abel who was the first
+
+469
+00:30:38,750 --> 00:30:40,815
+有人看到这是不可能的
+person to see that that was impossible
+
+470
+00:30:40,820 --> 00:30:42,524
+会禁止的
+would would forbids it
+
+471
+00:30:42,529 --> 00:30:46,845
+但是让我让我写下来的是什么
+but so what let me let me write down
+
+472
+00:30:46,850 --> 00:30:48,884
+如果我有一个，我在这说什么
+what I'm saying here if I have a
+
+473
+00:30:48,889 --> 00:30:50,935
+对称矩阵S
+symmetric matrix s
+
+474
+00:30:50,940 --> 00:30:54,985
+我可以找到一堆Q和Q.
+I can find a bunch of Q's and Q
+
+475
+00:30:54,990 --> 00:30:57,925
+转置，我可以把它们全部
+transpose and I can put them all
+
+476
+00:30:57,930 --> 00:31:00,805
+一起成为一个大Q和它
+together into one big Q and it's
+
+477
+00:31:00,810 --> 00:31:03,775
+转置以及我对此有何了解
+transpose and what do I know about the
+
+478
+00:31:03,780 --> 00:31:10,045
+该矩阵的特征值只是Q
+eigenvalues of that matrix let's just Q
+
+479
+00:31:10,050 --> 00:31:12,655
+是正交总是那么你能做什么
+is orthogonal always so what can you
+
+480
+00:31:12,660 --> 00:31:15,505
+告诉我你的情况和Q一样
+tell me about thee this is the same as Q
+
+481
+00:31:15,510 --> 00:31:19,315
+sQ逆，因此是本征
+s Q inverse and therefore the eigen
+
+482
+00:31:19,320 --> 00:31:25,225
+值是它类似于它同
+values are the same it's similar to it
+
+483
+00:31:25,230 --> 00:31:36,925
+我发现它变成了三角形
+and it becomes tri diagonal after I find
+
+484
+00:31:36,930 --> 00:31:43,435
+一个好的q现在，因此同样的lambdas
+a good q now and therefore same lambdas
+
+485
+00:31:43,440 --> 00:31:49,395
+哪个三角形与同一个lambdas
+which tri diagonal with the same lambdas
+
+486
+00:31:49,400 --> 00:31:52,795
+现在我在想什么约我在这里
+now what am I thinking about here I'm
+
+487
+00:31:52,800 --> 00:31:57,495
+想着告诉我相应的
+thinking about tell me the corresponding
+
+488
+00:31:57,500 --> 00:32:02,095
+关于我想要的奇异值的可能性
+possibility about singular values I want
+
+489
+00:32:02,100 --> 00:32:05,245
+现在，我正在为我的矩阵做点什么
+to do something to my matrix now I'm I'm
+
+490
+00:32:05,250 --> 00:32:11,665
+总是采用一般矩阵a而我
+always taking a general matrix a and I'm
+
+491
+00:32:11,670 --> 00:32:14,305
+寻找它的奇异价值，我
+looking for its singular values and I'm
+
+492
+00:32:14,310 --> 00:32:18,355
+希望简化它，我是什么
+looking to simplify it and what am I
+
+493
+00:32:18,360 --> 00:32:22,465
+允许做是的我想我的问题
+allowed to do yeah I guess my question
+
+494
+00:32:22,470 --> 00:32:26,395
+是相似的转变离开了
+is similarity transformations left the
+
+495
+00:32:26,400 --> 00:32:29,365
+单独的特征值我能做什么呢
+eigenvalues alone what can I do that
+
+496
+00:32:29,370 --> 00:32:32,335
+独自离开了奇异值这
+leaves the singular values alone that's
+
+497
+00:32:32,340 --> 00:32:34,975
+一个根本问题，因为它是如此
+a fundamental question because it was so
+
+498
+00:32:34,980 --> 00:32:37,795
+做的特征值的基础
+fundamental for eigenvalues by doing
+
+499
+00:32:37,800 --> 00:32:41,395
+这是一个矩阵，它与我相反
+this a matrix and it's inverse I got
+
+500
+00:32:41,400 --> 00:32:44,515
+类似的东西，即使在即时检查
+something similar and ie checked even in
+
+501
+00:32:44,520 --> 00:32:47,785
+这个类的特征值相同
+this class that the eigenvalues same
+
+502
+00:32:47,790 --> 00:32:48,715
+lambda表达式
+lambdas
+
+503
+00:32:48,720 --> 00:32:51,055
+现在我想在结束了整条生产线
+now I want a whole line that ends up
+
+504
+00:32:51,060 --> 00:32:56,935
+和Sigma一样，我想要你
+with the same Sigma's and I want you to
+
+505
+00:32:56,940 --> 00:32:58,765
+告诉我我被允许做什么
+tell me what I'm allowed to do to the
+
+506
+00:32:58,770 --> 00:33:03,995
+矩阵而不改变Sigma的
+matrix without changing the Sigma's
+
+507
+00:33:04,000 --> 00:33:06,715
+这是一个也许不要喊出来
+that this is a maybe don't shout it out
+
+508
+00:33:06,720 --> 00:33:10,835
+马上让每个人都想到了什么
+immediately let everybody think what am
+
+509
+00:33:10,840 --> 00:33:13,775
+我允许对每个矩阵做一个矩阵
+I allowed to do to a matrix every matrix
+
+510
+00:33:13,780 --> 00:33:17,045
+我有这些奇异的价值观
+has got these singular values and now I
+
+511
+00:33:17,050 --> 00:33:21,365
+想要使它成为一个更好的矩阵
+want to make it a better matrix with
+
+512
+00:33:21,370 --> 00:33:27,005
+如果我做的话，更多零或什么的
+more zeros or something if I if I do
+
+513
+00:33:27,010 --> 00:33:29,005
+那就是它
+that to it
+
+514
+00:33:29,010 --> 00:33:32,915
+这会改变西格玛的能力吗？
+does that change the Sigma's can I do
+
+515
+00:33:32,920 --> 00:33:36,295
+不仅如此，我还能做些什么
+more than that to it what can I do it
+
+516
+00:33:36,300 --> 00:33:40,895
+什么样的矩阵将有什么
+what what group of matrices will have
+
+517
+00:33:40,900 --> 00:33:44,885
+同样的西格玛作为我的起始矩阵a
+the same Sigma's as my starting matrix a
+
+518
+00:33:44,890 --> 00:33:48,335
+所以这是一个基本的基本问题
+so that's a basic basic question about
+
+519
+00:33:48,340 --> 00:33:50,705
+关于看到他们的价值观和
+that about seeing their values and the
+
+520
+00:33:50,710 --> 00:33:54,605
+SVD让我们，让我们觉得答案
+SVD so let's let's think of the answer
+
+521
+00:33:54,610 --> 00:33:58,805
+一起好吧所以它已经连接起来了
+together okay so it's got it's connected
+
+522
+00:33:58,810 --> 00:34:01,975
+到SVD所以让我记住SVD
+to the SVD so let me remember the SVD
+
+523
+00:34:01,980 --> 00:34:05,405
+SVD我有一些正交矩阵
+the SVD I have some orthogonal matrix
+
+524
+00:34:05,410 --> 00:34:08,795
+那么矩阵SV的奇异值
+then the singular value of the matrix SV
+
+525
+00:34:08,800 --> 00:34:11,795
+强迫他们的价值观，然后另一个
+force into their values and then another
+
+526
+00:34:11,800 --> 00:34:17,525
+正交矩阵我能做些什么
+orthogonal matrix what could I do to
+
+527
+00:34:17,530 --> 00:34:20,135
+那个不会触及这个的等式
+that equation that would not touch this
+
+528
+00:34:20,140 --> 00:34:28,105
+伙计，所以我问的是什么不变性
+guy so I'm asking what invariance
+
+529
+00:34:28,110 --> 00:34:31,085
+因为不接触它意味着离开它
+because not touching it means leaving it
+
+530
+00:34:31,090 --> 00:34:34,775
+不变，所以我在寻找什么
+on not varying so I'm looking for what
+
+531
+00:34:34,780 --> 00:34:38,005
+在什么操作下是什么
+what under what operations are the
+
+532
+00:34:38,010 --> 00:34:41,435
+我的奇异值不变
+singular values invariant when I was
+
+533
+00:34:41,440 --> 00:34:44,165
+看着特征值，这就是
+looking at eigen values this was the
+
+534
+00:34:44,170 --> 00:34:46,685
+操作很好，它不一定是
+operation well it didn't have to be
+
+535
+00:34:46,690 --> 00:34:49,315
+正交的东西然后是逆的
+orthogonal something then it's inverse
+
+536
+00:34:49,320 --> 00:34:52,745
+但现在又是什么呢
+but now what is it up there what what
+
+537
+00:34:52,750 --> 00:34:58,055
+我可以做那个矩阵吗？
+could I do to that matrix a could I
+
+538
+00:34:58,060 --> 00:35:01,325
+当我投入时，我可以乘以Q
+multiply by Q could I when I throw in
+
+539
+00:35:01,330 --> 00:35:03,395
+有问题，甚至可能在另一方面
+there Q it may be not even on the other
+
+540
+00:35:03,400 --> 00:35:07,885
+如果我输入正交Q，我会结束
+end if I if I throw in an orthogonal Q
+
+541
+00:35:07,890 --> 00:35:11,075
+我可以改变奇异值吗？
+do I change the singular values or do I
+
+542
+00:35:11,080 --> 00:35:15,245
+不改变根本问题
+not change the fundamental question the
+
+543
+00:35:15,250 --> 00:35:16,355
+答案是
+answer is
+
+544
+00:35:16,360 --> 00:35:19,575
+不，我不改变他，我被允许做
+no I don't change him I'm allowed to do
+
+545
+00:35:19,580 --> 00:35:22,895
+因为这是一个正交矩阵
+that because here's an orthogonal matrix
+
+546
+00:35:22,900 --> 00:35:26,175
+水性时候，你如果这两个都
+aq times you if both of those are
+
+547
+00:35:26,180 --> 00:35:28,905
+正交然后产品是对的
+orthogonal then the product is right
+
+548
+00:35:28,910 --> 00:35:31,845
+大家都知道，如果是两个产品
+everybody knows that if a product of two
+
+549
+00:35:31,850 --> 00:35:34,485
+正交矩阵仍然是正交的
+orthogonal matrix is still orthogonal
+
+550
+00:35:34,490 --> 00:35:39,095
+更好地知道我不知道是的
+better know that I don't know that yeah
+
+551
+00:35:39,100 --> 00:35:42,375
+所以，如果我有一个正交矩阵Q和
+so if I have an orthogonal matrix Q and
+
+552
+00:35:42,380 --> 00:35:45,675
+一个正交矩阵我声称这个
+an orthogonal matrix u I claim that this
+
+553
+00:35:45,680 --> 00:35:52,905
+仍然是抱歉，我该如何检查
+is still what sorry and how do I check
+
+554
+00:35:52,910 --> 00:35:55,455
+好吧我用了一些测试
+it well I use some tests for
+
+555
+00:35:55,460 --> 00:35:57,915
+正交性会是什么
+orthogonality what would be that what
+
+556
+00:35:57,920 --> 00:36:02,175
+测试你喜欢使用逆是
+tests you like to use the inverse is the
+
+557
+00:36:02,180 --> 00:36:03,945
+和转置一样你喜欢那样吗？
+same as the transpose do you like that
+
+558
+00:36:03,950 --> 00:36:10,575
+测试所以我会反转它Qu逆
+test so I'll invert it Q u inverse of
+
+559
+00:36:10,580 --> 00:36:13,335
+当然对于任何U逆Q的矩阵
+course for any matrix that's U inverse Q
+
+560
+00:36:13,340 --> 00:36:17,625
+反过来但这些是分开的
+inverse but these were separately
+
+561
+00:36:17,630 --> 00:36:20,205
+正交使得U转置Q.
+orthogonal so that's U transpose Q
+
+562
+00:36:20,210 --> 00:36:26,975
+转置，这与Qu相同
+transpose and that is the same as Q u
+
+563
+00:36:26,980 --> 00:36:32,805
+转置是的所以我使用了
+transpose yeah so I used the
+
+564
+00:36:32,810 --> 00:36:35,565
+U的正交性和正交性
+orthogonality of U and the orthogonality
+
+565
+00:36:35,570 --> 00:36:39,585
+Q得出结论反过来是
+of Q to conclude that the inverse is the
+
+566
+00:36:39,590 --> 00:36:42,045
+转置所以答案是肯定的我可以
+transpose so the answer is yes I could
+
+567
+00:36:42,050 --> 00:36:45,765
+现在用奇异的价值来做
+do that now with singular value with
+
+568
+00:36:45,770 --> 00:36:49,065
+特征值我不得不繁殖
+eigenvalues I had to I had to multiply
+
+569
+00:36:49,070 --> 00:36:52,695
+上由Q逆或Q的另一侧
+on the other side by Q inverse or Q
+
+570
+00:36:52,700 --> 00:36:56,075
+转置，我现在必须这样做
+transpose do I have to do that now no
+
+571
+00:36:56,080 --> 00:37:00,755
+我能做些什么在右边我
+what can I do on the right-hand side I
+
+572
+00:37:00,760 --> 00:37:04,095
+可以乘以我可以不管它
+can multiply by I can leave it alone
+
+573
+00:37:04,100 --> 00:37:09,375
+那么它具有相同的奇异值
+then it has the same singular values
+
+574
+00:37:09,380 --> 00:37:11,805
+因为如果我，那就是那个sigmund
+because it's the same sigmund there if I
+
+575
+00:37:11,810 --> 00:37:14,205
+有一个正交矩阵乘以
+have a orthogonal matrix times the
+
+576
+00:37:14,210 --> 00:37:16,245
+正交的对角线倍
+diagonal times of orthogonal that
+
+577
+00:37:16,250 --> 00:37:19,395
+对角线是正对角线
+diagonal is positive diagonal is going
+
+578
+00:37:19,400 --> 00:37:23,655
+是西格玛现在还等什么我可以做
+to be Sigma now so what what can I do on
+
+579
+00:37:23,660 --> 00:37:28,835
+这方面我可以乘以任何
+this side I can multiply by any
+
+580
+00:37:28,840 --> 00:37:31,565
+哦，这一切都在矩阵上
+oh it's all going on matrix on that side
+
+581
+00:37:31,570 --> 00:37:34,445
+太让我们把这个家伙Q1，这
+too so let's call this guy q1 and this
+
+582
+00:37:34,450 --> 00:37:38,165
+伙计q2我还是有一个
+guy q2 I'm still I still have an
+
+583
+00:37:38,170 --> 00:37:40,325
+正交矩阵它们是正交的
+orthogonal matrix they're orthogonal
+
+584
+00:37:40,330 --> 00:37:43,685
+矩阵在那里和相同的西格玛弹出
+matrix there and the same Sigma popped
+
+585
+00:37:43,690 --> 00:37:45,965
+在中间这就是你的意思
+in the middle so that's what you're
+
+586
+00:37:45,970 --> 00:37:50,425
+允许这样做可以给我们更多的自由
+allowed to do that gives us more freedom
+
+587
+00:37:50,430 --> 00:37:53,575
+在我们必须做的事情之前
+before we got when we had to do
+
+588
+00:37:53,580 --> 00:37:56,225
+具有相同的相似变换
+similarity transformations with the same
+
+589
+00:37:56,230 --> 00:38:01,915
+我们得到它是三角形但是现在
+guy we got it to be tri diagonal but now
+
+590
+00:38:01,920 --> 00:38:05,045
+我们被允许做更多的事情
+we're allowed to do more stuff we're
+
+591
+00:38:05,050 --> 00:38:08,405
+允许使用不同的正交
+allowed to use different orthogonal
+
+592
+00:38:08,410 --> 00:38:11,615
+左边和右边的矩阵和我们
+matrices on the left and right and we
+
+593
+00:38:11,620 --> 00:38:14,105
+可以从三进一步减少它
+can reduce it even further from tri
+
+594
+00:38:14,110 --> 00:38:18,245
+对角线由斜的，因此这样的
+diagonal to by diagonal so the so the
+
+595
+00:38:18,250 --> 00:38:21,875
+第一步是0步骤
+first step is getting 0 the the step of
+
+596
+00:38:21,880 --> 00:38:25,415
+越来越零降低它一路
+getting zeros reduces it all the way to
+
+597
+00:38:25,420 --> 00:38:31,595
+那里有所有的零，所以它是
+that with all the zeros there so it's
+
+598
+00:38:31,600 --> 00:38:39,845
+然后我就更容易了
+it's it's easier then then I work on
+
+599
+00:38:39,850 --> 00:38:42,605
+这，这是我利用工作矩阵
+this this is the matrix I work on using
+
+600
+00:38:42,610 --> 00:38:46,475
+QR类型的想法有些像
+a QR type idea some some method like
+
+601
+00:38:46,480 --> 00:38:48,875
+所以每个人都看到我们是这样的
+that so so everybody's seeing that we're
+
+602
+00:38:48,880 --> 00:38:51,845
+我们的算法得到两个
+taking where our algorithm is got two
+
+603
+00:38:51,850 --> 00:38:56,705
+阶段一是得到很多零和得到
+stages one is get a lot of zeros and get
+
+604
+00:38:56,710 --> 00:38:59,495
+他们在那些将保持零的地方
+them in places that will stay zero as
+
+605
+00:38:59,500 --> 00:39:03,215
+第二部分算法开始了
+part two of the algorithm gets going and
+
+606
+00:39:03,220 --> 00:39:06,785
+然后运行你想要的算法的第二部分
+then run part two of the algorithm you'd
+
+607
+00:39:06,790 --> 00:39:10,385
+其染色的每个步骤是非常快的
+stain with its each step is very fast
+
+608
+00:39:10,390 --> 00:39:15,595
+现在因为做QR分解了
+now because doing a QR factorization is
+
+609
+00:39:15,600 --> 00:39:19,925
+快，但有一个问题，是的，是的
+fast but was there a question yeah yep
+
+610
+00:39:19,930 --> 00:39:22,295
+所以我会称之为
+so this would I would call this by
+
+611
+00:39:22,300 --> 00:39:27,425
+对角线当然和每个人
+diagonal of course and everybody
+
+612
+00:39:27,430 --> 00:39:29,825
+我认识到如果我有一个对角线
+recognizes that if I have a by diagonal
+
+613
+00:39:29,830 --> 00:39:34,675
+矩阵称之为或不是或等等
+matrix call it a or a not or whatever
+
+614
+00:39:34,680 --> 00:39:37,595
+转移你怎么想？
+then a transfer what do you think about
+
+615
+00:39:37,600 --> 00:39:39,005
+转置a
+a transpose a
+
+616
+00:39:39,010 --> 00:39:43,205
+如果那是一个转置的话会是什么？
+what would a transpose a if that was a
+
+617
+00:39:43,210 --> 00:39:46,115
+什么你能告诉我一个转
+what could you tell me about a transpose
+
+618
+00:39:46,120 --> 00:39:53,725
+你能不能像矩阵那样乘以矩阵
+a could you multiply matrices like
+
+619
+00:39:53,730 --> 00:39:56,435
+知道非零的位置
+knowing that where the non zeros are
+
+620
+00:39:56,440 --> 00:39:59,285
+喜欢在你的头脑中，并了解
+like in your head and get an idea of
+
+621
+00:39:59,290 --> 00:40:02,525
+如果我有一个对角线矩阵那么所以
+where so if I have a by diagonal matrix
+
+622
+00:40:02,530 --> 00:40:08,225
+一个那么几分含蓄的SVD我
+a then sort of implicitly in the SVD I'm
+
+623
+00:40:08,230 --> 00:40:11,405
+看一个转置a和什么会
+looking at a transpose a and what would
+
+624
+00:40:11,410 --> 00:40:14,995
+我对转置的看法是真实的
+I what would be true about a transpose a
+
+625
+00:40:15,000 --> 00:40:19,715
+这将是三角形所以我所做的
+it would be tri diagonal so what I've
+
+626
+00:40:19,720 --> 00:40:22,865
+在这里完成，我刚刚在那里完成了
+done here and what I've done there just
+
+627
+00:40:22,870 --> 00:40:27,905
+如果你匹配你可以歌剧
+match up you can you can opera if you
+
+628
+00:40:27,910 --> 00:40:29,765
+不想改变你的奇异价值
+don't want to change singular values you
+
+629
+00:40:29,770 --> 00:40:33,455
+可以一路到这里，但后来
+can get all the way to here but then to
+
+630
+00:40:33,460 --> 00:40:35,045
+找到那些他们价值观的东西
+find those thing of their values that
+
+631
+00:40:35,050 --> 00:40:37,685
+将涉及转置它将是
+would involve a transpose a it would be
+
+632
+00:40:37,690 --> 00:40:40,145
+对称和三对角然后
+symmetric and tri diagonal and then
+
+633
+00:40:40,150 --> 00:40:44,105
+你会在那场比赛中右好了，
+you'd be in that game right okay so
+
+634
+00:40:44,110 --> 00:40:48,335
+这就是Ag的基本事实
+that's those are the basic facts of Ag
+
+635
+00:40:48,340 --> 00:40:53,395
+和SVD的顺序为a的矩阵
+and SVD for matrices of order up to a
+
+636
+00:40:53,400 --> 00:40:57,755
+千说我不知道​​我还不够
+thousand say I don't know I'm not enough
+
+637
+00:40:57,760 --> 00:41:03,725
+专家知道哪里更高
+of an expert to know where higher
+
+638
+00:41:03,730 --> 00:41:09,815
+因为在完美的数学中它是
+because the in in perfect math it's
+
+639
+00:41:09,820 --> 00:41:13,325
+要采取无限的步骤或阿巴
+gonna take infinitely many steps or Abba
+
+640
+00:41:13,330 --> 00:41:16,565
+他会的，会非常惊讶
+would be very surprised right he would
+
+641
+00:41:16,570 --> 00:41:19,145
+看到你解决特征值和
+see you solving for eigenvalues and
+
+642
+00:41:19,150 --> 00:41:21,275
+通过一大堆的瞬间方程
+instantly equation by a whole lot of
+
+643
+00:41:21,280 --> 00:41:22,835
+小步骤，准确地得到它们
+little steps and getting them exactly
+
+644
+00:41:22,840 --> 00:41:25,355
+正确的，这不会发生，但你让他们
+right that won't happen but you get them
+
+645
+00:41:25,360 --> 00:41:29,555
+在epsilon中的许多步骤
+within epsilon in a number of steps
+
+646
+00:41:29,560 --> 00:41:32,905
+这就像n立方体那么漂亮
+that's like n cubed so that's pretty
+
+647
+00:41:32,910 --> 00:41:36,575
+令人印象深刻的特征值问题是
+impressive the eigenvalue problem is
+
+648
+00:41:36,580 --> 00:41:43,655
+用a引用来解决引用
+being solved in quotes by by an out by a
+
+649
+00:41:43,660 --> 00:41:47,135
+快速的方法，这会让你
+fast method that that that gets you a
+
+650
+00:41:47,140 --> 00:41:51,965
+在n立方体的公差范围内的良好答案
+good answer within a tolerance in n cube
+
+651
+00:41:51,970 --> 00:41:56,405
+正确的步骤，这样就可以了
+steps right so that's great as long as
+
+652
+00:41:56,410 --> 00:41:57,155
+一个不是
+an isn't too
+
+653
+00:41:57,160 --> 00:42:01,205
+然后当n太大时
+and then when n is too big which of
+
+654
+00:42:01,210 --> 00:42:04,324
+当然，你必须再考虑一下
+course happens you have to think again
+
+655
+00:42:04,329 --> 00:42:07,564
+所以这种方法将是一个巨人
+so this method will be is a giant
+
+656
+00:42:07,569 --> 00:42:13,324
+然后，成功到大型矩阵
+success up to large matrices but then
+
+657
+00:42:13,329 --> 00:42:16,625
+你必须再思考一下，是什么
+you have to think again and what is
+
+658
+00:42:16,630 --> 00:42:21,155
+我猜想再次参与思考
+involved in thinking again well I guess
+
+659
+00:42:21,160 --> 00:42:25,324
+更多的思考如果你做了什么
+more thinking so what do you do if the
+
+660
+00:42:25,329 --> 00:42:26,614
+矩阵更大
+matrix is bigger
+
+661
+00:42:26,619 --> 00:42:33,304
+我猜那个克里洛夫的下一个
+I guess that the next that that Krylov
+
+662
+00:42:33,309 --> 00:42:36,995
+会说使用我的方法所以克里洛夫会
+would say use my method so Krylov would
+
+663
+00:42:37,000 --> 00:42:39,425
+特别是如果你的矩阵很稀疏
+say especially if your matrix was sparse
+
+664
+00:42:39,430 --> 00:42:42,564
+我们能记住Krylov是什么吗？
+can we just remember what Krylov was
+
+665
+00:42:42,569 --> 00:42:45,864
+克雷洛夫以矢量b开头
+Krylov started with a vector b
+
+666
+00:42:45,869 --> 00:42:50,604
+乘以乘以a乘以
+multiplied it by a multiply that by a
+
+667
+00:42:50,609 --> 00:42:59,004
+并起身让我们说到999B
+and got up to let's say a to the 999 B
+
+668
+00:42:59,009 --> 00:43:02,945
+所以现在他得到了我们出关叫道它的
+so now he's got us out cried off it's
+
+669
+00:43:02,950 --> 00:43:05,375
+他有一个千维空间
+got a thousand dimensional space he's
+
+670
+00:43:05,380 --> 00:43:09,784
+有一千个载体的基础
+got a basis for it thousand vectors that
+
+671
+00:43:09,789 --> 00:43:12,985
+跨越千维空间和
+span a thousand dimensional space and
+
+672
+00:43:12,990 --> 00:43:16,985
+他将着眼于只在该矩阵
+he'll look at the matrix a only on that
+
+673
+00:43:16,990 --> 00:43:20,915
+换句话说，我不会进入空间
+space in other words I won't go into
+
+674
+00:43:20,920 --> 00:43:24,125
+关于他的细节限制了
+detail about that he restricts the
+
+675
+00:43:24,130 --> 00:43:26,344
+这个千维的矩阵
+matrix to this thousand dimensional
+
+676
+00:43:26,349 --> 00:43:30,094
+空间，他希望它能抓住我们
+space and he hopes that it's captured we
+
+677
+00:43:30,099 --> 00:43:32,405
+但我们希望，特征向量
+it we hope that the eigenvector is
+
+678
+00:43:32,410 --> 00:43:35,375
+几乎几乎在那个空间和
+almost virtually in that space and
+
+679
+00:43:35,380 --> 00:43:38,044
+实际上我不会不去
+actually I wouldn't wouldn't go up to
+
+680
+00:43:38,049 --> 00:43:42,814
+让我从那百人中拿出九分
+let me take a nine out of that hundred
+
+681
+00:43:42,819 --> 00:43:45,064
+维度可能会抓住
+dimensional would probably catch the
+
+682
+00:43:45,069 --> 00:43:47,465
+特征向量，如果特征向量是
+eigenvector so if the eigenvector is
+
+683
+00:43:47,470 --> 00:43:51,155
+几乎在这个空间，我们可以看
+virtually in this space then we can look
+
+684
+00:43:51,160 --> 00:43:53,885
+在一个数百万的矩阵我们可以
+at a matrix of order a hundred we can
+
+685
+00:43:53,890 --> 00:43:57,965
+把它放下来看看它的行动
+bring a down to just see its action on
+
+686
+00:43:57,970 --> 00:44:04,415
+那个空间和任何一块如此
+that space and any piece of so when so
+
+687
+00:44:04,420 --> 00:44:07,054
+这是一个所以我看看矢量V
+here's a so I look at vectors V which
+
+688
+00:44:07,059 --> 00:44:11,135
+是一些组合C1B
+are some combination C 1 B
+
+689
+00:44:11,140 --> 00:44:17,254
+加C到B加C3平方B和C.
+plus C to a B plus C 3 a squared B and C
+
+690
+00:44:17,259 --> 00:44:28,494
+100到99到B再加上一个错误
+100 a to the 99 to B plus it an error
+
+691
+00:44:28,499 --> 00:44:36,004
+我会忽略那个错误，因为
+and I'm gonna ignore that error because
+
+692
+00:44:36,009 --> 00:44:38,705
+我已经走了，我已经达到100维了
+I've gone I've got up to dimension 100 I
+
+693
+00:44:38,710 --> 00:44:40,504
+可能会说是非常安全的忽略
+probably say is pretty safe to ignore
+
+694
+00:44:40,509 --> 00:44:45,604
+那个错误，然后在这个空间
+that error and then in this space just
+
+695
+00:44:45,609 --> 00:44:48,484
+无论在哪里，都要看矩阵
+looking at the matrix a so wherever a to
+
+696
+00:44:48,489 --> 00:44:51,004
+第100个进入忘记它
+the 100th comes in forget it
+
+697
+00:44:51,009 --> 00:44:54,744
+只要想想矩阵a就像
+just think about the matrix a as as
+
+698
+00:44:54,749 --> 00:44:57,665
+在这里乘以这种矢量
+multiplying vectors of this kind in this
+
+699
+00:44:57,670 --> 00:45:00,725
+空间然后我有一百个百
+space then I have a hundred by hundred
+
+700
+00:45:00,730 --> 00:45:06,415
+也许我可以重视一个问题，你知道
+maybe I can value a problem and you know
+
+701
+00:45:06,420 --> 00:45:11,314
+大矩阵a被简化为矩阵
+the big matrix a is reduced to a matrix
+
+702
+00:45:11,319 --> 00:45:14,195
+大小100你看到了什么
+of size 100 by do you see sort of what
+
+703
+00:45:14,200 --> 00:45:16,385
+我是说，即使d我不是
+I'm saying even though the D I'm not
+
+704
+00:45:16,390 --> 00:45:21,625
+给人的细节，是想的
+giving the details that that think of a
+
+705
+00:45:21,630 --> 00:45:25,885
+一个大小一百万的矩阵的东西
+thing of a matrix a of size a million
+
+706
+00:45:25,890 --> 00:45:30,994
+然后你将它应用于Krylov载体，所以我
+and you apply it to Krylov vectors so I
+
+707
+00:45:30,999 --> 00:45:34,675
+称他们为Krylov矢量小K.
+call them little K for a Krylov vector
+
+708
+00:45:34,680 --> 00:45:41,405
+在这个百维空间中如此
+in this hundred dimensional space so
+
+709
+00:45:41,410 --> 00:45:46,834
+他们有一百万减100零
+they have a million minus 100 zero
+
+710
+00:45:46,839 --> 00:45:49,415
+组件，你可以说这没关系这
+components you could say this okay this
+
+711
+00:45:49,420 --> 00:45:52,915
+在Krylov空间这是一百万
+is in the Krylov space this is a million
+
+712
+00:45:52,920 --> 00:45:57,175
+K一百
+K a hundred
+
+713
+00:45:57,180 --> 00:46:00,864
+哦，它是一个完整的有一个它有一个
+oh it's a full there's a it's got a
+
+714
+00:46:00,869 --> 00:46:02,905
+百万组件，但它只是
+million components but it's out of just
+
+715
+00:46:02,910 --> 00:46:04,915
+一个百维空间，所以当我
+a hundred dimensional space so when I
+
+716
+00:46:04,920 --> 00:46:07,465
+乘以它就会有它
+multiplied by a it'll have it'll be
+
+717
+00:46:07,470 --> 00:46:13,255
+大多数情况下，部分在Krylov
+mostly in mostly in partly in the Krylov
+
+718
+00:46:13,260 --> 00:46:18,534
+空间K数百和一块出的K
+space k hundreds and a piece out of K
+
+719
+00:46:18,539 --> 00:46:23,695
+100，我只是忽略了那一部分
+100 and I just ignore that part of the
+
+720
+00:46:23,700 --> 00:46:26,665
+矩阵所以我有一百一百
+matrix so I have a hundred by hundred
+
+721
+00:46:26,670 --> 00:46:28,614
+问题，我解决了找到
+problem and I solve the find the
+
+722
+00:46:28,619 --> 00:46:30,895
+特征值，它们非常好
+eigenvalues and they're pretty good
+
+723
+00:46:30,900 --> 00:46:34,195
+近似于特征值
+approximation to the eigenvalues to the
+
+724
+00:46:34,200 --> 00:46:37,344
+可我希望喜欢的最低百
+may i hopefully like the lowest hundred
+
+725
+00:46:37,349 --> 00:46:40,314
+特征值我想知道但是我
+eigenvalues i'd like to know that but i
+
+726
+00:46:40,319 --> 00:46:43,375
+可能不确定这个想法会不会
+might not be sure that this idea would
+
+727
+00:46:43,380 --> 00:46:45,895
+给我第一个最低的百分之一
+give me the lowest hundred the first
+
+728
+00:46:45,900 --> 00:46:48,385
+一百个特征值
+hundred eigenvalues of the of the
+
+729
+00:46:48,390 --> 00:46:51,324
+百万阿玛丽亚的矩阵我是
+million of the matrix of size Amelia I'm
+
+730
+00:46:51,329 --> 00:46:55,935
+这里只需几分钟
+just taking a few minutes here to to
+
+731
+00:46:55,940 --> 00:47:01,765
+那种波什么克雷洛夫手中
+sort of wave hands about what Krylov the
+
+732
+00:47:01,770 --> 00:47:04,135
+克里洛夫的想法会做，我可能
+Krylov idea would do and I probably
+
+733
+00:47:04,140 --> 00:47:07,044
+本学期不会再提Krylov了
+won't mention Krylov again this semester
+
+734
+00:47:07,049 --> 00:47:11,125
+所以它能做的就是看看这个
+so what it can do is look at this
+
+735
+00:47:11,130 --> 00:47:15,294
+特殊类型的空间，因为我们可以
+particular type of space because we can
+
+736
+00:47:15,299 --> 00:47:18,534
+快速获得它的基础
+get a basis for it quickly just multiply
+
+737
+00:47:18,539 --> 00:47:21,445
+我们可以一次又一次地
+again and again by a then we can
+
+738
+00:47:21,450 --> 00:47:23,834
+正交化这个基础
+orthogonalize that basis
+
+739
+00:47:23,839 --> 00:47:27,054
+这是某种形式的克施密特
+that's gram schmidt in some some form
+
+740
+00:47:27,059 --> 00:47:28,645
+我们总是回到盛大
+we're always going back to a grand
+
+741
+00:47:28,650 --> 00:47:30,774
+施密特然后我有一百一百
+Schmitt then I have a hundred by hundred
+
+742
+00:47:30,779 --> 00:47:33,715
+我有一个大小为a的子空间
+I have a bate a subspace of size a
+
+743
+00:47:33,720 --> 00:47:36,114
+一百个我看着Mait为了什么
+hundred I look at the Mait for what the
+
+744
+00:47:36,119 --> 00:47:39,175
+矩阵在那个空间里做，我
+matrix does in that space and that I
+
+745
+00:47:39,180 --> 00:47:43,044
+可以找我能找到特征值
+could look for I could find eigenvalues
+
+746
+00:47:43,049 --> 00:47:45,265
+被限制在那个空间他们
+were restricted to that space they
+
+747
+00:47:45,270 --> 00:47:47,455
+不会是完美的特征值但是
+wouldn't be the perfect eigenvalues but
+
+748
+00:47:47,460 --> 00:47:51,685
+他们会准确的好，所以我没有
+they would be accurate okay so I didn't
+
+749
+00:47:51,690 --> 00:47:54,324
+知道它会采取一个班时间
+know it would take one class time to
+
+750
+00:47:54,329 --> 00:47:56,364
+谈论寻找特征值和特征
+talk about finding eigenvalues and
+
+751
+00:47:56,369 --> 00:47:58,435
+奇异的价值，但我们做了一些
+singular values but we did some
+
+752
+00:47:58,440 --> 00:48:01,725
+我们记得那些重要的事情
+important things we remembered that
+
+753
+00:48:01,730 --> 00:48:05,425
+相似性是检查事物的事情
+similarity is the thing to check thing
+
+754
+00:48:05,430 --> 00:48:07,824
+保存，因为它不会改变
+to preserve because it doesn't change
+
+755
+00:48:07,829 --> 00:48:11,025
+特征值，然后我们
+the eigen values and then we
+
+756
+00:48:11,030 --> 00:48:14,035
+对于奇异的价值观是什么
+for singular values what was the thing
+
+757
+00:48:14,040 --> 00:48:16,915
+你可以乘左右的
+you could multiply left and right by
+
+758
+00:48:16,920 --> 00:48:19,645
+不同的正交矩阵和
+different orthogonal matrices and
+
+759
+00:48:19,650 --> 00:48:21,745
+不知怎的，也许没有
+somehow maybe that doesn't have a
+
+760
+00:48:21,750 --> 00:48:26,155
+已建立的名称乘以左和
+established name multiplying left and
+
+761
+00:48:26,160 --> 00:48:30,715
+通过q1和aq2转换是的
+right by a q1 and a q 2 transpose yeah
+
+762
+00:48:30,720 --> 00:48:33,835
+但但这个想法是明确的，
+but but the idea is clear and that
+
+763
+00:48:33,840 --> 00:48:37,825
+不改变我们的奇异值
+doesn't change the singular values we're
+
+764
+00:48:37,830 --> 00:48:42,835
+准备现在变成真实的，也许
+ready to move now into real and maybe
+
+765
+00:48:42,840 --> 00:48:45,775
+我们下一步我们不花钱
+our next step which we don't spend a
+
+766
+00:48:45,780 --> 00:48:49,165
+很长一段时间会像随意的
+long time on will be like random
+
+767
+00:48:49,170 --> 00:48:51,895
+如果您的矩阵是正确的，那么采样
+sampling what if your matrix is just way
+
+768
+00:48:51,900 --> 00:48:52,815
+太大
+too big
+
+769
+00:48:52,820 --> 00:48:58,375
+所以这是一个新的非常新的想法很
+so that's a new very new idea very
+
+770
+00:48:58,380 --> 00:49:00,805
+数值线性的不同想法
+different idea in numerical linear
+
+771
+00:49:00,810 --> 00:49:04,275
+代数就是对矩阵进行采样
+algebra is just to sample the matrix
+
+772
+00:49:04,280 --> 00:49:06,835
+你能相信答案吗？
+could you believe that the answer is
+
+773
+00:49:06,840 --> 00:49:08,035
+要出来吧
+going to come out right
+
+774
+00:49:08,040 --> 00:49:10,795
+只是随机抽样的几率
+just for a random sample well the odds
+
+775
+00:49:10,800 --> 00:49:14,545
+对你有好处，那就是那个
+are in your favor okay so that's that'll
+
+776
+00:49:14,550 --> 00:49:16,705
+星期三然后我们有很多
+be Wednesday and then we have lots of
+
+777
+00:49:16,710 --> 00:49:23,000
+new we'll move onward after that okay
+
+778
+00:49:16,710 --> 00:49:26,660
+新的我们之后好向前移动
+
+779
+00:49:23,010 --> 00:49:26,660
+看你周三谢谢
+see your Wednesday Thanks
+

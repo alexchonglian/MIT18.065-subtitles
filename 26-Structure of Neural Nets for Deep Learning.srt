@@ -1,0 +1,3968 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,754
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,759 --> 00:00:24,524
+好的，所以这是重要的一天
+ok so this is an important day and
+
+10
+00:00:24,529 --> 00:00:28,545
+星期五是重要的一天，希望你
+Friday was an important day I I hope you
+
+11
+00:00:28,550 --> 00:00:31,605
+享受教授的Fras太棒了
+enjoyed professor's Fras terrific
+
+12
+00:00:31,610 --> 00:00:33,945
+演讲，就像我做你可能
+lecture as much as I did you probably
+
+13
+00:00:33,950 --> 00:00:37,985
+看见我记笔记疯狂的
+saw me taking notes like mad for the
+
+14
+00:00:37,990 --> 00:00:40,545
+要写入有关节现在
+section that's now to be written about
+
+15
+00:00:40,550 --> 00:00:44,955
+随机梯度下降所以他和他
+stochastic gradient descent so and he he
+
+16
+00:00:44,960 --> 00:00:48,705
+如果你记得并且答应了一个定理
+promised a theorem if you remember and
+
+17
+00:00:48,710 --> 00:00:51,915
+没有时间，所以他要去
+there wasn't time and so he was going to
+
+18
+00:00:51,920 --> 00:00:53,925
+发送给我或仍然要发送
+send it to me or still is going to send
+
+19
+00:00:53,930 --> 00:00:56,055
+对我来说，我会报告我没有得到它
+it to me I'll report I haven't got it
+
+20
+00:00:56,060 --> 00:01:00,125
+但我会这样，但我会把它带到课堂上
+yet so I'll but I'll bring it to class
+
+21
+00:01:00,130 --> 00:01:05,025
+等待和希望看到和那个
+wait and see hopefully about and that'll
+
+22
+00:01:05,030 --> 00:01:08,775
+让我们有机会回顾随机性
+give us a chance to review stochastic
+
+23
+00:01:08,780 --> 00:01:11,235
+梯度下降中心算法
+gradient descent the central algorithm
+
+24
+00:01:11,240 --> 00:01:15,525
+深度学习然后今天就是这样
+of deep learning and then this today is
+
+25
+00:01:15,530 --> 00:01:21,794
+关于深层的中心结构
+about the central structure of deep
+
+26
+00:01:21,799 --> 00:01:25,245
+神经网和你们中的一些人会知道
+neural nets and some of you will know
+
+27
+00:01:25,250 --> 00:01:28,695
+已经是他们如何联系的了
+already what they how they're connected
+
+28
+00:01:28,700 --> 00:01:34,904
+什么是什么功能f
+what what the what the function f the
+
+29
+00:01:34,909 --> 00:01:38,205
+学习功能它可以把它叫做
+learning function it could call it the
+
+30
+00:01:38,210 --> 00:01:40,544
+那是学习功能
+learning function that that's
+
+31
+00:01:40,549 --> 00:01:43,695
+构建了整个系统的目标
+constructed the whole system is aiming
+
+32
+00:01:43,700 --> 00:01:49,005
+在构建这个函数f
+at constructing this function f which
+
+33
+00:01:49,010 --> 00:01:52,065
+然后学习训练数据
+learns the training data and then
+
+34
+00:01:52,070 --> 00:01:56,044
+将它应用于测试数据和
+applying it to the test data and the
+
+35
+00:01:56,049 --> 00:02:00,555
+奇迹是它在这方面做得很好
+miracle is that it does so well in in
+
+36
+00:02:00,560 --> 00:02:04,715
+实践那就是改变了
+practice that's what has transformed
+
+37
+00:02:04,720 --> 00:02:10,175
+深入学习如此重要
+deep learning into such a important
+
+38
+00:02:10,180 --> 00:02:14,995
+应用程序，以便使，所以这是
+application so so so this is
+
+39
+00:02:15,000 --> 00:02:18,875
+这虽然第七章已经开始了
+this though Chapter seven has been up
+
+40
+00:02:18,880 --> 00:02:24,785
+几个月来吉祥物mit.edu斜线
+for months on the mascot mit.edu slash
+
+41
+00:02:24,790 --> 00:02:27,965
+从数据视觉中学习，我会添加它
+learning from data sight and I'll add it
+
+42
+00:02:27,970 --> 00:02:29,945
+太棒了，因为那就是你要去的地方
+to stellar because that's where you'll
+
+43
+00:02:29,950 --> 00:02:35,075
+正在寻找它好然后
+be looking for it okay and then the
+
+44
+00:02:35,080 --> 00:02:37,925
+第二个反向传播的方式
+second the backpropagation the way to
+
+45
+00:02:37,930 --> 00:02:43,145
+我可能会计算梯度
+compute the gradient I'll probably
+
+46
+00:02:43,150 --> 00:02:47,375
+今天达到了这个想法，你会看到
+reached that idea today and you'll see
+
+47
+00:02:47,380 --> 00:02:49,865
+什么是连锁规则，但它是怎么回事
+what it's the chain rule but how is it
+
+48
+00:02:49,870 --> 00:02:52,775
+组织好，所以这是什么
+organized okay so so what's the
+
+49
+00:02:52,780 --> 00:02:54,875
+结构是什么样的深层计划
+structure what's the plan for deep
+
+50
+00:02:54,880 --> 00:03:00,575
+神经网络从这里开始就是好的开始
+neural nets good start starting here so
+
+51
+00:03:00,580 --> 00:03:06,454
+我们所拥有的是培训数据，所以我们拥有
+what we have is training data so we have
+
+52
+00:03:06,459 --> 00:03:14,435
+向量x1到X我应该使用什么
+vectors x1 to X what should I use for
+
+53
+00:03:14,440 --> 00:03:17,885
+那些样本的培训数量
+the number of training of samples that
+
+54
+00:03:17,890 --> 00:03:20,615
+我们在训练中接受了培训
+we have in the training the training
+
+55
+00:03:20,620 --> 00:03:26,375
+数据好Sadie数据确定和每个
+data well Sadie for data ok and each
+
+56
+00:03:26,380 --> 00:03:30,185
+矢量那些被称为特征向量
+vector those are called feature vectors
+
+57
+00:03:30,190 --> 00:03:40,954
+所以每个都等于特征向量
+so equals feature vectors so each one
+
+58
+00:03:40,959 --> 00:03:48,305
+每个X都是呃有这样的特征
+each X is uh has like m features so
+
+59
+00:03:48,310 --> 00:03:52,324
+也许它可能是我的符号不是
+maybe it maybe I my notation isms isn't
+
+60
+00:03:52,329 --> 00:03:56,965
+这里很热，我有很多
+so hot here I have a whole lot of
+
+61
+00:03:56,970 --> 00:04:01,445
+向量让我不要使用下标
+vectors let me not use the subscript for
+
+62
+00:04:01,450 --> 00:04:05,405
+那些正确的矢量功能
+those right away so vectors feature
+
+63
+00:04:05,410 --> 00:04:09,514
+向量和每个向量可能都有
+vectors and each vector has got maybe so
+
+64
+00:04:09,519 --> 00:04:14,104
+我们说m的功能就像我们一样
+we say m features like if we were
+
+65
+00:04:14,109 --> 00:04:17,375
+测量身高，年龄和体重
+measuring height and age and weight and
+
+66
+00:04:17,380 --> 00:04:21,574
+所以这些工作就是特色
+so on those would be features so the job
+
+67
+00:04:21,579 --> 00:04:25,805
+是神经网络的工作
+is of the the job of the neural network
+
+68
+00:04:25,810 --> 00:04:28,395
+是创造一个和
+is to create a and
+
+69
+00:04:28,400 --> 00:04:30,105
+我们打算也许我们分类
+and we're going to classify maybe we're
+
+70
+00:04:30,110 --> 00:04:35,025
+要对男女老少进行分类
+going to classify men and women or boys
+
+71
+00:04:35,030 --> 00:04:35,895
+和女孩
+and girls
+
+72
+00:04:35,900 --> 00:04:38,775
+所以我们让它成为一个分类
+so our let's make it a classification
+
+73
+00:04:38,780 --> 00:04:43,935
+问题只是一个二进制所以
+problem a just a binary so the
+
+74
+00:04:43,940 --> 00:04:48,015
+分类问题是我们应该做的
+classification problem is what should we
+
+75
+00:04:48,020 --> 00:04:56,205
+说减去一个或一个或类似的
+say minus one or one which is sort of or
+
+76
+00:04:56,210 --> 00:04:59,685
+零或一个或男孩或女孩或猫或狗
+zero or one or boy or girl or cat or dog
+
+77
+00:04:59,690 --> 00:05:05,265
+或卡车或汽车或反正只有两个
+or truck or car or anyway just two
+
+78
+00:05:05,270 --> 00:05:09,435
+课程到两个班，所以我要去
+classes to two class so I'm just gonna
+
+79
+00:05:09,440 --> 00:05:15,315
+做两级分类所以我们
+do two class classification so the we
+
+80
+00:05:15,320 --> 00:05:17,865
+知道训练数据属于哪个类
+know which class the training data is in
+
+81
+00:05:17,870 --> 00:05:20,145
+对于每个向量X，我们知道正确的
+for each vector X we know the right
+
+82
+00:05:20,150 --> 00:05:23,384
+回答所以我们要创建一个函数
+answer so we want to create a function
+
+83
+00:05:23,389 --> 00:05:25,755
+给出正确的答案，然后
+that gives the right answer and then
+
+84
+00:05:25,760 --> 00:05:28,925
+我们将在其他数据上使用该功能
+we'll use that function on other data
+
+85
+00:05:28,930 --> 00:05:32,675
+人们都知道，所以让我写下来
+people know so let me write that down
+
+86
+00:05:32,680 --> 00:05:40,664
+创建一个X的函数f，以便
+create a function f of X that so that
+
+87
+00:05:40,669 --> 00:05:49,055
+获得大部分的课程都是正确的
+that gets most of gets the class correct
+
+88
+00:05:49,060 --> 00:05:54,875
+换句话说，X的f应该是负数
+in other words f of X should be negative
+
+89
+00:05:54,880 --> 00:06:02,295
+当分类是什么时候
+for when when the classification is
+
+90
+00:06:02,300 --> 00:06:06,335
+X的减1和f应为正
+minus 1 and f of X should be positive
+
+91
+00:06:06,340 --> 00:06:11,865
+当分类加1和as时
+when the classification is plus 1 and as
+
+92
+00:06:11,870 --> 00:06:14,444
+我们知道我们不一定得到
+we know we don't necessarily have to get
+
+93
+00:06:14,449 --> 00:06:18,284
+每X个样品都可能正确
+every X every sample right that may be
+
+94
+00:06:18,289 --> 00:06:21,075
+如果有一些样品过度拟合
+overfitting if there's some sample
+
+95
+00:06:21,080 --> 00:06:24,944
+得到那个真的很奇怪
+that's just truly weird by getting that
+
+96
+00:06:24,949 --> 00:06:26,565
+我们正在寻找
+right we're going to be looking for
+
+97
+00:06:26,570 --> 00:06:32,205
+测试集中的真正奇怪的数据和
+truly weird data in the test set and and
+
+98
+00:06:32,210 --> 00:06:35,594
+这不是我们想要的，我们希望有一个好主意
+that's not a good idea we want we want
+
+99
+00:06:35,599 --> 00:06:40,875
+我们试图发现的规则
+the rule that we're trying to discover
+
+100
+00:06:40,880 --> 00:06:41,615
+该规则的
+the rule the
+
+101
+00:06:41,620 --> 00:06:44,224
+涵盖几乎所有情况，但不是每个
+covers almost all cases but not every
+
+102
+00:06:44,229 --> 00:06:48,095
+疯狂怪异的情况好吧这是我们的工作
+crazy weird case okay so that's our job
+
+103
+00:06:48,100 --> 00:06:52,955
+创建一个X的函数f
+to create a function f of X that is
+
+104
+00:06:52,960 --> 00:06:57,634
+几乎所有的训练都是正确的
+correct on almost all of the training
+
+105
+00:06:57,639 --> 00:07:05,005
+数据是的
+data yeah
+
+106
+00:07:05,010 --> 00:07:11,164
+所以之前我画的图片
+so before I draw the picture of the
+
+107
+00:07:11,169 --> 00:07:16,474
+网络让我记得记住
+network let me just remember remember to
+
+108
+00:07:16,479 --> 00:07:24,095
+提到我不知道的网站游乐场
+mention the site playground I don't know
+
+109
+00:07:24,100 --> 00:07:25,685
+如果你已经看过那么我会
+if you've looked at that so I'm gonna
+
+110
+00:07:25,690 --> 00:07:35,694
+问你在tensorflowdotorg的游乐场
+ask you playground at tensorflow dot org
+
+111
+00:07:35,699 --> 00:07:39,305
+有多少人知道该网站或已经搞砸了
+how many know that site or have messed
+
+112
+00:07:39,310 --> 00:07:43,384
+只有几个没关系好吧
+with it just just a few okay okay so
+
+113
+00:07:43,389 --> 00:07:46,085
+它不是一个非常复杂的网站
+it's not a very sophisticated site it's
+
+114
+00:07:46,090 --> 00:07:52,465
+只有四个例子和例子
+got only four examples for examples and
+
+115
+00:07:52,470 --> 00:07:58,505
+是的，所以这样一个例子是一个
+and the yeah so the so one example is a
+
+116
+00:07:58,510 --> 00:08:04,055
+很多积分都有蓝色B表示
+whole lot of points there are blue B for
+
+117
+00:08:04,060 --> 00:08:11,694
+蓝色里面有一堆点
+blue inside a bunch of points that are
+
+118
+00:08:11,699 --> 00:08:15,955
+另一套旧的橙色
+another set that are old for orange
+
+119
+00:08:15,960 --> 00:08:21,305
+橙色，但没关系，所以这两个
+orange but okay so those are the two
+
+120
+00:08:21,310 --> 00:08:24,305
+类橙色和蓝色所以点X.
+classes orange and blue so the points X
+
+121
+00:08:24,310 --> 00:08:29,105
+并且特征向量是
+and the the feature vector is is the
+
+122
+00:08:29,110 --> 00:08:33,274
+特征向量在这里只是X.
+feature vector is here is just the X
+
+123
+00:08:33,279 --> 00:08:38,224
+坐标的特征是X.
+what the coordinates features are the X
+
+124
+00:08:38,229 --> 00:08:43,414
+点的Y坐标和我们的工作
+Y coordinates of the point and our job
+
+125
+00:08:43,419 --> 00:08:47,315
+是找到一个积极的功能
+is to find a function that's positive on
+
+126
+00:08:47,320 --> 00:08:49,895
+这些点和负面的
+these points and negative on those
+
+127
+00:08:49,900 --> 00:08:53,885
+分那么有一个简单的模型问题
+points so there's a simple model problem
+
+128
+00:08:53,890 --> 00:08:54,485
+和
+and
+
+129
+00:08:54,490 --> 00:08:58,115
+我建议也只是部分是，如果
+I recommend well just partly it's if
+
+130
+00:08:58,120 --> 00:09:01,524
+你是深度学习的专家
+you're a expert in deep learning this is
+
+131
+00:09:01,529 --> 00:09:05,665
+对于孩子，但在道德上我在这里
+for children but but morally here I
+
+132
+00:09:05,670 --> 00:09:09,834
+当然在玩这个教训
+certainly learned from playing in this
+
+133
+00:09:09,839 --> 00:09:17,644
+操场上，所以你设置了你，你
+playground so you you set the you you
+
+134
+00:09:17,649 --> 00:09:24,095
+设置步长您设置还是设置
+set the step size do you set it or does
+
+135
+00:09:24,100 --> 00:09:26,524
+它说没有，是的，我想你可以
+it say no yeah yeah I guess you can
+
+136
+00:09:26,529 --> 00:09:28,235
+改变它我没有我不认为我
+change it I haven't I don't think I've
+
+137
+00:09:28,240 --> 00:09:31,445
+改变它你还说什么哦你
+changed it what else do you said oh you
+
+138
+00:09:31,450 --> 00:09:37,505
+你设置了非线性激活
+you set the the nonlinear activation the
+
+139
+00:09:37,510 --> 00:09:44,704
+非线性激活函数有效
+nonlinear activation function active
+
+140
+00:09:44,709 --> 00:09:47,405
+我会说功能，让我走吧
+I'll say function and let me just go
+
+141
+00:09:47,410 --> 00:09:51,125
+在这里，说什么功能的人
+over here and say what functions people
+
+142
+00:09:51,130 --> 00:09:54,095
+现在大多使用激活
+now mostly use the the activation
+
+143
+00:09:54,100 --> 00:10:02,375
+函数被称为riilu发音
+function is called riilu pronounced
+
+144
+00:10:02,380 --> 00:10:04,445
+不同的方式我不知道我们得到了什么
+different ways I don't know how we got
+
+145
+00:10:04,450 --> 00:10:07,475
+进入这个功能的疯狂的事情
+into that crazy thing for this function
+
+146
+00:10:07,480 --> 00:10:14,795
+这是零和X所以函数riilu
+that is zero and X so the function riilu
+
+147
+00:10:14,800 --> 00:10:17,735
+作为X的函数是最大的
+as a function of X is the maximum the
+
+148
+00:10:17,740 --> 00:10:24,125
+大于0和X所以它产生了
+larger of 0 and X so it produces the
+
+149
+00:10:24,130 --> 00:10:27,334
+要点是它不是线性的和重点
+point is it's not linear and the point
+
+150
+00:10:27,339 --> 00:10:30,545
+如果我们不允许非线性
+is that if we didn't allow non-linearity
+
+151
+00:10:30,550 --> 00:10:31,535
+在这里的某个地方
+in here somewhere
+
+152
+00:10:31,540 --> 00:10:33,515
+我们甚至无法解决这个游乐场
+we couldn't even solve this playground
+
+153
+00:10:33,520 --> 00:10:36,995
+问题因为如果我们的分类器是
+problem because if our classifiers were
+
+154
+00:10:37,000 --> 00:10:40,084
+所有线性分类器，如支持
+all linear classifiers like support
+
+155
+00:10:40,089 --> 00:10:44,045
+矢量机我无法分开
+vector machines I couldn't separate the
+
+156
+00:10:44,050 --> 00:10:48,905
+蓝色的橙色与飞机我是
+blue from the orange with a plane I it's
+
+157
+00:10:48,910 --> 00:10:51,215
+以某种方式创造了一些非线性
+got to somehow create some nonlinear
+
+158
+00:10:51,220 --> 00:10:53,905
+函数可能是函数
+function which is maybe the function is
+
+159
+00:10:53,910 --> 00:10:57,365
+努力成为一个好的功能
+trying to be a good a good function
+
+160
+00:10:57,370 --> 00:11:02,605
+可能是r和theta的函数
+would be a function of r and theta maybe
+
+161
+00:11:02,610 --> 00:11:08,855
+也许r减5所以也许是距离
+maybe r minus 5 so maybe the distance
+
+162
+00:11:08,860 --> 00:11:10,805
+那个让我们假设的那个
+out to the that let's suppose that
+
+163
+00:11:10,810 --> 00:11:15,545
+距离是5然后r减5
+distance is 5 then r minus 5 will be
+
+164
+00:11:15,550 --> 00:11:18,845
+对蓝调不利，因为R很小
+negative on the Blues because R is small
+
+165
+00:11:18,850 --> 00:11:21,875
+我们的负5将是正面的
+and our minus 5 will be positive on the
+
+166
+00:11:21,880 --> 00:11:23,885
+橘子因为R更大而且
+oranges because R is bigger and
+
+167
+00:11:23,890 --> 00:11:29,215
+因此我们会有正确的迹象
+therefore we will have the right signs
+
+168
+00:11:29,220 --> 00:11:34,295
+小于0大于0，它会
+less than 0 greater than 0 and it'll
+
+169
+00:11:34,300 --> 00:11:38,194
+将此数据归类为此
+classify this the this data this
+
+170
+00:11:38,199 --> 00:11:42,185
+训练数据是的，所以它必须这样做
+training data yeah so so it has to do
+
+171
+00:11:42,190 --> 00:11:45,155
+这不是一件难事
+that this is not a hard one to do there
+
+172
+00:11:45,160 --> 00:11:49,115
+我说两个是四个例子
+are four examples as I say two are
+
+173
+00:11:49,120 --> 00:11:52,355
+琐事它解决了它找到了一个好处
+trivial it solves it finds a good
+
+174
+00:11:52,360 --> 00:11:54,905
+功能很好是啊我忘记了
+function well yeah I've forgotten
+
+175
+00:11:54,910 --> 00:11:58,505
+他们是如此微不足道，他们却没有
+they're so trivial they've they don't
+
+176
+00:11:58,510 --> 00:12:02,824
+不应该提及然后这是
+shouldn't be mentioned and then this is
+
+177
+00:12:02,829 --> 00:12:09,334
+中等测试然后硬测试
+the medium test and then the hard test
+
+178
+00:12:09,339 --> 00:12:13,324
+当你有橘子时，你有一种
+is when you have oranges you have a sort
+
+179
+00:12:13,329 --> 00:12:18,394
+橙子螺旋和里面你有
+of spiral of oranges and inside you have
+
+180
+00:12:18,399 --> 00:12:23,074
+一个煮熟的蓝色缎面螺旋
+a spiral of blue satin that was a cooked
+
+181
+00:12:23,079 --> 00:12:32,345
+同比饲料，所以你会这么说的
+up by a feed so you would so that the
+
+182
+00:12:32,350 --> 00:12:34,475
+系统正试图找到一个功能
+system is trying to find a function
+
+183
+00:12:34,480 --> 00:12:38,375
+这在一个螺旋上是正面的
+that's positive on one spiral and
+
+184
+00:12:38,380 --> 00:12:40,385
+另一方面也是负面的
+negative on the other spiral and that
+
+185
+00:12:40,390 --> 00:12:44,215
+需要相当多的时间
+takes quite a bit of time many many
+
+186
+00:12:44,220 --> 00:12:50,255
+时代我学会了一个时代
+epochs I learned what an epoch is did
+
+187
+00:12:50,260 --> 00:12:52,535
+你知道什么是一个时代，我没有
+you know what an epoch is I I didn't
+
+188
+00:12:52,540 --> 00:12:53,915
+知道是不是只是一个花哨的词
+know whether it was just a fancy word
+
+189
+00:12:53,920 --> 00:12:57,274
+用于计算渐变中的步数
+for counting the steps in gradient
+
+190
+00:12:57,279 --> 00:13:01,715
+血统，但它计算它的数量
+descent but it counts it counts the
+
+191
+00:13:01,720 --> 00:13:05,885
+步骤可以，但一个时代就是
+steps all right but one epoch is the
+
+192
+00:13:05,890 --> 00:13:09,965
+与大小匹配的步数
+number of steps that matches the size of
+
+193
+00:13:09,970 --> 00:13:12,035
+训练数据，如果你有一个
+the training data so if you have a
+
+194
+00:13:12,040 --> 00:13:16,145
+百万个样本我们正在评分普通
+million samples we're grading ordinary
+
+195
+00:13:16,150 --> 00:13:18,215
+渐渐下降你会做一个
+gradient descent you would be doing a
+
+196
+00:13:18,220 --> 00:13:20,695
+百万你有一百万
+million you have a million by
+
+197
+00:13:20,700 --> 00:13:25,165
+当然随机的每一步问题
+in problem per step of course stochastic
+
+198
+00:13:25,170 --> 00:13:28,435
+梯度下降只做一个小批量
+gradient descent just does a mini batch
+
+199
+00:13:28,440 --> 00:13:33,535
+1或32或者其他什么，但无论如何，如果我们
+of 1 or 32 or something but anyway if we
+
+200
+00:13:33,540 --> 00:13:39,505
+是的，所以这是你的数量
+had yeah so so it's the number of you
+
+201
+00:13:39,510 --> 00:13:42,235
+必须做足够的迷你批次
+have to do enough mini batches so that
+
+202
+00:13:42,240 --> 00:13:44,785
+你所涵盖的总数是
+the total number you've covered is the
+
+203
+00:13:44,790 --> 00:13:49,975
+相当于一个完整的通过
+equivalent of one full run through the
+
+204
+00:13:49,980 --> 00:13:55,615
+训练数据，这很有趣
+training data and that was interesting
+
+205
+00:13:55,620 --> 00:13:58,915
+点没有你在拿起点
+point did you pick up that point that in
+
+206
+00:13:58,920 --> 00:14:02,005
+随机梯度下降你可以
+stochastic gradient descent you could
+
+207
+00:14:02,010 --> 00:14:04,075
+或者你可以做迷你
+either do it you could either do a mini
+
+208
+00:14:04,080 --> 00:14:08,265
+批量然后将它们放回汤中
+batch and then put them back in the soup
+
+209
+00:14:08,270 --> 00:14:13,135
+因此与更换或者你可以只
+so with replacement or you could just
+
+210
+00:14:13,140 --> 00:14:18,445
+从奇迹中提取数据
+put your data in some order from wonder
+
+211
+00:14:18,450 --> 00:14:23,755
+zillion所以这里是第一个X.
+zillion so here's here's of a first X
+
+212
+00:14:23,760 --> 00:14:28,435
+然后更多的X，然后只是和
+and then more more X's and then just and
+
+213
+00:14:28,440 --> 00:14:30,835
+随机化订单，所以你必须
+randomize the order so you'd have to
+
+214
+00:14:30,840 --> 00:14:33,595
+随机化顺序为随机
+randomize the order for for stochastic
+
+215
+00:14:33,600 --> 00:14:36,175
+梯度下降是合理的
+gradient descent to be reasonable and
+
+216
+00:14:36,180 --> 00:14:38,485
+然后拿一个小批量和迷你
+then take a mini batch and the mini
+
+217
+00:14:38,490 --> 00:14:40,285
+在迷你批次中批量批量生产
+batch in a mini batch in a mini batch
+
+218
+00:14:40,290 --> 00:14:42,085
+当你到达底部时，你已经到了
+and when you get to the bottom you've
+
+219
+00:14:42,090 --> 00:14:44,455
+完成了一个时代，然后你就完成了
+finished one epoch and then you'd
+
+220
+00:14:44,460 --> 00:14:47,365
+也许如果你可能再次随机
+probably randomize again maybe if you
+
+221
+00:14:47,370 --> 00:14:50,035
+如果你愿意的话，如果你这样做的话
+were if you were doing it if you wanted
+
+222
+00:14:50,040 --> 00:14:54,535
+过着正确的生活并经历迷你
+to live right and go through the mini
+
+223
+00:14:54,540 --> 00:14:57,655
+再批次，可能做一千
+batches again and probably do a thousand
+
+224
+00:14:57,660 --> 00:15:03,715
+无论如何，所以我还没说
+times yeah anyway so I haven't said yet
+
+225
+00:15:03,720 --> 00:15:07,105
+你做了什么X的这个是什么样的但是
+what you do what this f of X is like but
+
+226
+00:15:07,110 --> 00:15:09,175
+你可以在屏幕上看到它
+you can sort of see it on the screen
+
+227
+00:15:09,180 --> 00:15:14,185
+因为它创造了这个功能
+because as it creates this function f it
+
+228
+00:15:14,190 --> 00:15:18,685
+有点情节和你在上面看到的
+kind of plots it and what you see on the
+
+229
+00:15:18,690 --> 00:15:23,005
+屏幕是为此设置的零
+screen is the is the zero set for that
+
+230
+00:15:23,010 --> 00:15:26,215
+功能，所以它是完美的
+function so it perfect would be for it
+
+231
+00:15:26,220 --> 00:15:28,555
+如果我有另一个，那就去零
+to go through zero if I had another
+
+232
+00:15:28,560 --> 00:15:30,985
+颜色哦，我有另一个
+color oh I do have another
+
+233
+00:15:30,990 --> 00:15:33,205
+看这是第一次整体
+look this is the first time the whole
+
+234
+00:15:33,210 --> 00:15:38,815
+学期蓝色已经出现好了所以如果
+semester blue has appeared okay so so if
+
+235
+00:15:38,820 --> 00:15:42,325
+如果该功能在那里是积极的
+it if the function was positive there in
+
+236
+00:15:42,330 --> 00:15:45,075
+在这部分关于蓝调和
+the in this part on the Blues and
+
+237
+00:15:45,080 --> 00:15:50,605
+在该地区以外的负面
+negative outside that region for the
+
+238
+00:15:50,610 --> 00:15:52,765
+橙子，这正是我们想要的
+oranges that would be just what we want
+
+239
+00:15:52,770 --> 00:15:53,335
+对
+right
+
+240
+00:15:53,340 --> 00:15:55,225
+那就是这个小小的东西
+that would be what this little
+
+241
+00:15:55,230 --> 00:15:58,075
+游乐场网站正在创建和上
+playground site is creating and on the
+
+242
+00:15:58,080 --> 00:16:00,855
+屏幕你会看到它你会看到这个
+screen you'll see it you'll see this
+
+243
+00:16:00,860 --> 00:16:05,515
+这条曲线，它穿过零，以便
+this curve where it crosses zero so that
+
+244
+00:16:05,520 --> 00:16:07,525
+假设它穿过零的曲线
+curve where it crosses zero is supposed
+
+245
+00:16:07,530 --> 00:16:10,615
+分开两套一套是
+to separate the two sets one set is
+
+246
+00:16:10,620 --> 00:16:12,925
+积极的一套是负面的
+positive one set is negative where it's
+
+247
+00:16:12,930 --> 00:16:16,225
+零介于两者之间，重点在于它
+zero is in between and the point is it's
+
+248
+00:16:16,230 --> 00:16:20,065
+不是直线，因为我们有
+not a straight line because we've got
+
+249
+00:16:20,070 --> 00:16:24,355
+这个非线性函数就是这个
+this nonlinear function this this this
+
+250
+00:16:24,360 --> 00:16:33,415
+是非线性的，它允许我们拥有
+is nonlinear and it allows us to to have
+
+251
+00:16:33,420 --> 00:16:38,455
+功能就像我们的减五等等
+functions like our minus five and so at
+
+252
+00:16:38,460 --> 00:16:41,965
+五点那就是功能所在
+at five that's where the function would
+
+253
+00:16:41,970 --> 00:16:43,975
+是零，你会看到，在
+be zero and that you'll see that on the
+
+254
+00:16:43,980 --> 00:16:48,625
+屏幕你可能只是去帐篷或
+screen you might just go to tents or
+
+255
+00:16:48,630 --> 00:16:50,395
+当然，在tensorflow的游乐场
+playground at tensorflow of course
+
+256
+00:16:50,400 --> 00:16:53,995
+tensorflow是一个很大很大的系统，这是
+tensorflow is a big big system this is
+
+257
+00:16:54,000 --> 00:16:59,295
+他们孩子的部门但是我
+the their child's department but it's I
+
+258
+00:16:59,300 --> 00:17:01,945
+以为它很不错然后继续
+thought it was pretty good and then on
+
+259
+00:17:01,950 --> 00:17:05,425
+这个网站你决定了多少层
+this site you you decide how many layers
+
+260
+00:17:05,430 --> 00:17:08,095
+每个神经元中会有多少神经元
+there will be how many neurons in each
+
+261
+00:17:08,100 --> 00:17:11,245
+图层，以便您创建结构
+layer so you create the structure that
+
+262
+00:17:11,250 --> 00:17:15,655
+我即将画画，你不会
+I'm about to draw and and you won't be
+
+263
+00:17:15,660 --> 00:17:21,325
+能够解决这两个问题
+able to get to solve this two problem to
+
+264
+00:17:21,330 --> 00:17:24,675
+找到一个学习该数据的函数f
+find a function f that learns that data
+
+265
+00:17:24,680 --> 00:17:29,275
+没有多少层和一个数字
+without a number of layers and a number
+
+266
+00:17:29,280 --> 00:17:32,575
+如果你不给它足够的神经元
+of neurons if you don't give it enough
+
+267
+00:17:32,580 --> 00:17:36,715
+你会看到它挣扎但它不会
+you'll see it struggling but it won't it
+
+268
+00:17:36,720 --> 00:17:40,135
+只是它创造了零集
+just it's creating that the the zero set
+
+269
+00:17:40,140 --> 00:17:43,345
+试图遵循这一点，但它有它
+tries to follow this but it but it has
+
+270
+00:17:43,350 --> 00:17:45,285
+它在某个时候放弃了
+it gives up at some point
+
+271
+00:17:45,290 --> 00:17:48,025
+这个不需要太多层次
+this one doesn't take too many layers
+
+272
+00:17:48,030 --> 00:17:51,255
+而这两个琐碎的例子就是
+and the two trivial examples just are
+
+273
+00:17:51,260 --> 00:17:55,885
+只有少数神经元可以正常工作
+just a few neurons do the job okay so
+
+274
+00:17:55,890 --> 00:18:00,115
+现在对一个人进行一点评论
+now so that's a little comment on on one
+
+275
+00:18:00,120 --> 00:18:02,815
+网站，如果你知道其他人的父亲
+website if others father if you know
+
+276
+00:18:02,820 --> 00:18:05,065
+我应该知道的其他网站
+other websites that I should know and
+
+277
+00:18:05,070 --> 00:18:08,515
+应该引起注意你能发送吗？
+should call attention to could you send
+
+278
+00:18:08,520 --> 00:18:10,915
+我发了一封电子邮件我知道我不是
+me an email I you know I'm just not
+
+279
+00:18:10,920 --> 00:18:15,355
+知道一切，但在那里或如果
+aware of everything but out there or if
+
+280
+00:18:15,360 --> 00:18:21,355
+你知道一个好的卷积
+you know a good a good convolutional
+
+281
+00:18:21,360 --> 00:18:24,915
+神经网络CNN可用于
+neural net CNN that is available to
+
+282
+00:18:24,920 --> 00:18:30,415
+练习你可以给它的地方
+practice on where you could give it the
+
+283
+00:18:30,420 --> 00:18:34,105
+训练设置就是我在说什么
+training set that's what I'm talking
+
+284
+00:18:34,110 --> 00:18:40,165
+在这里，我很高兴知道，因为我
+about here I'd be glad to know because I
+
+285
+00:18:40,170 --> 00:18:41,875
+我只是不知道这一切
+I just don't know all that
+
+286
+00:18:41,880 --> 00:18:44,455
+我应该没问题，那是什么呢
+that I should okay so what does the
+
+287
+00:18:44,460 --> 00:18:50,005
+功能看起来和我说的一样线性
+function look like well as I say linear
+
+288
+00:18:50,010 --> 00:18:52,645
+不会这样做，但线性是一个
+isn't going to do it but linear is a
+
+289
+00:18:52,650 --> 00:18:56,275
+它的很重要的一部分的这
+very important part of it of the of this
+
+290
+00:18:56,280 --> 00:18:59,515
+函数f所以函数f确实有
+function f so the function f really has
+
+291
+00:18:59,520 --> 00:19:04,705
+形式很好，所以我们从这里开始
+the form well so we've got we start here
+
+292
+00:19:04,710 --> 00:19:10,165
+用一个二三三四的矢量是
+with a vector of one two three four M is
+
+293
+00:19:10,170 --> 00:19:16,155
+五是这是矢量X.
+five this is the this is the vector X
+
+294
+00:19:16,160 --> 00:19:22,015
+五个组件好吧让我擦除
+five components okay so let me erase
+
+295
+00:19:22,020 --> 00:19:24,205
+现在好吗
+that now okay
+
+296
+00:19:24,210 --> 00:19:34,735
+那么我们就有了第一层
+so then we have layer one with some
+
+297
+00:19:34,740 --> 00:19:41,665
+分数让我们说N一个是六
+number of points let's say N one is six
+
+298
+00:19:41,670 --> 00:19:47,725
+神经元让我这个简单的我会
+neurons let me make this simple I'll
+
+299
+00:19:47,730 --> 00:19:50,425
+只是有一个层，然后我会
+just have that one layer and then I'll
+
+300
+00:19:50,430 --> 00:19:52,435
+有输出这将是输出
+have the output this will be the output
+
+301
+00:19:52,440 --> 00:19:55,085
+层
+layer
+
+302
+00:19:55,090 --> 00:19:58,985
+它只是一个数字所以
+and it's just gonna be one number so
+
+303
+00:19:58,990 --> 00:20:03,004
+每一个所以我会有一个矩阵
+each of these so I'm gonna have a matrix
+
+304
+00:20:03,009 --> 00:20:09,664
+一个让我从这一个人的意志
+a one that takes me from this a one will
+
+305
+00:20:09,669 --> 00:20:13,134
+这将是5乘5乘5
+be this will be 5 by no six by five
+
+306
+00:20:13,139 --> 00:20:17,014
+因为我想要六个输出和五个输出
+because I want six outputs and five
+
+307
+00:20:17,019 --> 00:20:19,865
+输入六乘五矩阵，所以我有30
+inputs six by five matrix so I have 30
+
+308
+00:20:19,870 --> 00:20:27,935
+在那里选择权重等等
+weights to choose there and so the the
+
+309
+00:20:27,940 --> 00:20:32,815
+所散发出来的y是要为y1
+the y that comes out is gonna be y 1
+
+310
+00:20:32,820 --> 00:20:38,335
+将是X0的1倍，因此X0是
+will be a 1 times X 0 so X 0 is the is
+
+311
+00:20:38,340 --> 00:20:42,744
+具有五个组件的特征向量
+the feature vector with five components
+
+312
+00:20:42,749 --> 00:20:46,264
+所以它是一个纯线性的东西
+so it's so that's a purely linear thing
+
+313
+00:20:46,269 --> 00:20:53,164
+但我们也想要一个偏移函数
+but we also want a an offset function
+
+314
+00:20:53,169 --> 00:20:55,774
+偏移向量所以这是一个载体，这是
+offset vector so that's a vector this is
+
+315
+00:20:55,779 --> 00:20:59,465
+然后这就是即将到来的
+then this is that was a y that's coming
+
+316
+00:20:59,470 --> 00:21:03,485
+out有六个组件，一个是六个组件
+out has six components the a one is six
+
+317
+00:21:03,490 --> 00:21:08,014
+由五个X化为乌有是五经之一，
+by five the X naught was five by one and
+
+318
+00:21:08,019 --> 00:21:10,624
+那么当然这是六经之一，所以
+then of course this is six by one so
+
+319
+00:21:10,629 --> 00:21:14,284
+这些都是权重
+these are the these are the weights well
+
+320
+00:21:14,289 --> 00:21:16,654
+这些都是这些我会称之为全部
+these are these yeah I'll call them all
+
+321
+00:21:16,659 --> 00:21:26,105
+这样计算重量的权重
+weight weights to compute so in this so
+
+322
+00:21:26,110 --> 00:21:29,674
+这些都是通常连接的图片
+these are connected usual picture is to
+
+323
+00:21:29,679 --> 00:21:34,445
+展示这些所有这些联系我会
+show these all these connections I'll
+
+324
+00:21:34,450 --> 00:21:38,975
+只是把它们中的一些放在这里我们
+just put in some of them so in here we
+
+325
+00:21:38,980 --> 00:21:46,914
+有三十六个参数
+have thirty plus six parameters
+
+326
+00:21:46,919 --> 00:21:49,804
+三十六个参数然后我要去
+thirty-six parameters and then I'm going
+
+327
+00:21:49,809 --> 00:21:52,924
+关闭这将是一个非常
+to close this it's gonna be a very
+
+328
+00:21:52,929 --> 00:22:01,855
+浅薄的东西，这将只是公正
+shallow thing so that will be just just
+
+329
+00:22:01,860 --> 00:22:07,914
+一点一点，是的，没关系
+one by six yeah just okay
+
+330
+00:22:07,919 --> 00:22:10,595
+对，所以我们只得到一个输出
+right so we're just getting one output
+
+331
+00:22:10,600 --> 00:22:13,885
+所以这只是一个向量
+so it's that's just a vector at this
+
+332
+00:22:13,890 --> 00:22:19,115
+最后一点，但当然是整体
+final point but of course the the whole
+
+333
+00:22:19,120 --> 00:22:21,635
+深度神经网络的想法就是你
+idea of deep neural Nets is that you
+
+334
+00:22:21,640 --> 00:22:26,135
+有很多层，所以你有36个
+have many layers so you have that 36
+
+335
+00:22:26,140 --> 00:22:28,294
+更现实，就像数十个
+more realistically as in the tens of
+
+336
+00:22:28,299 --> 00:22:31,445
+成千上万，你有多次
+thousands and you have it multiple times
+
+337
+00:22:31,450 --> 00:22:39,185
+而这个想法似乎是第一个
+and the idea seems to be that the first
+
+338
+00:22:39,190 --> 00:22:41,914
+你可以分类的那个层
+layer that you can sort of separate what
+
+339
+00:22:41,919 --> 00:22:47,885
+第一层了解数据和来自
+layer one learns about the data and from
+
+340
+00:22:47,890 --> 00:22:49,865
+第二层了解数据
+what layer two learns about the data
+
+341
+00:22:49,870 --> 00:22:54,904
+层有一个由是一个明显
+layer one there's a one apparently by
+
+342
+00:22:54,909 --> 00:22:58,895
+只是照顾这个计算
+just looking after the computation this
+
+343
+00:22:58,900 --> 00:23:02,885
+了解了一些有关的基本事实
+learned some some basic facts about the
+
+344
+00:23:02,890 --> 00:23:06,715
+这将学习下一个a到的数据
+data this learns the next next a to
+
+345
+00:23:06,720 --> 00:23:12,174
+会在这里进一步了解更多
+which would go in here would learn more
+
+346
+00:23:12,179 --> 00:23:15,395
+细节然后三个会学到更多
+detail and then a three would learn more
+
+347
+00:23:15,400 --> 00:23:18,515
+细节，所以我们会有一些
+details so we would have a number of
+
+348
+00:23:18,520 --> 00:23:23,424
+层和它的构造
+layers and it's that construction that
+
+349
+00:23:23,429 --> 00:23:27,304
+已经使神经网络成功但我
+has made neural net successful but I
+
+350
+00:23:27,309 --> 00:23:30,304
+还没完，因为现在是
+haven't finished because right now it's
+
+351
+00:23:30,309 --> 00:23:33,544
+我现在只有线性的
+only linear right now I just have
+
+352
+00:23:33,549 --> 00:23:36,455
+现在我在这里喝两杯酒
+alcohol at a two in here right now I
+
+353
+00:23:36,460 --> 00:23:38,615
+只会有一个矩阵乘法
+would just have a matrix multiplication
+
+354
+00:23:38,620 --> 00:23:41,825
+应用1然后应用2但是在
+apply a 1 and then apply a 2 but in
+
+355
+00:23:41,830 --> 00:23:50,945
+之间是一个一个接一个的动作
+between there's a is a one by one action
+
+356
+00:23:50,950 --> 00:23:57,695
+在这个功能上
+on each by this function
+
+357
+00:23:57,700 --> 00:24:03,015
+以便该函数对该数字起作用
+so that function acts on that number to
+
+358
+00:24:03,020 --> 00:24:05,205
+再给那个号码还是给
+give that number back again or to give
+
+359
+00:24:05,210 --> 00:24:09,255
+零，所以在那里有真正的哦
+zero so in in there in there is real ooh
+
+360
+00:24:09,260 --> 00:24:13,215
+就在那里，它变得真实
+right in there in this it becomes real
+
+361
+00:24:13,220 --> 00:24:18,255
+哦，每六个六个副本的反应
+ooh on each six six copies of reacting
+
+362
+00:24:18,260 --> 00:24:21,255
+这六个数字中的每一个都是正确的
+on each of those six numbers right
+
+363
+00:24:21,260 --> 00:24:28,365
+所以真正的x1来自于y1
+so that really x1 comes from y1 by
+
+364
+00:24:28,370 --> 00:24:33,465
+将riilu应用于它然后给予它
+applying riilu to it then that gives the
+
+365
+00:24:33,470 --> 00:24:36,945
+X所以这里是线性的Y.
+X so here are the Y's from the linear
+
+366
+00:24:36,950 --> 00:24:40,125
+一部分，这里有这就是为什么那些在X
+part and here are the X that's why ones
+
+367
+00:24:40,130 --> 00:24:43,155
+这是一个矢量y1，线性来自于
+that's a vector y1 the linear from just
+
+368
+00:24:43,160 --> 00:24:47,595
+线性加一个仿射图线性加
+a linear plus an affine map linear plus
+
+369
+00:24:47,600 --> 00:24:48,435
+不变
+constant
+
+370
+00:24:48,440 --> 00:24:52,985
+这很好，然后下一步是
+that's a fine and then the next step is
+
+371
+00:24:52,990 --> 00:24:56,235
+逐个组件我们应用它
+component by component we apply this
+
+372
+00:24:56,240 --> 00:25:02,265
+功能，我们得到X-X是什么和
+function and we get X - X what yeah and
+
+373
+00:25:02,270 --> 00:25:05,205
+然后再一次又一次这样做
+then do it again and again and again so
+
+374
+00:25:05,210 --> 00:25:07,935
+你看到我的功能如何？
+do you see that the function how do i
+
+375
+00:25:07,940 --> 00:25:14,505
+现在描述x的函数f所以
+describe now the function f of x so the
+
+376
+00:25:14,510 --> 00:25:22,745
+学习功能依赖于
+learning function which depends on the
+
+377
+00:25:22,750 --> 00:25:32,265
+关于a和b的权重是如此
+on the weights on the a's and b's is so
+
+378
+00:25:32,270 --> 00:25:38,345
+我从XI开始申请F1a1
+I start with an X I apply F 1 a 1 to it
+
+379
+00:25:38,350 --> 00:25:42,045
+是的，让我这样做，这是什么
+yeah let me do this so what what this is
+
+380
+00:25:42,050 --> 00:25:45,645
+函数fX的XF的打算
+the function f of X f of X is going to
+
+381
+00:25:45,650 --> 00:25:55,875
+是F3，假设是X12的F1的F2
+be F 3 let's say of F 2 of F 1 of X 1 2
+
+382
+00:25:55,880 --> 00:25:59,835
+3个括号没错，所以这是一个链条
+3 parentheses right okay so it's a chain
+
+383
+00:25:59,840 --> 00:26:03,405
+你可以说F是正确的
+you could say F is a what's the right
+
+384
+00:26:03,410 --> 00:26:07,275
+如果我采取一系列功能的话
+word for a chain of functions if I take
+
+385
+00:26:07,280 --> 00:26:10,005
+函数的函数是
+a function of a function which is the
+
+386
+00:26:10,010 --> 00:26:11,515
+我使用单词链的原因
+reason I use the word chain
+
+387
+00:26:11,520 --> 00:26:14,515
+链规则给出了导数
+the chain rule gives the derivative so a
+
+388
+00:26:14,520 --> 00:26:18,195
+一个函数的函数功能
+function of a function of a function
+
+389
+00:26:18,200 --> 00:26:22,465
+这就是所谓的作曲创作
+that's called composition composing
+
+390
+00:26:22,470 --> 00:26:26,895
+功能所以这是一个作文我
+function so this is a composition I
+
+391
+00:26:26,900 --> 00:26:29,605
+不知道是否有标准符号
+don't know if there's a standard symbol
+
+392
+00:26:29,610 --> 00:26:33,015
+从F1开始并做一些
+for starting with F 1 and do some
+
+393
+00:26:33,020 --> 00:26:36,505
+组成和做一些组成和
+composition and do some composition and
+
+394
+00:26:36,510 --> 00:26:39,415
+那些什么是那些单独的F那些
+now what what are those separate F those
+
+395
+00:26:39,420 --> 00:26:43,675
+单独的FS是或者那样的
+separate FS are the or the so the
+
+396
+00:26:43,680 --> 00:26:50,515
+单独的FS是向量的F1
+separate FS are the F 1 of a vector
+
+397
+00:26:50,520 --> 00:26:53,725
+将调整真实的部分
+would be in tunes the real part the
+
+398
+00:26:53,730 --> 00:27:02,005
+非线性部分1X0加B1所以2
+nonlinear part of a 1 X 0 plus B 1 so 2
+
+399
+00:27:02,010 --> 00:27:07,705
+部分你做线性或仿射地图
+parts you do the linear or affine map on
+
+400
+00:27:07,710 --> 00:27:12,105
+你的特征向量，然后你
+your feature vector and then you
+
+401
+00:27:12,110 --> 00:27:16,585
+您应用该组件的组件
+component by component you apply that
+
+402
+00:27:16,590 --> 00:27:20,065
+非线性函数，它需要一些
+nonlinear function and it took some
+
+403
+00:27:20,070 --> 00:27:22,705
+年中非线性函数之前
+years before that nonlinear function
+
+404
+00:27:22,710 --> 00:27:28,465
+成为人们想象的最爱
+became a big favorite people imagine
+
+405
+00:27:28,470 --> 00:27:30,535
+这对我来说更重要
+that it was better it was important to
+
+406
+00:27:30,540 --> 00:27:33,895
+原来有顺畅的功能
+have a smooth function so the original
+
+407
+00:27:33,900 --> 00:27:37,075
+功能是sigmoids
+functions were sigmoids
+
+408
+00:27:37,080 --> 00:27:44,845
+喜欢s曲线，但当然它
+like s curves but but of course it
+
+409
+00:27:44,850 --> 00:27:46,675
+原来，试验表明，
+turned out that experiment showed that
+
+410
+00:27:46,680 --> 00:27:49,195
+这样做的效果更好是的
+this worked even better yes so that
+
+411
+00:27:49,200 --> 00:27:52,555
+将是F1然后F2将具有
+would be F 1 and then F 2 would have the
+
+412
+00:27:52,560 --> 00:27:54,625
+相同的形式和F3将具有相同的形式
+same form and F 3 would have the same
+
+413
+00:27:54,630 --> 00:27:58,195
+因此，这可能有36个重量和
+form so maybe this had 36 weights and
+
+414
+00:27:58,200 --> 00:28:00,505
+下一个会有另一个号码
+the next one would have another number
+
+415
+00:28:00,510 --> 00:28:02,815
+和下一个号码所以我们是
+and the next another number so we're
+
+416
+00:28:02,820 --> 00:28:05,455
+让你变得相当复杂
+getting you get quite complicated
+
+417
+00:28:05,460 --> 00:28:09,895
+你知道，由作曲组成的功能
+functions by composition by you know
+
+418
+00:28:09,900 --> 00:28:13,015
+喜欢X的正弦或正弦的正弦
+like e to the sine of X or e to the sine
+
+419
+00:28:13,020 --> 00:28:15,775
+X的对数或类似的东西
+of the logarithm of X or things like
+
+420
+00:28:15,780 --> 00:28:17,795
+那
+that
+
+421
+00:28:17,800 --> 00:28:21,335
+纯粹的群众问你能得到什么
+pure masses asked could you get what
+
+422
+00:28:21,340 --> 00:28:23,435
+功能可以让你知道尝试
+functions can you get you know try to
+
+423
+00:28:23,440 --> 00:28:25,895
+现在想起他们都是什么样的
+think of them all now what kind of
+
+424
+00:28:25,900 --> 00:28:28,535
+功能我们在这里有什么可以说的
+functions do we have here what can I say
+
+425
+00:28:28,540 --> 00:28:32,195
+关于X的f作为数学函数
+about f of X as a function as a math
+
+426
+00:28:32,200 --> 00:28:36,095
+人是什么样的功能
+person what what kind of a function is
+
+427
+00:28:36,100 --> 00:28:41,915
+因此它是由矩阵和
+it so it's created out of matrices and
+
+428
+00:28:41,920 --> 00:28:45,235
+线性或仿射图中的向量
+vectors out of a linear or affine map
+
+429
+00:28:45,240 --> 00:28:50,315
+然后是非线性的
+followed by a nonlinear by that
+
+430
+00:28:50,320 --> 00:28:54,845
+特别是非线性函数那么
+particular nonlinear function so what
+
+431
+00:28:54,850 --> 00:28:57,365
+我有一种功能
+kind of a function is it well I've
+
+432
+00:28:57,370 --> 00:28:59,735
+虽然写下了这些话
+written though with those words down up
+
+433
+00:28:59,740 --> 00:29:05,335
+这里在X的f将是一个
+here at f of X is going to be a
+
+434
+00:29:05,340 --> 00:29:09,925
+连续分段线性函数
+continuous piecewise linear function
+
+435
+00:29:09,930 --> 00:29:15,695
+因为每一步都是连续的
+because every step is continuous that's
+
+436
+00:29:15,700 --> 00:29:18,635
+连续函数线性函数
+a continuous function linear functions
+
+437
+00:29:18,640 --> 00:29:20,345
+是连续的功能所以我们当然
+are continuous function so we certainly
+
+438
+00:29:20,350 --> 00:29:23,375
+有我们正在做的一个组成
+have we're taking a composition of
+
+439
+00:29:23,380 --> 00:29:25,265
+连续功能，所以它是连续的
+continuous function so it's continuous
+
+440
+00:29:25,270 --> 00:29:29,435
+部分是线性的
+and it's piecewise linear because part
+
+441
+00:29:29,440 --> 00:29:31,715
+它是线性的，部分是线性的
+of it is linear and part of it is
+
+442
+00:29:31,720 --> 00:29:37,675
+分段线性所以这是一些
+piecewise linear so so this is some
+
+443
+00:29:37,680 --> 00:29:48,055
+连续分段线性函数
+continuous piecewise linear function
+
+444
+00:29:48,060 --> 00:29:55,985
+来自XX和M的功能
+function from from of X X and M
+
+445
+00:29:55,990 --> 00:30:01,994
+尺寸没关系
+dimensions okay
+
+446
+00:30:01,999 --> 00:30:07,435
+所以我有一个小小的数学问题
+so one one little math question which I
+
+447
+00:30:07,440 --> 00:30:12,134
+认为有助于向迈克理解
+think helps to understand to Mike like
+
+448
+00:30:12,139 --> 00:30:18,414
+吞下一连串的想法
+to swallow the idea of a chain of of the
+
+449
+00:30:18,419 --> 00:30:20,514
+我们在这里有一种线性链
+kind of chain we have here of linear
+
+450
+00:30:20,519 --> 00:30:28,494
+其次是riilu所以这就是我的
+followed by riilu so so here's my
+
+451
+00:30:28,499 --> 00:30:30,624
+问题这是一个问题，我要
+question this is a question I'm going to
+
+452
+00:30:30,629 --> 00:30:31,134
+问
+ask
+
+453
+00:30:31,139 --> 00:30:34,195
+顺便说一句，回传就是
+and by the way back propagation is
+
+454
+00:30:34,200 --> 00:30:36,685
+当Z相当肯定会来
+certainly going to come when Z rather
+
+455
+00:30:36,690 --> 00:30:39,475
+比今天这是一个重要话题
+than today that's a major topic in
+
+456
+00:30:39,480 --> 00:30:44,294
+本身让我继续这个
+itself so let me keep going with this
+
+457
+00:30:44,299 --> 00:30:48,294
+功能你可以得到任何功能
+function could you get any function
+
+458
+00:30:48,299 --> 00:30:51,774
+无论如何这种方式你都不会得到
+whatsoever this way well no you only get
+
+459
+00:30:51,779 --> 00:30:54,284
+连续分段线性函数
+continuous piecewise linear functions
+
+460
+00:30:54,289 --> 00:30:59,215
+这是一个有趣的案例让我
+that's a it's an interesting case let me
+
+461
+00:30:59,220 --> 00:31:02,514
+只是问你一个练习
+just ask you well one of the exercises
+
+462
+00:31:02,519 --> 00:31:06,024
+如果我连续两次，我会说
+says if if I took two continuous
+
+463
+00:31:06,029 --> 00:31:08,924
+分段线性函数你有吗？
+piecewise linear functions do you have a
+
+464
+00:31:08,929 --> 00:31:12,835
+接下来的20分钟是企图
+the next 20 minutes are an attempt to
+
+465
+00:31:12,840 --> 00:31:16,044
+给我们的图形的图片
+give us a picture of the graph of a
+
+466
+00:31:16,049 --> 00:31:19,605
+分段线性函数那么什么
+piecewise linear function so what what
+
+467
+00:31:19,610 --> 00:31:23,215
+比如说两个变量的函数
+say in say a function of two variables
+
+468
+00:31:23,220 --> 00:31:29,424
+所以我的M等于2，我画了它
+so I have M equal to two and I draw its
+
+469
+00:31:29,429 --> 00:31:32,455
+graph好帮我画出它的图表
+graph okay help me to draw its graph so
+
+470
+00:31:32,460 --> 00:31:37,605
+这将是f1x1x2和f的图形
+this would be a graph of f of x1 x2 and
+
+471
+00:31:37,610 --> 00:31:39,894
+它将是连续的
+it's going to be continuous and
+
+472
+00:31:39,899 --> 00:31:42,174
+分段线性所以它的图形是什么
+piecewise linear so what does its graph
+
+473
+00:31:42,179 --> 00:31:44,994
+看起来就是那个问题
+look like that's that's the question
+
+474
+00:31:44,999 --> 00:31:47,485
+什么是分段的图表呢？
+what's the graph of a piecewise then
+
+475
+00:31:47,490 --> 00:31:51,985
+你的功能看起来很好
+your function looks like well it's got
+
+476
+00:31:51,990 --> 00:31:56,965
+变化之间的扁平碎片
+flat pieces right in between the change
+
+477
+00:31:56,970 --> 00:32:02,294
+从美杜莎分段，这意味着它
+from a Medusa piecewise that means it's
+
+478
+00:32:02,299 --> 00:32:05,715
+得到不同的东西，但在一块之内
+got different pieces but within a piece
+
+479
+00:32:05,720 --> 00:32:10,764
+它是线性的，旁边的部分适合
+it's linear and the pieces fit next to
+
+480
+00:32:10,769 --> 00:32:12,595
+因为它是相互适应的
+fit with each other because it's
+
+481
+00:32:12,600 --> 00:32:14,815
+连续所以我视觉上
+continuous so I visually
+
+482
+00:32:14,820 --> 00:32:20,065
+这就是折纸这就好了
+is that the well it's like origami this
+
+483
+00:32:20,070 --> 00:32:25,164
+折纸理论几乎是正确的
+is the theory of origami almost so right
+
+484
+00:32:25,169 --> 00:32:27,504
+折纸，你拿一个扁平的东西和你
+origami you take a flat thing and you
+
+485
+00:32:27,509 --> 00:32:32,754
+沿着直的折叠折叠它所以
+fold it along straight folds so so
+
+486
+00:32:32,759 --> 00:32:34,764
+与折纸有什么不同可能不是
+what's different from origami maybe not
+
+487
+00:32:34,769 --> 00:32:37,455
+许多
+much
+
+488
+00:32:37,460 --> 00:32:41,995
+也许折纸允许比我们更多
+well maybe origami allows more than we
+
+489
+00:32:42,000 --> 00:32:44,845
+允许你在这里折纸
+allow here origami would allow you to
+
+490
+00:32:44,850 --> 00:32:48,205
+将它折叠起来然后折纸就可以了
+fold it up and over so origami would
+
+491
+00:32:48,210 --> 00:32:52,164
+因为你，给你一个多值的东西
+give you a multivalued thing because you
+
+492
+00:32:52,169 --> 00:32:54,085
+知道它有一个顶部和底部和
+know it's got a top and a bottom and
+
+493
+00:32:54,090 --> 00:32:57,975
+其他折叠，这只是出去
+other folds this is just going out to
+
+494
+00:32:57,980 --> 00:33:03,595
+扁平的无限和问题
+infinity in flat pieces and the question
+
+495
+00:33:03,600 --> 00:33:06,685
+将会有多少件让我问
+will be how many pieces so let me ask
+
+496
+00:33:06,690 --> 00:33:10,105
+你这个问题我有多少件
+you that question how many pieces do I
+
+497
+00:33:10,110 --> 00:33:15,024
+你知道我的意思吗？
+have you see what I mean by a piece so
+
+498
+00:33:15,029 --> 00:33:17,185
+所以我想，有一个图表
+so I'm thinking of a graph that has
+
+499
+00:33:17,190 --> 00:33:20,664
+这些扁平的碎片和它们相连
+these flat pieces and they're connected
+
+500
+00:33:20,669 --> 00:33:24,685
+沿直的直边和那些
+along straight straight edges and those
+
+501
+00:33:24,690 --> 00:33:29,065
+直边来从实际
+straight edges come from from the real
+
+502
+00:33:29,070 --> 00:33:31,705
+操作得好，有两个
+ooh operation that well that's got two
+
+503
+00:33:31,710 --> 00:33:35,095
+实际上我们可以在一天内完成
+pieces actually we could do in one day
+
+504
+00:33:35,100 --> 00:33:37,195
+有一天我们可以数一数
+and one day we could count the number of
+
+505
+00:33:37,200 --> 00:33:39,955
+件很容易，所以会是什么
+pieces pretty easily so what would what
+
+506
+00:33:39,960 --> 00:33:41,784
+将是一个分段线性让我放
+would be a piecewise linear let me put
+
+507
+00:33:41,789 --> 00:33:44,695
+它在这里的这一边，并删除它-
+it over here on this side and erase it -
+
+508
+00:33:44,700 --> 00:33:47,275
+好的
+okay
+
+509
+00:33:47,280 --> 00:33:52,525
+所以这里的枫树是连续的
+so here's a maple one a continuous
+
+510
+00:33:52,530 --> 00:33:55,405
+分段线性
+piecewise linear
+
+511
+00:33:55,410 --> 00:34:03,294
+我只是绘制它的图表就好了
+f I'll just draw its graph so okay so
+
+512
+00:34:03,299 --> 00:34:09,715
+它是直件直件
+it's got straight pieces straight pieces
+
+513
+00:34:09,720 --> 00:34:13,235
+就像这样，是的，你知道它是一个
+like so yeah you've got the idea it's a
+
+514
+00:34:13,240 --> 00:34:15,545
+有时人们说破线型
+broken line type sometimes people say
+
+515
+00:34:15,550 --> 00:34:18,035
+虚线，但我不确定
+broken line but that I'm never sure
+
+516
+00:34:18,040 --> 00:34:20,845
+这是一个很好的说明
+that's a good description of this
+
+517
+00:34:20,850 --> 00:34:23,795
+分段线性连续所以它是
+piecewise linear continuous so it's
+
+518
+00:34:23,800 --> 00:34:28,164
+连续因为这些碎片相遇而且
+continuous because the pieces meet and
+
+519
+00:34:28,169 --> 00:34:32,495
+它的分段线性显然是可以的
+it's piecewise linear obviously okay so
+
+520
+00:34:32,500 --> 00:34:36,845
+这就是我所拥有的那种画面
+that's the kind of picture I have for a
+
+521
+00:34:36,850 --> 00:34:40,174
+现在我的一个变量的功能
+function of one variable now that my
+
+522
+00:34:40,179 --> 00:34:43,835
+问题是一种帮助尝试
+question is as an aid to try to
+
+523
+00:34:43,840 --> 00:34:49,265
+在2d中可视化这个功能就是看
+visualize this function in 2d is to see
+
+524
+00:34:49,270 --> 00:34:52,144
+如果我们可以计算这些碎片，看看我们是否可以
+if we can count the pieces see if we can
+
+525
+00:34:52,149 --> 00:34:54,755
+算上件是和该
+count the pieces yes and that for that
+
+526
+00:34:54,760 --> 00:34:58,895
+所以我在这个笔记中找到了它
+so that's in this notes I found it in a
+
+527
+00:34:58,900 --> 00:35:05,765
+五位作者的论文来自于
+paper by five authors for a from for a
+
+528
+00:35:05,770 --> 00:35:12,485
+会议和所以实际上整个世界
+meeting and so actually the whole world
+
+529
+00:35:12,490 --> 00:35:19,895
+神经网络就是会议
+of neural nets it's it's the conferences
+
+530
+00:35:19,900 --> 00:35:21,635
+每隔几年是那
+every couple of years that that
+
+531
+00:35:21,640 --> 00:35:25,715
+每个人都准备提交超过
+everybody prepares for submits more than
+
+532
+00:35:25,720 --> 00:35:28,205
+一张纸，所以它是一种分段的
+one paper so it's kind of a piecewise
+
+533
+00:35:28,210 --> 00:35:33,575
+线性会议，而这些都是在
+linear conference and those are the the
+
+534
+00:35:33,580 --> 00:35:37,145
+大型会议没关系，所以这就是后面
+big conferences okay so this is the back
+
+535
+00:35:37,150 --> 00:35:39,185
+传播部分，我想看看
+propagation section and I want to look
+
+536
+00:35:39,190 --> 00:35:46,895
+在这好吧所以我要表现出来
+at this at the okay so I'm gonna show
+
+537
+00:35:46,900 --> 00:35:49,235
+Kleinberg和其他人的这篇论文
+this paper by Kleinberg and for others
+
+538
+00:35:49,240 --> 00:35:53,015
+克莱因伯格是一个计算机科学专业的学生
+Kleinberg is a he's a computer science
+
+539
+00:35:53,020 --> 00:35:56,104
+指导康奈尔，他是这里的博士
+guide Cornell he was a PhD from here in
+
+540
+00:35:56,109 --> 00:36:00,325
+数学，他是一个非常
+math and he's a very
+
+541
+00:36:00,330 --> 00:36:05,165
+并且重要的人不是这样
+and significant person on not on not so
+
+542
+00:36:05,170 --> 00:36:09,535
+很多神经网络就像
+much on neural networks as just the
+
+543
+00:36:09,540 --> 00:36:14,375
+整个计算机的整个部分
+whole this whole part of computer
+
+544
+00:36:14,380 --> 00:36:17,975
+科学是正确的，无论如何他们和其他
+science right so anyway they and other
+
+545
+00:36:17,980 --> 00:36:20,075
+人们都问这个同样的
+people to have have asked this same
+
+546
+00:36:20,080 --> 00:36:23,975
+问题假设你认为我在
+problem suppose you have suppose I'm in
+
+547
+00:36:23,980 --> 00:36:29,255
+两个变量，假设是什么
+two variables and suppose so what are
+
+548
+00:36:29,260 --> 00:36:33,965
+你现在想象的是表面的
+you imagining now for the surface of the
+
+549
+00:36:33,970 --> 00:36:38,375
+X的f和它的原因图
+graph of this of f of X and why it has
+
+550
+00:36:38,380 --> 00:36:42,205
+这些线条折叠线
+these it has these lines fold lines
+
+551
+00:36:42,210 --> 00:36:48,965
+好吧，我想它有折叠线，使
+right I'm thinking it has fold lines so
+
+552
+00:36:48,970 --> 00:36:50,555
+我开始可以从一个完整的开始
+I start could start with a complete
+
+553
+00:36:50,560 --> 00:36:53,075
+飞机和我沿着一条线折叠
+plane and I fold it along along one line
+
+554
+00:36:53,080 --> 00:36:57,515
+所以现在就像RayLu是一个半场比赛
+so now it's like Ray Lu is one play half
+
+555
+00:36:57,520 --> 00:36:59,885
+飞机他们要去另一半
+plane they're going to a different half
+
+556
+00:36:59,890 --> 00:37:03,515
+每个人都带着它飞行，现在我
+plane there everybody with it and now I
+
+557
+00:37:03,520 --> 00:37:08,315
+采取表面哪个功能
+take that function that surface which
+
+558
+00:37:08,320 --> 00:37:11,584
+只有两部分，我放入另一部分
+just has two parts and I put in another
+
+559
+00:37:11,589 --> 00:37:13,315
+折
+fold
+
+560
+00:37:13,320 --> 00:37:17,155
+好吧，我现在有多少部分
+okay how many parts have I got now I
+
+561
+00:37:17,160 --> 00:37:21,844
+我认为四点是正确的四个部分是的
+think four am i right four parts yes
+
+562
+00:37:21,849 --> 00:37:25,584
+因为这与此不同
+because this will be different from this
+
+563
+00:37:25,589 --> 00:37:28,805
+因为它沿着那条线折叠了
+because it was folded along that line so
+
+564
+00:37:28,810 --> 00:37:31,675
+这些将是他们的四个不同的部分
+these will be four different pieces they
+
+565
+00:37:31,680 --> 00:37:34,354
+它们在中心具有相同的价值
+they have the same value at the center
+
+566
+00:37:34,359 --> 00:37:37,084
+在那里和他们匹配沿着
+there and this and they match along the
+
+567
+00:37:37,089 --> 00:37:41,045
+线条，但有平坦的数量
+lines but there's so the number of flat
+
+568
+00:37:41,050 --> 00:37:44,405
+这件事是四件，所以这就是
+pieces is four for this so that's with
+
+569
+00:37:44,410 --> 00:37:47,555
+两折，现在我只想问你
+two folds and now I just want to ask you
+
+570
+00:37:47,560 --> 00:37:51,385
+M折叠有多少件
+with M folds how many pieces are there
+
+571
+00:37:51,390 --> 00:37:56,825
+我可以达到三倍，所以我会
+can I get up to three folds so I'm gonna
+
+572
+00:37:56,830 --> 00:37:59,825
+寻找褶皱的数量，以便让我
+look for the number of folds so let me
+
+573
+00:37:59,830 --> 00:38:03,114
+让我用得到的符号也许[R
+let me just use a get a notation maybe R
+
+574
+00:38:03,119 --> 00:38:10,845
+R为平坦件数的数
+R is the number of number of flat pieces
+
+575
+00:38:10,850 --> 00:38:23,215
+而M是我的X维度
+and M is the dimension of X in my
+
+576
+00:38:23,220 --> 00:38:28,975
+图片是2和n是多少
+picture it's 2 and n is the number of
+
+577
+00:38:28,980 --> 00:38:34,885
+折叠让我再说一遍
+folds so let me say it again
+
+578
+00:38:34,890 --> 00:38:41,905
+我坐飞机，我会折起来平面
+I'm taking a plane I'll fold it plane
+
+579
+00:38:41,910 --> 00:38:44,665
+因为维度是2
+because the dimension was 2
+
+580
+00:38:44,670 --> 00:38:51,625
+我会折叠它折叠n倍
+I'll fold it fold it n times how many
+
+581
+00:38:51,630 --> 00:38:52,165
+件
+pieces
+
+582
+00:38:52,170 --> 00:39:05,295
+这将是多少扁平件
+how many flat pieces so this would be
+
+583
+00:39:05,300 --> 00:39:09,265
+这将是一个中心步骤
+this would be a central step in
+
+584
+00:39:09,270 --> 00:39:13,345
+了解他们的功能有多接近
+understanding how close their function
+
+585
+00:39:13,350 --> 00:39:15,085
+你知道你有什么自由
+you know what freedom you have in the
+
+586
+00:39:15,090 --> 00:39:19,195
+例如，函数f可以吗？
+function f for example can you
+
+587
+00:39:19,200 --> 00:39:23,005
+通过逼近任意连续函数
+approximate any continuous function by
+
+588
+00:39:23,010 --> 00:39:26,035
+通过采取这些功能之一
+one of these functions f by taking
+
+589
+00:39:26,040 --> 00:39:28,915
+足够的折叠似乎是答案
+enough folds seems like the answer
+
+590
+00:39:28,920 --> 00:39:31,315
+应该是肯定的，这是肯定的
+should be yes and it is yes so that's
+
+591
+00:39:31,320 --> 00:39:35,545
+对于纯粹的数学而言，这是一个很重要的
+the that's one big for pure math that's
+
+592
+00:39:35,550 --> 00:39:39,445
+一个问题就是这一类
+one question is the is this class of
+
+593
+00:39:39,450 --> 00:39:43,135
+功能普遍，所以普遍性
+functions universal so the universality
+
+594
+00:39:43,140 --> 00:39:47,114
+定理就是说任何一个
+theorem would be to say that any any
+
+595
+00:39:47,119 --> 00:39:51,354
+函数正弦X无论如何
+function sine X whatever could be
+
+596
+00:39:51,359 --> 00:39:56,155
+近似尽可能接近一个
+approximated as close as you like by one
+
+597
+00:39:56,160 --> 00:39:59,755
+这些家伙有足够的折叠和结束
+of these guys with enough fold and over
+
+598
+00:39:59,760 --> 00:40:03,885
+在这里，我们有点做得更多
+here we're kind of making it more
+
+599
+00:40:03,890 --> 00:40:05,965
+数字，我们将计算
+numerical we're going to count the
+
+600
+00:40:05,970 --> 00:40:08,545
+件数，只是怎么看
+number of pieces to just to see how
+
+601
+00:40:08,550 --> 00:40:11,335
+很快就会成长，所以会发生什么
+quickly do they grow so what happens
+
+602
+00:40:11,340 --> 00:40:14,935
+在这里，所以我现在有四个折叠
+here so I have four folds now this right
+
+603
+00:40:14,940 --> 00:40:19,645
+现在我有n等于我mm这里是两个
+now I have n equal to I mm is two here
+
+604
+00:40:19,650 --> 00:40:22,614
+在这张照片中
+in this in this picture
+
+605
+00:40:22,619 --> 00:40:24,864
+而我正试图绘制表面和
+and I'm trying to draw the surface and
+
+606
+00:40:24,869 --> 00:40:28,195
+在这里，我接受了两个，我接受了
+here I've put in two did I take in yeah
+
+607
+00:40:28,200 --> 00:40:32,034
+两折，现在我要去
+two folds and now I'm gonna go up to
+
+608
+00:40:32,039 --> 00:40:35,754
+三折好吧让我折叠起来
+three folds okay so let me fold it along
+
+609
+00:40:35,759 --> 00:40:43,364
+那条线我现在有多少件
+that line how many pieces have I got now
+
+610
+00:40:43,369 --> 00:40:49,945
+让我们看看我能算出那些碎片吗？
+let's see can I count those pieces is it
+
+611
+00:40:49,950 --> 00:40:54,774
+如果我这样做，那么什么是公式呢？
+seven so what is a formula what if I do
+
+612
+00:40:54,779 --> 00:41:01,044
+另一个结果发生了什么，我们做了什么
+another fold what happens what end we do
+
+613
+00:41:01,049 --> 00:41:09,294
+另一个文件夹是的，也许是的
+another folder yeah yeah maybe that's
+
+614
+00:41:09,299 --> 00:41:13,945
+会是它这是一个很好的问题
+gonna be it it's a kind of nice question
+
+615
+00:41:13,950 --> 00:41:15,925
+因为这是可视化的
+because it is care to visualize this
+
+616
+00:41:15,930 --> 00:41:22,104
+事情还好，所以发生了多少怎么样
+thing okay so what happened how many how
+
+617
+00:41:22,109 --> 00:41:25,464
+如果我投入，那些线路中的很多都会是
+many of those lines will be if I put in
+
+618
+00:41:25,469 --> 00:41:31,494
+第四线多少呀多少新
+a fourth line how many yeah how many new
+
+619
+00:41:31,499 --> 00:41:33,984
+折叠我是否创造了那种
+folds do I create that's kind of the
+
+620
+00:41:33,989 --> 00:41:35,724
+问题，我假设第四
+question and I'm assuming that fourth
+
+621
+00:41:35,729 --> 00:41:38,484
+线不经过任何的这些
+line doesn't go through any of these
+
+622
+00:41:38,489 --> 00:41:41,984
+指出它处于一般位置
+points it's sort of in general position
+
+623
+00:41:41,989 --> 00:41:45,834
+是的，所以我做了第四行
+yeah so I put in a fourth line done it
+
+624
+00:41:45,839 --> 00:41:49,695
+那没关系，所以这里发生了什么
+there it is okay so what happened here
+
+625
+00:41:49,700 --> 00:41:54,175
+有多少新人创造了多少
+how many new ones did it create how many
+
+626
+00:41:54,180 --> 00:41:59,724
+新的创造了它让我做到了
+new ones did it create let me make that
+
+627
+00:41:59,729 --> 00:42:01,885
+一个绿色因为我有所区别
+one green because I'm distinguishing
+
+628
+00:42:01,890 --> 00:42:05,155
+这是那个在之后添加的人
+that's the guy that's added after the
+
+629
+00:42:05,160 --> 00:42:07,915
+原来我们有七个我们有
+original we had we had seven we had
+
+630
+00:42:07,920 --> 00:42:13,284
+七件，现在我们已经有了
+seven pieces and now we now we've got
+
+631
+00:42:13,289 --> 00:42:16,614
+更多是7它不是一个
+more was it seven it was wasn't it one
+
+632
+00:42:16,619 --> 00:42:20,244
+二三四有五六七但现在
+two three four five six seven but now
+
+633
+00:42:20,249 --> 00:42:22,794
+我有多少件或有多少件
+how many pieces have I got or how many
+
+634
+00:42:22,799 --> 00:42:27,594
+这样做了多少件呢
+how many pieces that did this did this
+
+635
+00:42:27,599 --> 00:42:30,625
+新线创造了我们想要的东西
+new line create that's what we want to
+
+636
+00:42:30,630 --> 00:42:32,334
+构建它使用递归
+build it up use a recursion
+
+637
+00:42:32,339 --> 00:42:34,785
+这件新品有多少件
+how many pieces did this new new
+
+638
+00:42:34,790 --> 00:42:39,075
+这条新线折叠创造了一条
+well this new line folded created one
+
+639
+00:42:39,080 --> 00:42:41,415
+新作品中有一件新作品
+new piece there right one new piece
+
+640
+00:42:41,420 --> 00:42:44,235
+那里有一件新作品
+there one new piece there one new piece
+
+641
+00:42:44,240 --> 00:42:51,635
+那么有四件新作品还可以
+there so there are four new pieces okay
+
+642
+00:42:51,640 --> 00:42:55,365
+是的，所以有一些公式是正确的
+yes so there's some formula right that's
+
+643
+00:42:55,370 --> 00:42:58,095
+要告诉我们，现在会怎么样
+gonna tell us that and now what would
+
+644
+00:42:58,100 --> 00:43:00,705
+下一个创造得很好我现在有了
+the next one create well I've got now I
+
+645
+00:43:00,710 --> 00:43:04,485
+有一两三四行，所以现在我
+have one two three four lines so now I'm
+
+646
+00:43:04,490 --> 00:43:07,125
+要通过第五行和那个
+gonna put through a fifth line and that
+
+647
+00:43:07,130 --> 00:43:09,405
+我会创造出一大堆作品
+will create a whole bunch of pieces I'm
+
+648
+00:43:09,410 --> 00:43:12,465
+失去了失去这一点的线索
+losing that losing the thread of this
+
+649
+00:43:12,470 --> 00:43:16,575
+争论，但你是正确的，是的
+argument but you're onto it right yeah
+
+650
+00:43:16,580 --> 00:43:28,775
+所以任何建议都没关系，是的
+so any any suggestions yeah okay yes
+
+651
+00:43:28,780 --> 00:43:31,425
+那是对的，所以有一个
+there that's right so there's a
+
+652
+00:43:31,430 --> 00:43:33,345
+我想知道的递归公式
+recursion formula that I want to know
+
+653
+00:43:33,350 --> 00:43:37,625
+我从Kleinberg的论文中学到了这一点
+and I learned it from Kleinberg paper
+
+654
+00:43:37,630 --> 00:43:41,835
+然后我们有一个补充
+and then and then we have an addition to
+
+655
+00:43:41,840 --> 00:43:44,055
+这样递归将告诉我如何
+do so the recursion will tell me how
+
+656
+00:43:44,060 --> 00:43:46,635
+每一个新的都会增加
+much it goes up each with each new
+
+657
+00:43:46,640 --> 00:43:50,085
+功能，那么我们必须添加好了，
+function and then we have to add okay so
+
+658
+00:43:50,090 --> 00:43:51,705
+递归公式让我写出来
+the recursion formula let me write that
+
+659
+00:43:51,710 --> 00:43:55,565
+下
+down
+
+660
+00:43:55,570 --> 00:44:03,945
+所以这是我们现在和我想要的
+so this is our of and and M now I'd like
+
+661
+00:44:03,950 --> 00:44:06,825
+找到一个公式，它的数量
+to find a formula for it's the number of
+
+662
+00:44:06,830 --> 00:44:11,055
+M中的扁平件具有M维
+flat pieces in M with an M dimensional
+
+663
+00:44:11,060 --> 00:44:13,695
+表面很好，我们把他们当作两个人
+surface well we're taking em to be two
+
+664
+00:44:13,700 --> 00:44:21,195
+和n折叠，让我们等于1
+and n folds and let's just so an equal 1
+
+665
+00:44:21,200 --> 00:44:24,405
+23让我们写下来的内容
+2 3 let's let's write down the what the
+
+666
+00:44:24,410 --> 00:44:27,315
+我们知道的数字如何
+numbers we know with with one fold how
+
+667
+00:44:27,320 --> 00:44:35,865
+到目前为止，很多东西太好了
+many pieces too good so far so good with
+
+668
+00:44:35,870 --> 00:44:39,255
+一个折有两块所以这
+one fold there were two pieces so this
+
+669
+00:44:39,260 --> 00:44:44,175
+是计数R然后两次折叠
+is the count R and then with two folds
+
+670
+00:44:44,180 --> 00:44:46,895
+我们有多少人已经超越了这一点
+how many we've gone past that point so
+
+671
+00:44:46,900 --> 00:44:48,425
+我们能回来吗
+can we get back
+
+672
+00:44:48,430 --> 00:44:54,175
+只有那两个是好的谢谢
+to just those two was it for okay thanks
+
+673
+00:44:54,180 --> 00:44:57,935
+现在，当我把第三折怎么样
+now when I put in that third fold how
+
+674
+00:44:57,940 --> 00:45:00,935
+我没有绿线
+many did I have without the green line
+
+675
+00:45:00,940 --> 00:45:08,585
+然而七是七，当时
+yet seven was it seven and when the
+
+676
+00:45:08,590 --> 00:45:11,705
+第四个窗口进去，绿色去了
+fourth window went in that green went
+
+677
+00:45:11,710 --> 00:45:15,685
+有多少人我在这张照片变得如此
+how many have I got in this picture so
+
+678
+00:45:15,690 --> 00:45:18,515
+问题是我有多少新人
+the question is how many new ones did I
+
+679
+00:45:18,520 --> 00:45:21,425
+创造我想那样那条线
+create I guess so that that that line
+
+680
+00:45:21,430 --> 00:45:24,095
+被切成那块的那块
+got chopped into that piece that piece
+
+681
+00:45:24,100 --> 00:45:26,705
+那块那块四片为
+that piece that piece four pieces for
+
+682
+00:45:26,710 --> 00:45:29,045
+新系列四件新品
+the new line four pieces for the new
+
+683
+00:45:29,050 --> 00:45:33,595
+然后每一行都像
+line and then each of those pieces like
+
+684
+00:45:33,600 --> 00:45:37,685
+添加了一个扁平的位，因为它
+added added a flat bit because it that
+
+685
+00:45:37,690 --> 00:45:41,435
+从这里到这里分开这些
+piece from here to here separated these
+
+686
+00:45:41,440 --> 00:45:43,955
+两个以前只是一件
+two which were previously just one piece
+
+687
+00:45:43,960 --> 00:45:46,775
+他们跟着它做了一件平板
+one flat piece they followed it on that
+
+688
+00:45:46,780 --> 00:45:49,235
+我把它折叠在一起我在那里折叠了
+line I folded on this I folded there I
+
+689
+00:45:49,240 --> 00:45:55,655
+认为它上升了四到十一个
+think it went up by four to eleven so
+
+690
+00:45:55,660 --> 00:45:58,175
+现在我们只需要猜一个公式，
+now we just have to guess a formula that
+
+691
+00:45:58,180 --> 00:46:01,235
+给那些匹配那些数字和
+gives those matches those numbers and
+
+692
+00:46:01,240 --> 00:46:04,505
+当然我们真的应该猜测一下
+then of course we really should guess it
+
+693
+00:46:04,510 --> 00:46:10,595
+对于任何M和任何N，我会写下来
+for any M and any N and I'll write down
+
+694
+00:46:10,600 --> 00:46:17,075
+他们发现它的公式就是它
+the formula that they found it's it
+
+695
+00:46:17,080 --> 00:46:19,595
+每个都涉及二项式数
+involves binomial numbers every
+
+696
+00:46:19,600 --> 00:46:21,775
+世界上的一切都涉及到
+everything in the world involves
+
+697
+00:46:21,780 --> 00:46:24,965
+二项式数，因为它们满足
+binomial numbers because they satisfy
+
+698
+00:46:24,970 --> 00:46:33,225
+你能想到的每一个身份
+every identity you could think of
+
+699
+00:46:33,230 --> 00:46:39,734
+所以这里是他们的公式R.
+so here's their formula R of with
+
+700
+00:46:39,739 --> 00:46:43,435
+enfolds和我们在M维度，所以我们
+enfolds and we're in M dimensions so we
+
+701
+00:46:43,440 --> 00:46:45,445
+相信早，我们的想法有
+believe early and our thinking had m
+
+702
+00:46:45,450 --> 00:46:50,334
+等于2，但我们应该知道成长
+equal to 2 but we should you know grow
+
+703
+00:46:50,339 --> 00:46:53,725
+起来让我们成为5维，所以我们
+up and get em to be 5 dimensional so we
+
+704
+00:46:53,730 --> 00:46:56,725
+有一个5维让我们不要想
+have a 5 dimensional let's not think
+
+705
+00:46:56,730 --> 00:47:01,334
+关于那个好，所以事实证明它是
+about that ok so so it turns out it's
+
+706
+00:47:01,339 --> 00:47:16,375
+二项式数和0＆1up2和Mso
+binomial numbers and 0 & 1 up 2 and M so
+
+707
+00:47:16,380 --> 00:47:21,564
+所以对于m等于2这是我的照片
+so for m equal to 2 which is my picture
+
+708
+00:47:21,569 --> 00:47:30,804
+它结束了0加N1加n2和
+it's ends and 0 plus N 1 plus n 2 and
+
+709
+00:47:30,809 --> 00:47:34,465
+和和是什么这那是什么成
+and and what are these what is that into
+
+710
+00:47:34,470 --> 00:47:37,885
+意思是例如那是什么
+mean for example what's that that's a
+
+711
+00:47:37,890 --> 00:47:42,584
+二项式数我不知道你是不是
+binomial number I don't know if you're
+
+712
+00:47:42,589 --> 00:47:46,104
+一些人热衷于二项式数字
+keen on binomial numbers some people
+
+713
+00:47:46,109 --> 00:47:48,715
+他们的一生都是二项式的
+their whole lives go into binomial
+
+714
+00:47:48,720 --> 00:47:52,584
+数字所以它就像是它
+numbers so so it's something like is it
+
+715
+00:47:52,589 --> 00:47:58,344
+它是因子除以n减2
+is it n factorial divided by n minus 2
+
+716
+00:47:58,349 --> 00:48:06,084
+factorial+2factorial我认为是
+factorial + 2 factorial I think that's
+
+717
+00:48:06,089 --> 00:48:08,395
+什么是数字意味着这就是
+what that number means that's the
+
+718
+00:48:08,400 --> 00:48:11,725
+二项式数，所以这就是我上去
+binomial number so this would be I go up
+
+719
+00:48:11,730 --> 00:48:15,385
+在这一点上，我希望得到
+to so at this point I'm hoping to get
+
+720
+00:48:15,390 --> 00:48:18,925
+答案7我想我现在就说
+the answer 7 I think right now I've put
+
+721
+00:48:18,930 --> 00:48:22,554
+在我已经达到了我的意思
+in I've gone up to am equal to I mean
+
+722
+00:48:22,559 --> 00:48:27,234
+艾美认为我已经走了-所以我
+Emmy put that I've gone up to - so I've
+
+723
+00:48:27,239 --> 00:48:32,425
+是的所以我觉得我很明显
+yeah so I think yeah I've obviously
+
+724
+00:48:32,430 --> 00:48:39,205
+允许3个3削减和他们是当
+allowed for 3 3 cuts and they are when
+
+725
+00:48:39,210 --> 00:48:43,385
+我们只有3是7，所以就是这样
+we had just 3 was 7 so is that
+
+726
+00:48:43,390 --> 00:48:47,765
+是这样所以现在我正在接受他们
+is this so so this is now I'm taking em
+
+727
+00:48:47,770 --> 00:48:55,075
+到b3，我希望答案是希望
+to b3 and I'm hoping for hope answer is
+
+728
+00:48:55,080 --> 00:49:01,655
+七，所以什么是3什么是3所以我补充说
+seven so what is 3 what is 3 so I add
+
+729
+00:49:01,660 --> 00:49:06,155
+这三件事就是二项式
+these 3 things so what is 3 the binomial
+
+730
+00:49:06,160 --> 00:49:09,455
+2号被遗忘怎么说
+number 3 with 2 forgotten how to say
+
+731
+00:49:09,460 --> 00:49:12,275
+我很惭愧地承认3选2
+that I'm ashamed to admit 3 choose 2
+
+732
+00:49:12,280 --> 00:49:13,175
+谢谢
+thanks
+
+733
+00:49:13,180 --> 00:49:15,185
+我知道有一个好方法，所以3是什么
+I knew there was a good way so what is 3
+
+734
+00:49:15,190 --> 00:49:22,325
+选择2好把它放在3和2它在
+choose 2 well put it in 3 and 2 it's in
+
+735
+00:49:22,330 --> 00:49:23,015
+已经
+there already
+
+736
+00:49:23,020 --> 00:49:28,595
+所以这将超过1倍2
+so it would be 6 over 1 times 2 this
+
+737
+00:49:28,600 --> 00:49:36,785
+将是3将是3和什么是3
+would be 3 would that be 3 and what is 3
+
+738
+00:49:36,790 --> 00:49:42,815
+选择1你怎么知道你
+choose 1 how do you know that you
+
+739
+00:49:42,820 --> 00:49:44,935
+可能是对mm-hm
+probably right mm-hm
+
+740
+00:49:44,940 --> 00:49:48,935
+3我想是的哦，是的，可能是一个
+3 I think yeah oh yeah probably a
+
+741
+00:49:48,940 --> 00:49:51,865
+定理，如果这些加到3
+theorem that that if these add to 3
+
+742
+00:49:51,870 --> 00:49:54,845
+是的，所以我正在做N等于3
+yeah so so this I'm doing N equals 3
+
+743
+00:49:54,850 --> 00:49:57,965
+好的，所以我们是的，我同意这是3和
+okay so we yeah I agree that's 3 and
+
+744
+00:49:57,970 --> 00:49:59,945
+那么n到0
+what about n to 0
+
+745
+00:49:59,950 --> 00:50:03,035
+什么是你必须忍受0
+what's that you have to live with 0
+
+746
+00:50:03,040 --> 00:50:07,835
+因子不是0因子
+factorial by 0 factorial is by no means
+
+747
+00:50:07,840 --> 00:50:16,705
+0什么是0因子1是的我
+0 what so what is 0 factorial 1 yeah I
+
+748
+00:50:16,710 --> 00:50:18,995
+记得当我是本科生的时候
+remember when I was an undergraduate
+
+749
+00:50:19,000 --> 00:50:26,435
+我赢了赌注或数学，但他没有
+having a bet or math I won but he didn't
+
+750
+00:50:26,440 --> 00:50:31,835
+还清，所以是的，所以3这是3
+pay off so yeah so so 3 this is 3
+
+751
+00:50:31,840 --> 00:50:34,685
+阶乘超过3阶乘以零
+factorial over 3 factorial times zero
+
+752
+00:50:34,690 --> 00:50:37,415
+战士所以6次超过6次1
+fighters so it's 6 over 6 times 1 so
+
+753
+00:50:37,420 --> 00:50:40,825
+不是一个是啊所以1比3和3比赛7
+isn't one yeah so 1 in 3 and 3 makes 7
+
+754
+00:50:40,830 --> 00:50:44,105
+所以它证明了他们的公式
+so it proves their formula
+
+755
+00:50:44,110 --> 00:50:46,825
+干得好，证明了公式但是
+well done quite proved the formula but
+
+756
+00:50:46,830 --> 00:50:50,075
+他们通过归纳证明这一点的方式
+their way to prove it is by an induction
+
+757
+00:50:50,080 --> 00:50:53,935
+如果你喜欢这个，我会的
+and I'll just if you like this this
+
+758
+00:50:53,940 --> 00:50:56,535
+东西
+stuff the
+
+759
+00:50:56,540 --> 00:51:01,515
+您使用归纳的递归
+the recursion that you use induction on
+
+760
+00:51:01,520 --> 00:51:03,975
+这就是我们现在所做的事情
+which is just what we did now what we
+
+761
+00:51:03,980 --> 00:51:06,965
+在这里做这里在四个号码进来
+did here here comes in at number four
+
+762
+00:51:06,970 --> 00:51:11,475
+它切断了哦耶，然后我们
+and it cuts through oh yeah and then we
+
+763
+00:51:11,480 --> 00:51:14,445
+只计算那里的四件
+just counted the the four pieces there
+
+764
+00:51:14,450 --> 00:51:19,395
+所以是的他们让我告诉你
+so yeah so they let me just tell you
+
+765
+00:51:19,400 --> 00:51:23,355
+他们是N和M的数字
+what they are of N and M the number
+
+766
+00:51:23,360 --> 00:51:26,415
+我们正在寻找的是我们的号码
+we're looking for is the number that we
+
+767
+00:51:26,420 --> 00:51:32,055
+有一个减少一个，所以这是
+had with one less cut so that's the
+
+768
+00:51:32,060 --> 00:51:36,465
+以前的扁平件数加上
+previous count of flat pieces plus the
+
+769
+00:51:36,470 --> 00:51:40,425
+数加那是数
+number of the plus the number that was
+
+770
+00:51:40,430 --> 00:51:43,005
+这里是为作品的数量
+here was for the number of pieces that
+
+771
+00:51:43,010 --> 00:51:49,215
+削减那个，这是我们的n减1米
+cut that and that's our of n minus 1 M
+
+772
+00:51:49,220 --> 00:51:56,535
+减去1是的，是的，我不会去
+minus 1 yeah and yeah I won't go go
+
+773
+00:51:56,540 --> 00:52:00,765
+更进一步，但这就是那个
+further times up but this the and that
+
+774
+00:52:00,770 --> 00:52:04,095
+递归规则在in中被证明
+rule for recursion is proved in the in
+
+775
+00:52:04,100 --> 00:52:08,595
+第7.1节摘自论文
+the section 7.1 taken from the paper by
+
+776
+00:52:08,600 --> 00:52:12,945
+克莱因伯格和其他人是的，我想是的
+Kleinberg and others yeah so ok I think
+
+777
+00:52:12,950 --> 00:52:15,525
+这是我不知道你的感受
+this is I don't know what you feel this
+
+778
+00:52:15,530 --> 00:52:19,635
+对我来说这就像给了我一个更好的
+for me this like gave me a better
+
+779
+00:52:19,640 --> 00:52:22,395
+觉得我明白了什么
+feeling that I was understanding what
+
+780
+00:52:22,400 --> 00:52:28,425
+我们在这里有这样的功能
+kind of functions we had here and so
+
+781
+00:52:28,430 --> 00:52:34,035
+然后问题是与这个家庭
+then the question is to with this family
+
+782
+00:52:34,040 --> 00:52:39,045
+我们想要选择两个功能我们
+of functions we want to choose two we
+
+783
+00:52:39,050 --> 00:52:40,845
+想要选择A和权重
+want to choose the A's and the weights
+
+784
+00:52:40,850 --> 00:52:46,605
+A公司和B的给予匹配
+the A's and the B's to give to to match
+
+785
+00:52:46,610 --> 00:52:50,925
+培训数据，以便我们有一个
+the training data and so that we have a
+
+786
+00:52:50,930 --> 00:52:55,185
+在最小化总亏损问题
+problem in in minimizing the total loss
+
+787
+00:52:55,190 --> 00:53:00,015
+我们有一个梯度下降
+and we have a we have a gradient descent
+
+788
+00:53:00,020 --> 00:53:01,815
+问题所以我们必须找到梯度
+problem so we have to find the gradient
+
+789
+00:53:01,820 --> 00:53:05,175
+所以这是周三的工作星期三工作
+so that's Wednesdays job Wednesdays job
+
+790
+00:53:05,180 --> 00:53:08,235
+是找到F的梯度
+is to find the gradient of F
+
+791
+00:53:08,240 --> 00:53:11,485
+好吧，那反向传播很好
+okay and that's backpropagation good
+
+792
+00:53:11,490 --> 00:53:15,020
+thank you very much that's that's 7.1 is
+
+793
+00:53:11,490 --> 00:53:17,390
+非常感谢那就是7.1
+
+794
+00:53:15,030 --> 00:53:17,390
+DONE
+done
+

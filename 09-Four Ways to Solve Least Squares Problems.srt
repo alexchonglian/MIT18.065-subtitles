@@ -1,0 +1,3968 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:23,495
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:23,500 --> 00:00:29,085
+好吧首先要做的事情
+well ok so first important things about
+
+10
+00:00:29,090 --> 00:00:32,225
+课程计划然后
+the course plans for the course and then
+
+11
+00:00:32,230 --> 00:00:37,545
+我今天要搬到新的地方了
+I'm today I'm going to move to the new
+
+12
+00:00:37,550 --> 00:00:42,825
+下一节的注释部分2或
+next section of the notes section 2 or
+
+13
+00:00:42,830 --> 00:00:45,705
+第2部分我应该说，实际上我会
+part 2 I should say and actually I'll
+
+14
+00:00:45,710 --> 00:00:49,425
+暂时跳过第2节1并继续
+skip for the moment section 2 1 and go
+
+15
+00:00:49,430 --> 00:00:56,385
+第2节2和所有SEC的全部
+to section 2 2 and all the SEC's all of
+
+16
+00:00:56,390 --> 00:00:59,505
+第2章可能会来找你
+chapter 2 will come to you probably
+
+17
+00:00:59,510 --> 00:01:04,544
+今天或最近明天这样就到了哪里
+today or latest tomorrow so that's where
+
+18
+00:01:04,549 --> 00:01:07,215
+接下来我们要继续关注
+we're going next we're following the
+
+19
+00:01:07,220 --> 00:01:09,675
+除了我要去之外，我都非常小心地注意到
+notes pretty carefully except I'm going
+
+20
+00:01:09,680 --> 00:01:14,985
+跳过有关张量的部分，直到我
+to skip the section on tensors until I
+
+21
+00:01:14,990 --> 00:01:16,995
+学到更多
+learn more
+
+22
+00:01:17,000 --> 00:01:20,445
+基本上是啊是的我可以说一点点
+basically yeah yeah I could say a little
+
+23
+00:01:20,450 --> 00:01:25,695
+关于张量，但这会流动这种流动
+about tensors but this flows this flows
+
+24
+00:01:25,700 --> 00:01:31,474
+自然地使用SVD所以它只是
+naturally using the SVD so it's just
+
+25
+00:01:31,479 --> 00:01:35,205
+非常重要的问题最小二乘
+terribly important problem least squares
+
+26
+00:01:35,210 --> 00:01:37,385
+当然，我知道你见过
+and of course I know that you've seen
+
+27
+00:01:37,390 --> 00:01:40,544
+一种或两种方法做最小的方格和
+one or two ways to do least squares and
+
+28
+00:01:40,549 --> 00:01:43,125
+这真的是整个主题来了
+it's really the whole subject comes
+
+29
+00:01:43,130 --> 00:01:45,614
+我在这里想说些什么
+together here I want to say something
+
+30
+00:01:45,619 --> 00:01:50,985
+在我发出寻找计划之前
+before I send out a plan for looking
+
+31
+00:01:50,990 --> 00:01:55,845
+整个课程都是如此
+ahead for the course as a whole so
+
+32
+00:01:55,850 --> 00:01:58,065
+没有期末考试，我也没有
+there's no final exam and I don't really
+
+33
+00:01:58,070 --> 00:02:01,724
+看看如何检验你如何进行测试
+see how to examine you how to give tests
+
+34
+00:02:01,729 --> 00:02:05,684
+我当然可以创建我们的测试用途
+I could of course create our tests use
+
+35
+00:02:05,689 --> 00:02:08,415
+关于线性代数部分，但是
+it on about the linear algebra part but
+
+36
+00:02:08,420 --> 00:02:12,945
+我不认为这不是那种
+I don't think it's it's not sort of the
+
+37
+00:02:12,950 --> 00:02:14,814
+本课程的风格
+style of this course to
+
+38
+00:02:14,819 --> 00:02:17,995
+期待您快速创建证明
+to expect you quickly to create a proof
+
+39
+00:02:18,000 --> 00:02:20,904
+或者在我们班上的东西，但我想
+or something in in our class but I think
+
+40
+00:02:20,909 --> 00:02:23,604
+所以我想，特别是看
+so I think and especially looking at
+
+41
+00:02:23,609 --> 00:02:27,594
+我们走向了什么，走得很远
+what we're headed for and moving quite
+
+42
+00:02:27,599 --> 00:02:33,415
+所有这些都是朝这个方向稳步前进的
+steadily in that direction is all these
+
+43
+00:02:33,420 --> 00:02:35,934
+这些线性的所有问题
+all the problems that these this linear
+
+44
+00:02:35,939 --> 00:02:39,354
+代数是针对一个
+algebra is is aimed at right up to an
+
+45
+00:02:39,359 --> 00:02:42,865
+包括共轭梯度下降和
+including conjugate gradient descent and
+
+46
+00:02:42,870 --> 00:02:47,064
+并深入学习大
+and deep learning the the big the
+
+47
+00:02:47,069 --> 00:02:53,995
+非常重要和活泼
+overwhelmingly important and lively
+
+48
+00:02:54,000 --> 00:02:58,884
+活跃的研究领域，我不能
+active research area that's I couldn't
+
+49
+00:02:58,889 --> 00:03:01,344
+做得比保持上课更好
+do better than to get keep the course
+
+50
+00:03:01,349 --> 00:03:04,255
+走向那个方向所以我想是什么
+going in that direction so I think what
+
+51
+00:03:04,260 --> 00:03:10,255
+我想请你做的是后期和下旬
+I would ask you to do is late late and
+
+52
+00:03:10,260 --> 00:03:16,314
+排序四月/五月的常规家庭作业
+sort of april/may the regular homeworks
+
+53
+00:03:16,319 --> 00:03:19,374
+我会在某个时刻停止并且
+I'll discontinue at a certain point and
+
+54
+00:03:19,379 --> 00:03:23,755
+相反，我会问
+then instead I'll be asking and
+
+55
+00:03:23,760 --> 00:03:27,715
+鼓励一个我不知道的项目
+encouraging a project I don't know if
+
+56
+00:03:27,720 --> 00:03:30,775
+这是正确的字被使用
+that's the right word to be using in
+
+57
+00:03:30,780 --> 00:03:36,145
+你使用我们所做的和
+which you use what we've done for and
+
+58
+00:03:36,150 --> 00:03:38,755
+我会发出一个关于恒星的消息
+I'll send out a message on stellar
+
+59
+00:03:38,760 --> 00:03:42,685
+列表只有五六个区域
+listing like five or six areas and only
+
+60
+00:03:42,690 --> 00:03:45,384
+我的意思是其中一个是机器
+I mean one of them is the machine
+
+61
+00:03:45,389 --> 00:03:47,245
+学习深度学习的部分，但他们是
+learning deep learning part but they're
+
+62
+00:03:47,250 --> 00:03:49,495
+这一切的所有其他部分
+all the other parts that that that
+
+63
+00:03:49,500 --> 00:03:52,255
+事情我们已经学会了正在学习如何
+things we've learned to are learning how
+
+64
+00:03:52,260 --> 00:03:55,224
+如何找到稀疏的解决方案
+to do how to find sparse solutions for
+
+65
+00:03:55,229 --> 00:03:58,224
+关于。的例子或者什么
+example or or something about the
+
+66
+00:03:58,229 --> 00:04:00,805
+伪逆各种事情，所以
+pseudo-inverse all kinds of things so
+
+67
+00:04:00,810 --> 00:04:06,175
+我的目标是给你
+that's my goal is to would give you
+
+68
+00:04:06,180 --> 00:04:10,164
+使用这种材料的事情
+something to do which uses the material
+
+69
+00:04:10,169 --> 00:04:13,254
+你已经学会了，我不是
+you've learned and look I I'm not
+
+70
+00:04:13,259 --> 00:04:17,324
+期待论文，但这是一个
+expecting a thesis but it's a it's a
+
+71
+00:04:17,329 --> 00:04:20,245
+好机会所以它不仅仅是
+good chance so it will be more than just
+
+72
+00:04:20,250 --> 00:04:24,714
+喜欢拖一些代码进行深度学习
+like drag in some code for deep learning
+
+73
+00:04:24,719 --> 00:04:28,765
+和一些数据矩阵并做到这一点
+and and some data matrix and do it
+
+74
+00:04:28,770 --> 00:04:31,495
+但我们会粉笔amaura这是一个时间
+but we'll chalk amaura that's a time
+
+75
+00:04:31,500 --> 00:04:32,455
+来
+comes
+
+76
+00:04:32,460 --> 00:04:34,705
+就像我以前想的那样
+so like I just thought I'd say before
+
+77
+00:04:34,710 --> 00:04:36,655
+发出我要说的公告
+sending out the announcement I would say
+
+78
+00:04:36,660 --> 00:04:44,965
+它正在成为一个更大的东西
+it's coming about what as a as a larger
+
+79
+00:04:44,970 --> 00:04:47,875
+规模超过单一一周的作业
+scale than single one week homeworks
+
+80
+00:04:47,880 --> 00:04:51,625
+会在这里，他看到了
+would be here before and he saw it's
+
+81
+00:04:51,630 --> 00:04:54,085
+关于我没有给它我没有
+about that I haven't given it I haven't
+
+82
+00:04:54,090 --> 00:04:57,265
+给你的详细信息，以便让我做到这一点与
+given you details so let me do that with
+
+83
+00:04:57,270 --> 00:05:02,125
+一条消息，然后再问，但我
+a message and then ask again but I'm
+
+84
+00:05:02,130 --> 00:05:04,675
+我希望你能理解我的想法
+open to I hope you've understood I think
+
+85
+00:05:04,680 --> 00:05:07,194
+你有，如果你做
+you have that that if you make
+
+86
+00:05:07,199 --> 00:05:09,805
+直接建议我的电子邮件
+suggestions either directly to my email
+
+87
+00:05:09,810 --> 00:05:14,335
+或在广场或任何他们得到报酬
+or on Piazza or whatever they get paid
+
+88
+00:05:14,340 --> 00:05:18,085
+注意好的米歇尔，你就去
+attention to okay Michelle you just go
+
+89
+00:05:18,090 --> 00:05:21,715
+与最小二乘转发有啥
+forward with least squares so what's the
+
+90
+00:05:21,720 --> 00:05:23,965
+最小二乘问题，这些是什么
+least squares problem and what are these
+
+91
+00:05:23,970 --> 00:05:28,884
+每个人带来的四种方式让我这样
+four ways each each bringing so let me
+
+92
+00:05:28,889 --> 00:05:30,835
+首先谈谈伪逆
+speak about the pseudo-inverse first
+
+93
+00:05:30,840 --> 00:05:33,474
+好的矩阵的伪逆
+okay the pseudo inverse of a matrix
+
+94
+00:05:33,479 --> 00:05:42,685
+好吧，所以我们有一个Mby矩阵
+alright good so we have a matrix a M by
+
+95
+00:05:42,690 --> 00:05:46,404
+N和伪逆我要去
+N and the pseudo-inverse I'm going to
+
+96
+00:05:46,409 --> 00:05:50,634
+叫一个加号，它自然就会发生
+call a plus and it naturally it's gonna
+
+97
+00:05:50,639 --> 00:05:53,694
+我将会乘以那些
+be n by M I'm going to multiply those
+
+98
+00:05:53,699 --> 00:05:56,965
+在一起，我会得到尽可能接近
+together and I'm gonna get as near to
+
+99
+00:05:56,970 --> 00:06:00,414
+尽我所能，这是我的想法
+the identity as I can that's the idea of
+
+100
+00:06:00,419 --> 00:06:02,245
+当然是伪逆的这个词
+course of the pseudo-inverse the word
+
+101
+00:06:02,250 --> 00:06:05,485
+伪就在那里，所以没有人
+pseudo is in there so so no one's
+
+102
+00:06:05,490 --> 00:06:08,215
+欺骗了它不是一个真正的逆哦
+deceived it's not an actual inverse oh
+
+103
+00:06:08,220 --> 00:06:11,605
+如果矩阵是正方形并且有一个
+if the matrix is square and has an
+
+104
+00:06:11,610 --> 00:06:16,615
+当然反过来，如果反过来
+inverse of course then if if a inverse
+
+105
+00:06:16,620 --> 00:06:22,495
+存在哪个需要每个人
+exists which which requires a everybody
+
+106
+00:06:22,500 --> 00:06:24,715
+记得它需要矩阵
+remembers it requires the matrix to be
+
+107
+00:06:24,720 --> 00:06:27,625
+square是因为我的意思是两者相反
+square because I mean inverse on both
+
+108
+00:06:27,630 --> 00:06:33,685
+双方和它需要完整的排名
+sides and and it requires rank in full
+
+109
+00:06:33,690 --> 00:06:36,985
+等级然后你可以存在逆
+rank then the inverse will exist you can
+
+110
+00:06:36,990 --> 00:06:39,414
+检查它MATLAB会检查它
+check it MATLAB would check it by
+
+111
+00:06:39,419 --> 00:06:42,124
+计算消除的枢纽
+computing the pivots in elimination
+
+112
+00:06:42,129 --> 00:06:46,295
+找到并转动所以如果反过来
+finding and pivots so if a inverse
+
+113
+00:06:46,300 --> 00:06:49,864
+存在意味着a和a次a
+exists which means a and a times a
+
+114
+00:06:49,869 --> 00:06:54,274
+逆和反两次给出
+inverse and a inverse times a both give
+
+115
+00:06:54,279 --> 00:07:04,384
+然后我加一个当然是逆
+I then a plus is a inverse of course the
+
+116
+00:07:04,389 --> 00:07:06,694
+伪逆是那里的逆
+pseudo inverse is the inverse when there
+
+117
+00:07:06,699 --> 00:07:09,304
+是一个，但我正在考虑案件
+is one but I'm thinking about cases
+
+118
+00:07:09,309 --> 00:07:12,714
+其中或者所述矩阵是矩形的
+where either the matrix is rectangular
+
+119
+00:07:12,719 --> 00:07:19,834
+或者它具有零特征值就是它
+or or it has zero eigenvalues it it's it
+
+120
+00:07:19,839 --> 00:07:22,494
+可以是正方形但具有零空间
+could be square but has a null space
+
+121
+00:07:22,499 --> 00:07:25,954
+除了其他的零矢量
+other than just the zero vector in other
+
+122
+00:07:25,959 --> 00:07:29,164
+这些列依赖于什么可以
+words the columns are dependent what can
+
+123
+00:07:29,169 --> 00:07:32,825
+然后我们做反转它我们做不到
+we do then about inverting it we can't
+
+124
+00:07:32,830 --> 00:07:35,944
+如果a有空，则逐字地反转它
+literally invert it if if a has a null
+
+125
+00:07:35,949 --> 00:07:40,264
+然后当我乘以向量X时的空间
+space then when I multiply by a vector X
+
+126
+00:07:40,269 --> 00:07:44,524
+在那个零空间ax将是零和
+in that null space ax will be zero and
+
+127
+00:07:44,529 --> 00:07:48,124
+当我乘以倒数仍然为零时
+when I multiply by a inverse still zero
+
+128
+00:07:48,129 --> 00:07:51,334
+这不能改变零，所以如果有
+that can't change the zero so if there
+
+129
+00:07:51,339 --> 00:07:53,884
+是null空间中的X然后是这个
+is an X in the null space then this
+
+130
+00:07:53,889 --> 00:07:57,605
+不可能发生，但我们只是做到最好
+can't happen but so we just do the best
+
+131
+00:07:57,610 --> 00:07:59,944
+我们可以，这就是伪
+we can and that's what the pseudo
+
+132
+00:07:59,949 --> 00:08:03,424
+逆是，所以让我画一幅画
+inverse is and so let me draw a picture
+
+133
+00:08:03,429 --> 00:08:06,304
+你知道的那张照片
+of the the picture you know of the row
+
+134
+00:08:06,309 --> 00:08:12,124
+空间和零空间没关系，这是
+space and the null space okay and it's
+
+135
+00:08:12,129 --> 00:08:14,374
+在那里你看到有一个零空间和
+there you see there is a null space and
+
+136
+00:08:14,379 --> 00:08:17,574
+在这里我有列空间和
+over here I have the column space and
+
+137
+00:08:17,579 --> 00:08:21,934
+转置的零空间还可以
+the null space of a transpose okay so
+
+138
+00:08:21,939 --> 00:08:24,904
+这是行空间当然是一个
+this is the row space of course that's a
+
+139
+00:08:24,909 --> 00:08:28,264
+一个和一个转置的列空间
+column space of a and of a transpose and
+
+140
+00:08:28,269 --> 00:08:32,134
+有一个好这样的列空间
+there's the column space of a okay so
+
+141
+00:08:32,139 --> 00:08:34,084
+该图片的哪一部分是可逆的
+which part of that picture is invertible
+
+142
+00:08:34,089 --> 00:08:35,615
+以及图片的哪一部分
+and which part of the picture is
+
+143
+00:08:35,620 --> 00:08:39,814
+绝望的顶部是可逆的
+hopeless the top part is invertible this
+
+144
+00:08:39,819 --> 00:08:43,175
+是我们的维度行
+is the are sort of our dimensional row
+
+145
+00:08:43,180 --> 00:08:46,084
+空间我们的维柱空间a
+space our dimensional column space a
+
+146
+00:08:46,089 --> 00:08:49,564
+在这里采取矢量zaps它进入
+takes a vector in here zaps it into
+
+147
+00:08:49,569 --> 00:08:51,875
+每一个哦，你总是在列中
+every oh you always end up in the column
+
+148
+00:08:51,880 --> 00:08:55,894
+这里的空间在这里我带一个矢量
+space here here here I take a vector in
+
+149
+00:08:55,899 --> 00:08:56,045
+该
+the
+
+150
+00:08:56,050 --> 00:09:00,725
+行空间说X，它被映射到ax
+row space say X and it gets mapped to ax
+
+151
+00:09:00,730 --> 00:09:06,425
+在这两个空间之间是一个
+and between those two spaces a is
+
+152
+00:09:06,430 --> 00:09:10,715
+完全可逆，你知道你得到了
+entirely invertible you know you you get
+
+153
+00:09:10,720 --> 00:09:12,695
+这里单独的向量分开
+separate vectors here go to separate
+
+154
+00:09:12,700 --> 00:09:16,625
+列空间中的向量和
+vectors in the column space and the
+
+155
+00:09:16,630 --> 00:09:20,225
+反向只是把它带回来所以我们知道
+inverse just brings it back so we know
+
+156
+00:09:20,230 --> 00:09:23,524
+什么伪逆应该做的
+what the pseudo-inverse should do
+
+157
+00:09:23,529 --> 00:09:26,785
+我们会采取这样的方式
+it'll take a we'll take go that way and
+
+158
+00:09:26,790 --> 00:09:32,725
+加上伪逆将是正义的
+a plus the pseudo-inverse will be just
+
+159
+00:09:32,730 --> 00:09:37,355
+它会给我们的上半
+it will give us on the top half of the
+
+160
+00:09:37,360 --> 00:09:40,204
+图片它会给我们一个加号，我们会采取
+picture it'll give us a plus we'll take
+
+161
+00:09:40,209 --> 00:09:46,894
+现在斧头回到上半部分的x4
+ax back to x4 in the in the top half now
+
+162
+00:09:46,899 --> 00:09:49,625
+这就是我们所拥有的
+what about here that's where we have
+
+163
+00:09:49,630 --> 00:09:52,144
+麻烦我们没有那些破坏
+trouble we don't have that's what spoils
+
+164
+00:09:52,149 --> 00:09:54,334
+如果有一个零空格，我们的逆
+our inverse if there's a null space
+
+165
+00:09:54,339 --> 00:10:00,185
+矢量然后它去你的地方
+vector then it goes where when you
+
+166
+00:10:00,190 --> 00:10:02,915
+乘以null空间中的这个人
+multiply by a this guy in the null space
+
+167
+00:10:02,920 --> 00:10:08,255
+通常沿着直线变为零
+goes to zero usually along a straighter
+
+168
+00:10:08,260 --> 00:10:11,045
+行比我画，但去那里得到
+line than I've drawn but go there gets
+
+169
+00:10:11,050 --> 00:10:14,465
+为零，所以你不能从提高它
+to zero so you you can't raise it from
+
+170
+00:10:14,470 --> 00:10:16,715
+死者可以说你无法恢复
+the dead so to speak you can't recover
+
+171
+00:10:16,720 --> 00:10:18,995
+你们其中一个人没有办法反过来
+it one of you there's no way inverse so
+
+172
+00:10:19,000 --> 00:10:21,935
+我们必须考虑反向做什么
+we have to think what shall a inverse do
+
+173
+00:10:21,940 --> 00:10:25,865
+在这里没有人的空间
+to this space here where nobody's
+
+174
+00:10:25,870 --> 00:10:28,625
+击中它所以这就是这样
+hitting it so it's this was this would
+
+175
+00:10:28,630 --> 00:10:35,245
+是转置的零空间，因为
+be the null space of a transpose because
+
+176
+00:10:35,250 --> 00:10:38,135
+8/8对不起，应该是什么
+8/8 sorry yeah what should the
+
+177
+00:10:38,140 --> 00:10:40,925
+伪逆我说的应该是什么
+pseudo-inverse do I said what should the
+
+178
+00:10:40,930 --> 00:10:43,505
+反向做反过来是无奈的但是
+inverse do the inverse is helpless but
+
+179
+00:10:43,510 --> 00:10:47,015
+我们必须要定义一个加号我说过
+we have to to define a plus I've said
+
+180
+00:10:47,020 --> 00:10:49,115
+该怎么办呢
+what it should do on that guy on the
+
+181
+00:10:49,120 --> 00:10:51,635
+列空间它应该采取一切
+column space it should take everything
+
+182
+00:10:51,640 --> 00:10:53,014
+在它后面的列空间中
+in the column space back where it came
+
+183
+00:10:53,019 --> 00:10:56,935
+从但它应在此做
+from but what should it do on this
+
+184
+00:10:56,940 --> 00:11:00,875
+正交空间，耶，我告诉我
+orthogonal space where yeah just tell me
+
+185
+00:11:00,880 --> 00:11:04,265
+如果我有什么，你会怎么想？
+what what what do you think if I have
+
+186
+00:11:04,270 --> 00:11:07,265
+这里有一些矢量就是所谓的
+some vector here that's it's called that
+
+187
+00:11:07,270 --> 00:11:09,905
+VR加一个会
+V R plus one that would
+
+188
+00:11:09,910 --> 00:11:16,385
+就像这里在这里我有一个基础
+be like so here here I have a basis of a
+
+189
+00:11:16,390 --> 00:11:22,555
+很好的列空间的良好基础
+nice a nice basis for the column space
+
+190
+00:11:22,560 --> 00:11:27,145
+这个V我会用V代替
+this V's I would use V's for the for the
+
+191
+00:11:27,150 --> 00:11:30,545
+那些出现在SVD中的人
+ones that come up in the SVD they're
+
+192
+00:11:30,550 --> 00:11:32,975
+正交，它们来自正交
+orthogonal and they come from orthogonal
+
+193
+00:11:32,980 --> 00:11:36,485
+使用，以便上半部分是伟大的
+use so that top half is great what shall
+
+194
+00:11:36,490 --> 00:11:40,805
+我会用这些东西来做，我会发送的
+I do with this stuff I'm gonna send that
+
+195
+00:11:40,810 --> 00:11:44,765
+加一个加号，我去哪里
+back by a plus and where am I going what
+
+196
+00:11:44,770 --> 00:11:48,455
+我会把它发送给它知道
+am I gonna do with it send it to know
+
+197
+00:11:48,460 --> 00:11:50,495
+在哪里它可以变为零是正确的
+where else could it go zero is the right
+
+198
+00:11:50,500 --> 00:11:55,195
+回答所有这些东西都回归零
+answer all this stuff goes back to zero
+
+199
+00:11:55,200 --> 00:11:58,115
+我正在寻找线性Mayton线性
+I'm looking for a linear Mayton linear
+
+200
+00:11:58,120 --> 00:12:01,115
+算子矩阵，我不得不考虑
+operator a matrix and I have to think of
+
+201
+00:12:01,120 --> 00:12:03,275
+一旦我决定如何处理所有人
+once I've decided what to do with all
+
+202
+00:12:03,280 --> 00:12:05,885
+这些以及如何处理所有这些
+those and what to do with all these then
+
+203
+00:12:05,890 --> 00:12:07,565
+我知道如何处理任何组合
+I know what to do with any combination
+
+204
+00:12:07,570 --> 00:12:10,865
+所以我知道了我有这么所以
+so I've got it I've got it so so the
+
+205
+00:12:10,870 --> 00:12:16,925
+这个想法对于X来说是真实的
+idea will be this is true for X in the
+
+206
+00:12:16,930 --> 00:12:24,695
+如果是X，则行空间中X的行空间
+row space for X in the row space if X is
+
+207
+00:12:24,700 --> 00:12:26,915
+在行空间中，ax位于列中
+in the row space ax is in the column
+
+208
+00:12:26,920 --> 00:12:29,075
+空间和逆转只是把它带回来
+space and a inverse just brings it back
+
+209
+00:12:29,080 --> 00:12:32,855
+因为它应该和在一个案例中
+as it should and and in a in the case of
+
+210
+00:12:32,860 --> 00:12:35,735
+发生了可逆的矩阵
+an invertible matrix a what happens to
+
+211
+00:12:35,740 --> 00:12:37,805
+我的照片是什么照片
+my picture what does this picture
+
+212
+00:12:37,810 --> 00:12:41,345
+看起来如果a实际上是6乘
+looking like if a is actually a six by
+
+213
+00:12:41,350 --> 00:12:44,585
+在这种情况下六个可逆矩阵
+six invertible matrix in that case
+
+214
+00:12:44,590 --> 00:12:47,615
+什么是我的图片和什么是什么
+what's what's in my picture and what is
+
+215
+00:12:47,620 --> 00:12:51,845
+所有这些零空间都不在我的照片中
+not in my picture all this null space
+
+216
+00:12:51,850 --> 00:12:55,265
+东西不存在零空间
+stuff isn't there a null space is just
+
+217
+00:12:55,270 --> 00:12:58,655
+零向量，但不论我做不
+the zero vector but all that I don't
+
+218
+00:12:58,660 --> 00:13:00,665
+不得不担心，但总的来说我做
+have to worry about but in general I do
+
+219
+00:13:00,670 --> 00:13:03,785
+不得不说，这样的一点是，
+have to say so that the point is that a
+
+220
+00:13:03,790 --> 00:13:10,355
+加上我称之为什么
+plus on the what what am i calling this
+
+221
+00:13:10,360 --> 00:13:15,065
+哦它是转置的空间或
+ooh it's a null space of a transpose or
+
+222
+00:13:15,070 --> 00:13:20,345
+或者VR上的任何内容加上N到1
+or whatever on on V R plus 1 to the N
+
+223
+00:13:20,350 --> 00:13:23,255
+那些虽然那些
+those those though
+
+224
+00:13:23,260 --> 00:13:28,625
+那些人都是那些人
+those all those vectors the the guys
+
+225
+00:13:28,630 --> 00:13:30,995
+那些不是正交的
+that are not in the orthogonal to the
+
+226
+00:13:31,000 --> 00:13:34,625
+列空间然后你我们必须
+column space then your your we have to
+
+227
+00:13:34,630 --> 00:13:36,635
+说什么加分对他们和他们做了什么
+say what does a plus do to them and the
+
+228
+00:13:36,640 --> 00:13:41,105
+答案是它将所有这些都归零
+answer is it takes them all to zero so
+
+229
+00:13:41,110 --> 00:13:45,545
+有一张照片使用我所说的
+there's a picture using the what I call
+
+230
+00:13:45,550 --> 00:13:47,465
+线性代数的大图
+the big picture of linear algebra the
+
+231
+00:13:47,470 --> 00:13:50,825
+你看到四个空格应该加分
+four spaces you see what a plus should
+
+232
+00:13:50,830 --> 00:13:54,995
+现在我需要一个小公式
+do now I need a little formula for it
+
+233
+00:13:55,000 --> 00:13:58,385
+我有一个我已经有了它的计划
+I've got a I've got the plan for what it
+
+234
+00:13:58,390 --> 00:13:59,915
+应该是，而且它们有点像
+should be and it's they're sort of a
+
+235
+00:13:59,920 --> 00:14:03,575
+自然的事情所以A加上你可以
+natural thing so A plus a is you could
+
+236
+00:14:03,580 --> 00:14:06,815
+说它不是投影矩阵
+say up it's a projection matrix it's not
+
+237
+00:14:06,820 --> 00:14:11,315
+单位矩阵因为因为如果是X.
+the identity matrix because because if X
+
+238
+00:14:11,320 --> 00:14:14,105
+在零空间中加上ayayay
+is in the null space a plus ay ay ay
+
+239
+00:14:14,110 --> 00:14:17,885
+加上a将把它归零，但是如此
+plus a will take it to zero but so so
+
+240
+00:14:17,890 --> 00:14:20,165
+这是一个项目加一个是身份
+it's a project a plus a is the identity
+
+241
+00:14:20,170 --> 00:14:23,105
+在上半部分，在底部为零
+on the top half and zero on the bottom
+
+242
+00:14:23,110 --> 00:14:25,775
+那一半真的是那个
+half that's that's really what the
+
+243
+00:14:25,780 --> 00:14:32,285
+矩阵是，现在我想要一个简单的
+matrix is and now I want a simple
+
+244
+00:14:32,290 --> 00:14:35,375
+公式，而我想我的消息
+formula for it and I guess my message
+
+245
+00:14:35,380 --> 00:14:38,315
+这里要说的是，如果我们正在寻找一个不错的
+here is that if we're looking for a nice
+
+246
+00:14:38,320 --> 00:14:42,155
+表达式从SVD开始，因为
+expression start with the SVD because
+
+247
+00:14:42,160 --> 00:14:46,295
+SVD适用于任何矩阵和它
+the SVD works for any matrix and it
+
+248
+00:14:46,300 --> 00:14:49,355
+将其写为正交矩阵时间
+writes it as an orthogonal matrix times
+
+249
+00:14:49,360 --> 00:14:51,725
+对角矩阵乘以正交
+the diagonal matrix times an orthogonal
+
+250
+00:14:51,730 --> 00:14:56,675
+矩阵，现在我想反转它
+matrix and now I want to invert it well
+
+251
+00:14:56,680 --> 00:15:00,785
+假设a的反转是什么
+suppose a had an inverse what would that
+
+252
+00:15:00,790 --> 00:15:10,325
+如果这是F可逆的话
+be if this is F invertible what would be
+
+253
+00:15:10,330 --> 00:15:14,615
+反向的SVD是什么的
+the SVD of a inverse what would be the
+
+254
+00:15:14,620 --> 00:15:17,405
+奇异值分解，如果这样
+singular value decomposition if if this
+
+255
+00:15:17,410 --> 00:15:19,345
+很好，所以这什么时候会好的
+is good so when is this going to be good
+
+256
+00:15:19,350 --> 00:15:21,875
+什么会使我做什么
+that what would that make what would I
+
+257
+00:15:21,880 --> 00:15:23,915
+必须知道那个矩阵西格玛
+have to know about that matrix Sigma
+
+258
+00:15:23,920 --> 00:15:26,435
+中间的对角矩阵if
+that diagonal matrix in the middle if
+
+259
+00:15:26,440 --> 00:15:32,165
+这确实是一个可逆矩阵以及
+this is truly an invertible matrix well
+
+260
+00:15:32,170 --> 00:15:34,085
+知道那些不是它的名字
+know what's its name those are not
+
+261
+00:15:34,090 --> 00:15:37,025
+特征值很好，我可以的价值
+eigenvalues well there I can values of
+
+262
+00:15:37,030 --> 00:15:40,235
+a转置a但它们的奇异值
+a transpose a but their singular value
+
+263
+00:15:40,240 --> 00:15:42,305
+奇异的紫罗兰很好，所以这就是
+singular violets fine so that's the
+
+264
+00:15:42,310 --> 00:15:45,005
+奇异值矩阵和将会是什么
+singular value matrix and what would be
+
+265
+00:15:45,010 --> 00:15:50,305
+如果a有反转的情况
+the situation if if a had an inverse
+
+266
+00:15:50,310 --> 00:15:53,345
+所有人都没有零
+there would be no zeros all their
+
+267
+00:15:53,350 --> 00:15:54,995
+奇异的价值观将坐在那里
+singular values would be sitting there
+
+268
+00:15:55,000 --> 00:15:57,755
+Sigma12SigmaN会是什么样的
+Sigma 1 2 Sigma N what would be the
+
+269
+00:15:57,760 --> 00:16:01,115
+这个Sigma矩阵的形状，如果我是
+shape of this Sigma matrix if if if I
+
+270
+00:16:01,120 --> 00:16:03,185
+有一个逆，然后我必须它
+have an inverse then I've it's got to be
+
+271
+00:16:03,190 --> 00:16:06,845
+广场和N所以它的形状是什么
+square and by N so what's the shape of
+
+272
+00:16:06,850 --> 00:16:12,305
+西格玛的家伙也是正方形而且是如此
+the Sigma guy also square and by n so so
+
+273
+00:16:12,310 --> 00:16:16,235
+可逆的情况将是，我
+the invertible case would be and I'm
+
+274
+00:16:16,240 --> 00:16:18,185
+要消除这种在一分钟内
+gonna erase this in a minute the
+
+275
+00:16:18,190 --> 00:16:21,785
+可转换的情况将是Sigma的时候
+invertible case would be when Sigma is
+
+276
+00:16:21,790 --> 00:16:24,755
+只是那将是可逆的
+just that that would be the invertible
+
+277
+00:16:24,760 --> 00:16:29,765
+如此让我们看看你能完成这个吗？
+case so let's see can you finish this
+
+278
+00:16:29,770 --> 00:16:33,965
+公式什么是SVD
+formula what would be the SVD of a
+
+279
+00:16:33,970 --> 00:16:37,265
+所以我给了我一个SVD
+inverse so I've given the SVD of a I'm
+
+280
+00:16:37,270 --> 00:16:40,115
+鉴于U和这个西格玛很酷
+given the U and this Sigma is cool and
+
+281
+00:16:40,120 --> 00:16:43,895
+V转置了与之相反的东西
+the V transpose what's the inverse of
+
+282
+00:16:43,900 --> 00:16:44,345
+那
+that
+
+283
+00:16:44,350 --> 00:16:45,935
+好吧，我真的在问你
+well yeah I'm just really asking you
+
+284
+00:16:45,940 --> 00:16:48,095
+什么是该产品的反转
+what's the inverse of that product of
+
+285
+00:16:48,100 --> 00:16:53,125
+这是第一个来自V的三个矩阵
+three matrices what comes first here V
+
+286
+00:16:53,130 --> 00:16:56,405
+V转置的倒数是V的
+the inverse of V transpose is V that's
+
+287
+00:16:56,410 --> 00:17:00,335
+因为V是正交矩阵
+because V is a orthogonal matrix the
+
+288
+00:17:00,340 --> 00:17:02,915
+西格玛的倒数我只是1
+inverse of Sigma I just 1 over it is
+
+289
+00:17:02,920 --> 00:17:05,465
+只是西格玛反转显然是什么
+just the Sigma inverse it's obvious what
+
+290
+00:17:05,470 --> 00:17:08,345
+这意味着U的逆转
+that means and the inverse of U would go
+
+291
+00:17:08,350 --> 00:17:13,175
+这里并为U转伟大确定，所以
+here and that is U transpose great ok so
+
+292
+00:17:13,180 --> 00:17:16,955
+如果我们可逆，这是可逆的
+this is f invertible if invertible we
+
+293
+00:17:16,960 --> 00:17:21,665
+知道逆转的SVD是什么
+know what the SVD of a inverse is it
+
+294
+00:17:21,670 --> 00:17:24,605
+只需将V带回欧盟
+just takes the V's back to the eu's
+
+295
+00:17:24,610 --> 00:17:28,925
+接受它或他们使用回到V的
+takes it or they use back to the V's
+
+296
+00:17:28,930 --> 00:17:33,505
+无论哪个好，现在我们必须这样做
+whichever ok ok now we've got to do it
+
+297
+00:17:33,510 --> 00:17:38,375
+如果我们要允许的话
+if we're going to allow if we're gonna
+
+298
+00:17:38,380 --> 00:17:41,585
+超出这个限制的情况
+get beyond this limit the situation
+
+299
+00:17:41,590 --> 00:17:46,015
+允许矩阵Sigma为矩形
+allow the matrix Sigma to be rectangular
+
+300
+00:17:46,020 --> 00:17:49,685
+然后让我告诉你这个想法
+then let me just show you how the idea
+
+301
+00:17:49,690 --> 00:17:50,495
+这里
+here
+
+302
+00:17:50,500 --> 00:17:56,345
+所以现在我要说现在Sigma
+so so now I'm gonna say now Sigma in
+
+303
+00:17:56,350 --> 00:18:00,855
+一般它的矩形它是我们的非
+general its rectangular it's got our non
+
+304
+00:18:00,860 --> 00:18:03,485
+在对角线上零，但然后它退出
+zeros on the diagonal but then it quits
+
+305
+00:18:03,490 --> 00:18:06,585
+所以它有一堆零
+so it's it's got a bunch of zeros that
+
+306
+00:18:06,590 --> 00:18:10,365
+使它不可逆但是让我们做
+to make it not invertible but let's do
+
+307
+00:18:10,370 --> 00:18:15,495
+我们最好和伪逆现在好了
+our best and pseudo-inverse okay so now
+
+308
+00:18:15,500 --> 00:18:18,345
+我会帮助我开始一个公式
+I'll help me get started on a formula
+
+309
+00:18:18,350 --> 00:18:22,395
+使用我想写这个加号
+for using I want to write this a plus
+
+310
+00:18:22,400 --> 00:18:25,725
+就那里所描述而言
+which are described up there in terms of
+
+311
+00:18:25,730 --> 00:18:28,935
+现在我要描述的子空间
+the subspaces now I'm going to describe
+
+312
+00:18:28,940 --> 00:18:33,285
+关于Sigma和V的加分
+a plus in terms of you Sigma and V the
+
+313
+00:18:33,290 --> 00:18:37,455
+在SVD的家伙还好，那应该是什么
+in the SVD guys okay so what what shall
+
+314
+00:18:37,460 --> 00:18:40,335
+我从这里开始，让我给一个
+I start with here well let me give a
+
+315
+00:18:40,340 --> 00:18:43,455
+暗示我只是这是一个很好的开始
+hint I'll just that was a great start my
+
+316
+00:18:43,460 --> 00:18:47,745
+V仍然是正交矩阵V.
+V is still an orthogonal matrix V
+
+317
+00:18:47,750 --> 00:18:49,455
+转置仍然是正交矩阵
+transpose is still an orthogonal matrix
+
+318
+00:18:49,460 --> 00:18:53,385
+我会在最后反转它
+I'll invert it at the end
+
+319
+00:18:53,390 --> 00:18:58,065
+U对所有问题都没有问题
+the U was no problem all the problems
+
+320
+00:18:58,070 --> 00:19:04,785
+在Sigma和Sigma中都记得Sigma
+are in Sigma and Sigma remember Sigma so
+
+321
+00:19:04,790 --> 00:19:07,125
+它是矩形的，也许我会成功
+it's it's rectangular maybe I'll make it
+
+322
+00:19:07,130 --> 00:19:10,575
+喜欢广泛，也许我会
+like wide for to wide and maybe I'll
+
+323
+00:19:10,580 --> 00:19:14,054
+只给它非零，然后全部
+only give it to non zeros and then all
+
+324
+00:19:14,059 --> 00:19:18,495
+其余的，所以我的矩阵a的等级是2
+the rest so the rank of my matrix a is 2
+
+325
+00:19:18,500 --> 00:19:24,015
+但是m和n大于2
+but the m and n are bigger than 2 it's
+
+326
+00:19:24,020 --> 00:19:26,445
+它只有两个独立的列
+it's just got two independent columns
+
+327
+00:19:26,450 --> 00:19:30,015
+然后它只是完全一点
+and then then it's just sort of totally
+
+328
+00:19:30,020 --> 00:19:34,275
+单数好吧所以我的问题是什么
+singular okay so my question is what am
+
+329
+00:19:34,280 --> 00:19:36,674
+我会把它放在那里，我已经描述过了
+I going to put there and I've described
+
+330
+00:19:36,679 --> 00:19:38,625
+这是一种方式，但现在我要描述它
+it one way but now I'm gonna describe it
+
+331
+00:19:38,630 --> 00:19:41,715
+另一种方式让我说出我的意思
+another way well let me just say what I
+
+332
+00:19:41,720 --> 00:19:43,755
+我将放在那里的是伪
+what I'll put there is the pseudo
+
+333
+00:19:43,760 --> 00:19:47,625
+西格玛的逆转我不能把西格玛
+inverse of Sigma I can't put Sigma
+
+334
+00:19:47,630 --> 00:19:50,985
+反过来你使用那个符号，因为它
+inverse you using that symbol because it
+
+335
+00:19:50,990 --> 00:19:54,195
+没有这样的事我不能
+there is no such thing with this I can't
+
+336
+00:19:54,200 --> 00:19:59,475
+颠倒它，这是我能做到的最好的
+invert it so that's the best I can do so
+
+337
+00:19:59,480 --> 00:20:02,804
+我差不多完成但是要完成我必须这样做
+I'm almost done but to finish I have to
+
+338
+00:20:02,809 --> 00:20:04,325
+告诉你那是什么
+tell you what does that
+
+339
+00:20:04,330 --> 00:20:08,255
+什么是这个东西，所以西格玛加
+what what is this thing so Sigma plus
+
+340
+00:20:08,260 --> 00:20:11,414
+我现在要告诉你Sigmaplus和
+I'm now going to tell you Sigma plus and
+
+341
+00:20:11,419 --> 00:20:14,685
+那就是应该坐在那里的东西
+then that's what should sit there in the
+
+342
+00:20:14,690 --> 00:20:17,414
+如果西格玛是这个对角线那么中间
+middle so if Sigma is this diagonal
+
+343
+00:20:17,419 --> 00:20:20,654
+在两个Sigma之后退出的矩阵
+matrix which quits after two Sigma's
+
+344
+00:20:20,659 --> 00:20:23,265
+什么西格玛加上第一个好
+what should Sigma plus be well first of
+
+345
+00:20:23,270 --> 00:20:27,015
+它应该是另一个矩形
+all it should be rectangular the other
+
+346
+00:20:27,020 --> 00:20:31,154
+如果这是Mbyn列和
+way if this was M by n column and
+
+347
+00:20:31,159 --> 00:20:34,745
+列和M行现在我想要n
+columns and M rows now I want to have n
+
+348
+00:20:34,750 --> 00:20:41,775
+行和M列，是的，这是
+rows and M columns and yeah here's the
+
+349
+00:20:41,780 --> 00:20:44,085
+质疑什么是最好的逆转你
+question what's the best inverse you
+
+350
+00:20:44,090 --> 00:20:47,475
+能想出对于适马我的意思
+could come up with for that Sigma I mean
+
+351
+00:20:47,480 --> 00:20:51,315
+如果有人独立于1806五，如果
+if somebody independent of 1806 five if
+
+352
+00:20:51,320 --> 00:20:54,105
+有人要求你尽力反转
+somebody asks you do your best to invert
+
+353
+00:20:54,110 --> 00:20:57,525
+那个矩阵我想我们都同意它
+that matrix I think we'd all agree it is
+
+354
+00:20:57,530 --> 00:21:02,475
+是的，一个人会超过西格玛
+yeah one over the Sigma one would come
+
+355
+00:21:02,480 --> 00:21:06,674
+那里有一个超过西格玛2然后非
+there and one over Sigma two then non
+
+356
+00:21:06,679 --> 00:21:12,284
+零，然后零我认为你只是
+zeros and then zeros I think you just
+
+357
+00:21:12,289 --> 00:21:14,445
+在那里，我们没有，我们没有
+the way up there we didn't we didn't
+
+358
+00:21:14,450 --> 00:21:15,164
+知道该怎么做
+know what to do
+
+359
+00:21:15,169 --> 00:21:18,105
+什么时候没有什么好做的零
+when there was nothing good to do zero
+
+360
+00:21:18,110 --> 00:21:20,534
+是这样的答案是对的吗？
+was there was the right answer so so
+
+361
+00:21:20,539 --> 00:21:23,865
+当然这都是零
+this is all zeroes of course it's
+
+362
+00:21:23,870 --> 00:21:26,085
+另一种方式是矩形，但你看到了吗？
+rectangular the other way but do you see
+
+363
+00:21:26,090 --> 00:21:29,835
+如果我乘以Sigma加倍
+that if I multiply Sigma plus times
+
+364
+00:21:29,840 --> 00:21:32,414
+Sigma，如果我乘以伪逆
+Sigma if I multiply the pseudo inverse
+
+365
+00:21:32,419 --> 00:21:36,015
+倍矩阵我会得到什么，如果我
+times the matrix what do I get if I
+
+366
+00:21:36,020 --> 00:21:39,945
+乘以那就是那个
+multiply that by that what does that
+
+367
+00:21:39,950 --> 00:21:42,075
+您可以描述乘法产品
+multiplication produce can you describe
+
+368
+00:21:42,080 --> 00:21:45,375
+当你告诉我什么时，我还可以
+the well or I can when you tell me what
+
+369
+00:21:45,380 --> 00:21:47,475
+看起来我会把它写下来所以
+it looks like I'll write it down so what
+
+370
+00:21:47,480 --> 00:21:51,525
+如果Sigma是a，则是Sigma加上时间Sigma
+is Sigma plus time Sigma if Sigma is a
+
+371
+00:21:51,530 --> 00:21:54,375
+对角线Sigmaplus是对角线和
+diagonal Sigma plus is a diagonal and
+
+372
+00:21:54,380 --> 00:21:59,804
+两个人之后他们都退出了
+they both quit after two guys what do I
+
+373
+00:21:59,809 --> 00:22:04,935
+有一个因为Sigma1倍1
+have one because Sigma 1 times 1 over
+
+374
+00:22:04,940 --> 00:22:09,075
+Sigma1是1，另一个是下一个
+Sigma 1 is a 1 and the other next guy is
+
+375
+00:22:09,080 --> 00:22:15,525
+a1，其余都是0，这是对的
+a 1 and the rest are all 0 that's right
+
+376
+00:22:15,530 --> 00:22:18,625
+这是我能做到的最好的排名
+it's the best I could do the rank was
+
+377
+00:22:18,630 --> 00:22:21,985
+只有两个，所以我无法到达任何地方
+only two so I couldn't get anywhere so
+
+378
+00:22:21,990 --> 00:22:26,415
+这告诉你什么Sigmaplus是好的
+that tells you what Sigma plus is okay
+
+379
+00:22:26,420 --> 00:22:30,325
+所以我描述了伪逆
+so I described the pseudo-inverse then
+
+380
+00:22:30,330 --> 00:22:33,174
+用空间图片然后用
+with a picture of spaces and then with a
+
+381
+00:22:33,179 --> 00:22:37,105
+矩阵的公式，现在我想
+formula of matrices and now I want to
+
+382
+00:22:37,110 --> 00:22:40,674
+在最小的方格中使用它，所以现在我要去了
+use it in least squares so now I'm going
+
+383
+00:22:40,679 --> 00:22:43,255
+说什么是最小二乘问题
+to say what is the least squares problem
+
+384
+00:22:43,260 --> 00:22:47,155
+而解决它的第一种方法是
+and the first way to solve it will be to
+
+385
+00:22:47,160 --> 00:22:51,475
+让我们做一个加号会给
+let do to involve a plus will give the
+
+386
+00:22:51,480 --> 00:22:54,924
+解决方案好吧那是什么呢
+solution okay so what is the what is the
+
+387
+00:22:54,929 --> 00:23:00,075
+最小二乘问题让我把它放在这里
+least squares problem let me put it here
+
+388
+00:23:00,080 --> 00:23:04,304
+[掌声]
+[Applause]
+
+389
+00:23:04,309 --> 00:23:07,405
+好吧，最小二乘问题很简单
+okay the least squares problem is simply
+
+390
+00:23:07,410 --> 00:23:14,635
+你有一个方程ax等于B但a是
+you have an equation ax equal B but a is
+
+391
+00:23:14,640 --> 00:23:18,775
+不可逆的，所以你解决不了的
+not invertible so you can't solve it of
+
+392
+00:23:18,780 --> 00:23:22,765
+当然对于这啊，你可以找到你
+course for which yeah you could find you
+
+393
+00:23:22,770 --> 00:23:25,255
+可以解决这个问题对于某些B的，如果B是
+could solve it for certain B's if B is
+
+394
+00:23:25,260 --> 00:23:28,674
+在a的列空间中只是通过
+in the column space of a then just by
+
+395
+00:23:28,679 --> 00:23:30,955
+列空间的含义有一个
+the meaning of column space this has a
+
+396
+00:23:30,960 --> 00:23:33,475
+解决列空间中的向量
+solution the vectors in the column space
+
+397
+00:23:33,480 --> 00:23:36,804
+是你可以得到的那些人
+are the guys that you can get but the
+
+398
+00:23:36,809 --> 00:23:39,025
+你在正交空间中的向量
+vectors in the orthogonal space you
+
+399
+00:23:39,030 --> 00:23:41,095
+不能得到所有其他的向量
+cannot get all the rest of the vectors
+
+400
+00:23:41,100 --> 00:23:44,485
+你不能这么想，就像这样
+you cannot get so suppose this is like
+
+401
+00:23:44,490 --> 00:23:53,685
+所以但总是a是M乘n等级R和
+so but always a is M by n rank R and
+
+402
+00:23:53,690 --> 00:24:00,975
+然后我们在M时得到一个逆
+that that then we get a inverse when M
+
+403
+00:24:00,980 --> 00:24:04,765
+等于N等于R是可逆的
+equals N equals R that's the invertible
+
+404
+00:24:04,770 --> 00:24:11,005
+caseok我们用什么做系统
+case ok what do we do with a system of
+
+405
+00:24:11,010 --> 00:24:15,385
+我们无法解决它的方程式
+equations when we can't solve it that's
+
+406
+00:24:15,390 --> 00:24:17,605
+这可能是主要的应用
+this is probably the main application in
+
+407
+00:24:17,610 --> 00:24:24,674
+1806所以你以前见过这个问题
+1806 so you've seen this problem before
+
+408
+00:24:24,679 --> 00:24:27,895
+如果ax等于B没有，我们该怎么办？
+what do we do if ax equal B has no
+
+409
+00:24:27,900 --> 00:24:28,955
+解
+solution
+
+410
+00:24:28,960 --> 00:24:31,775
+所以通常B将是一个向量
+so typically B would be a vector of
+
+411
+00:24:31,780 --> 00:24:34,145
+我们正在追踪的测量结果
+measurements like we're tracking a
+
+412
+00:24:34,150 --> 00:24:39,365
+卫星，我们得到一些测量
+satellite and we get some measurements
+
+413
+00:24:39,370 --> 00:24:42,965
+但我们常常得到太多
+but and often we get too many
+
+414
+00:24:42,970 --> 00:24:45,035
+测量，当然有一个
+measurements and of course there's a
+
+415
+00:24:45,040 --> 00:24:47,525
+它们的噪音很小，噪音很小
+little noise in them and a little noise
+
+416
+00:24:47,530 --> 00:24:49,775
+意味着我们无法解决方程式
+means that we can't solve the equations
+
+417
+00:24:49,780 --> 00:24:54,125
+也许我们就是每个人的情况
+that maybe we're the case everybody
+
+418
+00:24:54,130 --> 00:24:57,995
+知道这就是这个地方
+knows is where a where this this
+
+419
+00:24:58,000 --> 00:25:01,745
+方程就像表达一个直
+equation is like expressing a straight
+
+420
+00:25:01,750 --> 00:25:04,205
+线经过数据点所以
+line going through the data point so the
+
+421
+00:25:04,210 --> 00:25:07,135
+这些广场的着名例子是
+the famous example of these squares is
+
+422
+00:25:07,140 --> 00:25:16,895
+直线适合直线
+fit a straight line a straight line to
+
+423
+00:25:16,900 --> 00:25:21,635
+B的2B1B2我们有他们
+the B's 2 B 1 B 2 we've got em
+
+424
+00:25:21,640 --> 00:25:27,595
+测量我们有测量
+measurements we've got em measurements
+
+425
+00:25:27,600 --> 00:25:31,655
+物理或的机制
+the physics or the mechanics of the
+
+426
+00:25:31,660 --> 00:25:34,295
+问题是非常线性但是
+problem is pretty well linear but of
+
+427
+00:25:34,300 --> 00:25:37,325
+当然有噪音和直
+course there's noise and the straight
+
+428
+00:25:37,330 --> 00:25:40,195
+线只有两个自由度
+line only has two degrees of freedom
+
+429
+00:25:40,200 --> 00:25:42,605
+但是我们只有两个
+however so we're going to have only two
+
+430
+00:25:42,610 --> 00:25:47,375
+在我们的矩阵列将只有两个
+columns in our matrix a will be only two
+
+431
+00:25:47,380 --> 00:25:53,585
+高很多行的列
+columns with many rows highly
+
+432
+00:25:53,590 --> 00:25:56,585
+矩形所以适合直线让
+rectangular so fit a straight line let
+
+433
+00:25:56,590 --> 00:26:00,965
+我打电话给CXPlusD说这是
+me call that line CX Plus D say this is
+
+434
+00:26:00,970 --> 00:26:04,435
+X方向这是蜜蜂
+the X direction this is the the bees
+
+435
+00:26:04,440 --> 00:26:07,205
+方向，我们有一大堆
+direction and we've got a whole bunch of
+
+436
+00:26:07,210 --> 00:26:10,625
+数据点，他们不在一条线或
+data points and they're not on a line or
+
+437
+00:26:10,630 --> 00:26:14,585
+他们是在一条线上什么我怎么会怎样
+they are in a line what how would I how
+
+438
+00:26:14,590 --> 00:26:17,935
+假设那些人确实躺在线上
+what suppose those did lie on the line
+
+439
+00:26:17,940 --> 00:26:21,065
+什么会告诉我关于斧头等于B
+what would that tell me about ax equal B
+
+440
+00:26:21,070 --> 00:26:25,685
+我没有说过我需要的一切但是
+I haven't said everything I need to but
+
+441
+00:26:25,690 --> 00:26:28,025
+也许洞察力就是我在这里所追求的
+maybe the insight is what I'm after here
+
+442
+00:26:28,030 --> 00:26:33,035
+如果我，如果我的分数是正确的那么
+if I if my points are right on a line so
+
+443
+00:26:33,040 --> 00:26:36,355
+有一条直线贯穿其中
+there is a straight line through them
+
+444
+00:26:36,360 --> 00:26:41,555
+这里的未知数是如此之低B所以斧头
+the unknowns here is so low B so ax the
+
+445
+00:26:41,560 --> 00:26:42,754
+这里有未知数
+unknowns here are
+
+446
+00:26:42,759 --> 00:26:47,164
+C＆D和右手边都是我的
+C&D and the right hand side is all my
+
+447
+00:26:47,169 --> 00:26:56,374
+测量好吧假设没有我的
+measurements okay suppose without my
+
+448
+00:26:56,379 --> 00:26:57,484
+画一幅画
+drawing a picture
+
+449
+00:26:57,489 --> 00:27:00,544
+假设这些点上线
+suppose the these points are on the line
+
+450
+00:27:00,549 --> 00:27:03,454
+这里是不同的X's
+here here's the different X's the
+
+451
+00:27:03,459 --> 00:27:05,734
+测量x这里是不同的
+measurement x here's the different
+
+452
+00:27:05,739 --> 00:27:10,294
+测量，但如果他们在一条线上
+measurements but if they're on a line
+
+453
+00:27:10,299 --> 00:27:13,474
+那告诉我什么是线性的
+what does that tell me about my linear
+
+454
+00:27:13,479 --> 00:27:19,074
+系统ax等于B它有一个解决方案
+system ax equal B it has a solution
+
+455
+00:27:19,079 --> 00:27:21,634
+在一条线上意味着一切都是
+being on a line means everything's
+
+456
+00:27:21,639 --> 00:27:24,814
+完美有一个解决方案，但会
+perfect there is a solution but will
+
+457
+00:27:24,819 --> 00:27:27,664
+肯定有一个解决方案
+there usually be a solution certainly
+
+458
+00:27:27,669 --> 00:27:30,844
+如果我只有两个参数两个，那就不行了
+not if I have only two parameters two
+
+459
+00:27:30,849 --> 00:27:36,514
+未知两列这里的等级是
+unknowns two columns here the rank is
+
+460
+00:27:36,519 --> 00:27:39,274
+会是两个，在这里我想
+going to be two and here I'm trying to
+
+461
+00:27:39,279 --> 00:27:44,764
+击中任何嘈杂的测量值
+hit any noisy set of measurements so of
+
+462
+00:27:44,769 --> 00:27:46,594
+一般来说，图片看起来很像
+course in general the picture will look
+
+463
+00:27:46,599 --> 00:27:48,844
+那样的，我会找的
+like that and I'm gonna look for the
+
+464
+00:27:48,849 --> 00:27:58,685
+最好的C和D所以我称之为CXCCX
+best C and D so I'll call it C X C CX
+
+465
+00:27:58,690 --> 00:28:04,144
+加上D是的，对不起那就是我的
+Plus D yeah right sorry that's that's my
+
+466
+00:28:04,149 --> 00:28:09,534
+那么那些是我的等式哦哦
+line so those are my equation so oh
+
+467
+00:28:09,539 --> 00:28:14,344
+对不起，我经常把它写成C加DX吧
+sorry I often write it C plus D X do you
+
+468
+00:28:14,349 --> 00:28:17,464
+如果我把常数术语放在首位，请注意
+mind if I put the constant term first in
+
+469
+00:28:17,469 --> 00:28:21,185
+在高度困难的等式中
+the in the highly difficult equation
+
+470
+00:28:21,190 --> 00:28:28,144
+这里是一条直线所以让我告诉你
+here for a straight line so let me tell
+
+471
+00:28:28,149 --> 00:28:31,324
+你是我，所以这些是重点
+you what I'm so these are the the points
+
+472
+00:28:31,329 --> 00:28:34,084
+你有一个测量X1X2的地方
+where you have a measurement X 1 X 2 up
+
+473
+00:28:34,089 --> 00:28:36,904
+到XM，这些都是实际的
+to X M and these are the actual
+
+474
+00:28:36,909 --> 00:28:40,024
+测量B1直到BM让我们说和
+measurements B 1 up to BM let's say and
+
+475
+00:28:40,029 --> 00:28:43,564
+那我的方程式是啊
+then my equations are yeah
+
+476
+00:28:43,569 --> 00:28:45,784
+我只想在这里设置你的矩阵
+I'm just want to set up your matrix here
+
+477
+00:28:45,789 --> 00:28:49,774
+我只是想设置矩阵，所以我
+I just want to set up the matrix so I
+
+478
+00:28:49,779 --> 00:28:53,464
+希望C得到每一个乘以
+want C to get multiplied by ones every
+
+479
+00:28:53,469 --> 00:28:56,645
+时间，我想要契约
+time and I want deed
+
+480
+00:28:56,650 --> 00:29:00,215
+得到乘以这些X的X1X2X3
+get multiplied by these X's X 1 X 2 X 3
+
+481
+00:29:00,220 --> 00:29:06,545
+XM测量位置有
+X M the measurement places and there was
+
+482
+00:29:06,550 --> 00:29:11,045
+无论如何测量和我的部分
+a measurements anyway and the part my
+
+483
+00:29:11,050 --> 00:29:15,545
+问题是这没有解决方案等等
+problem is this has no solution and so
+
+484
+00:29:15,550 --> 00:29:19,855
+那么当没有解决方案时我该怎么办？
+so what do I do when there's no solution
+
+485
+00:29:19,860 --> 00:29:25,085
+好吧，我会做他所做的高斯
+well well I'll do what gauss did he was
+
+486
+00:29:25,090 --> 00:29:27,155
+一个优秀的数学家，所以我会跟着他
+a good mathematician so i'll follow his
+
+487
+00:29:27,160 --> 00:29:31,205
+意见，我也不会做这一切学期
+advice and I won't do it all semester as
+
+488
+00:29:31,210 --> 00:29:33,185
+你懂
+you know
+
+489
+00:29:33,190 --> 00:29:40,325
+所以，高斯的建议是最小化我
+so but Gauss's advice was minimize I'll
+
+490
+00:29:40,330 --> 00:29:43,835
+责怪高斯的距离
+blame it on the Gauss the distance
+
+491
+00:29:43,840 --> 00:29:49,685
+在ax+B之间平方l2范数
+between a x + B squared the l2 norm
+
+492
+00:29:49,690 --> 00:29:56,735
+平方，这只是一个X.
+squared which was which is just a X
+
+493
+00:29:56,740 --> 00:30:02,405
+减去B转置轴减去B它是a
+minus B transpose ax minus B it's a
+
+494
+00:30:02,410 --> 00:30:07,505
+二次方和最小化它给了我一个
+quadratic and minimizing it gives me a
+
+495
+00:30:07,510 --> 00:30:10,565
+线性方程组的系统，以便在端
+system of linear equations so in the end
+
+496
+00:30:10,570 --> 00:30:12,845
+他们将有一个解决方案，所以这是
+they will have a solution so that's the
+
+497
+00:30:12,850 --> 00:30:15,065
+我们有一个这些方块的整点
+whole point of these squares we have an
+
+498
+00:30:15,070 --> 00:30:20,165
+不可解决的问题不是没有解决方案我们
+unsolvable problem not no solution we
+
+499
+00:30:20,170 --> 00:30:23,155
+遵循高斯的建议，以获得最好的
+follow a Gauss's advice to get the best
+
+500
+00:30:23,160 --> 00:30:28,235
+我们可以而且确实会产生答案
+we can and that does produce an answer
+
+501
+00:30:28,240 --> 00:30:32,525
+所以这是这是，如果我乘这是
+so this is this is if I multiply this as
+
+502
+00:30:32,530 --> 00:30:36,725
+出作为X变调转置斧子那
+out as X transpose a transpose ax that
+
+503
+00:30:36,730 --> 00:30:39,995
+来自平方术语然后我
+comes from the square term and then I
+
+504
+00:30:40,000 --> 00:30:45,205
+可能这些实际意志
+have probably these actually will
+
+505
+00:30:45,210 --> 00:30:48,065
+可能我会得到其中的两个然后
+probably I'll get two of those and then
+
+506
+00:30:48,070 --> 00:30:52,385
+一个具有导数0的常数项
+a constant term that has derivative 0 so
+
+507
+00:30:52,390 --> 00:30:55,055
+它没有进入所以这就是我的意思
+it doesn't enter so this is what I'm
+
+508
+00:30:55,060 --> 00:30:59,515
+最小化这是损失函数和
+minimizing this is the loss function and
+
+509
+00:30:59,520 --> 00:31:03,695
+它导致让我们跳到这样
+it leads to let's just jump to the so
+
+510
+00:31:03,700 --> 00:31:08,465
+这里的关键是我的方程式
+the to the key here what equation do I
+
+511
+00:31:08,470 --> 00:31:10,264
+得到我的时候
+get when I
+
+512
+00:31:10,269 --> 00:31:15,274
+什么方程式由最好的解决
+for what equation is solved by the best
+
+513
+00:31:15,279 --> 00:31:21,514
+X最好的X最好的行为解决了
+X the best X the best act solves the
+
+514
+00:31:21,519 --> 00:31:25,264
+着名所以这是回归和
+famous so this is regression and
+
+515
+00:31:25,269 --> 00:31:31,644
+统计线性回归
+statistics linear regression
+
+516
+00:31:31,649 --> 00:31:35,464
+其中一个主要的计算和
+one of the main computations and
+
+517
+00:31:35,469 --> 00:31:37,264
+统计数据当然不仅仅是为了
+statistics not of course just for
+
+518
+00:31:37,269 --> 00:31:41,524
+直线适合任何系统斧头
+straight line fits but for any system ax
+
+519
+00:31:41,529 --> 00:31:45,994
+等于B将导致这个最小值
+equal B that will lead to this minimum
+
+520
+00:31:45,999 --> 00:31:48,634
+将导致一个方程组
+will lead to a system of equations that
+
+521
+00:31:48,639 --> 00:31:51,065
+我打算放一个盒子，因为
+I'm going to put a box around because
+
+522
+00:31:51,070 --> 00:31:55,714
+它是如此根本，你愿意吗？
+it's so fundamental and are you willing
+
+523
+00:31:55,719 --> 00:31:59,134
+告诉我这个等式是肯定的
+to tell me what that equation is yes
+
+524
+00:31:59,139 --> 00:32:03,544
+感谢转置，它会来
+thanks a transpose a it's gonna come
+
+525
+00:32:03,549 --> 00:32:08,574
+从那里你看到它倍数最好的x
+from there you see it times the best x
+
+526
+00:32:08,579 --> 00:32:18,664
+等于给出的转置B.
+equals a transpose B that gives the
+
+527
+00:32:18,669 --> 00:32:19,704
+最低限度
+minimum
+
+528
+00:32:19,709 --> 00:32:24,244
+让我放弃检查你看到的
+let me forego checking that you you see
+
+529
+00:32:24,249 --> 00:32:26,704
+二次项有矩阵
+that the quadratic term has the matrix
+
+530
+00:32:26,709 --> 00:32:30,004
+在它，所以它的衍生物可能是
+in it so it's derivative is may be may
+
+531
+00:32:30,009 --> 00:32:32,195
+这可以在导数是将
+be the derivative of this is to a
+
+532
+00:32:32,200 --> 00:32:36,815
+转置斧头然后两个取消
+transpose ax and then the two cancels
+
+533
+00:32:36,820 --> 00:32:39,454
+这两个也可以写
+that two and this could also be written
+
+534
+00:32:39,459 --> 00:32:44,824
+因为X转置了转置B所以它是X.
+as X transpose a transpose B so it's X
+
+535
+00:32:44,829 --> 00:32:48,034
+转反对转B中的
+transpose against a transpose B that's
+
+536
+00:32:48,039 --> 00:32:50,074
+线性所以当我拿出衍生物
+linear so when I take the derivative
+
+537
+00:32:50,079 --> 00:32:55,134
+这个国家的速度非常快
+it's that country that's pretty fast
+
+538
+00:32:55,139 --> 00:33:04,234
+1806会耐心地得出那个但是
+1806 would patiently derive that but
+
+539
+00:33:04,239 --> 00:33:08,584
+在这里，我让我给你一张照片
+here I let me give you the picture that
+
+540
+00:33:08,589 --> 00:33:14,945
+我喜欢几何学，所以我们拥有它们
+goes with it the geometry so we have we
+
+541
+00:33:14,950 --> 00:33:20,484
+有问题我们没有解决方案
+have the problem no solution we have
+
+542
+00:33:20,489 --> 00:33:22,445
+高斯
+Gauss's
+
+543
+00:33:22,450 --> 00:33:27,885
+最佳答案最小化了规范
+best answer minimize the to norm of the
+
+544
+00:33:27,890 --> 00:33:32,475
+错误我们有结论的矩阵
+error we have the conclusion the matrix
+
+545
+00:33:32,480 --> 00:33:34,485
+我们进去了，现在我想画一个
+that we get in and now I want to draw a
+
+546
+00:33:34,490 --> 00:33:37,905
+与之相关的图片好在这里
+picture that goes with it okay so here
+
+547
+00:33:37,910 --> 00:33:45,365
+是我想要的照片
+is a picture I want to I want to have
+
+548
+00:33:45,370 --> 00:33:48,375
+那张照片中的那个列空间
+column space of a there in that picture
+
+549
+00:33:48,380 --> 00:33:51,285
+当然，列中的零向量
+of course the zero vectors in the column
+
+550
+00:33:51,290 --> 00:33:55,535
+这是所有这一切的空间
+space of a so this is this is all
+
+551
+00:33:55,540 --> 00:34:05,925
+可能的向量是正确的
+possible vectors ax right
+
+552
+00:34:05,930 --> 00:34:07,725
+你永远不会忘记那个专栏
+you're never forgetting that the column
+
+553
+00:34:07,730 --> 00:34:13,515
+太空是我现在所需要的所有X
+space is all the a X's now I've got to
+
+554
+00:34:13,520 --> 00:34:16,725
+将B放在图片中，这样就可以了
+put B in the picture so where does this
+
+555
+00:34:16,730 --> 00:34:21,015
+矢量B所以我试图解决ax等于
+vector B so I'm trying to solve ax equal
+
+556
+00:34:21,020 --> 00:34:25,424
+B但是失败了，如果我画B的话怎么办？
+B but failing so what if I draw B in
+
+557
+00:34:25,429 --> 00:34:28,965
+这张照片我怎么画B我在哪里
+this picture how do I draw B where do I
+
+558
+00:34:28,970 --> 00:34:29,385
+把它
+put it
+
+559
+00:34:29,390 --> 00:34:33,155
+我应该把它放在列空间没有
+shall I put it in the column space no
+
+560
+00:34:33,160 --> 00:34:35,985
+整点是不是在
+the whole point is it's not in the
+
+561
+00:34:35,990 --> 00:34:40,335
+列空间它不是一个斧头它出来了
+column space it's not an ax it's out
+
+562
+00:34:40,340 --> 00:34:46,664
+某处有乙好，然后什么
+there somewhere B okay and then what's
+
+563
+00:34:46,669 --> 00:34:49,605
+随之而来的几何形状
+the geometry that goes with these
+
+564
+00:34:49,610 --> 00:34:51,975
+正方形和正规方程组
+squares and the normal equations and
+
+565
+00:34:51,980 --> 00:34:56,145
+高斯建议尽量减少错误
+Gauss's suggestion to minimize the error
+
+566
+00:34:56,150 --> 00:35:01,305
+究竟会在那里将斧头是最好的斧头
+what will where will ax be the best ax
+
+567
+00:35:01,310 --> 00:35:02,325
+我能做到的
+that I can do
+
+568
+00:35:02,330 --> 00:35:08,325
+那么高斯就是那么高斯
+where will so so so Gauss is what Gauss
+
+569
+00:35:08,330 --> 00:35:12,405
+已经产生了另一个他
+has produced is a an a the other he
+
+570
+00:35:12,410 --> 00:35:15,585
+找不到X他会尽力而为
+can't find an X he'll do his best he can
+
+571
+00:35:15,590 --> 00:35:20,015
+我们称那个人为X帽子
+and we're calling that guy X hat and
+
+572
+00:35:20,020 --> 00:35:24,285
+这是找到X帽子的代数
+this is the algebra to find X hat and
+
+573
+00:35:24,290 --> 00:35:29,145
+现在这里的图片在哪里
+now where's the picture here where is
+
+574
+00:35:29,150 --> 00:35:32,685
+这个矢量斧头帽是最好的ik
+this vector ax hat which is the best ik
+
+575
+00:35:32,690 --> 00:35:36,675
+斧头我们可以得到它必须如此
+ax we can get so it has to be
+
+576
+00:35:36,680 --> 00:35:40,155
+在列空间，因为它是一个时代
+in the column space because it's a times
+
+577
+00:35:40,160 --> 00:35:42,854
+东西，哪里是它在列
+something and where is it in the column
+
+578
+00:35:42,859 --> 00:35:43,545
+空间
+space
+
+579
+00:35:43,550 --> 00:35:50,025
+它的投影是x的一半和
+it's the projection that's a x half and
+
+580
+00:35:50,030 --> 00:35:53,235
+这是你不能做的错误
+here's the error which you couldn't do
+
+581
+00:35:53,240 --> 00:35:59,594
+任何关于B减去XF的事情都是如此
+anything about B minus a X F yeah so
+
+582
+00:35:59,599 --> 00:36:03,165
+这是所有的投射权
+it's the projection right so that all
+
+583
+00:36:03,170 --> 00:36:09,195
+这证明了，所以我们是我们在
+this is justifying the so we're we're in
+
+584
+00:36:09,200 --> 00:36:12,455
+这些方块的第二种方法
+the second approach to these squares
+
+585
+00:36:12,460 --> 00:36:16,395
+求解正规方程求解
+solves the normal equations solve the
+
+586
+00:36:16,400 --> 00:36:19,515
+正常的方程式是的，那将是
+normal equations yeah that would be the
+
+587
+00:36:19,520 --> 00:36:25,205
+第二种方法是最小二乘和
+second approach to least squares and
+
+588
+00:36:25,210 --> 00:36:29,235
+大多数例子，如果他们不是很大或
+most examples if they're not very big or
+
+589
+00:36:29,240 --> 00:36:32,385
+你很难创建一个矩阵
+very difficult you just creates a matrix
+
+590
+00:36:32,390 --> 00:36:37,395
+转置a并调用MATLAB和
+a transpose a and you call MATLAB and
+
+591
+00:36:37,400 --> 00:36:39,765
+解决你创建的线性系统
+solve that linear system you create the
+
+592
+00:36:39,770 --> 00:36:41,655
+矩阵你创建右手边
+matrix you create the right hand side
+
+593
+00:36:41,660 --> 00:36:46,985
+你解决它，这是普通的
+and you solve it so that's the ordinary
+
+594
+00:36:46,990 --> 00:36:48,635
+运行中的磨
+run-of-the-mill
+
+595
+00:36:48,640 --> 00:36:54,255
+这些方块问题就是这么做的
+these squares problems just do it so
+
+596
+00:36:54,260 --> 00:36:58,804
+方法2只是这样做
+that's method 2 just do it
+
+597
+00:36:58,809 --> 00:37:03,465
+我们的方法3是什么方法
+what's method 3 for the same we're
+
+598
+00:37:03,470 --> 00:37:05,294
+在这里谈论同样的问题但是
+talking about the same problem here but
+
+599
+00:37:05,299 --> 00:37:07,965
+现在我想它可能会多一点
+now I'm thinking it may be a little more
+
+600
+00:37:07,970 --> 00:37:13,294
+困难这个矩阵a转置a
+difficult this matrix a transpose a
+
+601
+00:37:13,299 --> 00:37:18,255
+可能几乎是单数高斯
+might be nearly singular Gauss is
+
+602
+00:37:18,260 --> 00:37:22,094
+假设是啊是啊，当这样做
+assuming that yeah yeah when did this
+
+603
+00:37:22,099 --> 00:37:25,425
+什么时候工作，它会工作
+work when did this work and it will
+
+604
+00:37:25,430 --> 00:37:30,195
+继续在未来三年这个工作
+continue to work in the next three this
+
+605
+00:37:30,200 --> 00:37:39,515
+如果假设有一个，这是好的
+works this is good if assuming a has
+
+606
+00:37:39,520 --> 00:37:51,795
+独立专栏
+independent columns
+
+607
+00:37:51,800 --> 00:37:55,455
+你更好地说清楚我声称
+ya better just make clear I'm claiming
+
+608
+00:37:55,460 --> 00:37:59,305
+当a还没有那么是什么的时候
+that when a hasn't so what's the what's
+
+609
+00:37:59,310 --> 00:38:01,555
+如果a具有独立性的推理
+the reasoning if a has independent
+
+610
+00:38:01,560 --> 00:38:04,975
+列但可能没有足够的列
+columns but maybe not enough columns
+
+611
+00:38:04,980 --> 00:38:07,705
+像这里一样，它只有两列
+like here it's only got two columns
+
+612
+00:38:07,710 --> 00:38:09,355
+这显然无法做到
+that's obviously not going to be able to
+
+613
+00:38:09,360 --> 00:38:11,935
+匹配任何右手边，但它有
+match any right hand side but it's got
+
+614
+00:38:11,940 --> 00:38:14,425
+独立柱时，有
+independent columns when a has
+
+615
+00:38:14,430 --> 00:38:16,795
+独立专栏然后我能说什么
+independent columns then what can I say
+
+616
+00:38:16,800 --> 00:38:23,355
+关于这个矩阵，它是可逆的
+about this matrix it's invertible
+
+617
+00:38:23,360 --> 00:38:26,365
+如果一个人有独立的话，高​​斯的计划就有效
+Gauss's plan works if a has independent
+
+618
+00:38:26,370 --> 00:38:30,685
+然后这将是一个线性的列
+columns then this would be a linear
+
+619
+00:38:30,690 --> 00:38:33,625
+代数步骤然后这将是
+algebra step then this will be
+
+620
+00:38:33,630 --> 00:38:36,115
+你可以看到它的重要性
+invertible you see the importance of
+
+621
+00:38:36,120 --> 00:38:38,425
+如果a具有独立列，则该步骤
+that step if a has independent columns
+
+622
+00:38:38,430 --> 00:38:41,995
+这意味着它只有X空值
+that means it has no null space only X
+
+623
+00:38:42,000 --> 00:38:44,935
+等于零处于零空间中的两个
+equal zero is in the null space two
+
+624
+00:38:44,940 --> 00:38:48,625
+独立的列，但只有两个没有
+independent columns but only two so not
+
+625
+00:38:48,630 --> 00:38:51,655
+足以解决系统但独立
+enough to solve systems but independent
+
+626
+00:38:51,660 --> 00:38:54,415
+那么这个矩阵就可以了
+then you're okay this matrix is
+
+627
+00:38:54,420 --> 00:38:56,845
+可逆的你可以做高斯所说的
+invertible you can do what Gauss tells
+
+628
+00:38:56,850 --> 00:39:04,165
+你，但我们现在已经准备好了
+you but we're prepared now we have to
+
+629
+00:39:04,170 --> 00:39:11,065
+想想，我真正想要的是什么
+think okay so that what do I really want
+
+630
+00:39:11,070 --> 00:39:14,755
+要做我想要连接这个高斯的
+to do I want to connect this Gauss's
+
+631
+00:39:14,760 --> 00:39:19,645
+因为伪逆的解决方案
+solution to the pseudo inverse because
+
+632
+00:39:19,650 --> 00:39:21,715
+我声称他们都给了同样的东西
+I'm claiming they both give the same
+
+633
+00:39:21,720 --> 00:39:26,905
+结果伪逆是的
+result the pseudo inverse yeah the
+
+634
+00:39:26,910 --> 00:39:33,055
+伪逆将适用但我们有
+pseudo inverse will apply but we have we
+
+635
+00:39:33,060 --> 00:39:36,265
+有喜欢的事，这是一个不
+have like something this a is not
+
+636
+00:39:36,270 --> 00:39:38,725
+可逆的只是保持记忆
+invertible just keep keep remembering
+
+637
+00:39:38,730 --> 00:39:44,415
+这个矩阵不可逆，但它是
+this matrix it's not invertible but it's
+
+638
+00:39:44,420 --> 00:39:48,625
+它有独立的专栏我是什么
+it has got independent columns what am i
+
+639
+00:39:48,630 --> 00:39:50,995
+他说，他们只是刚刚要回
+saying they're just just going back to
+
+640
+00:39:51,000 --> 00:39:55,075
+图片
+the picture
+
+641
+00:39:55,080 --> 00:40:00,215
+如果ahas是一个独立的矩阵
+if if a has is a matrix with independent
+
+642
+00:40:00,220 --> 00:40:02,825
+列这个空间消失了
+columns what space disappears in this
+
+643
+00:40:02,830 --> 00:40:08,855
+图片零空间消失了所以
+picture the null space goes away so the
+
+644
+00:40:08,860 --> 00:40:13,355
+图片更简单，但它仍然是
+picture is simpler but it's still the
+
+645
+00:40:13,360 --> 00:40:16,295
+这是一个转置的零空间
+null space of a of a transpose this is
+
+646
+00:40:16,300 --> 00:40:19,115
+仍然很大，因为我只有两个
+still pretty big because I only had two
+
+647
+00:40:19,120 --> 00:40:21,385
+列和一大堆行和
+columns and a whole lot of rows and
+
+648
+00:40:21,390 --> 00:40:24,335
+这将在这里反映出来
+that's gonna be reflected here
+
+649
+00:40:24,340 --> 00:40:28,565
+那么我想说的是什么呢
+so what what am I trying to say I'm
+
+650
+00:40:28,570 --> 00:40:30,785
+想说这个答案是
+trying to say that this answer is the
+
+651
+00:40:30,790 --> 00:40:33,875
+和伪逆回答一样吗？
+same as the pseudo-inverse answer do we
+
+652
+00:40:33,880 --> 00:40:36,725
+甚至可能检查这一点
+could possibly even check that point let
+
+653
+00:40:36,730 --> 00:40:38,195
+我先把它写下来
+me write it down first
+
+654
+00:40:38,200 --> 00:40:52,265
+我声称答案加上B是
+I claim that the answer a plus B is the
+
+655
+00:40:52,270 --> 00:40:55,285
+与来自这里的答案相同a
+same as the answer coming from here a
+
+656
+00:40:55,290 --> 00:41:04,345
+当我转换一个倒转转换B.
+transpose a inverse a transpose B when I
+
+657
+00:41:04,350 --> 00:41:11,615
+猜测等级空零是零
+guess the null space is zero the rank is
+
+658
+00:41:11,620 --> 00:41:15,485
+无论你喜欢什么，我都说
+all of em whatever you like to say I
+
+659
+00:41:15,490 --> 00:41:20,125
+相信那个方法就是这个
+believe that that that method one this
+
+660
+00:41:20,130 --> 00:41:24,515
+用一个快速的公式来记住它
+to it in one quick formula so remember
+
+661
+00:41:24,520 --> 00:41:32,195
+这是VSigmaplusutranspose
+that this was V Sigma plus u transpose
+
+662
+00:41:32,200 --> 00:41:35,645
+这是一个转置是什么
+right that's what a a transpose was that
+
+663
+00:41:35,650 --> 00:41:44,105
+这应该与此相信
+this should agree with this I I believe
+
+664
+00:41:44,110 --> 00:41:49,295
+当零空间时，它们是相同的
+those are the same when the null space
+
+665
+00:41:49,300 --> 00:41:52,085
+是不是在图片中这样的事实
+isn't in the picture so the fact that
+
+666
+00:41:52,090 --> 00:41:54,395
+零空间仅仅是一个零向量
+the null space is just a zero vector
+
+667
+00:41:54,400 --> 00:41:57,185
+意味着这反过来就是这样
+means that this in this inverse does
+
+668
+00:41:57,190 --> 00:42:02,075
+存在所以这种逆存在但是aa
+exist so this inverse exists but but a a
+
+669
+00:42:02,080 --> 00:42:07,175
+转置是不可逆的
+transpose is not invertible
+
+670
+00:42:07,180 --> 00:42:12,645
+没有等不倒，因为aa
+right no wait no inverse because a a
+
+671
+00:42:12,650 --> 00:42:17,055
+转置即将到来
+transpose would be coming with a
+
+672
+00:42:17,060 --> 00:42:19,755
+转置所有这是一个空的空间
+transpose all this is a null space of a
+
+673
+00:42:19,760 --> 00:42:22,005
+转置所以转置不是
+transpose so a transpose is not
+
+674
+00:42:22,010 --> 00:42:28,965
+可逆的，但转换a是
+invertible but but a transpose a is
+
+675
+00:42:28,970 --> 00:42:31,665
+你怎么会检查
+invertible could you how would you check
+
+676
+00:42:31,670 --> 00:42:37,505
+你知道我什么时候才这样
+that you see when i'm it's taken like
+
+677
+00:42:37,510 --> 00:42:41,165
+几乎整个小时获得
+pretty much the whole hour to get a
+
+678
+00:42:41,170 --> 00:42:45,645
+的几何形状的图片
+picture of the geometry of the
+
+679
+00:42:45,650 --> 00:42:48,045
+伪逆，所以这是伪
+pseudo-inverse so this is the pseudo
+
+680
+00:42:48,050 --> 00:42:55,025
+逆，这就是那个矩阵
+inverse and this is that matrix there
+
+681
+00:42:55,030 --> 00:42:58,065
+你知道它真的做到了最好
+what you know it's really doing its best
+
+682
+00:42:58,070 --> 00:43:01,425
+事实上每个人都是反过来的
+to be the inverse in fact everybody here
+
+683
+00:43:01,430 --> 00:43:03,915
+就像做他们最好是
+is just like doing their best to be the
+
+684
+00:43:03,920 --> 00:43:07,515
+现在反过来这有多接近
+inverse now how well is this how close
+
+685
+00:43:07,520 --> 00:43:10,305
+是我可以反过来
+is that to being the inverse can I just
+
+686
+00:43:10,310 --> 00:43:11,985
+问你这个，然后我会做
+ask you about that and then I'll make
+
+687
+00:43:11,990 --> 00:43:14,325
+这种联系然后我们就出局了
+this connection and then we're out of
+
+688
+00:43:14,330 --> 00:43:17,625
+时间的接近程度，要作为
+time how close is that to being the
+
+689
+00:43:17,630 --> 00:43:22,755
+反过来假设我乘以那个
+inverse of a suppose I multiply that by
+
+690
+00:43:22,760 --> 00:43:30,255
+我能得到什么，所以只要注意我
+a what do I get so so just notice if I
+
+691
+00:43:30,260 --> 00:43:36,195
+乘以我得到的东西
+multiply that by a what do I get
+
+692
+00:43:36,200 --> 00:43:46,005
+我得到是的，我觉得我很棒，但不是
+I get yeah I get I terrific but don't be
+
+693
+00:43:46,010 --> 00:43:48,555
+被骗以为这是
+deceived to thinking that this is the
+
+694
+00:43:48,560 --> 00:43:50,505
+它的倒数只有它起作用了
+inverse of a it only it worked on the
+
+695
+00:43:50,510 --> 00:43:52,935
+左侧，但它不会是好的
+left side but it's not going to be good
+
+696
+00:43:52,940 --> 00:43:55,485
+在右边，所以如果我尝试，如果我
+on the right-hand side so if I try if I
+
+697
+00:43:55,490 --> 00:44:05,735
+在这个方向乘以这个家伙
+multiply a by this guy in that direction
+
+698
+00:44:05,740 --> 00:44:08,895
+我会像身份一样接近
+I'll get like as close to the identity
+
+699
+00:44:08,900 --> 00:44:10,635
+因为我可以来，但我不会得到
+as I can come but I won't get the
+
+700
+00:44:10,640 --> 00:44:12,915
+这样的身份所以这就是这个
+identity that way so this is this a
+
+701
+00:44:12,920 --> 00:44:16,184
+小盒子说
+little box to say
+
+702
+00:44:16,189 --> 00:44:19,405
+那么制作我是什么意思
+so what's the point of making I'm
+
+703
+00:44:19,410 --> 00:44:22,574
+声称这是伪逆
+claiming that this is the pseudo-inverse
+
+704
+00:44:22,579 --> 00:44:27,174
+无论这些空间是什么雨
+whatever whatever these spaces the rain
+
+705
+00:44:27,179 --> 00:44:31,645
+可能很小只是这个有效
+could be tiny just just one this works
+
+706
+00:44:31,650 --> 00:44:36,804
+当排名在我需要的时候
+when the rank is in this I needed
+
+707
+00:44:36,809 --> 00:44:39,415
+独立的列，所以当排名是
+independent columns so when the rank is
+
+708
+00:44:39,420 --> 00:44:44,844
+所以这是等级和那个
+in so this is rank equal and that that
+
+709
+00:44:44,849 --> 00:44:48,385
+高斯工作，然后就可以得到一个接着一个
+Gauss worked then I can get a one then
+
+710
+00:44:48,390 --> 00:44:51,324
+这是一个片面的反转，但它不是一个
+it's a one-sided inverse but it's not a
+
+711
+00:44:51,329 --> 00:44:54,504
+双面逆我不能这样做，但我的
+two-sided inverse I can't do that but my
+
+712
+00:44:54,509 --> 00:44:57,114
+那里的矩阵我可以找到片面的
+matrix there I could find a one-sided
+
+713
+00:44:57,119 --> 00:45:01,314
+反过来获得2比2的身份，但我
+inverse to get the 2 by 2 identity but I
+
+714
+00:45:01,319 --> 00:45:02,214
+永远不会
+could never
+
+715
+00:45:02,219 --> 00:45:05,094
+乘以一些矩阵得到
+multiply that by some matrix and get the
+
+716
+00:45:05,099 --> 00:45:08,064
+Nbyn认同那两个可怜的人
+N by n identity those two pathetic
+
+717
+00:45:08,069 --> 00:45:11,145
+列没关系
+columns okay
+
+718
+00:45:11,150 --> 00:45:14,204
+也许你觉得只是检查一下
+maybe you feel like just checking this
+
+719
+00:45:14,209 --> 00:45:17,364
+只需要耐心，我的意思是什么
+just takes patience what do I mean by
+
+720
+00:45:17,369 --> 00:45:26,064
+检查它我的意思是坚持伪
+checking it I mean stick in the pseudo
+
+721
+00:45:26,069 --> 00:45:30,354
+SVD刚放入SVD和
+the the SVD just put in the SVD and
+
+722
+00:45:30,359 --> 00:45:33,504
+像疯了一样取消，我想那就是
+cancel like crazy and I think that'll
+
+723
+00:45:33,509 --> 00:45:38,635
+弹出你喜欢相信我因为它
+pop out do you like believe me cuz it's
+
+724
+00:45:38,640 --> 00:45:41,994
+要认识你，会有点痛苦
+gonna be a little painful 3 you know you
+
+725
+00:45:41,999 --> 00:45:45,054
+说我的V转置所有转置和
+say my V transpose all transposed and
+
+726
+00:45:45,059 --> 00:45:46,434
+然后有东西，突然有
+then something there and suddenly there
+
+727
+00:45:46,439 --> 00:45:50,875
+我有9个矩阵相乘但是
+I've got 9 matrices multiplying away but
+
+728
+00:45:50,880 --> 00:45:53,125
+它会像各种各样的东西
+it's gonna like how all sorts of things
+
+729
+00:45:53,130 --> 00:45:55,524
+将产生身份，最终
+will produce the identity and in the end
+
+730
+00:45:55,529 --> 00:45:59,604
+这就是我所拥有的权利
+that's what I'll have right right yep so
+
+731
+00:45:59,609 --> 00:46:03,385
+这就是这就是它
+that's this is the this is the it's a
+
+732
+00:46:03,390 --> 00:46:07,824
+SVD的片面真逆
+one-sided true inverse where the SVD
+
+733
+00:46:07,829 --> 00:46:11,304
+这个配方准备都没有
+this formula is prepared to have neither
+
+734
+00:46:11,309 --> 00:46:15,174
+我们知道什么是可逆的
+side invertible it's still we know what
+
+735
+00:46:15,179 --> 00:46:19,944
+Sigmaplus意味着无论如何都是如此
+Sigma plus means anyway so under the
+
+736
+00:46:19,949 --> 00:46:23,094
+假设独立列高斯
+assumption of independent columns Gauss
+
+737
+00:46:23,099 --> 00:46:26,454
+工作并给出与他们相同的答案
+works and gives the same answer as their
+
+738
+00:46:26,459 --> 00:46:29,375
+伪逆
+pseudo inverse
+
+739
+00:46:29,380 --> 00:46:33,605
+好吧三分钟
+okay three minutes
+
+740
+00:46:33,610 --> 00:46:38,835
+这不是时间，但这是一个
+that's hardly time but this being a
+
+741
+00:46:38,840 --> 00:46:43,755
+我觉得我应该用它哦天啊
+mighty I feel I should use it oh my god
+
+742
+00:46:43,760 --> 00:46:48,645
+排名第三的是三号
+number three so what's number three
+
+743
+00:46:48,650 --> 00:46:56,025
+关于第三是是是作为
+about number three is is a is a as the
+
+744
+00:46:56,030 --> 00:46:59,295
+与第二个相同的要求相同
+same requirement as number two the same
+
+745
+00:46:59,300 --> 00:47:03,485
+要求没有零空间，但它说
+requirement of no null space but it says
+
+746
+00:47:03,490 --> 00:47:06,755
+如果我能先获得正交列
+if I could get orthogonal columns first
+
+747
+00:47:06,760 --> 00:47:11,625
+那么这个问题就很容易了
+then this problem would be easy so
+
+748
+00:47:11,630 --> 00:47:13,995
+大家都知道克施密特是一个
+everybody knows that gram-schmidt is a
+
+749
+00:47:14,000 --> 00:47:21,105
+无聊的方式来自于
+way boring way to get from from from
+
+750
+00:47:21,110 --> 00:47:23,895
+这两列得到两个正交
+these two columns to get two orthogonal
+
+751
+00:47:23,900 --> 00:47:27,555
+列实际上是整个想法
+columns actually the whole idea of
+
+752
+00:47:27,560 --> 00:47:29,205
+克施密特已经在那里了
+gram-schmidt is already there for
+
+753
+00:47:29,210 --> 00:47:31,485
+因此我有两分钟
+two-by-two so with so I have two minutes
+
+754
+00:47:31,490 --> 00:47:35,025
+我们可以做到让我们看看让我们做
+and we can do it let's see let's do
+
+755
+00:47:35,030 --> 00:47:38,235
+克-施密特在这两列专栏上
+gram-schmidt on these two columns column
+
+756
+00:47:38,240 --> 00:47:42,555
+列一列列，您会计我
+column a column column you accountant I
+
+757
+00:47:42,560 --> 00:47:46,505
+不想使用U和V列y和z
+don't want to use U and V column y&z
+
+758
+00:47:46,510 --> 00:47:49,635
+好吧，假设我想要正交化
+okay suppose I want to orthogonalize
+
+759
+00:47:49,640 --> 00:47:51,645
+那些家伙是什么是克施密特的想法
+those guys what's the gram-schmidt idea
+
+760
+00:47:51,650 --> 00:47:56,265
+我认为为什么这是非常好的不
+i take why it's perfectly good no
+
+761
+00:47:56,270 --> 00:48:00,545
+y的问题是y向量
+problem with y there's the y vector
+
+762
+00:48:00,550 --> 00:48:04,905
+他们都是那个人然后这个人不是
+they're all ones then this guy is not
+
+763
+00:48:04,910 --> 00:48:08,535
+可能是正交的，它会消失
+orthogonal probably to that it'll go off
+
+764
+00:48:08,540 --> 00:48:11,354
+还有一些在这个方向上有一个
+and some this in this direction with an
+
+765
+00:48:11,359 --> 00:48:14,505
+这个角度不是九十度那么
+angle that's not ninety degrees so what
+
+766
+00:48:14,510 --> 00:48:18,735
+我是否想要获得正交向量
+do i do i want to get orthogonal vectors
+
+767
+00:48:18,740 --> 00:48:22,755
+我对第一个人没关系，但是
+I'm okay with this first guy but the
+
+768
+00:48:22,760 --> 00:48:24,765
+第二个人与第一个人不正交
+second guy isn't orthogonal to the first
+
+769
+00:48:24,770 --> 00:48:26,525
+所以我该怎么办
+so what do I do
+
+770
+00:48:26,530 --> 00:48:29,805
+我如何在这张照片中如何来
+how do I in this picture how do I come
+
+771
+00:48:29,810 --> 00:48:35,864
+使用与Y项目正交的向量
+up with a vector orthogonal to Y project
+
+772
+00:48:35,869 --> 00:48:38,925
+我可以拿这个Z而且我拿它
+I could I take this Z and I take its
+
+773
+00:48:38,930 --> 00:48:43,025
+投影所以Z有一点点
+projection so Z has a little piece
+
+774
+00:48:43,030 --> 00:48:46,365
+Z矢量有一点点大块
+that Z vector has a little big piece
+
+775
+00:48:46,370 --> 00:48:49,125
+已经朝Y的方向了
+already in the direction of what Y which
+
+776
+00:48:49,130 --> 00:48:51,825
+我不想和一块正交的
+I don't want and a piece orthogonal to
+
+777
+00:48:51,830 --> 00:48:54,555
+它这是我的另一片这是我的其他
+it that's my other piece that's my other
+
+778
+00:48:54,560 --> 00:48:59,135
+因此，这就是为什么，这里是
+piece so here's why and here's the the
+
+779
+00:48:59,140 --> 00:49:03,735
+这是Z减去负数a
+this is that is Z minus the minus a
+
+780
+00:49:03,740 --> 00:49:06,705
+投影让我只是说不管是啊
+projection let me just say whatever yeah
+
+781
+00:49:06,710 --> 00:49:08,535
+我不知道我是否画了这张照片
+I don't know if I even drew that picture
+
+782
+00:49:08,540 --> 00:49:11,205
+右大概我没有什么反正
+right probably I didn't anyway whatever
+
+783
+00:49:11,210 --> 00:49:15,845
+克-施密特的想法是公正的
+the the gram-schmidt idea is just
+
+784
+00:49:15,850 --> 00:49:18,825
+以自然的方式正交化哦，我会
+orthogonalize in the natural way oh I'll
+
+785
+00:49:18,830 --> 00:49:20,445
+回到那个开头
+come back to that at the beginning of
+
+786
+00:49:20,450 --> 00:49:24,645
+下次再谈一谈
+next time and say a word about the
+
+787
+00:49:24,650 --> 00:49:28,935
+第四种方式，但所以这个最小的方块
+fourth way but but so this least squares
+
+788
+00:49:28,940 --> 00:49:33,165
+是不深入学习它是什么人
+is is not deep learning it's what people
+
+789
+00:49:33,170 --> 00:49:37,665
+一个世纪以前，并继续做
+did a century ago and continue to do for
+
+790
+00:49:37,670 --> 00:49:41,235
+很好的理由没关系，我会送出去的是
+good reason okay and I'll send out that
+
+791
+00:49:41,240 --> 00:49:43,305
+关于班级和你的公告
+announcement about the class and you
+
+792
+00:49:43,310 --> 00:49:45,220
+know the homework and you know the new
+
+793
+00:49:43,310 --> 00:49:50,890
+知道功课，你知道新的
+
+794
+00:49:45,230 --> 00:49:50,890
+截止日期是周五好，谢谢
+due date is Friday good thank you
+

@@ -1,0 +1,3888 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:23,235
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:23,240 --> 00:00:28,795
+好了，所以我想在再次回升
+okay so I'd like to pick up again on the
+
+10
+00:00:28,800 --> 00:00:31,465
+离子这个整齐的矩阵族
+ion this neat family of matrices
+
+11
+00:00:31,470 --> 00:00:35,785
+循环矩阵，但首先让我说
+circulant matrices but first let me say
+
+12
+00:00:35,790 --> 00:00:38,005
+在这里然后把它放在网上我的
+here and then put it on the web my
+
+13
+00:00:38,010 --> 00:00:41,694
+考虑到这些项目，所以我想
+thought about the projects so I think
+
+14
+00:00:41,699 --> 00:00:44,065
+我可以给出的最后期限是
+the last deadline and I can give is the
+
+15
+00:00:44,070 --> 00:00:48,265
+最后一堂课所以我认为不是下一个
+final class so I think that's not next
+
+16
+00:00:48,270 --> 00:00:50,694
+一周，但是下一周的星期三
+week but Wednesday of the following week
+
+17
+00:00:50,699 --> 00:00:54,445
+我认为这是我们的最后一次课堂会议
+I think is our last class meeting so be
+
+18
+00:00:54,450 --> 00:00:57,865
+很高兴他们当时或早些时候，如果
+great to get them then or earlier and if
+
+19
+00:00:57,870 --> 00:01:03,115
+任何人或每个人都想说
+anybody or everybody would like to tell
+
+20
+00:01:03,120 --> 00:01:05,965
+关于他们的课程
+the class a little bit about their
+
+21
+00:01:05,970 --> 00:01:08,875
+项目，你知道这是一个友好的
+project you know it's a friendly
+
+22
+00:01:08,880 --> 00:01:14,515
+观众和我很高兴
+audience and and I'd be happy to make
+
+23
+00:01:14,520 --> 00:01:18,655
+空间和时间，所以给我一个
+space and time for that so so send me an
+
+24
+00:01:18,660 --> 00:01:20,754
+如果你或者给我发电子邮件
+email if you or and and give me the
+
+25
+00:01:20,759 --> 00:01:23,245
+如果你愿意，可以提前预定
+project earlier if you would like to
+
+26
+00:01:23,250 --> 00:01:26,095
+只是在课堂上说几句话，甚至是
+just say a few words in class or even if
+
+27
+00:01:26,100 --> 00:01:28,855
+你愿意多说几句话
+you are willing to say a few words in
+
+28
+00:01:28,860 --> 00:01:32,545
+我会说是的，因为我意识到了
+class I'll say yeah because I realize
+
+29
+00:01:32,550 --> 00:01:37,135
+是的，所以其他问题也是如此
+yeah okay so other questions about so so
+
+30
+00:01:37,140 --> 00:01:39,954
+我们完成了所有的p-sets等等
+we're finished with all p-sets and so on
+
+31
+00:01:39,959 --> 00:01:44,894
+所以这真的只是一个项目，是的
+so it's really just a project and yeah
+
+32
+00:01:44,899 --> 00:01:49,195
+它是如何分级好的问题，但它是
+how is it graded good question but it's
+
+33
+00:01:49,200 --> 00:01:50,094
+会成为我
+going to be me
+
+34
+00:01:50,099 --> 00:01:54,894
+我想是的，所以我会阅读所有的项目
+I guess so so I'll read all the projects
+
+35
+00:01:54,899 --> 00:01:59,185
+不知怎的，你拿出一个等级
+and come up with a grade somehow you
+
+36
+00:01:59,190 --> 00:02:02,245
+知道我，我希望你们有
+know I my I hope you guys have
+
+37
+00:02:02,250 --> 00:02:04,825
+了解我，你知道我的感觉
+understood that I'm you know my feeling
+
+38
+00:02:04,830 --> 00:02:07,945
+是这门课程的成绩是
+is that the grades in this course are
+
+39
+00:02:07,950 --> 00:02:10,915
+会因为偏高而偏高
+going to be on the high side because
+
+40
+00:02:10,920 --> 00:02:13,225
+他们应该是啊我认为这是它的
+they should be yeah I think it's a it's
+
+41
+00:02:13,230 --> 00:02:15,925
+那种课程，我问你
+that kind of a course and I'm asked you
+
+42
+00:02:15,930 --> 00:02:20,155
+无论如何要做相当数量
+for to do a fair amount and anyway
+
+43
+00:02:20,160 --> 00:02:26,005
+这是我的起点，而且还有一个
+that's my starting basis and there's a
+
+44
+00:02:26,010 --> 00:02:28,195
+很多主题，如循环矩阵
+lot of topics like circulant matrices
+
+45
+00:02:28,200 --> 00:02:30,264
+我不是要能够给
+that I'm not going to be able to give
+
+46
+00:02:30,269 --> 00:02:33,624
+你当然是我的一部分
+you a piece set about but I of course
+
+47
+00:02:33,629 --> 00:02:35,755
+这些都是可以密切
+these are closely can
+
+48
+00:02:35,760 --> 00:02:40,124
+这对于离散傅立叶变换
+that to the discrete Fourier transform
+
+49
+00:02:40,129 --> 00:02:46,435
+所以让我写下这个名字吧
+so let me just write the name of the
+
+50
+00:02:46,440 --> 00:02:49,975
+伟大的人傅立叶如此离散
+great man Fourier so the discrete
+
+51
+00:02:49,980 --> 00:02:52,605
+傅立叶变换就像你所知道的那样
+Fourier transform is as you know very
+
+52
+00:02:52,610 --> 00:02:57,645
+非常重要的算法
+very important algorithm in in
+
+53
+00:02:57,650 --> 00:02:59,874
+工程学和数学
+engineering and in mathematics
+
+54
+00:02:59,879 --> 00:03:05,484
+到处都是傅立叶只是一个关键的想法
+everywhere Fourier is just a key idea
+
+55
+00:03:05,489 --> 00:03:10,135
+所以我觉得这是一个好的知道
+and so I think it's just good to know
+
+56
+00:03:10,140 --> 00:03:12,764
+关于那些循环矩阵是什么
+about those so circulant matrices are
+
+57
+00:03:12,769 --> 00:03:19,195
+与有限大小连接
+connected with with the finite size
+
+58
+00:03:19,200 --> 00:03:22,645
+矩阵矩阵和一些矩阵
+matrices matrices of size and some are
+
+59
+00:03:22,650 --> 00:03:27,824
+循环矩阵将由n和n组成
+circulant matrices will be n by n and
+
+60
+00:03:27,829 --> 00:03:37,734
+你还记得这个特殊形式
+you remember this special form so this
+
+61
+00:03:37,739 --> 00:03:40,905
+这是关于这些矩阵的关键点
+is a key point about these matrices see
+
+62
+00:03:40,910 --> 00:03:44,395
+它们的定义不是n平方
+that they are defined by not n squared
+
+63
+00:03:44,400 --> 00:03:49,344
+如果你告诉我的话，只有n个条目
+entries only n if you tell me just the
+
+64
+00:03:49,349 --> 00:03:52,495
+矩阵的第一行，这就是全部
+first row of the matrix and that's all
+
+65
+00:03:52,500 --> 00:03:58,525
+你会告诉MATLAB说C0C1C2C.
+you would tell MATLAB say C 0 C 1 C 2 C
+
+66
+00:03:58,530 --> 00:04:02,695
+和负1并且为循环
+and minus 1 and for a circulant that's
+
+67
+00:04:02,700 --> 00:04:04,525
+所有我需要知道的因为这些
+all I need to know because these
+
+68
+00:04:04,530 --> 00:04:08,185
+这条对角线的对角线是恒定的
+diagonals are constant this diagonal is
+
+69
+00:04:08,190 --> 00:04:10,794
+常数C1然后完成
+constant C 1 and then gets completed
+
+70
+00:04:10,799 --> 00:04:15,264
+这里C两个对角线来到C2然后
+here C two diagonal come to C 2 and then
+
+71
+00:04:15,269 --> 00:04:19,945
+在这里循环完成所以M
+gets completed cyclically here so M
+
+72
+00:04:19,950 --> 00:04:23,815
+数字，而不是n平方和那个
+numbers and not n squared and that the
+
+73
+00:04:23,820 --> 00:04:27,224
+我提到的原因或原因是
+reason I mention that or a reason is
+
+74
+00:04:27,229 --> 00:04:31,075
+那是一个很大的卖点
+that's there that's a big selling point
+
+75
+00:04:31,080 --> 00:04:34,134
+当你去同一台机器的应用程序
+when you go to applications same machine
+
+76
+00:04:34,139 --> 00:04:39,985
+学习图像让你记住
+learning in for images so you remember
+
+77
+00:04:39,990 --> 00:04:43,995
+机器学习的大局
+the big picture of machine learning
+
+78
+00:04:44,000 --> 00:04:47,515
+深刻的学习是你的
+deep deep learning was that you had
+
+79
+00:04:47,520 --> 00:04:48,975
+样本
+samples
+
+80
+00:04:48,980 --> 00:04:55,215
+很多样本让我们说n个样本
+a lot of samples let's say n samples
+
+81
+00:04:55,220 --> 00:05:01,095
+也许然后这个图像中的每个样本
+maybe and then each sample in this image
+
+82
+00:05:01,100 --> 00:05:04,455
+部分将是一个图像所以事情是
+part will be an image so the thing is
+
+83
+00:05:04,460 --> 00:05:08,505
+图像由其像素描述
+that an image is described by its pixels
+
+84
+00:05:08,510 --> 00:05:11,855
+如果我有千千万
+and if I have a thousand by thousand
+
+85
+00:05:11,860 --> 00:05:15,465
+像素这样一百万
+pixel so that's a million a million
+
+86
+00:05:15,470 --> 00:05:19,575
+像素它是特征向量的
+pixels it the the feature vector the
+
+87
+00:05:19,580 --> 00:05:21,825
+与一个样本相关联的向量
+vector that's associated with one sample
+
+88
+00:05:21,830 --> 00:05:27,495
+是巨大的是如此巨大，所以我发泄
+is enormous is enormous so so so I vents
+
+89
+00:05:27,500 --> 00:05:32,865
+安瓿但也许可能很好，如果他们是
+ampuls but maybe maybe well if they're
+
+90
+00:05:32,870 --> 00:05:35,835
+百万突然变成的颜色
+in color that million suddenly becomes
+
+91
+00:05:35,840 --> 00:05:39,815
+三百万说三百万
+three million so say three million
+
+92
+00:05:39,820 --> 00:05:48,645
+功能所以我们的矢量我们的矢量
+features so our vectors our vector of
+
+93
+00:05:48,650 --> 00:05:52,965
+那整个计算深刻
+that the whole computation of deep
+
+94
+00:05:52,970 --> 00:05:55,785
+学习与我们的向量一起工作
+learning works with our vectors with
+
+95
+00:05:55,790 --> 00:05:59,265
+三百万个组件，这意味着
+three million components and that means
+
+96
+00:05:59,270 --> 00:06:01,455
+如果我们不这样做的话
+that in the ordinary way if we didn't do
+
+97
+00:06:01,460 --> 00:06:04,125
+我们将成倍增加的任何特殊事物
+anything special we would be multiplying
+
+98
+00:06:04,130 --> 00:06:07,125
+那些大小像三的矩阵
+those by matrices of size like three
+
+99
+00:06:07,130 --> 00:06:10,785
+百万三百万我们会
+million times three million we would be
+
+100
+00:06:10,790 --> 00:06:13,305
+计算的是这是许多像权重
+computing that many weights that's like
+
+101
+00:06:13,310 --> 00:06:18,225
+这是不可能的，我们会这样
+impossible that's like and we would be
+
+102
+00:06:18,230 --> 00:06:21,825
+为...中的每一层计算
+computing that for for each layer in the
+
+103
+00:06:21,830 --> 00:06:27,615
+深度网络，所以它会上升到一个正常的
+deep network so it would go up a normai
+
+104
+00:06:27,620 --> 00:06:31,035
+它增加了三百万
+it go up so three million by three
+
+105
+00:06:31,040 --> 00:06:34,185
+百万只是我们无法计算我们
+million is just we can't compute we
+
+106
+00:06:34,190 --> 00:06:36,615
+不能使用梯度下降来优化
+can't use gradient descent to optimize
+
+107
+00:06:36,620 --> 00:06:40,845
+许多重量所以重点是这一点
+that many weight so the point is that
+
+108
+00:06:40,850 --> 00:06:45,545
+深度学习中的矩阵是
+the matrices in deep learning are
+
+109
+00:06:45,550 --> 00:06:48,615
+特别的，他们不依赖他们
+special and they don't depend they they
+
+110
+00:06:48,620 --> 00:06:52,065
+就像他们可能的循环矩阵一样
+are like circulant matrices they might
+
+111
+00:06:52,070 --> 00:06:55,605
+不循环所以循环矩阵
+not loop around so circulant matrices
+
+112
+00:06:55,610 --> 00:06:58,905
+有这样的循环功能，使
+have this cyclic feature that that makes
+
+113
+00:06:58,910 --> 00:07:02,585
+理论完美非常好
+the theory perfect extremely nice
+
+114
+00:07:02,590 --> 00:07:05,215
+但一般我们当然
+but of course in general we have
+
+115
+00:07:05,220 --> 00:07:13,235
+矩阵让我们说Tt0不变
+matrices let's say T t0 constant
+
+116
+00:07:13,240 --> 00:07:18,185
+对角线，也许是一堆对角线
+diagonals and maybe bunch of diagonals
+
+117
+00:07:18,190 --> 00:07:22,145
+在这里不一定是对称的或
+in here not necessarily symmetric or
+
+118
+00:07:22,150 --> 00:07:24,155
+它们可能是对称的，但它们不是
+they might be symmetric but they're not
+
+119
+00:07:24,160 --> 00:07:28,705
+循环所以这些矩阵叫什么
+cyclic so what are these matrices called
+
+120
+00:07:28,710 --> 00:07:30,845
+好吧，他们有一堆名字，因为
+well they have a bunch of names because
+
+121
+00:07:30,850 --> 00:07:34,345
+他们是如此重要，他们是他们
+they're so important they're they're
+
+122
+00:07:34,350 --> 00:07:38,435
+线性移位不变或线性时间
+linear shift invariant or linear time
+
+123
+00:07:38,440 --> 00:07:41,435
+无论什么是正确的词
+invariant whatever is the right word in
+
+124
+00:07:41,440 --> 00:07:47,275
+你的背景所以他们就是这样
+your context so so they're they're
+
+125
+00:07:47,280 --> 00:07:49,235
+卷积你可以称之为
+convolutions you could call it a
+
+126
+00:07:49,240 --> 00:07:56,075
+卷积矩阵乘以时
+convolution matrix when they multiply by
+
+127
+00:07:56,080 --> 00:07:58,415
+其中一个矩阵，我想我要走了
+one of these matrices I guess I'm going
+
+128
+00:07:58,420 --> 00:08:01,985
+称它为T优正在尽
+to call it t you're doing our
+
+129
+00:08:01,990 --> 00:08:06,245
+卷积，我会写得更好
+convolution and I'll better write down
+
+130
+00:08:06,250 --> 00:08:09,245
+我们卷积的公式你是
+the formula for our convolution you're
+
+131
+00:08:09,250 --> 00:08:11,405
+除非是，否则不进行循环卷积
+not doing a cyclic convolution unless
+
+132
+00:08:11,410 --> 00:08:14,765
+矩阵周期循环这个时候
+the matrix cycles round this would when
+
+133
+00:08:14,770 --> 00:08:17,855
+你乘以C这会给你一个
+you multiply by C this would give you a
+
+134
+00:08:17,860 --> 00:08:25,265
+循环卷积说我是否乘以C
+cyclic convolution say if I multiply C
+
+135
+00:08:25,270 --> 00:08:28,555
+通过一些向量V，结果是
+by some vector V the result is the
+
+136
+00:08:28,560 --> 00:08:34,925
+C矢量的循环卷积
+cyclic convolution of the C vector with
+
+137
+00:08:34,930 --> 00:08:37,685
+V矢量这么大C是一个矩阵但是
+the V vector so big C is a matrix but
+
+138
+00:08:37,690 --> 00:08:40,715
+但它完全由第一个定义
+but it's completely defined by its first
+
+139
+00:08:40,720 --> 00:08:44,465
+行或第一列，所以它真的是我
+row or first column so it's really I
+
+140
+00:08:44,470 --> 00:08:46,955
+只是在那里有一个矢量操作
+just have a vector operation there and
+
+141
+00:08:46,960 --> 00:08:50,735
+这是一个循环的，在这里T次
+it's a cyclic one and over here T times
+
+142
+00:08:50,740 --> 00:08:55,535
+向量V将是的卷积
+a vector V will be the convolution of a
+
+143
+00:08:55,540 --> 00:09:05,195
+T矢量与V但不循环和
+T vector with V but not cyclic and
+
+144
+00:09:05,200 --> 00:09:07,355
+可能这些就是那些
+probably these are the ones that would
+
+145
+00:09:07,360 --> 00:09:11,995
+实际上是进来机器学习的
+actually come in to machine learning so
+
+146
+00:09:12,000 --> 00:09:14,735
+线性移位不变线性时间
+linear shift invariant linear time
+
+147
+00:09:14,740 --> 00:09:16,144
+不变
+invariant
+
+148
+00:09:16,149 --> 00:09:19,144
+我把它叫做这么掩盖人们会
+I would call it so mask people would
+
+149
+00:09:19,149 --> 00:09:25,045
+称之为三元组矩阵，这就是它
+call it a triplets matrix so that's
+
+150
+00:09:25,050 --> 00:09:29,755
+这就是我用字母T的原因
+that's why I used the letter T in
+
+151
+00:09:29,760 --> 00:09:35,425
+工程它将是一个过滤器或
+engineering it would be a filter or a
+
+152
+00:09:35,430 --> 00:09:39,325
+卷积或是恒定的对角线
+convolution or are constant diagonal
+
+153
+00:09:39,330 --> 00:09:47,045
+矩阵这些出现在各种各样的地方
+matrix these come up all sorts of places
+
+154
+00:09:47,050 --> 00:09:50,855
+他们进入机器学习
+and they come up in in machine learning
+
+155
+00:09:50,860 --> 00:09:55,715
+和图像处理，但基本上
+and with image processing but basically
+
+156
+00:09:55,720 --> 00:09:58,235
+因为你在某一点上做了什么
+because what you're doing at one point
+
+157
+00:09:58,240 --> 00:10:00,785
+在图像中它几乎就是你的样子
+in an image it's pretty much what you're
+
+158
+00:10:00,790 --> 00:10:02,285
+要在其他点做
+going to do at the other points
+
+159
+00:10:02,290 --> 00:10:04,805
+你不会想出特别的
+you're not gonna figure out special
+
+160
+00:10:04,810 --> 00:10:07,175
+每个小像素的权重
+weights for each little pixel in the
+
+161
+00:10:07,180 --> 00:10:09,365
+像你要去如果你必须要
+image you're going to take if you have
+
+162
+00:10:09,370 --> 00:10:13,175
+一张图片说你有一张图片
+an image say you have an image with with
+
+163
+00:10:13,180 --> 00:10:14,465
+数以万亿计的像素
+zillions of pixels
+
+164
+00:10:14,470 --> 00:10:19,565
+好吧，你可能想减少我的意思
+well you might want to cut down I mean
+
+165
+00:10:19,570 --> 00:10:22,894
+你最明智的做法是非常明智的
+you'd be very sensible to do some max
+
+166
+00:10:22,899 --> 00:10:29,675
+汇集一些池化操作
+pooling some pooling operations to make
+
+167
+00:10:29,680 --> 00:10:39,485
+它小，所以真的很喜欢我们没关系
+it smaller so that's really like okay we
+
+168
+00:10:39,490 --> 00:10:42,185
+我们不能不想要这个更大的系统
+can't we don't want this larger system
+
+169
+00:10:42,190 --> 00:10:46,644
+让我们减少它，以便最大限度地利用它
+let's just reduce it so max pooling that
+
+170
+00:10:46,649 --> 00:10:52,415
+操作会说他们三个
+operation would be say take them three
+
+171
+00:10:52,420 --> 00:10:56,195
+在九个像素的时间和替换
+at a time from nine pixels and replace
+
+172
+00:10:56,200 --> 00:10:59,675
+那九个像素乘以一个像素所以最大
+that nine pixels by one pixel so the max
+
+173
+00:10:59,680 --> 00:11:02,435
+这九个数字中的一个
+of those nine numbers that would be a
+
+174
+00:11:02,440 --> 00:11:05,165
+非常简单的操作，只是减少
+very simple operation that just reduces
+
+175
+00:11:05,170 --> 00:11:08,135
+使尺寸变小的尺寸
+the dimension that's make it smaller
+
+176
+00:11:08,140 --> 00:11:16,075
+减少尺寸
+reduce the dimension
+
+177
+00:11:16,080 --> 00:11:19,025
+好吧，这是一个廉价的方式来做到这一点
+okay so that's a cheap way to make it
+
+178
+00:11:19,030 --> 00:11:22,355
+制作四次或九次图像
+make an image for four times or nine
+
+179
+00:11:22,360 --> 00:11:27,395
+时间或者小64倍但是
+times or 64 times smaller but the
+
+180
+00:11:27,400 --> 00:11:29,825
+卷积部分现在不是
+convolution part now so that's not
+
+181
+00:11:29,830 --> 00:11:32,635
+涉及卷积，这是一个不同的
+involving convolution that's a different
+
+182
+00:11:32,640 --> 00:11:36,605
+如果我采取这里的操作甚至不是线性的
+operation here not even linear if I take
+
+183
+00:11:36,610 --> 00:11:41,165
+每个框中的最大值不是线性的
+the max in each box that's not a linear
+
+184
+00:11:41,170 --> 00:11:45,575
+操作，但这是一个快速的，所以
+operation so but it's a fast one okay so
+
+185
+00:11:45,580 --> 00:11:50,345
+现在哪里循环飙升卷积
+now where do circulant soar convolution
+
+186
+00:11:50,350 --> 00:11:52,805
+或三元组矩阵或过滤器来
+or triplets matrices or filters come
+
+187
+00:11:52,810 --> 00:11:55,895
+进入它所以我会忘记最大值
+into it so I'll forget about the max
+
+188
+00:11:55,900 --> 00:11:57,905
+冷却假设发生了，我
+cooling suppose that's happened and I
+
+189
+00:11:57,910 --> 00:12:02,845
+N还有一个非常大的系统
+still have a very big system with N
+
+190
+00:12:02,850 --> 00:12:05,815
+平方
+squared
+
+191
+00:12:05,820 --> 00:12:10,355
+每个像素和平方特征
+pixels and squared features in for each
+
+192
+00:12:10,360 --> 00:12:13,895
+样本，所以我想操作
+sample so that's so I want to operate on
+
+193
+00:12:13,900 --> 00:12:17,945
+通过矩阵像往常一样我想
+that by matrices as usual I want to
+
+194
+00:12:17,950 --> 00:12:22,555
+选择权重来突出
+choose the weights to bring out the
+
+195
+00:12:22,560 --> 00:12:26,465
+重点，所以整个想法都在
+important points so the whole idea is on
+
+196
+00:12:26,470 --> 00:12:32,135
+这样的图像我将使用卷积
+a image like that I'll use a convolution
+
+197
+00:12:32,140 --> 00:12:37,015
+我将使用相同的操作
+I'll use this the same operation is
+
+198
+00:12:37,020 --> 00:12:40,595
+发生在每一点，所以如果忘记了
+happening at each point so if so forget
+
+199
+00:12:40,600 --> 00:12:44,015
+如果我能找到，最大部分让我擦除
+the max part let me erase if I can find
+
+200
+00:12:44,020 --> 00:12:48,325
+橡皮擦在这里好吧所以我不会
+an eraser here okay so I'm I'm not gonna
+
+201
+00:12:48,330 --> 00:12:52,085
+我们已经完成了这个，所以我现在就完成了
+we've done this so that's done now I
+
+202
+00:12:52,090 --> 00:12:56,015
+想重量乘以它使
+want to multiply it by weight so that
+
+203
+00:12:56,020 --> 00:13:02,945
+那已经做好了所以我是什么
+that's already done okay so what am I
+
+204
+00:13:02,950 --> 00:13:07,805
+期待做什么是什么样的
+looking to do what was it what kind of a
+
+205
+00:13:07,810 --> 00:13:13,405
+过滤器会做一个低通滤波器
+job would a filter do a low-pass filter
+
+206
+00:13:13,410 --> 00:13:17,765
+会杀死或几乎杀死高
+would kill or nearly kill the high
+
+207
+00:13:17,770 --> 00:13:24,025
+如果我愿意的话，可以对噪音进行调频
+frequencies the noise so if I wanted to
+
+208
+00:13:24,030 --> 00:13:28,595
+在那里我会使用一个更简单的图像
+get a simpler image there I would use a
+
+209
+00:13:28,600 --> 00:13:29,465
+洛佩
+lope
+
+210
+00:13:29,470 --> 00:13:34,945
+过滤器可能就是这个
+filter which might just it might be this
+
+211
+00:13:34,950 --> 00:13:40,325
+这个过滤器让我放入
+this filter here with let me just put in
+
+212
+00:13:40,330 --> 00:13:46,205
+一些可以说是a的数字
+some numbers that would that would say a
+
+213
+00:13:46,210 --> 00:13:52,435
+一半，所以我平均每个
+half and a half so I'm averaging each
+
+214
+00:13:52,440 --> 00:13:56,345
+像素与邻居只是取出
+pixel with its neighbor just to take out
+
+215
+00:13:56,350 --> 00:14:00,005
+一些高频率低
+some of the high frequencies the low
+
+216
+00:14:00,010 --> 00:14:02,675
+频率是恒定的图像黑色
+frequencies are constant image a black
+
+217
+00:14:02,680 --> 00:14:05,045
+所有的黑色图像都不会出现
+all black image would come out not
+
+218
+00:14:05,050 --> 00:14:12,005
+改变了但是一个非常高度斑点的图像
+changed but a very highly speckled image
+
+219
+00:14:12,010 --> 00:14:14,945
+将被大大消除
+would get largely removed by that
+
+220
+00:14:14,950 --> 00:14:18,455
+平均，所以我的想法是一样的
+averaging so I it's the same idea that
+
+221
+00:14:18,460 --> 00:14:23,405
+所有人说没有处理
+comes up in all of say no processing
+
+222
+00:14:23,410 --> 00:14:27,935
+过滤所以只是为了完成这个
+filtering so just to complete this
+
+223
+00:14:27,940 --> 00:14:34,865
+想到为什么更广泛的神经
+thought of how why does a wider neural
+
+224
+00:14:34,870 --> 00:14:40,955
+网，所以我回答这个问题为什么
+nets so I'm answering this question why
+
+225
+00:14:40,960 --> 00:14:43,175
+他们是如何进入机器学习的
+how do they come in machine learning
+
+226
+00:14:43,180 --> 00:14:47,075
+所以他们来样的时候
+so they come when when the samples are
+
+227
+00:14:47,080 --> 00:14:53,545
+图像，然后很自然地用AA
+images and then it's natural to use a a
+
+228
+00:14:53,550 --> 00:14:56,585
+恒定对角矩阵一个移位
+constant diagonal matrix a shift
+
+229
+00:14:56,590 --> 00:14:59,305
+不变矩阵而不是任意的
+invariant matrix and not an arbitrary
+
+230
+00:14:59,310 --> 00:15:04,135
+矩阵，所以我们只需要计算
+matrix so we're we only have to compute
+
+231
+00:15:04,140 --> 00:15:08,585
+n权重，而不是N平方是啊
+n weights and not N squared yeah
+
+232
+00:15:08,590 --> 00:15:11,705
+这就是重点，这是一个原因
+so that's the point so that's one reason
+
+233
+00:15:11,710 --> 00:15:18,185
+谈论卷积和
+for talking about convolution and
+
+234
+00:15:18,190 --> 00:15:21,865
+本课程中的循环矩阵I.
+circulant matrices in this course I
+
+235
+00:15:21,870 --> 00:15:25,855
+猜我觉得另一个原因是
+guess I feel another reason is that
+
+236
+00:15:25,860 --> 00:15:30,365
+与DFT有关的一切
+everything to do with the DFT with
+
+237
+00:15:30,370 --> 00:15:32,795
+傅立叶和傅立叶的傅立叶
+Fourier it with Fourier and Fourier
+
+238
+00:15:32,800 --> 00:15:35,045
+变换和隐斜矩阵
+transforms and phoria matrices
+
+239
+00:15:35,050 --> 00:15:38,405
+这就像你必须了解我的东西
+that's just like stuff you got to know I
+
+240
+00:15:38,410 --> 00:15:42,665
+这意味着你每次拥有自己
+mean that's every time you have a you're
+
+241
+00:15:42,670 --> 00:15:43,625
+处理矢量
+dealing with vector
+
+242
+00:15:43,630 --> 00:15:46,475
+这是我们正在转移的一种转变
+that are sort of shift we're shifting
+
+243
+00:15:46,480 --> 00:15:49,564
+向量进入它是为了
+the vectors comes into it that's for
+
+244
+00:15:49,569 --> 00:15:52,324
+EA会进来，所以这只是我们
+EA's gonna come in so it's just we
+
+245
+00:15:52,329 --> 00:15:55,685
+应该看到你好，所以现在我可以
+should see for you okay so now can i
+
+246
+00:15:55,690 --> 00:16:03,475
+我会回到这个特别好的案例
+I'll go back to this specially nice case
+
+247
+00:16:03,480 --> 00:16:10,295
+矩阵循环的位置
+where the where the the matrix loops
+
+248
+00:16:10,300 --> 00:16:12,245
+我周围有这种循环
+around where I have this cyclic
+
+249
+00:16:12,250 --> 00:16:17,785
+卷积所以这是-循环的
+convolution so so this are-- cyclic
+
+250
+00:16:17,790 --> 00:16:23,694
+因为周围的东西和循环
+because of the looping around stuff and
+
+251
+00:16:23,699 --> 00:16:27,514
+让我们找到哦，那是什么意思
+let's find oh so what was the point of
+
+252
+00:16:27,519 --> 00:16:30,785
+上次我开始这个
+last time I I started with this
+
+253
+00:16:30,790 --> 00:16:36,365
+置换矩阵和置换
+permutation matrix and the permutation
+
+254
+00:16:36,370 --> 00:16:42,564
+矩阵有C0等于0C1等于1和
+matrix has C 0 equals 0 C 1 equal 1 and
+
+255
+00:16:42,569 --> 00:16:48,355
+C的其余部分都是0所以它只是
+the rest of the C's are 0 so it's just
+
+256
+00:16:48,360 --> 00:16:54,155
+乘法的这个效果得到
+the effect of multiplying by this get a
+
+257
+00:16:54,160 --> 00:16:56,764
+在这附近的盒子效果
+box around it here the effect of
+
+258
+00:16:56,769 --> 00:16:59,254
+乘以这个排列矩阵
+multiplying by this permutation matrix
+
+259
+00:16:59,259 --> 00:17:01,715
+是转移一切，然后带来
+is to shift everything and then bring
+
+260
+00:17:01,720 --> 00:17:05,885
+最后一个到顶部所以这是一个
+the last one up to the top so it's a
+
+261
+00:17:05,890 --> 00:17:09,064
+循环移位所以治安官是六件事
+cyclic shift so six things sheriff is
+
+262
+00:17:09,069 --> 00:17:15,635
+外面，我想在最后
+outside and I guess at the very end of
+
+263
+00:17:15,640 --> 00:17:18,005
+上次我问它的时候
+last time I was asking about its
+
+264
+00:17:18,010 --> 00:17:20,404
+特征值和特征向量也可以
+eigenvalues and eigenvectors so can we
+
+265
+00:17:20,409 --> 00:17:22,105
+来到那个问题所以这是一个
+come to that question so that's a
+
+266
+00:17:22,110 --> 00:17:24,865
+我在这里开始提出一切问题
+starting question for everything here I
+
+267
+00:17:24,870 --> 00:17:29,975
+我猜我们也明白这一点
+guess we've understood that too to get
+
+268
+00:17:29,980 --> 00:17:34,054
+更深入到矩阵的特征值
+deeper into a matrix its eigenvalues
+
+269
+00:17:34,059 --> 00:17:36,875
+特征向量或奇异值奇异
+eigenvectors or singular value singular
+
+270
+00:17:36,880 --> 00:17:41,585
+矢量实际上是什么方式
+vectors are the way to go actually what
+
+271
+00:17:41,590 --> 00:17:44,164
+将是那个的奇异价值
+would be the singular values of that
+
+272
+00:17:44,169 --> 00:17:50,794
+矩阵，所以，呃，是的，让我们来吧
+matrix so that's uh yeah just lets let's
+
+273
+00:17:50,799 --> 00:17:53,164
+只考虑奇异的价值观
+just think about singular values and
+
+274
+00:17:53,169 --> 00:17:56,044
+那么我们就会明白为什么它的特征值
+then we'll see why why its eigenvalues
+
+275
+00:17:56,049 --> 00:17:56,435
+我们
+we
+
+276
+00:17:56,440 --> 00:17:58,535
+说-他们是独一无二的
+saying - they're one of the singular
+
+277
+00:17:58,540 --> 00:18:02,225
+它们的排列矩阵的值
+values of a permutation matrix they're
+
+278
+00:18:02,230 --> 00:18:07,175
+所有这一个矩阵都是一个
+all one all one that matrix is a
+
+279
+00:18:07,180 --> 00:18:14,255
+正交矩阵所以SVD的
+orthogonal matrix so the the SVD of the
+
+280
+00:18:14,260 --> 00:18:18,335
+矩阵就像排列和
+matrix just has like the permutation and
+
+281
+00:18:18,340 --> 00:18:21,365
+那么身份因此是西格玛
+then the identity is therefore the Sigma
+
+282
+00:18:21,370 --> 00:18:25,295
+因此西格玛是我的伙伴
+so Sigma is I for this mate for this
+
+283
+00:18:25,300 --> 00:18:33,745
+矩阵不是那么奇异值不
+matrix not so the singular values don't
+
+284
+00:18:33,750 --> 00:18:37,055
+现在我想如果我们那是因为P
+and now I guess if we that's because P
+
+285
+00:18:37,060 --> 00:18:42,415
+转置P是单位矩阵
+transpose P is the identity matrix
+
+286
+00:18:42,420 --> 00:18:45,125
+任何时候我都认为那是正交的
+anytime I have that that's an orthogonal
+
+287
+00:18:45,130 --> 00:18:47,885
+矩阵然后可能随时P转置P
+matrix then maybe anytime P transpose P
+
+288
+00:18:47,890 --> 00:18:51,005
+是奇异值的标识
+is the identity the singular values will
+
+289
+00:18:51,010 --> 00:18:53,015
+是身份和特征的本征值
+be the eigen values of the identity and
+
+290
+00:18:53,020 --> 00:18:56,075
+就在那里，他们只是那些人
+that's there they're all just ones the
+
+291
+00:18:56,080 --> 00:18:58,415
+P的本征值是我们想要的
+eigen values of P that's what we want to
+
+292
+00:18:58,420 --> 00:18:59,945
+发现所以，让我们这样做
+find so let's do that
+
+293
+00:18:59,950 --> 00:19:06,655
+P的特征值是好的，所以一种方法是
+okay eigen values of P so one way is to
+
+294
+00:19:06,660 --> 00:19:14,795
+采取P减去lambda我就是我们的方式
+take P minus lambda I that's the way we
+
+295
+00:19:14,800 --> 00:19:19,405
+教在1806年，从来没有如此反复使用
+teach in 1806 and never use again so
+
+296
+00:19:19,410 --> 00:19:23,765
+它是对角线上的负λ和
+it's minus lambda on the diagonal and of
+
+297
+00:19:23,770 --> 00:19:30,385
+当然P坐在这里然后
+course P is sitting up here and then
+
+298
+00:19:30,390 --> 00:19:35,975
+好吧，所以现在遵循1806规则我
+okay so now following the 1806 rule I
+
+299
+00:19:35,980 --> 00:19:39,835
+应该采取那个确定的权利和
+should take that determinate right and
+
+300
+00:19:39,840 --> 00:19:43,445
+将它设置为零为什么不是这一个
+set it to zero why don't one this is one
+
+301
+00:19:43,450 --> 00:19:45,275
+在极少数情况下我们可以
+of the very few occasions we can
+
+302
+00:19:45,280 --> 00:19:49,325
+真正做到这一点，以便让我做，所以
+actually do it so allow me to do it so
+
+303
+00:19:49,330 --> 00:19:51,605
+这个井的决定因素是什么？
+what is the determinant of this well
+
+304
+00:19:51,610 --> 00:19:55,235
+是的，那就是那个lambda
+yeah there's that there's that lambda to
+
+305
+00:19:55,240 --> 00:20:02,075
+第四个，我想我认为这是羔羊
+the fourth and I guess I think it's lamb
+
+306
+00:20:02,080 --> 00:20:05,225
+到第四个减去一个，我认为是
+to the fourth minus one I think that's
+
+307
+00:20:05,230 --> 00:20:07,785
+正确的决定因素
+the right determinant
+
+308
+00:20:07,790 --> 00:20:13,465
+那肯定有财产所以我
+that certainly has has property so I
+
+309
+00:20:13,470 --> 00:20:16,495
+将设置为零，那么我会找到
+would set that to zero then I would find
+
+310
+00:20:16,500 --> 00:20:21,535
+那个特征值会
+that the the eigenvalues for that will
+
+311
+00:20:21,540 --> 00:20:26,935
+是一减一，我和减去我
+be one and minus one and I and minus I
+
+312
+00:20:26,940 --> 00:20:35,665
+而他们是为如果他们的
+and they're the for for if they're the
+
+313
+00:20:35,670 --> 00:20:38,485
+一个lambda的第四根是第四个
+fourth roots of one lambda the fourth
+
+314
+00:20:38,490 --> 00:20:42,385
+等于我们这是我们的等式
+equal one that's our that's our equation
+
+315
+00:20:42,390 --> 00:20:44,485
+这是我们的特征值方程lambda
+that's our eigenvalue equation lambda
+
+316
+00:20:44,490 --> 00:20:47,155
+第四个等于1或lambda到N.
+the fourth equal 1 or lambda to the N
+
+317
+00:20:47,160 --> 00:20:50,174
+续集之一，所以会是什么
+sequel one so what would be the
+
+318
+00:20:50,179 --> 00:21:00,475
+自由p8x8的特征值
+eigenvalues for for the free p 8x8 this
+
+319
+00:21:00,480 --> 00:21:04,965
+当然是复杂的平面
+is the complex plane of course real and
+
+320
+00:21:04,970 --> 00:21:10,245
+想象中有一个Tigan值
+imaginary so that's got a Tigan values
+
+321
+00:21:10,250 --> 00:21:14,755
+我们想成为的8次方将是
+we want to be the 8th power would be the
+
+322
+00:21:14,760 --> 00:21:19,135
+身份和那意味着lambda到
+identity and that means that lambda to
+
+323
+00:21:19,140 --> 00:21:22,285
+的8次方是一个特征值
+the 8th power is one for the eigenvalues
+
+324
+00:21:22,290 --> 00:21:26,385
+什么是八个解决方案
+and what are the eight solutions every
+
+325
+00:21:26,390 --> 00:21:29,545
+八度多项式方程
+polynomial equation of degree eight has
+
+326
+00:21:29,550 --> 00:21:31,304
+得到八个解决方案
+got to have eight solutions
+
+327
+00:21:31,309 --> 00:21:35,815
+那是高斯的基本定理
+that's Gauss's fundamental theorem of
+
+328
+00:21:35,820 --> 00:21:39,495
+代数八种解决方案那么它们是什么
+algebra eight solutions so what are they
+
+329
+00:21:39,500 --> 00:21:43,375
+那八个数字是八分之一
+what are the eight numbers whose eighth
+
+330
+00:21:43,380 --> 00:21:49,525
+权力给你们所有人都知道的
+power gives one you all probably know
+
+331
+00:21:49,530 --> 00:21:53,275
+他们所以他们当然是第八个
+them so they're one of course the eighth
+
+332
+00:21:53,280 --> 00:21:56,605
+一个的力量是-1的能量，即第八个
+power of one is power of -1 the 8th
+
+333
+00:21:56,610 --> 00:21:59,455
+减去我的权力和其他人都
+power of minus I and the other guys are
+
+334
+00:21:59,460 --> 00:22:05,965
+就在这里，一个人的根源是平等的
+just here the roots of one are equally
+
+335
+00:22:05,970 --> 00:22:08,545
+围绕圆圈间隔，所以傅立叶是
+spaced around the circle so Fourier is
+
+336
+00:22:08,550 --> 00:22:09,115
+进来吧
+come in
+
+337
+00:22:09,120 --> 00:22:11,335
+你知道傅立叶在他们看到的时候会醒来
+you know Fourier wakes up when they sees
+
+338
+00:22:11,340 --> 00:22:15,085
+这张照片就在这里
+that picture for here is gonna be here
+
+339
+00:22:15,090 --> 00:22:20,245
+它将在特征向量中
+and it'll be in the eigenvectors so
+
+340
+00:22:20,250 --> 00:22:23,065
+你还可以使用特征值
+you okay with the eigenvalues the
+
+341
+00:22:23,070 --> 00:22:27,475
+P的特征值将是这多少让
+eigenvalues of p will be this number so
+
+342
+00:22:27,480 --> 00:22:30,554
+我们最好给这个号码命名
+we better give a name to this number
+
+343
+00:22:30,559 --> 00:22:33,924
+让我们看看我打电话给那个号码W.
+let's see I'm gonna call that number W
+
+344
+00:22:33,929 --> 00:22:39,884
+这将是我超过8的2pi
+and it'll be e to the 2 pi I over 8
+
+345
+00:22:39,889 --> 00:22:45,414
+因为角度是2pi
+right because the angle is 2 pi the
+
+346
+00:22:45,419 --> 00:22:48,955
+整个角度是2pi，除以8
+whole angle is 2 pi divided it by in 8
+
+347
+00:22:48,960 --> 00:22:53,065
+所以那是2pi超过82pi
+pieces so the that's 2 pi over 8 2 pi
+
+348
+00:22:53,070 --> 00:22:58,495
+以及四个矩阵结束
+over and for a matrix of four the end by
+
+349
+00:22:58,500 --> 00:23:03,264
+结束排列是的，所以这个数字是W.
+end permutation yeah so that's number W
+
+350
+00:23:03,269 --> 00:23:07,644
+当然这个家伙是平方的
+and of course this guy is is w squared
+
+351
+00:23:07,649 --> 00:23:17,215
+这个是WQw4wv67和w8
+this one is WQ w 4 w v 6 7 and w 8 is
+
+352
+00:23:17,220 --> 00:23:27,595
+相同1右所以右以及那些
+the same as 1 right so right well those
+
+353
+00:23:27,600 --> 00:23:29,754
+我把那些数字放在那里的原因
+the reason I put those numbers up there
+
+354
+00:23:29,759 --> 00:23:32,065
+是他们进入特征向量
+is that they come into the eigenvectors
+
+355
+00:23:32,070 --> 00:23:33,955
+以及特征值
+as well as the eigenvalues
+
+356
+00:23:33,960 --> 00:23:36,955
+它们是这八个特征值
+they are the eigenvalues these eight
+
+357
+00:23:36,960 --> 00:23:41,514
+数字12345678是八
+numbers 1 2 3 4 5 6 7 8 are the eight
+
+358
+00:23:41,519 --> 00:23:43,315
+矩阵的特征值
+eigenvalues of the matrix
+
+359
+00:23:43,320 --> 00:23:48,144
+这是一个44乘4的情况
+it's a here's the 4 4 by 4 case the
+
+360
+00:23:48,149 --> 00:23:52,075
+矩阵是一个正交矩阵哦什么的
+matrix is an orthogonal matrix Oh what
+
+361
+00:23:52,080 --> 00:23:53,965
+这会告诉我们有关特征向量的信息
+does that tell us about the eigenvectors
+
+362
+00:23:53,970 --> 00:23:56,995
+正交矩阵的特征向量
+the eigenvectors of an orthogonal matrix
+
+363
+00:23:57,000 --> 00:24:01,245
+是正交的
+are orthogonal
+
+364
+00:24:01,250 --> 00:24:05,904
+就像对称矩阵一样，你也是
+just like symmetric matrices so do you
+
+365
+00:24:05,909 --> 00:24:15,075
+知道那个小矩阵列表
+know that little list of matrices with
+
+366
+00:24:15,080 --> 00:24:25,825
+正交特征向量如此好，我要去了
+orthogonal eigenvectors so ok I'm going
+
+367
+00:24:25,830 --> 00:24:31,465
+称他们为Q所以QI点缀着QJ
+to call them Q so Q I dotted with Q J
+
+368
+00:24:31,470 --> 00:24:33,885
+内在的产品是
+the inner product is
+
+369
+00:24:33,890 --> 00:24:41,865
+如果我不是J，如果我会说0，则为1或01
+1 or 0 1 if I would say 0 if I is not J
+
+370
+00:24:41,870 --> 00:24:44,034
+正交特征向量现在是什么
+orthogonal eigenvectors now what
+
+371
+00:24:44,039 --> 00:24:45,955
+矩阵具有正交特征向量
+matrices have orthogonal eigenvectors
+
+372
+00:24:45,960 --> 00:24:49,075
+我们要回到线性代数
+we're going back to linear algebra
+
+373
+00:24:49,080 --> 00:24:50,845
+因为这是这就像一个
+because this is this is like a
+
+374
+00:24:50,850 --> 00:24:54,894
+知道这个家庭的基本事实
+fundamental fact to know this family of
+
+375
+00:24:54,899 --> 00:24:58,515
+奇妙的矩阵矩阵
+wonderful matrices matrices with
+
+376
+00:24:58,520 --> 00:25:01,015
+正交特征向量所以告诉我一个
+orthogonal eigenvectors so tell me one
+
+377
+00:25:01,020 --> 00:25:03,654
+你知道的一堆矩阵
+bunch of matrices that you know has
+
+378
+00:25:03,659 --> 00:25:12,265
+正交特征向量对称和
+orthogonal eigenvectors symmetric and
+
+379
+00:25:12,270 --> 00:25:14,575
+特征值有什么特别之处
+what is special about the eigenvalues
+
+380
+00:25:14,580 --> 00:25:18,265
+他们是真实的，但还有其他的
+they're real but there are other
+
+381
+00:25:18,270 --> 00:25:22,345
+具有正交的矩阵
+matrices that have orthogonal
+
+382
+00:25:22,350 --> 00:25:26,125
+特征向量，我们真的应该知道
+eigenvectors and we really should know
+
+383
+00:25:26,130 --> 00:25:28,794
+关于那些家伙整个故事
+the whole story about those guys that
+
+384
+00:25:28,799 --> 00:25:31,195
+他们太重要了，不知道
+they're too important not to know so
+
+385
+00:25:31,200 --> 00:25:33,475
+什么是另一个饥荒-一堆
+what's another famine other-- bunch of
+
+386
+00:25:33,480 --> 00:25:36,265
+矩阵所以这些对称矩阵
+matrices so these symmetric matrices
+
+387
+00:25:36,270 --> 00:25:41,455
+有正交特征向量和真实
+have orthogonal eigenvectors and real
+
+388
+00:25:41,460 --> 00:25:43,465
+对称的，则特征值将是
+symmetric then the eigenvalues will be
+
+389
+00:25:43,470 --> 00:25:46,794
+真正的其他家庭是什么其他
+real well what other family what other
+
+390
+00:25:46,799 --> 00:25:49,554
+矩阵的种类是正交的
+kind of matrices have orthogonal
+
+391
+00:25:49,559 --> 00:25:53,845
+特征向量但它们可能很复杂
+eigenvectors but they might be complex
+
+392
+00:25:53,850 --> 00:25:57,625
+和特征值可能是复杂，所以
+and the eigenvalues might be complex so
+
+393
+00:25:57,630 --> 00:26:00,654
+而你只需要你可以不知道
+and you just have to you can't know
+
+394
+00:26:00,659 --> 00:26:03,835
+傅立叶没说，我可以处理
+Fourier without saying ok I can deal
+
+395
+00:26:03,840 --> 00:26:08,065
+这个复杂的数字确定
+with this complex number ok
+
+396
+00:26:08,070 --> 00:26:10,255
+什么是另一个矩阵族
+so what's another family of matrices
+
+397
+00:26:10,260 --> 00:26:15,164
+具有正交特征向量的是
+that has orthogonal eigenvectors yes
+
+398
+00:26:15,169 --> 00:26:21,015
+对角线肯定是正确的，然后我们知道
+diagonal for sure right and then we know
+
+399
+00:26:21,020 --> 00:26:29,755
+我们有特征向量
+that we we have the eigenvectors are go
+
+400
+00:26:29,760 --> 00:26:33,115
+到单位矩阵权呀等等
+into the identity matrix right yeah so
+
+401
+00:26:33,120 --> 00:26:34,914
+我们知道对角线的一切
+we know everything about diagonal ones
+
+402
+00:26:34,919 --> 00:26:37,404
+你可以说那些都包括在内
+you could say those are included in
+
+403
+00:26:37,409 --> 00:26:39,615
+对称现在让我们得到一些新的
+symmetric now let's get some new ones
+
+404
+00:26:39,620 --> 00:26:42,375
+还有什么
+what else
+
+405
+00:26:42,380 --> 00:26:45,225
+正交矩阵计数
+orthogonal matrices count
+
+406
+00:26:45,230 --> 00:26:49,494
+正交矩阵，如排列或
+orthogonal matrices like permutations or
+
+407
+00:26:49,499 --> 00:26:53,715
+像旋转或像反射一样
+like rotations or like reflections
+
+408
+00:26:53,720 --> 00:26:59,605
+正交矩阵和什么是特殊的
+orthogonal matrices and what's special
+
+409
+00:26:59,610 --> 00:27:03,325
+关于它们的特征值的特征值
+about their eigenvalues the eigenvalues
+
+410
+00:27:03,330 --> 00:27:08,845
+正交矩阵的大小是
+of an orthogonal matrix the magnitude is
+
+411
+00:27:08,850 --> 00:27:13,884
+1确实必须有一个，因为一个
+1 exactly there has to be one because an
+
+412
+00:27:13,889 --> 00:27:16,705
+正交矩阵不会改变
+orthogonal matrix doesn't change the
+
+413
+00:27:16,710 --> 00:27:20,784
+向量q的长度x乘以
+length of the vector q times x has the
+
+414
+00:27:20,789 --> 00:27:25,335
+所有向量和x的长度与x4相同
+same length as x 4 for all vectors and
+
+415
+00:27:25,340 --> 00:27:29,185
+特别是对于特征向量，如果
+in particular for eigenvectors so if
+
+416
+00:27:29,190 --> 00:27:32,985
+这是一个特征向量qx等于
+this was an eigenvector q x would equal
+
+417
+00:27:32,990 --> 00:27:37,524
+lambdaX，现在如果等于那个
+the lambda X and now if that equals that
+
+418
+00:27:37,529 --> 00:27:40,404
+那么lambda必须是1的大小
+then lambda has to be 1 the magnitude of
+
+419
+00:27:40,409 --> 00:27:44,965
+lambda必须是1当然很复杂
+lambda has to be 1 of course complex
+
+420
+00:27:44,970 --> 00:27:47,095
+预计这里会有数字
+numbers are expected here and that's
+
+421
+00:27:47,100 --> 00:27:49,914
+正是我们在这里看到的一切
+exactly what we're seeing here all the
+
+422
+00:27:49,919 --> 00:27:53,815
+排列的特征值非常大
+eigenvalues of permutations are very
+
+423
+00:27:53,820 --> 00:27:56,634
+特殊的正​​交矩阵II不会
+special orthogonal matrices I I won't
+
+424
+00:27:56,639 --> 00:27:59,575
+将排列分别添加到列表中
+add permutations separately to the list
+
+425
+00:27:59,580 --> 00:28:08,034
+但他们现在算是这样的了
+but they count now what so this has the
+
+426
+00:28:08,039 --> 00:28:11,124
+事实上，这是在名单上告诉我们的
+fact that this is on the list tells us
+
+427
+00:28:11,129 --> 00:28:12,624
+我们要去的特征向量
+that the eigenvectors that we're going
+
+428
+00:28:12,629 --> 00:28:15,114
+找到正交我们没有
+to find are orthogonal we don't have to
+
+429
+00:28:15,119 --> 00:28:17,244
+做一个单独的检查，看看他们是谁
+do a separate check to see that they are
+
+430
+00:28:17,249 --> 00:28:20,654
+一旦我们计算出它们就必须存在
+once we compute them they have to be
+
+431
+00:28:20,659 --> 00:28:23,215
+还有的特征向量我们
+there are the eigenvectors of our
+
+432
+00:28:23,220 --> 00:28:27,654
+正交矩阵现在我可以问你
+orthogonal matrix now I could ask you
+
+433
+00:28:27,659 --> 00:28:29,904
+让我们保持这个打算得到整个
+let's keep going with this get the whole
+
+434
+00:28:29,909 --> 00:28:35,095
+列出这里以及对称的那些
+list here along with symmetric there's
+
+435
+00:28:35,100 --> 00:28:39,804
+另一堆人反对称大
+another bunch of guys anti-symmetric big
+
+436
+00:28:39,809 --> 00:28:42,174
+对付，但这些都是重要的，所以
+deal but those are important so
+
+437
+00:28:42,179 --> 00:28:45,914
+对称意味着转置等于a
+symmetric means a transpose equals a
+
+438
+00:28:45,919 --> 00:28:49,975
+对角线你知道转置等于a
+diagonal you know a transpose equals a
+
+439
+00:28:49,980 --> 00:28:54,475
+反正交矩阵现在我
+inverse orthogonal matrices now I'm
+
+440
+00:28:54,480 --> 00:28:57,355
+打算放入反对称矩阵
+going to put in anti-symmetric matrices
+
+441
+00:28:57,360 --> 00:28:58,225
+哪里
+where
+
+442
+00:28:58,230 --> 00:29:06,145
+转置是减去你的想法
+a transpose is minus a what do you think
+
+443
+00:29:06,150 --> 00:29:09,465
+你知道的特征值
+you know about the eigenvalues for
+
+444
+00:29:09,470 --> 00:29:13,365
+反对称矩阵
+anti-symmetric matrices
+
+445
+00:29:13,370 --> 00:29:17,905
+我们举一个反对称的例子
+shall we take an example anti-symmetric
+
+446
+00:29:17,910 --> 00:29:25,545
+矩阵说零一个零和负一
+matrix say zero zero one and minus one
+
+447
+00:29:25,550 --> 00:29:29,545
+什么是好，如果那特征值
+what are the eigenvalues of that well if
+
+448
+00:29:29,550 --> 00:29:34,965
+我减去拉姆达从从
+I subtract lambda from the from the
+
+449
+00:29:34,970 --> 00:29:38,175
+对角线并采取确定的我得到
+diagonal and takes a determinate I get
+
+450
+00:29:38,180 --> 00:29:43,585
+lambda平方加1右等于0所以
+lambda squared plus 1 right equals 0 so
+
+451
+00:29:43,590 --> 00:29:51,595
+lambda是我或者我是旋转
+lambda is I or minus I that's a rotation
+
+452
+00:29:51,600 --> 00:29:54,535
+矩阵本身是啊
+matrix itself yeah
+
+453
+00:29:54,540 --> 00:29:57,595
+是的，它是一个90度的旋转
+yeah it's a it's a rotation through 90
+
+454
+00:29:57,600 --> 00:29:59,335
+度，所以不可能是真实的
+degrees so there could not be a real
+
+455
+00:29:59,340 --> 00:30:01,705
+特征值你有没有想过这个
+eigenvalue have you thought about that
+
+456
+00:30:01,710 --> 00:30:06,835
+或者如果我每次都旋转一个真正的特征向量
+or a real eigenvector if i rotate every
+
+457
+00:30:06,840 --> 00:30:09,835
+矢量怎么可能出来一个矢量
+vector how could a vector come out a
+
+458
+00:30:09,840 --> 00:30:15,075
+我自己怎么样才能拥有一个
+multiple of itself how could I have a
+
+459
+00:30:15,080 --> 00:30:19,105
+转置时间等于lambda的向量
+transpose times a vector equal lambda
+
+460
+00:30:19,110 --> 00:30:22,255
+我已经旋转它的矢量时代了
+times a vector I've rotated it and yet
+
+461
+00:30:22,260 --> 00:30:24,655
+不知何故，它在同一个方向
+it's in the same direction well somehow
+
+462
+00:30:24,660 --> 00:30:30,165
+这可能是想象中的
+that's possible in imaginary in in
+
+463
+00:30:30,170 --> 00:30:33,925
+虚构的空间，并非不可能
+imaginary space and not not possible in
+
+464
+00:30:33,930 --> 00:30:38,485
+真实的空间好吧所以这里是一个lambdas
+real space okay so so here's a lambdas
+
+465
+00:30:38,490 --> 00:30:45,415
+是虚构的，现在终于告诉我了
+are imaginary and now finally tell me
+
+466
+00:30:45,420 --> 00:30:50,755
+如果你知道整个的名字，你
+you if you know the name of the whole
+
+467
+00:30:50,760 --> 00:30:52,975
+包括所有矩阵的矩阵族
+family of matrices that includes all of
+
+468
+00:30:52,980 --> 00:30:56,535
+那些和更多的矩阵
+those and more of matrices with
+
+469
+00:30:56,540 --> 00:30:59,935
+正交向量所以那是什么
+orthogonal eigenvectors so what is that
+
+470
+00:30:59,940 --> 00:31:02,115
+那么什么是特殊属性
+what are the special properties then
+
+471
+00:31:02,120 --> 00:31:07,215
+这些将是矩阵，所以我称之为M
+these would be matrices so I call them M
+
+472
+00:31:07,220 --> 00:31:12,085
+对于矩阵，所以它是一个正交的
+for matrix so it's a has orthogonal
+
+473
+00:31:12,090 --> 00:31:14,695
+你是矢量所以它是Q倍
+you're vector so it's a Q times the
+
+474
+00:31:14,700 --> 00:31:21,745
+对角线时间q转置得很好
+diagonal times q transpose that's well
+
+475
+00:31:21,750 --> 00:31:23,965
+我真的写下来了
+I've really written down somehow I
+
+476
+00:31:23,970 --> 00:31:25,945
+没有为他们写下名字但是
+haven't written a name down for them but
+
+477
+00:31:25,950 --> 00:31:30,205
+这就是他们获得他们的方式我是
+that's the way they way to get them I'm
+
+478
+00:31:30,210 --> 00:31:35,174
+允许任何正交的特征向量
+allowing any orthogonal eigenvectors
+
+479
+00:31:35,179 --> 00:31:38,515
+对不起，这是对角线我对角线
+sorry this is diagonal I've diagonalized
+
+480
+00:31:38,520 --> 00:31:42,715
+矩阵，在这里，我得到任何
+the the matrix and here the I get any
+
+481
+00:31:42,720 --> 00:31:46,135
+特征值所以我想要最后一个人
+eigenvalue so I want to the final guy on
+
+482
+00:31:46,140 --> 00:31:48,705
+此列表允许任何特征值
+this list allows any eigenvalues any
+
+483
+00:31:48,710 --> 00:31:53,424
+复杂的数字，但我可以矢量
+complex numbers but there I can vectors
+
+484
+00:31:53,429 --> 00:31:56,215
+我想要正交
+I'm want to be orthogonal
+
+485
+00:31:56,220 --> 00:32:01,735
+所以这就是为什么我将q怎么这么会
+so that's why I have the Q so how would
+
+486
+00:32:01,740 --> 00:32:04,284
+你认识到这样一个矩阵，是什么
+you recognize such a matrix and what is
+
+487
+00:32:04,289 --> 00:32:07,705
+他们的名字，这样是那么这
+the name for them so that is so this
+
+488
+00:32:07,710 --> 00:32:11,125
+我们可能会超过1806年
+we're going beyond 1806 because probably
+
+489
+00:32:11,130 --> 00:32:14,544
+我没有提到这个名字的名字
+I don't mention that name the name for
+
+490
+00:32:14,549 --> 00:32:19,515
+这些矩阵在1806年，但我可以和
+these matrices in 1806 but I could and
+
+491
+00:32:19,520 --> 00:32:25,765
+任何人都知道这种形式的矩阵是
+anybody know it a matrix of that form is
+
+492
+00:32:25,770 --> 00:32:31,794
+正常矩阵法线就是这样
+a normal matrix normal so that's the
+
+493
+00:32:31,799 --> 00:32:41,035
+总列表是正常名称
+total list is a normal name
+
+494
+00:32:41,040 --> 00:32:48,095
+所以正常的矩阵看起来就像我有的那样
+so normal matrices look like that I have
+
+495
+00:32:48,100 --> 00:32:50,135
+为那些想到这一点的人道歉
+to apologize for whoever thought up that
+
+496
+00:32:50,140 --> 00:32:53,555
+名字正常我的意思是那样的好
+name normal I mean like that's like okay
+
+497
+00:32:53,560 --> 00:32:56,585
+在多一点思考，你可能已经
+in a little more thought you could've
+
+498
+00:32:56,590 --> 00:32:59,495
+想出更有意义的事情
+come up with something more meaningful
+
+499
+00:32:59,500 --> 00:33:02,825
+不仅仅是说正常哦上帝说矩阵
+than just say normal oh god says matrix
+
+500
+00:33:02,830 --> 00:33:04,985
+这与正常情况完全相反
+that's the absolute opposite of normal
+
+501
+00:33:04,990 --> 00:33:08,105
+几乎所有的矩阵都不正常
+almost all matrices are not normal
+
+502
+00:33:08,110 --> 00:33:10,805
+所以无论如何，这就是他们所谓的
+so anyway but that's what they're called
+
+503
+00:33:10,810 --> 00:33:13,985
+正常的矩阵，最后你怎么样
+normal matrices and finally how do you
+
+504
+00:33:13,990 --> 00:33:17,435
+认识每个人的正常矩阵
+recognize a normal matrix everybody
+
+505
+00:33:17,440 --> 00:33:19,385
+知道如何识别对称
+knows how to recognize a symmetric
+
+506
+00:33:19,390 --> 00:33:22,265
+矩阵或对角矩阵，我们甚至
+matrix or a diagonal matrix and we even
+
+507
+00:33:22,270 --> 00:33:23,945
+知道如何识别正交
+know how to recognize an orthogonal
+
+508
+00:33:23,950 --> 00:33:28,205
+矩阵或歪斜或反对称但如何
+matrix or skew or anti-symmetric but how
+
+509
+00:33:28,210 --> 00:33:30,275
+你有什么简单的测试方法一
+do you what's the quick test for a
+
+510
+00:33:30,280 --> 00:33:34,595
+普通矩阵我会告诉你
+normal matrix well I'll just tell you
+
+511
+00:33:34,600 --> 00:33:40,475
+普通矩阵有m个转置m
+that a normal matrix has m transpose m
+
+512
+00:33:40,480 --> 00:33:46,865
+等于mm转置我在这里说
+equal m m transpose I'm talking here
+
+513
+00:33:46,870 --> 00:33:49,055
+关于真正的矩阵，我真的应该
+about real matrices and I really should
+
+514
+00:33:49,060 --> 00:33:53,765
+转向复杂，但让我想到
+move to complex but let me just think of
+
+515
+00:33:53,770 --> 00:33:58,775
+它们是真实的，所以如果麻烦的话
+them as real so if well the trouble is
+
+516
+00:33:58,780 --> 00:34:01,645
+他们的矩阵可能是真实的，但是
+they the matrices might be real but the
+
+517
+00:34:01,650 --> 00:34:03,785
+特征向量不会是真实的
+eigenvectors are not going to be real
+
+518
+00:34:03,790 --> 00:34:06,635
+并且特征值不会
+and the eigenvalues are not going to be
+
+519
+00:34:06,640 --> 00:34:09,635
+真正所以我真的很抱歉说真的
+real so really I I'm sorry to say really
+
+520
+00:34:09,640 --> 00:34:14,215
+再次，我应该走出走出的
+again I should get out of the out of the
+
+521
+00:34:14,220 --> 00:34:18,995
+真实的限制，我怎么得到
+limitation to real yeah and how do I get
+
+522
+00:34:19,000 --> 00:34:23,015
+出于对我真实的限制
+out of the limitation to real what do I
+
+523
+00:34:23,020 --> 00:34:26,225
+如果M是复数矩阵，则在此处改变
+change here if M is a complex matrix
+
+524
+00:34:26,230 --> 00:34:29,195
+而不是一个真正的矩阵然后
+instead of a real matrix then whenever
+
+525
+00:34:29,200 --> 00:34:31,535
+你转置它你应该采取它
+you transpose it you should take its
+
+526
+00:34:31,540 --> 00:34:35,225
+复杂的共轭所以现在就是这样的
+complex conjugate so now that that's the
+
+527
+00:34:35,230 --> 00:34:37,465
+真实的东西，这是正常的事情
+real thing that's the normal thing
+
+528
+00:34:37,470 --> 00:34:40,955
+这是正确的事情呀右右
+that's the right thing yeah right right
+
+529
+00:34:40,960 --> 00:34:44,975
+事情更好，所以这是正常的
+things better okay so that's a normal
+
+530
+00:34:44,980 --> 00:34:48,305
+矩阵和你可以检查，如果你
+matrix and and you can check that if you
+
+531
+00:34:48,310 --> 00:34:52,594
+拿了那个米，你想出了m
+took that m and you figured out m
+
+532
+00:34:52,599 --> 00:34:56,144
+转置并做到它会起作用
+transpose and did that it would work
+
+533
+00:34:56,149 --> 00:34:59,084
+因为最后队列取消了
+because in the end the queues cancel and
+
+534
+00:34:59,089 --> 00:35:05,145
+你只有两个对角矩阵
+you're just have two diagonal matrices
+
+535
+00:35:05,150 --> 00:35:09,405
+那就是那种自动的
+there and that's sort of automatic that
+
+536
+00:35:09,410 --> 00:35:12,285
+对角矩阵通勤这么正常
+diagonal matrices commute so a normal
+
+537
+00:35:12,290 --> 00:35:14,895
+矩阵是与其交换的矩阵
+matrix is one that commutes with its
+
+538
+00:35:14,900 --> 00:35:18,135
+用它的转置或转置通勤
+transpose commutes with its transpose or
+
+539
+00:35:18,140 --> 00:35:21,104
+它的共轭转置在复合体中
+its conjugate transpose in the complex
+
+540
+00:35:21,109 --> 00:35:26,295
+案件确定为什么我这么简单地说
+case ok why did I say all that simply
+
+541
+00:35:26,300 --> 00:35:30,824
+因为哦，我猜是这样的
+because oh I guess that so the
+
+542
+00:35:30,829 --> 00:35:39,465
+置换P是正交的，所以
+permutation P is is orthogonal so so
+
+543
+00:35:39,470 --> 00:35:41,535
+它的特征向量，我们要去
+it's eigen vectors which we're going to
+
+544
+00:35:41,540 --> 00:35:44,235
+写下一分钟是正交的
+write down in a minute are orthogonal
+
+545
+00:35:44,240 --> 00:35:51,045
+但实际上这个矩阵C将是一个
+but actually this matrix C will be a
+
+546
+00:35:51,050 --> 00:36:00,104
+正常矩阵我没有看到即将到来
+normal matrix I didn't see that coming
+
+547
+00:36:00,109 --> 00:36:02,255
+当我开始谈论这些家伙时
+as I started talking about these guys
+
+548
+00:36:02,260 --> 00:36:05,354
+是的，如果我这是一个正常的矩阵
+yeah so that's a normal matrix if I
+
+549
+00:36:05,359 --> 00:36:07,725
+因为因为循环矩阵
+because because circulant matrices
+
+550
+00:36:07,730 --> 00:36:10,334
+通勤任何两个循环矩阵
+commute any two circulant matrices
+
+551
+00:36:10,339 --> 00:36:18,405
+通勤C1C2等于C2C1现在
+commute C 1 C 2 equals C 2 C 1 and now
+
+552
+00:36:18,410 --> 00:36:22,334
+如果C2是转置，那么这里是a
+if C 2 is the transpose of so here's a
+
+553
+00:36:22,339 --> 00:36:29,195
+矩阵是啊所以这些都是矩阵
+matrix yeah so these are matrices here
+
+554
+00:36:29,200 --> 00:36:31,425
+循环萨尔通勤它有点
+circulant Sall commute it's a little
+
+555
+00:36:31,430 --> 00:36:34,665
+当你繁殖时，矩阵族
+family of matrices when you multiply
+
+556
+00:36:34,670 --> 00:36:36,255
+他们聚一聚更多的人
+them together you get more of them
+
+557
+00:36:36,260 --> 00:36:38,445
+你只是呆在那个小小的地方
+you're just staying in that little
+
+558
+00:36:38,450 --> 00:36:42,695
+具有n个参数的循环世界
+circulant world with n parameters and
+
+559
+00:36:42,700 --> 00:36:45,675
+一旦你知道你知道的第一行
+once you know the first row you know all
+
+560
+00:36:45,680 --> 00:36:53,055
+其他行，所以实际上他们都是
+the other rows and so in fact they all
+
+561
+00:36:53,060 --> 00:36:55,395
+拥有相同的特征向量所以现在让我
+have the same eigen vector so now let me
+
+562
+00:36:55,400 --> 00:36:59,135
+可以肯定我们得到了特征向量
+that may be sure we get the eigenvectors
+
+563
+00:36:59,140 --> 00:37:08,085
+直接没关系
+straight okay
+
+564
+00:37:08,090 --> 00:37:19,525
+好吧，我可以在P的载体也将是
+okay I can vectors of of P will also be
+
+565
+00:37:19,530 --> 00:37:29,065
+我能用C的向量是因为它是一个
+I can vectors of C is because it's a
+
+566
+00:37:29,070 --> 00:37:43,165
+P的力量组合，所以我
+combination of powers of P so once I
+
+567
+00:37:43,170 --> 00:37:45,205
+找我发现P的特征向量
+find the eigenvectors of P I've found
+
+568
+00:37:45,210 --> 00:37:47,635
+任何循环矩阵的特征向量
+the eigenvectors of any circulant matrix
+
+569
+00:37:47,640 --> 00:37:50,485
+这些特征向量非常特殊
+and these eigenvectors are very special
+
+570
+00:37:50,490 --> 00:37:52,735
+那是与傅立叶的联系
+and that's the connection to fourier
+
+571
+00:37:52,740 --> 00:37:56,215
+这就是我们期望连接的原因
+that's why we expect a connection to
+
+572
+00:37:56,220 --> 00:37:58,645
+傅立叶因为我们有东西
+fourier because we have something
+
+573
+00:37:58,650 --> 00:38:00,715
+这是免费的
+periodic and that's what free is
+
+574
+00:38:00,720 --> 00:38:03,715
+完全是好的，所以这些是什么
+entirely about okay so what are these
+
+575
+00:38:03,720 --> 00:38:04,885
+特征向量
+eigenvectors
+
+576
+00:38:04,890 --> 00:38:21,535
+让我们把p变成四乘四，好吧
+let's take p to be four by four okay so
+
+577
+00:38:21,540 --> 00:38:25,015
+特征向量是我们记得的
+the eigenvectors are so we remember the
+
+578
+00:38:25,020 --> 00:38:27,385
+特征值是lambda等于1lambda
+eigenvalues are lambda equal 1 lambda
+
+579
+00:38:27,390 --> 00:38:31,225
+等于-1lambda等于I和lambda
+equal minus 1 lambda equal I and lambda
+
+580
+00:38:31,230 --> 00:38:34,675
+等于减去我有四个特征向量
+equal minus I got four eigenvectors to
+
+581
+00:38:34,680 --> 00:38:37,735
+找到，当我们找到你将拥有的那些
+find and when we find those you'll have
+
+582
+00:38:37,740 --> 00:38:40,075
+一张图片好的是什么是特征值
+a picture ok what's the eigenvalue
+
+583
+00:38:40,080 --> 00:38:46,305
+本征向量为等于拉姆达11111
+eigenvector for a lambda equal 1 1 1 1 1
+
+584
+00:38:46,310 --> 00:38:50,575
+所以让我把它变成一个矢量和
+so let me make it into a vector and the
+
+585
+00:38:50,580 --> 00:38:53,775
+lambda等于-1的特征向量是
+eigenvector for lambda equal minus 1 is
+
+586
+00:38:53,780 --> 00:38:57,535
+所以我希望这种转变能够改变
+so I want this shift to change every
+
+587
+00:38:57,540 --> 00:39:00,865
+如果我更好地交替那些，那么签字
+sign so if I I better alternate those
+
+588
+00:39:00,870 --> 00:39:06,925
+标志，如果我转移它，一个人去
+signs so that if I shift it the one goes
+
+589
+00:39:06,930 --> 00:39:11,155
+到-1-1到1那么本征
+to the -1 -1 goes to the 1 so the eigen
+
+590
+00:39:11,160 --> 00:39:13,705
+价值是负1现在怎么样
+value is minus 1 now what about the
+
+591
+00:39:13,710 --> 00:39:15,235
+特征值
+eigenvalues of
+
+592
+00:39:15,240 --> 00:39:18,185
+我们很遗憾特征向量
+we're sorry the eigenvector that goes
+
+593
+00:39:18,190 --> 00:39:23,075
+特征值我所以我想要我想要的
+with eigenvalue i so i'm looking i want
+
+594
+00:39:23,080 --> 00:39:29,105
+如果我用一个开始它，我做的
+if i start it with one and i do the
+
+595
+00:39:29,110 --> 00:39:32,375
+排列我认为我只想要我
+permutation i think i just want i I
+
+596
+00:39:32,380 --> 00:39:35,915
+平方我在那里立刻，我想
+squared I cubed there and I think with
+
+597
+00:39:35,920 --> 00:39:39,095
+这个减去II的人认为我想要的
+this guy with minus I I think I want the
+
+598
+00:39:39,100 --> 00:39:44,525
+矢量1减去我减去我平方减去我
+vector 1 minus I minus I squared minus I
+
+599
+00:39:44,530 --> 00:39:57,005
+立刻，所以没有停下来检查让我们
+cubed so without stopping to check let's
+
+600
+00:39:57,010 --> 00:40:00,605
+只看到这里的好点
+just see the the nice point here all the
+
+601
+00:40:00,610 --> 00:40:03,595
+特征向量的所有组件
+all the components of eigenvectors are
+
+602
+00:40:03,600 --> 00:40:08,855
+在这张照片中我们都在这里
+on in this picture all the here we've
+
+603
+00:40:08,860 --> 00:40:11,825
+得到八个特征向量一个Tigan值a
+got eight eigenvectors a Tigan values a
+
+604
+00:40:11,830 --> 00:40:13,895
+特征向量具有的数字向量
+digan vectors the eigenvectors have
+
+605
+00:40:13,900 --> 00:40:16,565
+8个组件和每个组件是
+eight components and every component is
+
+606
+00:40:16,570 --> 00:40:19,285
+权力就是这八个数字中的一个
+a power is one of these eight numbers
+
+607
+00:40:19,290 --> 00:40:22,145
+整个事情是由...构建的
+the whole thing is constructed from the
+
+608
+00:40:22,150 --> 00:40:24,395
+相同的八个数字的特征值和
+same eight numbers the eigenvalues and
+
+609
+00:40:24,400 --> 00:40:29,015
+特征向量和真正的关键
+the eigenvectors and really the key
+
+610
+00:40:29,020 --> 00:40:31,475
+点是什么是矩阵
+point is what is the matrix of
+
+611
+00:40:31,480 --> 00:40:34,805
+特征向量所以让我们写一下
+eigenvectors so let's just write that
+
+612
+00:40:34,810 --> 00:40:42,485
+向下，所以矩阵是特征向量
+down so the matrix the eigen vector
+
+613
+00:40:42,490 --> 00:41:00,025
+矩阵大小为n的所有循环S--
+matrix for all circulant s-- of size n
+
+614
+00:41:00,030 --> 00:41:03,715
+它们都具有相同的特征向量
+they all have the same eigen vectors
+
+615
+00:41:03,720 --> 00:41:11,345
+包括p全部循环c
+including including p all circulant c of
+
+616
+00:41:11,350 --> 00:41:15,545
+大小和包括大小为n的p
+size and including p of size n which
+
+617
+00:41:15,550 --> 00:41:19,235
+我们就是这样的
+where that's what we so what's the
+
+618
+00:41:19,240 --> 00:41:21,095
+特征向量矩阵是什么
+eigenvector matrix what are the
+
+619
+00:41:21,100 --> 00:41:27,715
+特征向量和第一个向量
+eigenvectors well the first vector
+
+620
+00:41:27,720 --> 00:41:34,344
+就像他们所有人一样
+is all one's just as their so that's an
+
+621
+00:41:34,349 --> 00:41:38,844
+p右的特征向量因为如果我
+eigenvector of p right because if I
+
+622
+00:41:38,849 --> 00:41:43,735
+乘以PII做一个循环移位
+multiply by P I I do a shift a cyclic
+
+623
+00:41:43,740 --> 00:41:48,255
+转移，我已经拥有了下一个
+shift and I've got all one's the next
+
+624
+00:41:48,260 --> 00:42:00,475
+特征向量是W的权力，让我
+eigenvector is powers of W and let me
+
+625
+00:42:00,480 --> 00:42:02,425
+提醒你一切都会成真
+remind you everything is going to be
+
+626
+00:42:02,430 --> 00:42:06,114
+W的功率为2pi，超过N
+powers of W e to the 2 pi I over N
+
+627
+00:42:06,119 --> 00:42:11,215
+这是一个复杂的数字，只有一英寸
+it's that complex number that's one inch
+
+628
+00:42:11,220 --> 00:42:14,275
+圆的方式，所以这是什么
+of the way round so that's C so what
+
+629
+00:42:14,280 --> 00:42:17,185
+如果我乘以P它就会发生
+happens if I multiply that by P it
+
+630
+00:42:17,190 --> 00:42:21,985
+改变它，它乘以W或1
+shifts it and it multiplies by W or 1
+
+631
+00:42:21,990 --> 00:42:24,925
+W双传，W传递
+over W double which is W transitive
+
+632
+00:42:24,930 --> 00:42:27,685
+这是另一个特征向量好吧
+which is another eigenvector okay and
+
+633
+00:42:27,690 --> 00:42:30,445
+然后这个列表中的下一个将是
+then the next one in this list will be
+
+634
+00:42:30,450 --> 00:42:33,925
+好好与W平方，所以它会
+well being going with W squared so it'll
+
+635
+00:42:33,930 --> 00:42:38,035
+是第四个W到第六个W到了
+be W fourth W to the sixth w to the
+
+636
+00:42:38,040 --> 00:42:40,915
+第八个哇等一下，所以我得到了这些
+eighth whoa wait a minute so I get these
+
+637
+00:42:40,920 --> 00:42:44,695
+排队正确告诉我你和W一起去
+lined up right tell me your goes with W
+
+638
+00:42:44,700 --> 00:42:50,925
+哎呀
+squared up whoops
+
+639
+00:42:50,930 --> 00:42:54,625
+W平方现在它是W的第四个W.
+W squared now it's W the fourth W the
+
+640
+00:42:54,630 --> 00:43:00,834
+6W到8W第十W第12
+six W to the 8 W the tenth W the twelfth
+
+641
+00:43:00,839 --> 00:43:05,905
+和你到第十四和你保持
+and W to the fourteenth and you keep
+
+642
+00:43:05,910 --> 00:43:11,965
+这样就是特征本征向量
+going so that's the eigen eigen vector
+
+643
+00:43:11,970 --> 00:43:14,574
+特征值1这将发生我
+with eigenvalue 1 this will happen i
+
+644
+00:43:14,579 --> 00:43:17,155
+具有特征值，它是w或
+have the eigenvalue it's either w or of
+
+645
+00:43:17,160 --> 00:43:20,574
+共轭可能是共轭条
+a conjugate might be the conjugate w bar
+
+646
+00:43:20,579 --> 00:43:25,195
+你会看到这个矩阵，那将是什么
+and you see this matrix so what would be
+
+647
+00:43:25,200 --> 00:43:29,875
+这将是W，使得最后一个图标矢量
+the last icon vector it would be w so
+
+648
+00:43:29,880 --> 00:43:32,395
+这是8乘8
+this is 8 by 8
+
+649
+00:43:32,400 --> 00:43:34,794
+我要呼吁的是，傅立叶矩阵
+I'm gonna call that the Fourier matrix
+
+650
+00:43:34,799 --> 00:43:40,764
+大小为8，它是特征向量
+of size eight and it's the eigenvector
+
+651
+00:43:40,769 --> 00:43:49,334
+矩阵等傅里叶矩阵等于
+matrix so Fourier matrix equals
+
+652
+00:43:49,339 --> 00:43:59,754
+特征向量矩阵所以我就是我的意思
+eigenvector matrix so I'm just what I'm
+
+653
+00:43:59,759 --> 00:44:02,724
+说的是线性代数
+saying is that the linear algebra for
+
+654
+00:44:02,729 --> 00:44:07,074
+这些循环S--是太棒了，他们
+these circulant s-- is fantastic they
+
+655
+00:44:07,079 --> 00:44:09,984
+都具有相同的本征向量矩阵它
+all have the same eigen vector matrix it
+
+656
+00:44:09,989 --> 00:44:12,114
+恰好是最重要的复杂因素
+happens to be the most important complex
+
+657
+00:44:12,119 --> 00:44:16,675
+世界中的矩阵及其属性
+matrix in the world and its properties
+
+658
+00:44:16,680 --> 00:44:20,334
+是金色的，它允许快速
+are golden and it allows the fast
+
+659
+00:44:20,339 --> 00:44:24,114
+我们可以写的傅里叶变换
+Fourier transform which we could write
+
+660
+00:44:24,119 --> 00:44:27,895
+在下一次和所有的矩阵语言
+in matrix language next time and all the
+
+661
+00:44:27,900 --> 00:44:30,804
+项为W的所有条目的权力
+entries are powers of W all the entries
+
+662
+00:44:30,809 --> 00:44:37,254
+是在单位圆上的一个
+are in the on the unit circle at one of
+
+663
+00:44:37,259 --> 00:44:39,625
+那八点和最后一个人
+those eight points and the last guy
+
+664
+00:44:39,630 --> 00:44:42,594
+将是W到第七个W到
+would be W to the seventh w to the
+
+665
+00:44:42,599 --> 00:44:45,895
+第十四W¯¯二十前二十
+fourteenth W the twenty first twenty
+
+666
+00:44:45,900 --> 00:44:51,314
+八点三十五分四十秒
+eight thirty fifth forty seconds and
+
+667
+00:44:51,319 --> 00:44:58,734
+49所以W上的第四十九届会
+forty nine so W of the forty-ninth would
+
+668
+00:44:58,739 --> 00:45:03,024
+它是最后一个平方的开始
+be the last w tu7 squared it starts out
+
+669
+00:45:03,029 --> 00:45:08,655
+所有这些都是W到0倍0
+with W to the 0 times 0 all these are
+
+670
+00:45:08,660 --> 00:45:16,014
+条目是你看到的图片W
+the entry is yeah you see the picture W
+
+671
+00:45:16,019 --> 00:45:20,935
+如果W是，则xlix实际上是Wxlix
+xlix what is actually W xlix if W is the
+
+672
+00:45:20,940 --> 00:45:24,864
+我们有W的第八个根
+eighth root of one so we have W to the
+
+673
+00:45:24,869 --> 00:45:31,344
+8，它是1，因为我正在做8乘8
+8th it's 1 because I'm doing 8 by 8 what
+
+674
+00:45:31,349 --> 00:45:38,425
+是W到49的力量它是一样的
+is W to the 49th power W it's the same
+
+675
+00:45:38,430 --> 00:45:44,765
+好吧因为W是48是1
+as W okay because W is a 48 is 1
+
+676
+00:45:44,770 --> 00:45:49,695
+对，我采取了这个和第六的力量
+right I take the sixth power of this and
+
+677
+00:45:49,700 --> 00:45:53,625
+我得到W48说一个，所以那里有49个
+I get the W 48 says one so W there 49 is
+
+678
+00:45:53,630 --> 00:45:59,895
+每一次都和W一样
+the same as W every every ever every
+
+679
+00:45:59,900 --> 00:46:01,995
+列中矩阵的每个条目都是一个
+column every entry in the matrix is a
+
+680
+00:46:02,000 --> 00:46:06,675
+W的力量，如果实际上是权力
+power of W and if in fact that power is
+
+681
+00:46:06,680 --> 00:46:09,305
+只是列号乘以房间号
+just column number times the room number
+
+682
+00:46:09,310 --> 00:46:10,515
+是啊
+yeah
+
+683
+00:46:10,520 --> 00:46:14,675
+所以那些是好的矩阵
+so those are those are the good matrices
+
+684
+00:46:14,680 --> 00:46:21,915
+这样就是正交矩阵
+so that so that is an orthogonal matrix
+
+685
+00:46:21,920 --> 00:46:26,055
+哦，差不多它不是
+oh well almost it's not it has
+
+686
+00:46:26,060 --> 00:46:29,165
+正交列，但它没有
+orthogonal columns but it doesn't have
+
+687
+00:46:29,170 --> 00:46:33,255
+正交列什么是什么
+orthonormal columns what's the what's
+
+688
+00:46:33,260 --> 00:46:35,355
+该列的该列的长度
+the length of that column of that column
+
+689
+00:46:35,360 --> 00:46:41,295
+矢量平方根八右我加
+vector square root of eight right I add
+
+690
+00:46:41,300 --> 00:46:43,665
+上升1平方八次，我拿走了
+up 1 squared eight times and I take the
+
+691
+00:46:43,670 --> 00:46:45,165
+平方根我得到了平方根
+square root I get the square root of
+
+692
+00:46:45,170 --> 00:46:51,075
+八，所以这真的是一个正方形
+eight so so this is really it's a square
+
+693
+00:46:51,080 --> 00:46:57,695
+正交矩阵的八倍的根
+root of eight times an orthogonal matrix
+
+694
+00:46:57,700 --> 00:47:01,415
+当然广场基地只是一个
+of course the square base just a a
+
+695
+00:47:01,420 --> 00:47:06,555
+数来划分出来，使矩阵
+number to divide out to make matrix to
+
+696
+00:47:06,560 --> 00:47:09,255
+使列正交而不是
+make the columns orthonormal instead of
+
+697
+00:47:09,260 --> 00:47:12,675
+只是正交，但我怎么知道
+just orthogonal but how do I know that
+
+698
+00:47:12,680 --> 00:47:15,435
+那些是正交的，我知道
+those are orthogonal huh well I know
+
+699
+00:47:15,440 --> 00:47:17,715
+他们必须是，但我想看到它
+they have to be but I'd like to see it
+
+700
+00:47:17,720 --> 00:47:20,985
+显然为什么那个矢量正交
+clearly why is that vector orthogonal to
+
+701
+00:47:20,990 --> 00:47:25,665
+那个向量首先是他们必须的
+that vector first of all they have to be
+
+702
+00:47:25,670 --> 00:47:30,605
+因为矩阵是一个普通矩阵
+because the matrix is a normal matrix
+
+703
+00:47:30,610 --> 00:47:35,645
+正常矩阵有正交哦是的
+normal matrices have orthogonal oh yeah
+
+704
+00:47:35,650 --> 00:47:38,385
+我怎么知道这是一个正常的矩阵哦
+how do I know it's a normal matrix oh I
+
+705
+00:47:38,390 --> 00:47:42,875
+想我可以做测试，如果我有
+guess I can do the test if I have
+
+706
+00:47:42,880 --> 00:47:44,395
+[掌声]
+[Applause]
+
+707
+00:47:44,400 --> 00:47:47,814
+如果我有排列P我知道
+if I have the permutation P I know that
+
+708
+00:47:47,819 --> 00:47:50,955
+P转置P等于PP转置
+P transpose P equals P P transpose
+
+709
+00:47:50,960 --> 00:47:55,195
+排列通勤，所以这是正常的
+permutations commute so so it's a normal
+
+710
+00:47:55,200 --> 00:47:59,125
+矩阵，但我想直接看到原因
+matrix but I'd like to see directly why
+
+711
+00:47:59,130 --> 00:48:02,695
+是为什么是点的产品
+is that why is the dot product of the
+
+712
+00:48:02,700 --> 00:48:05,304
+第一个或第零个特征向量和
+first or the zeroth eigen vector and the
+
+713
+00:48:05,309 --> 00:48:09,264
+下一个特征向量等于零让我服用
+next eigenvector equals zero let me take
+
+714
+00:48:09,269 --> 00:48:12,685
+点积1倍1是11倍
+that dot product 1 times 1 is 1 1 times
+
+715
+00:48:12,690 --> 00:48:18,375
+w是w^1倍数W广场W¯¯方达
+w is w 1 times W squares W squared up to
+
+716
+00:48:18,380 --> 00:48:21,354
+W到第七，我想我要去
+W to the seventh I guess I'm going to
+
+717
+00:48:21,359 --> 00:48:30,445
+完成等于0那就是什么
+finish that equals 0 well that's what's
+
+718
+00:48:30,450 --> 00:48:36,175
+说那些数字是真的
+that saying those numbers are the are
+
+719
+00:48:36,180 --> 00:48:42,744
+这些是我的照片中的那些点
+the are these points in my picture those
+
+720
+00:48:42,749 --> 00:48:45,714
+八点，所以八点
+eight points so those are the eight
+
+721
+00:48:45,719 --> 00:48:50,114
+进入该列的数字
+numbers that go into the that column of
+
+722
+00:48:50,119 --> 00:48:53,455
+那个特征向量为什么会增加
+that eigen vector why do they add to
+
+723
+00:48:53,460 --> 00:48:57,474
+零你怎么看一些那些说
+zero how do you see that some of those
+
+724
+00:48:57,479 --> 00:49:03,774
+八个数字是零是对称性
+eight numbers is zero yeah the symmetry
+
+725
+00:49:03,779 --> 00:49:07,734
+当我添加那个人时会这样做-那个
+would do it when I add that guy - that
+
+726
+00:49:07,739 --> 00:49:13,135
+W到零或W到8或W
+guy W to the zero or W to the 8th or W
+
+727
+00:49:13,140 --> 00:49:13,974
+为零
+to zero
+
+728
+00:49:13,979 --> 00:49:16,974
+是的，当我添加一个减去一个我得到
+yeah when I add one and minus one I get
+
+729
+00:49:16,979 --> 00:49:19,375
+零，我有这些家伙我得零
+zero and I had these guys I get zero
+
+730
+00:49:19,380 --> 00:49:24,464
+当我把这些添加成对但但是
+when I add these these by pairs but but
+
+731
+00:49:24,469 --> 00:49:35,455
+怎么样三乘三所以三通过
+what about a three by three so three by
+
+732
+00:49:35,460 --> 00:49:38,964
+三，我会去W，这将是
+three I'll go to W to the this would be
+
+733
+00:49:38,969 --> 00:49:44,185
+e到2pi超过3然后这会
+e to the 2 pi over 3 and then this would
+
+734
+00:49:44,190 --> 00:49:48,864
+是W到4PI这将是W平方
+be W to the 4 PI this would be W squared
+
+735
+00:49:48,869 --> 00:49:53,185
+e将4PI超过3，我相信，
+e to the 4 PI over 3 and I believe that
+
+736
+00:49:53,190 --> 00:49:58,105
+这三个向量添加到0的广告
+those ads those three vectors add to 0
+
+737
+00:49:58,110 --> 00:50:01,015
+因此他们与...正交
+and therefore they're orthogonal to the
+
+738
+00:50:01,020 --> 00:50:01,885
+一一一
+one-one-one
+
+739
+00:50:01,890 --> 00:50:04,465
+Argan矢量因为点积
+Argan vector because the dot product
+
+740
+00:50:04,470 --> 00:50:06,145
+只会保释只是想添加那些
+will just bail just want to add those
+
+741
+00:50:06,150 --> 00:50:08,755
+三个数字，为什么这是真的
+three numbers so why is that true
+
+742
+00:50:08,760 --> 00:50:13,345
+一加要么2PI超过3或者加
+one plus either 2 PI over 3 plus either
+
+743
+00:50:13,350 --> 00:50:24,355
+4超过3的PI等于上课的最后一分钟
+4 PI over 3 equals last minute of class
+
+744
+00:50:24,360 --> 00:50:26,875
+今天我们可以弄清楚如何做到这一点
+today we can figure out how to do that
+
+745
+00:50:26,880 --> 00:50:29,665
+好吧，我可以得到一个公式
+well I could get a formula for that that
+
+746
+00:50:29,670 --> 00:50:33,355
+总和是1我可以得到一个封闭的表格和
+sum is 1 I could get a closed form and
+
+747
+00:50:33,360 --> 00:50:35,755
+检查我得到答案0快
+check that I get the answer 0 the quick
+
+748
+00:50:35,760 --> 00:50:37,365
+可能会看到它的方式
+way to see it is maybe
+
+749
+00:50:37,370 --> 00:50:45,715
+假设我将e乘以2pi
+suppose I multiply by e to the 2 pi over
+
+750
+00:50:45,720 --> 00:50:50,275
+3所以我乘以每个词，让我们看看
+3 so I multiply every term so let's see
+
+751
+00:50:50,280 --> 00:50:55,845
+2PI超过3e到4PI超过3和
+the 2 PI over 3 e to the 4 PI over 3 and
+
+752
+00:50:55,850 --> 00:51:01,255
+e到6PI3，好吧我该怎么办？
+e to the 6 PI over 3 okay what do I
+
+753
+00:51:01,260 --> 00:51:05,875
+从中学到它是一样的因为e
+learn from this it's the same because e
+
+754
+00:51:05,880 --> 00:51:11,545
+到6PI超过3是1就是那个
+to the 6 PI over 3 is is 1 that's that's
+
+755
+00:51:11,550 --> 00:51:14,995
+2pi我是1，所以我也一样
+2 pi I so that's 1 so I got the same
+
+756
+00:51:15,000 --> 00:51:17,845
+有人加上这个加上这个加号
+someone Plus this Plus this this Plus
+
+757
+00:51:17,850 --> 00:51:20,965
+这加一，所以我得到了相同的金额
+this plus one so I got the same sum when
+
+758
+00:51:20,970 --> 00:51:25,375
+我乘以那个数和那个总和
+I multiplied by that number and that sum
+
+759
+00:51:25,380 --> 00:51:29,065
+必须是0我不能得到相同的总和我
+has to be 0 I can't get the same sum I
+
+760
+00:51:29,070 --> 00:51:31,945
+不能乘以此并获得相同
+can't multiply by this and get the same
+
+761
+00:51:31,950 --> 00:51:35,815
+回答，除非我乘以0这样
+answer unless I'm multiplying 0 so that
+
+762
+00:51:35,820 --> 00:51:39,435
+告诉我，那也是奇怪的
+shows me that that that also in the odd
+
+763
+00:51:39,440 --> 00:51:44,035
+当n是奇数我也有那些n
+when n is odd I also have that those n
+
+764
+00:51:44,040 --> 00:51:47,125
+数字加到0确定那些是
+numbers adding to 0 ok that's those are
+
+765
+00:51:47,130 --> 00:51:51,685
+基本的美丽画面
+the basic the beautiful picture of the
+
+766
+00:51:51,690 --> 00:51:55,885
+特征值是特征向量
+eigen values the eigen vectors being
+
+767
+00:51:55,890 --> 00:52:00,115
+正交然后是实际的细节
+orthogonal and then the actual details
+
+768
+00:52:00,120 --> 00:52:04,735
+这些特征向量是好的
+here of what those eigen vectors are ok
+
+769
+00:52:04,740 --> 00:52:07,755
+好，我希望你有一个好的周末，
+good I hope you have a good weekend and
+
+770
+00:52:07,760 --> 00:52:11,104
+所以我们只有一个半星期
+so we've just got a week and a half
+
+771
+00:52:11,109 --> 00:52:15,635
+第一类的左边可能有一个
+left of class I may probably have one
+
+772
+00:52:15,640 --> 00:52:17,524
+关于傅立叶，然后再做更多的事情
+more thing to do about Fourier and then
+
+773
+00:52:17,529 --> 00:52:21,034
+我们会回到其他主题但是问一下
+we'll come back to other topics but ask
+
+774
+00:52:21,039 --> 00:52:24,754
+任何问题和你的话题
+any questions and that you'd topics that
+
+775
+00:52:24,759 --> 00:52:26,975
+你想看到这里包括哪里
+you'd like to see included here where
+
+776
+00:52:26,980 --> 00:52:31,380
+we're closing out 1806 five while you
+
+777
+00:52:26,980 --> 00:52:36,210
+我们现在要关门了18065，而你
+
+778
+00:52:31,390 --> 00:52:36,210
+伙计们做项目好吗谢谢
+guys do the projects okay thank you
+

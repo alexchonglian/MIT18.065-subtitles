@@ -1,0 +1,3933 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,574
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,579 --> 00:00:27,225
+好的，所以我知道我在哪里
+ok so actually I have a I know where
+
+10
+00:00:27,230 --> 00:00:29,344
+人们正在从事项目和工作
+people are working on projects and
+
+11
+00:00:29,349 --> 00:00:32,445
+您不对任何材料负责
+you're not responsible for any material
+
+12
+00:00:32,450 --> 00:00:36,015
+讲座中的新材料谢谢你
+new material in the lectures thank you
+
+13
+00:00:36,020 --> 00:00:40,755
+来了，但我确实有一些东西
+for coming but I do have something in an
+
+14
+00:00:40,760 --> 00:00:43,995
+重要的话题被修订
+important topic which is a revised
+
+15
+00:00:44,000 --> 00:00:46,995
+关于神经网络构建的版本
+version about the construction of neural
+
+16
+00:00:47,000 --> 00:00:49,275
+了解我们的基本结构
+nets the basic structure that we're
+
+17
+00:00:49,280 --> 00:00:54,824
+我们正在努力，以便开放
+we're working with so that's on the open
+
+18
+00:00:54,829 --> 00:01:00,495
+网页7.1节就是这样
+web at section 7.1 that's so
+
+19
+00:01:00,500 --> 00:01:14,505
+建立神经网真的是它
+construction of neural nets really it's
+
+20
+00:01:14,510 --> 00:01:22,955
+学习功能的构建
+a construction of the learning function
+
+21
+00:01:22,960 --> 00:01:26,925
+f这就是你的功能
+f so that's the function that you
+
+22
+00:01:26,930 --> 00:01:29,685
+通过梯度下降或优化
+optimize by gradient descent or
+
+23
+00:01:29,690 --> 00:01:33,015
+随机梯度下降和你
+stochastic gradient descent and you
+
+24
+00:01:33,020 --> 00:01:39,224
+适用于培训数据，以尽量减少
+apply to the training data to minimize
+
+25
+00:01:39,229 --> 00:01:43,724
+你只是想到它的损失
+the loss you so just thinking about it
+
+26
+00:01:43,729 --> 00:01:46,215
+我写的是一种更有条理的方式
+in a more organized way because I wrote
+
+27
+00:01:46,220 --> 00:01:49,335
+在我知道更多之前的那一节
+that section before I knew anything more
+
+28
+00:01:49,340 --> 00:01:52,985
+而不是现在如何拼写神经网络
+than how to spell neural nets but now
+
+29
+00:01:52,990 --> 00:01:59,025
+我考虑的更重要了
+I'm thought about it more so the the key
+
+30
+00:01:59,030 --> 00:02:04,544
+这一点可以与我所拥有的相比
+point may be compared to what I had in
+
+31
+00:02:04,549 --> 00:02:07,425
+过去是我现在认为这是
+the past is that I now think of this as
+
+32
+00:02:07,430 --> 00:02:11,865
+两组变量X的函数
+a function of two sets of variables X
+
+33
+00:02:11,870 --> 00:02:14,625
+和V.
+and V
+
+34
+00:02:14,630 --> 00:02:23,295
+所以X是权重，V是
+so X are the weights and V are the
+
+35
+00:02:23,300 --> 00:02:29,245
+特征向量样本特征
+feature vectors the sample feature
+
+36
+00:02:29,250 --> 00:02:37,585
+从这样的那些载体来从
+vectors from the so those come from the
+
+37
+00:02:37,590 --> 00:02:42,085
+如果一次训练数据
+training data either one at a time if
+
+38
+00:02:42,090 --> 00:02:44,245
+我们正在做随机梯度下降
+we're doing stochastic gradient descent
+
+39
+00:02:44,250 --> 00:02:48,805
+一次批量大小为1或B
+with many batch size one or B at a time
+
+40
+00:02:48,810 --> 00:02:51,325
+如果我们做的是小批量的B或者
+if we're doing mini batch of size B or
+
+41
+00:02:51,330 --> 00:02:54,895
+整个事情整个时代后如
+the whole thing a whole epoch at once if
+
+42
+00:02:54,900 --> 00:02:58,215
+我们正在进行全面的梯度下降
+we're doing full-scale gradient descent
+
+43
+00:02:58,220 --> 00:03:01,725
+所以那些是特征向量和
+so so those are the feature vectors and
+
+44
+00:03:01,730 --> 00:03:08,635
+这些是那些中的数字
+these are the numbers in in those in the
+
+45
+00:03:08,640 --> 00:03:11,875
+Mait在线性步骤中
+Mait in the linear steps where the
+
+46
+00:03:11,880 --> 00:03:19,165
+权重所以他们的矩阵AK是
+weights so they're the matrices a k that
+
+47
+00:03:19,170 --> 00:03:25,195
+你乘以V乘以和
+you multiply by multiply V by and also
+
+48
+00:03:25,200 --> 00:03:34,435
+你添加的偏向量BK
+the bias vectors BK that you add on to
+
+49
+00:03:34,440 --> 00:03:38,514
+转移的起源可以的，这些都是
+shift the origin okay and these are the
+
+50
+00:03:38,519 --> 00:03:41,035
+这些是你的
+and these are it's these that you
+
+51
+00:03:41,040 --> 00:03:48,475
+优化那些是优化和
+optimize those are to optimize and
+
+52
+00:03:48,480 --> 00:03:55,465
+什么是整体的结构
+what's the structure of the whole the
+
+53
+00:03:55,470 --> 00:03:58,255
+整个学习功能和如何
+whole of the learning function and how
+
+54
+00:03:58,260 --> 00:04:00,895
+你用它来做什么神经
+do you use it what what does the neural
+
+55
+00:04:00,900 --> 00:04:07,815
+净的样子，所以你把你f的
+net look like so you you take f of a
+
+56
+00:04:07,820 --> 00:04:12,385
+第一组重量如此f的第一组
+first set of weight so f of the first
+
+57
+00:04:12,390 --> 00:04:17,604
+权重的设置将A1和B1等等
+set of weights would be a1 and b1 so
+
+58
+00:04:17,609 --> 00:04:25,135
+这是X部分和实际的部分
+that's the X part and the and the actual
+
+59
+00:04:25,140 --> 00:04:27,265
+样本矢量样本矢量
+sample vector the sample vectors
+
+60
+00:04:27,270 --> 00:04:31,254
+在迭代中v为零
+v zero in the iteration and this
+
+61
+00:04:31,259 --> 00:04:35,985
+产生，然后你做非线性
+produces and then you do the nonlinear
+
+62
+00:04:35,990 --> 00:04:39,055
+步骤到每个组件并产生
+step to each component and that produces
+
+63
+00:04:39,060 --> 00:04:40,555
+V一
+V one
+
+64
+00:04:40,560 --> 00:04:45,325
+所以有一个典型的我可以写出来
+so there is a typical I could write out
+
+65
+00:04:45,330 --> 00:04:54,205
+这是什么这里有1V0加V1，因此
+what this is here a 1 V 0 plus V 1 so
+
+66
+00:04:54,210 --> 00:04:56,935
+这两个步骤是线性步骤
+that's the two steps are the linear step
+
+67
+00:04:56,940 --> 00:05:01,314
+你的输入是V0你采取线性
+you the input is V 0 you take the linear
+
+68
+00:05:01,319 --> 00:05:04,284
+使用第一个权重a的步骤
+step using the using the first weights a
+
+69
+00:05:04,289 --> 00:05:07,795
+1和B1然后你采取非线性
+1 and B 1 then you take the nonlinear
+
+70
+00:05:07,800 --> 00:05:11,575
+步骤，这给你V1这样的
+step and that gives you V 1 so that's
+
+71
+00:05:11,580 --> 00:05:15,055
+真的比我上面的线条好，所以我会
+really better than my line above so I'll
+
+72
+00:05:15,060 --> 00:05:24,464
+擦除上面的那条线
+erase that line above yep
+
+73
+00:05:24,469 --> 00:05:29,814
+这样就可以从V0和V0产生V1
+so that produces V 1 from V 0 and the
+
+74
+00:05:29,819 --> 00:05:35,235
+第一重，然后是下一级
+first weight and then the next level
+
+75
+00:05:35,240 --> 00:05:41,545
+输入v1所以我只称这个VK或V.
+inputs v1 so I'll just call this VK or V
+
+76
+00:05:41,550 --> 00:05:46,435
+K减1，我称之为VK好吧
+K minus 1 and I'll call this one VK okay
+
+77
+00:05:46,440 --> 00:05:50,575
+所以k等于1到多少
+so so k equal to 1 up to however many
+
+78
+00:05:50,580 --> 00:05:58,375
+图层URL图层，因此输入为v-0
+layers URL layers so the input was v-0
+
+79
+00:05:58,380 --> 00:06:02,185
+所以你可以说这个V真的是v-0
+so this V is really v-0 you could say
+
+80
+00:06:02,190 --> 00:06:07,974
+而你这是神经网络而且这个
+and you this is the neural net and this
+
+81
+00:06:07,979 --> 00:06:12,504
+是每个输出输出
+is the out input and output from each
+
+82
+00:06:12,509 --> 00:06:17,904
+层然后VL是最终输出
+layer and then V L is the final output
+
+83
+00:06:17,909 --> 00:06:21,654
+从最后一层开始，让我们这样做吧
+from the final layer so so let's just do
+
+84
+00:06:21,659 --> 00:06:28,555
+这里的图片是v-0样本
+a picture here here here is v-0 a sample
+
+85
+00:06:28,560 --> 00:06:30,355
+矢量或如果我们正在做图像
+vector or if we're doing image
+
+86
+00:06:30,360 --> 00:06:34,305
+处理它的所有像素
+processing it's all the pixels in in the
+
+87
+00:06:34,310 --> 00:06:37,315
+图像中的在所述数据和所述
+image in the in the in the data and the
+
+88
+00:06:37,320 --> 00:06:41,185
+这是一个样本的培训
+training from one sample this is
+
+89
+00:06:41,190 --> 00:06:50,695
+一个训练样本，然后你
+one training sample and then you
+
+90
+00:06:50,700 --> 00:06:55,645
+乘以1然后你加上B1和你
+multiply by a 1 and you add B 1 and you
+
+91
+00:06:55,650 --> 00:07:01,015
+取Riu的那个向量，然后给出
+take Riu of that vector and that gives
+
+92
+00:07:01,020 --> 00:07:05,905
+你V2V1抱歉给你V1和
+you V 2 V 1 sorry that gives you V 1 and
+
+93
+00:07:05,910 --> 00:07:12,835
+然后你迭代到最后VL最后
+then you iterate to finally V L the last
+
+94
+00:07:12,840 --> 00:07:15,775
+你最后没有做真正的uu层
+layer you don't do real uu at the last
+
+95
+00:07:15,780 --> 00:07:21,685
+层，所以它只是alVL减1加
+layer so it's just al V L minus 1 plus
+
+96
+00:07:21,690 --> 00:07:26,455
+VL也可能不会做偏置矢量
+VL and you may not do a bias vector also
+
+97
+00:07:26,460 --> 00:07:30,265
+在那一层，但你可能和那个
+at that layer but you might and that's
+
+98
+00:07:30,270 --> 00:07:34,705
+这是最后的输出
+this is the finally the output so is
+
+99
+00:07:34,710 --> 00:07:36,745
+那张照片和照片是这样的
+that picture and so that picture is
+
+100
+00:07:36,750 --> 00:07:40,405
+更清晰的对我比以前要
+clearer for me than it was previously to
+
+101
+00:07:40,410 --> 00:07:44,125
+的权重，以便在区分
+distinguish between the weights so in
+
+102
+00:07:44,130 --> 00:07:48,535
+在梯度下降算法中
+the in the gradient descent algorithm
+
+103
+00:07:48,540 --> 00:07:52,345
+你正在选择的是这些X.
+it's these X's that you're choosing the
+
+104
+00:07:52,350 --> 00:07:55,015
+五世的不是这些由给定
+V's are not these are given by the
+
+105
+00:07:55,020 --> 00:07:56,995
+培训不属于该项目的数据
+training data that's not part of the
+
+106
+00:07:57,000 --> 00:07:59,995
+优化部分不属于它的一部分
+optimization part that's not part of its
+
+107
+00:08:00,000 --> 00:08:03,355
+第6章中的X，你找到了
+X in chapter 6 where you're finding the
+
+108
+00:08:03,360 --> 00:08:06,865
+最佳权重，所以这个X真正的立场
+optimal weights so this X really stands
+
+109
+00:08:06,870 --> 00:08:12,715
+forX代表所有重量
+for X stands for the all the weights
+
+110
+00:08:12,720 --> 00:08:25,405
+你计算达AL为L所以它的
+that you compute up to a L be L so it's
+
+111
+00:08:25,410 --> 00:08:27,385
+这就是所有人的集合
+that's that's a collection of all the
+
+112
+00:08:27,390 --> 00:08:29,835
+权重和重要部分
+weights and the important part for
+
+113
+00:08:29,840 --> 00:08:32,635
+实践的应用是实现
+applications for practice is to realize
+
+114
+00:08:32,640 --> 00:08:35,085
+通常有更多的重量和
+that there are often more weights and
+
+115
+00:08:35,090 --> 00:08:37,735
+然后在权重中有更多组件
+more components in the weights then
+
+116
+00:08:37,740 --> 00:08:40,914
+还有在功能组件
+there are components in the feature
+
+117
+00:08:40,919 --> 00:08:43,224
+在vs中的样本中的向量
+vectors in the samples in the vs
+
+118
+00:08:43,229 --> 00:08:46,675
+通常X的大小大于
+so often the size of X is greater than
+
+119
+00:08:46,680 --> 00:08:49,765
+V的大小是一个有趣的
+the size of V which is an interesting
+
+120
+00:08:49,770 --> 00:08:55,075
+还有那种意想不到的情况
+and sort of unexpected situation so
+
+121
+00:08:55,080 --> 00:09:00,595
+经常我会写那个经常是X的
+often I'll just write that often the X's
+
+122
+00:09:00,600 --> 00:09:14,115
+权重X是否在确定之下
+are the weights X's are under determined
+
+123
+00:09:14,120 --> 00:09:24,024
+因为X的数量超过和
+because the number of X's exceeds and
+
+124
+00:09:24,029 --> 00:09:27,204
+往往远远超过签证的数量
+often far exceeds the number of visa
+
+125
+00:09:27,209 --> 00:09:31,315
+基数的数量
+number of the cardinality the number of
+
+126
+00:09:31,320 --> 00:09:36,135
+这里的权重在A和B中
+weights in this is in the A's and B's
+
+127
+00:09:36,140 --> 00:09:42,595
+而这些都是在样品中
+and the these are in the samples in the
+
+128
+00:09:42,600 --> 00:09:51,954
+训练设定好数字
+training set the number well the number
+
+129
+00:09:51,959 --> 00:09:56,514
+的所有样本的特征
+of features of all the samples in the
+
+130
+00:09:56,519 --> 00:10:01,405
+训练集，所以我会得到新的
+training set so I'll get that new
+
+131
+00:10:01,410 --> 00:10:06,505
+第7.1节有希望在本周开始
+section 7.1 up hopefully this week on
+
+132
+00:10:06,510 --> 00:10:11,185
+在开放的那是开放的设置和
+the on the open that's the open set and
+
+133
+00:10:11,190 --> 00:10:15,535
+我会在那里给你发电子邮件给你
+I'll email to you on stellar is there
+
+134
+00:10:15,540 --> 00:10:18,505
+更多我应该说的，你看
+more I should say about this you see
+
+135
+00:10:18,510 --> 00:10:21,505
+在这里我可以画出画面但是
+here the I can draw the picture but of
+
+136
+00:10:21,510 --> 00:10:24,175
+当然手绘的图片很远
+course a hand-drawn picture is far
+
+137
+00:10:24,180 --> 00:10:30,535
+不如机器绘制的图片
+inferior to to a machine drawn picture
+
+138
+00:10:30,540 --> 00:10:33,595
+但在线图片，但让我这样做
+but online picture but let me just do it
+
+139
+00:10:33,600 --> 00:10:37,454
+所以训练样本有V.
+so there's V the training sample has
+
+140
+00:10:37,459 --> 00:10:41,365
+一些组件，然后他们
+some components and then they're
+
+141
+00:10:41,370 --> 00:10:45,625
+现在乘以这里将是v1
+multiplied now here's going to be v1 the
+
+142
+00:10:45,630 --> 00:10:52,845
+第一层，可以有一个
+first in layer and that can have a
+
+143
+00:10:52,850 --> 00:11:00,565
+不同数量的组件
+different number of of of components in
+
+144
+00:11:00,570 --> 00:11:03,295
+在第一层不同的数量
+in the first layer different number of
+
+145
+00:11:03,300 --> 00:11:06,855
+神经元然后每个来自
+neurons and then each one comes from
+
+146
+00:11:06,860 --> 00:11:08,574
+来自
+from the
+
+147
+00:11:08,579 --> 00:11:12,984
+结的，所以我不会继续下去，但在这里
+eze by so I won't keep going here but
+
+148
+00:11:12,989 --> 00:11:17,274
+但你看到的图片就是这样的
+but you you see the picture so there's a
+
+149
+00:11:17,279 --> 00:11:20,785
+伴侣描述基质的一个
+mate that describes a matrix a one that
+
+150
+00:11:20,790 --> 00:11:22,674
+告诉你那些权重是多少
+tells you what the weights are on those
+
+151
+00:11:22,679 --> 00:11:28,644
+然后有一个b1添加了
+and then there's a b1 that's added the
+
+152
+00:11:28,649 --> 00:11:33,024
+BIOS矢量被添加到所有要获得的内容中
+BIOS vector is added to all those to get
+
+153
+00:11:33,029 --> 00:11:33,954
+v1
+the v1
+
+154
+00:11:33,959 --> 00:11:40,105
+所以v1是1V0加B1和
+there's so v1 is a 1 V 0 plus B 1 and
+
+155
+00:11:40,110 --> 00:11:45,024
+那么这就是现场
+then onwards so this this is the spot
+
+156
+00:11:45,029 --> 00:11:48,434
+我们手工绘制它很明显
+we're drawing it by hand is clearly
+
+157
+00:11:48,439 --> 00:11:52,824
+不如任何其他可行的方式
+inferior to any other possible way to do
+
+158
+00:11:52,829 --> 00:12:00,264
+好吧所以现在我还没有投入
+it okay so now I haven't yet put into
+
+159
+00:12:00,269 --> 00:12:03,774
+图片中的损失功能就是这样
+the picture the loss function so that's
+
+160
+00:12:03,779 --> 00:12:07,454
+要最小化的功能
+the function that you want to minimize
+
+161
+00:12:07,459 --> 00:12:13,674
+那么损失函数究竟是什么呢？
+so what is the loss function so we're
+
+162
+00:12:13,679 --> 00:12:20,004
+选择x2即A和B的全部
+choosing x2 that's all the A's and B's
+
+163
+00:12:20,009 --> 00:12:28,674
+把损失降到最低功能埃尔好了，
+to minimize the loss function el okay so
+
+164
+00:12:28,679 --> 00:12:31,405
+这是SRA教授的这一部分
+it's this part that Professor SRA's
+
+165
+00:12:31,410 --> 00:12:36,564
+讲座是关于他所说的他是el
+lecture was about so he he said el is
+
+166
+00:12:36,569 --> 00:12:45,655
+通常是所有F的有限总和
+often a finite sum over all the of F so
+
+167
+00:12:45,660 --> 00:12:53,274
+十六，这是什么？所以这是
+what would that be f of X V I so this is
+
+168
+00:12:53,279 --> 00:12:59,754
+带权重的输出
+the output from the with weights with
+
+169
+00:12:59,759 --> 00:13:03,984
+来自样本编号I的X中的权重和if
+weights in X from sample number I and if
+
+170
+00:13:03,989 --> 00:13:06,504
+我们正在进行批量处理
+we're doing batch processing that is
+
+171
+00:13:06,509 --> 00:13:08,754
+我们正在做整批一次，然后
+we're doing the whole batch at once then
+
+172
+00:13:08,759 --> 00:13:11,234
+我们计算所有我和那是
+we compute that for all I and that's the
+
+173
+00:13:11,239 --> 00:13:13,465
+计算是荒谬的
+computation that's ridiculously
+
+174
+00:13:13,470 --> 00:13:16,965
+贵，而你去了
+expensive and you go instead to
+
+175
+00:13:16,970 --> 00:13:19,735
+随机渐变，你只需选择
+stochastic gradient and you just choose
+
+176
+00:13:19,740 --> 00:13:22,324
+其中一个或那些B.
+one of those or B of those
+
+177
+00:13:22,329 --> 00:13:25,475
+少数就像30到1208
+small number be like 30 to 120 8 of
+
+178
+00:13:25,480 --> 00:13:29,764
+这些F但是全尺度渐变
+these F's but but full-scale gradient
+
+179
+00:13:29,769 --> 00:13:34,894
+下降选择权重X到
+descent chooses the weights X to
+
+180
+00:13:34,899 --> 00:13:37,684
+现在最小化损失所以法律我
+minimize the loss now so the law I
+
+181
+00:13:37,689 --> 00:13:40,084
+没有这方面的损失现在还没有出现
+haven't got the loss here yet there is
+
+182
+00:13:40,089 --> 00:13:45,124
+这个功能损失将是负数
+this function the loss would be minus
+
+183
+00:13:45,129 --> 00:13:51,694
+样本II的真实结果不是
+the true result from sample I I don't
+
+184
+00:13:51,699 --> 00:13:53,644
+写我没有好的记谱
+write I haven't got a good notation for
+
+185
+00:13:53,649 --> 00:13:56,194
+我愿意接受建议
+that I'm open to suggestions
+
+186
+00:13:56,199 --> 00:13:57,845
+那我该怎么写空气呢？
+so how do I want to write the air
+
+187
+00:13:57,850 --> 00:14:03,155
+假设我是这样的话
+suppose suppose I'm so that would be if
+
+188
+00:14:03,160 --> 00:14:05,405
+这可能是最不正方形
+it was least squares I would maybe be
+
+189
+00:14:05,410 --> 00:14:10,444
+平衡，这将是一个总和
+squaring that so that would be a sum of
+
+190
+00:14:10,449 --> 00:14:14,465
+所有的误差平方
+squares of errors squared over all the
+
+191
+00:14:14,470 --> 00:14:17,434
+样品或如果我做随机
+samples or if I'm doing stochastic
+
+192
+00:14:17,439 --> 00:14:19,774
+梯度下降我会尽量减少我
+gradient descent I would minimize I
+
+193
+00:14:19,779 --> 00:14:22,234
+我猜我最小化了这个但是
+guess I'm minimizing this but the
+
+194
+00:14:22,239 --> 00:14:25,624
+问题是我是否使用整个功能
+question is do I use the whole function
+
+195
+00:14:25,629 --> 00:14:30,215
+L在每次迭代中或者我只是选择
+L in at each iteration or do I just pick
+
+196
+00:14:30,220 --> 00:14:35,254
+要查看的样本中的一个或仅两个
+one or only B of the samples to look at
+
+197
+00:14:35,259 --> 00:14:39,064
+在迭代次数K所以这就是
+at iteration number K so so this is the
+
+198
+00:14:39,069 --> 00:14:44,554
+这是X的L然后我加起来了
+this is the L of X then I've added up
+
+199
+00:14:44,559 --> 00:14:48,215
+所有V的所以只是为了保持他们的
+over all the V's so just to keep their
+
+200
+00:14:48,220 --> 00:14:52,144
+符号直接我有这个功能
+notation straight I have this function
+
+201
+00:14:52,149 --> 00:14:55,975
+X和Vs我找到它的输出
+of X and V s I find its output
+
+202
+00:14:55,980 --> 00:15:00,535
+会是什么V这是什么什么的
+what would V what this is what to the
+
+203
+00:15:00,540 --> 00:15:04,024
+神经网络产生它应该是
+neural net produces it's supposed to be
+
+204
+00:15:04,029 --> 00:15:07,264
+接近我们不希望它的真实
+close to the true we don't want it to be
+
+205
+00:15:07,269 --> 00:15:09,634
+正是我们，我们不希望这是
+exactly we we don't expect this to be
+
+206
+00:15:09,639 --> 00:15:12,334
+完全为零，但它可能是因为
+exactly zero but it it could be because
+
+207
+00:15:12,339 --> 00:15:17,394
+我们有很多权重来实现这一目标
+we have lots of weights to achieve that
+
+208
+00:15:17,399 --> 00:15:21,155
+所以这就是无论如何这将是
+so that's what anyway that would be the
+
+209
+00:15:21,160 --> 00:15:23,554
+损失我们最小化和B平方
+loss we minimize and B squared for
+
+210
+00:15:23,559 --> 00:15:25,924
+平方损失，我想我还没有真正
+square loss I guess I haven't really
+
+211
+00:15:25,929 --> 00:15:29,814
+谈到关于损失的功能
+spoken about the about loss functions
+
+212
+00:15:29,819 --> 00:15:33,184
+让我把这些放在这里
+let me just put those here
+
+213
+00:15:33,189 --> 00:15:39,615
+实际上我这些都是流行的损失
+and actually I these are popular loss
+
+214
+00:15:39,620 --> 00:15:44,865
+功能一是我们所知道的
+functions one would be the one we know
+
+215
+00:15:44,870 --> 00:15:50,444
+最好的广场损失和第二号我
+best square loss and number two I've
+
+216
+00:15:50,449 --> 00:15:53,564
+从来没有见过它直接用过这个
+never seen it used quite this directly
+
+217
+00:15:53,569 --> 00:16:01,064
+将是L一个损失可能是总和
+would be the L one loss may be the sum
+
+218
+00:16:01,069 --> 00:16:07,785
+L的一个规范，这是其中的一些
+of L one norms this is some of these
+
+219
+00:16:07,790 --> 00:16:10,425
+在你知道的l2范数中误差平方
+error squared in the l2 norm you know
+
+220
+00:16:10,430 --> 00:16:13,504
+一个损失可能是我的一些
+one loss could be there's some over I of
+
+221
+00:16:13,509 --> 00:16:22,995
+l1损失，但这不是很好
+the l1 losses but that's not a well this
+
+222
+00:16:23,000 --> 00:16:26,264
+这涉及到具体的其他问题
+this comes into specific other problems
+
+223
+00:16:26,269 --> 00:16:29,504
+像套索，还有其他重要的
+like lasso and are there other important
+
+224
+00:16:29,509 --> 00:16:31,905
+你最小化l1规范的问题
+problems you're minimizing an l1 norm
+
+225
+00:16:31,910 --> 00:16:37,425
+但现在还没有深入学习和三个
+but not in deep learning now and three
+
+226
+00:16:37,430 --> 00:16:44,715
+可能是铰链损失可能你们中的一些人
+would be hinge loss probably some of you
+
+227
+00:16:44,720 --> 00:16:48,694
+比我更了解公式和
+know better than I the formula and the
+
+228
+00:16:48,699 --> 00:16:51,764
+铰链损失背后的背景是它
+background behind hinge loss is it for
+
+229
+00:16:51,769 --> 00:16:55,814
+这是四减一一
+this is four minus one one
+
+230
+00:16:55,819 --> 00:17:04,664
+分类问题而不是四个
+classification problems rather than four
+
+231
+00:17:04,669 --> 00:17:08,564
+这适合回归
+that would be appropriate for regression
+
+232
+00:17:08,569 --> 00:17:15,044
+所以这将是回归然后
+so this would be for regression and then
+
+233
+00:17:15,049 --> 00:17:17,444
+最后对神经最重要
+finally the most important for neural
+
+234
+00:17:17,449 --> 00:17:27,154
+网是交叉熵损失
+nets is cross-entropy loss
+
+235
+00:17:27,159 --> 00:17:35,294
+这是神经网络，所以这是
+this is for neural nets so this is
+
+236
+00:17:35,299 --> 00:17:40,605
+真的是我们最常用的损失功能
+really our the most used loss function
+
+237
+00:17:40,610 --> 00:17:44,565
+在我们和大多数人的设置中
+in the and the set up that we are mostly
+
+238
+00:17:44,570 --> 00:17:47,355
+思考和，我会试着说更多
+thinking of and and I'll try to say more
+
+239
+00:17:47,360 --> 00:17:51,855
+关于之前的过程结束，因此是
+about that before the course ends so is
+
+240
+00:17:51,860 --> 00:17:54,914
+我不知道我没有
+that I don't know for me I hadn't got
+
+241
+00:17:54,919 --> 00:17:58,115
+这笔直
+this straight
+
+242
+00:17:58,120 --> 00:18:03,375
+直到重写该部分而且它是
+until rewriting that section and it's
+
+243
+00:18:03,380 --> 00:18:06,585
+现在以更好的形式下注，但评论是
+now bet in better form but comments are
+
+244
+00:18:06,590 --> 00:18:13,424
+欢迎好，所以刚刚完成
+welcome okay and so that just completes
+
+245
+00:18:13,429 --> 00:18:15,375
+我想说什么，你会看到
+what I wanted to say and you'll see the
+
+246
+00:18:15,380 --> 00:18:20,865
+新的部分之前的任何评论
+new section any comments on that before
+
+247
+00:18:20,870 --> 00:18:25,664
+我完全没问题
+I go to a different topic entirely okay
+
+248
+00:18:25,669 --> 00:18:30,164
+哦，然后问题让我走了之前
+oh and then questions let me before I go
+
+249
+00:18:30,169 --> 00:18:32,024
+这个话题我会告诉你什么
+to this topic which I'll tell you what
+
+250
+00:18:32,029 --> 00:18:38,685
+它就是它的一小部分
+it is it's it's it's a short section in
+
+251
+00:18:38,690 --> 00:18:41,894
+这本名为距离的距离
+the book called distance about distance
+
+252
+00:18:41,899 --> 00:18:55,005
+矩阵和问题是我们是不是
+matrices and the question is if we're we
+
+253
+00:18:55,010 --> 00:19:03,284
+我们在太空中有一堆点
+have we have a bunch of points in space
+
+254
+00:19:03,289 --> 00:19:10,755
+而我们所知道的是我们知道的
+and what we know is we know the
+
+255
+00:19:10,760 --> 00:19:19,935
+点和它之间的距离
+distances between the points and it's
+
+256
+00:19:19,940 --> 00:19:22,125
+方便谈论距离
+convenient to talk about distances
+
+257
+00:19:22,130 --> 00:19:27,355
+平方在这里
+squared here
+
+258
+00:19:27,360 --> 00:19:31,865
+好的，我们怎么知道这些
+okay and how would we know these
+
+259
+00:19:31,870 --> 00:19:37,524
+距离可能是雷达或任何
+distances maybe by radar or or any
+
+260
+00:19:37,529 --> 00:19:45,424
+测量他们可能是传感器
+measurement they might be sensors which
+
+261
+00:19:45,429 --> 00:19:48,875
+我们已经放置了，我们可以衡量
+we've placed around and we can measure
+
+262
+00:19:48,880 --> 00:19:51,304
+他们和他们之间的距离
+the distances between them and the
+
+263
+00:19:51,309 --> 00:19:53,544
+问题是他们的立场是什么
+question is what's their position so
+
+264
+00:19:53,549 --> 00:19:59,465
+那是啊，这就是问题等等
+that's the yeah that's the question so
+
+265
+00:19:59,470 --> 00:20:00,965
+让我谈谈这个问题
+let me talk a little bit about this
+
+266
+00:20:00,970 --> 00:20:09,235
+问题，然后暂停找到位置
+question and then pause find positions
+
+267
+00:20:09,240 --> 00:20:14,345
+太空了，但我不知道
+and well in space but I don't know we
+
+268
+00:20:14,350 --> 00:20:16,174
+提前不知道是否
+don't know ahead of time maybe whether
+
+269
+00:20:16,179 --> 00:20:19,774
+空间是普通的3d空间或
+the space is ordinary 3d space or
+
+270
+00:20:19,779 --> 00:20:23,495
+这些是飞机上的传感器还是
+whether these are sensors in a plane or
+
+271
+00:20:23,500 --> 00:20:24,725
+我们是否要走得更高
+whether we have to go to higher
+
+272
+00:20:24,730 --> 00:20:28,205
+尺寸我只是把D和我们放在一起
+dimensions I'll just put D and and we
+
+273
+00:20:28,210 --> 00:20:30,455
+我也会说我们也是
+also I'll just say then we're also
+
+274
+00:20:30,460 --> 00:20:39,034
+找到D以及这些职位是什么
+finding D and what are these positions
+
+275
+00:20:39,039 --> 00:20:43,505
+这些是XXI的位置所以
+these are positions X X I so the
+
+276
+00:20:43,510 --> 00:20:48,755
+XI减去XJ平方之间的距离是
+distance between X I minus XJ squared is
+
+277
+00:20:48,760 --> 00:20:57,065
+是给定的DIJ所以我们给了
+is the given D IJ so we're given
+
+278
+00:20:57,070 --> 00:20:59,644
+它们之间的距离和我们想要的距离
+distances between them and we want to
+
+279
+00:20:59,649 --> 00:21:02,375
+找到他们的位置找到他们所以我们
+find their positions find their so we
+
+280
+00:21:02,380 --> 00:21:04,144
+知道距离，我们想找到
+know distances and we want to find
+
+281
+00:21:04,149 --> 00:21:07,745
+这是问题的立场
+positions that's the question and it's
+
+282
+00:21:07,750 --> 00:21:11,465
+只是一个解决的简洁数学问题
+just a neat math question that is solved
+
+283
+00:21:11,470 --> 00:21:14,904
+你会看到一个完整的解决方案
+and you'll see a complete solution and
+
+284
+00:21:14,909 --> 00:21:19,625
+它有很多应用程序，它是
+and it has lots of applications and it's
+
+285
+00:21:19,630 --> 00:21:22,024
+是的它只是一个很好的它是一个很好的
+yeah it's just a nice it's a nice
+
+286
+00:21:22,029 --> 00:21:24,424
+问题所以它占据了一部分
+question so it occupies a section of the
+
+287
+00:21:24,429 --> 00:21:26,884
+但那部分只有两页
+book but that section is only two pages
+
+288
+00:21:26,889 --> 00:21:29,365
+很长一段时间，因为它只是一个简单的
+long because it's just a straightforward
+
+289
+00:21:29,370 --> 00:21:33,125
+给出了这个问题的解决方案
+solution to that question given the
+
+290
+00:21:33,130 --> 00:21:37,235
+距离找到给定的位置
+distances find the positions given the
+
+291
+00:21:37,240 --> 00:21:42,865
+距离找到XS
+distances find the XS
+
+292
+00:21:42,870 --> 00:21:47,254
+好的，所以我会谈论那个让我们
+okay so I'm gonna speak about that let
+
+293
+00:21:47,259 --> 00:21:52,205
+我有一个很好的建议
+me I had a suggestion a good suggestion
+
+294
+00:21:52,210 --> 00:21:53,705
+通过电子邮件
+by email
+
+295
+00:21:53,710 --> 00:21:57,845
+关于项目即将来临的问题
+well questions about the projects coming
+
+296
+00:21:57,850 --> 00:22:00,154
+在项目中开始进入和
+in projects are beginning to come in and
+
+297
+00:22:00,159 --> 00:22:04,075
+至少在一开始我就是这样做的
+at least at the beginning I'm I make
+
+298
+00:22:04,080 --> 00:22:07,294
+在所有情况下开始和结束都很好
+well out in all cases beginning and end
+
+299
+00:22:07,299 --> 00:22:10,685
+我会仔细阅读它们
+I'll read them carefully and as long as
+
+300
+00:22:10,690 --> 00:22:13,205
+我可以退后一步的建议
+I can I'll stand back suggestions for
+
+301
+00:22:13,210 --> 00:22:18,364
+我们的最终重写和我说，所以我想
+our final rewrite and as I said so I'd
+
+302
+00:22:18,369 --> 00:22:21,004
+希望得到一个打印出来是伟大的你
+like to get a print out is great you
+
+303
+00:22:21,009 --> 00:22:23,044
+可以把它留在外面的信封里
+could leave it in the envelope outside
+
+304
+00:22:23,049 --> 00:22:23,674
+我的办公室
+my office
+
+305
+00:22:23,679 --> 00:22:28,534
+但当然在线就是这样
+but of course online is it's what
+
+306
+00:22:28,539 --> 00:22:30,935
+每个人都这样做，这些都是公正的
+everybody's doing so those are just
+
+307
+00:22:30,940 --> 00:22:34,024
+开始进来，他们不是
+beginning to come in and they're not if
+
+308
+00:22:34,029 --> 00:22:35,914
+我们可以从今天起一周内把它们送进去
+we can get them in by a week from today
+
+309
+00:22:35,919 --> 00:22:40,235
+我真的很开心，只是
+I'm really really happy yep and just
+
+310
+00:22:40,240 --> 00:22:42,845
+随时给我发电子邮件我会给我发电子邮件
+feel free to email me I would email me
+
+311
+00:22:42,850 --> 00:22:46,475
+关于项目而不是乔纳森
+about projects rather than not Jonathan
+
+312
+00:22:46,480 --> 00:22:51,004
+而且我认为并非匿名恒星
+and not not anonymous stellar I think
+
+313
+00:22:51,009 --> 00:22:54,304
+你可能最好问问我
+you probably better just ask me that
+
+314
+00:22:54,309 --> 00:22:57,335
+问题那很好，我会试试
+question that's that's fine and I'll try
+
+315
+00:22:57,340 --> 00:22:59,644
+以有用的方式回答你
+to answer you in a useful way
+
+316
+00:22:59,649 --> 00:23:03,634
+是的，所以我总是愿意接受
+yeah so that's and I'm always open to
+
+317
+00:23:03,639 --> 00:23:07,595
+问题所以你可以给我发电子邮件
+questions so you could email me like how
+
+318
+00:23:07,600 --> 00:23:12,004
+该项目应该是我的导师
+long should this project be my tutor in
+
+319
+00:23:12,009 --> 00:23:15,335
+牛津说他喜欢什么
+Oxford said something like when he you
+
+320
+00:23:15,340 --> 00:23:19,715
+知道你在写论文
+know you were writing essays that's the
+
+321
+00:23:19,720 --> 00:23:22,134
+牛津系统是写一篇文章和
+Oxford system is to write an essay and
+
+322
+00:23:22,139 --> 00:23:25,114
+他说只是从它开始的地方开始
+he said just start where it starts and
+
+323
+00:23:25,119 --> 00:23:27,634
+当它结束时就结束了
+end when it finishes so that's the
+
+324
+00:23:27,639 --> 00:23:29,435
+这就是主意
+that's the idea
+
+325
+00:23:29,440 --> 00:23:33,904
+肯定不会长，然后一个
+certainly not normally long and then a
+
+326
+00:23:33,909 --> 00:23:37,445
+问题被提出，我可以问你是否
+question was raised and I can ask you if
+
+327
+00:23:37,450 --> 00:23:40,774
+你有兴趣在
+you are interested in that
+
+328
+00:23:40,779 --> 00:23:44,254
+问题是此后的课程
+the question was what courses after this
+
+329
+00:23:44,259 --> 00:23:48,245
+一个是自然的，有点自然
+one are natural are sort of natural to
+
+330
+00:23:48,250 --> 00:23:52,085
+采取前进，我不知道如何
+take to go forward and I don't know how
+
+331
+00:23:52,090 --> 00:23:53,115
+很多人
+many of you
+
+332
+00:23:53,120 --> 00:23:55,815
+谁想要有时间
+who are thinking to take have time to
+
+333
+00:23:55,820 --> 00:24:00,405
+另外还有麻省理工学院的其他MIT课程
+take another MIT other MIT courses in
+
+334
+00:24:00,410 --> 00:24:02,865
+这个领域的深度学习机器
+this area of deep learning machine
+
+335
+00:24:02,870 --> 00:24:05,505
+学习优化所有主题
+learning optimization all the topics
+
+336
+00:24:05,510 --> 00:24:09,735
+我们这里有人想要带走
+we've had here anybody expecting to take
+
+337
+00:24:09,740 --> 00:24:12,435
+更多的课程只是伸出一只手是啊
+more courses just stick up a hand yeah
+
+338
+00:24:12,440 --> 00:24:15,045
+你已经知道麻省理工学院了
+and you already know like what MIT
+
+339
+00:24:15,050 --> 00:24:20,415
+提供或者使被质疑，认为
+offers or so that was the question that
+
+340
+00:24:20,420 --> 00:24:23,925
+来找我麻省理工学院提供的内容
+came to me what does MIT offer in this
+
+341
+00:24:23,930 --> 00:24:27,195
+方向，我没有抬头看
+direction and I haven't looked up to see
+
+342
+00:24:27,200 --> 00:24:30,705
+roz课程sra的教授人数
+the number of professors roz course sra
+
+343
+00:24:30,710 --> 00:24:33,615
+但在六天之后它就是六点
+but after in course six it's six point
+
+344
+00:24:33,620 --> 00:24:37,185
+数量很高，并且在他的好之后
+high number and and after his good
+
+345
+00:24:37,190 --> 00:24:39,795
+讲座我认为这是必须的
+lecture I think that's gotta be
+
+346
+00:24:39,800 --> 00:24:44,475
+值得的，所以我看了六个课程
+worthwhile so I looked on course six I
+
+347
+00:24:44,480 --> 00:24:48,765
+没找到一个非常非常的研究所
+didn't find a really very an institute
+
+348
+00:24:48,770 --> 00:24:51,795
+广泛的名单可能当然六感觉
+wide list maybe course six feels that
+
+349
+00:24:51,800 --> 00:24:54,495
+他们是研究所，但还有其他
+they are the Institute but there's other
+
+350
+00:24:54,500 --> 00:25:01,935
+周围的课程，但我发现在
+courses around and but I found in in the
+
+351
+00:25:01,940 --> 00:25:05,475
+操作是一个搜索网站哦，看到了
+operations were a search site oh are see
+
+352
+00:25:05,480 --> 00:25:09,795
+运营研究中心让我
+the operations Research Center let me
+
+353
+00:25:09,800 --> 00:25:13,035
+只是把它放在那里以防万一你
+just put there this is just in case you
+
+354
+00:25:13,040 --> 00:25:17,145
+我想考虑其中的任何一个
+would like to think about any of these
+
+355
+00:25:17,150 --> 00:25:25,875
+我写的东西就这样，所以我
+things so there as I write that so I
+
+356
+00:25:25,880 --> 00:25:28,835
+听过Timberners-le的演讲
+heard the lecture by Tim berners-lee
+
+357
+00:25:28,840 --> 00:25:32,565
+这里的其他人认为这一周左右
+that others here that this a week or so
+
+358
+00:25:32,570 --> 00:25:37,424
+之前他创建了网络，所以它很漂亮
+ago he created the web so it's a pretty
+
+359
+00:25:37,429 --> 00:25:38,985
+惊人
+amazing
+
+360
+00:25:38,990 --> 00:25:43,995
+毕竟，这不是AlGore，你知道
+it wasn't Al Gore after all and you know
+
+361
+00:25:44,000 --> 00:25:47,105
+你知道他的名字，他现在就是爵士
+do you know his name what he's now Sir
+
+362
+00:25:47,110 --> 00:25:55,275
+蒂姆伯纳斯利这么双名
+Tim berners-lee so that double name
+
+363
+00:25:55,280 --> 00:25:57,615
+让你怀疑他是来自英格兰
+makes you suspect it's he's from England
+
+364
+00:25:57,620 --> 00:26:01,424
+比他还要他，但我是这样的人
+than he is but he so anybody I was going
+
+365
+00:26:01,429 --> 00:26:04,905
+说他是我让他负责
+to say he's I hold him responsible for
+
+366
+00:26:04,910 --> 00:26:06,255
+这些
+these
+
+367
+00:26:06,260 --> 00:26:12,435
+地址中的过多字母
+excessive letters in in the address in
+
+368
+00:26:12,440 --> 00:26:17,505
+URL我的意思是他让我们都说www
+the URL I mean he's made us all say www
+
+369
+00:26:17,510 --> 00:26:20,895
+一年或找其他方式说
+for a year or find some other way to say
+
+370
+00:26:20,900 --> 00:26:24,555
+它但是说我觉得没关系并不容易
+it but it's not easy to say I think okay
+
+371
+00:26:24,560 --> 00:26:28,545
+无论这是什么操作或
+whatever this is the operate the o.r
+
+372
+00:26:28,550 --> 00:26:37,185
+麻省理工学院的中心，然后是学术界或
+Center at MIT and then it's academics or
+
+373
+00:26:37,190 --> 00:26:42,885
+什么，然后它就像
+something and then it's something like
+
+374
+00:26:42,890 --> 00:26:45,825
+课程设置大约
+course offerings that's approximately
+
+375
+00:26:45,830 --> 00:26:53,505
+权，因为它们适用于
+right and since they do apply to
+
+376
+00:26:53,510 --> 00:26:56,385
+优化，你知道有一个
+optimization that's you know there's a
+
+377
+00:26:56,390 --> 00:26:58,755
+蚂蚁数据分析的标题或
+heading of ant data analytics or
+
+378
+00:26:58,760 --> 00:27:02,765
+统计数据有优化
+statistics there's optimization there's
+
+379
+00:27:02,770 --> 00:27:06,675
+oo-或运营研究其他清单
+o-o-or operations research other lists
+
+380
+00:27:06,680 --> 00:27:10,695
+但是许多课程都很好
+but a good list of courses from many
+
+381
+00:27:10,700 --> 00:27:12,795
+部门担任总裁
+departments as president
+
+382
+00:27:12,800 --> 00:27:18,185
+尤其是如此特别是当然的缘故
+especially so especially course sakes
+
+383
+00:27:18,190 --> 00:27:21,495
+当然15这是哪里
+of course 15 which is where the
+
+384
+00:27:21,500 --> 00:27:24,195
+运营研究中心是课程
+operations Research Center are is course
+
+385
+00:27:24,200 --> 00:27:27,705
+18当然也有其他人
+18 and there are others in course too
+
+386
+00:27:27,710 --> 00:27:34,905
+和其他地方的好耶有人会
+and elsewhere yeah well would somebody
+
+387
+00:27:34,910 --> 00:27:37,785
+想说出你的想法
+like to say what course you have in mind
+
+388
+00:27:37,790 --> 00:27:41,375
+如果你，请在此之后接下一个
+to take next after this one if you
+
+389
+00:27:41,380 --> 00:27:44,115
+看着明年的展望
+looked at the looked ahead to next year
+
+390
+00:27:44,120 --> 00:27:47,535
+什么样的建议
+any many suggestions of what looks like
+
+391
+00:27:47,540 --> 00:27:51,345
+一个好的课程，你知道我只知道我
+a good course I I you know I only know I
+
+392
+00:27:51,350 --> 00:27:55,575
+坐在6.03六点六真的基本
+sat in once on 6.03 six the really basic
+
+393
+00:27:55,580 --> 00:27:58,635
+当然，你想要去
+course and you you would want to go
+
+394
+00:27:58,640 --> 00:28:04,815
+更高的好，我不会有任何可能这是
+higher okay I I won't any maybe this is
+
+395
+00:28:04,820 --> 00:28:07,725
+只是说我有兴趣知道
+just to say I'd be interested to know
+
+396
+00:28:07,730 --> 00:28:10,005
+接下来你的经历是什么
+what you do next what your experience is
+
+397
+00:28:10,010 --> 00:28:15,495
+或者我很乐意提供建议但也许
+or I'd be happy to give advice but maybe
+
+398
+00:28:15,500 --> 00:28:18,285
+我的一般建议是那是一个
+my general advice is that that's a
+
+399
+00:28:18,290 --> 00:28:19,605
+有用的清单
+useful list of
+
+400
+00:28:19,610 --> 00:28:27,315
+课程还可以回到距离
+of courses okay back to distance
+
+401
+00:28:27,320 --> 00:28:32,405
+矩阵没关系，所以这就是问题所在
+matrices okay so here's the problem
+
+402
+00:28:32,410 --> 00:28:36,165
+是的，我可能不得不提高
+yep okay I'll probably have to raise
+
+403
+00:28:36,170 --> 00:28:40,655
+但是我会把它留下一分钟好吧
+that but I'll leave it for a minute okay
+
+404
+00:28:40,660 --> 00:28:45,255
+所以我们知道这些距离，我们想要
+so we know these distances and we want
+
+405
+00:28:45,260 --> 00:28:46,245
+找到出口
+to find the exit
+
+406
+00:28:46,250 --> 00:28:53,595
+所以我们可以这样称呼DIJ吧
+so let's call this D IJ maybe so we have
+
+407
+00:28:53,600 --> 00:28:56,145
+一个D矩阵，我们想找到
+a D matrix and we want to find the
+
+408
+00:28:56,150 --> 00:28:58,905
+位置矩阵让我看看是什么
+position matrix let me just see what
+
+409
+00:28:58,910 --> 00:29:07,415
+符号所以这是3.9节no4.9
+notation so this is section 3.9 no 4.9
+
+410
+00:29:07,420 --> 00:29:10,545
+以前3.9，但章三
+previously 3.9 but chapters three and
+
+411
+00:29:10,550 --> 00:29:13,335
+四个人切换了，也许也许
+four got switched so and maybe maybe
+
+412
+00:29:13,340 --> 00:29:16,665
+实际是的，我认为这是八或
+actually yeah I think it's it's eight or
+
+413
+00:29:16,670 --> 00:29:22,665
+九点或十点其他主题正在尝试
+nine or ten it's other topics are trying
+
+414
+00:29:22,670 --> 00:29:25,925
+找到他们的方式，好吧，这就是
+to find their way and okay so that's the
+
+415
+00:29:25,930 --> 00:29:29,265
+这是在该地段上的参考
+that's the reference on the lot on the
+
+416
+00:29:29,270 --> 00:29:31,395
+网页，我会把这些部分放到
+web and I'll get these sections onto
+
+417
+00:29:31,400 --> 00:29:35,625
+恒星好吧所以问题是我们可以
+stellar okay so the question is can we
+
+418
+00:29:35,630 --> 00:29:39,455
+从距离恢复位置
+recover the positions from the distances
+
+419
+00:29:39,460 --> 00:29:42,105
+其实还有一个问题是
+in fact there's also a question are
+
+420
+00:29:42,110 --> 00:29:46,005
+从给定的位置总是有位置
+there always positions from the given
+
+421
+00:29:46,010 --> 00:29:50,055
+距离所以让我和我提到
+distances so let me and and I mentioned
+
+422
+00:29:50,060 --> 00:29:52,725
+我已经说过几个应用程序
+several applications I've already spoken
+
+423
+00:29:52,730 --> 00:29:56,975
+关于你的无线传感器网络
+about wireless sensor networks where you
+
+424
+00:29:56,980 --> 00:29:59,535
+你可以衡量之间的旅行时间
+you can measure travel times between
+
+425
+00:29:59,540 --> 00:30:02,625
+它们介于传感器和你之间
+them between the sensors and then you
+
+426
+00:30:02,630 --> 00:30:05,475
+然后给你距离
+that gives you the distances and then
+
+427
+00:30:05,480 --> 00:30:09,615
+你使用这个简洁的数学计算
+you use this neat little bit of math to
+
+428
+00:30:09,620 --> 00:30:12,435
+当然找到你的位置
+find the positions well of course you
+
+429
+00:30:12,440 --> 00:30:16,715
+无法找到唯一的位置
+can't find the positions uniquely
+
+430
+00:30:16,720 --> 00:30:21,045
+显然你可以任何僵硬的动作
+clearly you could any rigid motion of
+
+431
+00:30:21,050 --> 00:30:24,795
+如果我有一套，所有的职位
+all the positions if I have a set of
+
+432
+00:30:24,800 --> 00:30:29,025
+定位我将称之为X的那个
+positions what am I going to call that X
+
+433
+00:30:29,030 --> 00:30:32,715
+所以就在这里
+so so right here and then
+
+434
+00:30:32,720 --> 00:30:40,575
+所以我给了D矩阵
+so I'm given the D matrix that's
+
+435
+00:30:40,580 --> 00:30:44,805
+距离和工作是找到X.
+distances and the job is to find the X
+
+436
+00:30:44,810 --> 00:30:54,335
+给出位置和的矩阵
+matrix which gives the positions and
+
+437
+00:30:54,340 --> 00:30:56,925
+我要说的和你在一起
+what I'm just going to say and you
+
+438
+00:30:56,930 --> 00:30:59,865
+已经看到，看到它在你的心中
+already saw that saw it in your mind
+
+439
+00:30:59,870 --> 00:31:02,655
+如果我有一套职位我
+that if I have a set of positions I
+
+440
+00:31:02,660 --> 00:31:06,555
+可以做距离的翻译
+could do a translation the distances
+
+441
+00:31:06,560 --> 00:31:09,135
+不会改变，或者我可以做一个僵硬的
+wouldn't change or I could do a rigid
+
+442
+00:31:09,140 --> 00:31:16,175
+运动其他刚性旋转所以位置
+motion other rigid rotation so positions
+
+443
+00:31:16,180 --> 00:31:20,565
+不是唯一的，但我可以让我来
+are not unique but I can make I can come
+
+444
+00:31:20,570 --> 00:31:23,375
+说把中心更近
+closer by saying put the center of
+
+445
+00:31:23,380 --> 00:31:26,325
+原点上的质心或类似的东西
+centroid at the origin or something like
+
+446
+00:31:26,330 --> 00:31:28,845
+这将取消翻译
+that that will take out the translations
+
+447
+00:31:28,850 --> 00:31:31,125
+至少没关系，所以找到X矩阵
+at least okay so find the X matrix
+
+448
+00:31:31,130 --> 00:31:34,125
+这是好的工作，我打算去
+that's the job okay and I was going to
+
+449
+00:31:34,130 --> 00:31:37,095
+在我开始之前的形状
+before I start on that the shapes of
+
+450
+00:31:37,100 --> 00:31:40,545
+分子是核的另一种应用
+molecules is another application nuclear
+
+451
+00:31:40,550 --> 00:31:44,295
+磁共振给出了距离
+magnetic resonance gives distances gives
+
+452
+00:31:44,300 --> 00:31:49,335
+D然后我们找到位置MX和
+D and then we find the positions M X and
+
+453
+00:31:49,340 --> 00:31:51,215
+当然那里有一个噪音
+of course there's a noise in there and
+
+454
+00:31:51,220 --> 00:31:55,065
+有时缺少条目和机器
+sometimes missing entries and machine
+
+455
+00:31:55,070 --> 00:31:58,665
+学习也可以简单地描述为
+learning could be just described also as
+
+456
+00:31:58,670 --> 00:32:01,485
+你给了很多分
+a you've given a whole lot of points in
+
+457
+00:32:01,490 --> 00:32:03,465
+空间特征向量在高
+space feature vectors in a high
+
+458
+00:32:03,470 --> 00:32:05,715
+维空间实际上这是一个很大的空间
+dimensional space actually this is a big
+
+459
+00:32:05,720 --> 00:32:09,255
+交易给你很多积分
+deal you're given a whole lot of points
+
+460
+00:32:09,260 --> 00:32:12,255
+在高维空间的哪里
+with where the in high dimensional space
+
+461
+00:32:12,260 --> 00:32:15,975
+那些与他们有关系
+and those are related there they're
+
+462
+00:32:15,980 --> 00:32:18,105
+他们有点聚在一起
+there they sort of come together
+
+463
+00:32:18,110 --> 00:32:21,215
+自然所以他们倾向于适应
+naturally so they tend to fit on a
+
+464
+00:32:21,220 --> 00:32:25,905
+高维空间中的表面低
+surface in high dimensional space a low
+
+465
+00:32:25,910 --> 00:32:28,035
+高维尺寸表面
+dimensional surface in high dimensional
+
+466
+00:32:28,040 --> 00:32:31,215
+空间和真正的很多数学是
+space and really a lot of mathematics is
+
+467
+00:32:31,220 --> 00:32:35,295
+致力于发现低维度
+devoted to finding that low dimensional
+
+468
+00:32:35,300 --> 00:32:38,565
+那个子空间但它可以是弯曲的
+that sub space but it could be curved so
+
+469
+00:32:38,570 --> 00:32:42,795
+子空间真的不是正确的单词
+sub space is not the correct word really
+
+470
+00:32:42,800 --> 00:32:46,005
+歧管是弯曲的歧管本
+manifold is curved manifold this
+
+471
+00:32:46,010 --> 00:32:50,475
+一个甲基几何学家会说这很接近
+a meth geometers would say that is close
+
+472
+00:32:50,480 --> 00:32:53,835
+所有的行星都平滑而接近
+to all the planets smooth and close to
+
+473
+00:32:53,840 --> 00:32:57,335
+所有的点，你可以线性化它
+all the points and you can linearize it
+
+474
+00:32:57,340 --> 00:33:01,755
+你可以把它弄平，然后你
+you could flatten it out and then you
+
+475
+00:33:01,760 --> 00:33:04,155
+有一个大大减少的问题了
+have a much reduced problem the
+
+476
+00:33:04,160 --> 00:33:06,615
+尺寸从原来减少
+dimension is reduced from the original
+
+477
+00:33:06,620 --> 00:33:10,035
+点的维度
+dimension of the of the where the points
+
+478
+00:33:10,040 --> 00:33:14,265
+谎言有很多数据真实
+lie with a lot of data to the true
+
+479
+00:33:14,270 --> 00:33:17,235
+当然，问题的维度
+dimension of the problem which of course
+
+480
+00:33:17,240 --> 00:33:18,975
+如果积分都是直的
+if the points were all on a straight
+
+481
+00:33:18,980 --> 00:33:20,415
+排列问题的真实维度
+line the true dimension of the problem
+
+482
+00:33:20,420 --> 00:33:21,405
+会是一个
+would be one
+
+483
+00:33:21,410 --> 00:33:27,935
+我们所以我们必须发现这一点
+well we so we have to discover this that
+
+484
+00:33:27,940 --> 00:33:32,835
+我们还必须找到尺寸Dok
+we also have to find that dimension D ok
+
+485
+00:33:32,840 --> 00:33:38,505
+好的，我们怎么做才是这样呢
+ok so how do we do it so it's a
+
+486
+00:33:38,510 --> 00:33:41,595
+经典问题它只是一个整洁
+classical problem it just has a neat
+
+487
+00:33:41,600 --> 00:33:51,905
+回答好吧好吧让我们认识一下
+answer ok okay so let's recognize the
+
+488
+00:33:51,910 --> 00:33:54,345
+距离与之间的联系
+connection between distances and
+
+489
+00:33:54,350 --> 00:34:01,815
+位置所以DIJ是它的长度
+positions so D IJ is length of it's the
+
+490
+00:34:01,820 --> 00:34:04,725
+它们之间的平方距离，从而是
+square distance between them so that is
+
+491
+00:34:04,730 --> 00:34:18,855
+XIXI减去XIXJ减去xjxi加x
+X I X I minus X I XJ minus xj x i plus x
+
+492
+00:34:18,860 --> 00:34:33,124
+JX检查确定是正确的确是如此
+JX check ok is that right yes ok so
+
+493
+00:34:33,129 --> 00:34:37,245
+这些都是DIJ的以矩阵和
+those are the DI J's in a matrix and
+
+494
+00:34:37,250 --> 00:34:47,225
+这些是矩阵Dok中的条目
+these are entries in the matrix D ok
+
+495
+00:34:47,230 --> 00:34:51,574
+这些条目
+well these entries
+
+496
+00:34:51,579 --> 00:34:58,455
+只依靠我，他们是相同的
+depend only on I they're the same for
+
+497
+00:34:58,460 --> 00:35:01,695
+每一个J所以这就是这个意志
+every J so this is going to be this will
+
+498
+00:35:01,700 --> 00:35:04,695
+这部分将产生排名第一
+this this part will produce a rank one
+
+499
+00:35:04,700 --> 00:35:11,324
+矩阵，因为事情只依赖于
+matrix because things depend only on the
+
+500
+00:35:11,329 --> 00:35:17,044
+排J但他们的列号不是这样的
+row but not on J their column number so
+
+501
+00:35:17,049 --> 00:35:31,635
+列重复是的，这产生了
+columns repeated yeah and this produces
+
+502
+00:35:31,640 --> 00:35:35,504
+类似的事情只取决于
+a similarly something that depends only
+
+503
+00:35:35,509 --> 00:35:39,735
+在J上只有列号这样的
+on J only on the column number so the
+
+504
+00:35:39,740 --> 00:35:43,304
+行都是一样的，所以这也是一个
+rows are all the same so this is also a
+
+505
+00:35:43,309 --> 00:35:51,225
+排名一个矩阵，所有重复发送
+rank one matrix with all repeated sent
+
+506
+00:35:51,230 --> 00:35:58,364
+所有相同的行，因为如果我改变我
+all the same rows because if I change I
+
+507
+00:35:58,369 --> 00:36:01,274
+这种内在产品没有任何变化
+nothing changes in that inner product so
+
+508
+00:36:01,279 --> 00:36:08,344
+这些是产生的条款
+really these are the terms that produce
+
+509
+00:36:08,349 --> 00:36:12,915
+大多数矩阵的重要部分
+most of the matrix the significant part
+
+510
+00:36:12,920 --> 00:36:19,905
+矩阵好吗，那我们该怎么办呢
+of the matrix okay so what do we do with
+
+511
+00:36:19,910 --> 00:36:25,835
+那些什么呢
+those so what what
+
+512
+00:36:25,840 --> 00:36:29,715
+让我们看看，我没有，我给一个名字
+so let's see I've did I give a name for
+
+513
+00:36:29,720 --> 00:36:32,735
+我想是我正在寻找的矩阵
+the matrix that I'm looking for I think
+
+514
+00:36:32,740 --> 00:36:40,635
+在笔记中我称之为X所以我得到了
+in the notes I call it X so so I'm given
+
+515
+00:36:40,640 --> 00:36:50,745
+给D找到X，我实际上是什么
+D given D find X and what I'll actually
+
+516
+00:36:50,750 --> 00:36:54,365
+发现你可以看到它来到这里
+find you can see it coming here is
+
+517
+00:36:54,370 --> 00:37:04,425
+实际上找到X转置X因为什么
+actually find X transpose X because what
+
+518
+00:37:04,430 --> 00:37:06,975
+我所拥有的只是点积
+all I'm what I'm given is dot products
+
+519
+00:37:06,980 --> 00:37:15,345
+X的所以我想找到
+of X's so so I would like to find to
+
+520
+00:37:15,350 --> 00:37:18,525
+发现所有这些XI
+discover out of out of all this what X I
+
+521
+00:37:18,530 --> 00:37:22,575
+用XJ点缀是正确的
+dotted with XJ is that'll be the correct
+
+522
+00:37:22,580 --> 00:37:27,345
+点积我们称之为矩阵G.
+dot product let's call this matrix G for
+
+523
+00:37:27,350 --> 00:37:33,645
+然后是点积矩阵
+the dot product matrix and then then
+
+524
+00:37:33,650 --> 00:37:44,145
+从G找到X所以这是一个很好的论点
+find X from G so this is a nice argument
+
+525
+00:37:44,150 --> 00:37:47,655
+所以这告诉我的是一堆
+so what this tells me is a bunch of some
+
+526
+00:37:47,660 --> 00:37:50,535
+有关点积的信息，所以这个
+information about dot products so this
+
+527
+00:37:50,540 --> 00:37:52,635
+告诉我关于G的一些事情
+is telling me something about the G
+
+528
+00:37:52,640 --> 00:37:56,325
+矩阵X的转置矩阵X，然后
+matrix the X transpose X matrix and then
+
+529
+00:37:56,330 --> 00:37:59,205
+一旦我知道G，那么这是一个单独的步骤
+once I know G then it's a separate step
+
+530
+00:37:59,210 --> 00:38:02,415
+找到X，当然就是这样
+to find X and of course that's this is
+
+531
+00:38:02,420 --> 00:38:05,805
+如果，X不是唯一的点
+the point of which X is not unique if
+
+532
+00:38:05,810 --> 00:38:08,715
+如果我把旋转放入X.
+there's if I put in a rotation into X
+
+533
+00:38:08,720 --> 00:38:12,765
+然后旋转Q我会看到Q.
+then that rotation Q will I'll see a Q
+
+534
+00:38:12,770 --> 00:38:15,465
+转置Q它会消失所以
+transpose Q and it'll disappear so the
+
+535
+00:38:15,470 --> 00:38:19,095
+所以我可以自由旋转X.
+so the I'm free to rotate the X's
+
+536
+00:38:19,100 --> 00:38:20,805
+因为这不会改变点
+because that doesn't change the dot
+
+537
+00:38:20,810 --> 00:38:23,655
+产品，但我想要的是G
+product but so it's G that I want to
+
+538
+00:38:23,660 --> 00:38:26,505
+知道，这告诉我关于G的事情
+know and this tells me something about G
+
+539
+00:38:26,510 --> 00:38:30,875
+这告诉我一些关于G和
+and this tells me something about G and
+
+540
+00:38:30,880 --> 00:38:34,685
+那就是这样，但这就是我必须要做的
+so does that but that's what I have to
+
+541
+00:38:34,690 --> 00:38:39,285
+看到那些告诉我的是什么
+see so what is what do those tell me
+
+542
+00:38:39,290 --> 00:38:42,895
+让我们看看让我写下我的内容
+let's see let me write down what I have
+
+543
+00:38:42,900 --> 00:38:50,665
+在这里所以，所以让我们说一个
+here so so the the the so let's say a
+
+544
+00:38:50,670 --> 00:39:00,325
+以VII为内部的对角矩阵
+diagonal matrix with VII as the inner
+
+545
+00:39:00,330 --> 00:39:07,885
+产品XI将XI我们认为
+product X I would X I that we that we're
+
+546
+00:39:07,890 --> 00:39:10,195
+从这里因此让部分信息
+getting partial information from here so
+
+547
+00:39:10,200 --> 00:39:12,735
+所以，我正在介绍那个
+so is that okay I'm introducing that
+
+548
+00:39:12,740 --> 00:39:15,835
+符号，因为现在这样
+notation because this is now going to
+
+549
+00:39:15,840 --> 00:39:21,175
+告诉我，我的D矩阵就是这样
+tell me that my D matrix is so what is
+
+550
+00:39:21,180 --> 00:39:24,765
+这就是对角线矩阵
+that so this is the diagonal matrix
+
+551
+00:39:24,770 --> 00:39:29,625
+也许这只是我应该说的一个载体
+maybe it's just a vector I should say
+
+552
+00:39:29,630 --> 00:39:41,515
+是的，是的，所以我可以写下来
+yeah yeah yep so can I write down the
+
+553
+00:39:41,520 --> 00:39:44,455
+方程那这就是它的
+equation that that that's that it's
+
+554
+00:39:44,460 --> 00:39:47,845
+基本在这里，然后哦，然后我们会
+fundamental here and then oh then we'll
+
+555
+00:39:47,850 --> 00:39:50,385
+找出它意味着什么，所以它是一个
+figure out what it means so it's a
+
+556
+00:39:50,390 --> 00:39:57,595
+点积的G的等式
+equation for G for the dot product
+
+557
+00:39:57,600 --> 00:40:00,565
+矩阵好吧让我为此腾出空间
+matrix okay let me make space for that
+
+558
+00:40:00,570 --> 00:40:06,295
+等式，所以这就是我相信我们
+equation so here's the I believe that we
+
+559
+00:40:06,300 --> 00:40:08,575
+我可以得到点积矩阵
+can get the dot product matrix which I'm
+
+560
+00:40:08,580 --> 00:40:16,435
+按照这个来调用G
+calling G as as according to this it's
+
+561
+00:40:16,440 --> 00:40:22,795
+减去D矩阵的1/2加1/2的1/2
+minus 1/2 of the D matrix plus 1/2 of
+
+562
+00:40:22,800 --> 00:40:33,055
+那些时间D对角线D和
+the ones times the D the diagonal D and
+
+563
+00:40:33,060 --> 00:40:40,135
+它加上了深度的1/2
+it's plus 1/2 of the depth of the
+
+564
+00:40:40,140 --> 00:40:49,285
+时间和曾经这些是矩阵
+the times and once these that's a matrix
+
+565
+00:40:49,290 --> 00:40:53,455
+与恒定行相同
+with the same with constant rows that
+
+566
+00:40:53,460 --> 00:40:57,595
+矩阵就是这就是这个
+matrix is that this here is this is
+
+567
+00:40:57,600 --> 00:41:01,045
+从有这个未来是一个矩阵
+coming from there this is a matrix with
+
+568
+00:41:01,050 --> 00:41:11,125
+总是在同一列，让我看不到
+always the same columns so let me see no
+
+569
+00:41:11,130 --> 00:41:12,955
+我没有得到那些正确的
+I haven't got haven't got those right
+
+570
+00:41:12,960 --> 00:41:17,515
+但我的意思是我希望这些排名第一
+yet I mean I want these to be rank one
+
+571
+00:41:17,520 --> 00:41:20,445
+矩阵，所以我就是这个
+matrices so I've it's this one that's
+
+572
+00:41:20,450 --> 00:41:36,115
+让我解决这个问题一个一个一个一个时间d
+let me fix that one one one one times D
+
+573
+00:41:36,120 --> 00:41:39,405
+转置所以它的列时间排和
+transpose so it's column times row and
+
+574
+00:41:39,410 --> 00:41:48,835
+这个也是列时间行
+this one is also column times row with
+
+575
+00:41:48,840 --> 00:41:54,865
+这里的d现在没事了，让我看看那个
+the D here okay now let me look at that
+
+576
+00:41:54,870 --> 00:41:59,475
+这个家伙的每一行都是合适的
+properly so every row in this guy is a
+
+577
+00:41:59,480 --> 00:42:02,475
+多个一一一
+multiple of one one one one
+
+578
+00:42:02,480 --> 00:42:04,855
+那是什么告诉我所有的
+so what does that telling me that all
+
+579
+00:42:04,860 --> 00:42:07,725
+所有列都是相同的列
+columns are the same all columns are
+
+580
+00:42:07,730 --> 00:42:12,505
+这部分是反映这些
+this this part is is reflecting these
+
+581
+00:42:12,510 --> 00:42:15,985
+列重复的地方
+ones where the columns are repeated this
+
+582
+00:42:15,990 --> 00:42:18,415
+一个是反映这个行的位置
+one is reflecting this where the rows
+
+583
+00:42:18,420 --> 00:42:21,475
+重复D只是D的集合
+are repeated the D is just the set of D
+
+584
+00:42:21,480 --> 00:42:27,295
+让我们称之为di，这就是
+numbers let's call that di and this is
+
+585
+00:42:27,300 --> 00:42:38,035
+DJ所以我和这里都是D矩阵
+DJ so all I'm and here's the D matrix
+
+586
+00:42:38,040 --> 00:42:41,975
+所以这部分D的一部分
+so part of the so so part of the D
+
+587
+00:42:41,980 --> 00:42:46,295
+矩阵是这是这个坑和这个
+matrix is is these is this pit and this
+
+588
+00:42:46,300 --> 00:42:50,795
+现在就是这一点，每个都给一个排名
+bit each giving a rank one now it's this
+
+589
+00:42:50,800 --> 00:42:52,925
+我必须要了解的部分
+part that I have to understand
+
+590
+00:42:52,930 --> 00:42:56,855
+所以，当你检查时，让我来
+so let me while you're checking on that
+
+591
+00:42:56,860 --> 00:43:14,405
+让我好吧，让我们看看我们在哪里
+let me okay yep let's just see where we
+
+592
+00:43:14,410 --> 00:43:18,035
+如果这是真的，如果这是真的我是
+are if this is true if this is true I'm
+
+593
+00:43:18,040 --> 00:43:24,665
+给出D矩阵然后这些点
+given the D matrix and then these dot
+
+594
+00:43:24,670 --> 00:43:29,675
+我能找到的产品，所以我可以找到这些
+products I can find so I can find these
+
+595
+00:43:29,680 --> 00:43:31,355
+换句话说，这是关键
+so in other words this is the key
+
+596
+00:43:31,360 --> 00:43:37,745
+方程式告诉我那就是那个
+equation that tells me that's that's the
+
+597
+00:43:37,750 --> 00:43:39,995
+关键方程，它要来只
+key equation and it's going to come just
+
+598
+00:43:40,000 --> 00:43:43,715
+来自那个简单的身份
+from that simple identity just from
+
+599
+00:43:43,720 --> 00:43:45,575
+我们这个学期检查每个学期
+checking each term this term we
+
+600
+00:43:45,580 --> 00:43:48,065
+确定我们确定的上一学期
+identified that last term we identified
+
+601
+00:43:48,070 --> 00:43:50,945
+现在这个词当然是B好吧
+it now this term is B well of course
+
+602
+00:43:50,950 --> 00:43:58,415
+它是D所以我有两个，我
+it's D so I have two of those and I'm
+
+603
+00:43:58,420 --> 00:44:02,375
+将其中的一半用于
+going to take half of half of that to
+
+604
+00:44:02,380 --> 00:44:12,035
+得到DI认为是的是的，我们将我们
+get D I think yep yep and we'll we'll
+
+605
+00:44:12,040 --> 00:44:21,425
+看起来如此，是的
+look so so yeah
+
+606
+00:44:21,430 --> 00:44:24,945
+所以我想我没有马上看到原因
+so I guess I'm not seeing right away why
+
+607
+00:44:24,950 --> 00:44:27,845
+这一半在这里
+this half is in here
+
+608
+00:44:27,850 --> 00:44:30,585
+但那是，但我认为我做得对
+but that's but I think I had it right
+
+609
+00:44:30,590 --> 00:44:33,555
+并且有一个原因，但你看到了
+and there's there's a reason but you see
+
+610
+00:44:33,560 --> 00:44:35,955
+该矩阵这个X的转置X
+that this matrix this X transpose X
+
+611
+00:44:35,960 --> 00:44:38,865
+矩阵来自这些等级1
+matrix is coming from these Rank 1
+
+612
+00:44:38,870 --> 00:44:42,165
+地方和这些作品
+places and these pieces which are the
+
+613
+00:44:42,170 --> 00:44:50,445
+跨产品哦，哦，我知道我看到什么
+the cross-product oh oh I see I see what
+
+614
+00:44:50,450 --> 00:44:52,305
+真的是那个等式真的
+really what that equation is really
+
+615
+00:44:52,310 --> 00:44:58,325
+说是D矩阵就是这个
+saying is that the the D matrix is this
+
+616
+00:44:58,330 --> 00:45:01,545
+如果我只是阅读并翻译
+if I just read that along and translate
+
+617
+00:45:01,550 --> 00:45:05,225
+它并把它放在矩阵的语言是这个
+it and put it in matrix language is this
+
+618
+00:45:05,230 --> 00:45:13,655
+111112D让我们说
+1 1 1 1 the 1 2 D for let's say
+
+619
+00:45:13,660 --> 00:45:18,945
+转置是这个秩1矩阵和
+transpose is this Rank 1 matrix and the
+
+620
+00:45:18,950 --> 00:45:25,215
+另一种是DS倍11，其是
+other one is the DS times 1 1 which is
+
+621
+00:45:25,220 --> 00:45:28,005
+转换那个然后另一个
+the transpose of that and then the other
+
+622
+00:45:28,010 --> 00:45:31,575
+一个是交叉产品的减2
+one was a minus 2 of the cross product
+
+623
+00:45:31,580 --> 00:45:35,535
+矩阵，所以当我写那个
+matrices yep so when I write that
+
+624
+00:45:35,540 --> 00:45:39,015
+矩阵语言中的方程式我得到了
+equation in matrix language I just get
+
+625
+00:45:39,020 --> 00:45:43,485
+那个，现在当我解决x
+that and now when I solve for x
+
+626
+00:45:43,490 --> 00:45:49,925
+哦，它只是2减2X转置XI
+oh it's 2 minus 2 X transpose X I just
+
+627
+00:45:49,930 --> 00:45:53,655
+是的，对不起
+yeah yep sorry
+
+628
+00:45:53,660 --> 00:45:58,845
+交叉产品XS所以我有一套
+cross products the XS so I had one set
+
+629
+00:45:58,850 --> 00:46:00,885
+交叉产品然后这是
+of cross products and then this is the
+
+630
+00:46:00,890 --> 00:46:03,375
+与此相同所以我减去其中的2个
+same as this so I have minus 2 of them
+
+631
+00:46:03,380 --> 00:46:06,555
+所以现在我只是重写那个
+so now I'm just rewriting the that when
+
+632
+00:46:06,560 --> 00:46:08,535
+我重写了我所做的那个等式
+I rewrite that equation I have that do
+
+633
+00:46:08,540 --> 00:46:12,015
+你知道我把它放在这边我
+you see that I put that on this side I
+
+634
+00:46:12,020 --> 00:46:16,155
+把D放在这里作为减去DI除以
+put D over here as a minus D I divide by
+
+635
+00:46:16,160 --> 00:46:20,325
+2，然后是这样的公式，以便
+2 and then that's the formula so
+
+636
+00:46:20,330 --> 00:46:26,475
+最终这个简单的身份只是
+ultimately this simple identity just
+
+637
+00:46:26,480 --> 00:46:29,985
+看着因为这些碎片是如此
+looked at because these pieces were so
+
+638
+00:46:29,990 --> 00:46:32,835
+简单只是排名一个和这个
+simple just rank one pieces and this
+
+639
+00:46:32,840 --> 00:46:34,255
+这些作品是
+these pieces were
+
+640
+00:46:34,260 --> 00:46:36,445
+实际上我们想要X转置X.
+actually what we want the X transpose X
+
+641
+00:46:36,450 --> 00:46:41,755
+那个方程告诉我们D的G
+pieces the G that equation told us the D
+
+642
+00:46:41,760 --> 00:46:49,555
+我们知道这一切都很清楚，所以这是什么
+we know all this is known well so what's
+
+643
+00:46:49,560 --> 00:46:52,555
+真的是，D和这个已知的是什么
+really yeah what's known is D and this
+
+644
+00:46:52,560 --> 00:46:55,315
+这所以现在我们有公式
+and this so now we have the equation for
+
+645
+00:46:55,320 --> 00:47:03,135
+x转置X是D减去1/2
+x transpose X is minus 1/2 of D minus
+
+646
+00:47:03,140 --> 00:47:13,885
+-这些排名很抱歉让它看起来
+- these rank ones sorry to make it look
+
+647
+00:47:13,890 --> 00:47:17,665
+如果我记得RogeroutT，那就太乱了
+messy if I remember that Roger out T
+
+648
+00:47:17,670 --> 00:47:20,005
+说起去年春天也
+talking about a last spring also the
+
+649
+00:47:20,010 --> 00:47:25,975
+代数变得慌乱，但我们得到了它
+algebra got flustered but so we get it
+
+650
+00:47:25,980 --> 00:47:31,555
+所以我们知道X现在转换X矩阵
+so we know X transpose X that matrix now
+
+651
+00:47:31,560 --> 00:47:33,925
+你能为我们做四分钟吗？
+can you just can we just do four minutes
+
+652
+00:47:33,930 --> 00:47:43,665
+今天结束时线性代数的给出
+of linear algebra at the end today given
+
+653
+00:47:43,670 --> 00:47:56,665
+X转置X找到X这是nbynhow
+X transpose X find X this is n by n how
+
+654
+00:47:56,670 --> 00:48:00,805
+你会做，你能做到这一点会
+would you do that could you do it would
+
+655
+00:48:00,810 --> 00:48:06,175
+只有一个X知道什么是这样的
+there be just one X know what so so any
+
+656
+00:48:06,180 --> 00:48:09,895
+如果你有一个X倍数
+if you had if you had one X multiply
+
+657
+00:48:09,900 --> 00:48:12,115
+通过正交旋转
+that by a rotation by an orthogonal
+
+658
+00:48:12,120 --> 00:48:15,415
+矩阵你还有另外一个所以这个
+matrix you'd have another one so so this
+
+659
+00:48:15,420 --> 00:48:18,705
+你是在寻找X到正交
+is you're finding X up to an orthogonal
+
+660
+00:48:18,710 --> 00:48:20,215
+转型，但你怎么样
+transformation but how would you
+
+661
+00:48:20,220 --> 00:48:22,825
+实际上做得很好我们知道什么
+actually do that well what do we know
+
+662
+00:48:22,830 --> 00:48:27,075
+关于这个矩阵X转置X.
+about this matrix X transpose X
+
+663
+00:48:27,080 --> 00:48:30,355
+对称清晰，特别是我们
+symmetric clearly and what we especially
+
+664
+00:48:30,360 --> 00:48:35,695
+知道它也是正面的或半正面的
+know is that it's also positive or semi
+
+665
+00:48:35,700 --> 00:48:41,295
+确定所以这是半确定的
+definite so this is semi definite
+
+666
+00:48:41,300 --> 00:48:44,305
+所以我给了一个半定矩阵
+so I'm given a semi definite matrix and
+
+667
+00:48:44,310 --> 00:48:47,335
+我想找到一个平方根你可以
+I want to find a square root you could
+
+668
+00:48:47,340 --> 00:48:50,995
+说矩阵是X转置X和
+say that matrix is the X transpose X and
+
+669
+00:48:51,000 --> 00:48:53,515
+我想找到XI认为有两个
+I want to find X I think there are two
+
+670
+00:48:53,520 --> 00:48:57,325
+领先的候选人有很多
+leading candidates there are many
+
+671
+00:48:57,330 --> 00:49:00,925
+候选人，因为如果你找到一个
+candidates because if you find one then
+
+672
+00:49:00,930 --> 00:49:10,105
+然后任何QX都没关系，因为如果我
+then any QX is okay yeah because if I
+
+673
+00:49:10,110 --> 00:49:12,445
+把Q转置Q放在那里就是了
+put a Q transpose Q in there it's the
+
+674
+00:49:12,450 --> 00:49:16,765
+身份好吧所以一种方法是使用本征
+identity okay so one way is to use eigen
+
+675
+00:49:16,770 --> 00:49:24,985
+X转置x和其它的值
+values of x transpose x and the other
+
+676
+00:49:24,990 --> 00:49:30,445
+方法是在X上使用消除
+way would be to use elimination on X
+
+677
+00:49:30,450 --> 00:49:37,795
+移调X以便使用，如果我使用的话
+transpose X so so for use so if I use
+
+678
+00:49:37,800 --> 00:49:40,885
+如果我找到本征，则X的本征值
+eigen values of X if I find the eigen
+
+679
+00:49:40,890 --> 00:49:44,095
+X的值转置X然后我正在写
+values of X transpose X then I'm writing
+
+680
+00:49:44,100 --> 00:49:46,825
+因为它是对称的
+this as it's a symmetric
+
+681
+00:49:46,830 --> 00:49:49,435
+肯定地把它写成Qlambda
+positive-definite writing it as Q lambda
+
+682
+00:49:49,440 --> 00:49:52,545
+Q转置正确，这是根本
+Q transpose right that's the fundamental
+
+683
+00:49:52,550 --> 00:49:55,315
+最重要的定理在附近
+most important theorem in the near
+
+684
+00:49:55,320 --> 00:49:58,255
+代数你可以说是对称的
+algebra you could say that a symmetric
+
+685
+00:49:58,260 --> 00:50:02,715
+正半正定矩阵
+positive semi definite matrix has
+
+686
+00:50:02,720 --> 00:50:05,635
+更大的本征值大于等于零
+greater eigen values greater equal zero
+
+687
+00:50:05,640 --> 00:50:09,685
+和特征向量是正交如此
+and eigen vectors that are orthogonal so
+
+688
+00:50:09,690 --> 00:50:12,745
+现在如果我知道什么是好的X呢
+now if I know that what's a good X then
+
+689
+00:50:12,750 --> 00:50:21,405
+把X变为什么，所以我得到了
+take X to be what so I've got the
+
+690
+00:50:21,410 --> 00:50:23,815
+特征值和X的特征向量
+eigenvalues and eigenvectors of X
+
+691
+00:50:23,820 --> 00:50:26,065
+转置X而我正在寻找X.
+transpose X and I'm looking for an X
+
+692
+00:50:26,070 --> 00:50:29,755
+这将是有效的，一个想法只是为了
+that will work and one idea is just to
+
+693
+00:50:29,760 --> 00:50:32,725
+取相同的特征值特征向量
+take the same eigen values eigen vectors
+
+694
+00:50:32,730 --> 00:50:36,505
+并采取征的平方根
+and take the square roots of the eigen
+
+695
+00:50:36,510 --> 00:50:40,585
+值因为如果我跟踪我是否相乘
+values because if I multiply if I track
+
+696
+00:50:40,590 --> 00:50:43,135
+该对称的现在这是等于X
+that symmetric now this is equal to X
+
+697
+00:50:43,140 --> 00:50:46,875
+颠倒
+transpose
+
+698
+00:50:46,880 --> 00:50:52,255
+如果我这样那就是一个正方形
+and if I so that was a that's a square
+
+699
+00:50:52,260 --> 00:50:54,595
+根符号或λ的二分之一
+root symbol or a lambda to the one-half
+
+700
+00:50:54,600 --> 00:50:57,655
+我可以，我可以这么说，当我乘
+I could I could say so when I multiply
+
+701
+00:50:57,660 --> 00:51:01,525
+我只是X转置X是
+that I'm just really X transpose X is
+
+702
+00:51:01,530 --> 00:51:05,475
+当我把它放在一边时，只是x平方
+just x squared here when I square it the
+
+703
+00:51:05,480 --> 00:51:09,445
+Q转置Q乘以自身给出
+Q transpose Q multiplies itself to give
+
+704
+00:51:09,450 --> 00:51:12,235
+身份是lambdax的平方根
+the identity the square root of lambda x
+
+705
+00:51:12,240 --> 00:51:14,965
+lambda的平方根是那些
+times the square root of lambda is those
+
+706
+00:51:14,970 --> 00:51:17,335
+是给出lambda的对角矩阵
+are diagonal matrices that give lambda
+
+707
+00:51:17,340 --> 00:51:20,725
+我得到了正确的答案，所以有一种方法
+and I get the right answer so one way is
+
+708
+00:51:20,730 --> 00:51:24,385
+用几句话来说就是平方根
+in a few words take the square roots of
+
+709
+00:51:24,390 --> 00:51:26,125
+特征值并保持
+the eigenvalues and keep the
+
+710
+00:51:26,130 --> 00:51:28,995
+特征向量，这是特征值
+eigenvectors so that's the eigenvalue
+
+711
+00:51:29,000 --> 00:51:31,855
+施工，这样就产生了X.
+construction so that's producing an X
+
+712
+00:51:31,860 --> 00:51:35,745
+这是对称的正半确定
+that is symmetric positive semi definite
+
+713
+00:51:35,750 --> 00:51:39,145
+这可能是你想要的东西
+that might be what you want it's a
+
+714
+00:51:39,150 --> 00:51:40,975
+很少工作，因为你在计算
+little work because you're computing
+
+715
+00:51:40,980 --> 00:51:43,645
+这样做的特征值和特征向量
+eigenvalues and eigenvectors to do it
+
+716
+00:51:43,650 --> 00:51:47,425
+但现在我认为这是一个选择
+but that's one choice now I believe that
+
+717
+00:51:47,430 --> 00:51:50,325
+淘汰会给我们另一种选择
+elimination would give us another choice
+
+718
+00:51:50,330 --> 00:51:53,085
+所以消除会产生什么
+so elimination produces what
+
+719
+00:51:53,090 --> 00:51:56,005
+这个因素化仍然是我们的
+factorization of this this is still our
+
+720
+00:51:56,010 --> 00:51:59,995
+对称正定矩阵如果
+symmetric positive definite matrix if
+
+721
+00:52:00,000 --> 00:52:02,335
+你消灭了你
+you do elimination on that you you
+
+722
+00:52:02,340 --> 00:52:06,645
+通常期望L下三角形
+usually expect L a lower triangular
+
+723
+00:52:06,650 --> 00:52:13,405
+时间Z的枢轴次数是上部的
+times Z the the pivots times u the upper
+
+724
+00:52:13,410 --> 00:52:15,885
+三角这就是通常的结果
+triangular that's the usual result of of
+
+725
+00:52:15,890 --> 00:52:19,435
+消除LD你我正在考虑
+elimination LD u I'm factoring out the
+
+726
+00:52:19,440 --> 00:52:22,675
+枢轴所以他们在对角线上的那些
+pivots so they're ones on the diagonals
+
+727
+00:52:22,680 --> 00:52:26,365
+L和U但现在如果它是对称的
+of L and U but now if it's symmetric
+
+728
+00:52:26,370 --> 00:52:32,035
+矩阵怎么了我们通过消除拉链
+matrix what's up we zip by elimination
+
+729
+00:52:32,040 --> 00:52:38,995
+关于这是一个1806琐碎的一点
+regarding that as a 1806 trivial bit of
+
+730
+00:52:39,000 --> 00:52:41,455
+线性代数但当然它是高度的
+linear algebra but of course it's highly
+
+731
+00:52:41,460 --> 00:52:44,425
+重要的是这里的情况如何
+important so what's the situation here
+
+732
+00:52:44,430 --> 00:52:49,185
+当基体是实际上对称的
+when the matrix is actually symmetric
+
+733
+00:52:49,190 --> 00:52:52,465
+U所以我想看看
+the U so I want something to look
+
+734
+00:52:52,470 --> 00:52:54,715
+对称我该如何看待
+symmetric how do I make that look
+
+735
+00:52:54,720 --> 00:52:58,255
+对称的U被L取代
+symmetric the U gets replaced by L
+
+736
+00:52:58,260 --> 00:53:00,325
+如果我转移
+transpose if I
+
+737
+00:53:00,330 --> 00:53:05,365
+如果我，如果我正在做一个积极的
+if I if I'm working on a positive
+
+738
+00:53:05,370 --> 00:53:07,555
+明确说明正定矩阵
+definite say positive definite matrix
+
+739
+00:53:07,560 --> 00:53:13,215
+然后我得到积极的支点和L和
+then I get positive pivots and L and
+
+740
+00:53:13,220 --> 00:53:15,895
+下三角形和上三角形或
+lower triangular and upper triangular or
+
+741
+00:53:15,900 --> 00:53:18,505
+所以现在是什么彼此调换
+transposes of each other so now what is
+
+742
+00:53:18,510 --> 00:53:19,285
+然后
+then
+
+743
+00:53:19,290 --> 00:53:24,715
+什么是X就像那样
+then what's the X it's just like that
+
+744
+00:53:24,720 --> 00:53:31,735
+我将使用DL转置的L平方根
+I'll use L square root of D L transpose
+
+745
+00:53:31,740 --> 00:53:37,435
+是的，等一下，是什么
+is that right ooh wait a minute what's
+
+746
+00:53:37,440 --> 00:53:41,575
+不，因为我不会工作
+up no that's not gonna work because I
+
+747
+00:53:41,580 --> 00:53:44,695
+我没有L转置L我有Q
+don't have L transpose L where I had Q
+
+748
+00:53:44,700 --> 00:53:48,775
+转置Q很好不抱歉让我们得到
+transpose Q was good no sorry let's get
+
+749
+00:53:48,780 --> 00:53:53,605
+完全擦除X部分应该
+that totally erased the X part should
+
+750
+00:53:53,610 --> 00:53:57,385
+只是dL转置的平方根
+just be a square root of d L transpose
+
+751
+00:53:57,390 --> 00:54:01,105
+这就是X现在是我们的
+that's that's the X is now our
+
+752
+00:54:01,110 --> 00:54:03,775
+三角矩阵的平方根
+triangular matrix the square root of the
+
+753
+00:54:03,780 --> 00:54:07,765
+枢轴和L转置部分现在
+pivots and the L transpose part and now
+
+754
+00:54:07,770 --> 00:54:11,035
+当我做X转置X然后你看到
+when I do X transpose X then you you see
+
+755
+00:54:11,040 --> 00:54:13,825
+X转置X正确到达X.
+X transpose X coming correctly X
+
+756
+00:54:13,830 --> 00:54:18,835
+转置将是L将是L转置
+transpose will be L will be L transpose
+
+757
+00:54:18,840 --> 00:54:21,265
+转置会给我L平方根
+transpose will give me the L square root
+
+758
+00:54:21,270 --> 00:54:23,095
+d的d的次平方根会给
+of D times square root of D will give
+
+759
+00:54:23,100 --> 00:54:25,675
+D然后L转置是正确的
+the D and then the L transpose is right
+
+760
+00:54:25,680 --> 00:54:31,435
+所以这叫做我试着写的
+so this is called the do I try to write
+
+761
+00:54:31,440 --> 00:54:34,945
+在这里，这是我今天最后一个字
+it here this is my last word for today
+
+762
+00:54:34,950 --> 00:54:40,405
+乔列斯基那些都是这样的
+the cholesky those are the this is the
+
+763
+00:54:40,410 --> 00:54:43,035
+命名的胆甾醇分解
+cholesky factorization named after
+
+764
+00:54:43,040 --> 00:54:47,055
+实际上是法国士兵的法国人
+french guy who a French soldier actually
+
+765
+00:54:47,060 --> 00:54:51,645
+所以LDL转置是胆怯的，那就是
+so LD L transpose is cholesky and that's
+
+766
+00:54:51,650 --> 00:54:56,365
+这很容易计算得更快
+that's easy to compute much faster to
+
+767
+00:54:56,370 --> 00:54:58,195
+计算比平方的本征值
+compute than the eigen value of square
+
+768
+00:54:58,200 --> 00:55:00,745
+根，但这个方根是三角形的
+root but this square root is triangular
+
+769
+00:55:00,750 --> 00:55:04,045
+这个平方根是对称的
+this square root is symmetric those are
+
+770
+00:55:04,050 --> 00:55:07,045
+的两个排序线性代数的条
+the two sort of pieces of linear algebra
+
+771
+00:55:07,050 --> 00:55:10,485
+寻找减少事物的东西
+to find things to reduce things to
+
+772
+00:55:10,490 --> 00:55:13,395
+三角形或减少它们
+triangular form or to reduce them to
+
+773
+00:55:13,400 --> 00:55:15,915
+用对称矩阵连接它们
+to connect them with symmetric matrices
+
+774
+00:55:15,920 --> 00:55:19,245
+好的，谢谢你今天的关注
+okay thank you for attention today so
+
+775
+00:55:19,250 --> 00:55:25,725
+今天我们做了距离矩阵和
+today we did the distance matrices and
+
+776
+00:55:25,730 --> 00:55:30,545
+这是获得X和X的最后一步
+this was the final step to get the X and
+
+777
+00:55:30,550 --> 00:55:35,355
+也越来越重要了
+also getting the more most important was
+
+778
+00:55:35,360 --> 00:55:38,205
+获得神经网络的结构
+to get the structure of a neural net
+
+779
+00:55:38,210 --> 00:55:41,505
+直分离五世的样本
+straight separating the V's the sample
+
+780
+00:55:41,510 --> 00:55:45,555
+从X的向量权重可以
+vectors from the X's the weights okay so
+
+781
+00:55:45,560 --> 00:55:49,995
+星期五我有一位志愿者在说话
+Friday I've got one volunteer to talk
+
+782
+00:55:50,000 --> 00:55:52,245
+关于一个项目，我很拼命
+about a project and I'm desperately
+
+783
+00:55:52,250 --> 00:55:56,205
+寻找更多请发给我一个
+looking for more please just send me an
+
+784
+00:55:56,210 --> 00:56:00,765
+电邮你在你的它会是
+email you're in your your it'll be
+
+785
+00:56:00,770 --> 00:56:02,740
+appreciated or I'll send you an email if
+
+786
+00:56:00,770 --> 00:56:06,700
+赞赏或我会发送电子邮件，如果
+
+787
+00:56:02,750 --> 00:56:06,700
+必要的，谢谢
+necessary okay thanks
+

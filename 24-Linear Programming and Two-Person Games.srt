@@ -1,0 +1,4063 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:25,684
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:25,689 --> 00:00:29,715
+好吧，我只想说下一个话题
+okay let me just say our next topic
+
+10
+00:00:29,720 --> 00:00:33,495
+真正走向机器学习
+moving really toward machine learning
+
+11
+00:00:33,500 --> 00:00:37,185
+将是该部分的最后一部分
+would be the last section of section of
+
+12
+00:00:37,190 --> 00:00:40,005
+第六章关于随机梯度
+chapter six about stochastic gradient
+
+13
+00:00:40,010 --> 00:00:46,595
+下降我认为教授sois来自
+descent I think professor sois from
+
+14
+00:00:46,600 --> 00:00:51,105
+计算机科学就是他能够做到的
+computer science is if he's able he will
+
+15
+00:00:51,110 --> 00:00:55,295
+星期五上课并告诉我们
+take the class Friday and tell us about
+
+16
+00:00:55,300 --> 00:00:58,354
+性病随机梯度下降
+STDs stochastic gradient descent
+
+17
+00:00:58,359 --> 00:01:02,655
+关键算法我的意思是在a
+critical algorithm I mean that at a
+
+18
+00:01:02,660 --> 00:01:03,705
+快速浏览
+quick look
+
+19
+00:01:03,710 --> 00:01:07,695
+随机梯度下降就是这样
+stochastic gradient descent is does
+
+20
+00:01:07,700 --> 00:01:10,114
+一次较小的批次，所以它
+smaller batches at a time so it's
+
+21
+00:01:10,119 --> 00:01:12,825
+计算速度比纯粹快
+computationally faster than pure
+
+22
+00:01:12,830 --> 00:01:16,215
+梯度下降但也随机
+gradient descent but also stochastic
+
+23
+00:01:16,220 --> 00:01:18,815
+梯度下降是能够解决的
+gradient descent is able to solve
+
+24
+00:01:18,820 --> 00:01:21,135
+你所处的概率问题
+probabilistic problems where you're
+
+25
+00:01:21,140 --> 00:01:23,355
+试图最小化预期值
+trying to minimize an expected value
+
+26
+00:01:23,360 --> 00:01:26,525
+而不是功能，无论如何它是一个
+instead of a function anyway it's a
+
+27
+00:01:26,530 --> 00:01:30,974
+重要的是实际上有一个
+important thing actually there's a
+
+28
+00:01:30,979 --> 00:01:35,534
+讲座下午两点在大脑中
+lecture at two o'clock in brain in
+
+29
+00:01:35,539 --> 00:01:41,204
+关于梯度下降的神经科学
+neuroscience about the gradient descent
+
+30
+00:01:41,209 --> 00:01:43,335
+算法然后是博伊德教授
+algorithms and then professor Boyd is
+
+31
+00:01:43,340 --> 00:01:45,435
+今天下午4:30在这里发言
+speaking here at 4:30 this afternoon
+
+32
+00:01:45,440 --> 00:01:51,185
+它是压倒性的，所以我要去
+it's overwhelming so so I'm going to
+
+33
+00:01:51,190 --> 00:01:57,064
+今天谈谈几个主题
+talk today about several topics that are
+
+34
+00:01:57,069 --> 00:02:01,515
+优化线性的特定部分
+specific parts of optimization linear
+
+35
+00:02:01,520 --> 00:02:03,945
+编程是一个非常着名的部分
+programming is a very famous part of
+
+36
+00:02:03,950 --> 00:02:05,924
+优化我不知道你是否见过面
+optimization I don't know if you've met
+
+37
+00:02:05,929 --> 00:02:10,545
+我觉得值得知道的是什么
+it I think it's worth knowing that what
+
+38
+00:02:10,550 --> 00:02:15,734
+输入是什么，关键事实是什么
+the inputs are and what's the key fact
+
+39
+00:02:15,739 --> 00:02:17,745
+关于线性编程，当然
+about linear programming and of course
+
+40
+00:02:17,750 --> 00:02:21,014
+还有什么算法
+also what are the algorithms that's
+
+41
+00:02:21,019 --> 00:02:23,535
+通常我们想知道的是什么
+usually what we want to know what's the
+
+42
+00:02:23,540 --> 00:02:26,505
+问题是什么的结果
+problem what are the results the
+
+43
+00:02:26,510 --> 00:02:28,575
+数学结果又是什么
+mathematical results and what are the
+
+44
+00:02:28,580 --> 00:02:31,725
+计算工具是的，所以这是一个
+computational tools yeah so that's a
+
+45
+00:02:31,730 --> 00:02:34,965
+非常确定的最大流量最小切割是
+very established max-flow min-cut is
+
+46
+00:02:34,970 --> 00:02:35,515
+一旦
+once
+
+47
+00:02:35,520 --> 00:02:37,555
+特别是线性编程我
+specifically linear programming that I
+
+48
+00:02:37,560 --> 00:02:40,015
+想想也许会成为最好的
+think maybe would serve as the best
+
+49
+00:02:40,020 --> 00:02:43,905
+例子然后是双人游戏
+example and then two-person games
+
+50
+00:02:43,910 --> 00:02:47,035
+你见过那些人吗？你知道吗？
+have you met those do so would you know
+
+51
+00:02:47,040 --> 00:02:49,705
+两个人的规则是什么
+what what the rules are at a two-person
+
+52
+00:02:49,710 --> 00:02:53,695
+零和游戏那些是游戏中的游戏
+zero-sum game those are the in game
+
+53
+00:02:53,700 --> 00:02:57,375
+理论那些是明确的
+theory those are the ones that are clear
+
+54
+00:02:57,380 --> 00:03:04,225
+那里的一切都很好
+everything's well established there and
+
+55
+00:03:04,230 --> 00:03:06,685
+实际上它们相当于或线性
+in fact they're equivalent to or linear
+
+56
+00:03:06,690 --> 00:03:09,145
+程序，这就是为什么这两个是
+programs so that's why those two are
+
+57
+00:03:09,150 --> 00:03:13,285
+进入今天然后是关键事实
+coming in today and then the key fact
+
+58
+00:03:13,290 --> 00:03:16,165
+关于两人游戏和关于线性
+about two-person games and about linear
+
+59
+00:03:16,170 --> 00:03:18,955
+编程是二元的，所以如果有的话
+programming is duality so if there's any
+
+60
+00:03:18,960 --> 00:03:20,695
+在那个板上的字是它的一个
+word on that board it's the one in
+
+61
+00:03:20,700 --> 00:03:24,685
+具有大量内容的大写字母
+capital letters that has mass content
+
+62
+00:03:24,690 --> 00:03:27,115
+好吧，我只是从线性开始
+okay I'm just going to start with linear
+
+63
+00:03:27,120 --> 00:03:35,545
+程序，然后继续前进好吧，那是什么
+program and then move on okay so what's
+
+64
+00:03:35,550 --> 00:03:38,335
+它是一个线性编程线性程序
+a linear programming linear program it's
+
+65
+00:03:38,340 --> 00:03:40,645
+我们正在优化线性成本函数
+we're optimizing a linear cost function
+
+66
+00:03:40,650 --> 00:03:44,605
+所以我们花一分钟来降低成本C.
+so we're a minute minimizing the cost C
+
+67
+00:03:44,610 --> 00:03:48,204
+转置X使得向量X是
+transpose X so that vector X is the
+
+68
+00:03:48,209 --> 00:03:51,085
+不知道我们正在寻找和这个
+unknown that we're looking for and this
+
+69
+00:03:51,090 --> 00:03:53,845
+矢量C是成本载体中，从而是
+vector C is the cost vector so that is
+
+70
+00:03:53,850 --> 00:04:00,685
+c1x1加上CNxn所以你可以看到原因
+c1 x1 plus plus CN xn so you can see why
+
+71
+00:04:00,690 --> 00:04:02,185
+它被称为线性编程
+it's called linear programming
+
+72
+00:04:02,190 --> 00:04:05,185
+成本是约束的线性
+the cost is linear the constraints are
+
+73
+00:04:05,190 --> 00:04:15,195
+也是线性的，所以对X的约束是
+also linear so the constraints on X are
+
+74
+00:04:15,200 --> 00:04:20,454
+我当然是一套线性方程组
+set of linear equations of course I'm
+
+75
+00:04:20,459 --> 00:04:22,795
+没想到是一个正方形
+not thinking of a as being a square
+
+76
+00:04:22,800 --> 00:04:26,005
+可逆矩阵如果是那样就没办法了
+invertible matrix no way if it were that
+
+77
+00:04:26,010 --> 00:04:27,955
+会告诉我们X必须是什么，我们
+would tell us what X had to be and we
+
+78
+00:04:27,960 --> 00:04:33,535
+我们的问题将在于我们拥有的问题
+our problem would be over we we have we
+
+79
+00:04:33,540 --> 00:04:38,625
+有n个未知数，当然这是M？
+have n unknowns this is M by n of course
+
+80
+00:04:38,630 --> 00:04:43,955
+X是n乘1，这是我们未知的向量
+X is n by 1 that's our unknown vector
+
+81
+00:04:43,960 --> 00:04:46,925
+而且我在想M会更小
+and I'm thinking that M will be smaller
+
+82
+00:04:46,930 --> 00:04:51,125
+比n，但我们确实有约束和
+than n but we do have constraints and
+
+83
+00:04:51,130 --> 00:04:54,155
+现在变成了线性的东西
+now comes the thing that makes linear
+
+84
+00:04:54,160 --> 00:04:57,605
+编程不是没有真正的线性和
+programming not not actually linear and
+
+85
+00:04:57,610 --> 00:05:02,314
+这是约束X更大的等于
+that's the constraint X greater equal
+
+86
+00:05:02,319 --> 00:05:05,555
+零，我把它写成矢量
+zero and I've written that as a vector
+
+87
+00:05:05,560 --> 00:05:11,465
+但这意味着x1更大
+but that means that means x1 greater
+
+88
+00:05:11,470 --> 00:05:16,985
+到X等于零所以这是一个向量
+equals zero on to X so it's a vector
+
+89
+00:05:16,990 --> 00:05:21,694
+不平等好，所以我们有一个最小化a
+inequality ok so we have a minimizing a
+
+90
+00:05:21,699 --> 00:05:24,965
+很漂亮的功能
+very simple function with pretty
+
+91
+00:05:24,970 --> 00:05:27,515
+简单的约束，但在
+straightforward constraints but in
+
+92
+00:05:27,520 --> 00:05:30,335
+平等约束所以有
+equality constraints so there the
+
+93
+00:05:30,340 --> 00:05:33,694
+而不是这些是这两个在一起
+instead of these are these two together
+
+94
+00:05:33,699 --> 00:05:36,664
+是和它的约束
+are the constraints that and it's in
+
+95
+00:05:36,669 --> 00:05:39,025
+线性规划中的线性代数
+linear algebra in linear programming
+
+96
+00:05:39,030 --> 00:05:43,775
+语言这称为可行集
+language this is called the feasible set
+
+97
+00:05:43,780 --> 00:05:51,395
+X这是约束集资本没问题
+X it's the constraint set capital okay
+
+98
+00:05:51,400 --> 00:05:57,694
+在笔记中没错，所以让我画画
+and in the notes right ok so let me draw
+
+99
+00:05:57,699 --> 00:06:02,944
+也许可以在这里展示一张图片
+a picture to to show maybe here maybe
+
+100
+00:06:02,949 --> 00:06:04,835
+我只想问你们有多少人
+I'll just ask how many of you are
+
+101
+00:06:04,840 --> 00:06:07,025
+已经熟悉线性编程
+already familiar with linear programming
+
+102
+00:06:07,030 --> 00:06:11,615
+哦真主好吧所以我不会说明这一点
+oh Allah okay so I won't labor the point
+
+103
+00:06:11,620 --> 00:06:16,955
+但是，让我画一张照片，这样我的
+but let me just draw a picture so my
+
+104
+00:06:16,960 --> 00:06:23,914
+图片就在这里，这就是n
+picture will be just here so that's n
+
+105
+00:06:23,919 --> 00:06:28,525
+等于3所以这是X1X2X3
+equals 3 so this is the X 1 X 2 X 3
+
+106
+00:06:28,530 --> 00:06:32,974
+空格和X大于或等于0表示
+space and X greater or equal 0 means
+
+107
+00:06:32,979 --> 00:06:36,775
+这意味着我在这里
+what it means that I'm in this
+
+108
+00:06:36,780 --> 00:06:41,375
+如果它们是正确的八分之一空间
+one-eighth of the space right if they're
+
+109
+00:06:41,380 --> 00:06:44,224
+非负的井我会说象限
+non-negative well I would say Quadrant
+
+110
+00:06:44,229 --> 00:06:46,414
+但我真的应该说八分之一因为
+but I really should say octant because
+
+111
+00:06:46,419 --> 00:06:51,065
+它是整个3d空间的1/8
+it's in there's 1/8 of the full 3d space
+
+112
+00:06:51,070 --> 00:06:54,964
+所以我在这里，然后也许我有M
+so I'm in here and then maybe I have M
+
+113
+00:06:54,969 --> 00:06:55,465
+是
+is
+
+114
+00:06:55,470 --> 00:06:59,635
+也许只是一个约束，所以让
+maybe just one constraint like so so let
+
+115
+00:06:59,640 --> 00:07:05,185
+我把费用说成X1加2X.
+me take the cost to be say X 1 plus 2 X
+
+116
+00:07:05,190 --> 00:07:12,025
+2加5X3说和约束我
+2 plus 5 X 3 say and the constraint I'm
+
+117
+00:07:12,030 --> 00:07:15,355
+只要有一个等式X1加X.
+just gonna have one equation X 1 plus X
+
+118
+00:07:15,360 --> 00:07:19,585
+2让我轻松搞定
+2 let me make it easy make that
+
+119
+00:07:19,590 --> 00:07:22,975
+约束也是一个容易的，所以这是
+constraint an easy one too so this is
+
+120
+00:07:22,980 --> 00:07:26,295
+这就是我们要尽量减少的
+the this is what we're going to minimize
+
+121
+00:07:26,300 --> 00:07:32,425
+这就是我们必须满足的
+and that's what we have to satisfy as
+
+122
+00:07:32,430 --> 00:07:38,305
+以及x等于0，这是一个普通的1
+well as x equals 0 so that's a plain 1
+
+123
+00:07:38,310 --> 00:07:41,665
+等式给出了r3中的一个平面
+equation gives us a plane in r3 the
+
+124
+00:07:41,670 --> 00:07:52,575
+飞机会经历什么打击
+plane would go through what hits the
+
+125
+00:07:52,580 --> 00:08:00,325
+轴在300等的最小的
+axes at 3 0 0 and so the minimum the
+
+126
+00:08:00,330 --> 00:08:03,325
+点必须躺在那架飞机上
+point has to lie on that plane and it
+
+127
+00:08:03,330 --> 00:08:05,725
+必须躺在八分圆，以便飞机
+has to lie in the octant so that plane
+
+128
+00:08:05,730 --> 00:08:08,815
+被切成三角形是的
+is chopped off to be a triangle yeah
+
+129
+00:08:08,820 --> 00:08:12,145
+这是线性的良好可视化
+this is a good visualization of linear
+
+130
+00:08:12,150 --> 00:08:15,085
+编程和结论是什么
+programming and what's the conclusion
+
+131
+00:08:15,090 --> 00:08:22,285
+我们的成本是线性的，结果是
+well our cost is linear so the result is
+
+132
+00:08:22,290 --> 00:08:24,925
+这三个角落中的一个是
+that one of these three corners is the
+
+133
+00:08:24,930 --> 00:08:29,575
+赢家可能会发生它可能发生
+winner it could happen it could happen
+
+134
+00:08:29,580 --> 00:08:32,185
+也许我对这些有相同的价值
+that maybe I have equal values on those
+
+135
+00:08:32,190 --> 00:08:34,945
+两个角落，因此一路走来
+two corners and therefore all the way
+
+136
+00:08:34,950 --> 00:08:37,914
+也将是赢家但是当我
+along would be also winners but when I
+
+137
+00:08:37,919 --> 00:08:40,645
+有一个线性函数它是最大值
+have a linear function it's a maximum at
+
+138
+00:08:40,650 --> 00:08:43,645
+结束，这些是结束那些
+the end and these are the ends those
+
+139
+00:08:43,650 --> 00:08:49,035
+三个角所以三零零零
+three corners so so three zero zero zero
+
+140
+00:08:49,040 --> 00:08:54,595
+三零或零零三是
+three zero or zero zero three are the
+
+141
+00:08:54,600 --> 00:08:56,035
+三个角落
+three corners
+
+142
+00:08:56,040 --> 00:08:58,435
+其中一个是赢家和
+and one of those is the winner and the
+
+143
+00:08:58,440 --> 00:09:00,925
+问题实际上已经解决了
+problem is solved and forth in fact for
+
+144
+00:09:00,930 --> 00:09:03,535
+这种情况，因为我猜是最小化
+this case since I'm minimizing I guess
+
+145
+00:09:03,540 --> 00:09:04,975
+这将是角落
+it would be that corner that
+
+146
+00:09:04,980 --> 00:09:10,394
+风，所以让我给它一个明星而不是xy
+wind so let me give it a star not an x-y
+
+147
+00:09:10,399 --> 00:09:16,465
+s-300因为哦，没有那三个所以
+s-300 cuz that oh no that three so the
+
+148
+00:09:16,470 --> 00:09:21,985
+值竟然是三处
+value turned out to be three at the
+
+149
+00:09:21,990 --> 00:09:29,444
+第3点将它归零，这是明星还可以
+point 3 zeros it and that's a star okay
+
+150
+00:09:29,449 --> 00:09:34,795
+好的好的好的还好什么更多
+good good good good okay what what more
+
+151
+00:09:34,800 --> 00:09:42,764
+我想做什么我说是的应该是的
+do I want to do I said yes should it be
+
+152
+00:09:42,769 --> 00:09:45,985
+所以没有零零零三
+so no zero zero zero three
+
+153
+00:09:45,990 --> 00:09:47,875
+哪来的未来三年由三个这是
+where's the next three is three that's
+
+154
+00:09:47,880 --> 00:09:49,764
+罚款给了我们一个机会，我觉得
+fine that gives us a chance I think that
+
+155
+00:09:49,769 --> 00:09:52,584
+会给我这15分的费用
+would give me cost of 15 this would give
+
+156
+00:09:52,589 --> 00:09:54,235
+我的成本是6，这会给我
+me a cost of 6 and that would give me
+
+157
+00:09:54,240 --> 00:09:55,074
+街对面
+across the street
+
+158
+00:09:55,079 --> 00:10:01,134
+是的，如果我们能做到的话
+yeah it's obviously if we could
+
+159
+00:10:01,139 --> 00:10:03,415
+列举我们所有的角落
+enumerate all the corners we would have
+
+160
+00:10:03,420 --> 00:10:09,415
+获得答案的超快速方式
+a super fast way to get the answer but
+
+161
+00:10:09,420 --> 00:10:12,295
+麻烦当然是大的
+the trouble is of course that for large
+
+162
+00:10:12,300 --> 00:10:14,785
+值和M和n的数量
+values and an amount of M and n there
+
+163
+00:10:14,790 --> 00:10:19,165
+是指数多的角落和我们
+are exponentially many corners and we
+
+164
+00:10:19,170 --> 00:10:23,755
+我不想一直看到它们
+don't want to see them all so that's
+
+165
+00:10:23,760 --> 00:10:28,155
+什么使线性编程需要时间
+what makes linear programming take time
+
+166
+00:10:28,160 --> 00:10:33,024
+对于那里的算法需要创意
+and need ideas so for algorithms there
+
+167
+00:10:33,029 --> 00:10:36,704
+两种类型的算法有两种类型
+are two types of algorithms two types of
+
+168
+00:10:36,709 --> 00:10:41,274
+编码所有这些也是旧的
+codes it's all these the older as well
+
+169
+00:10:41,279 --> 00:10:47,215
+建立的有这样一个方法是
+established ones are so one way is the
+
+170
+00:10:47,220 --> 00:10:56,965
+找到角落的单纯形法
+simplex method which finds a corner we
+
+171
+00:10:56,970 --> 00:11:00,264
+知道最优的是其中一个
+know the optimum is some one of the
+
+172
+00:11:00,269 --> 00:11:02,485
+角落所以它可以找到它会找到一个
+corners so it can find it'll find one
+
+173
+00:11:02,490 --> 00:11:09,455
+角落，我们将去下一个角落
+corner and we'll go to the next corner
+
+174
+00:11:09,460 --> 00:11:14,375
+所以，如果它开始，如果它开始于其中一个
+so if it starts if it starts at one of
+
+175
+00:11:14,380 --> 00:11:17,825
+它会沿着这些角落行进
+these corners it will travel along along
+
+176
+00:11:17,830 --> 00:11:21,995
+降低成本的优势
+an edge that lowers the cost and it has
+
+177
+00:11:22,000 --> 00:11:24,505
+最后停止，因为它是线性的
+to stop at the end because it's linear
+
+178
+00:11:24,510 --> 00:11:27,155
+成本将继续下降和下降
+the cost will keep going down and going
+
+179
+00:11:27,160 --> 00:11:31,265
+直到它陷入颠簸
+down until it bumps up into bumps into
+
+180
+00:11:31,270 --> 00:11:32,945
+结束点，然后它不能去
+the end point and then it can't go
+
+181
+00:11:32,950 --> 00:11:35,945
+进一步然后我们将从那个下一个
+further and then we would from that next
+
+182
+00:11:35,950 --> 00:11:43,024
+角落我们会去每个角落的下一个角落
+corner we would go to a next corner each
+
+183
+00:11:43,029 --> 00:11:46,024
+时间就像最陡峭的下降
+time it's like steepest descent on the
+
+184
+00:11:46,029 --> 00:11:50,195
+从第一个弯道精读边缘我们
+con the edges we from the first corner
+
+185
+00:11:50,200 --> 00:11:53,644
+我们走得最陡，直到我们不能去
+we go the steepest way till we can't go
+
+186
+00:11:53,649 --> 00:11:55,985
+我们进一步打了另一个角落，我们
+further we've hit another corner and we
+
+187
+00:11:55,990 --> 00:11:59,285
+然后我们重新计算线性代数
+and we recompute a linear algebra find
+
+188
+00:11:59,290 --> 00:12:01,625
+哪个方向最陡峭
+which direction is steepest from there
+
+189
+00:12:01,630 --> 00:12:04,985
+而且这就是。的想法
+and and so that's the idea of the
+
+190
+00:12:04,990 --> 00:12:08,365
+单纯形法由...发明
+simplex method which was invented by
+
+191
+00:12:08,370 --> 00:12:18,755
+跳舞和代数不会去
+dancing and and the algebra is not going
+
+192
+00:12:18,760 --> 00:12:20,645
+在今天的演讲中，但它是
+to be in today's lecture but it's
+
+193
+00:12:20,650 --> 00:12:24,215
+人们必须直截了当
+straightforward well people have to
+
+194
+00:12:24,220 --> 00:12:26,185
+优化它，因为这是一个高度
+optimize it because that's a highly
+
+195
+00:12:26,190 --> 00:12:29,795
+经常使用的方法是的，但是
+frequently used method yeah okay but
+
+196
+00:12:29,800 --> 00:12:35,045
+然后大约20年后或许30年
+then about 20 years later maybe or 30 I
+
+197
+00:12:35,050 --> 00:12:37,235
+记得去市中心的一个讲座
+remember going to a lecture in downtown
+
+198
+00:12:37,240 --> 00:12:42,454
+波士顿由karmarkar所以我必须把他的
+Boston by karmarkar so I have to put his
+
+199
+00:12:42,459 --> 00:12:53,645
+命名我们的标记，他在
+name down our marker and he was in the
+
+200
+00:12:53,650 --> 00:12:56,315
+所有的报纸都是纽约时报
+New York Times all the newspapers so it
+
+201
+00:12:56,320 --> 00:13:01,885
+他有另一种选择是一件大事
+was a big deal he had an alternative
+
+202
+00:13:01,890 --> 00:13:08,495
+算法和他的确切算法
+algorithm and the exact algorithm he he
+
+203
+00:13:08,500 --> 00:13:13,265
+提议直到今天才存活下来但是
+proposed hasn't survived until today but
+
+204
+00:13:13,270 --> 00:13:17,315
+这个想法已经和当时的想法是去
+the idea has and the idea was to go to
+
+205
+00:13:17,320 --> 00:13:21,605
+在可行集内旅行而不是
+travel inside the feasible set and not
+
+206
+00:13:21,610 --> 00:13:23,015
+在边缘
+around the edges
+
+207
+00:13:23,020 --> 00:13:27,425
+所以他的想法因为在这里我们
+so his idea because in in in here we
+
+208
+00:13:27,430 --> 00:13:30,215
+也许在靠近那边开始旅行
+maybe travel down near that edge start
+
+209
+00:13:30,220 --> 00:13:32,795
+再次旅行，所以它最陡峭
+again travel again so its steepest
+
+210
+00:13:32,800 --> 00:13:38,315
+在约束集中的下降
+descent in the in the constraint set the
+
+211
+00:13:38,320 --> 00:13:41,825
+可行集，你可以使用微积分
+feasible set and you can use calculus
+
+212
+00:13:41,830 --> 00:13:48,215
+和这个想法所以这就是这个
+and and this idea so this is this is
+
+213
+00:13:48,220 --> 00:13:52,535
+内点法，所以我只会用
+interior point methods so I'll just use
+
+214
+00:13:52,540 --> 00:13:55,445
+内部这个词告诉我们
+the word interior that's telling us that
+
+215
+00:13:55,450 --> 00:14:01,655
+我们是我们的可行集内，我们
+we're we're inside the feasible set we
+
+216
+00:14:01,660 --> 00:14:04,025
+不打老远来了
+don't hit come all the way to the
+
+217
+00:14:04,030 --> 00:14:06,455
+故意因为我们想要的边界
+boundary intentionally because we want
+
+218
+00:14:06,460 --> 00:14:09,275
+移动和寻找衍生物的空间
+room to move and to find derivatives
+
+219
+00:14:09,280 --> 00:14:12,485
+空的牛顿的消息最小化
+empty whose Newton's message to minimize
+
+220
+00:14:12,490 --> 00:14:15,335
+你看到你选择一个搜索方向
+you see you choose a search Direction
+
+221
+00:14:15,340 --> 00:14:19,265
+正如所有优化所做的那样
+just as all of optimization does and in
+
+222
+00:14:19,270 --> 00:14:21,725
+搜索方向你跟踪它和
+that search Direction you track it and
+
+223
+00:14:21,730 --> 00:14:25,205
+你碰到之前就会停下来
+you come you stop before you bump into
+
+224
+00:14:25,210 --> 00:14:28,025
+然后是可行集的边缘
+the edge of the feasible set and then
+
+225
+00:14:28,030 --> 00:14:30,485
+你可以再次计算衍生物
+you compute derivatives again so you can
+
+226
+00:14:30,490 --> 00:14:34,225
+使用微积分，这是一种方法
+use calculus and it it's a method that
+
+227
+00:14:34,230 --> 00:14:38,585
+这是一个想法，内部的想法来了
+it's an idea that the interior idea came
+
+228
+00:14:38,590 --> 00:14:43,115
+在汽车标记之前，但他超级
+before car marker but he got super
+
+229
+00:14:43,120 --> 00:14:46,565
+宣传，使之真正得到重视了
+publicity so it really got attention got
+
+230
+00:14:46,570 --> 00:14:51,095
+新想法和新想法部分来了
+new thinking and new ideas came partly
+
+231
+00:14:51,100 --> 00:14:56,975
+来自麻省理工学院的人和这两个人
+from people at MIT and and these two are
+
+232
+00:14:56,980 --> 00:15:01,535
+现在仍然没有人参加比赛
+now still locked in competition no one
+
+233
+00:15:01,540 --> 00:15:06,065
+并没有打败对方
+hasn't beaten the other in in all
+
+234
+00:15:06,070 --> 00:15:10,655
+线性编程就是这样的问题
+problems so so linear programming is
+
+235
+00:15:10,660 --> 00:15:13,715
+这里然后进行非线性编程
+here but then for nonlinear programming
+
+236
+00:15:13,720 --> 00:15:16,025
+成本为二次规划
+quadratic programming where the cost is
+
+237
+00:15:16,030 --> 00:15:19,805
+二次非线性规划半
+quadratic nonlinear programming semi
+
+238
+00:15:19,810 --> 00:15:22,205
+明确的编程就是你的所在
+definite programming that's where you
+
+239
+00:15:22,210 --> 00:15:24,785
+有矩阵未知的矩阵
+have a matrix unknown a matrix
+
+240
+00:15:24,790 --> 00:15:30,005
+约束那些更多
+constraints those are all the more
+
+241
+00:15:30,010 --> 00:15:32,135
+复杂的你得到的越多
+complicated you get the more it tends to
+
+242
+00:15:32,140 --> 00:15:33,545
+是
+be
+
+243
+00:15:33,550 --> 00:15:36,285
+内部点方法没关系，这是一个
+interior point methods okay that's a
+
+244
+00:15:36,290 --> 00:15:42,165
+线性编程总结我现在
+summary of linear programming now I'd
+
+245
+00:15:42,170 --> 00:15:44,745
+想举个例子然后我
+like to give an example and then I
+
+246
+00:15:44,750 --> 00:15:46,845
+没有告诉你主要的好让我
+haven't told you the main well let me
+
+247
+00:15:46,850 --> 00:15:49,115
+告诉你关于二元性的主要事实
+tell you the main fact about duality
+
+248
+00:15:49,120 --> 00:15:50,584
+好的
+okay
+
+249
+00:15:50,589 --> 00:15:53,715
+这是真的，我也许会写
+this is really and I'll write that maybe
+
+250
+00:15:53,720 --> 00:15:59,954
+在这旁边，所以做一个二元性如果
+here next to it so do a duality if
+
+251
+00:15:59,959 --> 00:16:05,865
+有一个双重采购LP和双重
+there's a dual procure LP and that dual
+
+252
+00:16:05,870 --> 00:16:09,374
+将做一个最大值而不是一个
+is going to do a maximum instead of a
+
+253
+00:16:09,379 --> 00:16:16,124
+最低和成本是
+minimum and the cost is is going to
+
+254
+00:16:16,129 --> 00:16:20,175
+从原始问题涉及B所以
+involve the B from the primal problem so
+
+255
+00:16:20,180 --> 00:16:22,305
+这现在称为原始问题
+this is now called the primal problem
+
+256
+00:16:22,310 --> 00:16:25,754
+这是它的双重所以有双胞胎
+and this is its dual so there are twin
+
+257
+00:16:25,759 --> 00:16:28,665
+他们使用相同数据的问题但是
+problems they use the same data but
+
+258
+00:16:28,670 --> 00:16:31,274
+完全不同，就像转置一样
+quite differently it's like transposing
+
+259
+00:16:31,279 --> 00:16:37,035
+事情如此让我们称之为未知的Y.
+things so so let's call the unknown Y so
+
+260
+00:16:37,040 --> 00:16:47,204
+因为y是右手边
+for y to be the right hand side over
+
+261
+00:16:47,209 --> 00:16:55,235
+这里是1M的，这样的最大化
+here is M by 1 so that's maximize that
+
+262
+00:16:55,240 --> 00:16:57,495
+我们受制于什么
+we're subject to what are the
+
+263
+00:16:57,500 --> 00:17:00,615
+约束好成本函数
+constraints well the cost function over
+
+264
+00:17:00,620 --> 00:17:03,824
+这里看到成本向量进入了
+here see the cost vector goes into the
+
+265
+00:17:03,829 --> 00:17:07,605
+约束和我认为更大
+constraints and I think the greater
+
+266
+00:17:07,610 --> 00:17:10,485
+等号因为明显变得少了
+equal sign because obably becomes a less
+
+267
+00:17:10,490 --> 00:17:15,034
+或等于签名a得到调换我
+or equal to sign the a gets transposed I
+
+268
+00:17:15,039 --> 00:17:18,044
+认为这可能是
+think that's probably probably the
+
+269
+00:17:18,049 --> 00:17:21,944
+双重约束，它发生了
+constraint in the dual and it happens it
+
+270
+00:17:21,949 --> 00:17:24,255
+不需要Y我们没有更大的y
+doesn't need Y we don't have y greater
+
+271
+00:17:24,260 --> 00:17:27,404
+在这里等于0确定这是一个双重
+equal 0 over here ok so that's a dual
+
+272
+00:17:27,409 --> 00:17:32,255
+它有一个线性成本的问题
+problem it has a linear cost it has
+
+273
+00:17:32,260 --> 00:17:36,225
+它可以是线性不等式约束
+linear inequality constraints it can be
+
+274
+00:17:36,230 --> 00:17:38,775
+你可以通过单纯形法解决
+solved by the simplex method you could
+
+275
+00:17:38,780 --> 00:17:40,575
+选择你是解决那一个还是
+choose whether you solve that one or
+
+276
+00:17:40,580 --> 00:17:43,424
+这个因为如果你解决了一个你
+this one because if you solve one you
+
+277
+00:17:43,429 --> 00:17:45,815
+解决另一个
+solve the other
+
+278
+00:17:45,820 --> 00:17:48,275
+两者紧密相连，那就是
+the two are closely connected and that's
+
+279
+00:17:48,280 --> 00:17:51,725
+二元性的关键理念也许我会
+the key idea of duality so maybe I'll
+
+280
+00:17:51,730 --> 00:17:56,165
+把想法首先是小麦的
+put the idea first of all of wheat
+
+281
+00:17:56,170 --> 00:18:05,665
+二元性，说这个
+duality which says that the this
+
+282
+00:18:05,670 --> 00:18:07,565
+我们试图最大限度地量
+quantity that we're trying to maximize
+
+283
+00:18:07,570 --> 00:18:11,015
+我们得到它尽可能大的
+we're getting it as large as possible is
+
+284
+00:18:11,020 --> 00:18:16,925
+总是少于等于任何C的
+always less lesser equal to any C
+
+285
+00:18:16,930 --> 00:18:21,395
+转X这是任何这是
+transpose X this is for for any this is
+
+286
+00:18:21,400 --> 00:18:28,445
+任何可行的任何可以任何任何可以
+for any feasible allowed any can any any
+
+287
+00:18:28,450 --> 00:18:31,625
+满足的X＆Y
+X&Y that are that satisfy the
+
+288
+00:18:31,630 --> 00:18:33,635
+约束记住可行的手段
+constraints remember feasible means
+
+289
+00:18:33,640 --> 00:18:36,785
+在其他方面满足约束
+satisfies the constraint so in other
+
+290
+00:18:36,790 --> 00:18:38,885
+言语这个问题这个最大化
+words this problem this maximization
+
+291
+00:18:38,890 --> 00:18:41,305
+你试图推动它的问题
+problem you're trying to push this up
+
+292
+00:18:41,310 --> 00:18:43,925
+你正在尝试的最小化问题
+the minimization problem you're trying
+
+293
+00:18:43,930 --> 00:18:47,165
+把它拉下来很容易显示出来
+to pull this down and it's easy to show
+
+294
+00:18:47,170 --> 00:18:51,005
+B转置它的那个很容易
+that the one that B transpose it's easy
+
+295
+00:18:51,010 --> 00:18:54,485
+表明不平等让我们这样做
+to show that inequality let's do that so
+
+296
+00:18:54,490 --> 00:19:00,185
+B转置Ytrue应该是一行
+B transpose Y true should be a one-line
+
+297
+00:19:00,190 --> 00:19:07,835
+证明所以B转置Yok我该怎么做
+proof so B transpose Y ok what do I do
+
+298
+00:19:07,840 --> 00:19:11,765
+所以B转置Y好我在这里看看
+so B transpose Y well I look over here
+
+299
+00:19:11,770 --> 00:19:14,825
+那就是B出现的那个X.
+that's where B shows up that's X
+
+300
+00:19:14,830 --> 00:19:22,565
+将转置Y转置为右，因为B
+transpose a transpose Y right because B
+
+301
+00:19:22,570 --> 00:19:23,935
+是斧头
+is ax
+
+302
+00:19:23,940 --> 00:19:30,605
+我是可行的所以我的B是X和任何人
+I'm feasible so my B is a X and for any
+
+303
+00:19:30,610 --> 00:19:34,565
+X，这是因为这是任何X是b
+X this is for this is for any X that B
+
+304
+00:19:34,570 --> 00:19:36,995
+会是斧头所以我到目前为止都很好
+is going to be ax so am I good so far
+
+305
+00:19:37,000 --> 00:19:41,765
+现在我该怎么办，但现在我看这里
+and now what do I do but now I look here
+
+306
+00:19:41,770 --> 00:19:45,545
+我看到一个转座Y坐在里面
+I see a transpose Y sitting right in
+
+307
+00:19:45,550 --> 00:19:50,045
+在我面前所以我说得好，除非或
+front of me so I say well ok unless or
+
+308
+00:19:50,050 --> 00:19:52,195
+等于，我想我已经完成了
+equal to and I guess I'm done a
+
+309
+00:19:52,200 --> 00:19:55,055
+转换明智少于或等于C所以我
+transpose wise less or equal to C so I
+
+310
+00:19:55,060 --> 00:19:58,925
+有X转置CC转置X.
+have X transpose C C transpose X
+
+311
+00:19:58,930 --> 00:20:02,255
+如此平等，等于这个更少或
+so so equal this equals this less or
+
+312
+00:20:02,260 --> 00:20:06,995
+等于我的弱二元性是
+equal that I've got it weak duality is
+
+313
+00:20:07,000 --> 00:20:11,735
+只是把要求放在一起
+just put together the the requirements
+
+314
+00:20:11,740 --> 00:20:17,885
+在x和y上，你有它但是说出来
+on x and y and you have it but word it
+
+315
+00:20:17,890 --> 00:20:22,625
+这是重要的，你知道如果
+was this important you know if the
+
+316
+00:20:22,630 --> 00:20:24,635
+数学是对一切都已经
+mathematics is right everything has to
+
+317
+00:20:24,640 --> 00:20:28,175
+请它发挥它的作用等等
+have it please play its role and so
+
+318
+00:20:28,180 --> 00:20:30,575
+什么是X的作用大于等于零
+what's the role of X greater equal zero
+
+319
+00:20:30,580 --> 00:20:35,345
+如果我们只是偶数，为什么我们需要X.
+there why do we need X if we just even
+
+320
+00:20:35,350 --> 00:20:39,545
+想到一个平等的只是数字Y.
+think of an equal one just a number Y
+
+321
+00:20:39,550 --> 00:20:42,365
+我们在哪里使用X的事实
+where do we use the fact that X is
+
+322
+00:20:42,370 --> 00:20:44,735
+大于或等于0我们是否使用它
+greater or equal 0 do we do we use it
+
+323
+00:20:44,740 --> 00:20:49,415
+这看起来如此顺利，因为a
+this looks so so smooth because a
+
+324
+00:20:49,420 --> 00:20:55,295
+转置Y我会记下X
+transpose Y I'll write down as X
+
+325
+00:20:55,300 --> 00:20:59,375
+转移C只是为了这一刻
+transpose C for the moment just just so
+
+326
+00:20:59,380 --> 00:21:03,455
+你的眼睛说同样的X转置和
+your eye says the same X transpose and
+
+327
+00:21:03,460 --> 00:21:05,915
+a转置Y小于C
+the a transpose Y is lesser equals C
+
+328
+00:21:05,920 --> 00:21:09,895
+其中X大于等于零
+where is X greater equal zero coming in
+
+329
+00:21:09,900 --> 00:21:12,205
+是
+yes
+
+330
+00:21:12,210 --> 00:21:15,695
+是的，这是真的，但我想看到
+yeah that's true but but I want to see
+
+331
+00:21:15,700 --> 00:21:20,165
+是的，所以这是我的观点，事实
+yeah so here's my point that the fact
+
+332
+00:21:20,170 --> 00:21:22,295
+转置Y小于C
+that a transpose Y is lesser equals C
+
+333
+00:21:22,300 --> 00:21:26,345
+这非常重要，但如果是X.
+that's fine highly important but if X
+
+334
+00:21:26,350 --> 00:21:30,155
+是消极的，这将是另一种方式
+was negative it would be the other way
+
+335
+00:21:30,160 --> 00:21:31,595
+你会想到另一种方式吗？
+you would you would get the other way
+
+336
+00:21:31,600 --> 00:21:33,875
+你不会得到你想要什么，所以
+and you wouldn't have what you want so
+
+337
+00:21:33,880 --> 00:21:36,095
+我们确实使用了X的事实
+we really do use the fact that X is
+
+338
+00:21:36,100 --> 00:21:39,845
+如果我有，则等于零
+greater equals zero to say that I have
+
+339
+00:21:39,850 --> 00:21:41,735
+国家等于这个然后我成倍增加
+national equal this and then I multiply
+
+340
+00:21:41,740 --> 00:21:45,065
+通过积极的东西，然后我仍然
+by something positive and then I still
+
+341
+00:21:45,070 --> 00:21:49,835
+我们没那么好，所以每一个都是
+have less we okay good so every it's the
+
+342
+00:21:49,840 --> 00:21:52,595
+数学是对的，一切都发挥了作用
+math is right everything does its part
+
+343
+00:21:52,600 --> 00:21:55,955
+然后当然是美丽的
+and then the of course the beautiful
+
+344
+00:21:55,960 --> 00:21:58,745
+结果重要的结果是
+result the important result is that
+
+345
+00:21:58,750 --> 00:22:02,135
+刚刚被称为强烈的二元性
+there's strong duality just called
+
+346
+00:22:02,140 --> 00:22:06,935
+现在最大的二元性
+duality which is that at the maximum now
+
+347
+00:22:06,940 --> 00:22:09,665
+这不是任何x和y，但这是
+this is not for any x and y but this is
+
+348
+00:22:09,670 --> 00:22:12,285
+因为这将是4倍
+for this is going to be 4x
+
+349
+00:22:12,290 --> 00:22:15,615
+为什么明星赢家和X明星
+why star the winner and X star the
+
+350
+00:22:15,620 --> 00:22:21,125
+赢家平等等等，这是我们的
+winner equality holds so that's to our
+
+351
+00:22:21,130 --> 00:22:24,585
+双重问题中的最大值是
+the maximum in the dual problem is the
+
+352
+00:22:24,590 --> 00:22:27,105
+与原始的最小值相同
+same as the minimum in the primal
+
+353
+00:22:27,110 --> 00:22:30,225
+问题二见过没有
+problem the two have met there is no
+
+354
+00:22:30,230 --> 00:22:35,715
+一些非线性的二元差距
+duality gap in some cooked up nonlinear
+
+355
+00:22:35,720 --> 00:22:38,675
+问题可能存在差距
+problems there could be a gap between
+
+356
+00:22:38,680 --> 00:22:43,095
+最大和最小但你希望
+the maximum and the minimum but you hope
+
+357
+00:22:43,100 --> 00:22:47,285
+不是，这里的大定理不是
+not and here this the big theorem is not
+
+358
+00:22:47,290 --> 00:22:50,295
+你把这个推出去是件有问题的
+there equal a matter you push this out
+
+359
+00:22:50,300 --> 00:22:54,075
+推下去，这是另一种方式
+push that down so that's another way to
+
+360
+00:22:54,080 --> 00:22:58,995
+说二元性就是这就是我
+say that duality is that this is I'm
+
+361
+00:22:59,000 --> 00:23:01,335
+我可以把它推到某个地图上
+pushing that up at some map I could
+
+362
+00:23:01,340 --> 00:23:04,145
+将其写为最小值
+write that as a maximum of a minimum
+
+363
+00:23:04,150 --> 00:23:08,265
+如果我等于最小值
+equaling a minimum of a maximum if I
+
+364
+00:23:08,270 --> 00:23:15,285
+想要它是线性的二元性
+wanted so it's the duality in linear
+
+365
+00:23:15,290 --> 00:23:17,805
+编程和一个女人一样
+programming was the same as one woman's
+
+366
+00:23:17,810 --> 00:23:22,035
+极小极大定理及其定理应用
+minimax theorem and his theorem applied
+
+367
+00:23:22,040 --> 00:23:26,685
+对于双人游戏而言，关键是凯夫
+to two-person games so the kief the key
+
+368
+00:23:26,690 --> 00:23:32,505
+数学的结果是，这是偶
+math result is that that is duality for
+
+369
+00:23:32,510 --> 00:23:35,115
+线性编程，它会
+linear programming and it's gonna be
+
+370
+00:23:35,120 --> 00:23:38,585
+你会看到同样的事情发生
+you'll see the same thing happening for
+
+371
+00:23:38,590 --> 00:23:42,555
+双人游戏，这是一个极小的动画
+two-person games and it's a minimax
+
+372
+00:23:42,560 --> 00:23:46,325
+定理或鞍点或它只是
+theorem or a saddle point or it's just
+
+373
+00:23:46,330 --> 00:23:51,975
+事情出来是的，是的，所以只是为了
+things come out right yep yep so just to
+
+374
+00:23:51,980 --> 00:23:58,545
+提到数学编程
+mention that mathematical programming of
+
+375
+00:23:58,550 --> 00:24:02,655
+课程包括更加困难
+course includes much more difficult
+
+376
+00:24:02,660 --> 00:24:05,955
+这是线性编程的问题
+problems this is linear programming that
+
+377
+00:24:05,960 --> 00:24:08,535
+你看到的问题是一个美丽的问题
+problem as you see is as a beautiful
+
+378
+00:24:08,540 --> 00:24:15,105
+简单的理论和关注
+simple theory and the paying attention
+
+379
+00:24:15,110 --> 00:24:16,995
+正在关注算法
+is paying attention to the algorithm
+
+380
+00:24:17,000 --> 00:24:19,305
+因为你有两个重要的选择
+because you've got two important choices
+
+381
+00:24:19,310 --> 00:24:24,175
+他们都得到了高度发达
+and they both get highly developed
+
+382
+00:24:24,180 --> 00:24:27,115
+现在好了，所以对于游戏现在我要转
+now okay so for game now I'm gonna turn
+
+383
+00:24:27,120 --> 00:24:32,395
+我会做一个最大流量的例子
+to well I'll do a example of max flow
+
+384
+00:24:32,400 --> 00:24:36,655
+等于最小切割看什么，然后去
+equal min cut to see what and then go to
+
+385
+00:24:36,660 --> 00:24:40,255
+两个人的比赛，所以这里是一个
+two two person game so here's a here's
+
+386
+00:24:40,260 --> 00:24:50,865
+一个例子
+an example
+
+387
+00:24:50,870 --> 00:24:56,245
+好吧所以我从一个图表开始是的，让我
+okay so I start with a graph yeah let me
+
+388
+00:24:56,250 --> 00:25:09,715
+只是如此，这是这是源
+just so this is the source this is the
+
+389
+00:25:09,720 --> 00:25:14,245
+下沉，我正在通过
+sink and I'm sending flow through the
+
+390
+00:25:14,250 --> 00:25:17,155
+网络所以我是一个网络
+network so it's a network that I'm
+
+391
+00:25:17,160 --> 00:25:20,755
+发送流量，所以我的工作就是这样
+sending flow through so I'm so my job is
+
+392
+00:25:20,760 --> 00:25:26,215
+最大化是的，我将X设置为
+to maximize yeah is to I'll set X at the
+
+393
+00:25:26,220 --> 00:25:34,105
+源是零，然后流
+source to be zero and then the flow the
+
+394
+00:25:34,110 --> 00:25:36,295
+总流量会进入水槽所以我
+total flow will come into the sink so I
+
+395
+00:25:36,300 --> 00:25:42,805
+想要在水槽中最大化X，这样就可以了
+want to maximize X at the sink so it's
+
+396
+00:25:42,810 --> 00:25:44,215
+线性规划及其应用
+of linear programming and their
+
+397
+00:25:44,220 --> 00:25:46,725
+约束那么约束是什么
+constraint so what are the constraints
+
+398
+00:25:46,730 --> 00:25:50,845
+每个Edge都有容量让我们看看
+every Edge has a capacity so let's see
+
+399
+00:25:50,850 --> 00:25:57,745
+假设Edge有容量5让我
+suppose that Edge has capacity 5 let me
+
+400
+00:25:57,750 --> 00:26:00,885
+让我把能力放在所有这些边缘上
+let me put capacities on all these edges
+
+401
+00:26:00,890 --> 00:26:17,775
+2134我只是在这里刺伤
+2 1 3 4 I'm just stabbing around here
+
+402
+00:26:17,780 --> 00:26:23,575
+让我说-好吧我不知道是什么
+let me say - ok I have no idea what's
+
+403
+00:26:23,580 --> 00:26:24,735
+发生在这里
+happening here
+
+404
+00:26:24,740 --> 00:26:28,045
+但如果我们可能会看到问题
+but if we see the problem we'll probably
+
+405
+00:26:28,050 --> 00:26:31,765
+能够解决这些问题
+be able to solve it so so these
+
+406
+00:26:31,770 --> 00:26:36,654
+约束是流量变量
+constraints are that the flow variable
+
+407
+00:26:36,659 --> 00:26:38,544
+这将是为什么
+which would be would be the why that
+
+408
+00:26:38,549 --> 00:26:42,504
+在那里我试图最大化无法
+where I'm trying to maximize cannot to
+
+409
+00:26:42,509 --> 00:26:44,335
+普通的流量
+the amount of flow just in ordinary
+
+410
+00:26:44,340 --> 00:26:46,914
+单词边缘的流量
+words the amount of flow on the edges
+
+411
+00:26:46,919 --> 00:26:51,294
+不能高于容量
+can't go go higher than the capacity
+
+412
+00:26:51,299 --> 00:26:53,904
+我可以沿着这条边发送十一个但是
+I could send eleven along this edge but
+
+413
+00:26:53,909 --> 00:26:55,644
+然后我无处可去
+then I've got nowhere to send it after
+
+414
+00:26:55,649 --> 00:27:00,085
+我可以在发送以及九百
+that I could send well nine hundred on
+
+415
+00:27:00,090 --> 00:27:02,544
+那边缘但显然会得到
+that edge but obviously it would get
+
+416
+00:27:02,549 --> 00:27:06,144
+卡在那里所以问题是什么
+stuck there so the question is what's
+
+417
+00:27:06,149 --> 00:27:10,494
+我可以发送的最大值
+the maximum I can send through that
+
+418
+00:27:10,499 --> 00:27:16,344
+网络这是一个经典的问题和
+network it's a classical problem and and
+
+419
+00:27:16,349 --> 00:27:19,195
+事实上，这是一个整数编程
+in fact it's it's an integer programming
+
+420
+00:27:19,200 --> 00:27:21,654
+问题我这些都是整数
+problem I these are all integer
+
+421
+00:27:21,659 --> 00:27:24,715
+容量我可以坚持整数
+capacities I could insist on integer
+
+422
+00:27:24,720 --> 00:27:31,044
+流动，但它是一个非常显着的整数
+flows but it's a very remarkable integer
+
+423
+00:27:31,049 --> 00:27:36,205
+问题，因为我可以允许分数
+problem because I could allow fractions
+
+424
+00:27:36,210 --> 00:27:38,124
+答案不会是不会
+and the answer would not be it would not
+
+425
+00:27:38,129 --> 00:27:41,455
+涉及换句话说分数，如果我
+involve fractions in other words if I
+
+426
+00:27:41,460 --> 00:27:47,744
+把它作为一个整数的问题，则
+keep it as an integer problem then the
+
+427
+00:27:47,749 --> 00:27:50,154
+数学是用于较硬的绝对
+mathematics is definitely harder for an
+
+428
+00:27:50,159 --> 00:27:53,514
+整数问题有什么不同所以
+integer problem what's different so so
+
+429
+00:27:53,519 --> 00:27:59,065
+x可以是整数，也可以是整数
+the x's could be integers or they could
+
+430
+00:27:59,070 --> 00:28:08,335
+是真正的实数，在这里他们
+be real real numbers over here they were
+
+431
+00:28:08,340 --> 00:28:12,234
+实数我碰巧得到一个整数
+real numbers I happen to get an integer
+
+432
+00:28:12,239 --> 00:28:15,624
+为此，如果我放了，如果我有10
+for this but if I put if I had 10
+
+433
+00:28:15,629 --> 00:28:20,634
+跨越15维的飞机和
+crossing planes in 15 dimensions and the
+
+434
+00:28:20,639 --> 00:28:24,624
+整数将完全丢失，但是
+integers would be totally lost but the
+
+435
+00:28:24,629 --> 00:28:28,104
+点在这里，如果我允许真实
+point is here that if I allow real
+
+436
+00:28:28,109 --> 00:28:34,825
+数字它不会让我更多的流量
+numbers it doesn't get me any more flow
+
+437
+00:28:34,830 --> 00:28:37,854
+获胜流量是整数
+that the winning flow is an integer
+
+438
+00:28:37,859 --> 00:28:41,065
+无论如何，这是一个整数问题
+anyway so it's an integer problem which
+
+439
+00:28:41,070 --> 00:28:44,004
+可以安全放松，你可以安全
+can be safely relaxed and you can safely
+
+440
+00:28:44,009 --> 00:28:47,695
+使用单纯形法或汽车标记法
+use simplex method or car markers method
+
+441
+00:28:47,700 --> 00:28:50,185
+或者在内点法
+or in the interior point method
+
+442
+00:28:50,190 --> 00:28:54,175
+与非整数，因为在
+with with non integers because in the
+
+443
+00:28:54,180 --> 00:28:56,025
+这里的内部你没有结束它
+interior here you're not ending it
+
+444
+00:28:56,030 --> 00:28:59,395
+你可以在整数开始或结束
+starting or ending at integers you can
+
+445
+00:28:59,400 --> 00:29:04,405
+这样做是因为整数答案
+do it because the the integer answer
+
+446
+00:29:04,410 --> 00:29:07,675
+最终会更好还是什么
+will be in the end better okay and what
+
+447
+00:29:07,680 --> 00:29:08,695
+是那个答案
+is that answer
+
+448
+00:29:08,700 --> 00:29:12,025
+我认为我已经具备了这些能力
+III think I've made those capacities
+
+449
+00:29:12,030 --> 00:29:15,475
+像太容易太
+like too easy too
+
+450
+00:29:15,480 --> 00:29:24,685
+哦，我没有这样做，所以应该做什么
+oh I didn't do this one so so what shall
+
+451
+00:29:24,690 --> 00:29:27,445
+我这么说，我就像九岁一样大
+I say so I make it large like nine I
+
+452
+00:29:27,450 --> 00:29:30,115
+不知道什么是最好的
+don't know okay what's the best we can
+
+453
+00:29:30,120 --> 00:29:39,705
+通过该网络做到这一点
+do through that through that Network
+
+454
+00:29:39,710 --> 00:29:44,865
+好吧，我从这里看不到它是什么
+okay I can't see it from here yet what
+
+455
+00:29:44,870 --> 00:29:46,965
+我该怎么办
+what should I do
+
+456
+00:29:46,970 --> 00:29:50,365
+显然在这个简单的问题中我可以
+obviously in this simple problem I can
+
+457
+00:29:50,370 --> 00:29:52,855
+得到任何我想要非常本
+get anything I want pretty much to this
+
+458
+00:29:52,860 --> 00:29:57,645
+到目前为止，但我能做些什么
+that far but then what can I do
+
+459
+00:29:57,650 --> 00:30:05,305
+让我，让我甚至做出19好了，
+let me let me even make that 19 okay so
+
+460
+00:30:05,310 --> 00:30:09,265
+我不是在施加太多限制
+I'm I'm not imposing much of a limit on
+
+461
+00:30:09,270 --> 00:30:11,635
+那边但是这些边缘都是
+that edge either but these edges are
+
+462
+00:30:11,640 --> 00:30:13,825
+非常严格的限制，这些都是
+quite tight limits and these are sort of
+
+463
+00:30:13,830 --> 00:30:16,345
+中间限制你好吗？
+intermediate limits well what do you
+
+464
+00:30:16,350 --> 00:30:21,165
+认为是我能发送的最多
+think is the most I could send through
+
+465
+00:30:21,170 --> 00:30:24,205
+你怎么能告诉我我的意思
+and how would you show me that I
+
+466
+00:30:24,210 --> 00:30:26,575
+无法发送更多关键
+couldn't send more that's the key
+
+467
+00:30:26,580 --> 00:30:31,735
+问题我想得到一个约束
+question I want to get a bound on an
+
+468
+00:30:31,740 --> 00:30:35,065
+这个最大值的上限就是这个上限
+upper bound on this maximum this maximum
+
+469
+00:30:35,070 --> 00:30:37,525
+进入水槽的次数少或相等
+getting into the sink is less or equal
+
+470
+00:30:37,530 --> 00:30:40,075
+到什么什么号码，你会
+to and what what number would you
+
+471
+00:30:40,080 --> 00:30:43,615
+建议我可以通过我获得一千
+propose could I get a thousand through I
+
+472
+00:30:43,620 --> 00:30:47,905
+可以开始，但我当然不会
+could start but of course I I wouldn't
+
+473
+00:30:47,910 --> 00:30:52,785
+在那里平铺我无法进一步
+tile up there I couldn't get further
+
+474
+00:30:52,790 --> 00:30:55,435
+你觉得我最擅长什么？
+what do you what do you think the best I
+
+475
+00:30:55,440 --> 00:30:58,065
+可以做
+can do
+
+476
+00:30:58,070 --> 00:31:01,725
+十，我不能做十多怎么样
+ten I can't do more than ten how how
+
+477
+00:31:01,730 --> 00:31:13,895
+我可以做十二十二十二这个权利
+could I do ten twelve twelve this right
+
+478
+00:31:13,900 --> 00:31:17,445
+所以我看到他这样，才能这样啊
+so I I see him that way can this yeah
+
+479
+00:31:17,450 --> 00:31:19,785
+绝对你可以分裂然后这个
+absolutely you can split and then this
+
+480
+00:31:19,790 --> 00:31:22,725
+这可以到这里，那会是
+can this go here and that would would be
+
+481
+00:31:22,730 --> 00:31:25,505
+能够去那里我可以得到十
+able to go there so I can get ten
+
+482
+00:31:25,510 --> 00:31:30,765
+我能做得更好吗？
+correct can I do anything better
+
+483
+00:31:30,770 --> 00:31:33,375
+哦，我可以用这种方式发送一些东西
+oh I could be sending some up this way
+
+484
+00:31:33,380 --> 00:31:36,825
+同时我可以得到三个
+at the same time so I could get three
+
+485
+00:31:36,830 --> 00:31:37,965
+在顶部
+along the top
+
+486
+00:31:37,970 --> 00:31:41,205
+我可以这样就像拍卖一样好
+I could so this is like an auction okay
+
+487
+00:31:41,210 --> 00:31:44,985
+我们可以得到13分
+we can get up to 13 can we get so that
+
+488
+00:31:44,990 --> 00:31:48,555
+这是三个这样的方式和十个
+that was three going this way and ten
+
+489
+00:31:48,560 --> 00:31:56,355
+走这条路是13，我不能
+going this way is 13 and can I not
+
+490
+00:31:56,360 --> 00:32:04,575
+超过13我听到40是啊我有
+exceed 13 do I hear 40 yeah oh I've got
+
+491
+00:32:04,580 --> 00:32:06,225
+一个很大的空间多了一个
+a lot of room for one more
+
+492
+00:32:06,230 --> 00:32:11,085
+好的，所以14很多孩子，我也好
+so okay so 14 many kids alright do I
+
+493
+00:32:11,090 --> 00:32:17,835
+听到15如果我做了12然后我会做什么
+hear 15 if I did 12 then what would I do
+
+494
+00:32:17,840 --> 00:32:24,135
+我把两个送到这里好吧我要做什么
+I send two up here okay what am I gonna
+
+495
+00:32:24,140 --> 00:32:28,125
+从这里与他们一起发送他们
+do with them from here send them up
+
+496
+00:32:28,130 --> 00:32:31,725
+再一次，然后现在你呢
+again and along but then now you then
+
+497
+00:32:31,730 --> 00:32:35,835
+我现在拥有的三个是什么
+the three that that I had right now what
+
+498
+00:32:35,840 --> 00:32:46,995
+将是一个问题的回归，我
+would be back of one problem and I'm
+
+499
+00:32:47,000 --> 00:32:49,785
+寻找知道什么时候退出的必然
+looking for a bound to know when to quit
+
+500
+00:32:49,790 --> 00:32:52,395
+要知道我什么时候优化了那个
+to know when I've optimized that's the
+
+501
+00:32:52,400 --> 00:32:54,705
+二元性的整体观念是找到一些
+whole idea of duality is to find some
+
+502
+00:32:54,710 --> 00:32:58,695
+我想要推倒的最重要的事情
+upper thing that I'm trying to push down
+
+503
+00:32:58,700 --> 00:33:04,005
+但我不能超越它，所以我
+and but I can't go beyond it so so I
+
+504
+00:33:04,010 --> 00:33:07,095
+不要以为我能得到更多
+don't think I could get more than to see
+
+505
+00:33:07,100 --> 00:33:09,195
+一切都必须穿过这个中间
+everything has to cross this middle so
+
+506
+00:33:09,200 --> 00:33:11,565
+三，四夜我不认为我
+three and four night I don't think I
+
+507
+00:33:11,570 --> 00:33:11,835
+可以
+could
+
+508
+00:33:11,840 --> 00:33:16,515
+B23有人说24比23我
+b23 somebody said 24 more than 23 I
+
+509
+00:33:16,520 --> 00:33:18,674
+会因为我而非常怀疑
+would be very doubtful because I
+
+510
+00:33:18,679 --> 00:33:22,154
+无法穿越中间但是
+couldn't get it across the middle but
+
+511
+00:33:22,159 --> 00:33:25,154
+然后我可以得到23我怀疑它
+then can I get 23 I doubt it
+
+512
+00:33:25,159 --> 00:33:29,145
+也许最好可能14，那怎么会
+maybe 14 as best possible so how would
+
+513
+00:33:29,150 --> 00:33:35,715
+我们表明，14是最好的，我认为
+we show that 14 is best possible I think
+
+514
+00:33:35,720 --> 00:33:39,284
+如果我能找到这个就叫做
+if I could find so this is called the
+
+515
+00:33:39,289 --> 00:33:43,635
+切这个削减在这个网络中，从而
+cut a cut in this in this network so
+
+516
+00:33:43,640 --> 00:33:50,385
+是的，我看到像你那样的剪裁
+yeah I see a cut a cut like there you
+
+517
+00:33:50,390 --> 00:33:56,115
+看到流量的每一点都有
+see that every bit of flow has got to
+
+518
+00:33:56,120 --> 00:34:00,274
+交叉切割和总容量
+cross that cut and the total capacity
+
+519
+00:34:00,279 --> 00:34:03,255
+穿越是3和1和2
+crossing is the 3 and the 1 and the 2
+
+520
+00:34:03,260 --> 00:34:07,125
+和8这是14所以我无法得到
+and the 8 which is 14 so I can't get
+
+521
+00:34:07,130 --> 00:34:09,945
+超过14通过不知何故
+more than 14 through and somehow that
+
+522
+00:34:09,950 --> 00:34:14,924
+切割装载到容量可能那些
+cut is loaded to capacity probably those
+
+523
+00:34:14,929 --> 00:34:19,305
+所有边缘都必须做到完全
+edges all all have to be fully up to
+
+524
+00:34:19,310 --> 00:34:24,104
+那么容量就越过了切口
+capacity then that crossed the cut so so
+
+525
+00:34:24,109 --> 00:34:27,225
+切割是边缘的分离
+the cut is is a separation of edges that
+
+526
+00:34:27,230 --> 00:34:30,884
+选择一个源和对不起的节点
+go with a source and sorry nodes that go
+
+527
+00:34:30,889 --> 00:34:32,715
+与此去一个源节点
+with a source nodes that go with this
+
+528
+00:34:32,720 --> 00:34:38,174
+事情是的，然后它是边缘
+thing yeah and and then it's the edges
+
+529
+00:34:38,179 --> 00:34:43,364
+越过切口所以我是的，没关系
+across the cut so I yeah is that okay
+
+530
+00:34:43,369 --> 00:34:47,685
+对于一个例子，这样的二元性的
+for an example so that's the duality the
+
+531
+00:34:47,690 --> 00:34:51,914
+最大流量竟然是14和
+maximum flow turned out to be 14 and the
+
+532
+00:34:51,919 --> 00:34:54,404
+最小切割结果是14和什么时候
+minimum cut turned out to be 14 and when
+
+533
+00:34:54,409 --> 00:34:56,685
+那些匹配14等于14我知道我
+those matched 14 equal 14 I know I'm
+
+534
+00:34:56,690 --> 00:34:59,175
+通过我知道我通过因为我
+through I know I'm through because I'm
+
+535
+00:34:59,180 --> 00:35:01,035
+能够通过14而我永远不会
+able to get 14 through and I could never
+
+536
+00:35:01,040 --> 00:35:06,135
+得到更多是的3＆4＆6＆8是啊好的
+get more yeah 3 & 4 & 6 & 8 yeah okay
+
+537
+00:35:06,140 --> 00:35:09,495
+当然还有一个大网络
+and of course the in a big network
+
+538
+00:35:09,500 --> 00:35:12,614
+切割是最大的切割不去
+the cut is the maximum cut is not going
+
+539
+00:35:12,619 --> 00:35:16,355
+很好看，你不知道
+to be visible well you couldn't you know
+
+540
+00:35:16,360 --> 00:35:18,425
+他们会有数以千计的优势
+they would have thousands of edges you
+
+541
+00:35:18,430 --> 00:35:21,275
+看不到你在做什么，但是
+couldn't see what you were doing but but
+
+542
+00:35:21,280 --> 00:35:24,785
+你可以快速解决这个问题
+you could solve this problem fast
+
+543
+00:35:24,790 --> 00:35:27,815
+实际上很快，而且这很重要
+actually fast and and it's an important
+
+544
+00:35:27,820 --> 00:35:30,965
+在实践中，这是一个重要的例子
+in practice it's an important example a
+
+545
+00:35:30,970 --> 00:35:33,485
+很多其他东西都适合
+lot of other things fit into the
+
+546
+00:35:33,490 --> 00:35:37,355
+max-flowmin-cut示例，因此
+max-flow min-cut example and therefore
+
+547
+00:35:37,360 --> 00:35:40,625
+解决它比我没有更快哦
+solving it in faster than oh I didn't
+
+548
+00:35:40,630 --> 00:35:43,285
+甚至说速度
+even say about speed
+
+549
+00:35:43,290 --> 00:35:47,225
+所以单纯形法几乎总是如此
+so the simplex method almost always its
+
+550
+00:35:47,230 --> 00:35:51,245
+一般情况书房斯皮尔曼谁在
+average case den Spielman who was on the
+
+551
+00:35:51,250 --> 00:35:56,155
+这里的教职员工非常棒
+faculty here who's just terrific in this
+
+552
+00:35:56,160 --> 00:36:00,665
+该地区可能是最先研究的地区之一
+area was maybe among the first to study
+
+553
+00:36:00,670 --> 00:36:04,145
+平均情况也是如此
+the average case so so for a for an
+
+554
+00:36:04,150 --> 00:36:09,185
+取而代之的是a和B和C的平均选择
+average choice of a and B and C instead
+
+555
+00:36:09,190 --> 00:36:11,585
+做出最糟糕的选择
+of making the worst choice for the worst
+
+556
+00:36:11,590 --> 00:36:14,885
+选择你可以创建一个可行的集合
+choice you can create a feasible set
+
+557
+00:36:14,890 --> 00:36:16,685
+它必须去角落角落
+that it has to go corner Corner corner
+
+558
+00:36:16,690 --> 00:36:21,185
+角落直到结束所以
+corner until to get to the end so the
+
+559
+00:36:21,190 --> 00:36:23,825
+单纯形法将呈指数级增长
+simplex method would take exponentially
+
+560
+00:36:23,830 --> 00:36:27,425
+但是这种情况非常罕见
+long but that's extremely rare doesn't
+
+561
+00:36:27,430 --> 00:36:31,625
+在实践中发生我认为和
+happen in practice I think and the
+
+562
+00:36:31,630 --> 00:36:34,295
+平均值是多项式，所以它很快
+average one is polynomial so it's a fast
+
+563
+00:36:34,300 --> 00:36:41,165
+方法平均这个，但我们可以
+method on average this but and we can
+
+564
+00:36:41,170 --> 00:36:43,625
+显然这是一个着名的结果
+show actually that was a famous result
+
+565
+00:36:43,630 --> 00:36:47,375
+它来自俄罗斯那个线性的
+it came from Russia that that linear
+
+566
+00:36:47,380 --> 00:36:52,295
+编程是在P和LP之间进行的
+programming is in the big P versus LP
+
+567
+00:36:52,300 --> 00:36:55,985
+世界线性规划与P一致
+world linear programming goes with P
+
+568
+00:36:55,990 --> 00:36:59,015
+线性规划是一个可以解决的问题
+linear programming is a problem that can
+
+569
+00:36:59,020 --> 00:37:02,135
+在多项式时间内求解单纯形
+be solved in polynomial time the simplex
+
+570
+00:37:02,140 --> 00:37:04,775
+方法不会总是这样，但它可以
+method won't always do it but it can be
+
+571
+00:37:04,780 --> 00:37:08,765
+做了耶和华来到这个世界
+done yeah there came into the world
+
+572
+00:37:08,770 --> 00:37:11,045
+椭球方法，有一个
+ellipsoid methods and there was a
+
+573
+00:37:11,050 --> 00:37:15,005
+激动人心的时间来决定线性
+exciting time to decide that linear
+
+574
+00:37:15,010 --> 00:37:18,415
+编程实际上是P而不是LP
+programming was actually P and not LP
+
+575
+00:37:18,420 --> 00:37:24,275
+是的好，所以这是一个案例
+yep okay so that's okay this is a case
+
+576
+00:37:24,280 --> 00:37:27,005
+您可以理解的二元性
+of duality where you can understand
+
+577
+00:37:27,010 --> 00:37:30,155
+你可以通过国家购买这种二元性
+duality you can buy this by the state
+
+578
+00:37:30,160 --> 00:37:32,945
+流量不能超过容量
+that the flow can't exceed the capacity
+
+579
+00:37:32,950 --> 00:37:37,385
+削减，所以这是什么二元性
+of the cut so that's what duality is any
+
+580
+00:37:37,390 --> 00:37:44,915
+它必须要少于Rico的容量
+flow it has to be less Rico the capacity
+
+581
+00:37:44,920 --> 00:37:54,455
+任何削减他们的能力是总和
+of any cut their capacity being the sum
+
+582
+00:37:54,460 --> 00:37:57,754
+在一个如此当然也有其他
+of the one so of course there are other
+
+583
+00:37:57,759 --> 00:38:01,504
+那截切，必须传中，但是
+cuts that cut has to be crossed but
+
+584
+00:38:01,509 --> 00:38:04,024
+这是三七十二十二
+that's got three seven fourteen twenty
+
+585
+00:38:04,029 --> 00:38:07,745
+两个容量，所以它的十四个容量
+two capacity so it the fourteen capacity
+
+586
+00:38:07,750 --> 00:38:11,915
+这是最小的，我给了
+was the was the minimum and I gave the
+
+587
+00:38:11,920 --> 00:38:13,985
+最大不错是不是很好
+maximum nice isn't that nice
+
+588
+00:38:13,990 --> 00:38:19,354
+是啊好了，还有另外一个世界在这里
+yeah okay so there's another world here
+
+589
+00:38:19,359 --> 00:38:23,584
+也有两人游戏
+of two person games that also has
+
+590
+00:38:23,589 --> 00:38:26,584
+二元性，可以表达，所以让我
+duality and could be expressed so let me
+
+591
+00:38:26,589 --> 00:38:31,175
+今天终于谈谈了两个人
+just talk finally today about two-person
+
+592
+00:38:31,180 --> 00:38:34,385
+所以这两个人都是X＆Y
+game so the two persons are X&Y of
+
+593
+00:38:34,390 --> 00:38:36,844
+当然还有其他很好的名字
+course what other names good they have
+
+594
+00:38:36,849 --> 00:38:43,774
+并且有一个矩阵参与其中
+and there's a there's a matrix involved
+
+595
+00:38:43,779 --> 00:38:52,324
+这是支付矩阵，所以让我来看看
+this is the payoff matrix so let me take
+
+596
+00:38:52,329 --> 00:38:58,354
+一个非常简单的游戏，所以X正在进行
+a very simple game first so X is going
+
+597
+00:38:58,359 --> 00:39:02,314
+选择其中一行，Y是
+to choose one of these rows and Y is
+
+598
+00:39:02,319 --> 00:39:04,715
+要选择其中一列和
+going to choose one of these columns and
+
+599
+00:39:04,720 --> 00:39:12,425
+让我们说从x到y的收益我喜欢它
+let's say payoff from x to y I like it
+
+600
+00:39:12,430 --> 00:39:16,895
+这种方式因为这样X，其疼痛是
+that way because then X whose pain is is
+
+601
+00:39:16,900 --> 00:39:20,314
+随着X在这里，最小化
+going to be minimizing as X was up here
+
+602
+00:39:20,319 --> 00:39:24,395
+和谁收集的将是
+and y who's collecting is going to be
+
+603
+00:39:24,400 --> 00:39:28,415
+最大化，如在双重所以所以
+maximizing as in the dual so so the
+
+604
+00:39:28,420 --> 00:39:32,435
+好的让我看看我想也许就是一个
+payoff well let's see I think maybe one
+
+605
+00:39:32,440 --> 00:39:35,104
+四到八个可能是一个
+four to eight would be a probably a
+
+606
+00:39:35,109 --> 00:39:40,175
+相当容易的游戏玩，这样所以很
+fairly easy game to play so that so it's
+
+607
+00:39:40,180 --> 00:39:43,495
+两人游戏零和游戏
+a two-person game zero-sum games
+
+608
+00:39:43,500 --> 00:39:55,135
+一些意味着所有人都付出了什么
+some means that means all all pay what
+
+609
+00:39:55,140 --> 00:40:02,844
+前付款是为什么为什么得到所有前任
+ex pays goes to why why gets all that ex
+
+610
+00:40:02,849 --> 00:40:07,975
+这里没有第三方没有
+pace there's no third party here no
+
+611
+00:40:07,980 --> 00:40:13,465
+涉及的律师还好，所以会和
+lawyers involved okay so what would and
+
+612
+00:40:13,470 --> 00:40:16,915
+为什么要选择一个列而X是
+why is going to choose a column and X is
+
+613
+00:40:16,920 --> 00:40:19,915
+要选择一个X想要的行
+going to choose a row an X wants to make
+
+614
+00:40:19,920 --> 00:40:23,515
+它很小，Y想要大做好
+it small and Y wants to make it big okay
+
+615
+00:40:23,520 --> 00:40:25,435
+那么这场比赛会发生什么
+so what happens in this game
+
+616
+00:40:25,440 --> 00:40:28,344
+你选择做什么让它变大呢？
+what does y choose to make it big the
+
+617
+00:40:28,349 --> 00:40:31,195
+第二列X选择做什么
+second column what does X choose to make
+
+618
+00:40:31,200 --> 00:40:34,425
+它排在第一排，所以它会是
+it small the first row so it's gonna be
+
+619
+00:40:34,430 --> 00:40:39,055
+如果Y保持，那么也要关注它
+focus in on that too because if Y keeps
+
+620
+00:40:39,060 --> 00:40:43,045
+选择第二列是最好的
+choosing that column two is the best the
+
+621
+00:40:43,050 --> 00:40:45,235
+至少是X将不得不支付
+least that X is going to have to pay to
+
+622
+00:40:45,240 --> 00:40:49,795
+他通过选择而实现了这一目标
+and he achieves that by choosing the
+
+623
+00:40:49,800 --> 00:40:53,094
+第一排所以这是一个简单的游戏
+first row so it's a simple game that's a
+
+624
+00:40:53,099 --> 00:40:56,864
+鞍点它是y的最小值
+saddle point it's a it's a minimum for y
+
+625
+00:40:56,869 --> 00:41:00,594
+在它的列中，它是X的最大值
+in its column and it's a maximum for X
+
+626
+00:41:00,599 --> 00:41:04,555
+在它的行，但当然是矩阵和
+in its row but of course a matrix and
+
+627
+00:41:04,560 --> 00:41:06,435
+其他矩阵可能没有这样的
+other matrix might not have such a
+
+628
+00:41:06,440 --> 00:41:09,745
+马鞍点，所以你可以看到没关系
+saddle point so that may do you see okay
+
+629
+00:41:09,750 --> 00:41:13,915
+本场比赛，这将是一个排序的
+with this game that would be a sort of
+
+630
+00:41:13,920 --> 00:41:16,195
+直截了当的游戏简单
+straightforward game where simple
+
+631
+00:41:16,200 --> 00:41:19,795
+策略第二列每次第一行
+strategy column two every time row one
+
+632
+00:41:19,800 --> 00:41:22,975
+每一次都是最佳的，但现在让我
+every time is the optimal but now let me
+
+633
+00:41:22,980 --> 00:41:29,795
+只是交换那个
+just exchange that
+
+634
+00:41:29,800 --> 00:41:35,075
+所以再次x1和x2y1和y2或他们的
+so again x1 and x2 y1 and y2 or their
+
+635
+00:41:35,080 --> 00:41:39,775
+两列现在发生了什么
+two column what happens now
+
+636
+00:41:39,780 --> 00:41:42,785
+以及为什么有点喜欢大数字
+well why kind of likes the big number
+
+637
+00:41:42,790 --> 00:41:48,515
+八，那么第二个
+eight there so goes for the second
+
+638
+00:41:48,520 --> 00:41:50,435
+第二列仍然有更大的
+second column still has the bigger
+
+639
+00:41:50,440 --> 00:41:54,365
+因此Y的目标是第二列
+numbers so Y aims for column two
+
+640
+00:41:54,370 --> 00:41:59,345
+但那么X做什么行做x
+but then what does X do what row does x
+
+641
+00:41:59,350 --> 00:42:04,115
+选择y是否在列中
+choose if y is in there column to the
+
+642
+00:42:04,120 --> 00:42:09,125
+第二个没关系，所以我找到了一个马鞍
+second okay so so have I found a saddle
+
+643
+00:42:09,130 --> 00:42:12,485
+Y选择此列X的点
+point where Y chooses this column X
+
+644
+00:42:12,490 --> 00:42:16,015
+选择这一行是一个马鞍点
+chooses this row is that a saddle point
+
+645
+00:42:16,020 --> 00:42:20,795
+不，因为现在他会做什么，他看到了X.
+no because what will Y do now he sees X
+
+646
+00:42:20,800 --> 00:42:24,005
+一直选择第二行并且
+choosing the second row all the time and
+
+647
+00:42:24,010 --> 00:42:27,545
+为什么看到了在四非常诱人
+why sees a four very tempting for in
+
+648
+00:42:27,550 --> 00:42:31,475
+该行桑尼是要选择y一个
+that row so Y is going to choose y one
+
+649
+00:42:31,480 --> 00:42:35,345
+第一列通常不是全部
+the first column pretty often not all
+
+650
+00:42:35,350 --> 00:42:37,985
+时间，因为如果他只是发生了什么
+the time because what happens if he just
+
+651
+00:42:37,990 --> 00:42:41,825
+如果Y选择该列的所有时间
+if Y chooses this column all the time
+
+652
+00:42:41,830 --> 00:42:44,795
+那么X会选择这一行而只有
+then X will choose this row and only the
+
+653
+00:42:44,800 --> 00:42:47,975
+收益只会是一个事情
+payoff will only be one so that things
+
+654
+00:42:47,980 --> 00:42:51,785
+为什么他们如此如此，他们走下坡路
+went downhill for why they're so so this
+
+655
+00:42:51,790 --> 00:42:59,845
+不是一个鞍点，我们做什么
+is not a saddle point and what do we do
+
+656
+00:42:59,850 --> 00:43:04,105
+混合策略这就是我们选择的原因
+mixed strategy which is why we'll choose
+
+657
+00:43:04,110 --> 00:43:08,705
+两列有一些概率
+the two columns with some probabilities
+
+658
+00:43:08,710 --> 00:43:09,965
+添加到一个
+that add to one
+
+659
+00:43:09,970 --> 00:43:12,745
+所以BIA所以有第三个
+so so the BIA so there be a third
+
+660
+00:43:12,750 --> 00:43:20,015
+px1和one抱歉的可能性
+possibility that px 1 and one I'm sorry
+
+661
+00:43:20,020 --> 00:43:25,775
+py1P乘以此列，1减去P.
+py 1 P times this column and 1 minus P
+
+662
+00:43:25,780 --> 00:43:29,435
+乘以第二列，这样就是P.
+times the second column so that'll be P
+
+663
+00:43:29,440 --> 00:43:38,085
+加1减去P乘以8和4p加
+plus 1 minus P times 8 and 4p plus
+
+664
+00:43:38,090 --> 00:43:41,865
+一减去P乘以两次就是这个
+one minus P times two that's that's this
+
+665
+00:43:41,870 --> 00:43:48,635
+通过混合他的策略混合列
+mixed column by by mixing his strategy
+
+666
+00:43:48,640 --> 00:43:52,095
+为什么我们有一个像第三个战略
+why we have a strategy like a third
+
+667
+00:43:52,100 --> 00:43:59,895
+人为什么三，当然是X
+person why three and of course the X is
+
+668
+00:43:59,900 --> 00:44:02,435
+一段时间后会注意到什么
+going to notice after a while what what
+
+669
+00:44:02,440 --> 00:44:07,925
+这是一个开放的策略
+what the strategy is this is an open
+
+670
+00:44:07,930 --> 00:44:10,785
+竞争你，你没有隐藏
+competition you you're not hiding
+
+671
+00:44:10,790 --> 00:44:13,125
+他们无法掩饰你的任何东西
+they're not able to hide anything you
+
+672
+00:44:13,130 --> 00:44:15,825
+可能会很好，也许Y会跳来跳去
+might take well maybe Y will jump around
+
+673
+00:44:15,830 --> 00:44:21,255
+但那是愚蠢的Y即将结束
+but that's foolishness Y is going to end
+
+674
+00:44:21,260 --> 00:44:25,725
+找到P之间的最佳选择
+up finding the best choice of P between
+
+675
+00:44:25,730 --> 00:44:27,785
+0和1
+0 & 1
+
+676
+00:44:27,790 --> 00:44:31,785
+它实际上在0和1之间
+and it will actually be between 0 & 1
+
+677
+00:44:31,790 --> 00:44:36,225
+因为列的极端策略
+because the extreme strategies of column
+
+678
+00:44:36,230 --> 00:44:39,885
+1和第2列没有或没有获胜者
+1 and column 2 didn't or not winners but
+
+679
+00:44:39,890 --> 00:44:42,975
+现在X将要做同样的事情PX
+now X is going to do the same thing P X
+
+680
+00:44:42,980 --> 00:44:46,925
+1他要去，他或她将要
+1 he's gonna he or she is going to
+
+681
+00:44:46,930 --> 00:44:54,585
+将这些行组合起来，这样就可以了
+combine those rows so so this would be P
+
+682
+00:44:54,590 --> 00:45:00,705
+1为第一排，1对不起P哦我
+1 for the first row and 1 sorry P oh I
+
+683
+00:45:00,710 --> 00:45:03,495
+更好地选择另一个数字是什么呃
+better choose another number what's uh
+
+684
+00:45:03,500 --> 00:45:10,925
+什么是另一封信而不是PQ好的Q.
+what's another letter than P Q okay Q
+
+685
+00:45:10,930 --> 00:45:12,925
+好的
+okay
+
+686
+00:45:12,930 --> 00:45:17,215
+所以这个角色是一个组合
+so so this role was a combination of
+
+687
+00:45:17,220 --> 00:45:21,925
+那些行所以它是Q加一减去Q.
+those rows so it's Q plus one minus Q
+
+688
+00:45:21,930 --> 00:45:27,385
+次4在第一位置和
+times four in the first position and
+
+689
+00:45:27,390 --> 00:45:33,175
+8加P倍8和1减P
+eight plus P times 8 and 1 minus the P
+
+690
+00:45:33,180 --> 00:45:37,975
+和Q乘以82乘8和1减去Q.
+and Q times 8 2 times 8 and 1 minus Q
+
+691
+00:45:37,980 --> 00:45:39,355
+次2
+times 2
+
+692
+00:45:39,360 --> 00:45:41,815
+对不起，我也写过这个
+I'm sorry that I've written this too
+
+693
+00:45:41,820 --> 00:45:49,545
+小但但会发生什么
+small but but what's going to happen
+
+694
+00:45:49,550 --> 00:45:52,575
+什么将决定P和Q和
+what's going to determine P and Q and
+
+695
+00:45:52,580 --> 00:46:00,045
+如果这些是平等的，那就很好地解决游戏
+solve the game well if these are equal
+
+696
+00:46:00,050 --> 00:46:07,405
+然后会发生什么然后X没关系
+then what happens then X is okay with
+
+697
+00:46:07,410 --> 00:46:11,545
+要么一个人没有X就没有了
+either one doesn't X has nothing to
+
+698
+00:46:11,550 --> 00:46:15,055
+选择是否相等而Y是
+choose if those are equal and and Y is
+
+699
+00:46:15,060 --> 00:46:17,965
+坚持这种混合策略
+staying with this mixed strategy which
+
+700
+00:46:17,970 --> 00:46:22,165
+给了他第三个组合专栏
+gives him this third combination column
+
+701
+00:46:22,170 --> 00:46:25,735
+那么X很好，现在你可能会说得好
+then X is good now you might say well
+
+702
+00:46:25,740 --> 00:46:29,875
+然后X会做它想要的但是X.
+then X would do what it wanted but X
+
+703
+00:46:29,880 --> 00:46:32,785
+如果X没有，它就无法做到它想要的东西
+couldn't do what it wanted if X doesn't
+
+704
+00:46:32,790 --> 00:46:36,945
+坚持X的最佳策略Q.
+stick with the optimal strategy Q for X
+
+705
+00:46:36,950 --> 00:46:40,855
+然后你会利用你的优势
+then Y will take advantage so that you
+
+706
+00:46:40,860 --> 00:46:45,055
+真的，这场比赛已经结束了
+really the game settles down to once so
+
+707
+00:46:45,060 --> 00:46:48,805
+所以这应该是平等的，所以当了
+so these should be equal so when the
+
+708
+00:46:48,810 --> 00:46:53,815
+当那些是平等的，我得到什么IP
+when those are equal what do I get IP it
+
+709
+00:46:53,820 --> 00:46:57,295
+看起来我有8减7p
+looks like I have 8 minus minus 7p there
+
+710
+00:46:57,300 --> 00:47:00,115
+对于第一个，在这里我有对于P
+for the first one and here I have for P
+
+711
+00:47:00,120 --> 00:47:05,095
+减2P是2P加1我得到了
+minus 2 P is 2 P plus 1 did I get that
+
+712
+00:47:05,100 --> 00:47:11,285
+可能是的
+possibly right
+
+713
+00:47:11,290 --> 00:47:16,055
+-对于P-2P是达到峰值并始终
+- for P - 2 P is the to peak and always
+
+714
+00:47:16,060 --> 00:47:20,435
+-是啊好了，这些都是平等的，
+- yeah okay so those are equal and that
+
+715
+00:47:20,440 --> 00:47:29,435
+告诉我9p是6而P是2/3所以
+tells me that 9p is 6 and P is 2/3 so
+
+716
+00:47:29,440 --> 00:47:32,525
+原来那是最好的策略
+that turned out that the best strategy
+
+717
+00:47:32,530 --> 00:47:37,415
+因为y是第一列的2/3
+for y is 2/3 on the first column which
+
+718
+00:47:37,420 --> 00:47:41,135
+看起来不那么有希望和1/3
+didn't look so promising and 1/3 on the
+
+719
+00:47:41,140 --> 00:47:45,425
+第二，通过创造它
+second and by that by creating that
+
+720
+00:47:45,430 --> 00:47:48,065
+策略这些数字是什么来的
+strategy what what do these numbers come
+
+721
+00:47:48,070 --> 00:47:49,535
+出去，他们应该来
+out to be and they're supposed to come
+
+722
+00:47:49,540 --> 00:47:54,665
+对于PPlus来说是相同的，所以4次2/3
+out equal so for P Plus so 4 times 2/3
+
+723
+00:47:54,670 --> 00:48:01,085
+是8/3加1减去P是1/3x加2/3
+is 8/3 plus 1 minus P is 1/3 x plus 2/3
+
+724
+00:48:01,090 --> 00:48:04,475
+是十分之三，所以我认为这是十
+is 10 thirds so I think that this is ten
+
+725
+00:48:04,480 --> 00:48:08,015
+三分之一，如果不是三分之一
+thirds and if that one isn't ten thirds
+
+726
+00:48:08,020 --> 00:48:13,225
+我很惊讶所以它是2/3
+I'm very surprised so it's 2/3
+
+727
+00:48:13,230 --> 00:48:25,445
+对P-P来说是好的，是的告诉我
+well is it for P - P yeah tell me
+
+728
+00:48:25,450 --> 00:48:28,775
+我把它们设置得相同，它们是一样的
+they're the same did I set them equal
+
+729
+00:48:28,780 --> 00:48:30,965
+是的，我把它们等于找到和平
+yeah I set them equal to find peace so
+
+730
+00:48:30,970 --> 00:48:33,665
+他们必须是相同的，除了
+they have to be the same except for
+
+731
+00:48:33,670 --> 00:48:37,435
+教练的错误，从来没有发生过
+instructor mistakes which never happened
+
+732
+00:48:37,440 --> 00:48:40,985
+好的，那些应该是平等的
+ok so those are those should be equal
+
+733
+00:48:40,990 --> 00:48:45,905
+然后X别无选择哦无路可做
+then X has no choice oh no way to do
+
+734
+00:48:45,910 --> 00:48:48,485
+最好选择他的这些专栏
+better choose these columns that he
+
+735
+00:48:48,490 --> 00:48:50,375
+不能选择那些列免费的那些
+can't choose those columns free those
+
+736
+00:48:50,380 --> 00:48:53,945
+因为Y可以自由行驶
+roads freely because Y could take
+
+737
+00:48:53,950 --> 00:48:56,735
+除非如此，否则这将说明这一点
+advantage unless so this would tell this
+
+738
+00:48:56,740 --> 00:49:00,575
+将为q4提供最佳策略
+would give the best strategy for q4 for
+
+739
+00:49:00,580 --> 00:49:06,295
+对不起，对于X是最好的q4
+the sorry the best q4 for X yep
+
+740
+00:49:06,300 --> 00:49:08,795
+是的，你现在看到那张照片吗？
+yes do you see that picture now there
+
+741
+00:49:08,800 --> 00:49:11,825
+可能是其他可能更大
+could be other it could be a much bigger
+
+742
+00:49:11,830 --> 00:49:14,045
+矩阵当然可能还有其他
+matrix of course there could be other
+
+743
+00:49:14,050 --> 00:49:18,935
+列假设有一个00列
+columns suppose there was a 0 0 column
+
+744
+00:49:18,940 --> 00:49:21,455
+会产生什么影响
+what difference what would be the effect
+
+745
+00:49:21,460 --> 00:49:24,135
+关于如何实现的最优策略
+on the optimal strategy of how
+
+746
+00:49:24,140 --> 00:49:26,835
+附加列，附加选项
+additional column that additional option
+
+747
+00:49:26,840 --> 00:49:32,295
+为Y3好，他不会好走这样
+for y3 well he wouldn't take okay so
+
+748
+00:49:32,300 --> 00:49:36,285
+让我们更加诱人101010
+let's make it more tempting 10 10 10
+
+749
+00:49:36,290 --> 00:49:37,545
+好的
+okay
+
+750
+00:49:37,550 --> 00:49:41,685
+哦，他不会告诉你，是的，是的
+oh he wouldn't tell you that right yeah
+
+751
+00:49:41,690 --> 00:49:44,895
+那不太好我不知道是什么
+that was not so well I'm not sure what
+
+752
+00:49:44,900 --> 00:49:50,525
+我想在这里说是的
+I'm trying to say here yeah
+
+753
+00:49:50,530 --> 00:49:53,295
+肯定有可能
+there certainly could be there could be
+
+754
+00:49:53,300 --> 00:49:57,285
+该行是X的列或行说
+rows that are columns or rows for X that
+
+755
+00:49:57,290 --> 00:50:00,345
+不要进入混合状态以获得最佳效果
+don't enter the mixed up for the optimal
+
+756
+00:50:00,350 --> 00:50:03,255
+混合策略并制定一些策略
+mix strategy and make strategy of some
+
+757
+00:50:03,260 --> 00:50:05,475
+一些策略的组合
+combination of strategies some
+
+758
+00:50:05,480 --> 00:50:08,475
+结合纯粹的策略
+combination of pure strategies like
+
+759
+00:50:08,480 --> 00:50:11,655
+选择此列选择该行，但
+choose this column choose this row but
+
+760
+00:50:11,660 --> 00:50:15,045
+某些列可能没有或行可能
+some some columns may not or rows may
+
+761
+00:50:15,050 --> 00:50:18,165
+没有出现在最好的混合物中，所以我会
+not show up in the best mixture so I'll
+
+762
+00:50:18,170 --> 00:50:22,185
+我不会完成这一部分让喜欢
+I won't complete that partial so like
+
+763
+00:50:22,190 --> 00:50:28,515
+那没关系，那么我们怎么看你呢
+that okay so what do we do you see that
+
+764
+00:50:28,520 --> 00:50:31,635
+我们首先得到一个二元定理
+we have a duality theorem we first of
+
+765
+00:50:31,640 --> 00:50:32,925
+所有你能把它写成线性的
+all you could write that as a linear
+
+766
+00:50:32,930 --> 00:50:38,775
+程序未知是P你知道的X.
+program the unknown is P for X you know
+
+767
+00:50:38,780 --> 00:50:43,325
+对于y来说，未知的是X对于X实际上是如此
+for y the unknown is Q for X so actually
+
+768
+00:50:43,330 --> 00:50:46,905
+只有一个未知的简单
+just have one unknown in this simple
+
+769
+00:50:46,910 --> 00:50:52,355
+问题，但对于这个小问题，但
+problem but for this small problem but
+
+770
+00:50:52,360 --> 00:50:55,185
+你有一个最小化和最大化
+you have a minimization and maximization
+
+771
+00:50:55,190 --> 00:51:01,875
+他们在最佳和双重性上相遇
+they meet at the optimum and the duality
+
+772
+00:51:01,880 --> 00:51:06,735
+定理成为for的定理
+theorem becomes the the theorem for for
+
+773
+00:51:06,740 --> 00:51:08,775
+两人游戏线性编程
+two person games linear programming
+
+774
+00:51:08,780 --> 00:51:13,125
+匹配两人游戏的关键点
+matches two person games the point about
+
+775
+00:51:13,130 --> 00:51:16,695
+两个人非常重要三个
+two persons is very important three
+
+776
+00:51:16,700 --> 00:51:19,815
+人类游戏非常复杂
+person games are incredibly complicated
+
+777
+00:51:19,820 --> 00:51:24,585
+不，这个简单的水平会没有sería
+no no sería that this simple level would
+
+778
+00:51:24,590 --> 00:51:27,915
+会解决三人游戏的问题
+would solve three person games so that's
+
+779
+00:51:27,920 --> 00:51:33,375
+其中，约翰·纳什的诺贝尔奖进入
+where John Nash's Nobel Prize comes into
+
+780
+00:51:33,380 --> 00:51:35,325
+图片
+the picture
+
+781
+00:51:35,330 --> 00:51:38,115
+所以他的诺贝尔奖是在经济学方面
+so his Nobel Prize was in economics
+
+782
+00:51:38,120 --> 00:51:41,055
+因为他的应用范围很广
+because of the wide applications but he
+
+783
+00:51:41,060 --> 00:51:44,565
+能够分析和的问题
+was able to analyze the problem of and
+
+784
+00:51:44,570 --> 00:51:49,685
+对于四个以上矩阵的函数
+for functions more than four matrices of
+
+785
+00:51:49,690 --> 00:51:53,925
+三个人或面对面的游戏让你
+three person or in person games so you
+
+786
+00:51:53,930 --> 00:51:57,405
+知道约翰纳什这本书的故事
+know the story of John Nash the the book
+
+787
+00:51:57,410 --> 00:51:59,415
+一个美丽的心灵和电影A.
+A Beautiful Mind and the movie A
+
+788
+00:51:59,420 --> 00:52:01,845
+美丽心灵所以这是其中的一个
+Beautiful Mind so it's one of those
+
+789
+00:52:01,850 --> 00:52:04,275
+涉及麻省理工学院的电影，因为他是
+movies that involves MIT because he was
+
+790
+00:52:04,280 --> 00:52:07,725
+在这里但你无法识别任何东西
+here but you can't recognize anything
+
+791
+00:52:07,730 --> 00:52:10,725
+关于MIT这部电影就像GoodWill
+about MIT the movie it's like Good Will
+
+792
+00:52:10,730 --> 00:52:13,815
+狩猎你，你可能在某些人
+Hunting you're you're maybe in some
+
+793
+00:52:13,820 --> 00:52:17,535
+一些偏远建筑的地下室但是
+basement of some remote building but
+
+794
+00:52:17,540 --> 00:52:22,665
+无论如何，这当然是悲剧性的悲剧
+anyway it was of course a tragic tragic
+
+795
+00:52:22,670 --> 00:52:26,115
+然后肯定和精彩然后
+and then sure and wonderful and then
+
+796
+00:52:26,120 --> 00:52:31,335
+因为他在我这么做的时候再次悲惨
+tragic again for its he had so when I
+
+797
+00:52:31,340 --> 00:52:35,025
+见到他，他会教线性
+met him he was going to teach linear
+
+798
+00:52:35,030 --> 00:52:38,445
+代数一节，但我从来没有
+algebra one section but I never
+
+799
+00:52:38,450 --> 00:52:41,345
+在他成为他的时候发展了他
+developed his that was when he was his
+
+800
+00:52:41,350 --> 00:52:47,585
+精神状态正在走下坡路，他
+mental state was going downhill and he
+
+801
+00:52:47,590 --> 00:52:52,905
+搬到普林斯顿，然后就住了
+moved to Princeton and and just stayed
+
+802
+00:52:52,910 --> 00:52:54,855
+然后奇妙的是他
+and then the wonderful thing was that he
+
+803
+00:52:54,860 --> 00:52:57,255
+改善，然后非常悲伤的事情
+improved and then the very sad thing was
+
+804
+00:52:57,260 --> 00:53:01,185
+它在途中发生车祸死亡
+its death in a car accident on the way
+
+805
+00:53:01,190 --> 00:53:04,215
+家从诺贝尔奖
+home from from the Nobel Prize
+
+806
+00:53:04,220 --> 00:53:08,625
+关于一个惊人故事的故事
+so quite a story on an amazing story
+
+807
+00:53:08,630 --> 00:53:14,445
+是的，所以这是特定的优化
+yep okay so that's specific optimization
+
+808
+00:53:14,450 --> 00:53:17,235
+问题线性规划和
+problems linear programming and
+
+809
+00:53:17,240 --> 00:53:21,905
+双人游戏，我希望周五
+two-person games and I hope that Friday
+
+810
+00:53:21,910 --> 00:53:27,345
+这将是教授大片反正
+it will be professor swath anyway the
+
+811
+00:53:27,350 --> 00:53:28,890
+lecture will certainly be about
+
+812
+00:53:27,350 --> 00:53:34,180
+讲座肯定会有关
+
+813
+00:53:28,900 --> 00:53:34,180
+随机梯度下降非常感谢
+stochastic gradient descent good thanks
+

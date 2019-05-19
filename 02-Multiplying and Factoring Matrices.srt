@@ -1,0 +1,3758 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,905
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,910 --> 00:00:24,405
+我们准备好了
+so are we ready to go
+
+10
+00:00:24,410 --> 00:00:30,135
+关于18065的任何问题，所以它将如此
+any questions on 1806 5 so it will be as
+
+11
+00:00:30,140 --> 00:00:33,855
+我之前说过线性的混合物
+I said before a mixture of linear
+
+12
+00:00:33,860 --> 00:00:38,585
+代数和数学问题
+algebra and math questions along with
+
+13
+00:00:38,590 --> 00:00:43,965
+在线使用这些材料，所以我在
+online using the material ok so I'm in
+
+14
+00:00:43,970 --> 00:00:49,035
+这第一个星期或两个审查
+this first week or two reviewing the
+
+15
+00:00:49,040 --> 00:00:54,345
+线性代数的亮点，我
+highlights of linear algebra and I've
+
+16
+00:00:54,350 --> 00:00:59,745
+达到这一点要记得那么好
+reached this point to remember well so
+
+17
+00:00:59,750 --> 00:01:03,555
+我刚才说了两句话
+we I just said two words about
+
+18
+00:01:03,560 --> 00:01:09,495
+使用列乘以矩阵
+multiplying matrices by using column
+
+19
+00:01:09,500 --> 00:01:12,885
+时间行作为一种方式来做到现在
+times row as a as a way to do it and now
+
+20
+00:01:12,890 --> 00:01:17,404
+我想通过五个来说明这一点
+I want to illustrate that by the five
+
+21
+00:01:17,409 --> 00:01:24,435
+矩阵的关键因子分解是可以的
+key factorizations of matrices okay so
+
+22
+00:01:24,440 --> 00:01:27,425
+他们是什么，你认识他们
+what are they and do you recognize them
+
+23
+00:01:27,430 --> 00:01:30,135
+事实上每个人都使用这些字母
+everybody uses those letters in fact
+
+24
+00:01:30,140 --> 00:01:32,895
+这些字母中的一些像卢或
+those some of those letters like lu or
+
+25
+00:01:32,900 --> 00:01:35,955
+QR将是最常用的matlab
+QR would be the most used matlab
+
+26
+00:01:35,960 --> 00:01:40,544
+线性代数中的命令所以是四月路
+commands in linear algebra so a April Lu
+
+27
+00:01:40,549 --> 00:01:43,695
+我可能会说一些我会发展的东西
+I'll maybe say something I'll develop
+
+28
+00:01:43,700 --> 00:01:54,055
+今天，但它是关于消除
+today but it's about elimination
+
+29
+00:01:54,060 --> 00:01:57,845
+求解线性系统，这样总是
+solving linear systems so that's always
+
+30
+00:01:57,850 --> 00:02:00,214
+线性代数课程的开始但是
+the start of a linear algebra course but
+
+31
+00:02:00,219 --> 00:02:03,875
+我会快速到这里，我只是想
+I it will go fast here I just want to
+
+32
+00:02:03,880 --> 00:02:07,114
+告诉你一个不同的方式来到L
+show you a different way to get to L
+
+33
+00:02:07,119 --> 00:02:09,935
+你将三角形时间降低到上部
+times u lower triangular times upper
+
+34
+00:02:09,940 --> 00:02:13,044
+三角形可能你已经看过了
+triangular probably you've seen that
+
+35
+00:02:13,049 --> 00:02:17,255
+那些三角矩阵你知道吗？
+those triangular matrices so do you know
+
+36
+00:02:17,260 --> 00:02:23,855
+QR是关于这些方块的QR是什么
+what QR is what's QR about these squares
+
+37
+00:02:23,860 --> 00:02:27,514
+是分解的重要应用
+is the big application the factorization
+
+38
+00:02:27,519 --> 00:02:29,945
+那么什么样的矩阵才能得到它
+so what kind of a matrix gets that
+
+39
+00:02:29,950 --> 00:02:33,814
+字母Q正交列
+letter Q orthogonal the columns are
+
+40
+00:02:33,819 --> 00:02:37,324
+正交常常是正交的
+orthogonal often orthonormal so
+
+41
+00:02:37,329 --> 00:02:38,794
+正交意味着它们是垂直的
+orthogonal means they're perpendicular
+
+42
+00:02:38,799 --> 00:02:41,615
+彼此和/或正常的手段
+to each other and or so normal means
+
+43
+00:02:41,620 --> 00:02:46,655
+它们是单位向量，所以就是这样
+they're unit vectors so that that is so
+
+44
+00:02:46,660 --> 00:02:52,835
+所以Q经常代表一个矩阵
+so Q often represents a matrix with
+
+45
+00:02:52,840 --> 00:02:57,695
+正交列，所以你我们可以
+orthonormal columns so so you we could
+
+46
+00:02:57,700 --> 00:03:00,984
+如果你想记住，请说克施密特
+say gram-schmidt if you want to remember
+
+47
+00:03:00,989 --> 00:03:08,764
+几个老人谁的
+a couple of old-timers who whose
+
+48
+00:03:08,769 --> 00:03:13,775
+算法产生Q和R怎么样
+algorithm produces Q and R how about
+
+49
+00:03:13,780 --> 00:03:17,074
+这个真的是中心的一个
+this one this is really a central one in
+
+50
+00:03:17,079 --> 00:03:20,035
+数学纯数学应用数学无处不在
+math pure math applied math everywhere
+
+51
+00:03:20,040 --> 00:03:23,914
+应用程序所以S代表对称
+applications so S stands for symmetric
+
+52
+00:03:23,919 --> 00:03:27,215
+所以这是一个特殊的因素分析
+so this is a special factorization for
+
+53
+00:03:27,220 --> 00:03:30,125
+对称矩阵，你可以看到
+symmetric matrices and you can see that
+
+54
+00:03:30,130 --> 00:03:32,854
+它是对称的这个lambda是
+it's symmetric this lambda is the
+
+55
+00:03:32,859 --> 00:03:36,305
+对角特征值矩阵总是lambda
+diagonal eigenvalue matrix always lambda
+
+56
+00:03:36,310 --> 00:03:38,344
+对于4ighen值
+for 4i ghen values
+
+57
+00:03:38,349 --> 00:03:42,535
+q当然就像那个q不同的q
+q is like that q different q of course
+
+58
+00:03:42,540 --> 00:03:46,085
+那你可以找到一些公正的
+that q you can find sort of just
+
+59
+00:03:46,090 --> 00:03:48,785
+从革兰氏施密特直截了当这
+straight forward from gram-schmidt this
+
+60
+00:03:48,790 --> 00:03:52,264
+所涉及的具有特征向量，所以你
+q involved has the eigenvectors so you
+
+61
+00:03:52,269 --> 00:03:54,395
+没有一些没有找到特征向量
+don't find eigenvectors without some
+
+62
+00:03:54,400 --> 00:03:57,624
+额外的工作还可以，这就是特征向量
+extra work okay so that's eigenvectors
+
+63
+00:03:57,629 --> 00:04:04,504
+是啊所以这将是值得推广等等
+yeah so that would be worth expanding so
+
+64
+00:04:04,509 --> 00:04:06,425
+这里的特征向量
+here are the eigenvectors of
+
+65
+00:04:06,430 --> 00:04:11,525
+他们在这里规范化了矩阵sn2
+of the matrix sn2 them normalized here
+
+66
+00:04:11,530 --> 00:04:14,794
+是特征值lambda1到lambdan
+are the eigenvalues lambda 1 to lambda n
+
+67
+00:04:14,799 --> 00:04:18,245
+现在这里是特征向量
+and here are the eigenvectors now
+
+68
+00:04:18,250 --> 00:04:26,555
+换位好吧让我想起了
+transposed okay so remind me of the
+
+69
+00:04:26,560 --> 00:04:30,425
+我猜一个关于两个事实的重大事实
+great fact about two facts I guess one
+
+70
+00:04:30,430 --> 00:04:33,155
+其实关于特征值和一个事实
+fact about the eigenvalues and one fact
+
+71
+00:04:33,160 --> 00:04:35,855
+关于特征向量这就像一个
+about the eigenvectors this is like an
+
+72
+00:04:35,860 --> 00:04:40,384
+线性声明中的重要事实
+important fact in a statement in linear
+
+73
+00:04:40,389 --> 00:04:42,875
+代数什么是我们所知道的
+algebra what is what do we know about
+
+74
+00:04:42,880 --> 00:04:45,065
+特征向量哦，我想我是
+the eigenvectors oh well i guess i'm
+
+75
+00:04:45,070 --> 00:04:46,085
+放弃它
+giving it away
+
+76
+00:04:46,090 --> 00:04:50,435
+特征向量是正交的
+the eigenvectors are orthogonal that's
+
+77
+00:04:50,440 --> 00:04:52,145
+很重要
+very important
+
+78
+00:04:52,150 --> 00:04:54,095
+很好地制作一些矩阵
+make some matrices well they're
+
+79
+00:04:54,100 --> 00:04:56,795
+美丽的矩阵他们是国王
+beautiful matrices they're the kings of
+
+80
+00:04:56,800 --> 00:05:00,335
+线性代数Q是我的王后
+linear algebra Q's are the queens in my
+
+81
+00:05:00,340 --> 00:05:02,645
+看来正交矩阵是
+opinion orthogonal matrices are the
+
+82
+00:05:02,650 --> 00:05:05,825
+对称矩阵的皇后是
+queens of symmetric matrices are the
+
+83
+00:05:05,830 --> 00:05:10,974
+国王所以这些都是正交的
+king so so these are orthonormal
+
+84
+00:05:10,979 --> 00:05:14,465
+特征向量和关键点
+eigenvectors and the key point an
+
+85
+00:05:14,470 --> 00:05:17,255
+这里暗示的重点是
+important point that's implicit here is
+
+86
+00:05:17,260 --> 00:05:19,835
+他们中有n个是完整的
+there are n of them there's a complete
+
+87
+00:05:19,840 --> 00:05:22,955
+设置矩阵可以对角化和
+set the matrix can be diagonalized and
+
+88
+00:05:22,960 --> 00:05:26,305
+那些有关的特别之处
+those well what's special about the
+
+89
+00:05:26,310 --> 00:05:30,034
+特征值其他矩阵可以是Q.
+eigenvalues other matrices could be Q
+
+90
+00:05:30,039 --> 00:05:33,245
+lambdaQ转置但对称
+lambda Q transpose but symmetric
+
+91
+00:05:33,250 --> 00:05:35,914
+矩阵是额外的东西
+matrices are something additional about
+
+92
+00:05:35,919 --> 00:05:39,634
+拉姆达所以他们都真正使本征
+lambda so they're all real so eigen
+
+93
+00:05:39,639 --> 00:05:43,344
+值是真实的，而特征向量是
+values are real and eigen vectors are
+
+94
+00:05:43,349 --> 00:05:47,045
+正交可以选择正交
+orthonormal can be chosen orthonormal
+
+95
+00:05:47,050 --> 00:05:49,654
+可以选择我只需说好了
+can be chosen I just have to say okay
+
+96
+00:05:49,659 --> 00:05:52,985
+好的好哦现在也许我会用
+good good good oh now maybe I'll use
+
+97
+00:05:52,990 --> 00:05:55,565
+作为矩阵的一个例子
+that as an example of matrix
+
+98
+00:05:55,570 --> 00:05:58,325
+乘法，所以让我做
+multiplication so let me just do that
+
+99
+00:05:58,330 --> 00:06:01,175
+这里简单的矩阵乘法但是
+here simple matrix multiplications but
+
+100
+00:06:01,180 --> 00:06:06,955
+它使QlambdaQ成为重点
+it makes the point so Q lambda Q
+
+101
+00:06:06,960 --> 00:06:13,025
+换位好吧我的观点是什么
+transpose okay well what was my point
+
+102
+00:06:13,030 --> 00:06:17,914
+关于矩阵乘法让我成为
+about matrix multiplication let me be
+
+103
+00:06:17,919 --> 00:06:20,374
+这真的涉及两个矩阵我
+it really involved two matrices here I
+
+104
+00:06:20,379 --> 00:06:22,115
+不幸的是有三个，所以我会
+unfortunately have three so I'm gonna
+
+105
+00:06:22,120 --> 00:06:24,724
+必须用其中一个来挤压lambda
+have to squeeze lambda in with one of
+
+106
+00:06:24,729 --> 00:06:27,605
+这些立方体也很好地看作两个
+the cubes too to see it nicely as two
+
+107
+00:06:27,610 --> 00:06:31,805
+矩阵，所以他们只是那样做那里
+matrices so they just do that yeah there
+
+108
+00:06:31,810 --> 00:06:34,895
+现在我已经制作了两个很简单的矩阵
+now I've made two matrices that was easy
+
+109
+00:06:34,900 --> 00:06:39,485
+好吧现在是什么规则和在
+okay now what's the rule and in the
+
+110
+00:06:39,490 --> 00:06:42,274
+首先注意到这是一个，这是B
+first notes this was a and this was B
+
+111
+00:06:42,279 --> 00:06:45,214
+当你乘以两个矩阵时
+and when you multiply two matrices the
+
+112
+00:06:45,219 --> 00:06:52,045
+规则是这是Qlambda的列
+rule is this is columns of Q lambda
+
+113
+00:06:52,050 --> 00:06:59,944
+时间行Q转置我是
+times rows of Q transpose I'm
+
+114
+00:06:59,949 --> 00:07:03,034
+按行乘以列，所以它是
+multiplying columns by rows and so it's
+
+115
+00:07:03,039 --> 00:07:06,904
+列向量乘以行向量和
+a column vector times a row vector and
+
+116
+00:07:06,909 --> 00:07:11,374
+这给了我们一个矩阵，所以每个都是
+that gives us a matrix so each and it's
+
+117
+00:07:11,379 --> 00:07:13,985
+这是一个特殊的矩阵
+a special matrix what so this is a
+
+118
+00:07:13,990 --> 00:07:17,305
+列这是一行，当我乘以
+column this is a row and when I multiply
+
+119
+00:07:17,310 --> 00:07:21,244
+n乘以1乘以n得到N乘n
+n by 1 times 1 by n I get an N by n
+
+120
+00:07:21,249 --> 00:07:24,694
+矩阵，这是非常特殊和什么
+matrix and it's pretty special and what
+
+121
+00:07:24,699 --> 00:07:27,605
+是我的一个特殊事实
+is the special fact about I'm sort of
+
+122
+00:07:27,610 --> 00:07:29,134
+从上次回忆起
+recalling from last time
+
+123
+00:07:29,139 --> 00:07:31,534
+列的时间有什么特别之处
+what's special about a column times a
+
+124
+00:07:31,539 --> 00:07:35,765
+排它的等级是特殊的，它的等级是1
+row it's rank is special it's rank is 1
+
+125
+00:07:35,770 --> 00:07:40,205
+它的所有列空间都是唯一的
+it all its column space well the only
+
+126
+00:07:40,210 --> 00:07:43,925
+列周围是这一列所有列
+column around is this one so all columns
+
+127
+00:07:43,930 --> 00:07:47,735
+所有行都是这个家伙的倍数
+are multiples of this guy all rows are
+
+128
+00:07:47,740 --> 00:07:51,245
+我们可以看到这个家伙的倍数
+multiples of this guy as we could see
+
+129
+00:07:51,250 --> 00:07:53,194
+从一个例子，他们只是做一个
+from an example so they just do an
+
+130
+00:07:53,199 --> 00:07:58,834
+示例12次34随机取
+example 1 2 times 3 4 to take a random
+
+131
+00:07:58,839 --> 00:08:03,874
+例如使得将给予我们3468
+example so that would give us 3 4 6 8
+
+132
+00:08:03,879 --> 00:08:08,524
+我确信这些专栏是
+I'm sure enough the columns are
+
+133
+00:08:08,529 --> 00:08:11,884
+1的倍数是行的倍数
+multiples of 1 2 the rows are multiples
+
+134
+00:08:11,889 --> 00:08:17,374
+34和等级是1好等所以那些
+of 3 4 and the rank is 1 okay so those
+
+135
+00:08:17,379 --> 00:08:19,894
+是我想要的构建块
+are the building blocks now I want to
+
+136
+00:08:19,899 --> 00:08:25,774
+建立一些东西，所以我们去，所以这是
+build something so here we go so this is
+
+137
+00:08:25,779 --> 00:08:28,545
+一些等级的总和
+a sum of rank some
+
+138
+00:08:28,550 --> 00:08:37,095
+秩1的总和列时间排，所以我
+of Rank 1 sum of column times row so I
+
+139
+00:08:37,100 --> 00:08:40,545
+第1列第1行是我的
+take column 1 times Row 1 that's my
+
+140
+00:08:40,550 --> 00:08:43,245
+总和中的第一件事就是第1列
+first thing in the sum so column 1 of
+
+141
+00:08:43,250 --> 00:08:45,465
+这让你看到我只好潜行
+that so you see I had to sneak the
+
+142
+00:08:45,470 --> 00:08:50,055
+lambda结束只有两个因素
+lambda end to have just just two factors
+
+143
+00:08:50,060 --> 00:08:52,995
+那么Qlambda的第1列是什么哦
+so what's column 1 of Q lambda oh that's
+
+144
+00:08:53,000 --> 00:08:53,985
+一个好问题
+a good question
+
+145
+00:08:53,990 --> 00:08:59,385
+所以Q的第1列是第1个Q1
+so column 1 of Q is Q 1 the first
+
+146
+00:08:59,390 --> 00:09:02,985
+特征向量，但现在我正在乘以
+eigenvector but now I I'm multiplying by
+
+147
+00:09:02,990 --> 00:09:06,495
+这个对角线矩阵你看到你的
+this diagonal matrix do you see in your
+
+148
+00:09:06,500 --> 00:09:11,555
+记住Qlambda的第一列是什么
+mind what's the first column of Q lambda
+
+149
+00:09:11,560 --> 00:09:17,675
+想想那一秒就这样吧
+just think about that a second so here's
+
+150
+00:09:17,680 --> 00:09:21,285
+我们可以窃取任何小角落
+we can steal any little corner for for
+
+151
+00:09:21,290 --> 00:09:26,235
+对于一个矩阵，所以这里是Q1和
+for a matrix ok so here's Q 1 and the
+
+152
+00:09:26,240 --> 00:09:28,455
+其余的列然后在这里
+rest of the columns and then here's
+
+153
+00:09:28,460 --> 00:09:32,745
+lambda1和那个Qlambda所以我是
+lambda 1 and that's Q lambda so I'm
+
+154
+00:09:32,750 --> 00:09:35,235
+将这些放在一起，我问
+putting those together and I'm asking
+
+155
+00:09:35,240 --> 00:09:38,235
+什么是答案的第一列
+what's the first column of the answer
+
+156
+00:09:38,240 --> 00:09:42,035
+你看它是如何工作
+and you see how that works
+
+157
+00:09:42,040 --> 00:09:47,775
+它是Q1lambda1恰好是lambda1
+it's Q 1 lambda 1 exactly that lambda 1
+
+158
+00:09:47,780 --> 00:09:50,655
+将Q1乘以其他lambda
+will multiply Q 1 these other lambdas
+
+159
+00:09:50,660 --> 00:09:52,635
+乘以后面的列，所以第一个
+multiplied later columns so the first
+
+160
+00:09:52,640 --> 00:09:55,605
+列是λ-1次，Q1右所以
+column is lambda 1 times Q 1 right so
+
+161
+00:09:55,610 --> 00:09:59,985
+那是第一个lambda1Q1的人
+that's it's the first guy lambda 1 Q 1
+
+162
+00:09:59,990 --> 00:10:04,275
+然后第一行将是Q.
+and then the first row of this will be Q
+
+163
+00:10:04,280 --> 00:10:08,865
+1转置那是我们的第一个人
+1 transpose that's the first guy in our
+
+164
+00:10:08,870 --> 00:10:12,885
+N物的总和，让我把下一个
+sum of N Things and let me put the next
+
+165
+00:10:12,890 --> 00:10:18,125
+一个在最后1拉姆达2Q2Q2
+one in the last 1 lambda 2 Q 2 Q 2
+
+166
+00:10:18,130 --> 00:10:28,855
+转置和lambdanqnQN转置
+transpose and lambda n qn QN transpose
+
+167
+00:10:28,860 --> 00:10:33,835
+这真的是一种很好的写作方式
+that's really a nice way to write to
+
+168
+00:10:33,840 --> 00:10:38,185
+分解产品QlambdaQ.
+break up the product Q lambda Q
+
+169
+00:10:38,190 --> 00:10:40,585
+转置这称为谱
+transpose this is called the spectral
+
+170
+00:10:40,590 --> 00:10:43,365
+定理，这是对称的s
+theorem so that's the symmetric that's s
+
+171
+00:10:43,370 --> 00:10:48,295
+那就是那样的
+that's s there is that so that's the
+
+172
+00:10:48,300 --> 00:10:52,485
+我们已经分成了一个等级
+we've broken up s into rank one pieces
+
+173
+00:10:52,490 --> 00:10:57,205
+这就像一个不变的主题和
+that's that's like a constant theme and
+
+174
+00:10:57,210 --> 00:11:00,325
+这些写一件很特别
+these write one pieces are quite special
+
+175
+00:11:00,330 --> 00:11:03,565
+因为它们是对称的Q1Q1
+because they're symmetric Q 1 Q 1
+
+176
+00:11:03,570 --> 00:11:08,155
+转置将是对称的哦哦
+transpose will be symmetric and oh so
+
+177
+00:11:08,160 --> 00:11:11,395
+我们可以这么说吧
+can we so so let's just
+
+178
+00:11:11,400 --> 00:11:13,165
+我遵循乘法规则
+I follow the rule for multiplying
+
+179
+00:11:13,170 --> 00:11:15,595
+矩阵，但也许我可以检查
+matrices but maybe I could just check
+
+180
+00:11:15,600 --> 00:11:19,825
+这就是它来到了正确的事情
+that it's the right thing that it came
+
+181
+00:11:19,830 --> 00:11:23,605
+对了，所以我的意思是通过检查
+out right so what do I mean by checking
+
+182
+00:11:23,610 --> 00:11:27,865
+我想我只会检查一下Q次
+I guess I'll just check about s times Q
+
+183
+00:11:27,870 --> 00:11:35,305
+1这样看，如果这件事情倍
+1 so look at if this thing times the
+
+184
+00:11:35,310 --> 00:11:38,055
+第一个特征向量，我得到了什么
+first eigenvector and what do I get
+
+185
+00:11:38,060 --> 00:11:43,285
+好的，所以你会喜欢这个，所以我有
+ok so you'll like this so there's I've
+
+186
+00:11:43,290 --> 00:11:47,215
+分裂s转换的等级1片之和
+split up s into a sum of Rank 1 pieces
+
+187
+00:11:47,220 --> 00:11:49,675
+分裂是你看到了一切
+and that splitting is you see it all
+
+188
+00:11:49,680 --> 00:11:54,415
+它真的告诉你什么
+over it's really showing you what the
+
+189
+00:11:54,420 --> 00:11:56,815
+对称矩阵的碎片是和
+pieces of the symmetric matrix are and
+
+190
+00:11:56,820 --> 00:11:59,185
+现在我要检查那是不是
+now I'm just gonna check that that's a
+
+191
+00:11:59,190 --> 00:12:02,875
+正确的s公式正确，所以我会
+correct correct formula for s so I'll
+
+192
+00:12:02,880 --> 00:12:05,425
+将它乘以Q1，我希望得到
+multiply it by Q 1 and I'm hoping to get
+
+193
+00:12:05,430 --> 00:12:07,585
+正确的事，我实际上是什么
+the right thing and what do I actually
+
+194
+00:12:07,590 --> 00:12:10,875
+如果我成倍增加这整个业务
+get if I multiply this whole business
+
+195
+00:12:10,880 --> 00:12:19,375
+次Q1我得到lambda1Q1Q1
+times Q 1 I get lambda 1 Q 1 Q 1
+
+196
+00:12:19,380 --> 00:12:22,015
+转移那是第一个人的时代
+transpose that's the first guy times by
+
+197
+00:12:22,020 --> 00:12:28,195
+Q1加右我将它乘以Q.
+Q 1 plus right I'm multiplying this by Q
+
+198
+00:12:28,200 --> 00:12:30,675
+1，这第一个词给了我那个和
+1 and this first term gave me that and
+
+199
+00:12:30,680 --> 00:12:33,415
+什么是下学期给我放放
+what does the next term give me put put
+
+200
+00:12:33,420 --> 00:12:37,045
+我出于我的痛苦，这就是我
+me out of my misery here it's uh I'm
+
+201
+00:12:37,050 --> 00:12:39,355
+寻找这个简化的东西
+looking for this thing to simplify like
+
+202
+00:12:39,360 --> 00:12:42,265
+疯了，那么第二个任期是什么时候
+mad okay so what's the second term when
+
+203
+00:12:42,270 --> 00:12:42,655
+我
+I'm
+
+204
+00:12:42,660 --> 00:12:49,074
+通过q1供给这个家伙我得到什么零
+supply this guy by q1 what do I get zero
+
+205
+00:12:49,079 --> 00:12:51,685
+这是正确的，这是我们想要的和
+that's right that's what we want and
+
+206
+00:12:51,690 --> 00:12:57,024
+当我把最后一个人乘以q1时，我得到了
+when I multiply the last guy by q1 I get
+
+207
+00:12:57,029 --> 00:13:01,314
+因为Q是正交所以这个
+0 because the Q's are orthogonal so this
+
+208
+00:13:01,319 --> 00:13:02,184
+就是我得到的
+is all I get
+
+209
+00:13:02,189 --> 00:13:04,764
+然后我不需要这个加号
+and then so I don't need this plus
+
+210
+00:13:04,769 --> 00:13:08,514
+这就是它，然后我能做些什么
+anymore that's it and then what can I do
+
+211
+00:13:08,519 --> 00:13:13,735
+以改进或者是一点点
+to improve that or is that a little
+
+212
+00:13:13,740 --> 00:13:16,644
+有点重复的公式
+somewhat repetitive formula for the
+
+213
+00:13:16,649 --> 00:13:19,675
+回答我最后想做什么
+answer what do I want to do finally I
+
+214
+00:13:19,680 --> 00:13:22,095
+想要记住Q是
+want to remember that the Q's are
+
+215
+00:13:22,100 --> 00:13:25,434
+归一化他们的单位向量那么
+normalized their unit vectors so what
+
+216
+00:13:25,439 --> 00:13:27,535
+确实，在这里告诉我一个主
+does that tell me here to one principal
+
+217
+00:13:27,540 --> 00:13:33,615
+q1转置时间Q1这就是什么
+q1 transpose times Q 1 this is just what
+
+218
+00:13:33,620 --> 00:13:37,704
+它就是这样，这就是规范化意味着什么
+it sits so that's what normalized means
+
+219
+00:13:37,709 --> 00:13:40,605
+长度的平方是长度
+that the length squared is the length
+
+220
+00:13:40,610 --> 00:13:44,245
+矢量平方的长度和
+the length of the vector squared and
+
+221
+00:13:44,250 --> 00:13:48,954
+它是1所以我可以取消那个词而且我是
+it's 1 so I can cancel that term and I'm
+
+222
+00:13:48,959 --> 00:13:50,814
+得到正确的答案，这就是我
+getting the right answer that's all I
+
+223
+00:13:50,819 --> 00:13:54,235
+所有这一切都与我有关
+that's all this was about I was just
+
+224
+00:13:54,240 --> 00:13:58,375
+检查并想看看它会如何
+checking and wanted to see how it would
+
+225
+00:13:58,380 --> 00:14:02,384
+掉下来和它属于正确的是
+fall out and it falls right out that
+
+226
+00:14:02,389 --> 00:14:07,165
+这个公式是正确的矩阵
+this formula is the correct matrix s
+
+227
+00:14:07,170 --> 00:14:09,555
+因为它有正确的特征向量
+because it's got the right eigenvectors
+
+228
+00:14:09,560 --> 00:14:12,745
+qs，它有正确的特征值
+qs and it's got the right eigenvalues
+
+229
+00:14:12,750 --> 00:14:14,995
+lambda所以它必须是正确的
+lambda so it's got to be the right
+
+230
+00:14:15,000 --> 00:14:21,434
+矩阵是的，这就像一个
+matrix yes is that ok that's a like a
+
+231
+00:14:21,439 --> 00:14:28,944
+第一个例子看看这个如何分裂
+first example to see how this splitting
+
+232
+00:14:28,949 --> 00:14:32,965
+进入排名，让你回到你的身上
+into rank ones gives you back what you
+
+233
+00:14:32,970 --> 00:14:36,324
+期待足够的它给你
+expect easily enough it gives you the
+
+234
+00:14:36,329 --> 00:14:39,024
+信息您预计好了，这就是
+information you expect okay so that's
+
+235
+00:14:39,029 --> 00:14:44,124
+对称特征值图片
+the symmetric eigen value picture for
+
+236
+00:14:44,129 --> 00:14:46,405
+对称矩阵，我们会看到它
+symmetric matrices and we'll see it
+
+237
+00:14:46,410 --> 00:14:51,684
+再次，这五个都很好
+again it's it's well all five of these
+
+238
+00:14:51,689 --> 00:14:54,894
+很重要我不知道是否重要
+are big are important I don't know if
+
+239
+00:14:54,899 --> 00:14:56,315
+你知道这个
+you know this
+
+240
+00:14:56,320 --> 00:15:00,955
+但它将成为一个基础
+but it's going to be a foundational
+
+241
+00:15:00,960 --> 00:15:03,455
+分解这门课程和
+factorization for this course and for
+
+242
+00:15:03,460 --> 00:15:05,855
+所有的数据科学你知道吗？
+all of data science do you know it's
+
+243
+00:15:05,860 --> 00:15:08,945
+如此命名首先是什么意思
+named so what does it mean first of all
+
+244
+00:15:08,950 --> 00:15:12,065
+只是对此进行评论然后
+just just a comment on this and then
+
+245
+00:15:12,070 --> 00:15:15,455
+我们会把它保存几个星期
+we'll save it for a couple of weeks so
+
+246
+00:15:15,460 --> 00:15:18,305
+这个U实际上是一个正交矩阵
+this U is actually an orthogonal matrix
+
+247
+00:15:18,310 --> 00:15:21,965
+V也是如此，它有两个
+and so is V so it has it has two
+
+248
+00:15:21,970 --> 00:15:25,385
+正交矩阵这就是人们的原因
+orthogonal matrices so that's why people
+
+249
+00:15:25,390 --> 00:15:28,985
+称他们为U和V而不是q1和
+called them U and V rather than q1 and
+
+250
+00:15:28,990 --> 00:15:32,435
+q2就像太多了
+q2 which was like too much just get
+
+251
+00:15:32,440 --> 00:15:35,825
+下标如此正交对角线
+subscripts so orthogonal times diagonal
+
+252
+00:15:35,830 --> 00:15:40,315
+时间正交让我说正交
+times orthogonal let me say orthogonal
+
+253
+00:15:40,320 --> 00:15:48,085
+对角线或声波图和1806将作为
+diagonal or sonogram and 1806 would as
+
+254
+00:15:48,090 --> 00:15:52,445
+现在达到这个主题因为它是
+of now reach this topic because it's
+
+255
+00:15:52,450 --> 00:15:56,455
+跳起来的重要性，它被称为
+jumped up in importance and it's called
+
+256
+00:15:56,460 --> 00:16:00,995
+奇异值分解以及那些
+singular value decomposition well those
+
+257
+00:16:01,000 --> 00:16:03,625
+很长的单词或每个人都称它为
+are long words or everybody calls it the
+
+258
+00:16:03,630 --> 00:16:06,965
+SVD奇异值分解
+SVD the singular value decomposition
+
+259
+00:16:06,970 --> 00:16:13,205
+重点是它的工作原理
+the point is it's it's the it works for
+
+260
+00:16:13,210 --> 00:16:16,385
+每个矩阵矩形矩阵
+every matrix rectangular matrices
+
+261
+00:16:16,390 --> 00:16:18,905
+它没有足够的问题
+there's no issue of does it have enough
+
+262
+00:16:18,910 --> 00:16:22,855
+特征向量与否这是一个问题
+eigenvectors or not that's an issue here
+
+263
+00:16:22,860 --> 00:16:26,015
+这不是每个矩阵都是一个问题
+well it's an issue here not every matrix
+
+264
+00:16:26,020 --> 00:16:28,985
+有足够的特征向量来做到这一点
+has got enough eigenvectors to make that
+
+265
+00:16:28,990 --> 00:16:34,765
+为每个工作的矩阵工作，因为
+work every matrix that one works because
+
+266
+00:16:34,770 --> 00:16:37,985
+而不是一组特征向量
+instead of one set of eigenvectors it's
+
+267
+00:16:37,990 --> 00:16:43,075
+得到两个矩阵两个不同的集合
+got two matrices two different sets of
+
+268
+00:16:43,080 --> 00:16:46,525
+奇异向量哦，我们会我们会看到，
+singular vectors oh we'll we'll see that
+
+269
+00:16:46,530 --> 00:16:51,245
+这一点很重要没关系
+that's that's important okay
+
+270
+00:16:51,250 --> 00:16:54,455
+所以这真的很快
+so that's a that's really a quick
+
+271
+00:16:54,460 --> 00:16:58,475
+基本因素分析的概述
+overview of fundamental factorizations
+
+272
+00:16:58,480 --> 00:17:02,645
+而且我想再说一句话
+and I'd like to say just another word
+
+273
+00:17:02,650 --> 00:17:05,074
+关于消除一个平等的然后
+about elimination a equal Lu and then
+
+274
+00:17:05,079 --> 00:17:08,834
+我们会离开它息事宁人
+we'll leave it leave it alone
+
+275
+00:17:08,839 --> 00:17:13,264
+所以消除是的，你还记得吗？
+so elimination yeah do you remember that
+
+276
+00:17:13,269 --> 00:17:19,544
+首先是线性的开始
+that first the beginning of linear
+
+277
+00:17:19,549 --> 00:17:21,824
+当你解决ax等于B时的代数
+algebra when you're solving ax equal B
+
+278
+00:17:21,829 --> 00:17:24,225
+你做这些行操作
+you do these row operations
+
+279
+00:17:24,230 --> 00:17:26,564
+我可以说我想说的就是全部
+can I just what I want to say is all
+
+280
+00:17:26,569 --> 00:17:29,894
+那些你操作的行操作
+those row operations that you that you
+
+281
+00:17:29,899 --> 00:17:34,095
+L次U完美表达了
+do are perfectly expressed by L times U
+
+282
+00:17:34,100 --> 00:17:39,825
+所以这是1806年的一个关键点
+and so that that's a key point in 1806
+
+283
+00:17:39,830 --> 00:17:41,705
+但我有不同的方式来看待它
+but I have a different way to look at it
+
+284
+00:17:41,710 --> 00:17:44,114
+这就是我想告诉你的
+so that's what I wanted to show you I
+
+285
+00:17:44,119 --> 00:17:48,585
+有一个我想告诉你一个等级的总和
+have a I want to show you a sum of rank
+
+286
+00:17:48,590 --> 00:17:51,975
+它适合的是一个行时间列
+one's a row times column it fits in
+
+287
+00:17:51,980 --> 00:17:57,435
+今天所以我只是想知道为什么
+today so so I just like to see why does
+
+288
+00:17:57,440 --> 00:18:03,014
+矩阵可逆这是一个正方形
+a matrix invertible this is a square
+
+289
+00:18:03,019 --> 00:18:08,414
+矩阵现在和可逆的因素
+matrix now and invertible and it factors
+
+290
+00:18:08,419 --> 00:18:11,355
+如果一切顺利的消除和
+if all goes well with elimination and
+
+291
+00:18:11,360 --> 00:18:12,825
+枢轴非零
+the pivots are nonzero
+
+292
+00:18:12,830 --> 00:18:16,065
+它会影响较低的三角形时间
+it factors into lower triangular times
+
+293
+00:18:16,070 --> 00:18:18,855
+上三角，这是关键的一步
+upper triangular so that's a key step
+
+294
+00:18:18,860 --> 00:18:21,494
+这就是MATLAB会做的事情
+that that is that MATLAB would do with
+
+295
+00:18:21,499 --> 00:18:24,585
+lvo事件会产生这两个
+lvo event would produce those two
+
+296
+00:18:24,590 --> 00:18:31,085
+现在因素我想在一个
+factors now I want to do them in a
+
+297
+00:18:31,090 --> 00:18:35,085
+列时间排的方式我只是
+column times row way which I just
+
+298
+00:18:35,090 --> 00:18:38,894
+意识到很晚才有一个整洁的方式
+realized late was there was a neat way
+
+299
+00:18:38,899 --> 00:18:44,744
+要做到这一点，我可以采取矩阵，做
+to do it so can I take a matrix and do
+
+300
+00:18:44,749 --> 00:18:49,095
+消除我的矩阵有多大
+elimination how big a matrix shall I
+
+301
+00:18:49,100 --> 00:18:55,455
+拿两个你说你三个
+take two by two you say you three by
+
+302
+00:18:55,460 --> 00:18:57,554
+三个人完全不相信
+three somebody not convinced totally by
+
+303
+00:18:57,559 --> 00:18:58,335
+两两
+two by two
+
+304
+00:18:58,340 --> 00:19:00,855
+让我两个一个地做，然后如果你
+let me do it two by two and then if you
+
+305
+00:19:00,860 --> 00:19:02,595
+想要，如果你真的想要一个三乘三
+want if you really want a three by three
+
+306
+00:19:02,600 --> 00:19:06,284
+黄色，我会这样做，这是两个两个
+yellow I'll do it okay here's two by two
+
+307
+00:19:06,289 --> 00:19:17,205
+两个四个三七怎么样就可以了
+two four three seven how's that okay so
+
+308
+00:19:17,210 --> 00:19:20,205
+什么是耶，所以让我们记住什么
+what is yeah so let's remember what
+
+309
+00:19:20,210 --> 00:19:22,975
+消除确实
+elimination does
+
+310
+00:19:22,980 --> 00:19:29,644
+它从中减去该行的倍数
+it subtracts a multiple of that row from
+
+311
+00:19:29,649 --> 00:19:34,624
+那一个得到两到三个和
+that one to get two to three and the
+
+312
+00:19:34,629 --> 00:19:36,634
+多是二，因此挖空
+multiple is two so it knocks out the
+
+313
+00:19:36,639 --> 00:19:40,054
+四个两三或六个所以它留下1
+four two threes or six so it leaves a 1
+
+314
+00:19:40,059 --> 00:19:43,654
+我们是哦，是的，谢谢你允许我
+and we're oh yeah thanks for allowing me
+
+315
+00:19:43,659 --> 00:19:44,794
+做两个两个
+to do two by two
+
+316
+00:19:44,799 --> 00:19:46,804
+我已经完成了，我已经达到了
+I've already done it now I've reached
+
+317
+00:19:46,809 --> 00:19:51,185
+你是这样的，这是你的上层
+you so here's a and here's you the upper
+
+318
+00:19:51,190 --> 00:19:53,855
+三角形的家伙与枢轴上
+triangular guy with the pivots on the
+
+319
+00:19:53,860 --> 00:20:00,355
+对角好，然后问题是
+diagonal good and then the question is
+
+320
+00:20:00,360 --> 00:20:05,185
+用矩阵语言表达那一步
+express that step in matrix language and
+
+321
+00:20:05,190 --> 00:20:09,725
+正确答案是L次你所以
+the right answer is L times u so the
+
+322
+00:20:09,730 --> 00:20:14,095
+正确的答案是，这是一个
+right answer is that this that this a is
+
+323
+00:20:14,100 --> 00:20:19,085
+所以我会删掉那封U是L的字母
+so I'll just erase that letter U is L
+
+324
+00:20:19,090 --> 00:20:24,154
+你是什​​么LL所以LL更低
+times u so what is L L is the lower
+
+325
+00:20:24,159 --> 00:20:27,935
+三角形的家伙，它有它
+triangular guy and it has there the
+
+326
+00:20:27,940 --> 00:20:32,044
+你在这里使用过的数字是什么
+number that you used here and what was
+
+327
+00:20:32,049 --> 00:20:35,435
+我减去了那一行中的两行
+that I subtracted two of that row from
+
+328
+00:20:35,440 --> 00:20:45,965
+这让我想有这样就会
+this so I wanted to there so that would
+
+329
+00:20:45,970 --> 00:20:47,855
+我会称之为乘数我
+be I would call that a multiplier I
+
+330
+00:20:47,860 --> 00:20:51,935
+乘行一个由两个中减去
+multiplied Row one by two subtracted to
+
+331
+00:20:51,940 --> 00:20:54,654
+得到零和两个两个
+get that zero and for a two by two
+
+332
+00:20:54,659 --> 00:20:58,475
+例子我现在完成好了我想要的
+example I was finished okay now I want
+
+333
+00:20:58,480 --> 00:21:02,164
+看到这所以有L次ü什么
+to see this so there's L times U what
+
+334
+00:21:02,169 --> 00:21:06,845
+发生了我想看看L次
+happened I would like to see how L times
+
+335
+00:21:06,850 --> 00:21:11,075
+你从这一行出来一列时间
+u comes out of this row a column times
+
+336
+00:21:11,080 --> 00:21:16,254
+因此让我开始让我再想一想
+row so let me start let me think again
+
+337
+00:21:16,259 --> 00:21:21,605
+真正的重点是什么呢
+what so the really the point of
+
+338
+00:21:21,610 --> 00:21:24,664
+消除我们为什么这样做的原因
+elimination what was why did we do this
+
+339
+00:21:24,669 --> 00:21:25,745
+首先
+in the first place
+
+340
+00:21:25,750 --> 00:21:28,534
+因为在这里我们有两个耦合
+because here we had two coupled
+
+341
+00:21:28,539 --> 00:21:31,445
+方程式他们是我们的一对夫妇
+equations they were a couple together we
+
+342
+00:21:31,450 --> 00:21:34,414
+无法立即解决这一步
+couldn't solve them instantly that step
+
+343
+00:21:34,419 --> 00:21:35,795
+消除
+of elimination
+
+344
+00:21:35,800 --> 00:21:39,245
+在这个角落给我两个下来
+juice me two down here in this corner
+
+345
+00:21:39,250 --> 00:21:43,205
+一个方程式，我已经消除了
+one equation that I've eliminated the
+
+346
+00:21:43,210 --> 00:21:47,075
+第一个未知的X来自第二个等式
+first unknown X from the second equation
+
+347
+00:21:47,080 --> 00:21:50,255
+所以第二个等式是零X加1
+so the second equation is zero X plus 1
+
+348
+00:21:50,260 --> 00:21:53,255
+y等于右手边，我解决了
+y equal right hand side and I solve it
+
+349
+00:21:53,260 --> 00:21:55,355
+马上好的
+immediately okay
+
+350
+00:21:55,360 --> 00:22:00,665
+那我是怎么一个接一个的呢
+so how did I get to that one by one
+
+351
+00:22:00,670 --> 00:22:05,065
+这些家伙的问题删除得很好
+problem with these guys removed well
+
+352
+00:22:05,070 --> 00:22:10,975
+是的，我可以在这里写下我的
+yeah just right can I write here the my
+
+353
+00:22:10,980 --> 00:22:13,805
+通过并行方式把它在两份
+parallel way to think of it in it two by
+
+354
+00:22:13,810 --> 00:22:16,475
+两个很小我承认没关系
+two is pretty small I admit okay
+
+355
+00:22:16,480 --> 00:22:21,295
+所以我开始用两个三四七我
+so I start with two three four seven I
+
+356
+00:22:21,300 --> 00:22:25,325
+我希望将它分成两部分
+want to split it in two I want to get
+
+357
+00:22:25,330 --> 00:22:29,995
+第一行和第一列
+the first row and column in one piece
+
+358
+00:22:30,000 --> 00:22:34,925
+东西去了另一块
+something goes there and the other piece
+
+359
+00:22:34,930 --> 00:22:39,535
+东西有好
+is something there okay
+
+360
+00:22:39,540 --> 00:22:42,815
+这就是淘汰做了什么
+that's what elimination has done it's
+
+361
+00:22:42,820 --> 00:22:45,815
+采取原始矩阵分裂
+taken the original matrix its splitted
+
+362
+00:22:45,820 --> 00:22:54,695
+这些都是排名第一，所以我们只是
+these are both ranked one so let's just
+
+363
+00:22:54,700 --> 00:22:57,095
+首先你可以告诉我发生了什么
+first of all you could tell me what goes
+
+364
+00:22:57,100 --> 00:23:00,785
+在第一级的那个空白区域
+in that blank space in the first rank
+
+365
+00:23:00,790 --> 00:23:03,665
+一个矩阵所以我可以这样说
+one matrix so what can I say this in
+
+366
+00:23:03,670 --> 00:23:07,045
+消除第一阶段的话
+words the first stage of elimination
+
+367
+00:23:07,050 --> 00:23:13,205
+脱离一个是一个很大的矩阵
+pulls off from a so a is some big matrix
+
+368
+00:23:13,210 --> 00:23:17,465
+从它考虑到它拉出来
+it pulls off from a it takes account of
+
+369
+00:23:17,470 --> 00:23:22,625
+第一列和第一列就这样吧
+the first column and row so it it it
+
+370
+00:23:22,630 --> 00:23:32,125
+在这里写一个我们作为第一列
+writes a as here we go as a first column
+
+371
+00:23:32,130 --> 00:23:39,245
+说第1列第1行加上简单
+say column 1 Row 1 plus plus the easy
+
+372
+00:23:39,250 --> 00:23:44,075
+部分简单部分将是一个矩阵
+part the easy part will be a matrix with
+
+373
+00:23:44,080 --> 00:23:47,525
+那里全零，哦，这里和那里零
+all zeros there Oh zeroes there and here
+
+374
+00:23:47,530 --> 00:23:48,985
+我有一个2
+I have a 2
+
+375
+00:23:48,990 --> 00:23:55,105
+我可以称之为-这是我现在的方式
+can I call it a - this is my way now to
+
+376
+00:23:55,110 --> 00:23:57,835
+想想消除真的是什么
+think about what elimination is really
+
+377
+00:23:57,840 --> 00:24:00,024
+这样做是从N到n开始的
+doing it's starting with an N by n
+
+378
+00:24:00,029 --> 00:24:02,965
+矩阵它排名第一
+matrix it's pulling off a rank one
+
+379
+00:24:02,970 --> 00:24:06,745
+获得该列的矩阵
+matrix which has gets that column and
+
+380
+00:24:06,750 --> 00:24:10,284
+那行是正确的，它得到了它
+that row correct and it gets whatever it
+
+381
+00:24:10,289 --> 00:24:13,255
+在这里，然后剩下的是什么
+has in here and then the rest of what's
+
+382
+00:24:13,260 --> 00:24:17,575
+在那里-你看到我们已经完成了
+in there is a - you see that we've done
+
+383
+00:24:17,580 --> 00:24:21,414
+这里第一步得到了第一步
+that here the first step got the first
+
+384
+00:24:21,419 --> 00:24:23,935
+行和列是正确的，如果它是排名
+row and column correct and if it's rank
+
+385
+00:24:23,940 --> 00:24:28,935
+一个数字是六六和六
+one what number goes there six six and
+
+386
+00:24:28,940 --> 00:24:32,154
+那么剩下这就是我们
+then this is the rest this is what we
+
+387
+00:24:32,159 --> 00:24:36,115
+有一个小尺寸的工作和它
+have one size smaller to work on and it
+
+388
+00:24:36,120 --> 00:24:39,085
+看起来已经是七六了
+looks like it was seven six has been
+
+389
+00:24:39,090 --> 00:24:49,225
+使用它是一个我真正想要的
+used so it's a one that's really I want
+
+390
+00:24:49,230 --> 00:24:52,465
+认为这秩一个矩阵作为的
+to think of this rank one matrix as the
+
+391
+00:24:52,470 --> 00:24:56,635
+的第一行L次的第一列
+first column of L times the first row of
+
+392
+00:24:56,640 --> 00:25:01,585
+你和那个家伙是第二列
+U and then this guy is the second column
+
+393
+00:25:01,590 --> 00:25:11,965
+L次第二排U我没事
+of L times the second row of U I'm okay
+
+394
+00:25:11,970 --> 00:25:17,185
+我还没有提出这方面的证据在
+I haven't presented this proof in the
+
+395
+00:25:17,190 --> 00:25:21,414
+之前和之前的课程是两个一个的
+class before and for two-by-two it's
+
+396
+00:25:21,419 --> 00:25:23,935
+对我来说看起来有点矫枉过正，我的意思是
+looking like overkill to me I mean like
+
+397
+00:25:23,940 --> 00:25:26,125
+为什么你不必做那么深的事
+why you don't have to do all that deep
+
+398
+00:25:26,130 --> 00:25:30,654
+想要得到碎片，但我的
+thinking to get to get pieces but my
+
+399
+00:25:30,659 --> 00:25:34,825
+想法是它给出了细分和
+idea is that it gives the breakdown and
+
+400
+00:25:34,830 --> 00:25:39,205
+这当然是我们的专栏时间
+this of course is by our column times
+
+401
+00:25:39,210 --> 00:25:43,914
+行规则是Lu所以我们就是这样
+row rule that's Lu so we're we're
+
+402
+00:25:43,919 --> 00:25:47,455
+开始和我们打破它
+starting with a and we're breaking it up
+
+403
+00:25:47,460 --> 00:25:51,865
+入路，其中路的第一块路的
+into Lu where Lu the first piece of Lu
+
+404
+00:25:51,870 --> 00:25:56,274
+是第一列时间然后是行
+is the first column times row and then
+
+405
+00:25:56,279 --> 00:25:59,575
+接下来的部分是剩下的部分
+the next pieces are the rest of the
+
+406
+00:25:59,580 --> 00:26:01,605
+矩阵
+matrix
+
+407
+00:26:01,610 --> 00:26:03,935
+虽然在下一个被打破了
+and though was get broken down the next
+
+408
+00:26:03,940 --> 00:26:07,215
+如果我，消除的阶段会破裂
+stage of elimination would break if I
+
+409
+00:26:07,220 --> 00:26:10,515
+这个阶段有一个3x3的剥离了
+had a 3x3 this stage peeled off the
+
+410
+00:26:10,520 --> 00:26:13,485
+行中的第一列然后是下一阶段
+first column in row then the next stage
+
+411
+00:26:13,490 --> 00:26:16,695
+将剥离第二个新的第二个
+would peel off the second the new second
+
+412
+00:26:16,700 --> 00:26:19,275
+行和第三阶段的列
+column in row and the third stage would
+
+413
+00:26:19,280 --> 00:26:22,485
+在排第三列就在去年
+have the third column in rows just last
+
+414
+00:26:22,490 --> 00:26:25,035
+pivot对你有意义
+pivot does this make any sense to you
+
+415
+00:26:25,040 --> 00:26:28,185
+你可以给我发电子邮件，并说它不是那样的
+you could email me and say it's not that
+
+416
+00:26:28,190 --> 00:26:34,505
+很棒，但我认为这是看到的
+great but I think it's to see that the
+
+417
+00:26:34,510 --> 00:26:38,414
+消除的最终结果是L次U.
+final result of elimination is L times U
+
+418
+00:26:38,419 --> 00:26:44,205
+是不是有一点魔力呢？
+is it's there's a little magic in in
+
+419
+00:26:44,210 --> 00:26:45,825
+看看你在做什么，我想
+seeing what you're doing and I think
+
+420
+00:26:45,830 --> 00:26:47,955
+这是一种了解你正在做什么的方法
+this is a way to see what you're doing
+
+421
+00:26:47,960 --> 00:26:51,945
+你是第一个剥离的人
+that you're you're peeling off a first
+
+422
+00:26:51,950 --> 00:26:54,815
+部分留下第二部分
+part to leave a second part like that
+
+423
+00:26:54,820 --> 00:26:57,645
+然后第二部分你会剥离
+then the second part you would peel off
+
+424
+00:26:57,650 --> 00:27:01,085
+第二列乘以第二行
+the second column times the second row
+
+425
+00:27:01,090 --> 00:27:04,155
+可以通过枢轴来划分它
+may be divided by the pivot to make it
+
+426
+00:27:04,160 --> 00:27:07,095
+这是正确的，那将是
+correct and that would that would put
+
+427
+00:27:07,100 --> 00:27:08,775
+在盒子的其余部分和
+something in the rest of the box and
+
+428
+00:27:08,780 --> 00:27:12,914
+然后三个将是剩下的
+then a three would be the rest of that
+
+429
+00:27:12,919 --> 00:27:18,015
+盒子好吧我在这里停下来我很高兴你
+box okay I'm stopping here I'm glad you
+
+430
+00:27:18,020 --> 00:27:21,765
+让我做2x2因为我看到3x3会
+let me do 2x2 since I see that 3x3 would
+
+431
+00:27:21,770 --> 00:27:26,025
+它会毁了一天呀还好一
+it would have ruined the day yeah okay a
+
+432
+00:27:26,030 --> 00:27:30,585
+问题还是让我停下来一分钟，以便
+question or let me pause for a minute so
+
+433
+00:27:30,590 --> 00:27:35,135
+我已经谈过这些因素
+I've talked about these factorizations
+
+434
+00:27:35,140 --> 00:27:38,865
+这一次，我们不会再看到这一块我们
+this one we won't see again this one we
+
+435
+00:27:38,870 --> 00:27:42,885
+我们会看到很棒的时间
+will see big-time and this one we will
+
+436
+00:27:42,890 --> 00:27:45,825
+而这一个我们会，是的，是的
+and this one we will yeah yeah
+
+437
+00:27:45,830 --> 00:27:49,335
+235是我们真正的那些
+2 3 & 5 are the ones that we're really
+
+438
+00:27:49,340 --> 00:27:52,725
+会看到很多问题或想法
+gonna see a lot of questions or thoughts
+
+439
+00:27:52,730 --> 00:27:57,164
+或者好吧我想我现在想告诉你
+or okay I guess I want to tell you now
+
+440
+00:27:57,169 --> 00:28:01,785
+完成今天的前进
+to complete today's moving forward in
+
+441
+00:28:01,790 --> 00:28:04,275
+这个问题的基本定理
+this subject the fundamental theorem of
+
+442
+00:28:04,280 --> 00:28:07,035
+线性代数的基本定理
+linear algebra the fundamental theorem
+
+443
+00:28:07,040 --> 00:28:10,695
+线性代数的好做好准备或
+of linear algebra okay ready for that or
+
+444
+00:28:10,700 --> 00:28:12,735
+你可能已经看过了，因为
+you may have seen it already because
+
+445
+00:28:12,740 --> 00:28:15,285
+它像的亮点
+it's like the highlight of
+
+446
+00:28:15,290 --> 00:28:19,665
+这个主题的基本思想
+of this subject of the basic ideas in
+
+447
+00:28:19,670 --> 00:28:22,665
+这个主题是正确的，然后也许我可以
+this subject right and then maybe I can
+
+448
+00:28:22,670 --> 00:28:28,875
+之后我会告诉你那个定理的人
+after I'd tell you that theorem people
+
+449
+00:28:28,880 --> 00:28:30,375
+世界各地给我发作作业
+around the world send me homework
+
+450
+00:28:30,380 --> 00:28:33,975
+现在要做的问题你会想到任何问题
+problems to do now you would think any
+
+451
+00:28:33,980 --> 00:28:36,195
+明智的教授永远不会那样做
+sensible professor would never do those
+
+452
+00:28:36,200 --> 00:28:38,115
+他会说这是你的问题
+problems like he would say it's your
+
+453
+00:28:38,120 --> 00:28:41,265
+问题，但我被带走了，我
+problem but I get carried away and I
+
+454
+00:28:41,270 --> 00:28:43,145
+有时解决它们
+solve them sometimes
+
+455
+00:28:43,150 --> 00:28:47,325
+所以一个人来自印度上周
+so one came from India last week and it
+
+456
+00:28:47,330 --> 00:28:49,215
+涉及到基本定理
+involved the fundamental theorem of
+
+457
+00:28:49,220 --> 00:28:51,585
+线性代数谁在那里教它
+linear algebra whoever teaching it there
+
+458
+00:28:51,590 --> 00:28:55,395
+真的是在球上，我会
+really was on on the ball and well I'll
+
+459
+00:28:55,400 --> 00:28:57,975
+之后告诉你那个问题
+tell you that problem after after the
+
+460
+00:28:57,980 --> 00:29:00,735
+基本定理没关系
+fundamental theorem okay
+
+461
+00:29:00,740 --> 00:29:07,365
+基本定理它大约四个
+fundamental theorem it's about four
+
+462
+00:29:07,370 --> 00:29:11,445
+子空间所以我发明了四个名字
+subspaces so I invented the name four
+
+463
+00:29:11,450 --> 00:29:14,595
+基本子空间，所以我可以列出
+fundamental subspaces so can i list the
+
+464
+00:29:14,600 --> 00:29:21,165
+四个子空间基本基础我们
+four subspaces fundamental basis well we
+
+465
+00:29:21,170 --> 00:29:24,405
+知道其中一个已经是专栏
+know one of them already the column
+
+466
+00:29:24,410 --> 00:29:30,195
+空间所以对于矩阵我们给了一个
+space so for a matrix we're given a
+
+467
+00:29:30,200 --> 00:29:34,905
+矩阵a表示M在等级R的末尾
+matrix a that's M by end of rank R
+
+468
+00:29:34,910 --> 00:29:39,225
+这是我们的正常开始
+that's our that's our normal starting
+
+469
+00:29:39,230 --> 00:29:44,745
+那么那四个子空间是什么呢？
+point so what are those four subspaces
+
+470
+00:29:44,750 --> 00:29:46,905
+它们是如何相关的以及它们是什么相关的
+and how are they related and what's
+
+471
+00:29:46,910 --> 00:29:49,755
+他们的维度和那些是什么
+their dimension and what what those a
+
+472
+00:29:49,760 --> 00:29:53,655
+关键事实好吧我们已经知道了专栏
+key fact okay we already know the column
+
+473
+00:29:53,660 --> 00:30:02,745
+矩阵的空间列空间和
+space column space of the matrix and
+
+474
+00:30:02,750 --> 00:30:05,055
+实际上我们已经知道了行空间
+actually we already know the row space
+
+475
+00:30:05,060 --> 00:30:09,165
+矩阵，我们有记号的
+of a matrix and we have the notation for
+
+476
+00:30:09,170 --> 00:30:12,845
+转置的列空间和
+that column space of a transpose and
+
+477
+00:30:12,850 --> 00:30:16,725
+什么是维度，所以这是
+what is the dimension so that was the
+
+478
+00:30:16,730 --> 00:30:18,585
+任何人都在第一讲的关键点
+key point in the first lecture anybody
+
+479
+00:30:18,590 --> 00:30:20,685
+谁错过了第一堂课应该去
+who missed the first lecture should go
+
+480
+00:30:20,690 --> 00:30:28,105
+回到一点一点的笔记
+back to the notes of one point one
+
+481
+00:30:28,110 --> 00:30:31,774
+对于该进入的思考
+for the for the thinking that goes into
+
+482
+00:30:31,779 --> 00:30:37,294
+维度等于那些维度
+the dimension equals what which of those
+
+483
+00:30:37,299 --> 00:30:39,904
+我想要的三个数字是
+three numbers do I want to is the
+
+484
+00:30:39,909 --> 00:30:44,495
+列空间的维数是或和
+dimension of the column space are or and
+
+485
+00:30:44,500 --> 00:30:46,774
+我能马上说些什么呢
+what can I say about our right away
+
+486
+00:30:46,779 --> 00:30:52,174
+与M＆M相比，是的还是相等或者
+compared to M&M yeah less or equal or
+
+487
+00:30:52,179 --> 00:30:55,264
+我能不能拥有更多的独立性
+could I couldn't have more independent
+
+488
+00:30:55,269 --> 00:30:59,255
+列比我有列所以我有
+columns than I have columns so I've got
+
+489
+00:30:59,260 --> 00:31:03,424
+n列，所以我们他们的
+n columns so our our of them are
+
+490
+00:31:03,429 --> 00:31:06,815
+独立，所以我们在某个地方更少或
+independent so our is somewhere less or
+
+491
+00:31:06,820 --> 00:31:09,514
+等于希望等于n
+equal hopefully equal to n what about
+
+492
+00:31:09,519 --> 00:31:11,794
+行空间的维数有多少
+the dimension of the row space how many
+
+493
+00:31:11,799 --> 00:31:15,784
+矩阵得到我们的独立行
+independent rows as the matrix got our
+
+494
+00:31:15,789 --> 00:31:21,085
+谢谢你，这是一个伟大的事实
+thank you that's that's the great fact
+
+495
+00:31:21,090 --> 00:31:24,605
+新证明减少了部分时间
+with a new proof less time in section
+
+496
+00:31:24,610 --> 00:31:28,764
+1.1那些具有相同的维度
+1.1 that those have the same dimension
+
+497
+00:31:28,769 --> 00:31:32,105
+相同的尺寸，你知道它
+same dimension which is you know it's
+
+498
+00:31:32,110 --> 00:31:35,044
+你认为你看一个简单的好吧
+you think okay you look at a simple
+
+499
+00:31:35,049 --> 00:31:38,044
+例如，这是真的，但你知道你是否
+example it's true but you know if you if
+
+500
+00:31:38,049 --> 00:31:39,965
+你给了一个50的矩阵
+you're given a matrix that's fifty by
+
+501
+00:31:39,970 --> 00:31:44,605
+百真正的事实，那些
+hundred really the fact that those
+
+502
+00:31:44,610 --> 00:31:48,245
+百柱有相同数量的
+hundred columns have the same number of
+
+503
+00:31:48,250 --> 00:31:51,274
+独立的那些50行
+independent ones as those 50 rows that's
+
+504
+00:31:51,279 --> 00:31:54,815
+那个好像现在好了另一个
+that's like great okay now the other
+
+505
+00:31:54,820 --> 00:32:00,445
+空格是矩阵的零空间
+spaces are the null space of the matrix
+
+506
+00:32:00,450 --> 00:32:05,195
+在a和只是为了做一切
+in of a and just to make everything
+
+507
+00:32:05,200 --> 00:32:09,865
+自然对称a的零空间
+naturally symmetric a null space of a
+
+508
+00:32:09,870 --> 00:32:16,835
+转置那些是最后两个
+transpose those are the last two those
+
+509
+00:32:16,840 --> 00:32:20,195
+是四个基本子空间
+are the four fundamental subspaces which
+
+510
+00:32:20,200 --> 00:32:21,875
+你已经看过了，他们甚至都在
+you've seen and they're even on the
+
+511
+00:32:21,880 --> 00:32:24,455
+线性代数教科书的封面
+cover of the linear algebra textbook
+
+512
+00:32:24,460 --> 00:32:30,245
+好吧那么什么是零空间
+okay so what's the null space
+
+513
+00:32:30,250 --> 00:32:33,375
+ax的解集等于零
+the set of solutions to ax equals zero
+
+514
+00:32:33,380 --> 00:32:44,865
+权没有空间，所有的解决方案砍掉
+right no space is all solutions to ax
+
+515
+00:32:44,870 --> 00:32:49,965
+等于e所以null空间有向量
+equals e so the null space has vector
+
+516
+00:32:49,970 --> 00:32:54,825
+这些向量在XS中为零空间
+these vectors in the XS the null space
+
+517
+00:32:54,830 --> 00:32:57,855
+不是从矩阵中取出的
+isn't taken from the matrix the row of
+
+518
+00:32:57,860 --> 00:32:59,715
+列空间中的行空间
+the row space in the column space those
+
+519
+00:32:59,720 --> 00:33:02,205
+这些数字都在矩阵中
+those numbers are sitting in the matrix
+
+520
+00:33:02,210 --> 00:33:05,654
+null的空格和空格
+the null space and the null space of a
+
+521
+00:33:05,659 --> 00:33:10,815
+transpose是null这个词的解决方案
+transpose are solutions to the word null
+
+522
+00:33:10,820 --> 00:33:12,975
+反映出这是一个事实
+is reflecting the fact that that's a
+
+523
+00:33:12,980 --> 00:33:16,215
+零，这就是它成为一个空间的原因
+zero and that's what makes it a space
+
+524
+00:33:16,220 --> 00:33:19,575
+现在你可以让我问你
+now can you just let me just ask you to
+
+525
+00:33:19,580 --> 00:33:22,725
+再想一想我说的时候隐含着什么
+think again what's implied when I say
+
+526
+00:33:22,730 --> 00:33:26,174
+当我使用空间这个词的时候
+when I use the word space a space of
+
+527
+00:33:26,179 --> 00:33:30,525
+矢量我可以添加是的
+vectors I can add yeah
+
+528
+00:33:30,530 --> 00:33:35,865
+所以你我可以做最重要的事情
+so so you I can do the most important
+
+529
+00:33:35,870 --> 00:33:38,294
+在该线性代数的操作
+operations of linear algebra in that
+
+530
+00:33:38,299 --> 00:33:41,715
+我可以在这里添加两个向量让我
+space I can add two vectors here let me
+
+531
+00:33:41,720 --> 00:33:44,565
+只需添加它们，所以在这里我将有一个向量
+just add them so here I'll have a vector
+
+532
+00:33:44,570 --> 00:33:47,475
+X，让我再说一个a
+X and let me say another another one a
+
+533
+00:33:47,480 --> 00:33:53,745
+矢量Y然后我做我另外跟着
+vector Y then I do addition I follow the
+
+534
+00:33:53,750 --> 00:33:57,525
+规则我看到这可以写成
+rules I see that this can be written as
+
+535
+00:33:57,530 --> 00:34:01,154
+斧子加y是零加零，因此你有什么
+ax plus y is zero plus zero so what have
+
+536
+00:34:01,159 --> 00:34:05,955
+我知道如果X在，我已经知道了
+I learned I've learned that if X is in
+
+537
+00:34:05,960 --> 00:34:08,144
+null空格和Y在null中
+the null space and Y is in the null
+
+538
+00:34:08,149 --> 00:34:11,594
+空格然后X加y所以空格是
+space then X plus y so the null space is
+
+539
+00:34:11,599 --> 00:34:15,134
+正如你所说的那样，我不去
+as you said closed meaning I don't go
+
+540
+00:34:15,139 --> 00:34:18,285
+如果X在其中并且Y在其中，则在它之外
+outside it if X is in it and Y is in it
+
+541
+00:34:18,290 --> 00:34:21,795
+然后总和在它和类似地从
+then the sum is in it and similarly from
+
+542
+00:34:21,800 --> 00:34:25,295
+斧头等于零我得到一个C时代X
+ax equals zero I get to a times C x
+
+543
+00:34:25,300 --> 00:34:26,955
+等于零
+equals zero
+
+544
+00:34:26,960 --> 00:34:30,515
+它只是乘以C乘以C
+it's just multiplied by C by a number C
+
+545
+00:34:30,520 --> 00:34:35,354
+那么这两个事实就意味着我可以
+so those two facts that that means I can
+
+546
+00:34:35,359 --> 00:34:38,505
+做线性代数我可以乘
+do linear algebra I can multiply by
+
+547
+00:34:38,510 --> 00:34:41,624
+数字，我可以添加换句话说我
+numbers and I can add in other words I
+
+548
+00:34:41,629 --> 00:34:42,465
+可以采取
+can take
+
+549
+00:34:42,470 --> 00:34:44,834
+线性组合就是你做的
+linear combinations that's what you do
+
+550
+00:34:44,839 --> 00:34:48,314
+与向量和点是如果我这样做
+with vectors and the point is if i do it
+
+551
+00:34:48,319 --> 00:34:51,374
+如果我采用两个零空间的组合
+if i take combinations of two null space
+
+552
+00:34:51,379 --> 00:34:56,414
+球员我仍然在零空间好了，
+guys I'm still in the null space okay so
+
+553
+00:34:56,419 --> 00:35:03,485
+这就是零空间的重点
+that's the point of the null space and
+
+554
+00:35:03,490 --> 00:35:06,405
+现在好了，现在是基础的一部分
+well now so now part of the fundamental
+
+555
+00:35:06,410 --> 00:35:09,905
+定理是要弄清楚有多少
+theorem is to figure out how many
+
+556
+00:35:09,910 --> 00:35:12,045
+独立向量在null中
+independent vectors are in the null
+
+557
+00:35:12,050 --> 00:35:15,765
+空间有多少独立解决方案
+space how many solutions independent
+
+558
+00:35:15,770 --> 00:35:18,405
+解决方案做了那个方程组
+solutions does that system of equations
+
+559
+00:35:18,410 --> 00:35:22,125
+有这么那将是维和我
+have so that'll be the dimension and I
+
+560
+00:35:22,130 --> 00:35:25,604
+要问你什么是让我画
+have to ask you what it is let me draw a
+
+561
+00:35:25,609 --> 00:35:27,435
+在你想到的时候想象一下
+picture while you're thinking about
+
+562
+00:35:27,440 --> 00:35:33,195
+这些空间是梦幻般的有
+those spaces it's fantastic to have
+
+563
+00:35:33,200 --> 00:35:36,344
+这些美丽干净的板好了，
+these beautiful clean boards okay so
+
+564
+00:35:36,349 --> 00:35:44,205
+这是我的行空间行的图片
+here's my picture of the row space rows
+
+565
+00:35:44,210 --> 00:35:47,195
+这是转置的列空间
+that's the column space of a transpose
+
+566
+00:35:47,200 --> 00:35:54,285
+这是我的零空间图片
+and here's my picture of the null space
+
+567
+00:35:54,290 --> 00:36:00,074
+一个，这是斧头的解决方案
+of a and that's the solutions to ax
+
+568
+00:36:00,079 --> 00:36:05,415
+等于零，为什么我把这两个
+equals zero and why have I put these two
+
+569
+00:36:05,420 --> 00:36:09,225
+和这两个在一起这样的
+together and these two together so the
+
+570
+00:36:09,230 --> 00:36:14,925
+另一对将是列空间C
+other pair will be the column space C of
+
+571
+00:36:14,930 --> 00:36:26,594
+转置的a和null空间就在那里
+a and null space of a transpose so there
+
+572
+00:36:26,599 --> 00:36:30,215
+是他们的四个空间
+are the four spaces where their
+
+573
+00:36:30,220 --> 00:36:32,834
+关系是基本定理
+relationship is the fundamental theorem
+
+574
+00:36:32,839 --> 00:36:39,844
+线性代数所以首先是什么
+of linear algebra so first of all what
+
+575
+00:36:39,849 --> 00:36:45,975
+对不起，所以我有一个M乘n矩阵
+sorry so I have an M by n matrix so that
+
+576
+00:36:45,980 --> 00:36:49,574
+告诉我，我的行是一个典型的行
+tells me that my rows a typical row has
+
+577
+00:36:49,579 --> 00:36:52,395
+n组件对我看一个Mbyn
+n components right I look at an M by n
+
+578
+00:36:52,400 --> 00:36:55,415
+矩阵让我们做吧2×3
+matrix let's do it two by three
+
+579
+00:36:55,420 --> 00:37:02,725
+矩阵，所以如果我看行空间
+matrix so if I look at the row space
+
+580
+00:37:02,730 --> 00:37:07,535
+这是M，这是n所以我看到了
+this is M and this is n so so I see
+
+581
+00:37:07,540 --> 00:37:12,485
+三个行具有长度3和
+three the rows have length three and of
+
+582
+00:37:12,490 --> 00:37:15,304
+当然他们也乘以X的
+course they multiply the X's which also
+
+583
+00:37:15,309 --> 00:37:19,475
+长度为3X1X2X3这就是原因
+has length 3 X 1 X 2 X 3 that's why
+
+584
+00:37:19,480 --> 00:37:21,364
+这些都在一起，因为它们都是
+these are together because they're both
+
+585
+00:37:21,369 --> 00:37:29,584
+在n维空间然后为什么
+in n-dimensional space then why are
+
+586
+00:37:29,589 --> 00:37:34,205
+这些因为列是
+these together because the columns are
+
+587
+00:37:34,210 --> 00:37:36,785
+在二维空间中
+in two dimensional space for this
+
+588
+00:37:36,790 --> 00:37:40,525
+示例和转置的零空间
+example and null space of a transpose
+
+589
+00:37:40,530 --> 00:37:46,145
+只是像y1y这两个组成部分
+would be just two components like y 1 y
+
+590
+00:37:46,150 --> 00:37:50,435
+2给零，所以你看到这个
+2 to give zeros so do you see that this
+
+591
+00:37:50,440 --> 00:37:53,844
+是这些人在RN
+is are these guys are in RN
+
+592
+00:37:53,849 --> 00:37:57,455
+所以这是第一个喜欢得到的东西
+so that's the first like get things
+
+593
+00:37:57,460 --> 00:38:07,165
+在RM2的RN2空间中直接2个空格
+straight 2 spaces in RN 2 spaces in RM
+
+594
+00:38:07,170 --> 00:38:10,625
+那么接下来我要问的是什么
+now then what am I going to ask about
+
+595
+00:38:10,630 --> 00:38:13,804
+这些空间我想我已经开始了
+these spaces I guess I already started
+
+596
+00:38:13,809 --> 00:38:16,025
+询问并没有等待答案
+asking and didn't wait for an answer
+
+597
+00:38:16,030 --> 00:38:20,905
+它们的尺寸因此具有尺寸R.
+their dimension so this has dimension R
+
+598
+00:38:20,910 --> 00:38:26,405
+什么是这个维度有多少
+and what's the dimension how many this
+
+599
+00:38:26,410 --> 00:38:33,965
+如果我有M，那真的是一个关键的事实
+is really such a key fact if I have M
+
+600
+00:38:33,970 --> 00:38:38,885
+方程式ax等于零，如果R为
+equations ax equals zero and if R of
+
+601
+00:38:38,890 --> 00:38:42,005
+那些方程是独立的有多少
+those equations are independent how many
+
+602
+00:38:42,010 --> 00:38:45,155
+解决方案所以空间的维度
+solutions so the dimension of the space
+
+603
+00:38:45,160 --> 00:38:48,544
+我会告诉我有多少解决方案
+is going to tell me how many solutions
+
+604
+00:38:48,549 --> 00:38:53,255
+把X分成两个M方程但是真的
+to X into two M equations but really
+
+605
+00:38:53,260 --> 00:38:57,695
+只是真正的独立方程
+only are genuine independent equations
+
+606
+00:38:57,700 --> 00:39:03,485
+在这个系统中，ax等于零
+in in this system ax equals zero
+
+607
+00:39:03,490 --> 00:39:06,455
+我可以再次提出多少问题
+how many so can I ask the question again
+
+608
+00:39:06,460 --> 00:39:08,885
+我希望得到答案
+and I want the answer in terms of
+
+609
+00:39:08,890 --> 00:39:13,564
+M和n是我所拥有的我真的拥有我们的
+M and n are so I have I really have our
+
+610
+00:39:13,569 --> 00:39:17,375
+方程式，如果我看到ax等于0它
+equations if I look at a x equals 0 it
+
+611
+00:39:17,380 --> 00:39:20,675
+看起来像M个单独的方程式，但是
+looks like M separate equations but but
+
+612
+00:39:20,680 --> 00:39:25,625
+M减去R只是副本或
+M minus R of those are just copies or
+
+613
+00:39:25,630 --> 00:39:27,954
+其他人的组合也是如此
+combinations of others so there are
+
+614
+00:39:27,959 --> 00:39:31,385
+独立方程式那么多少
+independent equations so what how many
+
+615
+00:39:31,390 --> 00:39:37,145
+我得到了，这就是我要写的东西
+of I got and that's what I'm gonna write
+
+616
+00:39:37,150 --> 00:39:44,074
+在这里是的所以是啊所以X有X有n
+in here yeah so yeah so X has X has n
+
+617
+00:39:44,079 --> 00:39:49,135
+组件，你知道真的
+components and there are real you know
+
+618
+00:39:49,140 --> 00:39:52,474
+他们必须要有效的方程式
+active equations that they have to
+
+619
+00:39:52,479 --> 00:39:53,074
+满足
+satisfy
+
+620
+00:39:53,079 --> 00:39:57,004
+并留下n-R这是关键
+and that leaves n minus R that's the key
+
+621
+00:39:57,009 --> 00:40:01,984
+指出那是关键点
+point that's the key point that there
+
+622
+00:40:01,989 --> 00:40:05,794
+是N且X的部件在未知
+are n components of X and unknowns in
+
+623
+00:40:05,799 --> 00:40:10,584
+未知并且存在约束
+unknowns and there are are constraints
+
+624
+00:40:10,589 --> 00:40:14,635
+独立约束所以那些n
+independent constraints so the those n
+
+625
+00:40:14,640 --> 00:40:17,915
+如果我想满足那些，你就会得到
+you get if I want to satisfy those
+
+626
+00:40:17,920 --> 00:40:20,614
+敲出尺寸R的约束
+constraints that knocks out dimension R
+
+627
+00:40:20,619 --> 00:40:23,165
+和叶子和减去R所以这是
+and leaves and minus R so that's the
+
+628
+00:40:23,170 --> 00:40:28,165
+这里的尺寸和美的
+dimension here and the beauty of the
+
+629
+00:40:28,170 --> 00:40:31,714
+帐户是这两个数字相加的
+account is that those two numbers add up
+
+630
+00:40:31,719 --> 00:40:35,405
+对每个人都占了一席之地
+to n everybody's accounted for every
+
+631
+00:40:35,410 --> 00:40:39,274
+矢量在行空间中有一块和
+vector has a piece in the row space and
+
+632
+00:40:39,279 --> 00:40:41,764
+零空间中的一块，那就是
+a piece in the null space and that's
+
+633
+00:40:41,769 --> 00:40:45,784
+有两件让你回来了
+there was two pieces give you back the
+
+634
+00:40:45,789 --> 00:40:49,534
+矢量你看到，这是刚刚好
+vector do you see that that's just nice
+
+635
+00:40:49,539 --> 00:40:51,484
+这些数字出来的权利和
+that the numbers come out right and of
+
+636
+00:40:51,489 --> 00:40:54,604
+当然他们也在这里出来
+course they come out right here too you
+
+637
+00:40:54,609 --> 00:40:57,304
+可以说只是转置一个矩阵和
+could say just transpose a matrix and
+
+638
+00:40:57,309 --> 00:40:59,135
+便又同样的事情写出来
+write it right the same thing again
+
+639
+00:40:59,140 --> 00:41:04,764
+列空间的维度是多少
+what's the dimension of the column space
+
+640
+00:41:04,769 --> 00:41:07,444
+等于矩阵的列空间
+equals the column space of the matrix
+
+641
+00:41:07,449 --> 00:41:10,324
+尺寸R右
+has dimension R right
+
+642
+00:41:10,329 --> 00:41:14,794
+和行这这家伙冷落
+and the row this this guy is left out of
+
+643
+00:41:14,799 --> 00:41:17,734
+一些线性代数书就像它一样
+some linear algebra books as if it like
+
+644
+00:41:17,739 --> 00:41:19,604
+它不属于
+it doesn't belong but
+
+645
+00:41:19,609 --> 00:41:22,504
+并且他们清楚你知道没有它
+and they clear that you know without it
+
+646
+00:41:22,509 --> 00:41:28,214
+一切都只有3/4ders完成了我们
+everything is of only 3/4 ders done we
+
+647
+00:41:28,219 --> 00:41:30,794
+必须有这个家伙和它的维度
+have to have this guy and it's dimension
+
+648
+00:41:30,799 --> 00:41:38,625
+艾玛-是的，是的，是的
+is Emma - yeah it's yeah that count is
+
+649
+00:41:38,630 --> 00:41:42,524
+只是为了转置这个计数是什么
+just for a transpose what this count was
+
+650
+00:41:42,529 --> 00:41:45,854
+是的，所以我们有这些尺寸
+for a yeah so we've got those dimensions
+
+651
+00:41:45,859 --> 00:41:55,094
+为n减去RR和M-是啊你，你
+are n minus R R and M - yeah you you
+
+652
+00:41:55,099 --> 00:41:57,704
+知道你会知道这一点，但我们需要
+know you'll have known this but we need
+
+653
+00:41:57,709 --> 00:42:02,204
+我们之前在2018年再次看到它
+to see it once again in 2018 before we
+
+654
+00:42:02,209 --> 00:42:05,925
+现在就开始使用它了
+start using it now is that the
+
+655
+00:42:05,930 --> 00:42:08,294
+基本定理是，所有的一切-它
+fundamental theorem is that all all - it
+
+656
+00:42:08,299 --> 00:42:14,054
+是不是还有另一块
+is no there's another piece to the
+
+657
+00:42:14,059 --> 00:42:16,155
+基本定理，这是你的一种
+fundamental theorem which is sort of you
+
+658
+00:42:16,160 --> 00:42:19,574
+可以说这里的几何形状我有一个
+could say the the geometry here I have a
+
+659
+00:42:19,579 --> 00:42:24,405
+子空间在这里我有这样一个子空间
+subspace here I have a subspace of this
+
+660
+00:42:24,410 --> 00:42:27,494
+大的n维空间所以我想象
+big n-dimensional space so I visualize
+
+661
+00:42:27,499 --> 00:42:30,524
+那些子空间作为某种平面
+those subspaces as some kind of a plane
+
+662
+00:42:30,529 --> 00:42:34,875
+R维平面和N减R
+an R dimensional plane and an N minus R
+
+663
+00:42:34,880 --> 00:42:37,784
+维平面，我想看看如何
+dimensional plane and I want to see how
+
+664
+00:42:37,789 --> 00:42:42,284
+这两架飞机是如何相连的
+are those two planes connected how are
+
+665
+00:42:42,289 --> 00:42:47,074
+这两个主张相互关联，让我
+those two claims connected and let me
+
+666
+00:42:47,079 --> 00:42:50,234
+得到一块空白的
+get a piece of the blank piece of the
+
+667
+00:42:50,239 --> 00:42:52,665
+董事会要记住最后一步吧
+board to remember the final step right
+
+668
+00:42:52,670 --> 00:43:00,014
+所以我们得到了尺寸R和n-R和
+so we've got dimensions R and n - R and
+
+669
+00:43:00,019 --> 00:43:06,554
+然后在这里R和M减去R好吧
+then over here R and M minus R okay this
+
+670
+00:43:06,559 --> 00:43:10,244
+是用于null的行
+is for the rows this is for the null
+
+671
+00:43:10,249 --> 00:43:15,494
+空间，所以这在它这个行
+space so this has the rows in it this
+
+672
+00:43:15,499 --> 00:43:18,405
+将ax等于的解为空
+has the null the solutions to ax equals
+
+673
+00:43:18,410 --> 00:43:25,564
+零什么是美丽的几何
+zero what is the beautiful geometry that
+
+674
+00:43:25,569 --> 00:43:29,104
+你如何想象这两个空间
+how do you visualize those two spaces
+
+675
+00:43:29,109 --> 00:43:31,454
+你如何形象化让我采取一个
+how do you visualize let me take an
+
+676
+00:43:31,459 --> 00:43:32,415
+例
+example
+
+677
+00:43:32,420 --> 00:43:41,385
+但一个B124248很抱歉，
+but a B 1 2 4 2 4 8 sorry about that
+
+678
+00:43:41,390 --> 00:43:46,695
+你看，这是一个勾结的例子，所以这个
+you see it's a hooked up example so this
+
+679
+00:43:46,700 --> 00:43:52,844
+是2乘3所以有3是什么在
+is 2 by 3 so there n is 3 what's in the
+
+680
+00:43:52,849 --> 00:44:00,044
+这个矩阵的零空间我可以
+null space of this matrix can I can you
+
+681
+00:44:00,049 --> 00:44:03,915
+看到一个解决ax等于0的向量
+see a vector that solves a x equals 0
+
+682
+00:44:03,920 --> 00:44:06,495
+事实上会有多少
+and in fact how many will there be
+
+683
+00:44:06,500 --> 00:44:09,074
+什么是我们这个矩阵的东西
+what's yeah what's our for this matrix
+
+684
+00:44:09,079 --> 00:44:12,255
+只是告诉我所有的好东西
+just tell me all the good stuff for that
+
+685
+00:44:12,260 --> 00:44:21,584
+例子M是2并且是3并且R是11
+example M is 2 and is 3 and R is 1 1
+
+686
+00:44:21,589 --> 00:44:25,155
+每个人都看到一行排名
+everybody sees one for the rank the rows
+
+687
+00:44:25,160 --> 00:44:28,695
+是依赖它只有一个
+are dependent it's there's only one
+
+688
+00:44:28,700 --> 00:44:31,125
+列是独立的行
+independent row the columns are
+
+689
+00:44:31,130 --> 00:44:34,215
+依赖只有每一列
+dependent there's only like every column
+
+690
+00:44:34,220 --> 00:44:36,465
+是一个的倍数-它是排名第一
+is a multiple of one - it's a rank one
+
+691
+00:44:36,470 --> 00:44:41,415
+矩阵确定怎么样所以它是行
+matrix ok what about it so it's row
+
+692
+00:44:41,420 --> 00:44:48,135
+空间的维度为1，它为空
+space has dimension 1 and it's null
+
+693
+00:44:48,140 --> 00:44:55,574
+空间的大小为22所以cuzn减去R.
+space has dimension 2 2 so cuz n minus R
+
+694
+00:44:55,579 --> 00:44:58,844
+将是2，所以我找了几个
+will be 2 so I'm looking for a couple of
+
+695
+00:44:58,849 --> 00:45:02,354
+两个都给0的载体我相信
+vectors that both give 0 I believe
+
+696
+00:45:02,359 --> 00:45:04,145
+我认为我只有一个
+they're I think I've only got one
+
+697
+00:45:04,150 --> 00:45:08,264
+独立排在那里，所以我应该
+independent row there so I should be
+
+698
+00:45:08,269 --> 00:45:10,935
+能够找到两个不同的向量
+able to find two different vectors that
+
+699
+00:45:10,940 --> 00:45:18,254
+是解决斧头等于0有啥
+are that solve ax equals 0 so what's a
+
+700
+00:45:18,259 --> 00:45:26,165
+ax的解决方案等于00910减21
+solution to ax equals 0 0 91 0 minus 2 1
+
+701
+00:45:26,170 --> 00:45:29,625
+是的，有效，有什么
+yeah that works and what's an
+
+702
+00:45:29,630 --> 00:45:35,774
+0的独立解决方案我不扔
+independent solution for 0 I don't throw
+
+703
+00:45:35,779 --> 00:45:38,605
+我和0和
+me off for 0 and
+
+704
+00:45:38,610 --> 00:45:42,295
+-是的，看起来很好看
+- one yeah that looks good that looks
+
+705
+00:45:42,300 --> 00:45:42,805
+好
+good
+
+706
+00:45:42,810 --> 00:45:46,075
+然后声称是每一个
+and then the claim is that every
+
+707
+00:45:46,080 --> 00:45:48,055
+解决方案将是这些的组合
+solution would be a combination of those
+
+708
+00:45:48,060 --> 00:45:50,965
+二，这就是有多少
+two and that this is how many there are
+
+709
+00:45:50,970 --> 00:45:55,975
+现在这是我正在完成的几何体
+and now it's the geometry I'm completing
+
+710
+00:45:55,980 --> 00:45:58,165
+所以我们有像在此留下2分钟
+so we have like two minutes left in this
+
+711
+00:45:58,170 --> 00:46:00,805
+讲座你只需要告诉我如何
+lecture you just have to tell me how
+
+712
+00:46:00,810 --> 00:46:04,135
+这些之间的关系是什么
+what's the relation between the these
+
+713
+00:46:04,140 --> 00:46:06,805
+在行空间和那个人的家伙
+guys in the row space and that guy in
+
+714
+00:46:06,810 --> 00:46:09,775
+零空间是什么关系
+the null space what's the relation
+
+715
+00:46:09,780 --> 00:46:13,075
+在a行和解决方案之间
+between the rows of a and the solutions
+
+716
+00:46:13,080 --> 00:46:16,435
+如果你看到它之间的ax等于零
+to ax equals zero between if you see it
+
+717
+00:46:16,440 --> 00:46:18,115
+如果你在那个向量中看到了那个向量
+if you saw that vector in that vector
+
+718
+00:46:18,120 --> 00:46:23,455
+好吧，现在X是零，那么是什么呢
+well a times X is zero now so what does
+
+719
+00:46:23,460 --> 00:46:24,055
+告诉我们
+that tell us
+
+720
+00:46:24,060 --> 00:46:26,905
+那么我们看到了什么呢？
+well what do we see for the for the
+
+721
+00:46:26,910 --> 00:46:31,555
+他们之间的关系是124和0-21
+relation between 1 2 4 and 0 - 2 1 they
+
+722
+00:46:31,560 --> 00:46:35,215
+是正交的，是正交的
+are orthogonal terrific yes orthogonal I
+
+723
+00:46:35,220 --> 00:46:39,415
+通过点积测试0-44加0
+test by the dot product 0 - 4 4 add to 0
+
+724
+00:46:39,420 --> 00:46:45,265
+是的，所以那是完全的
+yes so so the and that's a completely
+
+725
+00:46:45,270 --> 00:46:48,265
+当我看到ax等于0时的一般事实
+general fact when I look at ax equals 0
+
+726
+00:46:48,270 --> 00:46:51,865
+它告诉我X是正交的
+it's telling me that X is orthogonal to
+
+727
+00:46:51,870 --> 00:46:54,235
+你看到那些行吗？
+the rows did you see that
+
+728
+00:46:54,240 --> 00:46:57,805
+如果我看的话，你就把它放在这里
+you just put it in again here if I look
+
+729
+00:46:57,810 --> 00:47:03,835
+在axa有一堆行X有一个
+at ax a has a bunch of rows X has one
+
+730
+00:47:03,840 --> 00:47:07,135
+列，我得到零，这是重点
+column and I get zeros that's the point
+
+731
+00:47:07,140 --> 00:47:12,835
+零空间和那个等式是
+of the null space and that equation is
+
+732
+00:47:12,840 --> 00:47:16,815
+只是说第1行是正交的
+just say that Row 1 is orthogonal
+
+733
+00:47:16,820 --> 00:47:19,495
+因为这是第1行的点积
+because that's the dot product of Row 1
+
+734
+00:47:19,500 --> 00:47:22,795
+有了X所以这里的第1行第2行超过3和
+with X so here's Row 1 Row 2 over 3 and
+
+735
+00:47:22,800 --> 00:47:26,575
+第4行用X得到X行
+Row 4 with X the rows with X and I get
+
+736
+00:47:26,580 --> 00:47:31,135
+零，所以重点是这两个
+zeros so the point is then these two
+
+737
+00:47:31,140 --> 00:47:36,715
+空间是90度角，即a
+spaces are at 90 degree angles that's a
+
+738
+00:47:36,720 --> 00:47:39,745
+这四个人真的很整洁
+really a neat picture of the four
+
+739
+00:47:39,750 --> 00:47:42,895
+子空间和这两个是相同的
+subspaces and these two are for the same
+
+740
+00:47:42,900 --> 00:47:46,645
+M中90度角偏离的原因
+reason at 90 degree angles off in M
+
+741
+00:47:46,650 --> 00:47:51,415
+三维空间，所以这是这是
+dimensional space so this is this is the
+
+742
+00:47:51,420 --> 00:47:52,585
+基本定理
+fundamental theorem
+
+743
+00:47:52,590 --> 00:47:55,315
+线性代数看到的
+of linear algebra to see that the
+
+744
+00:47:55,320 --> 00:47:57,925
+尺寸出来正确和
+dimensions come out right and the
+
+745
+00:47:57,930 --> 00:48:00,925
+几何是正确的，然后是
+geometry comes out right yeah and then
+
+746
+00:48:00,930 --> 00:48:04,255
+现在下次跟着笔记和我
+now next time following the notes and I
+
+747
+00:48:04,260 --> 00:48:07,575
+拥有的的几个副本
+have a few more copies of the of the
+
+748
+00:48:07,580 --> 00:48:12,235
+一只手伸出手，我们就会动弹
+hand that one hand out will we'll move
+
+749
+00:48:12,240 --> 00:48:17,565
+下周快速到特征值和
+on quickly next week to eigenvalues and
+
+750
+00:48:17,570 --> 00:48:21,650
+positive definite matrices good this is
+
+751
+00:48:17,570 --> 00:48:26,180
+正定矩阵这是好的
+
+752
+00:48:21,660 --> 00:48:26,180
+真正的线性代数继续前进
+really linear algebra moving on
+

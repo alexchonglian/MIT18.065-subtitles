@@ -1,0 +1,3888 @@
+1
+00:00:01,089 --> 00:00:03,214
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,219 --> 00:00:05,794
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,799 --> 00:00:08,015
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,020 --> 00:00:09,874
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,879 --> 00:00:10,954
+免费
+for free
+
+6
+00:00:10,959 --> 00:00:13,145
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,150 --> 00:00:15,185
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,190 --> 00:00:21,955
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,960 --> 00:00:26,524
+所以我提到了随机线性
+so I've mentioned randomized linear
+
+10
+00:00:26,529 --> 00:00:29,074
+代数几次，我觉得我很好
+algebra a few times and I thought ok I'm
+
+11
+00:00:29,079 --> 00:00:34,415
+要跳进去描述随机的
+gonna jump in and describe randomized
+
+12
+00:00:34,420 --> 00:00:37,715
+矩阵乘法它非常酷
+matrix multiplication it's a pretty cool
+
+13
+00:00:37,720 --> 00:00:41,575
+这个想法在我看来是这样的
+idea it seems to me so so this is a
+
+14
+00:00:41,580 --> 00:00:45,035
+随机线性代数中的主题
+topic within randomized linear algebra
+
+15
+00:00:45,040 --> 00:00:47,465
+当我们会做任何这
+and when would we be doing any of this
+
+16
+00:00:47,470 --> 00:00:50,335
+这将是对于那些刚刚矩阵
+it would be for matrices that are just
+
+17
+00:00:50,340 --> 00:00:54,815
+真的很大，所以我们打算抽样
+really really large so we plan to sample
+
+18
+00:00:54,820 --> 00:01:00,235
+a的列和样本
+the columns of a and sample the
+
+19
+00:01:00,240 --> 00:01:03,365
+相应的B行实际上是
+corresponding rows of B so actually the
+
+20
+00:01:03,370 --> 00:01:05,585
+当我们决定列时，我们也是
+when we decide on a column we've also
+
+21
+00:01:05,590 --> 00:01:09,424
+决定连续，所以我们采取这些
+decided on a row so we're taking those
+
+22
+00:01:09,429 --> 00:01:13,565
+正确加起来的B件
+pieces which do correctly add up to a B
+
+23
+00:01:13,570 --> 00:01:16,144
+但我们不打算全部接受它们
+but we're not going to take them all
+
+24
+00:01:16,149 --> 00:01:20,154
+我们要采取不同的人
+we're going to take different ones
+
+25
+00:01:20,159 --> 00:01:24,095
+随机抽样我们的概率
+randomly sampled with probabilities we
+
+26
+00:01:24,100 --> 00:01:30,934
+必须决定概率然后
+have to decide probabilities and then
+
+27
+00:01:30,939 --> 00:01:34,415
+我们会加上我们的样品，我们希望
+we'll add up our samples and we hope
+
+28
+00:01:34,420 --> 00:01:38,614
+结果接近于B的结果
+that the result is close to a B that's
+
+29
+00:01:38,619 --> 00:01:45,784
+这个想法没关系，所以这个讲座呢
+the idea okay so this this lecture then
+
+30
+00:01:45,789 --> 00:01:50,464
+所以我写了这些页面大约六个月
+so I wrote these pages about six months
+
+31
+00:01:50,469 --> 00:01:54,095
+所以我一直在拼命想
+ago so I've been desperately trying to
+
+32
+00:01:54,100 --> 00:01:56,794
+记得我写的是因为它不是
+remember what I wrote because it's not a
+
+33
+00:01:56,799 --> 00:01:59,074
+以前我曾经说过的话题
+subject I have ever spoken about before
+
+34
+00:01:59,079 --> 00:02:02,614
+但它是如此整洁，所以这里有一些
+but it's so neat so here are some of the
+
+35
+00:02:02,619 --> 00:02:05,284
+事情进入它，我们必须
+things that come into it we have to
+
+36
+00:02:05,289 --> 00:02:08,885
+决定我们想要的概率
+decide on probabilities then we want to
+
+37
+00:02:08,890 --> 00:02:12,544
+计算均值所以它就是我们的
+compute the mean so so it's it's our
+
+38
+00:02:12,549 --> 00:02:14,705
+有一些关键的第一天我
+first day with some of these key I
+
+39
+00:02:14,710 --> 00:02:18,575
+从统计和概率，所以我们
+from statistics and probability so we're
+
+40
+00:02:18,580 --> 00:02:20,905
+要采取增加一个的概率
+gonna take probabilities that add to one
+
+41
+00:02:20,910 --> 00:02:23,585
+我们要弄明白是什么意思
+we're gonna figure out what's the mean
+
+42
+00:02:23,590 --> 00:02:30,125
+我们希望和我们随机的B值
+value of our random a B we hope and we
+
+43
+00:02:30,130 --> 00:02:32,615
+将看到的平均值
+will see that the mean value of the
+
+44
+00:02:32,620 --> 00:02:38,405
+随机的B是正确的B但是那里
+random a B is the correct a B but there
+
+45
+00:02:38,410 --> 00:02:41,675
+将是一个变化，我们不会得到每一个
+will be a variance we won't get every
+
+46
+00:02:41,680 --> 00:02:43,835
+样品不会在事实上不正确
+sample won't be correct in fact no
+
+47
+00:02:43,840 --> 00:02:45,545
+样品是正确的
+samples will be correct
+
+48
+00:02:45,550 --> 00:02:48,305
+只有当我们平均添加它们时
+only when we add them up on the average
+
+49
+00:02:48,310 --> 00:02:51,485
+我们得到纠正B的正确答案
+the correct answer we get to correct a B
+
+50
+00:02:51,490 --> 00:02:55,085
+但所以意思是正确的
+but so the mean will come out right
+
+51
+00:02:55,090 --> 00:02:57,965
+它会出来作为B你会看到它
+it'll come out as a B you'll see it
+
+52
+00:02:57,970 --> 00:03:01,915
+发生
+happen
+
+53
+00:03:01,920 --> 00:03:09,545
+是正确的，但不是很大的变化
+correct but there's a big variance not
+
+54
+00:03:09,550 --> 00:03:14,935
+零将遍布整个地方
+zero will be all over the place
+
+55
+00:03:14,940 --> 00:03:17,945
+我们的样品只是平均值
+with our samples they'll just average
+
+56
+00:03:17,950 --> 00:03:19,925
+对了，但他们将全部结束
+out right but they'll be all over
+
+57
+00:03:19,930 --> 00:03:22,355
+没有没有特别的样品将在权
+no no particular sample will be right at
+
+58
+00:03:22,360 --> 00:03:26,635
+所以我们想要选择最好的
+all so then we want to pick the best
+
+59
+00:03:26,640 --> 00:03:31,895
+这样我们工作的可能性
+probabilities when the so our job will
+
+60
+00:03:31,900 --> 00:03:35,065
+一旦我们看到系统如何运作
+be once we see how the system works
+
+61
+00:03:35,070 --> 00:03:38,545
+我们要分配概率和
+we're going to assign probabilities and
+
+62
+00:03:38,550 --> 00:03:41,465
+我们要选择概率
+we're going to choose the probabilities
+
+63
+00:03:41,470 --> 00:03:45,095
+最小化方差所以这是一个
+that minimize the variance so this is a
+
+64
+00:03:45,100 --> 00:03:48,575
+典型情况下平均为
+typical situation where the mean is
+
+65
+00:03:48,580 --> 00:03:51,695
+非常直截了当，做了什么
+pretty straightforward and and does what
+
+66
+00:03:51,700 --> 00:03:54,965
+你想要但是有正确的意思
+you want but having the correct mean
+
+67
+00:03:54,970 --> 00:03:57,395
+并不意味着你已经在取得了很好的答案
+does not mean you've got good answers at
+
+68
+00:03:57,400 --> 00:04:01,025
+你知道的所有平均值都是负M
+all the average of you know like minus M
+
+69
+00:04:01,030 --> 00:04:03,185
+零下一百一百是
+minus a hundred and a hundred is it
+
+70
+00:04:03,190 --> 00:04:05,795
+可能是一个正确的答案是零但是
+might be a correct answer is zero but
+
+71
+00:04:05,800 --> 00:04:09,035
+你离开了，这就是如何衡量的
+you're way off so and this measures how
+
+72
+00:04:09,040 --> 00:04:12,845
+你是这样，我不知道你是否知道
+far you are so I don't know if you know
+
+73
+00:04:12,850 --> 00:04:15,995
+这些话很不幸，但我想
+these words it's unfortunate but I guess
+
+74
+00:04:16,000 --> 00:04:19,625
+1806五现在不能改变它了
+1806 five can't change it now that the
+
+75
+00:04:19,630 --> 00:04:22,655
+差异写成Sigma平方和我们
+variance is written Sigma squared and we
+
+76
+00:04:22,660 --> 00:04:24,815
+已经很好地使用了这封信
+already have a good use for the letter
+
+77
+00:04:24,820 --> 00:04:27,345
+希腊字母Sigma但是
+the Greek letter Sigma but
+
+78
+00:04:27,350 --> 00:04:29,495
+今天它有不同的用途
+today it has a different use for
+
+79
+00:04:29,500 --> 00:04:34,995
+差异和这个拉格朗纳供应商将
+variance and this lagron suppliers will
+
+80
+00:04:35,000 --> 00:04:37,365
+接近尾声所以基本上让我
+come in near the end so basically let me
+
+81
+00:04:37,370 --> 00:04:41,595
+让我做一个实践例子来样
+let me do a practice example to kind of
+
+82
+00:04:41,600 --> 00:04:44,055
+回想一下什么意思和方差以及什么
+recall what mean and variance and what
+
+83
+00:04:44,060 --> 00:04:46,905
+那些是关于所以让我拿一个矩阵
+those are about so let me take a matrix
+
+84
+00:04:46,910 --> 00:04:51,615
+通过2是1，所以我的我的矩阵只是
+that's 1 by 2 so my my matrix is just
+
+85
+00:04:51,620 --> 00:04:59,825
+要做个B没关系我会说样品
+gonna be a B okay I'm gonna sample that
+
+86
+00:04:59,830 --> 00:05:06,465
+两次和我的两个规则
+and twice and my rule for the two
+
+87
+00:05:06,470 --> 00:05:09,485
+样品将是相同的，他们将
+samples will be the same they will be
+
+88
+00:05:09,490 --> 00:05:13,905
+相同的完全分布式
+identically distributed totally
+
+89
+00:05:13,910 --> 00:05:16,035
+相同，我的规则是什么
+identical and what's my rule gonna be so
+
+90
+00:05:16,040 --> 00:05:18,675
+这就像我的做法规则是怎么回事
+this is like practice my rule is going
+
+91
+00:05:18,680 --> 00:05:20,775
+是我拿那个专栏或那个专栏
+to be I take that column or that column
+
+92
+00:05:20,780 --> 00:05:26,865
+概率1/2好吧，我做到了
+with probabilities 1/2 okay and I do it
+
+93
+00:05:26,870 --> 00:05:31,755
+两次如此如此，我取平均值，从而
+twice so so and I take the average so
+
+94
+00:05:31,760 --> 00:05:33,675
+我将采取他们的概率
+I'm going to take probabilities they're
+
+95
+00:05:33,680 --> 00:05:38,385
+将是一个一半一半了
+going to be one half one half for the
+
+96
+00:05:38,390 --> 00:05:41,835
+两列，我会做的等于
+two columns and I'm gonna do s equal to
+
+97
+00:05:41,840 --> 00:05:50,895
+两个样本，我会增加重量
+two samples and I'm gonna add weight
+
+98
+00:05:50,900 --> 00:05:59,705
+他们和我一起取平均值
+them with and I'll take the average of
+
+99
+00:05:59,710 --> 00:06:08,495
+这两个样品还可以，这将是我的
+the two samples okay and that will be my
+
+100
+00:06:08,500 --> 00:06:13,005
+随机矩阵好吧我们也可以
+randomized matrix okay so could we
+
+101
+00:06:13,010 --> 00:06:15,045
+计算这个的意思所以我
+compute the mean for this so I've
+
+102
+00:06:15,050 --> 00:06:18,435
+描述了随机抽样过程
+described a randomized sampling process
+
+103
+00:06:18,440 --> 00:06:20,625
+我给你一半的概率
+I've given you the probabilities half
+
+104
+00:06:20,630 --> 00:06:23,205
+我要去的次数是他的一半
+and a half the number of times I'm going
+
+105
+00:06:23,210 --> 00:06:25,635
+做到这一点然后我除以那个
+to do it and then I divide by that
+
+106
+00:06:25,640 --> 00:06:28,755
+所以我真的有这么多次
+number of times so this is really I have
+
+107
+00:06:28,760 --> 00:06:31,665
+1在这儿是因为我有S的
+a 1 over s here because I've got s of
+
+108
+00:06:31,670 --> 00:06:36,735
+这些现在这么哪些
+these and now so what are the
+
+109
+00:06:36,740 --> 00:06:38,895
+这里的可能性我想找到
+possibilities here I want to find the
+
+110
+00:06:38,900 --> 00:06:40,815
+首先意味着它
+mean first of all it's
+
+111
+00:06:40,820 --> 00:06:47,055
+是一个卑鄙的好，所以这里有两个我可以
+was a mean okay so here are two I could
+
+112
+00:06:47,060 --> 00:06:49,305
+想到两个不同的方法来计算
+think of two different ways to compute
+
+113
+00:06:49,310 --> 00:06:52,215
+让我从这个开始的意思是什么
+the mean let me start with this one what
+
+114
+00:06:52,220 --> 00:06:54,975
+是平均值均值的平均值
+is the mean the average value mean means
+
+115
+00:06:54,980 --> 00:06:59,295
+第一样本的平均值，因此
+average value of the first sample so the
+
+116
+00:06:59,300 --> 00:07:01,665
+第一个样本I的平均值
+average value of the first sample I
+
+117
+00:07:01,670 --> 00:07:05,505
+将军的意思是什么？
+would what does the mean the general
+
+118
+00:07:05,510 --> 00:07:10,325
+公式是你加起来所有的样本
+formula is you add up all the sample
+
+119
+00:07:10,330 --> 00:07:17,115
+采样时间是可能的样本
+sample times it's the possible samples
+
+120
+00:07:17,120 --> 00:07:22,005
+倍的概率，在这种
+times their probabilities and in this
+
+121
+00:07:22,010 --> 00:07:26,205
+情况的概率是一半即
+case the probabilities are one-half that
+
+122
+00:07:26,210 --> 00:07:30,735
+样本是零和一半
+the sample is a zero and one half that
+
+123
+00:07:30,740 --> 00:07:36,525
+样本是零拍，所以那些是我的
+the sample is zero beat so those are my
+
+124
+00:07:36,530 --> 00:07:41,765
+两个样本并计算平均值
+two samples and computing the mean of
+
+125
+00:07:41,770 --> 00:07:47,175
+总得到哦，但这意味着
+the total I get oh but that mean for
+
+126
+00:07:47,180 --> 00:07:49,635
+每个样本，但我必须繁殖
+each sample but then I have to multiply
+
+127
+00:07:49,640 --> 00:07:53,655
+所以，让我把这里的一半放在这里
+so so let's put what I got here half of
+
+128
+00:07:53,660 --> 00:08:01,355
+一个是为每一个样本的意义
+a be that was the meaning of each sample
+
+129
+00:08:01,360 --> 00:08:04,125
+因为我的概率是相等的一半
+because my probabilities were equal half
+
+130
+00:08:04,130 --> 00:08:08,505
+一半，现在我有两个人
+and half and now I've got se for two
+
+131
+00:08:08,510 --> 00:08:22,175
+样本所以我乘以2得到一个B.
+samples so I multiply by 2 and I get a B
+
+132
+00:08:22,180 --> 00:08:36,585
+并且平均值是正确的
+and the mean mean is correct
+
+133
+00:08:36,590 --> 00:08:40,714
+好的，我们现在做的很简单
+good we did the easy one the mean now
+
+134
+00:08:40,719 --> 00:08:44,325
+练习方差或退出
+practice with the variance or else quit
+
+135
+00:08:44,330 --> 00:08:46,335
+在这里，也许我应该在我领先的时候退出
+here maybe I should quit while I'm ahead
+
+136
+00:08:46,340 --> 00:08:49,455
+我的意思完全正确但是
+I've got the mean exactly right but of
+
+137
+00:08:49,460 --> 00:08:55,185
+当然，样本可能不适合如此
+course the samples might not be right so
+
+138
+00:08:55,190 --> 00:08:59,565
+对于方差现在怎么样呢？
+what's so now for the variance so how do
+
+139
+00:08:59,570 --> 00:09:01,635
+什么是方差你还记得吗？
+what is variance do you remember that
+
+140
+00:09:01,640 --> 00:09:03,765
+实际上有两种计算方法
+there are actually two ways to compute
+
+141
+00:09:03,770 --> 00:09:04,605
+方差
+variance
+
+142
+00:09:04,610 --> 00:09:07,325
+让我记住那里的人
+let me just remember those over here and
+
+143
+00:09:07,330 --> 00:09:13,245
+把那块板推上去，以便方差Sigma
+push that board up so the variance Sigma
+
+144
+00:09:13,250 --> 00:09:19,395
+如果你是的话，请原谅我
+squared forgive me if you're a
+
+145
+00:09:19,400 --> 00:09:22,065
+统计学家就像你知道的那样
+statistician this is like like you know
+
+146
+00:09:22,070 --> 00:09:24,915
+布伦特就像你出生时就知道这一点
+Brent like you were born knowing this
+
+147
+00:09:24,920 --> 00:09:28,305
+但我们其他人不是这样的
+but the rest of us were not so the
+
+148
+00:09:28,310 --> 00:09:34,365
+方差就是一种方法
+variance is there's the sum one way to
+
+149
+00:09:34,370 --> 00:09:37,095
+这样做就是加起来的不同
+do it is add up the different
+
+150
+00:09:37,100 --> 00:09:39,795
+不同事物的概率
+probabilities of different things that
+
+151
+00:09:39,800 --> 00:09:47,584
+输出可能会减去平均值
+could happen of output minus the mean
+
+152
+00:09:47,589 --> 00:09:52,875
+平方所以它一般它的
+squared so it's the average it's the
+
+153
+00:09:52,880 --> 00:10:03,875
+平均距离肉的平方距离
+average distance squared from the meat
+
+154
+00:10:03,880 --> 00:10:07,185
+所以它需要我的任何输出
+so it takes whatever output I have that
+
+155
+00:10:07,190 --> 00:10:11,625
+输出数字减去平均值
+came with output number I minus the mean
+
+156
+00:10:11,630 --> 00:10:13,935
+这是我平方的平均输出
+which is the average output I square
+
+157
+00:10:13,940 --> 00:10:17,175
+那些和我得到一个数字，那种
+those and I get a number and that sort
+
+158
+00:10:17,180 --> 00:10:20,595
+告诉我这是怎么告诉我的
+of tells me how that tells me like in
+
+159
+00:10:20,600 --> 00:10:29,335
+在着名的高斯
+the in the famous Gaussian
+
+160
+00:10:29,340 --> 00:10:32,405
+如果我在这里有高斯分布我
+if I had a Gaussian distribution here I
+
+161
+00:10:32,410 --> 00:10:35,015
+分布为1/2和1/2
+have a distribution of 1/2 and 1/2 so
+
+162
+00:10:35,020 --> 00:10:38,045
+我喜欢甚至可能有一个名字
+I'm like that's maybe even has a name
+
+163
+00:10:38,050 --> 00:10:41,675
+像二项式或其他东西或伯努利
+like binomial or something or Bernoulli
+
+164
+00:10:41,680 --> 00:10:44,315
+或者除了这个高斯之外的任何东西
+or whatever but here on this Gaussian
+
+165
+00:10:44,320 --> 00:10:45,455
+我们都记得
+that we all remember
+
+166
+00:10:45,460 --> 00:10:48,785
+我可以在那个图中标出什么
+can I mark in the what in that figure
+
+167
+00:10:48,790 --> 00:10:53,525
+其中的意思是正确的
+where the mean is that right in the
+
+168
+00:10:53,530 --> 00:10:59,795
+中心就像我，我可以，什么是
+center like ok me and can and what is
+
+169
+00:10:59,800 --> 00:11:03,215
+方差只是为了回忆一下
+the variance just to recall what
+
+170
+00:11:03,220 --> 00:11:05,345
+第一次大家都可以
+everybody in the first time may even
+
+171
+00:11:05,350 --> 00:11:09,005
+听到那个词变异的是什么
+hear that word variance the what is the
+
+172
+00:11:09,010 --> 00:11:11,495
+差异测量就是这样
+variance kind of measuring it's it's
+
+173
+00:11:11,500 --> 00:11:14,735
+你的总和正方形，无论是
+your you're summing squares so whether
+
+174
+00:11:14,740 --> 00:11:16,415
+你在平均值或权
+you're on the right of the mean or the
+
+175
+00:11:16,420 --> 00:11:18,455
+左边的平均没有区别因为
+left of the mean no difference because
+
+176
+00:11:18,460 --> 00:11:21,095
+你正在瞄准它，这是距离
+you're squaring it and it's the distance
+
+177
+00:11:21,100 --> 00:11:23,825
+所以方差就是这样的意思
+so so the mean the variance would be
+
+178
+00:11:23,830 --> 00:11:28,385
+有点像典型的宽度也许我
+sort of like a typical width maybe I
+
+179
+00:11:28,390 --> 00:11:31,175
+过度了，但这将是一种
+overdid it but that would be a sort of
+
+180
+00:11:31,180 --> 00:11:38,345
+典型的西格玛我真的只是因为
+typical Sigma I'm really just since the
+
+181
+00:11:38,350 --> 00:11:40,685
+单词统计均值和方差
+words statistics mean and variance
+
+182
+00:11:40,690 --> 00:11:42,845
+在1806年没有提到五个
+haven't been mentioned in 1806 five
+
+183
+00:11:42,850 --> 00:11:45,425
+直到今天，我只是回忆起来
+until today I'm just kind of recalling
+
+184
+00:11:45,430 --> 00:11:49,145
+他们还好，所以现在我准备计算了
+them ok so now I'm prepared to compute
+
+185
+00:11:49,150 --> 00:11:55,085
+这个例子好吧也许我也许我会
+this example ok maybe I'll maybe I'll
+
+186
+00:11:55,090 --> 00:12:01,175
+在这里计算它确定所以我计算
+compute it over here ok so so I compute
+
+187
+00:12:01,180 --> 00:12:03,815
+然后是每个样本的方差
+the variance for each sample and then
+
+188
+00:12:03,820 --> 00:12:05,915
+我会乘以2因为我有两个
+I'll multiply by two because I have two
+
+189
+00:12:05,920 --> 00:12:10,445
+那些样品是什么样的呢？
+samples so what are they so this is the
+
+190
+00:12:10,450 --> 00:12:16,775
+西格玛平方的样本显然我可以
+Sigma squared sample obviously I could
+
+191
+00:12:16,780 --> 00:12:19,355
+写下所有的可能性是的
+write down all the possibilities yeah
+
+192
+00:12:19,360 --> 00:12:21,815
+让我这样做了一个月，因此
+let me just do this a month so the
+
+193
+00:12:21,820 --> 00:12:25,625
+样本可能已经选出0
+sample could either have picked out a 0
+
+194
+00:12:25,630 --> 00:12:30,755
+或0B，概率为1/2
+or 0 B and the probabilities were 1/2 so
+
+195
+00:12:30,760 --> 00:12:36,575
+II的概率次数是概率的1/2倍
+I I have 1/2 times the probability times
+
+196
+00:12:36,580 --> 00:12:41,084
+输出让我们说输出是
+the output let's say the output is
+
+197
+00:12:41,089 --> 00:12:50,054
+零减去已结束的平均值
+a zero minus the mean which was a over
+
+198
+00:12:50,059 --> 00:12:55,804
+超过两个，我想把它解决
+to be over two and I want to square that
+
+199
+00:12:55,809 --> 00:12:58,724
+所以这是我的一种可能性
+so that was one possibility when I
+
+200
+00:12:58,729 --> 00:13:02,024
+选了零，另一个选了
+picked a zero and the other one which
+
+201
+00:13:02,029 --> 00:13:04,334
+我也在做概率1/2
+I'm also doing with probability 1/2 is
+
+202
+00:13:04,339 --> 00:13:15,944
+如果我选择0B你看到了什么
+in case I picked 0 B what was you see
+
+203
+00:13:15,949 --> 00:13:19,174
+因为差异，我不是0
+I'm I'm not getting 0 for the variance
+
+204
+00:13:19,179 --> 00:13:21,764
+因为每次我都犯了错误
+because every time I'm making an error
+
+205
+00:13:21,769 --> 00:13:24,074
+每次我都没有得到正确的答案
+every time I'm never getting the correct
+
+206
+00:13:24,079 --> 00:13:27,554
+一个零或正确的零B，因为我
+a zero or the correct zero B because I'm
+
+207
+00:13:27,559 --> 00:13:30,524
+总是在中间做这个好吗
+always doing this one in the middle okay
+
+208
+00:13:30,529 --> 00:13:35,504
+现在，如果我计算所有我得到的
+now if I compute all that I get a
+
+209
+00:13:35,509 --> 00:13:39,134
+量，也许我只是要上
+quantity and maybe I'll just be to be on
+
+210
+00:13:39,139 --> 00:13:40,184
+安全的一面
+the safe side
+
+211
+00:13:40,189 --> 00:13:42,974
+如果我写的，请问你的原谅
+ask your forgiveness if I write the
+
+212
+00:13:42,979 --> 00:13:45,914
+回答，我们甚至可以尝试得到
+answer and we could even try to get the
+
+213
+00:13:45,919 --> 00:13:56,554
+回答，但这是两个样本
+answer but so this is from two samples
+
+214
+00:13:56,559 --> 00:14:04,424
+所以这是翻了一番一个做
+so this is doubled that one do
+
+215
+00:14:04,429 --> 00:14:10,184
+我想我足够大胆尝试如此
+I guess I'm bold enough to try it so so
+
+216
+00:14:10,189 --> 00:14:13,544
+零，所以这将是一个减去
+a zero so that would be a minus a over
+
+217
+00:14:13,549 --> 00:14:16,154
+我认为两个和一个B和一个B超过两个
+two and a B and a B over two I think
+
+218
+00:14:16,159 --> 00:14:25,124
+我认为看起来有一半了
+we've got here one half of I think looks
+
+219
+00:14:25,129 --> 00:14:33,014
+对我来说就像一个超过两平方加B
+to me like a over two squared plus B
+
+220
+00:14:33,019 --> 00:14:38,624
+我失去了正负，但它
+over I'm missing by plus or minus but it
+
+221
+00:14:38,629 --> 00:14:40,454
+当我把它们整理成一体时
+when I'm squaring them that's the whole
+
+222
+00:14:40,459 --> 00:14:42,974
+方差点没关系和
+point of variance doesn't matter and the
+
+223
+00:14:42,979 --> 00:14:49,624
+B超过两个，在这里我想我就是我
+B over two and here I think I'm I'm
+
+224
+00:14:49,629 --> 00:14:52,514
+两个人错了，我错了
+wrong by a over two and I'm wrong by
+
+225
+00:14:52,519 --> 00:14:54,494
+加上B超过
+plus by B over
+
+226
+00:14:54,499 --> 00:14:57,644
+两个或八个超过两个，但当我
+two or minus eight over two but when I
+
+227
+00:14:57,649 --> 00:15:00,104
+把它们放在一起并不重要，所以我
+square them again doesn't matter so I
+
+228
+00:15:00,109 --> 00:15:04,004
+我认为我得到了另外两半
+think I get another half of a over two
+
+229
+00:15:04,009 --> 00:15:11,194
+正方形加B超过2平方
+squares plus B over 2 squared
+
+230
+00:15:11,199 --> 00:15:16,394
+原谅我这么简单
+what forgive me for this simple
+
+231
+00:15:16,399 --> 00:15:20,294
+计算，但只是为了练习那么
+computation but just to practice so what
+
+232
+00:15:20,299 --> 00:15:21,794
+如果我得到了一半的话
+have I got I've got a half of that in
+
+233
+00:15:21,799 --> 00:15:24,314
+的一半，这样加起来是这个
+half of that so that adds up to this
+
+234
+00:15:24,319 --> 00:15:27,074
+平方超过四加B平方的东西
+thing a squared over four plus B squared
+
+235
+00:15:27,079 --> 00:15:32,794
+超过四，但我正在做两个样本
+over four but then I'm doing two samples
+
+236
+00:15:32,799 --> 00:15:35,144
+我会通过数量乘以
+I'll have to multiply by the number of
+
+237
+00:15:35,149 --> 00:15:38,744
+样本所以我想两次两次
+samples so I think so times two for two
+
+238
+00:15:38,749 --> 00:15:42,914
+我认为我得到的样本是1/4
+samples I think I'm getting it was 1/4
+
+239
+00:15:42,919 --> 00:15:47,354
+但现在它将是平方B的1/2
+but now it'll be 1/2 of a squared B
+
+240
+00:15:47,359 --> 00:15:52,544
+广场哦是的我没有呀呀嘿
+Square oh yeah I didn't yeah yeah hey
+
+241
+00:15:52,549 --> 00:15:55,204
+是的，我认为我认为这是正确的
+yeah I think I think that's right but
+
+242
+00:15:55,209 --> 00:15:59,494
+原谅我，我只是问自己是的
+forgive me while I just ask myself yeah
+
+243
+00:15:59,499 --> 00:16:05,384
+是的，这实际上已经是你了
+yeah this will be actually you already
+
+244
+00:16:05,389 --> 00:16:06,404
+有这些笔记
+have these notes
+
+245
+00:16:06,409 --> 00:16:10,304
+这是第2.4节，所以我认为它是
+this is section 2.4 so it's I think it's
+
+246
+00:16:10,309 --> 00:16:14,715
+他们自己的stiller所以有什么意义
+their own stiller so what's the point of
+
+247
+00:16:14,720 --> 00:16:18,184
+这第一点是要记住
+this first point was to like remember
+
+248
+00:16:18,189 --> 00:16:21,494
+进入的一些步骤
+some of the steps that go into the
+
+249
+00:16:21,499 --> 00:16:25,124
+方差哦还有另一个公式
+variance oh there's another formula for
+
+250
+00:16:25,129 --> 00:16:27,554
+我要告诉你和你的差异
+variance that I want to tell you and the
+
+251
+00:16:27,559 --> 00:16:30,914
+第二点是要在把
+second point is to make to bring in a
+
+252
+00:16:30,919 --> 00:16:36,044
+新想法假设我们想要做到这一点
+new idea suppose we want to make this
+
+253
+00:16:36,049 --> 00:16:38,684
+假设这种差异比我们大
+suppose this variance is bigger than we
+
+254
+00:16:38,689 --> 00:16:42,704
+我想假设B很多
+want suppose for example that B is a lot
+
+255
+00:16:42,709 --> 00:16:45,854
+不是假设b越大很多大
+bigger than a suppose B is a lot bigger
+
+256
+00:16:45,859 --> 00:16:48,404
+比那应该我们做
+than a then what should we have done
+
+257
+00:16:48,409 --> 00:16:51,494
+不同的随机随机
+differently in this random randomized
+
+258
+00:16:51,499 --> 00:16:55,304
+线性代数，如果我想要得到这个
+linear algebra if I'm trying to get this
+
+259
+00:16:55,309 --> 00:17:01,234
+事关亲近那个东西和
+thing closed get close to that thing and
+
+260
+00:17:01,239 --> 00:17:04,424
+如果B比那么大了
+if B is a lot bigger than a then what
+
+261
+00:17:04,429 --> 00:17:05,935
+我应该做些不同的事
+should I do different
+
+262
+00:17:05,940 --> 00:17:12,475
+我不知道B究竟是什么，但我
+I don't know what B is exactly but I
+
+263
+00:17:12,480 --> 00:17:14,635
+拥有更大的信息
+have the information that it's bigger
+
+264
+00:17:14,640 --> 00:17:17,965
+比那时我应该增加了
+than a then I should increase the
+
+265
+00:17:17,970 --> 00:17:21,405
+概率我不应该做一半
+probability I shouldn't do half and half
+
+266
+00:17:21,410 --> 00:17:26,175
+所以这里是随机抽样
+so here here was randomized sampling
+
+267
+00:17:26,180 --> 00:17:29,935
+取平均值我的概率是
+taking the average my probabilities were
+
+268
+00:17:29,940 --> 00:17:35,965
+一半，但如果我想要我
+a half and a half but if I want I
+
+269
+00:17:35,970 --> 00:17:40,345
+相信我可以保持平均值
+believe that I could keep the mean
+
+270
+00:17:40,350 --> 00:17:43,465
+当然这是正确的
+correct of course that's fundamental to
+
+271
+00:17:43,470 --> 00:17:47,515
+得到正确的权利，并获得更好的
+get the mean right and get a better
+
+272
+00:17:47,520 --> 00:17:50,455
+答案比这更小
+answer get a smaller variance than that
+
+273
+00:17:50,460 --> 00:17:54,955
+B通过挑选那个方形在那里
+B squared over there by picking that
+
+274
+00:17:54,960 --> 00:17:57,625
+那个概率更高的东西
+thing with higher probability so that's
+
+275
+00:17:57,630 --> 00:18:03,295
+随机的'男人出去的地方
+where the randomized 'men out to be
+
+276
+00:18:03,300 --> 00:18:07,695
+称为norm平方概率I
+called norm squared probability the I
+
+277
+00:18:07,700 --> 00:18:14,155
+什么是概率的决定
+the the decision on what the probability
+
+278
+00:18:14,160 --> 00:18:17,635
+应该是事实证明是
+should be goes it turns out to be the
+
+279
+00:18:17,640 --> 00:18:20,635
+最优的一个与广场相符
+optimal one goes with the square of the
+
+280
+00:18:20,640 --> 00:18:25,345
+如果B是a和I的两倍那么大小
+size so if B is twice as big as a and I
+
+281
+00:18:25,350 --> 00:18:28,165
+想要得到方差然后
+want to get the variance down then the
+
+282
+00:18:28,170 --> 00:18:31,255
+概率我应该使用概率
+probability I should use probabilities
+
+283
+00:18:31,260 --> 00:18:37,015
+这是经常的四倍四倍
+that are four times four times as often
+
+284
+00:18:37,020 --> 00:18:39,325
+我会选择B而不是那个
+I will choose B than a that's going to
+
+285
+00:18:39,330 --> 00:18:42,615
+是两点钟的结论
+be the conclusion at two o'clock
+
+286
+00:18:42,620 --> 00:18:47,305
+希望没关系，所以这是一点
+hopefully okay there so that's one point
+
+287
+00:18:47,310 --> 00:18:49,885
+并且，只是另一个小点，同时
+and and just another little point while
+
+288
+00:18:49,890 --> 00:18:54,195
+我们正在审查方差
+we're while we are reviewing variance
+
+289
+00:18:54,200 --> 00:18:57,415
+这是对标准公式
+this is the standard formula for the
+
+290
+00:18:57,420 --> 00:19:02,625
+所有可能的方差和
+variance sum of all the possible
+
+291
+00:19:02,630 --> 00:19:07,135
+结果与他们的概率
+outcomes with their probabilities the
+
+292
+00:19:07,140 --> 00:19:10,255
+距离均方的距离是多少？
+distance from the mean squared do you
+
+293
+00:19:10,260 --> 00:19:13,195
+知道第二公式，这是非常
+know a second formula which is very
+
+294
+00:19:13,200 --> 00:19:16,285
+接近这个和它非常相似
+close to this and very similar and it
+
+295
+00:19:16,290 --> 00:19:19,545
+来自于取代的含义
+comes from substituting the meaning of
+
+296
+00:19:19,550 --> 00:19:23,435
+意味着平均值是这样的东西
+means something where the mean is so
+
+297
+00:19:23,440 --> 00:19:27,195
+是啊，所以我只是我只是想提
+yeah so I just I just want to mention a
+
+298
+00:19:27,200 --> 00:19:32,054
+第二个公式，我不知道
+second formula and I don't I don't know
+
+299
+00:19:32,059 --> 00:19:34,545
+哪一个实际上会使用但是
+which one will actually use but the
+
+300
+00:19:34,550 --> 00:19:36,765
+相同数量的第二个公式
+second formula for the same quantity
+
+301
+00:19:36,770 --> 00:19:45,755
+西格玛广场是这个总和
+Sigma square is this sum of
+
+302
+00:19:45,760 --> 00:19:55,695
+概率乘以输出平方所以我
+probabilities times output square so I
+
+303
+00:19:55,700 --> 00:19:57,765
+没有减去这个中的平均值
+haven't subtracted off the mean in this
+
+304
+00:19:57,770 --> 00:19:59,945
+第二个公式我现在必须这样做
+second formula I have to do it now and
+
+305
+00:19:59,950 --> 00:20:03,495
+我会做的意思是我会做所有的意思
+I'll do the mean I'll do the mean all at
+
+306
+00:20:03,500 --> 00:20:12,674
+一旦均方当然的意思
+once mean squared of course the mean
+
+307
+00:20:12,679 --> 00:20:17,505
+涉及记住，平均是
+involves remember that the mean is the
+
+308
+00:20:17,510 --> 00:20:20,325
+概率乘以的概率
+sums of the probabilities times the
+
+309
+00:20:20,330 --> 00:20:28,424
+结果，它只是玩一个
+outcomes and it's just playing with a
+
+310
+00:20:28,429 --> 00:20:31,065
+小代数表明你可以
+little algebra to show that you can
+
+311
+00:20:31,070 --> 00:20:32,804
+或者你可以选择任何东西
+either you have a choice of whatever is
+
+312
+00:20:32,809 --> 00:20:35,265
+更方便的是减去平均值
+more convenient subtract the mean off
+
+313
+00:20:35,270 --> 00:20:40,265
+从每个输出或做所有输出
+from each output or do all the outputs
+
+314
+00:20:40,270 --> 00:20:43,635
+但是你没有考虑到
+but then you haven't accounted for the
+
+315
+00:20:43,640 --> 00:20:46,845
+事实上，你真的想要距离
+fact that you really want the distances
+
+316
+00:20:46,850 --> 00:20:49,635
+从平均值然后你减去
+from the mean and then you subtract off
+
+317
+00:20:49,640 --> 00:20:51,674
+平均值有两种方法可以做到
+the mean squared two ways to do it
+
+318
+00:20:51,679 --> 00:20:56,595
+有两种方法可以做到这一点，是的，我们
+two ways to equal ways to do it yeah we
+
+319
+00:20:56,600 --> 00:21:01,455
+将审查平均和。的基本思想
+will review the basic ideas of mean and
+
+320
+00:21:01,460 --> 00:21:07,815
+在该部分中的差异
+variance in the in the in the section on
+
+321
+00:21:07,820 --> 00:21:14,795
+这里的概率我是的问题是的
+probability here I'm yes question yeah
+
+322
+00:21:14,800 --> 00:21:18,045
+这里的意思是哦
+the mean oh in in here
+
+323
+00:21:18,050 --> 00:21:20,475
+在分开是的，这是重点
+at separate yeah that's the whole point
+
+324
+00:21:20,480 --> 00:21:24,045
+是啊所以这是喜欢做这个，然后
+yeah so this was like do this and then
+
+325
+00:21:24,050 --> 00:21:28,725
+减去均方或保持
+subtract off the mean squared or keep
+
+326
+00:21:28,730 --> 00:21:31,545
+在每个学期的平均值，并做到这一点
+the mean in every term and do it that
+
+327
+00:21:31,550 --> 00:21:32,815
+办法
+way
+
+328
+00:21:32,820 --> 00:21:36,264
+你可以验证这两个是
+you could verify that the two are are
+
+329
+00:21:36,269 --> 00:21:41,985
+同样没关系所以当我们现在去的时候
+the same okay so when we go now to the
+
+330
+00:21:41,990 --> 00:21:45,715
+更大的问题我忘了哪个方向
+bigger question I've forgotten which way
+
+331
+00:21:45,720 --> 00:21:48,804
+我这样做但是我可以自由选择好吧
+I do it but I'm free to choose okay is
+
+332
+00:21:48,809 --> 00:21:52,435
+就像一个小样本合理而且
+that like a small sample reasonable and
+
+333
+00:21:52,440 --> 00:21:58,914
+你和你明白如果我们
+you and you get the idea that if if we
+
+334
+00:21:58,919 --> 00:22:03,174
+知道如果我们看看我们的矩阵
+know that if we if we look at our matrix
+
+335
+00:22:03,179 --> 00:22:07,195
+首先，找出哪些列
+first of all and find out which columns
+
+336
+00:22:07,200 --> 00:22:09,715
+是大点大规范和哪个
+are large dot large norm and which
+
+337
+00:22:09,720 --> 00:22:12,235
+列小则可能是
+columns are smaller then that might be
+
+338
+00:22:12,240 --> 00:22:15,284
+有用的信息来衡量我们的
+useful information to weight our
+
+339
+00:22:15,289 --> 00:22:17,634
+挑选较大的概率
+probabilities to pick the larger one
+
+340
+00:22:17,639 --> 00:22:23,034
+更经常没关系，其实让我好吧
+more often okay okay well in fact let me
+
+341
+00:22:23,039 --> 00:22:24,585
+告诉你这两者是什么
+just tell you what are the two
+
+342
+00:22:24,590 --> 00:22:28,644
+可能还有一个就是我刚才
+possibilities there one is what I just
+
+343
+00:22:28,649 --> 00:22:32,695
+说等你的概率
+said wait your probabilities by the
+
+344
+00:22:32,700 --> 00:22:35,784
+这个规范平方的常数平方
+square of the norm this norm squared
+
+345
+00:22:35,789 --> 00:22:40,225
+等待，我们会看到并采取
+waiting that we'll see and take the
+
+346
+00:22:40,230 --> 00:22:43,255
+列虽然来了，但更高
+columns as they come but with higher
+
+347
+00:22:43,260 --> 00:22:47,365
+大栏目或你的概率
+probability on the big columns or you
+
+348
+00:22:47,370 --> 00:22:51,294
+可以说另一种方式是混合
+could say another way would be mix the
+
+349
+00:22:51,299 --> 00:22:54,685
+列使它们或多或少都有
+columns so that they more or less have
+
+350
+00:22:54,690 --> 00:23:00,435
+相似的尺寸，然后跟踪
+similar sizes and then keep track of
+
+351
+00:23:00,440 --> 00:23:04,075
+你做了什么，然后然后
+what you've done and then and then just
+
+352
+00:23:04,080 --> 00:23:07,404
+概率都可以相等，
+the probabilities can all be equal so
+
+353
+00:23:07,409 --> 00:23:09,355
+这将是你的另一种方式
+that would be the other way take your
+
+354
+00:23:09,360 --> 00:23:12,595
+矩阵混合起来采取组合
+matrix mix it up take combinations of
+
+355
+00:23:12,600 --> 00:23:15,985
+用随机数列有
+the columns with random numbers there's
+
+356
+00:23:15,990 --> 00:23:21,264
+一个随机的世界在这里带你做一个混合
+a random world here take you do a mixing
+
+357
+00:23:21,269 --> 00:23:26,715
+然后对混合矩阵进行操作
+and then operate on the mixed matrix
+
+358
+00:23:26,720 --> 00:23:30,144
+是啊好吧，我打算这样做第一
+yeah okay I'm going to do it the first
+
+359
+00:23:30,149 --> 00:23:34,245
+方式我会选择这些概率
+way I'm gonna pick these probabilities
+
+360
+00:23:34,250 --> 00:23:37,255
+他们将会变成现实
+to there'll be they'll turn out to be
+
+361
+00:23:37,260 --> 00:23:40,075
+与正常平方成正比准备好了
+proportional to norm squared okay ready
+
+362
+00:23:40,080 --> 00:23:45,144
+为此它来了
+for that here it comes
+
+363
+00:23:45,149 --> 00:23:57,484
+所以把它带下来是的，好吧我
+so bring that down yeah okay actually I
+
+364
+00:23:57,489 --> 00:24:01,685
+它告诉我们，现在可以把它留下来
+could leave it up for now cuz it told us
+
+365
+00:24:01,690 --> 00:24:03,414
+我们正在做什么
+what we're what we're up to
+
+366
+00:24:03,419 --> 00:24:09,214
+好吧所以我得到了什么
+okay so so what have I got
+
+367
+00:24:09,219 --> 00:24:13,774
+让我看看我是否可以这样，所以我们
+let me just see if I can so so we're
+
+368
+00:24:13,779 --> 00:24:16,174
+乘以B次，我们会
+multiplying a times B and we're gonna
+
+369
+00:24:16,179 --> 00:24:20,044
+使用PJ的这些概率
+use these probabilities PJ is going to
+
+370
+00:24:20,049 --> 00:24:26,014
+是该列的长度乘以
+be the length of that column times the
+
+371
+00:24:26,019 --> 00:24:32,254
+那排长度的平方很好
+length of that row norm squared well
+
+372
+00:24:32,259 --> 00:24:35,674
+如果我将a乘以a，则规范平方
+norm squared if I was multiplying a by a
+
+373
+00:24:35,679 --> 00:24:37,834
+转置然后我真的会
+transpose then I really would be
+
+374
+00:24:37,839 --> 00:24:40,464
+平方那将是相同的
+squaring that would be the same as that
+
+375
+00:24:40,469 --> 00:24:43,445
+所以我要使用norm平方这个词
+so I'm gonna use the word norm squared
+
+376
+00:24:43,450 --> 00:24:49,774
+或长度平方也在这里
+or length squared also here where the
+
+377
+00:24:49,779 --> 00:24:52,744
+我不假设B是一个
+two I'm not assuming that B is a
+
+378
+00:24:52,749 --> 00:24:55,174
+转置没关系
+transpose okay
+
+379
+00:24:55,179 --> 00:24:57,604
+这将是概率意志
+so that will be the probabilities will
+
+380
+00:24:57,609 --> 00:25:00,754
+与此成正比，但现在是那些
+be proportional to that but now those
+
+381
+00:25:00,759 --> 00:25:03,904
+那个不加一个，所以我该怎么做
+that don't add up to one so how do I
+
+382
+00:25:03,909 --> 00:25:06,544
+使概率加起来一个
+make the probabilities add up to one
+
+383
+00:25:06,549 --> 00:25:15,714
+这是选择的概率
+this is the probability of of choosing
+
+384
+00:25:15,719 --> 00:25:26,614
+斧子列J排J是什么的
+column J of a x times row J that's what
+
+385
+00:25:26,619 --> 00:25:32,095
+这就是PJ所说的好
+that's what PJ refers to okay
+
+386
+00:25:32,100 --> 00:25:37,865
+好吧那我的计划是什么哦我必须这样做
+okay so what is my plan oh I have to
+
+387
+00:25:37,870 --> 00:25:39,875
+使概率加到一个或我
+make the probabilities add to one or I'm
+
+388
+00:25:39,880 --> 00:25:45,215
+真的打破了他们的基本法
+really breaking them the fundamental law
+
+389
+00:25:45,220 --> 00:25:47,975
+在这里，如果我有一堆
+here so how if I have a bunch of
+
+390
+00:25:47,980 --> 00:25:50,345
+概率，我有点知道我
+probabilities and I kind of know what I
+
+391
+00:25:50,350 --> 00:25:52,325
+想要，但他们没有加起来一个
+want but they don't add up to one what
+
+392
+00:25:52,330 --> 00:25:57,815
+我做他/他们的总和让我打电话看
+do i do / their sum let me call see
+
+393
+00:25:57,820 --> 00:26:00,365
+有一些所以概率正在发生
+there's some so the probability is going
+
+394
+00:26:00,370 --> 00:26:04,025
+是C和C的目标
+to be that over C and C is is going to
+
+395
+00:26:04,030 --> 00:26:08,855
+是许多行和的总和
+be the sum of however many rows and
+
+396
+00:26:08,860 --> 00:26:11,965
+列我想也许我有R和我的
+columns I guess maybe I had R and my
+
+397
+00:26:11,970 --> 00:26:21,665
+一个JVJ转换的图片好吧所以
+picture of a J VJ transpose okay so all
+
+398
+00:26:21,670 --> 00:26:24,215
+我做的是重新调整概率
+I did was rescale the probabilities so
+
+399
+00:26:24,220 --> 00:26:28,985
+他们现在添加到一个好的，所以
+that they now add to one good okay so
+
+400
+00:26:28,990 --> 00:26:32,585
+现在我准备去上班了，我已经准备好了
+now I'm ready to go to work I'm ready to
+
+401
+00:26:32,590 --> 00:26:37,765
+选择哦是的所以这是我的规则
+choose oh yes so here's my rule I will
+
+402
+00:26:37,770 --> 00:26:42,575
+选择行列和列行J
+choose row column and column row J with
+
+403
+00:26:42,580 --> 00:26:47,105
+这个概率但是我要去
+this probability but then I'm going to
+
+404
+00:26:47,110 --> 00:26:49,625
+乘以它，如果我，我可以自由地做到这一点
+multiply it and I'm free to do that if I
+
+405
+00:26:49,630 --> 00:26:52,445
+我希望如此近似我的
+want to so my approximation my
+
+406
+00:26:52,450 --> 00:27:00,355
+近似ami将是我会接受这个
+approximate ami will be I'll take this
+
+407
+00:27:00,360 --> 00:27:06,995
+无论哪个出来我都会把AJ当成
+whichever comes out I'll take the AJ be
+
+408
+00:27:07,000 --> 00:27:10,565
+j转置出来它出来了
+j transpose there comes out it comes out
+
+409
+00:27:10,570 --> 00:27:14,465
+有概率PJ，但我要去
+with probability P J but I'm going to
+
+410
+00:27:14,470 --> 00:27:17,165
+除以此，我想我就是这样
+divide this by and I think I'm this is
+
+411
+00:27:17,170 --> 00:27:20,255
+正确的样本数量
+the right one s the number of samples
+
+412
+00:27:20,260 --> 00:27:26,315
+PJ所以我一开始就想到了
+times PJ so I thought at first that's
+
+413
+00:27:26,320 --> 00:27:26,885
+奇怪的
+weird
+
+414
+00:27:26,890 --> 00:27:29,525
+去了所有的麻烦来接这些P
+went to all the trouble to pick these P
+
+415
+00:27:29,530 --> 00:27:34,355
+J声称这些都是好事
+J's claiming that these are the good
+
+416
+00:27:34,360 --> 00:27:37,595
+所以我是我最终证明的主张
+ones so I'm my claim to eventually prove
+
+417
+00:27:37,600 --> 00:27:40,355
+最后我首先要明白
+at the end first I'll have to understand
+
+418
+00:27:40,360 --> 00:27:43,085
+采样是如何做到这一点就像
+how the sampling is done that's like the
+
+419
+00:27:43,090 --> 00:27:45,355
+最重要的但是当我走的时候
+most important but then when I go
+
+420
+00:27:45,360 --> 00:27:47,875
+计算平均值我会得到正确的
+to compute the mean I'll get the correct
+
+421
+00:27:47,880 --> 00:27:51,565
+意思是当我去计算时
+mean and when I go to get to compute the
+
+422
+00:27:51,570 --> 00:27:53,845
+方差我会为一些表达
+variance I'll get some expression for
+
+423
+00:27:53,850 --> 00:27:59,145
+方差然后计划将是
+the variance and then the plan will be
+
+424
+00:27:59,150 --> 00:28:03,775
+选择这些PJ来减少总数
+choose these PJ's to minimize that total
+
+425
+00:28:03,780 --> 00:28:07,435
+方差所以这就是这个
+variance so here so this is what that's
+
+426
+00:28:07,440 --> 00:28:09,985
+一个这是一个典型的样本
+a that's a typical sample with
+
+427
+00:28:09,990 --> 00:28:16,135
+概率PJ挑选那个矩阵
+probability PJ pick that that matrix
+
+428
+00:28:16,140 --> 00:28:20,215
+秩一个矩阵，那么我的
+that rank one matrix so then my
+
+429
+00:28:20,220 --> 00:28:23,505
+近似值B是所有这些的总和
+approximate a B is the sum of all these
+
+430
+00:28:23,510 --> 00:28:31,975
+超过你的样品你和我一起让我
+over s samples are you with me let me
+
+431
+00:28:31,980 --> 00:28:35,125
+让我重复一遍，我正在努力
+let me just repeat I'm trying to
+
+432
+00:28:35,130 --> 00:28:39,355
+乘以B每个样本只是一个
+multiply a B each sample is just a
+
+433
+00:28:39,360 --> 00:28:42,385
+单列时间排，所以它的方式
+single column times row so it's way
+
+434
+00:28:42,390 --> 00:28:45,235
+错误的方式错了它只是一小块
+wrong way wrong it's just a tiny piece
+
+435
+00:28:45,240 --> 00:28:49,285
+一个B，但我拿了那个样本
+of a B but I take that sample with
+
+436
+00:28:49,290 --> 00:28:52,855
+概率PJ和我用sPJ把它
+probability PJ and I divide it by s PJ
+
+437
+00:28:52,860 --> 00:29:03,075
+所以这是PJ的取消哦哦，好的
+so that's a PJ's cancel here oh yes okay
+
+438
+00:29:03,080 --> 00:29:07,015
+对，所以我想看看
+right so I would like to see that the
+
+439
+00:29:07,020 --> 00:29:11,335
+意思是正确的我想看到
+mean is correct I would like to see that
+
+440
+00:29:11,340 --> 00:29:15,085
+平均值是正确的我要计算
+the mean is correct I'm going to compute
+
+441
+00:29:15,090 --> 00:29:19,315
+我的过程的意思是它就像它
+the mean of my process so it's like it's
+
+442
+00:29:19,320 --> 00:29:21,265
+落到我的腿上，我做到了
+falling into my lap here I made it that
+
+443
+00:29:21,270 --> 00:29:21,685
+办法
+way
+
+444
+00:29:21,690 --> 00:29:26,575
+这些PJ取消了我除以s
+these PJ's canceled I divided by s so
+
+445
+00:29:26,580 --> 00:29:30,865
+典型样本的平均值将是如此
+the mean of a typical sample will be so
+
+446
+00:29:30,870 --> 00:29:41,005
+一个样本的平均值是
+the mean of one sample is the
+
+447
+00:29:41,010 --> 00:29:42,955
+得到它的概率是我的
+probability of getting it times what I
+
+448
+00:29:42,960 --> 00:29:47,965
+这样它只是jbj的总和
+take so it's just the sum of a jb j
+
+449
+00:29:47,970 --> 00:29:52,315
+transpose/s你会说好的
+transpose / s you're going to say okay
+
+450
+00:29:52,320 --> 00:29:54,685
+你在浪费我们的时间，但我们有一个
+you're wasting our time but we've got a
+
+451
+00:29:54,690 --> 00:29:56,905
+我只是想证明我是
+I would just want to show that I'm
+
+452
+00:29:56,910 --> 00:29:58,635
+得到正确的意思
+getting the correct mean
+
+453
+00:29:58,640 --> 00:30:03,225
+出于这个计划，所以你看到了
+out of this plan so do you see that if
+
+454
+00:30:03,230 --> 00:30:05,775
+这是一个样本的平均值所以是什么
+that's a mean of one sample so what's
+
+455
+00:30:05,780 --> 00:30:10,475
+所有样本总和的平均值
+the mean of the sum of all the samples
+
+456
+00:30:10,480 --> 00:30:14,475
+好吧x是的，因为它是相同的意思
+well x yes because it was the same mean
+
+457
+00:30:14,480 --> 00:30:16,785
+每个样本都是同样的意思
+every sample that the same mean just
+
+458
+00:30:16,790 --> 00:30:19,755
+就像我们的小联盟一样
+just as it did in our little league
+
+459
+00:30:19,760 --> 00:30:22,905
+练习的例子就是这样的意思
+practice example so that's the mean of
+
+460
+00:30:22,910 --> 00:30:26,535
+一个样本，所以所有样本的平均值
+one sample so the mean of all samples
+
+461
+00:30:26,540 --> 00:30:33,075
+添加加在一起乘以此
+added added together multiplies this by
+
+462
+00:30:33,080 --> 00:30:44,175
+是的取消了，我得到了B记住
+s yeses cancel and I get a B remembering
+
+463
+00:30:44,180 --> 00:30:52,895
+我的方式是，我在那里定义了B，是的
+my however way I defined a B there yeah
+
+464
+00:30:52,900 --> 00:30:56,805
+我在这里说的就是我做的
+all I'm saying there here is that I did
+
+465
+00:30:56,810 --> 00:31:00,915
+抽样中合理的东西
+something reasonable in the sampling
+
+466
+00:31:00,920 --> 00:31:04,095
+过程让平均出来了
+process so that the mean came out right
+
+467
+00:31:04,100 --> 00:31:07,205
+现在是困难的部分
+and now is the hard part
+
+468
+00:31:07,210 --> 00:31:14,055
+差异什么是方差好吧
+the variance what's the variance okay so
+
+469
+00:31:14,060 --> 00:31:25,275
+我有什么需要计算的，我可以
+what do I have to compute and I may it
+
+470
+00:31:25,280 --> 00:31:37,875
+将取决于P1至PRI
+will depend on the piece P 1 to P R I
+
+471
+00:31:37,880 --> 00:31:41,315
+我猜我们有不同的行
+guess we had we had our different rows
+
+472
+00:31:41,320 --> 00:31:44,145
+不同的列行对可供选择和
+different column row pairs to choose and
+
+473
+00:31:44,150 --> 00:31:49,425
+我们选择了这些家伙的概率
+we chose probabilities these guys that
+
+474
+00:31:49,430 --> 00:31:53,985
+取决于大小，现在我要去
+depended on the size and now I'm going
+
+475
+00:31:53,990 --> 00:31:57,435
+计算方差，它不会
+to compute the variance and it won't be
+
+476
+00:31:57,440 --> 00:32:03,915
+0因为每个样本都是错的我是
+0 because every sample is wrong I'm
+
+477
+00:32:03,920 --> 00:32:07,665
+从来没有从样本中得到样本
+never getting from a sample a sample is
+
+478
+00:32:07,670 --> 00:32:10,095
+只是给我写了一篇专栏文章
+just giving me a wrote a column times a
+
+479
+00:32:10,100 --> 00:32:12,135
+排名第一的人
+row a rank one guy
+
+480
+00:32:12,140 --> 00:32:14,325
+他们平均给出了
+and they averaged out to give the
+
+481
+00:32:14,330 --> 00:32:18,285
+正确的产品但每一个都是
+correct product but each one is
+
+482
+00:32:18,290 --> 00:32:21,465
+肯定是错的，因为它只是一个等级
+certainly wrong because it's just a rank
+
+483
+00:32:21,470 --> 00:32:24,825
+一，所以当我计算方差时，我会去
+one so when I compute variance I'm going
+
+484
+00:32:24,830 --> 00:32:28,425
+肯定不会在零中得到零
+to definitely not get zero right in
+
+485
+00:32:28,430 --> 00:32:30,675
+其他的话当然是什么时候的
+other words of course when were the
+
+486
+00:32:30,680 --> 00:32:35,715
+如果B排名，则方差为零
+variance be zero yeah if a B were ranked
+
+487
+00:32:35,720 --> 00:32:37,245
+一个我想每一次我会得到它的权利
+one I guess I'd get it right every time
+
+488
+00:32:37,250 --> 00:32:39,195
+谢谢哦，有一个比我更好的答案
+thanks oh there's a better answer than I
+
+489
+00:32:39,200 --> 00:32:42,765
+记住，是的，差异会
+had in mind yeah yeah the variance would
+
+490
+00:32:42,770 --> 00:32:45,345
+如果每个样本都是正确的，则只有零
+only be zero if every sample was right
+
+491
+00:32:45,350 --> 00:32:48,975
+如果等级是这样的话，那就是真的
+and that would be true if the rank was
+
+492
+00:32:48,980 --> 00:32:51,075
+一个，只有一件事
+one and there was only one thing to
+
+493
+00:32:51,080 --> 00:32:54,615
+选择，但这不是我们的问题
+choose but that's not the problem we
+
+494
+00:32:54,620 --> 00:33:02,445
+想要好，所以差异就在我的心里
+want okay so the variance is there my my
+
+495
+00:33:02,450 --> 00:33:04,845
+本能是告诉你这是什么
+instinct is to tell you what this
+
+496
+00:33:04,850 --> 00:33:08,715
+计算产生，因为你和我可以
+calculation produces since you and I can
+
+497
+00:33:08,720 --> 00:33:18,365
+读，你会允许我这样做吗
+read would you allow me to do that so
+
+498
+00:33:18,370 --> 00:33:23,055
+结果是样本的方差
+here the variance for a sample turns out
+
+499
+00:33:23,060 --> 00:33:27,465
+事实证明我们会这样做
+to be it turns out to equal so we will
+
+500
+00:33:27,470 --> 00:33:28,965
+想办法
+figure it out
+
+501
+00:33:28,970 --> 00:33:33,585
+结果等于它的总和
+turns out to equal the sum over as it
+
+502
+00:33:33,590 --> 00:33:41,285
+是AJAJ转置的
+was up there of the AJ AJ transpose
+
+503
+00:33:41,290 --> 00:33:46,305
+可能是平方让我只是检查
+probably squared let me just just check
+
+504
+00:33:46,310 --> 00:33:49,935
+是的，是的，为什么我不帮助自己
+yes squared yeah why don't I help myself
+
+505
+00:33:49,940 --> 00:33:55,365
+这是因为这些是平方的
+here so these are squared because
+
+506
+00:33:55,370 --> 00:33:58,775
+方差是平方然后当我
+variances are squared and then when I
+
+507
+00:33:58,780 --> 00:34:02,205
+看看我认为有什么是S
+look to see what I think there's an S
+
+508
+00:34:02,210 --> 00:34:06,645
+那里有一个PJ，为什么有一个
+there and there's a PJ so why is there a
+
+509
+00:34:06,650 --> 00:34:10,755
+PJ那里取消了，所以在这里
+PJ there when it cancelled here so here
+
+510
+00:34:10,760 --> 00:34:12,705
+当我乘以那个PJ时
+the PJ when I multiplied by that
+
+511
+00:34:12,710 --> 00:34:16,185
+取消为什么不取消
+cancelled why doesn't it cancel over
+
+512
+00:34:16,190 --> 00:34:20,705
+因为它在那边平方
+there because it's squared over there
+
+513
+00:34:20,710 --> 00:34:23,805
+那边的东西是平方所以它
+over there this thing is squared so it
+
+514
+00:34:23,810 --> 00:34:25,634
+那是PJ两次
+was PJ twice here
+
+515
+00:34:25,639 --> 00:34:29,234
+PJ是概率一次，所以我仍然是我们
+PJ it's probability once so I'm still we
+
+516
+00:34:29,239 --> 00:34:32,685
+得到PJ的分母1因子
+got the PJ in the denominator 1 factor
+
+517
+00:34:32,690 --> 00:34:36,584
+PJ在分母中然后如此
+of PJ in the denominator and then so
+
+518
+00:34:36,589 --> 00:34:39,044
+那就是我猜我正在做的就是我
+that is I guess what I'm doing is I'm
+
+519
+00:34:39,049 --> 00:34:45,254
+以这种方式计算方差就是这样
+computing the variance this way so what
+
+520
+00:34:45,259 --> 00:34:48,064
+我的电脑现在是他的第一位
+I've computer now is his first bit and
+
+521
+00:34:48,069 --> 00:34:51,225
+然后我说应该减去
+then I said should should subtract the
+
+522
+00:34:51,230 --> 00:34:56,494
+平均值，这是一个样本
+mean squared and this is for one sample
+
+523
+00:34:56,499 --> 00:35:05,114
+所以平均值是我认为它转
+so the mean squared is I think it turns
+
+524
+00:35:05,119 --> 00:35:09,244
+出为1以上s乘以C倍一个乙
+out to be 1 over s times C times a B
+
+525
+00:35:09,249 --> 00:35:12,794
+在这个弗罗贝尼乌斯规范中，这就是它的平方
+squared in this Frobenius norm it's it's
+
+526
+00:35:12,799 --> 00:35:16,574
+一个平方加B平方的东西
+the a squared plus B squared stuff that
+
+527
+00:35:16,579 --> 00:35:26,264
+我以前见过这么好，所以我跳了
+I saw before so okay so this I've jumped
+
+528
+00:35:26,269 --> 00:35:32,824
+从总和中获得一个重要的一步
+a serious step to get from the sum
+
+529
+00:35:32,829 --> 00:35:36,215
+插入的方差的公式
+formula for the variance I've plugged in
+
+530
+00:35:36,220 --> 00:35:42,375
+这个问题，现在好了
+this problem and got that okay and now
+
+531
+00:35:42,380 --> 00:35:50,114
+我要抽样让我们看看它在哪里
+I'm gonna sample let's see where it yeah
+
+532
+00:35:50,119 --> 00:35:52,994
+哦，我想要简化这个
+oh I want I would like to simplify this
+
+533
+00:35:52,999 --> 00:36:02,744
+我想简化一下，所以我有
+I would like to simplify that so I have
+
+534
+00:36:02,749 --> 00:36:06,014
+插上PJ好吧所以我必须这样做
+to plug in the PJs okay so I have to
+
+535
+00:36:06,019 --> 00:36:09,645
+插入那个PJ，我们决定了什么
+plug in for that PJ and we decided what
+
+536
+00:36:09,650 --> 00:36:13,105
+PJ将会是
+PJ was going to be
+
+537
+00:36:13,110 --> 00:36:21,205
+这里好了，所以当我插入的是在
+here okay so when I plug that in in the
+
+538
+00:36:21,210 --> 00:36:26,545
+分母将取消其中一个
+denominator it will cancel one of these
+
+539
+00:36:26,550 --> 00:36:30,835
+我只需要一个JPG的总和
+and I'll just have a sum of a JPG of a
+
+540
+00:36:30,840 --> 00:36:38,905
+JPjbj规范和C是什么
+JP j bj norms and what's that is C so
+
+541
+00:36:38,910 --> 00:36:43,095
+让我再说一遍吧
+let me say this again just it's
+
+542
+00:36:43,100 --> 00:36:45,505
+你什么时候可以检查一下
+something you can just check when you
+
+543
+00:36:45,510 --> 00:36:47,485
+插入那个值时有一分钟
+have a minute when I plug in that value
+
+544
+00:36:47,490 --> 00:36:53,695
+对于PJ，它取消了正方形和
+for PJ here it cancels the squares and
+
+545
+00:36:53,700 --> 00:36:56,185
+只留下第一个力量所以我就是
+just leaves the first power so then I'm
+
+546
+00:36:56,190 --> 00:36:58,945
+加起来的第一个力量，我得到了C.
+adding up the first power and I get C
+
+547
+00:36:58,950 --> 00:37:06,955
+但是PJ中有一个因子C.
+and but the PJ had a factor C in the
+
+548
+00:37:06,960 --> 00:37:09,625
+分母，它在分母中
+denominator and it's in the denominator
+
+549
+00:37:09,630 --> 00:37:12,385
+那边是C，所以它就在那里
+over there so that C is up there so it's
+
+550
+00:37:12,390 --> 00:37:18,555
+C平方来到这里一个恒定的方格
+C squared coming here a constant square
+
+551
+00:37:18,560 --> 00:37:21,775
+减去另一个词有1个超过s
+minus the other term there's a 1 over s
+
+552
+00:37:21,780 --> 00:37:24,535
+这最终会消失，这
+that will eventually go away and this
+
+553
+00:37:24,540 --> 00:37:30,895
+其他任期是1比s更多也许是
+other term is 1 over s more maybe the
+
+554
+00:37:30,900 --> 00:37:35,815
+弗罗贝尼乌斯的规范很好，也许一个
+Frobenius norm squared well maybe one
+
+555
+00:37:35,820 --> 00:37:44,335
+在SS上，所以你看到了我
+over SS are so you're seeing and I
+
+556
+00:37:44,340 --> 00:37:46,765
+道歉
+apologize
+
+557
+00:37:46,770 --> 00:37:52,005
+代数一点点凌乱位
+a little bit messy bit of algebra a
+
+558
+00:37:52,010 --> 00:37:54,475
+有点凌乱的代数但是
+little bit messy bit of algebra but
+
+559
+00:37:54,480 --> 00:37:56,635
+这就是我们最终的结果
+that's what we that's what we ended up
+
+560
+00:37:56,640 --> 00:37:59,905
+当我们采取样品和时
+with and when we take s samples and
+
+561
+00:37:59,910 --> 00:38:02,475
+结合它们将取消s和
+combine them that will cancel the s and
+
+562
+00:38:02,480 --> 00:38:06,655
+我认为，当我们这样做时，它会敲出来
+the I think it'll knock that out when we
+
+563
+00:38:06,660 --> 00:38:20,895
+结合s样品好吧好的
+combine the s samples okay yeah okay
+
+564
+00:38:20,900 --> 00:38:31,585
+知道现在我们可以选择那些
+know what now we get to choose those
+
+565
+00:38:31,590 --> 00:38:34,915
+概率以及我们将如何进行
+probabilities and how are we gonna
+
+566
+00:38:34,920 --> 00:38:39,895
+选择他们什么是最好的选择
+choose them what will be the best choice
+
+567
+00:38:39,900 --> 00:38:41,995
+这是方差的表达式
+here's the expression for the variance
+
+568
+00:38:42,000 --> 00:38:44,595
+是的，这很好，这很好
+yeah this is good this is good
+
+569
+00:38:44,600 --> 00:38:47,845
+从现在开始和你在一起，依靠你
+stay with me from now on you you you
+
+570
+00:38:47,850 --> 00:38:51,685
+你会对自己说的
+you'll be saying to yourself there's
+
+571
+00:38:51,690 --> 00:38:55,015
+那里的一些步骤，我没有完全看到
+some steps there that I didn't see fully
+
+572
+00:38:55,020 --> 00:38:58,675
+我想检查但是我同意但是
+and I want to check but and I agree but
+
+573
+00:38:58,680 --> 00:39:03,345
+让我说我们达到了这一点
+let me say that we get to that point and
+
+574
+00:39:03,350 --> 00:39:08,395
+这是一个固定的数字，所以它是我们的C.
+this is a fixed number so it's C that we
+
+575
+00:39:08,400 --> 00:39:11,995
+我想做小，这就是我们的
+would like to make small and that's our
+
+576
+00:39:12,000 --> 00:39:16,165
+最后的工作这对任何选择都是如此
+final job this was true for any choice
+
+577
+00:39:16,170 --> 00:39:22,395
+P的概率哦，是的，是的
+of the probabilities P well oh yeah yep
+
+578
+00:39:22,400 --> 00:39:28,645
+是的，所以我想这仍然有
+yep so I want to the this still had in
+
+579
+00:39:28,650 --> 00:39:35,485
+可能性是啊我在哪里
+it the probabilities yeah where do I
+
+580
+00:39:35,490 --> 00:39:37,345
+我想要表明那些
+want to do I want to show that those
+
+581
+00:39:37,350 --> 00:39:41,035
+这是最好的选择，这是
+that was the best choice that this was
+
+582
+00:39:41,040 --> 00:39:45,055
+最好的选择，是的，我想表明这一点
+the best choice yeah I want to show that
+
+583
+00:39:45,060 --> 00:39:48,354
+这是最佳选择
+that's the best choice that's a choice
+
+584
+00:39:48,359 --> 00:39:55,375
+基于概率的概率权重
+of weights of probabilities based on the
+
+585
+00:39:55,380 --> 00:39:58,225
+一段时间的长度是B的长度
+length of a time's the length of B of
+
+586
+00:39:58,230 --> 00:40:00,535
+当然听起来不合理
+course that sounds reasonable doesn't it
+
+587
+00:40:00,540 --> 00:40:04,675
+我们想要四个大的大柱子和大的
+we want to four big big columns and big
+
+588
+00:40:04,680 --> 00:40:06,355
+我们想要更高的行
+rows we want to have a higher
+
+589
+00:40:06,360 --> 00:40:09,475
+选择那些的概率，但是
+probability to choose those but is the
+
+590
+00:40:09,480 --> 00:40:11,545
+概率与长度成正比
+probability proportional to the length
+
+591
+00:40:11,550 --> 00:40:15,385
+两者都应该成比例
+of both or should it be proportional to
+
+592
+00:40:15,390 --> 00:40:17,845
+10次​​幂或平方根或
+the 10th power or the square root or
+
+593
+00:40:17,850 --> 00:40:24,015
+那是我们最后一步的结果
+what that's what our final step of
+
+594
+00:40:24,020 --> 00:40:26,905
+优化P所以这是最后的
+optimizing the P so this is the final
+
+595
+00:40:26,910 --> 00:40:29,865
+步
+step
+
+596
+00:40:29,870 --> 00:40:40,765
+优化概率P1到PsI.
+optimize the probabilities P 1 to P s I
+
+597
+00:40:40,770 --> 00:40:45,745
+猜测没有P1到PR的R行或
+guess no P 1 to P R for the R rows or
+
+598
+00:40:45,750 --> 00:40:49,375
+a和我们的B行主题的列
+columns of a and our rows of B subject
+
+599
+00:40:49,380 --> 00:40:52,605
+他们必须加起来为1，
+to their you have to add up to 1 and
+
+600
+00:40:52,610 --> 00:40:55,405
+我的意思是优化是什么意思
+what do I mean by optimize I mean
+
+601
+00:40:55,410 --> 00:41:00,415
+最小化这是优化手段
+minimize this is optimize means
+
+602
+00:41:00,420 --> 00:41:10,525
+最小化这个表达C所以AJBJ
+minimizing this expression C so AJ BJ
+
+603
+00:41:10,530 --> 00:41:26,155
+转移到哪里是PG的希望
+transfer where's it's the over PG o hope
+
+604
+00:41:26,160 --> 00:41:29,955
+帮忙
+help help
+
+605
+00:41:29,960 --> 00:41:36,895
+所以让我看到亚我已经方差
+so let me just see ya my variance has
+
+606
+00:41:36,900 --> 00:41:41,305
+得到一个PJ是的，我的差异对不起我
+got a PJ in it yeah my variance sorry my
+
+607
+00:41:41,310 --> 00:41:47,325
+方差哦，这是我的差异
+variance oh okay this is my variance
+
+608
+00:41:47,330 --> 00:41:50,605
+如果我做对了，这就是结果
+this is the result if I make the right
+
+609
+00:41:50,610 --> 00:41:56,425
+对，如果我做出这个选择的选择
+choice for the if I make this choice for
+
+610
+00:41:56,430 --> 00:41:59,545
+概率，但我正在备份一个
+the probabilities but I'm backing up a
+
+611
+00:41:59,550 --> 00:42:05,025
+分钟，这是，如果这是与
+minute this is if this is the with
+
+612
+00:42:05,030 --> 00:42:08,685
+最佳
+optimal
+
+613
+00:42:08,690 --> 00:42:13,285
+PJ然后我们得到了那么好的回答
+PJ's then we got that answer great that
+
+614
+00:42:13,290 --> 00:42:14,064
+是我们的答案
+was our answer
+
+615
+00:42:14,069 --> 00:42:18,285
+但我正在支持这个并说
+but I'm backing up to this and saying
+
+616
+00:42:18,290 --> 00:42:22,915
+什么是最佳PJs
+what are the optimal PJs for to make
+
+617
+00:42:22,920 --> 00:42:26,275
+这种差异很小，所以我才是真的
+this variance small so I'm I'm really
+
+618
+00:42:26,280 --> 00:42:30,175
+我只是做着这样做，我让我
+I'm just doing what doing this I let me
+
+619
+00:42:30,180 --> 00:42:36,255
+就在那里，问题更简单，最小化
+right there the problem simpler minimize
+
+620
+00:42:36,260 --> 00:42:44,635
+一些豌豆等于一些
+with the some of the peas equal one some
+
+621
+00:42:44,640 --> 00:42:51,324
+数量q平方超过QJ/PJ是的
+quantity q squared over QJ / PJ yeah
+
+622
+00:42:51,329 --> 00:42:59,515
+那就是你怎么这些qJS那个
+that's it how do you so these q JS that
+
+623
+00:42:59,520 --> 00:43:01,705
+我刚刚介绍了那封信
+i just introduced that letter for are
+
+624
+00:43:01,710 --> 00:43:07,195
+AJBJ他们可能是他们的
+the AJ B J's they're they're given maybe
+
+625
+00:43:07,200 --> 00:43:11,844
+我只是把AJPJ放回去了
+I'll just put put back AJ PJ so to
+
+626
+00:43:11,849 --> 00:43:14,965
+重复这是计算
+repeat this is the calculation of the
+
+627
+00:43:14,970 --> 00:43:19,375
+方差睡衣的任何选择，这是
+variance for any choice of PJs this is
+
+628
+00:43:19,380 --> 00:43:22,614
+如果我做出最好的选择，我会得到什么
+what I get if I make the best choice but
+
+629
+00:43:22,619 --> 00:43:24,685
+在这里我要告诉它是
+over here I'm gonna show that it is the
+
+630
+00:43:24,690 --> 00:43:26,905
+最好的选择因为它是选择
+best choice because that it's the choice
+
+631
+00:43:26,910 --> 00:43:29,725
+这使得这个结果小到了
+that makes this result as small as
+
+632
+00:43:29,730 --> 00:43:33,145
+可能这就是Mulder的呻吟声
+possible so that's the the groans Mulder
+
+633
+00:43:33,150 --> 00:43:37,195
+钳子方面所以我们有统计数据
+plier aspect so we there statistics has
+
+634
+00:43:37,200 --> 00:43:40,044
+已经完成我得到了我得到这个
+been done I'm get I'm getting this
+
+635
+00:43:40,049 --> 00:43:44,785
+回答而不是放入一些
+answer and instead of putting in some
+
+636
+00:43:44,790 --> 00:43:48,854
+奇怪的Q让我把在这些是什么
+weird Q let me put in what these are
+
+637
+00:43:48,859 --> 00:43:50,844
+他们不管他们是一群
+they're whatever they're bunch of
+
+638
+00:43:50,849 --> 00:43:56,715
+数字，但我除以PJ和
+numbers but I'm dividing by the PJ and
+
+639
+00:43:56,720 --> 00:44:03,145
+你怎么找到最好的PJ你知道吗？
+how do you find the best PJ do you know
+
+640
+00:44:03,150 --> 00:44:10,015
+关于那个优化问题我他们
+about that optimization question I they
+
+641
+00:44:10,020 --> 00:44:13,854
+必须添加到一个和Grouch有
+have to add to one and the Grouch had
+
+642
+00:44:13,859 --> 00:44:16,225
+伟大的想法，所以这可能是
+the great idea so this is maybe the
+
+643
+00:44:16,230 --> 00:44:19,945
+我们第一次使用他的想法，所以你
+first time we've used his idea so do you
+
+644
+00:44:19,950 --> 00:44:22,485
+记得他的想法
+remember what his idea
+
+645
+00:44:22,490 --> 00:44:25,524
+他接受了这个约束并且建立了
+he takes this constraint and he builds
+
+646
+00:44:25,529 --> 00:44:29,965
+它成为他乘以它的函数
+it into the function he multiplies it by
+
+647
+00:44:29,970 --> 00:44:33,864
+一些不为人知的神秘数字
+some unknown mysterious number often
+
+648
+00:44:33,869 --> 00:44:35,965
+叫做lambda但与此毫无关系
+called lambda but nothing to do with
+
+649
+00:44:35,970 --> 00:44:38,304
+的关注的特征值
+eigenvalues of the concern of the
+
+650
+00:44:38,309 --> 00:44:41,004
+PI应该添加的约束
+constraints that the PI's should add to
+
+651
+00:44:41,009 --> 00:44:46,375
+一个，所以他零，他有零，但有
+one so he had zero he had zero but with
+
+652
+00:44:46,380 --> 00:44:50,544
+一个变量lambda，这是拉格朗日的
+a variable lambda this is Lagrange's
+
+653
+00:44:50,549 --> 00:44:54,175
+想法所以这是它很整洁，这
+idea so it's it's pretty neat that this
+
+654
+00:44:54,180 --> 00:44:56,844
+问题我离开了随机抽样
+problem I've left randomized sampling
+
+655
+00:44:56,849 --> 00:45:00,165
+我到达了这个最后的子问题
+I've arrived at this final subproblem
+
+656
+00:45:00,170 --> 00:45:02,965
+优化下的概率
+optimizing the probabilities under the
+
+657
+00:45:02,970 --> 00:45:04,794
+条件，他们添加到一个和
+condition that they add to one and
+
+658
+00:45:04,799 --> 00:45:08,304
+拉格朗日的想法是建立这个等式
+Lagrange's idea was build that equation
+
+659
+00:45:08,309 --> 00:45:12,235
+进入功能然后你可以采取
+into the function then you can take
+
+660
+00:45:12,240 --> 00:45:15,354
+衍生品，但你也采取
+derivatives but you also take
+
+661
+00:45:15,359 --> 00:45:17,304
+关于λ的衍生物
+derivatives with respect to lambda
+
+662
+00:45:17,309 --> 00:45:21,114
+因为现在这是一个未知的你和你
+because that's now an unknown and you
+
+663
+00:45:21,119 --> 00:45:23,395
+解决你将导数设置为零
+solve you set the derivatives to zero
+
+664
+00:45:23,400 --> 00:45:25,364
+你会得到答案就像一个
+and you get the answer it's like a
+
+665
+00:45:25,369 --> 00:45:30,625
+奇迹，但如果你已经看到了地面
+miracle but if you've seen the ground
+
+666
+00:45:30,630 --> 00:45:33,534
+这是一个令人困惑的奇迹就是它
+it's a confusing miracle that's what it
+
+667
+00:45:33,539 --> 00:45:36,534
+是啊好吧，如果我走了
+is yeah okay so if I take the
+
+668
+00:45:36,539 --> 00:45:39,534
+豌豆规格的衍生物
+derivatives of the spec to the peas set
+
+669
+00:45:39,539 --> 00:45:42,895
+他们为零我认为我会得到
+them to zero I think I'm going to get
+
+670
+00:45:42,900 --> 00:45:49,064
+推荐的豆豆让我这么做
+the recommended Peas so that so I've
+
+671
+00:45:49,069 --> 00:45:51,804
+我用a计算了最终的答案
+I've computed the final answer with a
+
+672
+00:45:51,809 --> 00:45:53,725
+推荐作品，但现在我要
+recommended piece but now I'm going to
+
+673
+00:45:53,730 --> 00:45:55,975
+表明他们确实是这样推荐的
+show that they really are recommended so
+
+674
+00:45:55,980 --> 00:45:58,225
+你可以采取的衍生
+can you take the derivative of that with
+
+675
+00:45:58,230 --> 00:46:02,334
+尊重P，我可以提出这个问题
+respect to P could I just raise this a
+
+676
+00:46:02,339 --> 00:46:05,965
+很少提高它好一点
+little raise it a little more okay take
+
+677
+00:46:05,970 --> 00:46:08,784
+关于每个P的P的导数
+the derivative with respect to P each P
+
+678
+00:46:08,789 --> 00:46:11,544
+因为我有未知数
+because I've got n unknowns there are
+
+679
+00:46:11,549 --> 00:46:15,024
+然而，许多人可能都是未知数而且我已经知道了
+however many maybe are unknowns and I've
+
+680
+00:46:15,029 --> 00:46:17,334
+得到lambda所以我有R加1件事
+got lambda so I've got R plus 1 things
+
+681
+00:46:17,339 --> 00:46:19,554
+那么这个突破到P的衍生物是什么
+so what's the derivative this break to P
+
+682
+00:46:19,559 --> 00:46:23,334
+行演算采取衍生物即
+okay calculus take the derivative that
+
+683
+00:46:23,339 --> 00:46:30,955
+这是一个JVJ转换为减号
+it's a J VJ transpose over with a minus
+
+684
+00:46:30,960 --> 00:46:33,074
+PJ正确
+P J squared right
+
+685
+00:46:33,079 --> 00:46:36,135
+以及相关的衍生物
+and the derivative of that with respect
+
+686
+00:46:36,140 --> 00:46:43,474
+到PJ是负lambda所以那是
+to PJ is minus lambda so that's
+
+687
+00:46:43,479 --> 00:46:46,724
+衍生出幽灵PJ是0和
+derivative the specter PJ is 0 and the
+
+688
+00:46:46,729 --> 00:46:49,304
+导数，所以这是衍生物
+derivative so this was the derivative
+
+689
+00:46:49,309 --> 00:46:55,184
+关于PJ必须是0然后
+with respect to PJ has to be 0 and then
+
+690
+00:46:55,189 --> 00:46:58,514
+对lambda的衍生方面
+the derivative respect to lambda into
+
+691
+00:46:58,519 --> 00:47:06,314
+尊重lambda就是JSJS减去
+respect to lambda is that JS JS minus
+
+692
+00:47:06,319 --> 00:47:12,464
+等于1lagravis混淆了整体
+equals 1 the lagravis confused the whole
+
+693
+00:47:12,469 --> 00:47:17,474
+世界，但他给了我们一个休息时间
+world but he gave us a break that in the
+
+694
+00:47:17,479 --> 00:47:19,304
+只是衍生出幽灵lambda
+derivative the specter lambda it just
+
+695
+00:47:19,309 --> 00:47:21,524
+因为他带回了约束
+brings back the constraint because he
+
+696
+00:47:21,529 --> 00:47:23,144
+刚用lambda因子构建它
+just built it in with a factor lambda
+
+697
+00:47:23,149 --> 00:47:25,244
+然后他拿出了衍生物而且它
+then he took the derivative and it
+
+698
+00:47:25,249 --> 00:47:27,524
+带回了约束但是这个
+brought back the constraint but this
+
+699
+00:47:27,529 --> 00:47:34,304
+部分是美丽的部分，我现在做什么
+part is the beautiful part now what do I
+
+700
+00:47:34,309 --> 00:47:40,994
+从中吸取教训，有时甚至有时
+learn from that and sometimes sometimes
+
+701
+00:47:40,999 --> 00:47:43,214
+这将是一个加号，为什么我不这样做
+this would be a plus why don't I make it
+
+702
+00:47:43,219 --> 00:47:46,954
+只是为了让我的生活更轻松
+a plus just to make my life easier
+
+703
+00:47:46,959 --> 00:47:49,484
+勒布朗说现在已经死了，他没有
+LeBron said it's dead now and he don't
+
+704
+00:47:49,489 --> 00:47:52,875
+无论如何都要关心它是否接近-好吧
+care anyway whether it's closer on - ok
+
+705
+00:47:52,880 --> 00:47:59,204
+好的，所以这就是告诉我这个
+ok so so this is telling me this so this
+
+706
+00:47:59,209 --> 00:48:00,974
+告诉我什么什么击中倍增
+is telling me what what hits multiplier
+
+707
+00:48:00,979 --> 00:48:03,794
+是他告诉我，如果这个等式
+is he's telling me that if this equation
+
+708
+00:48:03,799 --> 00:48:10,594
+告诉我乘数是AJ
+is telling me that the multiplier is AJ
+
+709
+00:48:10,599 --> 00:48:18,704
+VJ转置/PJ平方或放另一个
+VJ transpose / PJ squared or put another
+
+710
+00:48:18,709 --> 00:48:25,294
+他告诉我PJ平方的方式就是我
+way he's telling me that PJ squared is I
+
+711
+00:48:25,299 --> 00:48:28,694
+猜猜我希望漂亮之后
+guess I'm hoping that after the pretty
+
+712
+00:48:28,699 --> 00:48:32,144
+我们采取的令人困惑的步骤是一个
+confusing steps that we took this is a
+
+713
+00:48:32,149 --> 00:48:35,984
+用数学的单独一点点
+separate a little bit of math using the
+
+714
+00:48:35,989 --> 00:48:38,354
+LaGrant适用或想法，我希望如此
+LaGrant apply or an idea and I hope that
+
+715
+00:48:38,359 --> 00:48:40,875
+你的想法将是你的结果
+your your result your thought will be
+
+716
+00:48:40,880 --> 00:48:43,754
+男孩很简单，所以我要去
+boy that was pretty simple so I'm gonna
+
+717
+00:48:43,759 --> 00:48:46,334
+把PJ平方是这里的车道
+put the PJ Squared's here in the lane
+
+718
+00:48:46,339 --> 00:48:53,555
+好吧，这告诉我什么看
+okay well what does this tell me look
+
+719
+00:48:53,560 --> 00:48:56,535
+我已经采取了衍生规范来
+I've taken the derivative the spec to
+
+720
+00:48:56,540 --> 00:48:58,875
+PJ和我得到了每个的等式
+the PJs and I got this equation for each
+
+721
+00:48:58,880 --> 00:49:02,864
+J但是我把导数部分拿走了
+J but I took the derivative the partial
+
+722
+00:49:02,869 --> 00:49:05,795
+衍生物回到每个睡衣和
+derivatives back to each of the PJs and
+
+723
+00:49:05,800 --> 00:49:13,785
+它告诉我PJ平了等一下
+it tells me that PJ squared wait a
+
+724
+00:49:13,790 --> 00:49:15,135
+分钟什么是广场因此
+minute what's the square and therefore
+
+725
+00:49:15,140 --> 00:49:21,215
+帮助我只有两分钟哦
+help I've only got two minutes and oh
+
+726
+00:49:21,220 --> 00:49:25,455
+他们必须加一个哦是的lambdas
+they have to add to one oh yeah lambdas
+
+727
+00:49:25,460 --> 00:49:27,705
+要救我们哈哈吧
+gonna save us haha right
+
+728
+00:49:27,710 --> 00:49:30,975
+拉姆达是想救我们，因为
+lambda is gonna save us because the
+
+729
+00:49:30,980 --> 00:49:34,935
+总概率所以PJ将是
+total probabilities so PJ will be the
+
+730
+00:49:34,940 --> 00:49:42,015
+这个东西的平方根然后我
+square root of this stuff and then I the
+
+731
+00:49:42,020 --> 00:49:44,055
+号码lambda我还没有决定
+number lambda I haven't decided
+
+732
+00:49:44,060 --> 00:49:47,114
+拉格朗日乘数还没有决定这样
+Lagrange's multiplier haven't decided so
+
+733
+00:49:47,119 --> 00:49:49,425
+它是什么才是正确的数字
+what is it it's the correct number to
+
+734
+00:49:49,430 --> 00:49:53,535
+使这等于一，所以就是这样
+make this equal to one so that's that is
+
+735
+00:49:53,540 --> 00:50:00,795
+C哦天哪，我得到了平方根
+the C oh god what have I got square root
+
+736
+00:50:00,800 --> 00:50:06,165
+我应该开始拍摄
+there shoot I should have started with
+
+737
+00:50:06,170 --> 00:50:11,015
+方块所以这些应该是正方形啊
+squares so these should be squares ah
+
+738
+00:50:11,020 --> 00:50:12,665
+谢谢
+thank you
+
+739
+00:50:12,670 --> 00:50:17,745
+你可以告诉我早些时候使用的时候
+you could have told me earlier use when
+
+740
+00:50:17,750 --> 00:50:19,364
+你看到有麻烦的教授没有
+you see a professor in trouble don't
+
+741
+00:50:19,369 --> 00:50:23,805
+让我只是让他挂在那儿好吧
+let's just let him hang there okay right
+
+742
+00:50:23,810 --> 00:50:30,435
+好吧，这是AJBJ所以除了
+okay and this is AJ BJ so apart from the
+
+743
+00:50:30,440 --> 00:50:33,465
+kerfuffle在这里和笔记得到它
+kerfuffle here and the notes get it
+
+744
+00:50:33,470 --> 00:50:37,145
+是的，因为我有时间在那里思考
+right because I had time to think there
+
+745
+00:50:37,150 --> 00:50:41,625
+结果证明这一点
+that it it turns out that
+
+746
+00:50:41,630 --> 00:50:45,175
+这个最优给出了公式
+this optimum gave the formula for the
+
+747
+00:50:45,180 --> 00:50:49,975
+PJS我以前使用，所以当我
+PJs that I used earlier so when I
+
+748
+00:50:49,980 --> 00:50:51,925
+介绍这个公式，我说让我们
+introduced this formula I said let's
+
+749
+00:50:51,930 --> 00:50:54,655
+让我们选择那些概率
+take let's choose those probabilities
+
+750
+00:50:54,660 --> 00:50:57,205
+但后来我回到了最后
+but then I came back at the very end and
+
+751
+00:50:57,210 --> 00:50:59,845
+表明他们是概率
+showed that they are the probabilities
+
+752
+00:50:59,850 --> 00:51:03,115
+这样可以最大限度地减少方差
+that minimize the variance so that's
+
+753
+00:51:03,120 --> 00:51:06,715
+就像今天的讲座你能想到的那样
+like today's lecture can you just think
+
+754
+00:51:06,720 --> 00:51:10,255
+一分钟，但请回去
+a minute but please do go back through
+
+755
+00:51:10,260 --> 00:51:14,335
+笔记因为有些杂乱
+the notes because there's some messy
+
+756
+00:51:14,340 --> 00:51:17,845
+我在那里的差异步骤
+steps in the variance there that I had
+
+757
+00:51:17,850 --> 00:51:21,085
+快点过去，但你明白了
+to go by quickly but you understand the
+
+758
+00:51:21,090 --> 00:51:24,535
+我们建立一个随机的原则
+principle that we set up a randomized
+
+759
+00:51:24,540 --> 00:51:31,075
+系统我们选择概率瞄准
+system we we choose probabilities aiming
+
+760
+00:51:31,080 --> 00:51:34,105
+获得最小的最好的
+to get the the best the smallest
+
+761
+00:51:34,110 --> 00:51:36,835
+差异，事实证明，好
+variance and it turns out that the good
+
+762
+00:51:36,840 --> 00:51:40,645
+列时的概率更大
+probabilities are bigger when the column
+
+763
+00:51:40,650 --> 00:51:43,165
+是一个更大的列，以便使用
+is a big a larger column so that to use
+
+764
+00:51:43,170 --> 00:51:44,905
+这你必须通过矩阵
+this you have to go through the matrix
+
+765
+00:51:44,910 --> 00:51:47,905
+并找到列的长度
+and find the lengths of the columns
+
+766
+00:51:47,910 --> 00:51:50,295
+因为那是告诉你的
+because that's what's telling you the
+
+767
+00:51:50,300 --> 00:51:54,145
+概率所以这就像第一个
+probabilities so that's a like a first
+
+768
+00:51:54,150 --> 00:51:55,825
+在你做之前通过
+pass through before you do the
+
+769
+00:51:55,830 --> 00:51:58,195
+随机抽样你必须决定
+randomized sampling you must decide on
+
+770
+00:51:58,200 --> 00:52:01,185
+概率和它们取决于
+the probabilities and they depend on the
+
+771
+00:52:01,190 --> 00:52:04,615
+不同栏目的大小谢谢
+sizes of the different columns thank you
+
+772
+00:52:04,620 --> 00:52:08,935
+让我通过，我会来
+for getting me through that I'll come
+
+773
+00:52:08,940 --> 00:52:10,975
+回多一点关于随机
+back to a little more about randomized
+
+774
+00:52:10,980 --> 00:52:15,475
+事情下次再往后不多
+things next time and then later not much
+
+775
+00:52:15,480 --> 00:52:17,305
+但后来一点点后，我们会
+later but a little bit later we'll be
+
+776
+00:52:17,310 --> 00:52:20,450
+seeing probability much more seriously
+
+777
+00:52:17,310 --> 00:52:23,600
+更加认真地看待概率
+
+778
+00:52:20,460 --> 00:52:23,600
+好的谢谢你
+okay thank you
+

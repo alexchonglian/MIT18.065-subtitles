@@ -1,0 +1,4063 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,905
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,910 --> 00:00:26,745
+好吧，我很高兴回来，我
+well ok I'm happy to be back and I'm
+
+10
+00:00:26,750 --> 00:00:30,554
+对项目提案非常满意
+really happy about the project proposals
+
+11
+00:00:30,559 --> 00:00:31,664
+那是进来的
+that are coming in
+
+12
+00:00:31,669 --> 00:00:34,635
+这就好，这是一个非常好的
+this is like ok this is a really a good
+
+13
+00:00:34,640 --> 00:00:38,835
+课程的一部分，所以保持他们
+part of the course and so keep them
+
+14
+00:00:38,840 --> 00:00:41,895
+如果和我很乐意给予
+coming if and and I happy to give
+
+15
+00:00:41,900 --> 00:00:43,575
+无论我对这些反馈如何
+whatever feedback I can on those
+
+16
+00:00:43,580 --> 00:00:48,915
+建议，并在那里开始
+proposals and do make a start there
+
+17
+00:00:48,920 --> 00:00:52,005
+他们真的很好，如果有的话
+they're really good and if if some are
+
+18
+00:00:52,010 --> 00:00:54,915
+在学期结束前完成
+completed before the end of the semester
+
+19
+00:00:54,920 --> 00:00:58,455
+我们可以给生产提供机会
+and we can give produce a chance offer
+
+20
+00:00:58,460 --> 00:01:00,945
+你有机会报告这些
+you a chance to report on them that's
+
+21
+00:01:00,950 --> 00:01:06,615
+对那些人来说这太好了
+that's good too so well done with those
+
+22
+00:01:06,620 --> 00:01:10,815
+建议所以我今天正在跳楼
+proposals so while I'm today I'm jumping
+
+23
+00:01:10,820 --> 00:01:12,495
+第六部分
+to part six
+
+24
+00:01:12,500 --> 00:01:14,765
+所以第六部分和第七部分是
+so part six and part seven are
+
+25
+00:01:14,770 --> 00:01:16,995
+优化是最根本的
+optimization which is the fundamental
+
+26
+00:01:17,000 --> 00:01:19,185
+进入深度学习的算法
+algorithm that goes into deep learning
+
+27
+00:01:19,190 --> 00:01:21,855
+所以我们必须从优化开始
+so we've got to start with optimization
+
+28
+00:01:21,860 --> 00:01:25,654
+每个人都必须获得该图片和
+everybody has to get that picture and
+
+29
+00:01:25,659 --> 00:01:30,755
+然后部分7将是结构
+then part seven will be the structure of
+
+30
+00:01:30,760 --> 00:01:34,245
+CNN的卷积神经网络和所有
+CNN's convolutional neural nets and all
+
+31
+00:01:34,250 --> 00:01:38,474
+各种应用等等
+that all kinds of applications and so
+
+32
+00:01:38,479 --> 00:01:41,925
+我们可以先从优化开始吗？
+can we start with optimization so first
+
+33
+00:01:41,930 --> 00:01:46,085
+我能不能得到基本的事实
+could I like get the basic facts about
+
+34
+00:01:46,090 --> 00:01:50,205
+泰勒系列的三个术语就是这样的
+three terms of a Taylor series so that's
+
+35
+00:01:50,210 --> 00:01:52,815
+典型的是，我们很少会上升
+typical it's seldom that we would go up
+
+36
+00:01:52,820 --> 00:01:57,075
+优化中的三阶导数
+to third derivatives in optimization so
+
+37
+00:01:57,080 --> 00:02:00,224
+这是最有用的近似值
+that's the most useful approximation to
+
+38
+00:02:00,229 --> 00:02:03,885
+一个功能每个人都在这里认识到它
+a function everybody recognizes it here
+
+39
+00:02:03,890 --> 00:02:07,875
+我认为f只是一个功能
+I'm thinking of f as just one function
+
+40
+00:02:07,880 --> 00:02:12,884
+和X只是一个变量，但现在我
+and X as just one variable but but now I
+
+41
+00:02:12,889 --> 00:02:15,814
+真想去
+really want to go to
+
+42
+00:02:15,819 --> 00:02:19,154
+更多变量，所以我需要做什么
+more variables so what do I have to
+
+43
+00:02:19,159 --> 00:02:24,794
+如果f是更多的函数则改变
+change if f is a function of more
+
+44
+00:02:24,799 --> 00:02:29,325
+变量所以现在我正在考虑X.
+variables so now now I'm thinking of X
+
+45
+00:02:29,330 --> 00:02:38,835
+也没有让我看到我想要的
+as well no let me see yeah I want n
+
+46
+00:02:38,840 --> 00:02:49,245
+这里的变量X是X1到xn所以是什么
+variables here X is X 1 up to xn so what
+
+47
+00:02:49,250 --> 00:02:52,064
+它只是为了得到直截了当的话
+it would just to get the words straight
+
+48
+00:02:52,069 --> 00:02:56,745
+所以我们可以开始对优化等什么
+so we can begin on optimization so what
+
+49
+00:02:56,750 --> 00:03:00,255
+将是类似的步骤所以功能
+will be the similar step so the function
+
+50
+00:03:00,260 --> 00:03:07,064
+f在X处记住X是n个变量没关系
+f at X remember X is n variables okay
+
+51
+00:03:07,069 --> 00:03:09,675
+现在我有什么DeltaX呢
+now what do I have Delta X so what
+
+52
+00:03:09,680 --> 00:03:13,215
+关于DeltaX现在有什么意义呢
+what's the point about Delta X now it's
+
+53
+00:03:13,220 --> 00:03:17,805
+矢量DeltaX1到DeltaXn和什么
+a vector Delta X 1 to Delta X n and what
+
+54
+00:03:17,810 --> 00:03:20,865
+关于F的导数它是一个向量
+about the derivative of F it's a vector
+
+55
+00:03:20,870 --> 00:03:24,255
+相对于X的F的导数
+to the derivative of F with respect to X
+
+56
+00:03:24,260 --> 00:03:27,104
+1是关于X2的F的导数
+1 the derivative of F with respect X 2
+
+57
+00:03:27,109 --> 00:03:30,134
+等等等什么我有什么做的我
+and so on so what do I have what do I
+
+58
+00:03:30,139 --> 00:03:33,375
+不得不改变我现在的那些
+have to change about that I now those
+
+59
+00:03:33,380 --> 00:03:35,685
+伙计们是矢量，所以这是他们的点
+guys are vectors so it's their dot
+
+60
+00:03:35,690 --> 00:03:40,094
+产品，所以它的DeltaX转置
+product so it's Delta X transpose that
+
+61
+00:03:40,099 --> 00:03:48,495
+矢量时间这个DFDX所以是这样的
+vector times this DF DX so what's the so
+
+62
+00:03:48,500 --> 00:03:51,314
+现在我正在取代所有人
+this now I'm replacing this by all the
+
+63
+00:03:51,319 --> 00:03:58,035
+衍生物，它是渐变所以
+derivatives and the it's the gradient so
+
+64
+00:03:58,040 --> 00:04:02,895
+的F在X上的梯度为
+the gradient of F at X is the
+
+65
+00:04:02,900 --> 00:04:12,014
+衍生品让我们看到它至关重要
+derivatives let's see it's essential to
+
+66
+00:04:12,019 --> 00:04:15,255
+直接在这里得到记号是的
+get the notation straight here yeah so
+
+67
+00:04:15,260 --> 00:04:18,014
+它将是该的偏导数
+it'll be the partial derivatives of the
+
+68
+00:04:18,019 --> 00:04:24,075
+函数f所以gradF是部分的
+function f so grad F is the partial
+
+69
+00:04:24,080 --> 00:04:28,035
+F的衍生物相对于X1
+derivatives of F with respect to X 1
+
+70
+00:04:28,040 --> 00:04:30,975
+向下偏导数的击到
+down to partial derivative the strike to
+
+71
+00:04:30,980 --> 00:04:35,205
+考试还行，这是线性术语
+exam okay good that's the linear term
+
+72
+00:04:35,210 --> 00:04:38,345
+现在什么是二次项1/2
+and now what's the quadratic term 1/2
+
+73
+00:04:38,350 --> 00:04:42,105
+现在DeltaX不再是标量了
+now Delta X isn't a scalar anymore it's
+
+74
+00:04:42,110 --> 00:04:44,715
+一个矢量，所以我将有DeltaX.
+a vector so I'm going to have Delta X
+
+75
+00:04:44,720 --> 00:04:51,345
+转置和DeltaX以及进入的内容
+transpose and a Delta X and what goes in
+
+76
+00:04:51,350 --> 00:04:54,735
+之间是二阶导数但是
+between is the second derivatives but
+
+77
+00:04:54,740 --> 00:04:57,695
+我有一个n变量的函数和
+I've got a function of n variables and
+
+78
+00:04:57,700 --> 00:05:01,125
+那么这是什么呢？现在我有了
+so what does this mmm so now I have a
+
+79
+00:05:01,130 --> 00:05:03,975
+二阶导数矩阵
+matrix of second derivatives right and
+
+80
+00:05:03,980 --> 00:05:07,815
+我会称之为H这是矩阵
+I'll call it H this is the matrix of
+
+81
+00:05:07,820 --> 00:05:14,175
+二阶导数hJK是第二个
+second derivatives h JK is the second
+
+82
+00:05:14,180 --> 00:05:17,865
+关于XJ和F的F的导数
+derivative of F with respect to XJ and
+
+83
+00:05:17,870 --> 00:05:23,445
+XK又有什么名字这个家伙
+XK and what's the name for this guy the
+
+84
+00:05:23,450 --> 00:05:30,915
+HessianHessian矩阵如何Hessians
+Hessian Hessian matrix how the Hessians
+
+85
+00:05:30,920 --> 00:05:33,345
+钻进这张照片我不知道
+got into this picture I don't know the
+
+86
+00:05:33,350 --> 00:05:35,025
+我认识的只有Hessians才是那些人
+only Hessians I know are the ones who
+
+87
+00:05:35,030 --> 00:05:38,585
+为革命战争而战
+fought in the Revolutionary War for
+
+88
+00:05:38,590 --> 00:05:41,465
+有人在我身边的那个人
+somebody who which side were they on I
+
+89
+00:05:41,470 --> 00:05:44,085
+想想法国可能是错误的一面
+think maybe the wrong side the French
+
+90
+00:05:44,090 --> 00:05:48,465
+在我们这边，是的，不管怎样，Hessian
+were on our side and yeah anyway Hessian
+
+91
+00:05:48,470 --> 00:05:51,135
+矩阵和什么是事实
+matrix and what what are the facts about
+
+92
+00:05:51,140 --> 00:05:53,625
+那个矩阵很好，第一个事实是
+that matrix well the first fact is that
+
+93
+00:05:53,630 --> 00:05:55,785
+这是他们，关键的事实是它
+it's them and the key fact is it's
+
+94
+00:05:55,790 --> 00:06:04,065
+对称的确定，再次，这是一个
+symmetric ok and again that's an
+
+95
+00:06:04,070 --> 00:06:09,305
+近似所以所有人都参与其中
+approximation so and everybody involved
+
+96
+00:06:09,310 --> 00:06:11,985
+认识到如果我们有乐趣，如果n是
+recognizes that if we have a fun if n is
+
+97
+00:06:11,990 --> 00:06:13,725
+非常大，我们有一个功能
+very large and we have a function of
+
+98
+00:06:13,730 --> 00:06:17,535
+许多变量然后我们有n个衍生物
+many variables then we had n derivatives
+
+99
+00:06:17,540 --> 00:06:20,505
+计算这里和约1/2和
+to compute here and about 1/2 and
+
+100
+00:06:20,510 --> 00:06:22,965
+使用一半的平方导数
+squared derivatives using the the half
+
+101
+00:06:22,970 --> 00:06:25,575
+来自对称但关键
+comes from the symmetry but the key
+
+102
+00:06:25,580 --> 00:06:27,965
+点是N平方变量
+point is the N squared variables
+
+103
+00:06:27,970 --> 00:06:30,765
+衍生物来计算那里
+derivatives to compute there so
+
+104
+00:06:30,770 --> 00:06:36,555
+如果n，计算梯度是可行的
+computing the gradient is feasible if n
+
+105
+00:06:36,560 --> 00:06:40,125
+实际上是小的还是中等的
+is small or moderately large actually
+
+106
+00:06:40,130 --> 00:06:42,045
+你用秋天
+you by using autumn
+
+107
+00:06:42,050 --> 00:06:45,045
+分化背后的关键理念
+differentiation the key idea of back
+
+108
+00:06:45,050 --> 00:06:51,465
+传播回来道具你可以得到你
+propagation back prop you can get you
+
+109
+00:06:51,470 --> 00:06:54,254
+可以做到你可以加快计算速度
+can do you can speed up the computation
+
+110
+00:06:54,259 --> 00:06:57,914
+衍生品相当惊人，但仍然
+of derivatives quite amazingly but still
+
+111
+00:06:57,919 --> 00:07:01,245
+对于深度学习问题的规模
+for the size of deep learning problems
+
+112
+00:07:01,250 --> 00:07:05,444
+因为这是这是如何达到这么好
+as that's that's how to reach okay so
+
+113
+00:07:05,449 --> 00:07:10,664
+这是图片，然后我会想要
+that's the picture and then I will want
+
+114
+00:07:10,669 --> 00:07:15,495
+解决使用这个解决方程式让
+to solve use this to solve equations let
+
+115
+00:07:15,500 --> 00:07:22,384
+我有一个平行的图片给我们
+me there's a parallel picture for us
+
+116
+00:07:22,389 --> 00:07:26,355
+矢量F所以现在这是一个向量
+vector F so now this is a vector
+
+117
+00:07:26,360 --> 00:07:34,425
+这是X的F1到X的f
+function this is F 1 of X up to f of X
+
+118
+00:07:34,430 --> 00:07:42,525
+X是X1到Xn所以我有n
+and X is X 1 to X n so I have n
+
+119
+00:07:42,530 --> 00:07:46,335
+n个变量和函数的函数
+functions of n variables and functions
+
+120
+00:07:46,340 --> 00:07:48,855
+n变量很好，这正是什么
+of n variables well that's exactly what
+
+121
+00:07:48,860 --> 00:07:54,615
+我有一个想到的渐变
+I have in the gradient that's think of
+
+122
+00:07:54,620 --> 00:07:57,464
+这两者是平行的并行存在
+these two is parallel the parallel being
+
+123
+00:07:57,469 --> 00:08:02,855
+s对应于Fn的梯度
+s is corresponds to the gradient of F n
+
+124
+00:08:02,860 --> 00:08:15,134
+n个变量的函数现在好了
+functions of n variables ok ok so now
+
+125
+00:08:15,139 --> 00:08:17,564
+也许我在这里的目的是解决F.
+maybe what I'm after here is to solve F
+
+126
+00:08:17,569 --> 00:08:20,325
+等于0所以我要考虑一下
+equals 0 so I'm going to think about the
+
+127
+00:08:20,330 --> 00:08:26,414
+在F在X+δX所以它开始
+the F at X plus Delta X so it starts
+
+128
+00:08:26,419 --> 00:08:31,724
+用f的X然后我们有
+with f of X and then we have the
+
+129
+00:08:31,729 --> 00:08:34,904
+校正乘以第一个矩阵
+correction times the matrix of first
+
+130
+00:08:34,909 --> 00:08:40,954
+衍生品以及它的名称是什么
+derivatives and what's the name for that
+
+131
+00:08:40,959 --> 00:08:44,975
+一阶导数矩阵
+matrix of first derivatives
+
+132
+00:08:44,980 --> 00:08:53,445
+好吧，如果我只给了n个函数而且我
+well if I'm just given n functions and I
+
+133
+00:08:53,450 --> 00:08:56,535
+是的，我在这之后我的意思是什么
+yeah what am i what am i after here I'm
+
+134
+00:08:56,540 --> 00:09:06,195
+寻找雅可比人，所以头发会去
+looking for the Jacobian so hair will go
+
+135
+00:09:06,200 --> 00:09:10,095
+雅各比人J这是雅各比人
+the Jacobian J this is the Jacobian
+
+136
+00:09:10,100 --> 00:09:16,175
+雅各比雅可比矩阵和
+named after Jacobi Jacobian matrix and
+
+137
+00:09:16,180 --> 00:09:21,495
+JK条目的条目是什么？
+what are its entries J the JK entry is
+
+138
+00:09:21,500 --> 00:09:25,215
+Jayce函数的导数
+the derivative of the Jayce function
+
+139
+00:09:25,220 --> 00:09:31,275
+关于这个案子非常好
+with respect to the case very okay and
+
+140
+00:09:31,280 --> 00:09:34,995
+我正在停止那里的第一顺序
+I'm stopping a first-order there okay so
+
+141
+00:09:35,000 --> 00:09:36,975
+这些都是类似的事实
+these are those sort of like facts of
+
+142
+00:09:36,980 --> 00:09:40,775
+你可以说1802的微积分事实
+calculus facts of 1802 you could say
+
+143
+00:09:40,780 --> 00:09:43,505
+多变量微积分就是重点
+multivariable calculus that's the point
+
+144
+00:09:43,510 --> 00:09:46,035
+注意我们正在做的就像
+notice that we're we're doing just like
+
+145
+00:09:46,040 --> 00:09:49,275
+1802年上半年恰好不同
+the first half of 1802 just different
+
+146
+00:09:49,280 --> 00:09:52,275
+微积分导数泰勒
+differential calculus derivatives Taylor
+
+147
+00:09:52,280 --> 00:09:54,075
+我们不会做多个系列
+series we're not doing multiple
+
+148
+00:09:54,080 --> 00:09:56,385
+积分不属于我们的世界
+integrals that's not part of our world
+
+149
+00:09:56,390 --> 00:10:00,375
+这里好了，这就是背景现在我
+here okay so that's the background now I
+
+150
+00:10:00,380 --> 00:10:05,745
+想看看优化还好吧
+want to look at optimization okay okay
+
+151
+00:10:05,750 --> 00:10:12,795
+所以在这里我想要优化得很好
+so over here I want to optimize well
+
+152
+00:10:12,800 --> 00:10:22,565
+让我试着最小化X的f
+over here let me try to minimize f of X
+
+153
+00:10:22,570 --> 00:10:27,015
+我会在这里和矢量案例中
+and I'll be in the vector case here and
+
+154
+00:10:27,020 --> 00:10:31,335
+在这里
+over here
+
+155
+00:10:31,340 --> 00:10:38,774
+我想解决F等于零和
+I want to solve F equals zero and of
+
+156
+00:10:38,779 --> 00:10:44,085
+当然这意味着F的意思是一个
+course that means that means F of one
+
+157
+00:10:44,090 --> 00:10:47,055
+一直到FN等于零
+equal to zero all the way along to F N
+
+158
+00:10:47,060 --> 00:10:59,805
+这里等于零我有n个方程式
+equals zero here I have n equations let
+
+159
+00:10:59,810 --> 00:11:02,865
+我从那个开始，我会开始
+me start with that one and I'll start
+
+160
+00:11:02,870 --> 00:11:05,625
+用牛顿的方法牛顿最好的
+with Newton's method Newton the best to
+
+161
+00:11:05,630 --> 00:11:09,155
+在n个未知数中求解这n个方程
+solve these n equations in n unknowns
+
+162
+00:11:09,160 --> 00:11:22,605
+好的，所以牛顿经常没有
+okay so Newton which is often not
+
+163
+00:11:22,610 --> 00:11:25,245
+在1802年提出这是一种犯罪，因为
+presented in 1802 that's a crime because
+
+164
+00:11:25,250 --> 00:11:30,815
+那就是那个大的应用
+that's the that's the big application of
+
+165
+00:11:30,820 --> 00:11:34,065
+雅各比人的渐变好吧所以我
+gradients in jacobians okay so I'm
+
+166
+00:11:34,070 --> 00:11:35,775
+试图解决n中的n个方程
+trying to solve n equations in n
+
+167
+00:11:35,780 --> 00:11:39,885
+未知数，所以我希望F在X加Delta
+unknowns and so I want F at X plus Delta
+
+168
+00:11:39,890 --> 00:11:44,834
+X为零，所以我想要X加上f
+X to be zero right so I want f of X plus
+
+169
+00:11:44,839 --> 00:11:48,375
+DeltaX为零，因此X加上f
+Delta X to be zero so so f of X plus
+
+170
+00:11:48,380 --> 00:11:51,225
+DeltaX是我把它归零
+Delta X is I'm putting in a zero I'm
+
+171
+00:11:51,230 --> 00:11:56,265
+只是复制那个等式就是f在哪里
+just copying that equation is f at where
+
+172
+00:11:56,270 --> 00:12:00,615
+我是X让我让K用这个案子
+I am X let's let me use K for the case
+
+173
+00:12:00,620 --> 00:12:04,815
+迭代所以我在一个点XK我想
+iteration so I'm at a point XK I want to
+
+174
+00:12:04,820 --> 00:12:09,584
+得到XK加一点，所以我已经0了
+get to a point XK plus one and so I've 0
+
+175
+00:12:09,589 --> 00:12:15,665
+在那个时间点是X加J的f
+is f of X plus J at that point times
+
+176
+00:12:15,670 --> 00:12:21,185
+DeltaX是XK加1减去XK
+Delta X which is XK plus one minus XK
+
+177
+00:12:21,190 --> 00:12:26,225
+当然这是牛顿的方法
+good that's Newton's method of course a
+
+178
+00:12:26,230 --> 00:12:29,834
+零是不完全正确的零
+zero isn't quite true well zero will be
+
+179
+00:12:29,839 --> 00:12:32,925
+真正的对，如果我构建
+true for the for the if I'm constructing
+
+180
+00:12:32,930 --> 00:12:36,524
+XK加一个我在这里构建XK
+XK plus one here I'm constructing XK
+
+181
+00:12:36,529 --> 00:12:40,095
+加一个好，所以让我重写一下
+plus one okay so let me just rewrite
+
+182
+00:12:40,100 --> 00:12:42,515
+那把刀，我们有牛顿的方法
+that knife and we've got Newton's method
+
+183
+00:12:42,520 --> 00:12:45,195
+所以我们正在寻找这个
+so we're looking for this
+
+184
+00:12:45,200 --> 00:12:53,295
+改变XK加一减XK我会把它
+change XK plus one minus XK I'll put it
+
+185
+00:12:53,300 --> 00:12:59,264
+在这方面加上XK这就是这个
+on this side s plus XK so that's this
+
+186
+00:12:59,269 --> 00:13:02,024
+现在我必须将其反转并将其打开
+now I have to invert that and put it on
+
+187
+00:13:02,029 --> 00:13:03,704
+等式的另一面如此
+the other side of the equation so
+
+188
+00:13:03,709 --> 00:13:06,855
+这将是一个减去这个家伙将是
+that'll go with a minus this guy will be
+
+189
+00:13:06,860 --> 00:13:16,425
+颠倒和F在XK那是牛顿的
+inverted and F at XK that's Newton's
+
+190
+00:13:16,430 --> 00:13:21,165
+方法自然让我再说一遍，
+method natural let me just repeat that
+
+191
+00:13:21,170 --> 00:13:23,925
+你看到XK加1减去XK的位置
+you see where the XK plus 1 minus XK is
+
+192
+00:13:23,930 --> 00:13:30,735
+城市权利，我把FXK转移到另一个
+city right and I moved FX K to the other
+
+193
+00:13:30,740 --> 00:13:33,105
+一边用减号然后我
+side with a minus sign and then I
+
+194
+00:13:33,110 --> 00:13:36,555
+乘以J逆，所以我得到了
+multiply through by J inverse so I got
+
+195
+00:13:36,560 --> 00:13:37,035
+那
+that
+
+196
+00:13:37,040 --> 00:13:41,774
+所以这是牛顿的系统方法
+so that's Newton's method for a system
+
+197
+00:13:41,779 --> 00:13:46,005
+方程式，但在那里，我要去
+of equations but over there I'm going to
+
+198
+00:13:46,010 --> 00:13:47,535
+写下牛顿的方法
+write down Newton's method for
+
+199
+00:13:47,540 --> 00:13:51,315
+最小化功能这是基本的
+minimizing a function this is such basic
+
+200
+00:13:51,320 --> 00:13:54,135
+我们必须从这里开始的东西让我
+stuff that we have to begin here let me
+
+201
+00:13:54,140 --> 00:13:57,495
+甚至从极端开始
+even begin with a with a extremely
+
+202
+00:13:57,500 --> 00:14:00,524
+牛顿的直截了当的例子
+straightforward example of Newton's
+
+203
+00:14:00,529 --> 00:14:04,385
+这里的方法假设我的功能我
+method here suppose my function I
+
+204
+00:14:04,390 --> 00:14:09,524
+假设我只有一个功能
+suppose I've only got one function
+
+205
+00:14:09,529 --> 00:14:11,954
+实际上我想我只有一个
+actually suppose I only have one
+
+206
+00:14:11,959 --> 00:14:15,405
+功能如此，所以我想我的
+function so so I'm so suppose my
+
+207
+00:14:15,410 --> 00:14:21,704
+函数是x平方减去9而我想要的
+function is x squared minus 9 and I want
+
+208
+00:14:21,709 --> 00:14:26,565
+解决X的f等于0我想找到
+to solve f of X equals 0 I want to find
+
+209
+00:14:26,570 --> 00:14:30,194
+这个9的平方根好吧那又怎么样
+this square root of 9 okay so what what
+
+210
+00:14:30,199 --> 00:14:32,144
+牛顿的方法是我们应该的
+is Newton's method for it we just should
+
+211
+00:14:32,149 --> 00:14:35,925
+看到我的观点只是看看牛顿是怎么回事
+see my point is just to see how Newton's
+
+212
+00:14:35,930 --> 00:14:39,105
+写入方法然后重写它
+method is written and then rewrite it a
+
+213
+00:14:39,110 --> 00:14:41,415
+有点让我们看到有
+little bit so that we see there
+
+214
+00:14:41,420 --> 00:14:45,405
+收敛好吧当然是这样的
+convergence okay so so of course the
+
+215
+00:14:45,410 --> 00:14:49,905
+雅可比是2倍，所以牛顿的方法说
+Jacobian is 2x so Newton's method says
+
+216
+00:14:49,910 --> 00:14:52,514
+XK加1我只是要复制
+that XK plus 1 I'm just going to copy
+
+217
+00:14:52,519 --> 00:14:55,745
+那
+that
+
+218
+00:14:55,750 --> 00:14:59,005
+减1超过2XK
+minus 1 over 2 XK
+
+219
+00:14:59,010 --> 00:15:04,165
+这是X的衍生时间F.
+right that's the derivative times F at X
+
+220
+00:15:04,170 --> 00:15:12,685
+K这是XK平方减去9好
+K which is XK squared minus 9 okay
+
+221
+00:15:12,690 --> 00:15:15,655
+我们按照公式我们这个
+we followed the formula we that this
+
+222
+00:15:15,660 --> 00:15:18,595
+确定XK加1，让我们让它
+determines XK plus 1 and let's let's
+
+223
+00:15:18,600 --> 00:15:23,665
+简化它所以在这里我有XK-那
+simplify it so here I have XK - that
+
+224
+00:15:23,670 --> 00:15:27,145
+看起来像XK的一半所以我想我
+looks like a half of XK so I think I
+
+225
+00:15:27,150 --> 00:15:31,795
+有一半的XK然后这一次
+have a half of XK and then this times
+
+226
+00:15:31,800 --> 00:15:40,405
+这是一个超过XK的9个半部分
+this is 9 halves of one over X K is that
+
+227
+00:15:40,410 --> 00:15:46,335
+XK的右半部分来自这个东西
+right half of XK from this stuff and
+
+228
+00:15:46,340 --> 00:15:53,085
+加上X的一半加上一半好吧
+plus nine halves of one over X here ok
+
+229
+00:15:53,090 --> 00:15:57,265
+我能不能检查一下我是否知道
+can I just like check that I know the
+
+230
+00:15:57,270 --> 00:16:01,975
+答案是三，我可以肯定我得到了
+answer is three can I be sure that I get
+
+231
+00:16:01,980 --> 00:16:04,615
+正确答案3所以这就是如果
+the right answer 3 so this was that if
+
+232
+00:16:04,620 --> 00:16:08,515
+如果XK当然是三个当然我
+if XK was exactly three then of course I
+
+233
+00:16:08,520 --> 00:16:12,175
+期待XK加1保持3，所以做什么
+expect XK plus 1 to stay at 3 so do what
+
+234
+00:16:12,180 --> 00:16:15,175
+这样做会发生在三分之一和
+does that happen so half of three and
+
+235
+00:16:15,180 --> 00:16:19,185
+九个一半的服务是什么
+nine halves of one serve what's that
+
+236
+00:16:19,190 --> 00:16:24,105
+三分之一和九分之一
+half of three and nine halves of
+
+237
+00:16:24,110 --> 00:16:27,445
+三分之一没关系就是那三个
+one-third okay that's that's three
+
+238
+00:16:27,450 --> 00:16:29,485
+六分之一和半分三分
+halves and three halves at six halves
+
+239
+00:16:29,490 --> 00:16:36,025
+这三个还好，所以我们已经
+and that's three okay okay so we've
+
+240
+00:16:36,030 --> 00:16:37,855
+检查方法是否一致
+checked that the method is consistent
+
+241
+00:16:37,860 --> 00:16:40,585
+这意味着我们保留了代数
+which just means we kept the algebra
+
+242
+00:16:40,590 --> 00:16:44,335
+笔直但后来真正重要的
+straight but then the really important
+
+243
+00:16:44,340 --> 00:16:47,455
+关于牛顿方法的观点是这样的
+point about Newton's method is this is
+
+244
+00:16:47,460 --> 00:16:50,965
+现在发现它收敛的速度有多快
+to discover how fast it converges so now
+
+245
+00:16:50,970 --> 00:16:55,375
+让我DKXK加一减三所以
+let me dou XK plus one minus three so
+
+246
+00:16:55,380 --> 00:17:00,265
+现在我正在看我的错误
+now I'm looking at the error which is I
+
+247
+00:17:00,270 --> 00:17:01,765
+希望接近零
+hope approaching zero
+
+248
+00:17:01,770 --> 00:17:04,645
+它接近零的速度有多快
+is it approaching zero how quickly is it
+
+249
+00:17:04,650 --> 00:17:05,965
+接近零是这些
+approaching zero these are the
+
+250
+00:17:05,970 --> 00:17:09,565
+因此优化的基本问题
+fundamental questions of optimization so
+
+251
+00:17:09,570 --> 00:17:11,095
+我要从两个中减去三个
+I'm going to subtract three from both
+
+252
+00:17:11,100 --> 00:17:12,705
+双方
+sides
+
+253
+00:17:12,710 --> 00:17:17,245
+不知怎的，从这里好吧我想我会的
+somehow okay from here I guess I'm gonna
+
+254
+00:17:17,250 --> 00:17:21,655
+减去三者可以我，所以我只是
+subtract three can I just so I was just
+
+255
+00:17:21,660 --> 00:17:26,815
+检查它是否正确现在好了
+checking that it was correct okay now so
+
+256
+00:17:26,820 --> 00:17:30,355
+XK加一减三我会
+XK plus one minus three I'm gonna
+
+257
+00:17:30,360 --> 00:17:32,575
+从两侧减去三，我要去
+subtract three from both sides I'm gonna
+
+258
+00:17:32,580 --> 00:17:35,185
+减去那里三，然后我希望
+subtract three there and then I hope
+
+259
+00:17:35,190 --> 00:17:39,325
+就是那个盒子就是下来的东西
+that that's that box is what goes down
+
+260
+00:17:39,330 --> 00:17:42,355
+这里右边两个减去了三个
+here right subtracted three from both
+
+261
+00:17:42,360 --> 00:17:45,805
+所以我看着我希望它
+sides so I'm looking at I'm hoping it
+
+262
+00:17:45,810 --> 00:17:49,255
+现在去希望事情变成零好吗
+goes now hoping things go to zero okay
+
+263
+00:17:49,260 --> 00:17:53,545
+所以我有什么让我考虑因素
+so what do I have there let me factor
+
+264
+00:17:53,550 --> 00:17:59,485
+超过XK1，所以我有什么
+out the 1 over X K so what do I have
+
+265
+00:17:59,490 --> 00:18:03,505
+然后在XK上留下一个，所以有一个9
+then left one over X K so there's a 9
+
+266
+00:18:03,510 --> 00:18:08,905
+XK上有一半，所以我
+halves from there one over X K so I
+
+267
+00:18:08,910 --> 00:18:12,955
+真的有XK平方的1/2是因为
+really have 1/2 of X K squared because
+
+268
+00:18:12,960 --> 00:18:16,555
+我除以nXK，这减去3我
+I've divided by n X K and this minus 3 I
+
+269
+00:18:16,560 --> 00:18:21,565
+因为我是最好的减去3XK
+better put minus 3 X K cause I'm
+
+270
+00:18:21,570 --> 00:18:25,465
+除以XKI声称这没关系
+dividing by X K I claim that that's okay
+
+271
+00:18:25,470 --> 00:18:29,445
+现在我知道了
+now I've got it
+
+272
+00:18:29,450 --> 00:18:35,305
+让我们看看让我拿出2来
+and let's see let me take out the 2 to
+
+273
+00:18:35,310 --> 00:18:41,635
+忘了这两个人，让我成为一个6
+forget these twos and make that a 6 so I
+
+274
+00:18:41,640 --> 00:18:45,385
+超过2XK倍9加XK
+have 1 over 2 X K times 9 plus X K
+
+275
+00:18:45,390 --> 00:18:50,145
+平方减6对此有什么好处
+squared minus 6 anything good about that
+
+276
+00:18:50,150 --> 00:18:58,255
+我们希望这一周我们希望那样
+we hope so week we hope that that is
+
+277
+00:18:58,260 --> 00:19:01,255
+有吸引力的东西，所以这又是
+something attractive so this is again
+
+278
+00:19:01,260 --> 00:19:04,905
+这是步骤K加1和1的错误
+this is the error at step K plus 1 and
+
+279
+00:19:04,910 --> 00:19:11,215
+这个东西超过2倍XK的1倍
+it's 1 over 2 X K times this thing in
+
+280
+00:19:11,220 --> 00:19:14,755
+括号9加XK平方减去6xk
+brackets 9 plus X K squared minus 6x k
+
+281
+00:19:14,760 --> 00:19:22,405
+我们认识到，随着XK零下3
+and we recognize that as X K minus 3
+
+282
+00:19:22,410 --> 00:19:25,295
+平方
+squared
+
+283
+00:19:25,300 --> 00:19:29,175
+XK平方减去其中六个加上9个
+XK squared minus six of them plus 9
+
+284
+00:19:29,180 --> 00:19:36,915
+这是XK减3平方好吧
+that's XK minus 3 squared okay that was
+
+285
+00:19:36,920 --> 00:19:41,055
+目标当然是目标
+the goal of course that's the goal that
+
+286
+00:19:41,060 --> 00:19:43,695
+显示为什么牛顿的方法太棒了
+shows why Newton's method is fantastic
+
+287
+00:19:43,700 --> 00:19:46,935
+如果你能执行它，如果你可以开始
+if you can execute it if you can start
+
+288
+00:19:46,940 --> 00:19:50,055
+接近通知那就是那个
+near enough notice that so that's that's
+
+289
+00:19:50,060 --> 00:19:53,505
+所以我怎么形容这个伟大的
+so how do I describe this this great
+
+290
+00:19:53,510 --> 00:19:56,055
+等式，它说错误是
+equation it says that the error is
+
+291
+00:19:56,060 --> 00:19:57,735
+每一步都是平方的
+squared at every step
+
+292
+00:19:57,740 --> 00:20:01,275
+如果我是的话，每一步都是平方的
+squared at every step so if I'm
+
+293
+00:20:01,280 --> 00:20:06,525
+收敛到它会满足的极限
+converging to a limit it will satisfy
+
+294
+00:20:06,530 --> 00:20:12,855
+这将是3或我猜减3
+that it'll be 3 or I guess minus 3 is
+
+295
+00:20:12,860 --> 00:20:14,165
+那可能
+that possible
+
+296
+00:20:14,170 --> 00:20:18,075
+是的减3是这里的另一个解决方案
+yeah minus 3 is another solution here so
+
+297
+00:20:18,080 --> 00:20:20,385
+我们所以我们有两个解决方案
+we're so we've got two solutions the
+
+298
+00:20:20,390 --> 00:20:26,175
+牛顿法可以收敛到凌晨3点我
+Newton's method could converge to 3 am i
+
+299
+00:20:26,180 --> 00:20:29,325
+它可以收敛到负3所以我
+right it could converge to minus 3 so I
+
+300
+00:20:29,330 --> 00:20:32,265
+我可以有一个类似的等式排序
+could I'd have a similar equation sort
+
+301
+00:20:32,270 --> 00:20:36,795
+以-3为中心或者它是什么
+of centered at minus 3 or what does it
+
+302
+00:20:36,800 --> 00:20:41,585
+总是做其中一个可能爆炸的事情
+always do one of those it could blow up
+
+303
+00:20:41,590 --> 00:20:46,095
+它可以让所以这些都是有
+it could so that so those are there are
+
+304
+00:20:46,100 --> 00:20:48,735
+那种有吸引力的地区
+sort of regions of Attraction there are
+
+305
+00:20:48,740 --> 00:20:51,015
+所有接近3的起点
+all the starting points that approach 3
+
+306
+00:20:51,020 --> 00:20:53,825
+而这个等式的重点是
+and the whole point of that equation is
+
+307
+00:20:53,830 --> 00:20:57,705
+二次收敛的误差
+with quadratic convergence the error
+
+308
+00:20:57,710 --> 00:21:00,645
+在它看来的每一步都被平方
+being squared at every step it seems in
+
+309
+00:21:00,650 --> 00:21:03,165
+三，然后就是这一切
+on three then there's a whole all these
+
+310
+00:21:03,170 --> 00:21:05,265
+可以去的起点
+starting points that would would go to
+
+311
+00:21:05,270 --> 00:21:07,995
+减3然后他们开始
+minus 3 and then their their starting
+
+312
+00:21:08,000 --> 00:21:11,265
+那些会爆炸的点数和
+points that would blow up so and and
+
+313
+00:21:11,270 --> 00:21:13,845
+那可能是为了这个非常简单
+those may be for this very simple
+
+314
+00:21:13,850 --> 00:21:16,365
+问题是，画面是不是太
+problem that the picture is not too
+
+315
+00:21:16,370 --> 00:21:18,195
+很难理清那三个
+difficult to sort out those three
+
+316
+00:21:18,200 --> 00:21:22,185
+区域，但如果我们有，这是
+regions but if we had and this is
+
+317
+00:21:22,190 --> 00:21:27,255
+允许矢量
+allowing for a vector
+
+318
+00:21:27,260 --> 00:21:30,705
+我们就是两个方程式或n个方程式
+two equations or n equations then we're
+
+319
+00:21:30,710 --> 00:21:33,195
+在n个变量中，你真的得到了
+in n variables and is really you get
+
+320
+00:21:33,200 --> 00:21:37,005
+美丽的图片你得到一些
+beautiful pictures you get some some of
+
+321
+00:21:37,010 --> 00:21:39,764
+给出的图片类型有所增加
+the type of pictures that gave gave rise
+
+322
+00:21:39,769 --> 00:21:42,404
+这些关于分形图的书籍
+to these books on fractals the picture
+
+323
+00:21:42,409 --> 00:21:46,154
+关于分形的书-对于这些盆地
+books on fractals - for these basins of
+
+324
+00:21:46,159 --> 00:21:49,215
+吸引力是否起作用
+attraction does the does the starting
+
+325
+00:21:49,220 --> 00:21:52,215
+点引导您进入其中一个解决方案
+point lead you to one of the solutions
+
+326
+00:21:52,220 --> 00:21:55,154
+或者它会引导你到达无限远
+or does it lead you to infinity here it
+
+327
+00:21:55,159 --> 00:21:57,225
+只画画会很有趣
+that would be interesting to just draw
+
+328
+00:21:57,230 --> 00:22:01,215
+这是好的，但必不可少的
+it for this okay but the the essential
+
+329
+00:22:01,220 --> 00:22:03,315
+要点是它们是二次收敛
+point is they're quadratic convergence
+
+330
+00:22:03,320 --> 00:22:06,615
+如果它足够接近你会看到它有
+if it's close enough you see that it has
+
+331
+00:22:06,620 --> 00:22:10,185
+如果XK是X0则关闭
+to be close if if X K is if X 0 is
+
+332
+00:22:10,190 --> 00:22:12,825
+非常接近3然后这是关于
+pretty near 3 then this is about
+
+333
+00:22:12,830 --> 00:22:18,914
+六分之一，那将是一件好事
+one-sixth of that and there'll be a good
+
+334
+00:22:18,919 --> 00:22:21,644
+在这种情况下吸引力区域没关系
+region of Attraction in this case okay
+
+335
+00:22:21,649 --> 00:22:27,544
+这就是牛顿的方法
+so that's that's Newton's method for
+
+336
+00:22:27,549 --> 00:22:31,095
+方程式，现在我想做牛顿的
+equations and now I want to do Newton's
+
+337
+00:22:31,100 --> 00:22:31,725
+方法
+method
+
+338
+00:22:31,730 --> 00:22:33,644
+我只想转换所有这些词
+I just want to convert all those words
+
+339
+00:22:33,649 --> 00:22:37,605
+以牛顿的优化方法
+over to Newton's method for optimization
+
+340
+00:22:37,610 --> 00:22:42,884
+所以记住这些板子
+so remember the these boards were
+
+341
+00:22:42,889 --> 00:22:45,014
+求解F等于0
+solving F equals 0
+
+342
+00:22:45,019 --> 00:22:48,345
+这个董事会正在尽量减少资本F和
+this board is minimizing capital F and
+
+343
+00:22:48,350 --> 00:22:50,774
+他们之间有什么联系
+what's the connection between them well
+
+344
+00:22:50,779 --> 00:22:54,274
+当然，当我们对应的时候
+of course when we this corresponds to
+
+345
+00:22:54,279 --> 00:23:05,804
+如果我是的话，至少解决梯度问题
+solving the gradient at a minimum if I'm
+
+346
+00:23:05,809 --> 00:23:08,715
+最小化我找到一个点所有
+minimizing I'm finding a point where all
+
+347
+00:23:08,720 --> 00:23:11,894
+第一个导数是零，所以
+the first derivatives are zero so so
+
+348
+00:23:11,899 --> 00:23:14,505
+这将是这些之间的匹配
+that'll be the match between these that
+
+349
+00:23:14,510 --> 00:23:19,575
+在这张照片中这个正确的F是
+that this right F in this picture is the
+
+350
+00:23:19,580 --> 00:23:21,884
+那幅画中的小F.
+small F in that picture
+
+351
+00:23:21,889 --> 00:23:29,105
+好吧，我猜我在这里，这是
+ok now I guess here I have and this is
+
+352
+00:23:29,110 --> 00:23:34,034
+我们的应用程序的核心
+sort of the heart of our applications to
+
+353
+00:23:34,039 --> 00:23:36,615
+深度学习我们非常复杂
+deep learning we have very complicated
+
+354
+00:23:36,620 --> 00:23:39,495
+损失函数以最小化函数
+loss functions to minimize functions of
+
+355
+00:23:39,500 --> 00:23:40,804
+数千或数百
+thousands or hundred
+
+356
+00:23:40,809 --> 00:23:45,514
+成千上万的变量还可以
+thousands of variable okay so that means
+
+357
+00:23:45,519 --> 00:23:47,195
+我们想用牛顿的
+that we would like to use Newton's
+
+358
+00:23:47,200 --> 00:23:50,284
+方法，但往往我们不能让我这样
+method but often we can't let me so let
+
+359
+00:23:50,289 --> 00:23:53,014
+我所以我需要在这里放两个
+me so I need to to put down here two
+
+360
+00:23:53,019 --> 00:23:56,735
+方法一不涉及那些
+methods one that doesn't involve those
+
+361
+00:23:56,740 --> 00:23:59,554
+高二阶导数和一个a
+high second derivatives and one a
+
+362
+00:23:59,559 --> 00:24:03,874
+牛顿这样做首先如此
+Newton's that does so so so first so
+
+363
+00:24:03,879 --> 00:24:07,254
+首先，我会写下一个方法
+first I'll write down a method that does
+
+364
+00:24:07,259 --> 00:24:14,254
+不涉及如此方法一和这个
+not involve so so method one and this
+
+365
+00:24:14,259 --> 00:24:25,534
+将是最陡峭的下降，是什么
+will be steepest descent and what is
+
+366
+00:24:25,539 --> 00:24:30,274
+那说XK加一个新的
+that that says that XK plus one the new
+
+367
+00:24:30,279 --> 00:24:36,394
+X是旧的X减去我最陡的下降
+X is the old X minus my steepest descent
+
+368
+00:24:36,399 --> 00:24:38,945
+意味着我进入最陡峭的状态
+means that I move in the steepest
+
+369
+00:24:38,950 --> 00:24:41,674
+方向是哪个方向
+direction which is the direction of the
+
+370
+00:24:41,679 --> 00:24:47,014
+FI的梯度移动了一段距离而我
+gradient of F I move some distance and I
+
+371
+00:24:47,019 --> 00:24:50,134
+更好地有自由来决定那是什么
+better have freedom to decide what that
+
+372
+00:24:50,139 --> 00:24:53,554
+距离应该是这一步
+distance should be so this is a step
+
+373
+00:24:53,559 --> 00:25:01,054
+大小是或用深语
+size yes or in the language of deep
+
+374
+00:25:01,059 --> 00:25:03,154
+学习它通常被称为学习
+learning it's often called the learning
+
+375
+00:25:03,159 --> 00:25:18,904
+速率学习率还可以
+rate learning rate okay so is that that
+
+376
+00:25:18,909 --> 00:25:23,855
+所以我们选择SK是很自然的
+so and it's natural to choose SK we're
+
+377
+00:25:23,860 --> 00:25:26,284
+你一路走来看看这是什么
+going along do you see where what this
+
+378
+00:25:26,289 --> 00:25:28,264
+右手边看起来像我在
+right hand side looks like I'm at a
+
+379
+00:25:28,269 --> 00:25:32,494
+在n维中指出它们都是它
+point in n dimensions they were all it
+
+380
+00:25:32,499 --> 00:25:34,835
+在这里我们有n个维度
+were in n dimensions here we have
+
+381
+00:25:34,840 --> 00:25:38,225
+n个变量的函数有一个
+functions of n variables there's a
+
+382
+00:25:38,230 --> 00:25:41,284
+向量有一个向下移动的方向
+vector there's a direction to move down
+
+383
+00:25:41,289 --> 00:25:45,364
+图的最陡斜率
+the steepest slope of the of the graph
+
+384
+00:25:45,369 --> 00:25:49,264
+这是移动的距离，我们
+and here's a distance to move and we
+
+385
+00:25:49,269 --> 00:25:53,725
+将停止我们必须得到这个
+will stop we'll have to get off this
+
+386
+00:25:53,730 --> 00:26:00,754
+如果我们坚持下去，通常会迈出一步
+step normally if we if we stay on it a
+
+387
+00:26:00,759 --> 00:26:03,514
+小摇摆它会回来它会采取
+little sway it'll swing back it'll take
+
+388
+00:26:03,519 --> 00:26:05,134
+我们走向无限
+us off to infinity
+
+389
+00:26:05,139 --> 00:26:08,495
+等你想要选择SK
+wait the the you would like to choose SK
+
+390
+00:26:08,500 --> 00:26:14,404
+这样你就可以减少资金F.
+so that you minimize capital F you take
+
+391
+00:26:14,409 --> 00:26:17,524
+这一点上的这一点，这就是我
+the point on this line so this is I'm
+
+392
+00:26:17,529 --> 00:26:23,065
+这是我们朝着一个方向发展的一条线
+this is a line in our in a direction in
+
+393
+00:26:23,070 --> 00:26:31,114
+RN以及该线路上的所有点
+RN and for all the points on that line
+
+394
+00:26:31,119 --> 00:26:35,225
+在那个方向F有一些价值和
+in that direction F has some value and
+
+395
+00:26:35,230 --> 00:26:38,554
+你期望的是最初的
+what you expect is that initially
+
+396
+00:26:38,559 --> 00:26:43,475
+因为你明智地选择了它的价值
+because you chose it sensibly the value
+
+397
+00:26:43,480 --> 00:26:46,325
+F会下降但是会有所下降
+of F will drop but then at a certain
+
+398
+00:26:46,330 --> 00:26:49,595
+指出它会转向你
+point it'll it'll turn turn back on you
+
+399
+00:26:49,600 --> 00:26:51,935
+并增加，这将是
+and increase so that would be the
+
+400
+00:26:51,940 --> 00:26:54,424
+自然停留点，那就是我
+natural stopping point and that would I
+
+401
+00:26:54,429 --> 00:26:57,575
+会说这就是一个确切的线搜索等等
+would call that an exact line search so
+
+402
+00:26:57,580 --> 00:27:03,544
+精确的线搜索将是确切的线
+exact line search would be exact line
+
+403
+00:27:03,549 --> 00:27:12,424
+搜索是当然最好的感觉
+search is the best sense of course that
+
+404
+00:27:12,429 --> 00:27:17,044
+需要时间来计算和你
+would take time to to compute and you
+
+405
+00:27:17,049 --> 00:27:20,104
+可能在深度学习的时候
+probably in deep learning that's time
+
+406
+00:27:20,109 --> 00:27:24,424
+你负担不起，所以你修复了学习
+you can't afford so you fix the learning
+
+407
+00:27:24,429 --> 00:27:28,024
+你也可以选择点o1
+rate s maybe you choose point o1 to be
+
+408
+00:27:28,029 --> 00:27:31,294
+非常安全，所以这是方法之一
+pretty safe okay so that's method one
+
+409
+00:27:31,299 --> 00:27:33,874
+最陡的血统现在是一种方法二
+steepest descent now a method two will
+
+410
+00:27:33,879 --> 00:27:44,494
+是牛顿的方法所以现在我们有了XK
+be Newton's method so now we have XK
+
+411
+00:27:44,499 --> 00:27:53,044
+加一个我的两个XK减去一些时间
+plus one my two XK minus something times
+
+412
+00:27:53,049 --> 00:27:58,164
+达美F
+Delta F
+
+413
+00:27:58,169 --> 00:28:01,174
+现在我要做正确的事
+and now I'm going to do the right thing
+
+414
+00:28:01,179 --> 00:28:05,345
+我要住在这里和右边
+I'm gonna live right here and the right
+
+415
+00:28:05,350 --> 00:28:07,414
+事情是Hessian的第二个
+thing is the Hessian the second
+
+416
+00:28:07,419 --> 00:28:09,905
+导致这就是这个
+derivative that's what this is this was
+
+417
+00:28:09,910 --> 00:28:12,845
+便宜我们只是采取了方向和
+cheap we just took the direction and and
+
+418
+00:28:12,850 --> 00:28:15,725
+现在我们真的开始了
+went along it now we're getting really
+
+419
+00:28:15,730 --> 00:28:19,174
+使用第二个方向正确的方向
+the right direction by using the second
+
+420
+00:28:19,179 --> 00:28:24,455
+导数使得H逆向可以和
+derivative so that's H inverse okay and
+
+421
+00:28:24,460 --> 00:28:32,255
+我所做的就是将其设定为
+what I've done is to is to set that to
+
+422
+00:28:32,260 --> 00:28:38,465
+零，所以你会看到那些
+zero so that would be do you see thats
+
+423
+00:28:38,470 --> 00:28:39,635
+牛顿的方法
+Newton's method
+
+424
+00:28:39,640 --> 00:28:43,075
+它与这个家伙完全平行
+it's totally parallel to this guy
+
+425
+00:28:43,080 --> 00:28:46,865
+实际上，我很高兴有这些
+actually I'm really happy to have these
+
+426
+00:28:46,870 --> 00:28:49,835
+两块板在板上相互平行
+two on the board parallel to each other
+
+427
+00:28:49,840 --> 00:28:51,995
+因为你必须保持
+because you have to kind of keep
+
+428
+00:28:52,000 --> 00:28:54,125
+直接你在解决方程式
+straight are you solving equations or
+
+429
+00:28:54,130 --> 00:28:57,125
+你最小化功能，你是谁
+are you minimizing functions and you're
+
+430
+00:28:57,130 --> 00:28:59,705
+在两者中使用不同的字母
+using different letters in the two
+
+431
+00:28:59,710 --> 00:29:02,044
+问题，但现在你看他们如何匹配
+problems but now you see how they match
+
+432
+00:29:02,049 --> 00:29:08,285
+比赛的雅各比亚再次如此
+the Jacobian of so so again the matches
+
+433
+00:29:08,290 --> 00:29:13,085
+因为F为F的梯度是
+think of F as the gradient of F that's
+
+434
+00:29:13,090 --> 00:29:16,655
+这就是你应该这么想的方式
+that's the way you should think of it so
+
+435
+00:29:16,660 --> 00:29:22,895
+渐变的雅可比行列式是
+the Jacobian for of the gradient is the
+
+436
+00:29:22,900 --> 00:29:26,375
+粗麻布雅可比的梯度
+Hessian the Jacobian of the gradient is
+
+437
+00:29:26,380 --> 00:29:28,745
+Hessian，这是有道理的，因为
+the Hessian and that makes sense because
+
+438
+00:29:28,750 --> 00:29:31,025
+我们采取的一阶导数
+we take the first derivative of the
+
+439
+00:29:31,030 --> 00:29:32,554
+一阶导数是第二个
+first derivative is the second
+
+440
+00:29:32,559 --> 00:29:35,345
+只有我们正在做矩阵的导数
+derivative only we're doing matrix y so
+
+441
+00:29:35,350 --> 00:29:38,755
+这就是渐变的雅可比行列式
+that's so the Jacobian of the gradient
+
+442
+00:29:38,760 --> 00:29:41,465
+我们正在做一个矢量矩阵句
+we're doing a vector matrix sentence
+
+443
+00:29:41,470 --> 00:29:43,955
+而非标句
+instead of a scalar sentence the
+
+444
+00:29:43,960 --> 00:29:47,245
+渐变的雅可比行列式是一个Hessian
+Jacobian of the gradient is a Hessian
+
+445
+00:29:47,250 --> 00:29:51,965
+是的，没错，这就是我想要的
+yep right okay so that's what I wanted
+
+446
+00:29:51,970 --> 00:29:54,965
+首先要获得那些基本的
+to start with just to get those basic
+
+447
+00:29:54,970 --> 00:29:58,385
+事实下来，所以基本事实是
+facts down and so the basic facts were
+
+448
+00:29:58,390 --> 00:30:02,135
+这是泰勒系列的三个术语
+the were the three term Taylor series
+
+449
+00:30:02,140 --> 00:30:06,995
+然后是基本算法
+and then the basic algorithms followed
+
+450
+00:30:07,000 --> 00:30:11,015
+自然而然地通过设置
+naturally from it by setting the
+
+451
+00:30:11,020 --> 00:30:13,685
+如果那样，FF在新的点为零
+FF at the new point to zero if that's
+
+452
+00:30:13,690 --> 00:30:16,175
+你在解决什么或者假设他
+what you were solving or by assume he
+
+453
+00:30:16,180 --> 00:30:20,635
+现在有好一个好好好
+had right good good good good okay now
+
+454
+00:30:20,640 --> 00:30:24,185
+现在我们要考虑解决什么问题
+what now we have to think about solving
+
+455
+00:30:24,190 --> 00:30:26,045
+这些问题
+these problems
+
+456
+00:30:26,050 --> 00:30:29,855
+他们研究的是他们收集的费率
+studying do they converge what rate do
+
+457
+00:30:29,860 --> 00:30:32,375
+他们很好地收敛了
+they converge well that's the rate of
+
+458
+00:30:32,380 --> 00:30:35,885
+收敛就像我采取的原因
+convergence is like what I why I took
+
+459
+00:30:35,890 --> 00:30:39,605
+这分开了这个例子所以
+this separated off this example so the
+
+460
+00:30:39,610 --> 00:30:41,555
+牛顿法的收敛速度
+convergence rate for Newton's method
+
+461
+00:30:41,560 --> 00:30:46,165
+将是二次的，误差得到平方
+will be quadratic the error gets squared
+
+462
+00:30:46,170 --> 00:30:48,905
+当然这意味着超级快
+and of course that means super fast
+
+463
+00:30:48,910 --> 00:30:52,225
+如果你足够接近就会收敛
+convergence if you start close enough
+
+464
+00:30:52,230 --> 00:30:55,145
+最陡峭的收敛率
+the rate of convergence for a steepest
+
+465
+00:30:55,150 --> 00:30:57,875
+血统当然不是你不是
+descent is of course not you're not
+
+466
+00:30:57,880 --> 00:30:59,645
+在这里摆弄错误，因为你
+squaring errors here because you're
+
+467
+00:30:59,650 --> 00:31:01,925
+你只需要取一些数字
+you're just taking some number instead
+
+468
+00:31:01,930 --> 00:31:05,615
+因此，正确矩阵的逆
+of the inverse of the correct matrix so
+
+469
+00:31:05,620 --> 00:31:12,815
+你不能指望SuperSpeed这么一个
+you you can't expect SuperSpeed so a
+
+470
+00:31:12,820 --> 00:31:15,335
+线性收敛速度
+linear rate of convergence would be
+
+471
+00:31:15,340 --> 00:31:18,545
+对，你期望错误给你
+right you expect that the error to you
+
+472
+00:31:18,550 --> 00:31:20,755
+我想知道错误是
+would like to know that the error is
+
+473
+00:31:20,760 --> 00:31:24,065
+乘以一些人说的每一步
+multiplied by said every step by some
+
+474
+00:31:24,070 --> 00:31:27,695
+恒定低于一个
+constant below one that would be a
+
+475
+00:31:27,700 --> 00:31:30,995
+线性速率与be相比
+linear rate where compared to be
+
+476
+00:31:31,000 --> 00:31:33,875
+乘以每个平方
+multiplied by being squared at every
+
+477
+00:31:33,880 --> 00:31:39,785
+步骤，这将是我们的基本
+step and so this will be our our basic
+
+478
+00:31:39,790 --> 00:31:46,675
+这是for的基本公式
+this is the basic formula for for
+
+479
+00:31:46,680 --> 00:31:49,505
+大规模的真正大规模
+large-scale for really large-scale
+
+480
+00:31:49,510 --> 00:31:53,435
+问题，当然有方法
+problems and there are methods of course
+
+481
+00:31:53,440 --> 00:31:55,955
+人们会提出方法
+people are going to come up with methods
+
+482
+00:31:55,960 --> 00:31:58,895
+他们有点像牛顿的便宜
+that they're sort of a cheap Newton's
+
+483
+00:31:58,900 --> 00:32:04,385
+方法LevenbergMarquardt和它在
+method Levenberg Marquardt and it's in
+
+484
+00:32:04,390 --> 00:32:07,145
+笔记在本节末
+the notes at the end of this section at
+
+485
+00:32:07,150 --> 00:32:10,145
+我们将在六点结束
+the end of the six point for that we'll
+
+486
+00:32:10,150 --> 00:32:10,835
+到达
+get to
+
+487
+00:32:10,840 --> 00:32:13,595
+所以LevenbergMarquardt是一种
+so Levenberg Marquardt is a sort of
+
+488
+00:32:13,600 --> 00:32:15,995
+廉价男人的牛顿牛顿的方法呢
+cheap man's Newton's Newton's method it
+
+489
+00:32:16,000 --> 00:32:19,175
+不计算到Hessian但它可以
+does not compute to Hessian but it can
+
+490
+00:32:19,180 --> 00:32:22,505
+但它说我可以欠我的
+but it says okay I owe i from the
+
+491
+00:32:22,510 --> 00:32:24,605
+渐变我可以看到一个
+gradient I can see a
+
+492
+00:32:24,610 --> 00:32:26,674
+你知道在黑森州有一个词
+sort of one term in the Hesse you know
+
+493
+00:32:26,679 --> 00:32:32,304
+所以它抓住了那个词，但并不完全
+so it grabs that term but it's not fully
+
+494
+00:32:32,309 --> 00:32:37,804
+完全二阶好，所以现在我们现在
+fully second-order okay so now we're now
+
+495
+00:32:37,809 --> 00:32:41,015
+我们必须考虑问题和我
+we have to think about problems and I
+
+496
+00:32:41,020 --> 00:32:43,745
+猜猜这里的信息是完整的
+guess the whole the the message here is
+
+497
+00:32:43,750 --> 00:32:46,525
+我们的出发点必须是
+and our starting point has to be
+
+498
+00:32:46,530 --> 00:32:51,424
+凸凸是关键词
+convexity convexity is the key word for
+
+499
+00:32:51,429 --> 00:32:55,235
+这对于这些问题的解决方案
+this for these for these problems for
+
+500
+00:32:55,240 --> 00:32:57,695
+我们想要最小化的功能
+the function that we want to minimize if
+
+501
+00:32:57,700 --> 00:33:00,455
+这首先是凸函数
+that's a convex function well first of
+
+502
+00:33:00,460 --> 00:33:05,075
+所有凸函数都可能
+all the convex function is likely to
+
+503
+00:33:05,080 --> 00:33:10,865
+有一个最小和图片
+have one minimum and the picture that's
+
+504
+00:33:10,870 --> 00:33:13,865
+在我们这个最陡的血统中
+in our mind of steepest descent this
+
+505
+00:33:13,870 --> 00:33:17,435
+碗的图片碗是图表
+picture of a bowl a bowl is the graph of
+
+506
+00:33:17,440 --> 00:33:20,105
+一个凸函数，所以我在转
+a convex function so that so I'm turning
+
+507
+00:33:20,110 --> 00:33:22,865
+现在，我将离开那个董事会
+to convexity now I'll leave that board
+
+508
+00:33:22,870 --> 00:33:27,685
+那是因为那非常重要
+there because that's pretty crucial and
+
+509
+00:33:27,690 --> 00:33:32,435
+谈论凸凸的概念
+speak about the idea of convexity convex
+
+510
+00:33:32,440 --> 00:33:40,054
+功能凸集让我们致电
+function convex set so let's call the
+
+511
+00:33:40,059 --> 00:33:45,455
+X的函数f和典型的凸集
+function f of X and typical convex set
+
+512
+00:33:45,460 --> 00:33:51,035
+将我称之为k好，所以我们只是
+will be i'll call it k okay so we just
+
+513
+00:33:51,040 --> 00:33:53,674
+想要记住这个词能做什么
+want to remember what does that word can
+
+514
+00:33:53,679 --> 00:33:56,105
+凸均值，你怎么知道你
+convex mean and how do you know if you
+
+515
+00:33:56,110 --> 00:33:58,835
+具有凸函数或凸集
+have a convex function or a convex set
+
+516
+00:33:58,840 --> 00:34:02,044
+好吧，让我先从凸集开始吧
+okay let me start with convex set so
+
+517
+00:34:02,049 --> 00:34:05,255
+这是因为这是我的一般问题
+it's a because here's my general problem
+
+518
+00:34:05,260 --> 00:34:16,384
+我希望你的凸最小化
+my convex minimization which you hope to
+
+519
+00:34:16,389 --> 00:34:18,874
+你有很多应用程序
+have an in many applications you do have
+
+520
+00:34:18,879 --> 00:34:26,345
+所以你最小化凸函数
+so you minimize a convex function for
+
+521
+00:34:26,350 --> 00:34:32,134
+在凸集中指向如此
+points in a convex set so that's like
+
+522
+00:34:32,139 --> 00:34:35,225
+理想的情况是理想的
+the ideal situation that's the ideal
+
+523
+00:34:35,230 --> 00:34:38,404
+情况好吧得到的东西
+situation okay get something
+
+524
+00:34:38,409 --> 00:34:41,765
+内部强大的凸起
+inside something powerful convexity the
+
+525
+00:34:41,770 --> 00:34:44,854
+功能是凸的，所以让我画
+function is convex and so let me draw
+
+526
+00:34:44,859 --> 00:34:47,074
+我们的凸函数与图形
+our convex function with the graph
+
+527
+00:34:47,079 --> 00:34:52,374
+好的，所以我将绘制我们的凸函数说
+ok so I'll draw our convex function say
+
+528
+00:34:52,379 --> 00:34:56,824
+碗，这是一个X和F的图形
+Bowl so that's a graph of f of X and
+
+529
+00:34:56,829 --> 00:35:04,445
+那么这里是带X1和X的X.
+then so here are the X's with X 1 and X
+
+530
+00:35:04,450 --> 00:35:09,784
+基数为2，X为f的图形
+2 in the base and the graph of f of X 1
+
+531
+00:35:09,789 --> 00:35:17,705
+X2在这里好吧其实我在那边
+X 2 up here okay actually I'm over there
+
+532
+00:35:17,710 --> 00:35:20,975
+我应该把这个功能叫做我
+I should be calling this function f I
+
+533
+00:35:20,980 --> 00:35:30,185
+认为是的，是的，小F会
+think is that right yeah little F would
+
+534
+00:35:30,190 --> 00:35:33,364
+是的，我是这个家伙
+be there graining of this guy yeah I
+
+535
+00:35:33,369 --> 00:35:43,594
+这么好，所以现在我是
+think so okay so so what now I'm
+
+536
+00:35:43,599 --> 00:35:47,344
+在某些X上超过X最小化
+minimizing over X in over certain X's
+
+537
+00:35:47,349 --> 00:35:50,614
+并非所有的X都可以最小化
+not all X's I might be minimizing for
+
+538
+00:35:50,619 --> 00:35:59,854
+例子K可能是ax所在的集合
+example K might be the set where ax
+
+539
+00:35:59,859 --> 00:36:05,854
+在这种情况下，等于BK可能是a
+equals B K might be in that case a
+
+540
+00:36:05,859 --> 00:36:09,515
+当I时，衬底或移位的子空间
+substrate or a shifted subspace when I
+
+541
+00:36:09,520 --> 00:36:13,534
+说子空间然后1806提醒
+said subspace but then 1806 is reminding
+
+542
+00:36:13,539 --> 00:36:15,005
+在我的脑海里，我只有一个
+me in my mind that I only have a
+
+543
+00:36:15,010 --> 00:36:19,415
+当V为0但是我有你的子空间
+subspace when V is 0 but I have a you
+
+544
+00:36:19,420 --> 00:36:21,695
+知道排序的子空间的单词
+know the word for a subspace that sort
+
+545
+00:36:21,700 --> 00:36:25,774
+移动了罚款，所以我只是把
+of moved over a fine so I'll just put
+
+546
+00:36:25,779 --> 00:36:31,205
+那个词倒了一堆词来学习
+that word down a bunch of words to learn
+
+547
+00:36:31,210 --> 00:36:39,125
+对于这个主题，但没关系，所以这是它的
+for this topic but okay so it's a it's
+
+548
+00:36:39,130 --> 00:36:41,344
+像飞机但不一定通过
+like a plane but not necessarily through
+
+549
+00:36:41,349 --> 00:36:44,284
+如果B为0则原点不会出现
+the origin if B is 0 it doesn't go
+
+550
+00:36:44,289 --> 00:36:48,604
+如果B不管怎么说还是我有
+through if B is not ok anyway or I have
+
+551
+00:36:48,609 --> 00:36:50,794
+其他一些凸集让我放
+some other convex set let me just put
+
+552
+00:36:50,799 --> 00:36:51,545
+这个
+this
+
+553
+00:36:51,550 --> 00:36:58,475
+就像在基地说K，我做了
+like said K in the base and did I make
+
+554
+00:36:58,480 --> 00:37:01,625
+它凸起我觉得我很幸运
+it convex I think pretty good luckily I
+
+555
+00:37:01,630 --> 00:37:10,265
+所以现在有什么好凸设置做
+did so now what well the convex sets the
+
+556
+00:37:10,270 --> 00:37:12,575
+约束因此这是约束
+the constraint so this is the constraint
+
+557
+00:37:12,580 --> 00:37:20,215
+set约束是X必须是X所在
+set constraint is that X must be X is in
+
+558
+00:37:20,220 --> 00:37:26,165
+集合K好吧，我把它画成凸面
+the set K okay and I drew it as a convex
+
+559
+00:37:26,170 --> 00:37:30,145
+blob这里是一个例子，它是一个
+blob here was an example where it's a
+
+560
+00:37:30,150 --> 00:37:35,245
+扁平不是斑点而是平坦的平面
+flat not a blob but a flat flat plane
+
+561
+00:37:35,250 --> 00:37:38,735
+但是让我回到什么地步呢？
+but what does let me come back to what
+
+562
+00:37:38,740 --> 00:37:41,795
+凸起意味着什么是凸起的
+does convex mean what what's a convex
+
+563
+00:37:41,800 --> 00:37:42,365
+组
+set
+
+564
+00:37:42,370 --> 00:37:46,325
+是的，我们必须这样做
+yeah let's we have to do that should
+
+565
+00:37:46,330 --> 00:37:54,295
+之前已经这样做了
+have done that before
+
+566
+00:37:54,300 --> 00:37:59,165
+在笔记中我有乐趣
+in the in the notes I had the fun of
+
+567
+00:37:59,170 --> 00:38:01,655
+弄清楚如果我拿了两个，我是否选了两个
+figuring out if I took two if I took a
+
+568
+00:38:01,660 --> 00:38:05,285
+三角形是一个凸集让我们正好
+triangle is that a convex set let's just
+
+569
+00:38:05,290 --> 00:38:11,915
+确定这是一个凸集是什么
+be sure so what's a convex set that is a
+
+570
+00:38:11,920 --> 00:38:14,825
+凸集因为如果我采取任何两个
+convex set because if I take any two
+
+571
+00:38:14,830 --> 00:38:17,255
+集合中的点并绘制线条
+points in the set and draw the line
+
+572
+00:38:17,260 --> 00:38:21,785
+它们之间保持在这个集合中
+between them it stays in this set so
+
+573
+00:38:21,790 --> 00:38:30,305
+这是来自x1的任何边缘线的凸性
+that's convexity any edge line from x1
+
+574
+00:38:30,310 --> 00:38:40,055
+到x2保持在设置好的所以
+to x2 stays in in the set okay good so
+
+575
+00:38:40,060 --> 00:38:43,385
+这里是我的小锻炼自己有什么
+here's my little exercise to myself what
+
+576
+00:38:43,390 --> 00:38:46,715
+如果我把两个三角形的联合全部
+if I took the union of two triangles all
+
+577
+00:38:46,720 --> 00:38:49,265
+我想让你做的是这种
+I want to get you to do is this sort of
+
+578
+00:38:49,270 --> 00:38:53,195
+事物可视化凸而不凸
+thing visualize convex and not convex
+
+579
+00:38:53,200 --> 00:38:55,685
+可能性假设我有两个
+possibilities suppose I have two one
+
+580
+00:38:55,690 --> 00:39:02,255
+三角形，即使它是钝的
+triangle even if it was obtuse that's
+
+581
+00:39:02,260 --> 00:39:04,305
+还是向右凸
+still convex right
+
+582
+00:39:04,310 --> 00:39:07,695
+没问题，但现在如果我把它们
+no problem but now what if I put those
+
+583
+00:39:07,700 --> 00:39:10,995
+两个三角形一起取得联合
+two triangles together take their union
+
+584
+00:39:11,000 --> 00:39:13,695
+好吧，如果我带他们坐在一个大
+well if I take them sitting with a big
+
+585
+00:39:13,700 --> 00:39:17,685
+像我失去的差距我的意思是我
+gap between like I've lost I mean I've
+
+586
+00:39:17,690 --> 00:39:21,285
+从来没有这样的机会，因为如果我
+never had a chance that way because if I
+
+587
+00:39:21,290 --> 00:39:23,505
+拿了我的一个，如果它是联盟的
+took one of my if it was the union of
+
+588
+00:39:23,510 --> 00:39:25,095
+这两个那么你知道我该怎么
+these two well you know what I'm gonna
+
+589
+00:39:25,100 --> 00:39:27,375
+如果我在那一点上采取了这一点
+say if I took that point in that point
+
+590
+00:39:27,380 --> 00:39:30,465
+当然，这一切都是愚蠢的
+of course it goes outside stupid all
+
+591
+00:39:30,470 --> 00:39:34,275
+正确的东西有关，但什么，如果
+right what about a but what if the
+
+592
+00:39:34,280 --> 00:39:38,265
+三角形如果那个三角形怎么样
+triangles what if what if that triangle
+
+593
+00:39:38,270 --> 00:39:41,865
+下三角形重叠的那种
+that lower triangle kind of overlaps the
+
+594
+00:39:41,870 --> 00:39:45,965
+上三角是一个凸集
+upper triangle is that a convex set
+
+595
+00:39:45,970 --> 00:39:49,245
+你是对的，说不出原因
+you're everybody's right saying no why
+
+596
+00:39:49,250 --> 00:39:51,525
+我如何看待那两者的结合
+how do I see that the union of those two
+
+597
+00:39:51,530 --> 00:39:56,805
+三角形不是凸集你
+triangles is not a convex set guys you
+
+598
+00:39:56,810 --> 00:39:59,655
+告诉我在哪里选择两点
+tell me where to pick two points where
+
+599
+00:39:59,660 --> 00:40:02,445
+这条线很好，我从一条线上拿走了
+the line goes out well I take one from
+
+600
+00:40:02,450 --> 00:40:05,115
+那个角落和那个角落里的一个角落
+that corner and one from that corner and
+
+601
+00:40:05,120 --> 00:40:07,355
+他们之间的界限走了出去
+the line between them went outside
+
+602
+00:40:07,360 --> 00:40:22,095
+所以你的联盟通常不会很好
+so you Union is usually not convex well
+
+603
+00:40:22,100 --> 00:40:24,405
+如果我想到两套联合我的
+if I think of the union of two sets my
+
+604
+00:40:24,410 --> 00:40:27,015
+心灵实际上自动去了
+mind actually automatically goes to the
+
+605
+00:40:27,020 --> 00:40:30,285
+另一个相应的可能性
+the other corresponding possibility
+
+606
+00:40:30,290 --> 00:40:35,355
+这是两者的交点
+which is the intersection of the two
+
+607
+00:40:35,360 --> 00:40:38,265
+如果我采取交集，那么设置
+sets so if I take the intersection of
+
+608
+00:40:38,270 --> 00:40:44,745
+两套现在有什么处理
+the two sets now what's the deal with
+
+609
+00:40:44,750 --> 00:40:45,275
+那
+that
+
+610
+00:40:45,280 --> 00:40:48,345
+什么时候我有两个三角形
+what was the when I had two triangles
+
+611
+00:40:48,350 --> 00:40:52,275
+两个分开的三角形我们能做什么
+two separated triangles what what can we
+
+612
+00:40:52,280 --> 00:40:54,435
+说说这两者的交集
+say about the intersection of those two
+
+613
+00:40:54,440 --> 00:40:59,505
+三角形它是空的所以我们应该考虑
+triangles it's empty so shall we regard
+
+614
+00:40:59,510 --> 00:41:04,125
+空集作为凸集是不是
+the empty set as a convex set yes isn't
+
+615
+00:41:04,130 --> 00:41:08,955
+它是空的，所以它没有任何东西
+it it's vacuous so it hasn't got any
+
+616
+00:41:08,960 --> 00:41:10,735
+问题吧
+problems right
+
+617
+00:41:10,740 --> 00:41:15,405
+还好，但现在是交点
+okay but now is the intersection is
+
+618
+00:41:15,410 --> 00:41:19,854
+如果我假设两个，那么总是凸出来的
+always convex if I'm assuming the two
+
+619
+00:41:19,859 --> 00:41:22,945
+我们开始的集合现在就是这样
+sets that we start with are now that's
+
+620
+00:41:22,950 --> 00:41:26,094
+交叉口的一个重要事实
+an important fact that the intersection
+
+621
+00:41:26,099 --> 00:41:28,045
+凸集让我们只画一幅画
+of convex sets let's just draw a picture
+
+622
+00:41:28,050 --> 00:41:34,825
+这显示了一个例子，那是什么
+that shows an example so what's the
+
+623
+00:41:34,830 --> 00:41:38,125
+只是这个部分和它的交叉点
+intersection just this part and it's
+
+624
+00:41:38,130 --> 00:41:40,945
+凸好你能不能给我一点
+convex okay can you give me a little
+
+625
+00:41:40,950 --> 00:41:48,655
+证明了交叉点是凸的，以便
+proof that the intersection is convex so
+
+626
+00:41:48,660 --> 00:41:50,364
+我在十字路口拿两分
+I take two points in the intersection
+
+627
+00:41:50,369 --> 00:41:55,075
+让我开始测试是否
+let me start the proof to test if
+
+628
+00:41:55,080 --> 00:41:57,084
+什么是凸的你怎么测试它
+something's convex how do you test it
+
+629
+00:41:57,089 --> 00:42:00,235
+你在集合中取两个点
+you take two points in the set in the
+
+630
+00:42:00,240 --> 00:42:02,215
+交叉，你想表明
+intersection and you want to show that
+
+631
+00:42:02,220 --> 00:42:05,725
+他们之间的界限在
+the line between them is in the
+
+632
+00:42:05,730 --> 00:42:08,785
+交叉路口好吗为什么这么好
+intersection okay why is that so take
+
+633
+00:42:08,790 --> 00:42:13,675
+两个点在交叉点取x1
+two points take x1 in the intersection
+
+634
+00:42:13,680 --> 00:42:17,364
+我们这里有两套，那是
+of we've got two sets here and that's
+
+635
+00:42:17,369 --> 00:42:19,795
+交叉的象征，我们
+the symbol for intersection and we've
+
+636
+00:42:19,800 --> 00:42:22,995
+在十字路口得到另一个点
+got another point in the intersection
+
+637
+00:42:23,000 --> 00:42:26,425
+现在我们想看一下这条线
+and now we want to look at the line
+
+638
+00:42:26,430 --> 00:42:32,295
+它们之间是从x1到x2的线
+between them the line from x1 to x2
+
+639
+00:42:32,300 --> 00:42:38,155
+与那个人有什么关系呢
+what's the deal with that one is that
+
+640
+00:42:38,160 --> 00:42:41,985
+完全在x1中的k1
+fully in x1 in k1
+
+641
+00:42:41,990 --> 00:42:46,225
+为什么它完全在k1这我们拿了两个
+why is it fully in k1 this we took two
+
+642
+00:42:46,230 --> 00:42:49,555
+在我看的十字路口的点
+points in the intersection I'm looking
+
+643
+00:42:49,560 --> 00:42:52,735
+在他们和我之间的界限
+at the line between them and I'm asking
+
+644
+00:42:52,740 --> 00:42:55,225
+它是在第一组k1和答案
+is it in the first set k1 and the answer
+
+645
+00:42:55,230 --> 00:42:56,725
+是是的
+is yes
+
+646
+00:42:56,730 --> 00:42:59,725
+因为那些点在k1和k1
+because those points were in k1 and k1
+
+647
+00:42:59,730 --> 00:43:03,655
+是凸的，是它们之间的那条线
+is convex and is that line between them
+
+648
+00:43:03,660 --> 00:43:09,175
+在k2是的，同样的原因X两个
+in k2 yes same reason the X the two
+
+649
+00:43:09,180 --> 00:43:12,295
+端点在k2所以之间的界限
+endpoints were in k2 so the line between
+
+650
+00:43:12,300 --> 00:43:15,145
+它们在k管所以交叉
+them is in k tube so the intersection of
+
+651
+00:43:15,150 --> 00:43:17,545
+凸集总是凸出来的
+convex sets is always convex the
+
+652
+00:43:17,550 --> 00:43:22,715
+凸起的交叉点
+intersection of convex
+
+653
+00:43:22,720 --> 00:43:28,025
+这很好，所以你会在笔记中看到
+it's good so you'll see in the notes
+
+654
+00:43:28,030 --> 00:43:30,545
+两个三角形的这些可能性
+these possibilities with two triangles
+
+655
+00:43:30,550 --> 00:43:33,725
+有有时你可以你可以采取
+there's sometimes you can you can take
+
+656
+00:43:33,730 --> 00:43:35,555
+联盟，但不是经常
+the Union but not very often
+
+657
+00:43:35,560 --> 00:43:38,465
+好吧，现在我接下来的是什么
+okay now what's what's the next thing I
+
+658
+00:43:38,470 --> 00:43:44,225
+必须做我们得到的凸函数
+have to do convex functions we got
+
+659
+00:43:44,230 --> 00:43:46,505
+凸集什么是凸函数
+convex sets what are convex functions
+
+660
+00:43:46,510 --> 00:43:48,935
+那么我们是对的，因为这是
+then we're good right because this is
+
+661
+00:43:48,940 --> 00:43:52,104
+我们这是我们问题的原型
+our this is our prototype of a problem
+
+662
+00:43:52,109 --> 00:43:55,025
+我现在想知道它意味着什么
+and I now want to know what it means to
+
+663
+00:43:55,030 --> 00:43:58,145
+为了那个F我是一个自信的人
+be for that F to be a confident I'm
+
+664
+00:43:58,150 --> 00:44:00,245
+抱歉，我现在知道它对于这意味着什么
+sorry I now know what it means for the
+
+665
+00:44:00,250 --> 00:44:04,594
+说K是凸集但现在我有
+said K to be convex set but now I have
+
+666
+00:44:04,599 --> 00:44:06,965
+往往更多地看待对方
+to look at the other often more
+
+667
+00:44:06,970 --> 00:44:08,584
+这个问题的重要部分是什么
+important part of the problem what's the
+
+668
+00:44:08,589 --> 00:44:11,765
+功能我正在最小化，我在寻找
+function I'm minimizing and I'm looking
+
+669
+00:44:11,770 --> 00:44:14,074
+对于这种类型的函数
+for functions with this kind of a
+
+670
+00:44:14,079 --> 00:44:15,895
+图片没关系
+picture okay
+
+671
+00:44:15,900 --> 00:44:20,915
+最酷的方式是连接
+the coolest way is to connect the
+
+672
+00:44:20,920 --> 00:44:25,235
+凸函数的定义
+definition of a convex function to the
+
+673
+00:44:25,240 --> 00:44:29,064
+这是凸集的定义
+definition of a convex set this is
+
+674
+00:44:29,069 --> 00:44:32,165
+这是最好的方式
+really the nicest way it's a little
+
+675
+00:44:32,170 --> 00:44:35,614
+快速它只是由你切换，但告诉
+quick it just switches by you but tell
+
+676
+00:44:35,619 --> 00:44:37,655
+我，你看到一个凸集
+me do you see a convex set in that
+
+677
+00:44:37,660 --> 00:44:42,545
+图片中你看到了一个凸集
+picture you see a convex set in that
+
+678
+00:44:42,550 --> 00:44:45,035
+图片这是一个图的图片
+picture that's the picture of a graph of
+
+679
+00:44:45,040 --> 00:44:47,045
+凸函数它是a的图片
+a convex function it's a picture of a
+
+680
+00:44:47,050 --> 00:44:50,165
+碗是那个表面上的点
+bowl is are the points on that surface
+
+681
+00:44:50,170 --> 00:44:54,745
+是一个凸集肯定不是
+is that a convex set no certainly not
+
+682
+00:44:54,750 --> 00:44:59,885
+没有，但在哪里可以找到凸集
+no but where is a convex set to be found
+
+683
+00:44:59,890 --> 00:45:08,465
+在那张照片中是的是积分
+here in that picture yes yes the points
+
+684
+00:45:08,470 --> 00:45:12,185
+在碗里面和上面的里面
+on and above the bowl the in inside the
+
+685
+00:45:12,190 --> 00:45:17,395
+碗，我们可以说这些点是如此凸起
+bowl we could say these points so convex
+
+686
+00:45:17,400 --> 00:45:23,045
+功能我是一个功能时，凸
+function me yes a functions convex when
+
+687
+00:45:23,050 --> 00:45:33,275
+图表上方和上方的点
+the points on and above the graph
+
+688
+00:45:33,280 --> 00:45:48,705
+我们的凸集是的，这就是你
+our our convex set yeah this is you
+
+689
+00:45:48,710 --> 00:45:51,045
+我的数学家可以说好吗
+could say okay math my mathematicians
+
+690
+00:45:51,050 --> 00:45:53,175
+只是懒得有一个
+are just being lazy having got one
+
+691
+00:45:53,180 --> 00:45:55,125
+定义直凸说
+definition straight for a convex said
+
+692
+00:45:55,130 --> 00:45:57,645
+现在他们只是用它来给出一个
+now they're just using that to give an
+
+693
+00:45:57,650 --> 00:46:00,075
+容易定义凸函数
+easy definition of a convex function
+
+694
+00:46:00,080 --> 00:46:04,095
+实际上它是功能非常有用
+actually it's quite useful for functions
+
+695
+00:46:04,100 --> 00:46:06,585
+这可能等于无穷大
+that could maybe equal infinity sort of
+
+696
+00:46:06,590 --> 00:46:09,435
+一般的广义函数，但它
+general generalized functions but it's
+
+697
+00:46:09,440 --> 00:46:13,365
+不要告诉我们，如果最快的方法
+not the quickest way to tell if the
+
+698
+00:46:13,370 --> 00:46:16,125
+功能是凸的，这不是我们平常的
+function is convex it's not our usual
+
+699
+00:46:16,130 --> 00:46:19,755
+测试凸函数所以现在我想要
+test for convex function so now I want
+
+700
+00:46:19,760 --> 00:46:25,235
+现在我给这样的测试好了
+to give such a test okay so now I
+
+701
+00:46:25,240 --> 00:46:35,435
+凸函数的定义平滑
+definition of convex function smooth
+
+702
+00:46:35,440 --> 00:46:41,835
+是的，这个事实不要急于求成
+yeah yeah the the this fact don't rush
+
+703
+00:46:41,840 --> 00:46:49,275
+在俄罗斯关闭远离它从从
+in Russia off away from it from the from
+
+704
+00:46:49,280 --> 00:46:51,645
+凸函数的定义为
+the definition of a convex function as
+
+705
+00:46:51,650 --> 00:46:54,495
+在其图形上方具有凸集
+having a convex set above its graph
+
+706
+00:46:54,500 --> 00:46:57,135
+这里有一个非常官方的法国名字
+there's a really official French name
+
+707
+00:46:57,140 --> 00:46:59,745
+对于上面说的那个图是
+for that said above the graph is the
+
+708
+00:46:59,750 --> 00:47:06,585
+题词还好，因为我为什么回来
+epigraph okay because why do I come back
+
+709
+00:47:06,590 --> 00:47:08,955
+那一分钟，因为我愿意
+to that for a minute because I would
+
+710
+00:47:08,960 --> 00:47:15,015
+想想F1的两个功能
+like to think about two functions F 1
+
+711
+00:47:15,020 --> 00:47:17,985
+我可以用两个函数中的F2
+and F 2 out of two functions I can
+
+712
+00:47:17,990 --> 00:47:22,235
+始终创建最小值或最大值
+always create the minimum or the maximum
+
+713
+00:47:22,240 --> 00:47:25,745
+所以我想我有两个凸函数
+so I suppose I have two convex functions
+
+714
+00:47:25,750 --> 00:47:33,805
+凸函数F1和F2
+convex functions F 1 and F 2
+
+715
+00:47:33,810 --> 00:47:38,095
+好吧那我可以选择最小的我
+okay then I could choose the minimum I
+
+716
+00:47:38,100 --> 00:47:41,675
+可以选择我的新功能应我
+could choose my new function shall i
+
+717
+00:47:41,680 --> 00:47:44,975
+称它为m，最小M为X.
+call it little m for minimum M of X is
+
+718
+00:47:44,980 --> 00:47:51,815
+最小的f1和f2，我可以
+the minimum of f1 and f2 and I could
+
+719
+00:47:51,820 --> 00:47:54,905
+选择这将是一个最大的功能
+choose a maximum function which would be
+
+720
+00:47:54,910 --> 00:48:00,605
+X的f1和X的f2的最大值
+the maximum of f1 of X and f2 of X at
+
+721
+00:48:00,610 --> 00:48:04,355
+同一点X，如果我只是一个
+the same point X if I it's just a
+
+722
+00:48:04,360 --> 00:48:06,295
+自然的东西好吧我有两个功能
+natural thing okay I have two functions
+
+723
+00:48:06,300 --> 00:48:08,885
+我有一个碗，我还有另一个
+I've got a bowl and I've got another
+
+724
+00:48:08,890 --> 00:48:18,125
+碗，并假设它们都是凸起的
+bowl and suppose they're both convex so
+
+725
+00:48:18,130 --> 00:48:19,625
+我只是在这里伸展你的东西
+I'm just stretching you the thing here
+
+726
+00:48:19,630 --> 00:48:22,715
+如果我有，我有两张图
+if I've got I've got the graphs of two
+
+727
+00:48:22,720 --> 00:48:26,195
+凸函数，我想
+convex functions and I would like to
+
+728
+00:48:26,200 --> 00:48:28,595
+考虑这两者中的最小值
+consider the minimum of those two
+
+729
+00:48:28,600 --> 00:48:31,145
+功能以及最大功能
+functions and also the maximum of those
+
+730
+00:48:31,150 --> 00:48:33,665
+我相信你知道生活的两个功能
+two functions I believe you know life is
+
+731
+00:48:33,670 --> 00:48:36,755
+好的其中一个将是凸的和
+good one of these will be convex and the
+
+732
+00:48:36,760 --> 00:48:40,565
+其他不会，你能辨别哪个
+other won't and can you identify which
+
+733
+00:48:40,570 --> 00:48:43,115
+一个是凸的，哪一个不是
+one is convex and which one is not
+
+734
+00:48:43,120 --> 00:48:49,445
+凸起最小的是a
+convex what about the minimum is that a
+
+735
+00:48:49,450 --> 00:48:51,575
+凸函数所以只看一下
+convex function so just look at the
+
+736
+00:48:51,580 --> 00:48:53,645
+图表最小化的样子
+graph what does the minimum look like
+
+737
+00:48:53,650 --> 00:48:57,275
+最小的是这个家伙，直到他们见面
+the minimum is this guy until they meet
+
+738
+00:48:57,280 --> 00:49:00,185
+某种程度上在某种程度上然后这个
+somehow on some surface and then this
+
+739
+00:49:00,190 --> 00:49:03,095
+家伙是我们喜欢的凸起
+guy is that convex we have like one
+
+740
+00:49:03,100 --> 00:49:05,635
+分钟回答这个问题
+minute to answer that question
+
+741
+00:49:05,640 --> 00:49:09,305
+绝对不会有这个糟糕的纠结
+absolutely no it's got this bad kink in
+
+742
+00:49:09,310 --> 00:49:12,995
+关于它的最大的两个是什么
+it what about the maximum of the two
+
+743
+00:49:13,000 --> 00:49:15,755
+函数，所以最大的是那个
+functions so the maximum is the one that
+
+744
+00:49:15,760 --> 00:49:18,725
+它首先是所有要点
+it's above all the all the points that
+
+745
+00:49:18,730 --> 00:49:21,785
+是或在上面或上面的东西
+are or things that are above or on on
+
+746
+00:49:21,790 --> 00:49:26,285
+那里有那里的
+the there there's the there's the
+
+747
+00:49:26,290 --> 00:49:28,715
+最小功能是最小的
+maximum function that was the minimum
+
+748
+00:49:28,720 --> 00:49:32,075
+功能它最大扭结
+function it had a kink the maximum
+
+749
+00:49:32,080 --> 00:49:36,065
+功能就是这样，它是凸的
+function is like that and it is convex
+
+750
+00:49:36,070 --> 00:49:40,155
+所以最大的是
+so maximum yes
+
+751
+00:49:40,160 --> 00:49:47,035
+至少知道，如果我们，我们可以最大化
+minimum know and we could max if we
+
+752
+00:49:47,040 --> 00:49:50,005
+最多可以有1500个功能
+could have a maximum of 1500 functions
+
+753
+00:49:50,010 --> 00:49:53,785
+如果1500个函数都是凸的
+if the 1500 functions are all convex the
+
+754
+00:49:53,790 --> 00:49:55,975
+最大的将是因为它是部分
+maximum will be because it's the part
+
+755
+00:49:55,980 --> 00:49:59,305
+每个人的图表以上的方式
+way above everybody everybody's graph
+
+756
+00:49:59,310 --> 00:50:02,815
+这将是图表
+and that would be the graph of the
+
+757
+00:50:02,820 --> 00:50:04,825
+最好还好
+maximum okay good
+
+758
+00:50:04,830 --> 00:50:10,645
+现在终于让我只说怎么办
+and now finally let me just say how do
+
+759
+00:50:10,650 --> 00:50:12,595
+你知道函数是否是凸的
+you know whether a function is convex
+
+760
+00:50:12,600 --> 00:50:19,635
+如何测试切斯特
+how to test out of Chester
+
+761
+00:50:19,640 --> 00:50:22,555
+好的，所以让我只是一个功能
+okay so let me take just a function of
+
+762
+00:50:22,560 --> 00:50:25,855
+一个变量是什么测试你
+one variable what's what's the test you
+
+763
+00:50:25,860 --> 00:50:28,614
+学习微积分新生微积分
+learn in calculus freshman calculus
+
+764
+00:50:28,619 --> 00:50:35,125
+实际上只是表明这是一个凸起的
+actually just show that this is a convex
+
+765
+00:50:35,130 --> 00:50:39,585
+功能什么是什么是测试为
+function what's what's the test for that
+
+766
+00:50:39,590 --> 00:50:43,405
+二阶导数应为正数或
+second derivative should be positive or
+
+767
+00:50:43,410 --> 00:50:48,825
+可能为零所以二阶导数
+possibly zero so second derivative
+
+768
+00:50:48,830 --> 00:50:52,364
+更大等于零无处不在
+greater equals zero everywhere
+
+769
+00:50:52,369 --> 00:50:58,995
+这是凸出的最后问题
+that's this convex okay final question
+
+770
+00:50:59,000 --> 00:51:03,535
+假设F是一个向量，所以这是一个
+suppose F is a vector so this is a
+
+771
+00:51:03,540 --> 00:51:08,364
+向量，所以我有n个n函数
+vector and so I have n functions of n
+
+772
+00:51:08,369 --> 00:51:10,765
+变量不，我没有
+variable no I don't have one
+
+773
+00:51:10,770 --> 00:51:14,725
+抱歉，我有一个功能，但我在n
+sorry I've got one function but I'm in n
+
+774
+00:51:14,730 --> 00:51:21,565
+变量，以便使这只是一个
+variables so so this was just one that
+
+775
+00:51:21,570 --> 00:51:27,655
+什么是凸性的测试是的呢
+what's the test for convexity yes so it
+
+776
+00:51:27,660 --> 00:51:31,045
+将通过例如x1传递
+would be passed for example by x1
+
+777
+00:51:31,050 --> 00:51:35,695
+平方加上x2平方就可以了
+squared plus x2 squared would it be
+
+778
+00:51:35,700 --> 00:51:38,695
+通过所以这里将是问题
+passed by so here would be the question
+
+779
+00:51:38,700 --> 00:51:42,925
+是否会通过X转置一些
+would it be passed by X transpose some
+
+780
+00:51:42,930 --> 00:51:46,995
+对称矩阵F将是一个
+symmetric matrix F that would be a
+
+781
+00:51:47,000 --> 00:51:51,505
+这是纯二次的二次方
+quadratic the pure quadratic would it be
+
+782
+00:51:51,510 --> 00:51:52,885
+凸
+convex
+
+783
+00:51:52,890 --> 00:51:57,605
+这将是测试它有我
+what would be the test it's got I'm
+
+784
+00:51:57,610 --> 00:52:00,215
+寻找一个n维等价物
+looking for an n-dimensional equivalent
+
+785
+00:52:00,220 --> 00:52:04,505
+正二阶导数的
+of positive second derivative the
+
+786
+00:52:04,510 --> 00:52:06,425
+n维等价的正面
+n-dimensional equivalent of positive
+
+787
+00:52:06,430 --> 00:52:08,855
+二阶导数是凸性和我们
+second derivative is convexity and we
+
+788
+00:52:08,860 --> 00:52:11,435
+想要它我们必须认识到它是什么
+want it we have to recognize what's the
+
+789
+00:52:11,440 --> 00:52:13,805
+测试所以我可以应用它
+test so I could apply it to this
+
+790
+00:52:13,810 --> 00:52:16,475
+功能或我可以将它应用于任何
+function or I could apply it to any
+
+791
+00:52:16,480 --> 00:52:28,445
+n个变量的功能好吧什么的
+function of n variables okay what's the
+
+792
+00:52:28,450 --> 00:52:30,845
+在这里测试我有一个矩阵代替
+test here here I have a matrix instead
+
+793
+00:52:30,850 --> 00:52:36,035
+一个数字，那么什么是好的
+of a number so what's what's a good
+
+794
+00:52:36,040 --> 00:52:40,165
+要求是x出是的
+requirement going to be x out yeah
+
+795
+00:52:40,170 --> 00:52:43,385
+正定或半定或
+positive definite or semi definite or
+
+796
+00:52:43,390 --> 00:52:46,205
+就像这里一样半确定是的
+semi definite just as here yeah so the
+
+797
+00:52:46,210 --> 00:52:52,885
+测试是正半确定是的
+test is positive semi definite yes yes
+
+798
+00:52:52,890 --> 00:52:56,555
+这里黑森州实际上是
+and here the Hessian is actually that is
+
+799
+00:52:56,560 --> 00:52:59,165
+因为二阶导数会
+because the second derivatives will
+
+800
+00:52:59,170 --> 00:53:02,855
+第二个产生输出1/2
+produce output 1/2 in there the second
+
+801
+00:53:02,860 --> 00:53:05,615
+衍生物将产生相等的
+derivatives will produce s equal the
+
+802
+00:53:05,620 --> 00:53:09,515
+HessianH所以这里的S如此积极
+Hessian H so this here the S so positive
+
+803
+00:53:09,520 --> 00:53:14,375
+半定的Hessian一般第二
+semi definite Hessian in general second
+
+804
+00:53:14,380 --> 00:53:17,215
+二次方的导数矩阵
+derivative matrix for for a quadratic
+
+805
+00:53:17,220 --> 00:53:22,415
+好吧那么那些凸出的问题
+okay so so those it's convex problems
+
+806
+00:53:22,420 --> 00:53:26,375
+那我们要走得更远的地方
+that where we're going to get farther
+
+807
+00:53:26,380 --> 00:53:31,385
+我们跑进去没有马鞍点
+with we run into no saddle points we run
+
+808
+00:53:31,390 --> 00:53:34,955
+一旦我们找到了，就没有当地最低限度
+into no local minimum once we found the
+
+809
+00:53:34,960 --> 00:53:37,085
+至少这是全球最低限度
+minimum it's the global minimum these
+
+810
+00:53:37,090 --> 00:53:40,265
+好的问题好吧再好开心
+are the good problems okay again happy
+
+811
+00:53:40,270 --> 00:53:42,030
+to see you today and I look forward to
+
+812
+00:53:40,270 --> 00:53:44,670
+看你今天和我期待着
+
+813
+00:53:42,040 --> 00:53:44,670
+星期三
+Wednesday
+

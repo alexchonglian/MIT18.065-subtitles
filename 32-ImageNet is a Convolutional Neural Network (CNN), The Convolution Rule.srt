@@ -1,0 +1,3348 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,515
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,520 --> 00:00:24,614
+我决定告诉你一件事
+I'm determined to tell you something
+
+10
+00:00:24,619 --> 00:00:28,905
+关于我刚刚得到的卷积规则
+about the convolution rule I just get
+
+11
+00:00:28,910 --> 00:00:30,614
+靠近它，但我还没有
+close to it but I haven't quite got
+
+12
+00:00:30,619 --> 00:00:33,525
+在那里，实际上我想说
+there and actually I'd like to say
+
+13
+00:00:33,530 --> 00:00:36,435
+东西也为什么卷积
+something also about why convolution is
+
+14
+00:00:36,440 --> 00:00:39,795
+所以重要的这一点，我在这里提到过的
+so important this I mentioned here a
+
+15
+00:00:39,800 --> 00:00:48,965
+关于深度学习中图像的论文
+paper about images in deep learning by
+
+16
+00:00:48,970 --> 00:00:51,885
+它有三位作者，这两位是作者
+it has three authors and these are two
+
+17
+00:00:51,890 --> 00:00:53,805
+他们也许你认识Hinton的
+of them maybe you recognize Hinton's
+
+18
+00:00:53,810 --> 00:00:57,315
+说他原来是英国人
+name he's originally English he was in
+
+19
+00:00:57,320 --> 00:01:01,635
+在圣地亚哥了好几年
+in San Diego for quite a few years and
+
+20
+00:01:01,640 --> 00:01:04,334
+现在他在加拿大，所以多伦多和
+now he's in Canada so Toronto and
+
+21
+00:01:04,339 --> 00:01:06,705
+蒙特利尔现在是很重要的中心
+Montreal are big centers now for deep
+
+22
+00:01:06,710 --> 00:01:11,435
+学习儿子他是他真的其中之一
+learning son he's he's really one of the
+
+23
+00:01:11,440 --> 00:01:14,865
+领导者之一，所以是队长
+one of the leaders and and so is skipper
+
+24
+00:01:14,870 --> 00:01:18,525
+所以也许你知道，那种
+so maybe you know that the sort of
+
+25
+00:01:18,530 --> 00:01:22,515
+深度学习的进步往往是
+progress of deep learning can often be
+
+26
+00:01:22,520 --> 00:01:24,825
+在这些比赛所测量
+measured in these competitions that are
+
+27
+00:01:24,830 --> 00:01:28,395
+你知道每年举办一次
+held like about every year for you know
+
+28
+00:01:28,400 --> 00:01:31,965
+怎么做得有多好
+how how well how well does something
+
+29
+00:01:31,970 --> 00:01:40,935
+人们设计并执行一个完整的神经
+people design and execute a whole neural
+
+30
+00:01:40,940 --> 00:01:45,794
+网和这是一场比赛
+net and this was a competition about
+
+31
+00:01:45,799 --> 00:01:49,205
+图像，以便真的苛刻
+images so that is really demanding
+
+32
+00:01:49,210 --> 00:01:53,355
+因为正如我上次说的那样
+because as I said last time an image has
+
+33
+00:01:53,360 --> 00:01:57,945
+如此多的样本像素那么多
+so many samples so many pixels that the
+
+34
+00:01:57,950 --> 00:02:00,195
+计算问题是巨大的
+computational problem is enormous and
+
+35
+00:02:00,200 --> 00:02:03,215
+那是你什么时候去的
+that's when you would go to
+
+36
+00:02:03,220 --> 00:02:06,075
+卷积神经网络CNN因为a
+convolutional neural nets CNN because a
+
+37
+00:02:06,080 --> 00:02:09,094
+卷积网占用较少的权重
+convolutional net takes fewer weights
+
+38
+00:02:09,099 --> 00:02:11,624
+因为同样的重量正在出现
+because the same weight is appearing
+
+39
+00:02:11,629 --> 00:02:13,094
+沿着对角线
+along diagonals
+
+40
+00:02:13,099 --> 00:02:14,535
+它不需要
+it doesn't need a
+
+41
+00:02:14,540 --> 00:02:18,075
+完整的权重矩阵只有一个顶行
+full matrix of weights just one top row
+
+42
+00:02:18,080 --> 00:02:22,395
+权重反正所以这是一个
+of weights anyway so this is one of the
+
+43
+00:02:22,400 --> 00:02:24,645
+历史文献中的
+historical papers in the in the in the
+
+44
+00:02:24,650 --> 00:02:27,555
+深度学习的历史我会读
+history of deep learning I'll just read
+
+45
+00:02:27,560 --> 00:02:31,275
+我们训练了几句这样的句子
+a couple of sentences we trained so this
+
+46
+00:02:31,280 --> 00:02:34,514
+是我们训练深刻的抽象概念
+is the abstract we trained a deep a
+
+47
+00:02:34,519 --> 00:02:37,605
+大型深度卷积神经网络
+large deep convolutional neural network
+
+48
+00:02:37,610 --> 00:02:41,564
+但我只是说他们说了
+but I'll just enter say that they took
+
+49
+00:02:41,569 --> 00:02:46,064
+它跑了五天两个GPU，因此
+it ran for five days on two GPUs so it
+
+50
+00:02:46,069 --> 00:02:50,234
+我们会看到这是一个巨大的问题
+was an enormous problem as we'll see so
+
+51
+00:02:50,239 --> 00:02:53,044
+我们训练了一个大型深编织网CNN
+we trained a large deep knit network CNN
+
+52
+00:02:53,049 --> 00:02:57,704
+分类120万高分辨率图像
+to classify 1.2 million high-res images
+
+53
+00:02:57,709 --> 00:03:01,745
+在图像网，所以图像网是一个来源
+in image net so image net is a source of
+
+54
+00:03:01,750 --> 00:03:06,975
+数以百万计的图像和测试数据
+millions of images and on the test data
+
+55
+00:03:06,980 --> 00:03:11,354
+他们我们最后的句子可能是一个
+they well we the last sentences may be a
+
+56
+00:03:11,359 --> 00:03:14,505
+关键我们输入了这个模型的变体
+key we entered a variant of this model
+
+57
+00:03:14,510 --> 00:03:18,225
+在2012年的比赛中
+in the competition 2012 competition and
+
+58
+00:03:18,230 --> 00:03:23,234
+我们取得了前5名的测试错误
+we achieved a winning top 5 test error
+
+59
+00:03:23,239 --> 00:03:29,175
+比率为15％，相比之下为26％
+rate of 15% compared to 26% for for the
+
+60
+00:03:29,180 --> 00:03:33,514
+排名第二的球队，他们得到了15％的失误
+second-place team so 15% error they got
+
+61
+00:03:33,519 --> 00:03:35,865
+其余26％是最好的
+26% was the best that the rest of the
+
+62
+00:03:35,870 --> 00:03:42,405
+世界的确如此以及当他和他的时候
+world did and so so that and and when he
+
+63
+00:03:42,410 --> 00:03:44,865
+显示网络，你意识到了什么
+shows the network you realized what's
+
+64
+00:03:44,870 --> 00:03:50,835
+什么进入它它有卷积
+what's gone into it it has convolution
+
+65
+00:03:50,840 --> 00:03:55,124
+图层和它有一些正常的图层和
+layers and it has some normal layers and
+
+66
+00:03:55,129 --> 00:03:59,685
+它有最大的池层来切割
+it has max pooling layers to cut the
+
+67
+00:03:59,690 --> 00:04:03,944
+尺寸向下一点点，它是和
+dimension down a little bit and it's and
+
+68
+00:04:03,949 --> 00:04:09,074
+一半的样本放在一个GPU上
+and half the samples go on one GPU and
+
+69
+00:04:09,079 --> 00:04:10,574
+另一半和某些点
+half another and at certain points
+
+70
+00:04:10,579 --> 00:04:14,285
+两个GPU之间的层互连
+layers interconnect between the two GPUs
+
+71
+00:04:14,290 --> 00:04:19,154
+所以减少过度拟合你
+and so to reduce overfitting you
+
+72
+00:04:19,159 --> 00:04:21,404
+记住，关键问题是
+remember that's the key problem is to
+
+73
+00:04:21,409 --> 00:04:24,645
+完全减少过度拟合
+reduce overfitting in this in the fully
+
+74
+00:04:24,650 --> 00:04:26,865
+连接层那些是普通的
+connected layers those are the ordinary
+
+75
+00:04:26,870 --> 00:04:27,875
+层与
+layers with
+
+76
+00:04:27,880 --> 00:04:32,165
+我们使用的全重量矩阵
+full weight matrices we employed a
+
+77
+00:04:32,170 --> 00:04:35,165
+最近开发的正规化称为
+recently developed regularization called
+
+78
+00:04:35,170 --> 00:04:38,435
+辍学所以作为一种工具辍学如果
+drop out so drop out as a tool which if
+
+79
+00:04:38,440 --> 00:04:41,135
+你觉得你在这个世界上
+you're in this world you you I think
+
+80
+00:04:41,140 --> 00:04:45,215
+通过看到这一点，Hinton再次提出了这一点
+Hinton proposed it again by seeing that
+
+81
+00:04:45,220 --> 00:04:48,725
+它的工作原理只是小心一点
+it worked it's just a careful it's a
+
+82
+00:04:48,730 --> 00:04:51,305
+小心摒弃一些数据
+careful drop out of of some of the data
+
+83
+00:04:51,310 --> 00:04:54,175
+它减少了数据量和它
+it reduces the amount of data and it
+
+84
+00:04:54,180 --> 00:05:00,665
+这样做不会伤害问题
+doesn't harm the the problem so so the
+
+85
+00:05:00,670 --> 00:05:03,505
+神经网络有6000万个参数
+neural network has 60 million parameters
+
+86
+00:05:03,510 --> 00:05:07,945
+6000万神经元65万
+60 million with 650 thousand neurons
+
+87
+00:05:07,950 --> 00:05:11,615
+五个卷积层和三个
+five convolutional layers and three
+
+88
+00:05:11,620 --> 00:05:15,695
+我刚提到的完全连接的层
+fully connected layers I just mentioned
+
+89
+00:05:15,700 --> 00:05:19,385
+这可以，如果你只是谷歌
+this and you could if you just google
+
+90
+00:05:19,390 --> 00:05:22,385
+这两个名字你会在网上
+these two names you would on the web
+
+91
+00:05:22,390 --> 00:05:26,365
+查看该文件提出将拿出
+view that paper this paper would come up
+
+92
+00:05:26,370 --> 00:05:29,435
+但它就是这样我们正在谈论的
+but it's so it's we're talking about the
+
+93
+00:05:29,440 --> 00:05:32,585
+真实的东西在这里卷积是一回事
+real thing here convolution is something
+
+94
+00:05:32,590 --> 00:05:35,315
+每个人都想了解我，我会
+everybody wants to understand and I I'd
+
+95
+00:05:35,320 --> 00:05:40,595
+自从我开始好几天以来
+like to since I've started several days
+
+96
+00:05:40,600 --> 00:05:43,655
+以前，我想记住什么
+ago and I'd like to remember what
+
+97
+00:05:43,660 --> 00:05:48,335
+卷积意味着如果我，就让我这样
+convolution means let me so if I
+
+98
+00:05:48,340 --> 00:05:53,075
+卷入两个向量，我寻找
+convolve two vectors and I look for the
+
+99
+00:05:53,080 --> 00:05:57,485
+案例组成部分答案了
+case component of the answer the the
+
+100
+00:05:57,490 --> 00:06:03,905
+计算公式为我添加备份C的所有时间DS
+formula is I add up all the C's times DS
+
+101
+00:06:03,910 --> 00:06:10,535
+其中i+J指标增加至k为什么
+where the index i + j adds to k why do
+
+102
+00:06:10,540 --> 00:06:11,555
+你做了这样的事情
+you do such a thing
+
+103
+00:06:11,560 --> 00:06:15,685
+因为c可能用a表示
+because c might be represented by a
+
+104
+00:06:15,690 --> 00:06:21,425
+多项式说x++c+X到第n个
+polynomial say x + + c + X to the nth
+
+105
+00:06:21,430 --> 00:06:25,145
+和D可能由另一个人代表
+and D might be represented by another
+
+106
+00:06:25,150 --> 00:06:30,455
+一个D1X加MX到M让我们
+one D 1 X plus the M X to the M let's
+
+107
+00:06:30,460 --> 00:06:34,435
+说
+say
+
+108
+00:06:34,440 --> 00:06:38,365
+当我乘以时，就会产生卷积
+and convolution arises when I multiply
+
+109
+00:06:38,370 --> 00:06:41,715
+那些多项式因为一个典型的
+those polynomials because for a typical
+
+110
+00:06:41,720 --> 00:06:45,885
+然后收集条款，因为一个典型的
+and then collect terms because a typical
+
+111
+00:06:45,890 --> 00:06:50,035
+X的力量对X说X
+power of X say X to the K the
+
+112
+00:06:50,040 --> 00:06:56,905
+系数很好我们如何得到X.
+coefficients are well how do we get X to
+
+113
+00:06:56,910 --> 00:06:59,845
+K乘以这些乘以C
+the K in multiplying these I multiply C
+
+114
+00:06:59,850 --> 00:07:03,205
+在这里的某个地方没有时间DK
+naught times a DK somewhere in here
+
+115
+00:07:03,210 --> 00:07:06,355
+对于K来说，这将是一个DKX，所以没有
+would be a DK X to the K so a C naught
+
+116
+00:07:06,360 --> 00:07:12,025
+时间DK会给我一个X到K.
+times a DK would give me an X to the K
+
+117
+00:07:12,030 --> 00:07:16,015
+每个人看到这个术语和c1次
+term and a c1 times everybody sees this
+
+118
+00:07:16,020 --> 00:07:20,605
+现在来了，c1已经有了X
+coming now c1 has an X in it already so
+
+119
+00:07:20,610 --> 00:07:23,485
+我们会在那里看DK减去1
+over there we would look at DK minus 1
+
+120
+00:07:23,490 --> 00:07:28,045
+少了一个X所以它将是c1DK
+with one less X so it would be c1 DK
+
+121
+00:07:28,050 --> 00:07:30,595
+减1，这只是你做了什么时
+minus 1 this is just what you do when
+
+122
+00:07:30,600 --> 00:07:34,315
+你乘以多项式和点
+you multiply polynomials and the point
+
+123
+00:07:34,320 --> 00:07:37,675
+是我们认识这些术语的方式
+is that the way we recognize those terms
+
+124
+00:07:37,680 --> 00:07:42,775
+是指数0和K的指数
+is that the exponents 0 and K the
+
+125
+00:07:42,780 --> 00:07:46,615
+指数1和K减1总是加
+exponents 1 and K minus 1 always add to
+
+126
+00:07:46,620 --> 00:07:48,925
+K这就是这个公式的来源
+K so that's where this formula comes
+
+127
+00:07:48,930 --> 00:07:53,095
+从我们采取C次D隐藏在后面
+from we take a C times a D hiding behind
+
+128
+00:07:53,100 --> 00:07:58,075
+或者一个CX到I和一个DJX到J
+or a C X to the I and a DJ X to the J
+
+129
+00:07:58,080 --> 00:08:03,085
+当加I加J为K时，这是X.
+and when a plus I plus J is K this is X
+
+130
+00:08:03,090 --> 00:08:06,445
+对K而言，这就是我们的用语
+to the K and that's the term we're
+
+131
+00:08:06,450 --> 00:08:10,315
+捕获所以这是系数
+capturing so this is the coefficient of
+
+132
+00:08:10,320 --> 00:08:15,265
+那个词，让我写一个
+that term and let me write it in a
+
+133
+00:08:15,270 --> 00:08:17,845
+你的方式略有不同
+slightly different way where you
+
+134
+00:08:17,850 --> 00:08:21,055
+实际上看得更清楚了
+actually see even more clearly
+
+135
+00:08:21,060 --> 00:08:26,155
+卷积运算所以J是K减去I
+convolution operating so J is K minus I
+
+136
+00:08:26,160 --> 00:08:32,695
+对，所以它是CIDJ的总和但是
+right so it's the sum of C I D J but the
+
+137
+00:08:32,700 --> 00:08:37,284
+j具有被K减去我所以这是
+J has to be K minus I so this is the
+
+138
+00:08:37,289 --> 00:08:41,964
+这是记住公式的方法
+this is the way to remember the formula
+
+139
+00:08:41,969 --> 00:08:45,235
+为
+for the
+
+140
+00:08:45,240 --> 00:08:48,455
+内容中的系数CstarDin
+coefficients in the content C star D in
+
+141
+00:08:48,460 --> 00:08:51,905
+你看看C的时间DS的卷积
+the convolution you look at C's times DS
+
+142
+00:08:51,910 --> 00:08:54,725
+这是它的一种乘法形式
+it's it's a form of multiplication it
+
+143
+00:08:54,730 --> 00:08:58,084
+来自普通乘法
+comes from ordinary multiplication of
+
+144
+00:08:58,089 --> 00:09:01,175
+多项式以及收集术语时
+polynomials and when you collect terms
+
+145
+00:09:01,180 --> 00:09:04,834
+你正在收集看IC和K.
+you're collecting see the I C and the K
+
+146
+00:09:04,839 --> 00:09:08,524
+减去身份证，你可以尽一切可能
+minus I D and you're taking all possible
+
+147
+00:09:08,529 --> 00:09:11,135
+眼睛所以它只是总结所有可能的
+eyes so it's just sum over all possible
+
+148
+00:09:11,140 --> 00:09:16,015
+那里的眼睛给你的案例答案
+eyes there to give you the case answer
+
+149
+00:09:16,020 --> 00:09:18,655
+好吧，看看你是否有这个想法
+well just to see if you got the idea
+
+150
+00:09:18,660 --> 00:09:21,245
+什么是两个卷积
+what would be the convolution of two
+
+151
+00:09:21,250 --> 00:09:25,115
+函数假设我有一个函数f
+functions suppose I have a function f of
+
+152
+00:09:25,120 --> 00:09:29,855
+X和我想传达G的功能
+X and I want to convey the function G of
+
+153
+00:09:29,860 --> 00:09:36,834
+X没关系，注意到我没有
+X okay and notice that I have not
+
+154
+00:09:36,839 --> 00:09:40,295
+盘旋这个符号所以我没有做
+circled this symbol so I'm not doing
+
+155
+00:09:40,300 --> 00:09:42,665
+周期性卷积我只是在做
+periodic convolution I'm just doing
+
+156
+00:09:42,670 --> 00:09:44,975
+直截了当的卷积所以是什么
+straightforward convolution so what are
+
+157
+00:09:44,980 --> 00:09:46,865
+我们将在两个案例的情况下
+we going to have in the case of two
+
+158
+00:09:46,870 --> 00:09:49,565
+功能是什么意思
+functions what would that mean a
+
+159
+00:09:49,570 --> 00:09:52,595
+函数的卷积我是我的
+convolution of functions I'm I'm in
+
+160
+00:09:52,600 --> 00:09:55,084
+在这里平行，两个卷积
+parallel here with a convolution of two
+
+161
+00:09:55,089 --> 00:09:58,805
+矢量这么认为的，这些现在有
+vectors so think of these now have
+
+162
+00:09:58,810 --> 00:10:01,715
+成为案例组件的功能
+become functions the case component has
+
+163
+00:10:01,720 --> 00:10:07,385
+真的，我应该在X上说F星G
+become really I should say F star G at X
+
+164
+00:10:07,390 --> 00:10:10,535
+这真的是平行的
+that's really that's really the parallel
+
+165
+00:10:10,540 --> 00:10:18,305
+对此，让我这样，我告诉你
+to this so let me so I'm I'm telling you
+
+166
+00:10:18,310 --> 00:10:22,265
+我在X告诉你的答案
+the answer at X here I told you the
+
+167
+00:10:22,270 --> 00:10:27,274
+在K案例中回答案例组成部分
+answer at K case the case component
+
+168
+00:10:27,279 --> 00:10:31,745
+看起来像x值是什么
+looks like that what does the x value of
+
+169
+00:10:31,750 --> 00:10:34,465
+卷积看起来像函数
+the convolution look like for functions
+
+170
+00:10:34,470 --> 00:10:38,105
+好吧，我只是要这样做，我要去
+okay I'm just going to do this I'm gonna
+
+171
+00:10:38,110 --> 00:10:40,805
+做同样的事情，而不是总结
+do the same as this instead of summing
+
+172
+00:10:40,810 --> 00:10:48,665
+我将做什么整合而不是C
+what will I do integrate instead of C
+
+173
+00:10:48,670 --> 00:10:54,685
+我将获得X的f
+sub I I'll have f of X
+
+174
+00:10:54,690 --> 00:10:58,825
+眼睛指数我正在改变
+eyes the index I is changing over to the
+
+175
+00:10:58,830 --> 00:11:04,745
+连续变量X和现在G代替
+continuous variable X and now G instead
+
+176
+00:11:04,750 --> 00:11:10,595
+DK减去我这里有什么呢？
+of DK minus I what do I have here so so
+
+177
+00:11:10,600 --> 00:11:16,445
+它是K减去I分量
+it's uh it's K minus I component that
+
+178
+00:11:16,450 --> 00:11:20,165
+会去让我把它写下来ŧ
+will go to let me just write it down t
+
+179
+00:11:20,170 --> 00:11:26,045
+减去X所以在这个翻译中F是
+minus X so so in this translation F is
+
+180
+00:11:26,050 --> 00:11:31,465
+被翻译成C或对不起F是
+being translated to C or sorry F is
+
+181
+00:11:31,470 --> 00:11:37,165
+对应CG对应DK
+corresponds to C G corresponds to D K
+
+182
+00:11:37,170 --> 00:11:41,645
+对应X而且对不起我
+corresponds to X and oh sorry I
+
+183
+00:11:41,650 --> 00:11:48,535
+对应于X和J，K对应于I.
+corresponds to X and J and K minus I
+
+184
+00:11:48,540 --> 00:11:53,375
+对应于t减X所以K
+corresponds to t minus X so so K
+
+185
+00:11:53,380 --> 00:11:56,855
+对应于T，这是什么
+corresponds to T that's this is what
+
+186
+00:11:56,860 --> 00:11:58,355
+将是两个人的卷积
+would be the convolution of two
+
+187
+00:11:58,360 --> 00:12:03,625
+功能哦它是T坏的功能
+functions oh it's a function of T bad
+
+188
+00:12:03,630 --> 00:12:12,155
+T的坏符号就是这样
+bad notation to the T is sort of this
+
+189
+00:12:12,160 --> 00:12:14,285
+转移量
+the amount of shift
+
+190
+00:12:14,290 --> 00:12:17,555
+你看我已经转移了G我已经逆转了它
+you see I've shifted G I've reversed it
+
+191
+00:12:17,560 --> 00:12:21,215
+并且翻转它和通过移位它
+and flipped it and shifting it by
+
+192
+00:12:21,220 --> 00:12:24,215
+不同的金额这就是你的意思
+different amounts T it's it's what you
+
+193
+00:12:24,220 --> 00:12:27,395
+在过滤器中它只是一直都是
+have in a filter it's just all of always
+
+194
+00:12:27,400 --> 00:12:32,465
+因此在信号处理中存在
+present in in in signal processing so
+
+195
+00:12:32,470 --> 00:12:37,145
+这将是一个定义，或者我可以
+that would be a definition or I could if
+
+196
+00:12:37,150 --> 00:12:39,815
+你喜欢我，如果你想要一个X变量
+you like I if you want an X variable to
+
+197
+00:12:39,820 --> 00:12:42,545
+出来让我做一个X变量来
+come out let me make an X variable come
+
+198
+00:12:42,550 --> 00:12:47,015
+通过交换T和X这样就可以了
+out by exchanging T and X so so this
+
+199
+00:12:47,020 --> 00:12:53,045
+将是X减去TDT我喜欢这样
+would be X minus T DT I like that
+
+200
+00:12:53,050 --> 00:12:55,145
+实际上好一点，就是这样
+actually a little better and it's the
+
+201
+00:12:55,150 --> 00:12:58,565
+积分超过t无穷大到
+integral over t minus infinity to
+
+202
+00:12:58,570 --> 00:13:02,315
+无穷大，如果我们的功能在
+infinity if our functions were on the
+
+203
+00:13:02,320 --> 00:13:05,675
+整条线将会有一个
+whole line so that will there will be a
+
+204
+00:13:05,680 --> 00:13:07,525
+卷积规则
+convolution rule for
+
+205
+00:13:07,530 --> 00:13:12,155
+这将连接到
+the that this will connect to the
+
+206
+00:13:12,160 --> 00:13:15,155
+两个函数的傅里叶变换
+Fourier transform of the two functions
+
+207
+00:13:15,160 --> 00:13:17,755
+在这里，我把它连接到
+over here I'm connecting it to the
+
+208
+00:13:17,760 --> 00:13:20,375
+离散傅里叶变换的两个
+discrete Fourier transform of the two
+
+209
+00:13:20,380 --> 00:13:24,775
+功能，我一直在做
+functions and I've been making the
+
+210
+00:13:24,780 --> 00:13:28,745
+卷积循环所以我可以做什么
+convolution cyclic so what does can I
+
+211
+00:13:28,750 --> 00:13:30,845
+现在添加循环这是普通的
+add cyclic now this is ordinary
+
+212
+00:13:30,850 --> 00:13:33,455
+卷积这就是你所拥有的
+convolution this is what you had in the
+
+213
+00:13:33,460 --> 00:13:38,645
+第一个实验，我认为从拉贾饶
+first lab I think from from Raja Rao the
+
+214
+00:13:38,650 --> 00:13:40,715
+第一个实验中，你还记得你有图
+first lab you remember you had to figure
+
+215
+00:13:40,720 --> 00:13:46,505
+了解了多少组件
+out what the how many components the
+
+216
+00:13:46,510 --> 00:13:49,355
+卷积会有，你没有
+convolution would have and you didn't
+
+217
+00:13:49,360 --> 00:13:54,155
+使它循环，所以循环卷积
+make it cyclic so a cyclic convolution
+
+218
+00:13:54,160 --> 00:13:57,575
+如果这有n个组件而且这有
+if if this has n components and this has
+
+219
+00:13:57,580 --> 00:14:00,515
+n个分量然后卷积有n
+n components then the convolution has n
+
+220
+00:14:00,520 --> 00:14:05,435
+组件，因为你保持是和
+components because you keeping yeah and
+
+221
+00:14:05,440 --> 00:14:09,125
+这是关键数字的长度
+it's the key number there the length of
+
+222
+00:14:09,130 --> 00:14:12,935
+如果F，这个时期和此类似
+the period and similarly over here if F
+
+223
+00:14:12,940 --> 00:14:16,685
+是2pi周期性的，G是2pi周期性的
+is 2 pi periodic and G is 2 pi periodic
+
+224
+00:14:16,690 --> 00:14:19,745
+然后我们可能想要定期做
+then we might want to do a periodic
+
+225
+00:14:19,750 --> 00:14:23,185
+卷积并带来它
+convolution and bring it
+
+226
+00:14:23,190 --> 00:14:29,135
+得到一个也有2pi的答案
+get a get an answer that also has 2 pi
+
+227
+00:14:29,140 --> 00:14:32,735
+期间2pi是的，所以你可以计算
+of period 2 pi yeah so you could compute
+
+228
+00:14:32,740 --> 00:14:36,755
+正弦X与cosx的卷积
+the convolution of sine X with cos x for
+
+229
+00:14:36,760 --> 00:14:38,095
+例
+example
+
+230
+00:14:38,100 --> 00:14:43,685
+好吧，让我们坚持使用矢量，那么它是什么
+ok let's stick with vectors so so what's
+
+231
+00:14:43,690 --> 00:14:47,555
+当我做的时候我让这笔交易
+the deal when I make when I make it
+
+232
+00:14:47,560 --> 00:14:51,035
+当我使它循环然后进入时循环
+cyclic when I make it cyclic then in
+
+233
+00:14:51,040 --> 00:14:52,235
+这个乘法
+this multiplication
+
+234
+00:14:52,240 --> 00:14:57,545
+我真的应该使用我已经介绍过W作为
+I really should use I've introduced W as
+
+235
+00:14:57,550 --> 00:15:06,275
+这不是环外X成为该
+that instead of exocyclic X becomes this
+
+236
+00:15:06,280 --> 00:15:12,605
+这个数字W是2pi结束
+this number W which is either 2 pi over
+
+237
+00:15:12,610 --> 00:15:16,895
+n并且具有属性然后W到
+n and has the property then that W to
+
+238
+00:15:16,900 --> 00:15:21,065
+N是1所以所有的向量
+the N is 1 so that all vectors of
+
+239
+00:15:21,070 --> 00:15:24,095
+大于n可以折叠使用
+greater than n can be folded back using
+
+240
+00:15:24,100 --> 00:15:27,905
+这个规则是长度为n的向量所以我们
+this rule to a vector of length n so we
+
+241
+00:15:27,910 --> 00:15:32,285
+得到一个循环工作，那怎么办
+get a cyclic job so how does how does
+
+242
+00:15:32,290 --> 00:15:37,085
+这改变了我唯一想要的答案
+that change the answer well I only want
+
+243
+00:15:37,090 --> 00:15:41,735
+ķ从0到n减1的
+K going from 0 to n minus 1 in the
+
+244
+00:15:41,740 --> 00:15:44,765
+循环案例我不想要无限多
+cyclic case I don't want infinitely many
+
+245
+00:15:44,770 --> 00:15:48,275
+组件我必须把它们带回来
+components I've got to bring them back
+
+246
+00:15:48,280 --> 00:15:55,265
+再次，让我只说了这些规则
+again and let me just say what the rule
+
+247
+00:15:55,270 --> 00:16:03,545
+你会问我说加J吧
+would be you just ask say I plus J you
+
+248
+00:16:03,550 --> 00:16:08,285
+会看那个模数，那是什么
+would look at that modulo n that's what
+
+249
+00:16:08,290 --> 00:16:12,935
+一个数论者会称之为我们
+a number theory person would call it we
+
+250
+00:16:12,940 --> 00:16:15,815
+我们只看剩余的时间
+only look at the remainder when we
+
+251
+00:16:15,820 --> 00:16:20,705
+用n所以我们所以现在的款项去鸿沟
+divide by n so we so now the the sums go
+
+252
+00:16:20,710 --> 00:16:24,275
+只有从0到n减去1我才得到
+only from 0 to n minus 1 and I only get
+
+253
+00:16:24,280 --> 00:16:29,405
+我从0到n减去1的答案
+an answer from 0 to n minus 1 well I've
+
+254
+00:16:29,410 --> 00:16:32,635
+很快完成了
+done that pretty quickly
+
+255
+00:16:32,640 --> 00:16:37,415
+如果我想这样做就好了
+that's if I wanted to do justice to so
+
+256
+00:16:37,420 --> 00:16:40,745
+是非之间的区别
+is the the difference between non
+
+257
+00:16:40,750 --> 00:16:43,324
+定期
+periodic
+
+258
+00:16:43,329 --> 00:16:54,225
+所以非周期性和周期性的
+so non-periodic and periodic will be the
+
+259
+00:16:54,230 --> 00:16:58,065
+之间的区别所以我有一些数字
+difference between so I have some number
+
+260
+00:16:58,070 --> 00:17:03,285
+对角线t1t2t减零
+T zero on the diagonals t 1 t 2 t minus
+
+261
+00:17:03,290 --> 00:17:08,235
+1t减2等等不断诊断
+1 t minus 2 and so on constant diagnosis
+
+262
+00:17:08,240 --> 00:17:14,324
+关键名称有三胞胎和if
+the key name there is triplets and if
+
+263
+00:17:14,329 --> 00:17:18,905
+这是周期性的，然后我会说CCC
+it's periodic then I have I'll say C CC
+
+264
+00:17:18,910 --> 00:17:23,115
+然后下一个我们看到一个C一个
+and then the next one we see one C one
+
+265
+00:17:23,120 --> 00:17:26,775
+来到C1和C2即将到来
+coming around to C 1 and C 2 coming
+
+266
+00:17:26,780 --> 00:17:32,325
+所以它就像n期n那样
+around so it's so as n by n period n so
+
+267
+00:17:32,330 --> 00:17:40,815
+这是一个循环矩阵nnok
+it's a it's a circulant matrix n by n ok
+
+268
+00:17:40,820 --> 00:17:46,065
+这只是这是大局，我
+that's just that's the big picture and I
+
+269
+00:17:46,070 --> 00:17:48,705
+想想你正在做的第一个实验室
+think in that first lab you were doing
+
+270
+00:17:48,710 --> 00:17:51,135
+你的休息做非循环的情况
+your rest to do the non circulant case
+
+271
+00:17:51,140 --> 00:17:53,145
+因为这是你必须在一个
+because that's the one where you have to
+
+272
+00:17:53,150 --> 00:17:55,245
+做一点耐心会是什么
+do a little patience what will be the
+
+273
+00:17:55,250 --> 00:17:57,435
+长度是什么长度
+length yeah what would be the length of
+
+274
+00:17:57,440 --> 00:18:00,615
+非循环的
+a non-circular
+
+275
+00:18:00,620 --> 00:18:05,475
+所以现在假设C假设没有循环
+so not circulant now suppose C suppose
+
+276
+00:18:05,480 --> 00:18:10,755
+C矢量具有P分量和D
+the C vector has P components and the D
+
+277
+00:18:10,760 --> 00:18:14,025
+矢量有Q组件有多少
+vector has Q components how many
+
+278
+00:18:14,030 --> 00:18:16,935
+在那里卷积组件，所以我
+components in there convolution so I
+
+279
+00:18:16,940 --> 00:18:18,945
+把那个问题写下来因为我
+write that question down cuz I that
+
+280
+00:18:18,950 --> 00:18:21,765
+带来了差异在这里是的
+brings out the difference here yeah so
+
+281
+00:18:21,770 --> 00:18:30,135
+所以如果我有P，如果C有C有P.
+so if I have P if C has C has P
+
+282
+00:18:30,140 --> 00:18:34,555
+组件
+components
+
+283
+00:18:34,560 --> 00:18:39,775
+他有线索组件则
+he has cue components then the
+
+284
+00:18:39,780 --> 00:18:46,375
+C和D的卷积有多少
+convolution of C and D has how many so
+
+285
+00:18:46,380 --> 00:18:48,655
+我正在成倍增长，所以这真的是这样
+I'm multiplying so it's really this
+
+286
+00:18:48,660 --> 00:18:52,285
+对应于P次多项式
+corresponds to a polynomial of degree P
+
+287
+00:18:52,290 --> 00:18:59,665
+减去1次P次的右多项式
+minus 1 right polynomials of degree P
+
+288
+00:18:59,670 --> 00:19:03,325
+减1，这家伙将是Q学位
+minus 1 and this guy would be degree Q
+
+289
+00:19:03,330 --> 00:19:07,735
+减1度Q减1和我
+minus 1 degree Q minus 1 and what I
+
+290
+00:19:07,740 --> 00:19:11,695
+将它们与广告的程度相乘
+multiply them what's the degree just ad
+
+291
+00:19:11,700 --> 00:19:16,405
+又有多少系数以及一个更
+and how many coefficients well one more
+
+292
+00:19:16,410 --> 00:19:19,345
+我必须记住这个愚蠢的零
+I have to remember for that stupid zero
+
+293
+00:19:19,350 --> 00:19:23,515
+订单期限，所以这将有P加Q
+order term so this would have P plus Q
+
+294
+00:19:23,520 --> 00:19:31,225
+减去1个组件，这样就可以了
+minus 1 component so that would have
+
+295
+00:19:31,230 --> 00:19:33,055
+是你不知何故必须的数字
+been the number that you somehow had to
+
+296
+00:19:33,060 --> 00:19:36,985
+在第一个实验室中工作，以便如果
+work out in in that first lab so that if
+
+297
+00:19:36,990 --> 00:19:39,115
+这有最终组件，这有n
+this had end components and this had n
+
+298
+00:19:39,120 --> 00:19:42,205
+这将是n减1只是
+this would have to n minus 1 it's just
+
+299
+00:19:42,210 --> 00:19:45,355
+你必须像你说3加
+what you would have like you say 3 plus
+
+300
+00:19:45,360 --> 00:19:54,325
+在这种情况下，X乘1加2x，P是2Q.
+X times 1 plus 2x in this case P is 2 Q
+
+301
+00:19:54,330 --> 00:19:57,775
+是22组件2组件，如果我
+is 2 2 components 2 components and if I
+
+302
+00:19:57,780 --> 00:20:04,045
+乘以我得到的3X+6X是7x++
+multiply those I get 3 X + 6 X is 7x + +
+
+303
+00:20:04,050 --> 00:20:12,175
+2x平方，所以我有2加2减
+2 x squared and so I have 2 plus 2 minus
+
+304
+00:20:12,180 --> 00:20:19,615
+1等于3个分量X常数X和x
+1 equals 3 components X constant X and x
+
+305
+00:20:19,620 --> 00:20:21,955
+平方是的，明确的仪式
+squared yeah clear-rite
+
+306
+00:20:21,960 --> 00:20:25,015
+是的，这不是我的意思
+yep so that's not the that's what I
+
+307
+00:20:25,020 --> 00:20:27,525
+如果我乘以这些矩阵就会得到
+would get if I multiply these matrices
+
+308
+00:20:27,530 --> 00:20:31,075
+如果我有一个两个对角矩阵三胞胎
+if I had a two diagonal matrix Triplets
+
+309
+00:20:31,080 --> 00:20:33,715
+矩阵乘以两条对角三胞胎
+matrix times a two diagonal Triplets
+
+310
+00:20:33,720 --> 00:20:35,875
+矩阵，会给我一个三
+matrix that would give me a three
+
+311
+00:20:35,880 --> 00:20:41,755
+对角线答案，但如果我这样做
+diagonal answer but if I am doing it
+
+312
+00:20:41,760 --> 00:20:45,225
+定期我只需要
+periodically I would only have to
+
+313
+00:20:45,230 --> 00:20:49,345
+如果那个2x平方将会回来
+that that 2x squared would come back if
+
+314
+00:20:49,350 --> 00:20:54,445
+如果我回来2，所以我只有5
+if I come back as a 2 so I just have 5
+
+315
+00:20:54,450 --> 00:20:58,425
+加上7x好的好的好的好
+plus 7x good right good good good
+
+316
+00:20:58,430 --> 00:21:02,875
+好的，这是对什么的提醒
+ok so that's a reminder of what
+
+317
+00:21:02,880 --> 00:21:06,055
+卷积是循环的非性类似的
+convolution is cyclic a non-sex like
+
+318
+00:21:06,060 --> 00:21:11,485
+矢量和功能好吧，我可以
+vectors and functions okay then I can
+
+319
+00:21:11,490 --> 00:21:14,125
+值和特征向量或下一个
+values and eigen vectors or the next
+
+320
+00:21:14,130 --> 00:21:16,765
+步骤然后卷积规则是
+step and then the convolution rule is
+
+321
+00:21:16,770 --> 00:21:22,285
+最后一步所以特征向量本征
+the last step so eigen vectors eigen
+
+322
+00:21:22,290 --> 00:21:27,535
+当然我可以的圆圈矢量
+vectors of the circle of course I can
+
+323
+00:21:27,540 --> 00:21:33,985
+只做方阵，所以我做
+only do square matrices so I'm doing the
+
+324
+00:21:33,990 --> 00:21:36,745
+周期性情况所以特征向量是
+periodic case so the eigen vectors are
+
+325
+00:21:36,750 --> 00:21:44,485
+特征向量的列
+the columns of the of the eigenvector
+
+326
+00:21:44,490 --> 00:21:47,995
+矩阵，我会称之为
+matrix and I'm gonna call it f for
+
+327
+00:21:48,000 --> 00:21:52,765
+傅立叶因此f是第一个特征向量
+Fourier so f is the first eigen vector
+
+328
+00:21:52,770 --> 00:21:56,065
+是所有那些的X特征向量是
+is all ones an X eigen vector is the
+
+329
+00:21:56,070 --> 00:22:00,415
+第四个根然后是平方根
+fourth root of one then the square root
+
+330
+00:22:00,420 --> 00:22:07,455
+一个我6我吃了第四个我第六个
+of one i 6 i ate i fourth i sixth and
+
+331
+00:22:07,460 --> 00:22:15,705
+最后一个我立刻我6i9好吧那是f
+finally one i cubed i 6i9 okay that's f
+
+332
+00:22:15,710 --> 00:22:20,185
+那些的四个特征向量
+those are the four eigen vectors of the
+
+333
+00:22:20,190 --> 00:22:25,495
+排列P和P中的任何多项式
+permutation P and of any polynomial in P
+
+334
+00:22:25,500 --> 00:22:29,785
+所以我的循环是一些没有我的
+so my circulant is is some C naught I
+
+335
+00:22:29,790 --> 00:22:36,525
+加上C1P加上C​​2P平方+c3pq
+plus C 1 P plus C 2 P squared + c 3p q
+
+336
+00:22:36,530 --> 00:22:41,695
+好吧，最后这就像是一步
+okay and finally this is like the step
+
+337
+00:22:41,700 --> 00:22:44,485
+我们已经准备好了，但没有
+we've been almost ready to do but didn't
+
+338
+00:22:44,490 --> 00:22:48,625
+完全做什么是特征向量
+quite do what are the eigen vectors what
+
+339
+00:22:48,630 --> 00:22:53,805
+呃它的特征向量是什么
+uh what eigenvectors are its
+
+340
+00:22:53,810 --> 00:22:56,965
+特征向量
+eigenvectors
+
+341
+00:22:56,970 --> 00:23:02,734
+那些是p和p的特征向量
+so those are the eigenvectors of p and
+
+342
+00:23:02,739 --> 00:23:06,414
+现在我们只有豌豆的组合
+now we have just a combination of peas
+
+343
+00:23:06,419 --> 00:23:10,534
+所以我认为我的特征向量
+so I think the eigenvectors I just
+
+344
+00:23:10,539 --> 00:23:14,855
+乘我采取相同的组合
+multiply I take that same combination of
+
+345
+00:23:14,860 --> 00:23:23,794
+特征向量是的，是的
+the of the eigen vectors yep yep is that
+
+346
+00:23:23,799 --> 00:23:29,725
+看起来很对不起
+that look right so sorry
+
+347
+00:23:29,730 --> 00:23:36,185
+我很抱歉它们的特征向量
+it's I'm sorry its eigenvectors they're
+
+348
+00:23:36,190 --> 00:23:40,504
+F的列是我的意思
+the columns of F the question I meant to
+
+349
+00:23:40,509 --> 00:23:51,215
+问是它的特征值是什么
+ask is what are its eigenvalues that's
+
+350
+00:23:51,220 --> 00:23:53,465
+关键问题是什么
+the key question what are the what are
+
+351
+00:23:53,470 --> 00:23:55,924
+特征值，我想如果我
+the eigenvalues and I think that if I
+
+352
+00:23:55,929 --> 00:23:58,744
+只需乘以F倍CI即可
+just multiply F times C I get the
+
+353
+00:23:58,749 --> 00:24:04,205
+矩阵C的特征值就是
+eigenvalues of the matrix C that's the
+
+354
+00:24:04,210 --> 00:24:09,604
+美女，如果我的话，这是一个很好的公式
+beauty that's the nice formula if my
+
+355
+00:24:09,609 --> 00:24:13,054
+矩阵只是P，然后这是01
+matrix is just P alone then this is 0 1
+
+356
+00:24:13,059 --> 00:24:18,575
+00我得到1平方我立方但是
+0 0 and I get 1 I I squared I cubed but
+
+357
+00:24:18,580 --> 00:24:21,034
+如果C是其他的一些组合
+if C is some other combination of the
+
+358
+00:24:21,039 --> 00:24:23,914
+豌豆和我采取相同的组合
+peas and I take the same combination of
+
+359
+00:24:23,919 --> 00:24:31,975
+要看的本征向量是的
+the eigen vectors to to see yeah
+
+360
+00:24:31,980 --> 00:24:36,004
+你看到了吗，所以我声称我会
+do you see it so I'm claiming that I'll
+
+361
+00:24:36,009 --> 00:24:41,965
+从中得到C的本征值
+get for eigen values of C from this
+
+362
+00:24:41,970 --> 00:24:47,044
+当然，如果C知道是否
+multiplication so of course if C know if
+
+363
+00:24:47,049 --> 00:24:51,544
+那里只有C然后我才得到C.
+there's only C not then I only get C
+
+364
+00:24:51,549 --> 00:24:54,154
+没有CnaughtCnaughtC没有我得到
+naught C naught C naught C naught I get
+
+365
+00:24:54,159 --> 00:24:57,514
+这是重复四次但是如果
+it's a repeat four times repeated but if
+
+366
+00:24:57,519 --> 00:25:00,154
+如果它是这个组合那么它就是一个
+it's a if it's this combination then
+
+367
+00:25:00,159 --> 00:25:03,004
+矩阵乘法需要
+that matrix multiplication takes the
+
+368
+00:25:03,009 --> 00:25:05,394
+同样的组合是一个
+same combination of this is a
+
+369
+00:25:05,399 --> 00:25:08,895
+的组合
+combination of
+
+370
+00:25:08,900 --> 00:25:14,475
+特征向量和那给了我们
+the eigenvectors and and that gives us
+
+371
+00:25:14,480 --> 00:25:20,585
+给它给我们正确的事情好吧
+give it gives us the right thing okay so
+
+372
+00:25:20,590 --> 00:25:24,495
+这就是现在我只是有一个步骤
+that's now I just have one more step for
+
+373
+00:25:24,500 --> 00:25:27,075
+这是卷积规则然后我
+this the convolution rule and then I'm
+
+374
+00:25:27,080 --> 00:25:40,414
+真的很高兴卷积规则是
+happy really the convolution rule is
+
+375
+00:25:40,419 --> 00:25:47,174
+说明我们在说什么关系
+stating what we it's stating a relation
+
+376
+00:25:47,179 --> 00:25:49,515
+在我们看到的乘法之间
+between multiplication which we saw here
+
+377
+00:25:49,520 --> 00:25:54,105
+和我们解决卷积
+and the convolution which we solve for
+
+378
+00:25:54,110 --> 00:25:57,255
+系数因此是卷积规则
+the coefficients so the convolution rule
+
+379
+00:25:57,260 --> 00:26:02,105
+是乘法和。之间的联系
+is a connection between multiplying and
+
+380
+00:26:02,110 --> 00:26:07,005
+卷积所以让我说什么
+convolution and so let me say what that
+
+381
+00:26:07,010 --> 00:26:08,774
+卷积规则是让我写的
+convolution rule is and let me write it
+
+382
+00:26:08,779 --> 00:26:18,585
+正确如此，所以我采取循环
+correctly so so here I take cyclic
+
+383
+00:26:18,590 --> 00:26:22,095
+卷积我正在处理广场
+convolution I'm dealing with square
+
+384
+00:26:22,100 --> 00:26:24,635
+矩阵一切都是循环这里
+matrices everything is cyclic here and
+
+385
+00:26:24,640 --> 00:26:30,075
+如果我乘以F，我会得到什么呢？
+then I get if I multiply by F what do I
+
+386
+00:26:30,080 --> 00:26:31,325
+现在有
+have now
+
+387
+00:26:31,330 --> 00:26:36,044
+这代表了什么是C和
+what does that represent this was C and
+
+388
+00:26:36,049 --> 00:26:40,605
+B和艾克参与其中，所以我得到了另一个
+B and Ike involved them so I got another
+
+389
+00:26:40,610 --> 00:26:44,024
+循环矩阵所以在这里如此
+circulant matrix so so so up here the
+
+390
+00:26:44,029 --> 00:26:47,774
+矩阵的乘法是C次
+multiplication of of matrices is C times
+
+391
+00:26:47,779 --> 00:26:53,024
+D我想连接那些乘法
+D I want to connect multiplying those
+
+392
+00:26:53,029 --> 00:26:58,575
+汇总了我想要的C语言
+matrices with convolving the C's I want
+
+393
+00:26:58,580 --> 00:27:02,284
+连接使这种连接正确
+to connect make that connection right so
+
+394
+00:27:02,289 --> 00:27:04,845
+这种联系就是卷积
+and that connection is the convolution
+
+395
+00:27:04,850 --> 00:27:09,135
+规则好，所以这将是
+rule okay so this would be the
+
+396
+00:27:09,140 --> 00:27:18,335
+CD的特征值
+eigenvalues of CD
+
+397
+00:27:18,340 --> 00:27:21,495
+让我们暂停，为什么我为什么
+let's just pause there why why am I
+
+398
+00:27:21,500 --> 00:27:24,164
+看着CD的特征值因为
+looking at the eigenvalues of CD because
+
+399
+00:27:24,169 --> 00:27:27,105
+如果我做那个乘法我得到
+if I do that multiplication I get
+
+400
+00:27:27,110 --> 00:27:33,515
+另一个无尖点矩阵C乘以D和
+another tipless matrix C times D and the
+
+401
+00:27:33,520 --> 00:27:35,745
+花粉只有它们的系数
+pollen only their coefficients
+
+402
+00:27:35,750 --> 00:27:39,015
+与C乘以D的对角线相关联
+associated on the diagonals of C times D
+
+403
+00:27:39,020 --> 00:27:43,125
+是卷积的系数
+are the coefficients of the convolution
+
+404
+00:27:43,130 --> 00:27:51,135
+所以对角线的对角线来了
+so the its diagonals its diagonals come
+
+405
+00:27:51,140 --> 00:28:03,164
+从D卷入C6-好吧，现在我
+from convolving C with D 6 - okay now I
+
+406
+00:28:03,169 --> 00:28:06,164
+想在a中找到那些相同的特征值
+want to find those same eigenvalues in a
+
+407
+00:28:06,169 --> 00:28:08,894
+第二种方式和匹配方程式
+second way and match and the equation
+
+408
+00:28:08,899 --> 00:28:11,835
+将是如何卷积规则
+will be the convolution rule so how
+
+409
+00:28:11,840 --> 00:28:14,865
+我能否很好地找到CD的特征值
+could I find the eigenvalues of C D well
+
+410
+00:28:14,870 --> 00:28:23,465
+令人惊讶的是，它们是C的特征值
+amazingly they are the eigenvalues of C
+
+411
+00:28:23,470 --> 00:28:34,544
+D倍的特征值
+times the eigenvalues of D I'm gonna
+
+412
+00:28:34,549 --> 00:28:37,725
+你可以在2比2的基础上测试这条规则
+test this rule on two-by-two so you'll
+
+413
+00:28:37,730 --> 00:28:40,154
+看到一切都在发生，但事实如此
+see everything happening but so this is
+
+414
+00:28:40,159 --> 00:28:41,985
+这是我想要的事实
+the main this is the fact that I want to
+
+415
+00:28:41,990 --> 00:28:48,664
+使用因为是因为C和D通勤
+use because yeah because C and D commute
+
+416
+00:28:48,669 --> 00:28:51,615
+C和D通勤它们具有相同的特征
+C and D commute they have the same eigen
+
+417
+00:28:51,620 --> 00:28:55,005
+矢量，然后是特征值
+vectors and then the eigen values just
+
+418
+00:28:55,010 --> 00:28:59,205
+乘以我可以乘以我可以得到
+multiply so I can multiply I can get
+
+419
+00:28:59,210 --> 00:29:02,414
+以第二种方式取本征
+that in a second way by taking the eigen
+
+420
+00:29:02,419 --> 00:29:06,255
+C的值并乘以
+values of C and multiplying those by the
+
+421
+00:29:06,260 --> 00:29:11,975
+D和I的本征值相乘
+eigen values of D and I multiply
+
+422
+00:29:11,980 --> 00:29:14,325
+按组件分组我乘以
+component by component I multiply the
+
+423
+00:29:14,330 --> 00:29:17,475
+对于本征值的浑身
+eigen value for the for the all one's
+
+424
+00:29:17,480 --> 00:29:19,965
+矢量由所有的特征值
+vector by the eigen value for the all
+
+425
+00:29:19,970 --> 00:29:23,265
+一个矢量，所以我做一做，你知道这
+one's vector so I do a do you know this
+
+426
+00:29:23,270 --> 00:29:26,975
+MATLAB命令逐个组件
+MATLAB command component by component
+
+427
+00:29:26,980 --> 00:29:30,015
+乘法这是一个重要的
+multiplication this is it's an important
+
+428
+00:29:30,020 --> 00:29:32,295
+一个人的名字也是
+one there's a guy's name is also
+
+429
+00:29:32,300 --> 00:29:35,685
+与之相关联，所以这是一个
+associated with that so so that's a
+
+430
+00:29:35,690 --> 00:29:38,175
+矢量，这是一个矢量，什么来了
+vector that's a vector and what comes
+
+431
+00:29:38,180 --> 00:29:41,775
+如果我有一个向量，那就完成了那个操作
+out of that operation if I have a vector
+
+432
+00:29:41,780 --> 00:29:44,805
+有三个组件所以n在这里是三个
+with three components so n is three here
+
+433
+00:29:44,810 --> 00:29:49,815
+我确实指出明星或点星我不是
+and I do point star or dot star I'm not
+
+434
+00:29:49,820 --> 00:29:53,115
+确定人们通常所说的组件
+sure what people usually say component
+
+435
+00:29:53,120 --> 00:29:55,095
+通过组件三组分向量
+by component a three component vector
+
+436
+00:29:55,100 --> 00:29:59,285
+我得到一个三分量矢量的时间
+times a three component vector I get a
+
+437
+00:29:59,290 --> 00:30:02,625
+三个分量矢量就这样
+three component vector just like that
+
+438
+00:30:02,630 --> 00:30:05,115
+是的，所以这就是卷积
+yeah yeah so this is the convolution
+
+439
+00:30:05,120 --> 00:30:12,285
+规则是卷积和
+rule that's the convolution and the
+
+440
+00:30:12,290 --> 00:30:16,425
+证明就是当特征时的事实
+proof is the fact that eigen that when
+
+441
+00:30:16,430 --> 00:30:20,595
+矩阵通勤的本征值
+matrices commute the eigen values of the
+
+442
+00:30:20,600 --> 00:30:23,115
+产品或只是这些特征值时间
+product or just these eigen values times
+
+443
+00:30:23,120 --> 00:30:25,305
+这些特征值因为它们具有
+these eigen values because they have the
+
+444
+00:30:25,310 --> 00:30:27,885
+同样的本征特征向量总是如此
+same eigen the eigen vectors are always
+
+445
+00:30:27,890 --> 00:30:31,725
+对于所有这些循环都是如此
+the same here for all these circulant so
+
+446
+00:30:31,730 --> 00:30:34,305
+我可以使用卷积规则
+there's the convolution rule that I can
+
+447
+00:30:34,310 --> 00:30:41,025
+传达然后变换或我可以变换
+convey then transform or I can transform
+
+448
+00:30:41,030 --> 00:30:46,485
+分开然后再乘以
+separately and then multiply so just
+
+449
+00:30:46,490 --> 00:30:49,805
+或许更好地写出卷积
+maybe better write that the convolution
+
+450
+00:30:49,810 --> 00:31:01,475
+我们称之为C规则卷积
+let's call it the C rule convolve then
+
+451
+00:31:01,480 --> 00:31:21,545
+由F变换或单独变换
+transform by F or transform separately
+
+452
+00:31:21,550 --> 00:31:36,785
+用F然后再乘以点
+by F and then then multiply point wise
+
+453
+00:31:36,790 --> 00:31:39,645
+你知道元素是啊
+you know element by element yeah
+
+454
+00:31:39,650 --> 00:31:47,805
+一些奖金好耶这样组件
+component by some bonus okay yeah so
+
+455
+00:31:47,810 --> 00:31:52,395
+这是卷积规则，为什么是
+that's the convolution rule and why is
+
+456
+00:31:52,400 --> 00:31:56,235
+它有点为什么如此重要
+it sort of why is it so important
+
+457
+00:31:56,240 --> 00:32:00,615
+因为F乘以变换
+because transforming by F multiplying by
+
+458
+00:32:00,620 --> 00:32:03,585
+傅里叶矩阵非常快
+the Fourier matrix is extremely fast by
+
+459
+00:32:03,590 --> 00:32:13,935
+在FFT所以所以它是有用的，因为的
+the FFT so so it's useful because of the
+
+460
+00:32:13,940 --> 00:32:18,875
+FFT快速傅立叶变换到
+FFT the fast Fourier transform to
+
+461
+00:32:18,880 --> 00:32:31,985
+乘以yep或转换为哪一个
+multiply yep or to transform whichever
+
+462
+00:32:31,990 --> 00:32:42,465
+乘以F变换
+multiplied by F transform
+
+463
+00:32:42,470 --> 00:32:46,435
+所以它就是存在的存在
+so it's it's the it's the exist presence
+
+464
+00:32:46,440 --> 00:32:49,764
+使它成为现实的FFT给了我们一个
+of the FFT that makes this it gives us a
+
+465
+00:32:49,769 --> 00:32:51,685
+真的两种不同的方式来做到这一点
+really two different ways to do it
+
+466
+00:32:51,690 --> 00:32:57,174
+其实这是更快的方式，所以我们
+in fact which is the faster way so we
+
+467
+00:32:57,179 --> 00:33:05,154
+可以通过这种方式产生相同的结果
+can produce the same result this way or
+
+468
+00:33:05,159 --> 00:33:11,994
+这样，如果我不计算成本
+this way and if I don't count the cost
+
+469
+00:33:11,999 --> 00:33:15,264
+如果乘以F的成本是
+of if the cost of multiplying by F is
+
+470
+00:33:15,269 --> 00:33:18,715
+低，因为我有FFT
+low because I have the FFT which would
+
+471
+00:33:18,720 --> 00:33:19,544
+你做
+you do
+
+472
+00:33:19,549 --> 00:33:23,424
+你会这样做让我放手吧
+which would you do so let's let me just
+
+473
+00:33:23,429 --> 00:33:25,315
+在我们回答之前大声思考
+think aloud before we answer that
+
+474
+00:33:25,320 --> 00:33:28,705
+问题，然后我们是好的，如果
+question and then we're we're good so if
+
+475
+00:33:28,710 --> 00:33:34,854
+我所以我的向量有n个组件，所以一个
+I so my vectors have n components so one
+
+476
+00:33:34,859 --> 00:33:37,374
+我能做的就是如何做卷积
+way I can do is to do convolution how
+
+477
+00:33:37,379 --> 00:33:41,484
+如果我拿走一个，有多少步骤
+many how many steps is that if I take a
+
+478
+00:33:41,489 --> 00:33:43,705
+矢量与n个组件，我卷积
+vector with n components and I convolve
+
+479
+00:33:43,710 --> 00:33:46,134
+用n个组件的向量有多少
+with a vector with n components how many
+
+480
+00:33:46,139 --> 00:33:48,294
+我必须做很少的乘法
+little multiplications do I have to do
+
+481
+00:33:48,299 --> 00:33:53,335
+因为每个C都是正确的
+and square right because each of the C's
+
+482
+00:33:53,340 --> 00:33:56,154
+必须将每个DS乘以这样
+has to multiply each of the DS so that
+
+483
+00:33:56,159 --> 00:34:02,215
+拿N平方和傅立叶很便宜
+takes N squared and Fourier is cheap
+
+484
+00:34:02,220 --> 00:34:11,424
+它的N日志N日志基数为二，因此
+it's n log n log to base 2 so the
+
+485
+00:34:11,429 --> 00:34:15,324
+左手边实际上是立方体
+left-hand side is effectively in cubed
+
+486
+00:34:15,329 --> 00:34:17,455
+这个如何
+what about this one
+
+487
+00:34:17,460 --> 00:34:22,495
+这两个人做多少了多少
+how many up how many to do these two
+
+488
+00:34:22,500 --> 00:34:29,604
+男人找傅立叶变换
+guys to find the Fourier transform to
+
+489
+00:34:29,609 --> 00:34:33,054
+乘以矩阵Fok即可
+multiply by the matrix F ok those are
+
+490
+00:34:33,059 --> 00:34:35,094
+再快，这只是我有两个
+fast again that's just I've got two
+
+491
+00:34:35,099 --> 00:34:39,495
+乘以F得到2nlogN.
+multiplications by F so that's 2 n log N
+
+492
+00:34:39,500 --> 00:34:45,365
+什么是这样做的成本
+and what's the cost of this
+
+493
+00:34:45,370 --> 00:34:51,065
+我有一个带有n个成分点的矢量
+I have a vector with n components dot
+
+494
+00:34:51,070 --> 00:34:53,135
+明星矢量另一种向量与n
+star vector another vector with n
+
+495
+00:34:53,140 --> 00:34:54,515
+组件有多少
+components how many little
+
+496
+00:34:54,520 --> 00:34:56,785
+我必须做的乘法
+multiplications do I have to do for a
+
+497
+00:34:56,790 --> 00:35:00,515
+Hadamard产品或一个或一个组件
+Hadamard product or a or a component by
+
+498
+00:35:00,520 --> 00:35:08,525
+组件产品n只在+中是的我
+component product n only in + in yeah I
+
+499
+00:35:08,530 --> 00:35:10,955
+也许我应该做那个+
+should maybe I should have made that +
+
+500
+00:35:10,960 --> 00:35:14,615
+是啊是啊我有我只好我知道我有
+yeah yeah I had I had to I know I had
+
+501
+00:35:14,620 --> 00:35:18,725
+一个nlogn加上它取M平方
+one n log n plus it took M squared to
+
+502
+00:35:18,730 --> 00:35:21,425
+找到那个向量，然后nlogn
+find that vector and then n log n so
+
+503
+00:35:21,430 --> 00:35:26,515
+它的有效ñ平方但这一次
+it's effectively N squared but this one
+
+504
+00:35:26,520 --> 00:35:31,085
+我在那里做Nlogn两次然后我
+where I do the N log n twice and then I
+
+505
+00:35:31,090 --> 00:35:34,745
+只有它才会让我更多，所以这是
+only it only takes me in more so this is
+
+506
+00:35:34,750 --> 00:35:41,915
+快速的方式，如果你想
+the fast way so if you wanted to
+
+507
+00:35:41,920 --> 00:35:45,265
+乘以两个非常大的长整数
+multiply two really big long integers as
+
+508
+00:35:45,270 --> 00:35:49,315
+你想要在密码学中做什么
+you would want to do in in cryptography
+
+509
+00:35:49,320 --> 00:35:52,805
+如果你有两个长整数说
+if you had two long integers say of
+
+510
+00:35:52,810 --> 00:36:01,025
+长度125126128128组件
+length 125 126 128 128 components to
+
+511
+00:36:01,030 --> 00:36:02,975
+乘那些你会过得更好
+multiply those you would be better off
+
+512
+00:36:02,980 --> 00:36:08,525
+分别进行循环变换
+to separately take the cyclic transform
+
+513
+00:36:08,530 --> 00:36:09,935
+这些百人中的每一个
+of each of those hundred and
+
+514
+00:36:09,940 --> 00:36:15,715
+二十八个家伙，这样做
+twenty-eight guys and do it this way
+
+515
+00:36:15,720 --> 00:36:19,805
+拿这个转变来做
+take this take the transforms do the
+
+516
+00:36:19,810 --> 00:36:22,495
+逐个组件产品然后
+component by component product and then
+
+517
+00:36:22,500 --> 00:36:26,645
+变换回拿到呀没错如此
+transform back to get that yeah yep so
+
+518
+00:36:26,650 --> 00:36:30,515
+这是卷积规则的原因
+it's the convolution rule is what makes
+
+519
+00:36:30,520 --> 00:36:36,215
+那个没关系，所以哦，还有一个
+that go okay so that's oh one more
+
+520
+00:36:36,220 --> 00:36:38,285
+以为我想这一切
+thought I guess about all this
+
+521
+00:36:38,290 --> 00:36:43,235
+卷积的东西假设我们在2d我们
+convolution stuff suppose we're in 2d we
+
+522
+00:36:43,240 --> 00:36:45,385
+不得不考虑什么是什么
+have to think what's what is a
+
+523
+00:36:45,390 --> 00:36:48,305
+二维卷积是什么
+two-dimensional convolution what does
+
+524
+00:36:48,310 --> 00:36:49,965
+这成了
+this become
+
+525
+00:36:49,970 --> 00:36:53,084
+在两个方面假设我们有
+in two dimensions suppose we have
+
+526
+00:36:53,089 --> 00:36:57,854
+功能所以现在我将成为
+functions so now I'm to be functions of
+
+527
+00:36:57,859 --> 00:37:04,145
+x和y周期性或非周期性但是
+x and y periodic or not periodic but
+
+528
+00:37:04,150 --> 00:37:07,245
+什么是卷积是什么？
+what will we what's a convolution what's
+
+529
+00:37:07,250 --> 00:37:09,975
+我们要做的操作有两个
+the operation we have to do in two
+
+530
+00:37:09,980 --> 00:37:11,985
+尺寸很好，它是一个双重积分
+dimensions well it's a double integral
+
+531
+00:37:11,990 --> 00:37:20,675
+当然T和你我们会做T和T.
+of course T and u we would do F of T and
+
+532
+00:37:20,680 --> 00:37:33,155
+u乘以X的G减去TDu和
+u times G of X minus t y- u d TD u and
+
+533
+00:37:33,160 --> 00:37:36,824
+这将产生一个功能，所以我
+that would produce a function so i'm
+
+534
+00:37:36,829 --> 00:37:41,055
+将x和y的函数与...进行卷积
+convolving a function of x and y with
+
+535
+00:37:41,060 --> 00:37:44,084
+X的另一个功能，我也是
+another function of X and again I'm
+
+536
+00:37:44,089 --> 00:37:47,715
+寻找这这这是
+looking for the this this this is the
+
+537
+00:37:47,720 --> 00:37:52,875
+关键看为x轴牛逼Y-ü认为这是
+key to watch for x- t y- u that that's
+
+538
+00:37:52,880 --> 00:37:56,104
+卷积积分的信号
+the signal of a convolution integral
+
+539
+00:37:56,109 --> 00:37:59,175
+是的，这就是我们所拥有的
+yeah so that that's what we would have
+
+540
+00:37:59,180 --> 00:38:04,995
+在2d的将军中，你可能会这么多
+in 2d in generals do you so much may be
+
+541
+00:38:05,000 --> 00:38:09,405
+我现在最后的想法是搬到
+mine now my final thought is to move to
+
+542
+00:38:09,410 --> 00:38:11,945
+考虑二维矩阵和
+think about two dimensional matrices and
+
+543
+00:38:11,950 --> 00:38:15,735
+及其产品等，这是
+and their products and so on and this is
+
+544
+00:38:15,740 --> 00:38:18,645
+为什么你需要它们，因为你就是这样
+why you need them because you're you if
+
+545
+00:38:18,650 --> 00:38:20,175
+如果你有二维，那就是你
+you're if you have two dimensional
+
+546
+00:38:20,180 --> 00:38:24,405
+信号然后组件适合a
+signals then the components fit into a
+
+547
+00:38:24,410 --> 00:38:29,505
+矩阵，我们只需要操作
+matrix and we just have to operate in
+
+548
+00:38:29,510 --> 00:38:39,275
+这两个方面都是如此关键
+both dimensions so so the the key
+
+549
+00:38:39,280 --> 00:38:48,725
+他们在2d的关键操作是在MATLAB中
+their key operation in 2d is in MATLAB
+
+550
+00:38:48,730 --> 00:38:54,495
+您需要知道的MATLAB命令
+the MATLAB command that you need to know
+
+551
+00:38:54,500 --> 00:38:57,135
+如果你知道你在做什么，就得到
+to get if you know what you're doing in
+
+552
+00:38:57,140 --> 00:38:59,445
+1d你想在2d做到
+1d and you want to do it in 2d the
+
+553
+00:38:59,450 --> 00:39:05,355
+MATLAB命令是cron所以我们想象
+MATLAB command is cron so so we imagine
+
+554
+00:39:05,360 --> 00:39:10,775
+我们有一维矩阵a和B.
+we have one dimensional matrices a and B
+
+555
+00:39:10,780 --> 00:39:15,405
+所以那些是1d而我们想要的
+and so those are in 1d and we want to
+
+556
+00:39:15,410 --> 00:39:19,055
+为他们生产自然
+produce the natural to them
+
+557
+00:39:19,060 --> 00:39:21,135
+二维矩阵所以这些将是
+two-dimensional matrix so these will be
+
+558
+00:39:21,140 --> 00:39:28,995
+由M和我们想要那种自然
+n by M and we want the sort of natural
+
+559
+00:39:29,000 --> 00:39:32,835
+产品让我称之为k为cron
+product let me call it k for cron which
+
+560
+00:39:32,840 --> 00:39:38,055
+我想要的N平方N平方
+will be N squared by N squared I want to
+
+561
+00:39:38,060 --> 00:39:46,635
+创建一个连接到的二维矩阵
+create a 2d matrix with connected to an
+
+562
+00:39:46,640 --> 00:39:49,995
+图像这n个所以每个方向
+image that's n in each direction so it
+
+563
+00:39:50,000 --> 00:39:53,565
+有它有N个平方像素，这是
+has it has N squared pixels this is
+
+564
+00:39:53,570 --> 00:39:58,695
+这些是1d信号，K是2d信号
+these are 1d signals and K is a 2d one
+
+565
+00:39:58,700 --> 00:40:04,425
+而这个洞穴就在那里
+and this cave would be there this is the
+
+566
+00:40:04,430 --> 00:40:09,795
+知道给予的操作
+operation to know given given to one
+
+567
+00:40:09,800 --> 00:40:13,835
+维数n乘n矩阵cron
+dimensional N by n matrices cron
+
+568
+00:40:13,840 --> 00:40:17,925
+产生一个N平方N平方
+produces a to an N squared by N squared
+
+569
+00:40:17,930 --> 00:40:18,675
+矩阵
+matrix
+
+570
+00:40:18,680 --> 00:40:21,675
+它病了，这是一个了解的操作
+it's sick it's a operation to know so
+
+571
+00:40:21,680 --> 00:40:24,405
+如果你知道什么，我会把它写进来
+I'll just write it in if you know what
+
+572
+00:40:24,410 --> 00:40:26,865
+cron是，你知道你知道什么
+cron is and you know what you know it
+
+573
+00:40:26,870 --> 00:40:30,135
+在我写之前，我想要的是什么
+before I write it so what so I want to
+
+574
+00:40:30,140 --> 00:40:33,405
+产生一个由N组成的矩阵
+produce a big matrix n squared by N
+
+575
+00:40:33,410 --> 00:40:36,695
+平方
+squared
+
+576
+00:40:36,700 --> 00:40:39,855
+以某种方式适当地增加这些
+somehow appropriately multiplying these
+
+577
+00:40:39,860 --> 00:40:43,515
+两个家伙和适当的方式做
+two guys and the appropriate way to do
+
+578
+00:40:43,520 --> 00:40:50,095
+取一个1并乘以B
+it is to take a 1 1 and multiplied by B
+
+579
+00:40:50,100 --> 00:40:53,825
+所以有什么我有什么大小有我
+so there what do I have what size have I
+
+580
+00:40:53,830 --> 00:40:55,805
+得到他们已经只是在那一个
+got they're already just in that one
+
+581
+00:40:55,810 --> 00:41:00,485
+角落n由右边它是多次
+corner n by n right it's a number times
+
+582
+00:41:00,490 --> 00:41:05,075
+N乘n矩阵然后是1/2的B
+an N by n matrix then a 1/2 times B
+
+583
+00:41:05,080 --> 00:41:10,075
+这是另一个n乘n矩阵，最高可达1n
+that's another n by n matrix up to a 1 n
+
+584
+00:41:10,080 --> 00:41:18,125
+倍B所以我现在抱歉Kappa所以我
+times B so I have now sorry Kappa so I
+
+585
+00:41:18,130 --> 00:41:23,105
+每个都有一个插入式矩阵
+have tap-in matrices in a row each of
+
+586
+00:41:23,110 --> 00:41:26,045
+那些矩阵是n，所以我的那一行
+those matrices is n by n so my that row
+
+587
+00:41:26,050 --> 00:41:28,925
+长度N平方，当然是
+has length N squared and of course the
+
+588
+00:41:28,930 --> 00:41:38,975
+下一行是我已经允许自己
+next row is I've I've allowed myself to
+
+589
+00:41:38,980 --> 00:41:43,325
+数字从1到N但很常见
+number from 1 to N but very often that
+
+590
+00:41:43,330 --> 00:41:46,025
+编号应为0到n减1和
+numbering should be 0 to n minus 1 and
+
+591
+00:41:46,030 --> 00:41:49,625
+最后在这里下降到1和1
+finally going down here down to a and 1
+
+592
+00:41:49,630 --> 00:42:00,875
+B所以N是N的平方
+B so so that's the N squared by N
+
+593
+00:42:00,880 --> 00:42:02,555
+平方矩阵，你需要
+squared matrix that you would need to
+
+594
+00:42:02,560 --> 00:42:04,895
+知道例如，如果你想要做一个
+know for example if you wanted to do a
+
+595
+00:42:04,900 --> 00:42:09,415
+你转变的二维转移
+two dimensional transfer you transform
+
+596
+00:42:09,420 --> 00:42:16,295
+它会是的，所以两个会是什么
+it would be yeah so what would a two
+
+597
+00:42:16,300 --> 00:42:19,775
+每个维度傅里叶变换
+dimensional Fourier transform per do
+
+598
+00:42:19,780 --> 00:42:22,385
+这个矩阵是什么矩阵你
+what what matrix is this the matrix you
+
+599
+00:42:22,390 --> 00:42:30,965
+会用一个2D我没有那种
+would use for for a 2d I haven't sort of
+
+600
+00:42:30,970 --> 00:42:33,485
+在2d傅立叶上正确开始
+got started properly on 2d Fourier
+
+601
+00:42:33,490 --> 00:42:38,425
+变换所以它会是F次FF
+transform so would it be F times F F
+
+602
+00:42:38,430 --> 00:42:41,855
+请让我写下来
+cronic so let me write down the full
+
+603
+00:42:41,860 --> 00:42:44,615
+这个家伙chroniker的名字是这样的
+name of this guy chroniker so it's
+
+604
+00:42:44,620 --> 00:42:50,575
+它就是Kronecker产品
+called the Kronecker product it's just
+
+605
+00:42:50,580 --> 00:42:53,605
+知道这是正确的事情
+it's just the right thing to know in
+
+606
+00:42:53,610 --> 00:42:56,765
+从一个维度移动到两个维度
+moving from one dimension to two
+
+607
+00:42:56,770 --> 00:43:02,415
+尺寸例如让我
+dimensions for example let me
+
+608
+00:43:02,420 --> 00:43:17,985
+我有一块板，是的，是的，所以在这里
+I got one board left yeah yeah so here's
+
+609
+00:43:17,990 --> 00:43:23,084
+标准矩阵称它为二和
+a standard matrix call it a twos and
+
+610
+00:43:23,089 --> 00:43:27,705
+减去这就是那个合唱
+minus ones so that that's that chorus
+
+611
+00:43:27,710 --> 00:43:30,995
+这对应于二阶导数
+that corresponds to a second derivative
+
+612
+00:43:31,000 --> 00:43:34,245
+或实际减去二阶导数
+or actually minus the second derivative
+
+613
+00:43:34,250 --> 00:43:37,364
+现在假设我有另一个配偶
+now suppose I have a mate another the
+
+614
+00:43:37,369 --> 00:43:43,125
+对应于第二个的相同矩阵
+same matrix corresponding to second
+
+615
+00:43:43,130 --> 00:43:50,415
+衍生物在Y方向上相同而且
+derivatives in the Y direction same and
+
+616
+00:43:50,420 --> 00:43:53,564
+我真正想要做的就是我想要的
+what I really want to do is both I want
+
+617
+00:43:53,569 --> 00:43:59,135
+有一个对应的矩阵K.
+to have a matrix K that corresponds to
+
+618
+00:43:59,140 --> 00:44:02,584
+减去X方向的第二个
+minus the second in the X Direction
+
+619
+00:44:02,589 --> 00:44:07,785
+减去第二个和Y所以这是
+minus the second and the Y so this is
+
+620
+00:44:07,790 --> 00:44:15,854
+拉普拉斯拉普拉西亚到处都是
+the Laplace laplacian which is all over
+
+621
+00:44:15,859 --> 00:44:19,275
+a中微分方程的位置
+the place in differential equations at a
+
+622
+00:44:19,280 --> 00:44:23,505
+我想做的典型点-其中之一
+typical point I want to do - one of
+
+623
+00:44:23,510 --> 00:44:26,324
+这两个-其中一个
+these two of these - one of those in the
+
+624
+00:44:26,329 --> 00:44:28,205
+X方向，我想补充一点
+X direction and I want to add to that
+
+625
+00:44:28,210 --> 00:44:31,875
+减去一个现在也变成了四个
+minus one now that too becomes a four
+
+626
+00:44:31,880 --> 00:44:34,785
+在Y方向减去一个，所以我
+and minus one in the Y direction so I'm
+
+627
+00:44:34,790 --> 00:44:37,814
+寻找两个伙伴的两个人
+looking for the two by two mate
+
+628
+00:44:37,819 --> 00:44:41,535
+二维矩阵
+the the two dimensional matrix that
+
+629
+00:44:41,540 --> 00:44:45,285
+采取那种五点计划
+takes that does that five-point scheme
+
+630
+00:44:45,290 --> 00:44:50,114
+每个点的五个权重需要四个
+five weights for each point takes four
+
+631
+00:44:50,119 --> 00:44:54,074
+在对角线和减去一个上
+of the on the diagonal and minus one on
+
+632
+00:44:54,079 --> 00:44:58,155
+四个邻居和操作
+the four neighbors and the operation
+
+633
+00:44:58,160 --> 00:45:01,364
+这样做会是你会的
+that would do that would be you would
+
+634
+00:45:01,369 --> 00:45:05,715
+使用cron它不会是B的cron
+use cron it wouldn't be cron of a B that
+
+635
+00:45:05,720 --> 00:45:09,915
+只是B的B不是我的意思
+would just K of a B is not what I what I
+
+636
+00:45:09,920 --> 00:45:16,465
+是B的cron不是我想要的
+was a cron of a B is not what I want
+
+637
+00:45:16,470 --> 00:45:18,725
+是的，那会做一个，然后是
+yeah that would do one and then the
+
+638
+00:45:18,730 --> 00:45:20,555
+另一个然后那可能
+other one and then that would probably
+
+639
+00:45:20,560 --> 00:45:25,535
+产生九个非零我想要的东西
+produce nine non-zeros I want something
+
+640
+00:45:25,540 --> 00:45:29,905
+在这里添加所以我想要一个cron
+that adds here so I I want cron of a
+
+641
+00:45:29,910 --> 00:45:32,995
+时间是给我的身份
+time's the identity that gives me the
+
+642
+00:45:33,000 --> 00:45:37,445
+这部分的二维事物
+the two dimensional thing for this part
+
+643
+00:45:37,450 --> 00:45:46,625
+然后我会加上我的cron
+and then I'll add on cron of I be for
+
+644
+00:45:46,630 --> 00:45:51,005
+衍生物的垂直导数
+the vertical derivative the derivatives
+
+645
+00:45:51,010 --> 00:45:54,485
+在Y方向，所以就是这样
+in the Y direction so that would be so
+
+646
+00:45:54,490 --> 00:45:57,745
+这被称为chroniker，这是一个
+that's called a chroniker some this is a
+
+647
+00:45:57,750 --> 00:46:00,755
+这是一个另一个是chroniker
+this is a the other was a chroniker
+
+648
+00:46:00,760 --> 00:46:03,785
+产品，这将是一个慢性病
+product so that would be a chronica
+
+649
+00:46:03,790 --> 00:46:05,735
+产品这将是另一个Kronecker
+product this would be another Kronecker
+
+650
+00:46:05,740 --> 00:46:08,015
+产品和总称为
+product and that total is called the
+
+651
+00:46:08,020 --> 00:46:14,975
+chroniker好吧我想要得到
+chroniker some okay I wanted just to get
+
+652
+00:46:14,980 --> 00:46:18,305
+这些符号是因为真的
+that those notations out because really
+
+653
+00:46:18,310 --> 00:46:21,665
+你知道傅立叶改造我说的是
+you know Fourier transforming I said is
+
+654
+00:46:21,670 --> 00:46:26,074
+所有这样的中央运作
+such a central operation in in in all of
+
+655
+00:46:26,079 --> 00:46:29,045
+应用混乱，尤其是信号
+Applied mess and especially in signal
+
+656
+00:46:29,050 --> 00:46:32,425
+处理好，所以今天我很好
+processing okay so I'm good for today
+
+657
+00:46:32,430 --> 00:46:35,255
+让我们看看到目前为止我有一名志愿者
+let's see I've got one volunteer so far
+
+658
+00:46:35,260 --> 00:46:39,485
+我可以谈谈一个项目
+for to talk about a project can I
+
+659
+00:46:39,490 --> 00:46:43,145
+鼓励任何人发送电子邮件
+encourage an email from anybody it
+
+660
+00:46:43,150 --> 00:46:46,445
+难道你不必成为超级巨星
+doesn't you don't have to be a superstar
+
+661
+00:46:46,450 --> 00:46:52,475
+它只是愿意这样做告诉我们
+it's just willing to to do it tell us
+
+662
+00:46:52,480 --> 00:46:54,185
+关于你学到的东西得到的东西
+something about what you've learned get
+
+663
+00:46:54,190 --> 00:46:57,035
+从观众的评论，你知道
+comments from the audience and you know
+
+664
+00:46:57,040 --> 00:47:00,844
+我十分十五分钟
+ten ten or fifteen minutes is all I'm
+
+665
+00:47:00,849 --> 00:47:04,354
+想着它，好吧，我会告诉你的
+thinking about it yeah okay I'll let you
+
+666
+00:47:04,359 --> 00:47:06,905
+如果你愿意的话，给我发一封电子邮件
+send me an email if you're if you'd like
+
+667
+00:47:06,910 --> 00:47:09,755
+告诉我们，并得到一些反馈确定
+to tell us that and get some feedback ok
+
+668
+00:47:09,760 --> 00:47:14,160
+好，所以我星期三见
+
+669
+00:47:09,760 --> 00:47:14,779
+good so I'll see you Wednesday
+
+670
+00:47:14,789 --> 00:47:17,789
+谢谢
+Thanks
+

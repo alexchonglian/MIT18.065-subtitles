@@ -1,0 +1,2243 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,774
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,779 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,785
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,790 --> 00:00:29,144
+好的开始我以为我会
+ok getting getting started I thought I'd
+
+10
+00:00:29,149 --> 00:00:33,435
+添加一些关于这个问题的话
+add a few words about a question that
+
+11
+00:00:33,440 --> 00:00:37,835
+在课后假设出现了
+came up after class suppose in that
+
+12
+00:00:37,840 --> 00:00:41,295
+上次讨论你在哪里
+discussion last time where you were
+
+13
+00:00:41,300 --> 00:00:45,645
+给了三个你给了一个距离
+given three you were given a distance
+
+14
+00:00:45,650 --> 00:00:48,465
+矩阵你得到了距离
+matrix you were given the distance
+
+15
+00:00:48,470 --> 00:00:53,055
+介于x2和x2之间x2和x3之间
+between x1 and x2 between x2 and x3 and
+
+16
+00:00:53,060 --> 00:00:56,234
+在x1和x3之间你想找到
+between x1 and x3 and you wanted to find
+
+17
+00:00:56,239 --> 00:01:02,144
+我们满意的要点
+points that satisfied that well we're
+
+18
+00:01:02,149 --> 00:01:04,845
+要失败在这个例子中，因为如果
+going to fail on this example because if
+
+19
+00:01:04,850 --> 00:01:08,565
+这里的距离为1的距离在这里
+the distance here is 1 the distance here
+
+20
+00:01:08,570 --> 00:01:13,005
+是1，那么通过三角不等式的
+is 1 then by the triangle inequality the
+
+21
+00:01:13,010 --> 00:01:15,615
+从x1到x3的距离不能太多
+distance from x1 to x3 could not be more
+
+22
+00:01:15,620 --> 00:01:18,404
+超过2，当我们摆正它时它可以
+than 2 and when we square it it could
+
+23
+00:01:18,409 --> 00:01:21,794
+不超过4，这里是6
+not be more than 4 and here it's 6 so
+
+24
+00:01:21,799 --> 00:01:23,445
+什么会发生什么问题
+what's going to happen what goes wrong
+
+25
+00:01:23,450 --> 00:01:29,205
+在那种情况下，是的，我没有评论过
+in that case yeah I hadn't commented on
+
+26
+00:01:29,210 --> 00:01:33,404
+这一点，我不知道是该
+that and I'm not sure that that the
+
+27
+00:01:33,409 --> 00:01:38,715
+我引用的论文是这样的，所以我有
+paper that I referenced does so so I had
+
+28
+00:01:38,720 --> 00:01:41,145
+做一点回顾
+to do a little search back in the
+
+29
+00:01:41,150 --> 00:01:43,934
+人们不能忽视文学
+literature cuz people couldn't overlook
+
+30
+00:01:43,939 --> 00:01:50,345
+这个问题所以这是三角形
+this problem so this is the triangle
+
+31
+00:01:50,350 --> 00:01:57,945
+不平等失败，所以它不是
+inequality fails so that and it's not
+
+32
+00:01:57,950 --> 00:02:00,815
+将帮助进入十个维度
+going to help to go into ten dimensions
+
+33
+00:02:00,820 --> 00:02:04,415
+因为三角不等式没有
+because the triangle inequality doesn't
+
+34
+00:02:04,420 --> 00:02:08,715
+不会改变，它仍然存在
+doesn't change and it's still there in
+
+35
+00:02:08,720 --> 00:02:11,354
+十个维度，我们仍然失败
+ten dimensions and we're still failing
+
+36
+00:02:11,359 --> 00:02:13,844
+它会发生什么事情呢？
+it so what happens well what could
+
+37
+00:02:13,849 --> 00:02:15,075
+发生
+happen
+
+38
+00:02:15,080 --> 00:02:16,935
+你记得吗，你必须这样做
+do you remember and you'll have to
+
+39
+00:02:16,940 --> 00:02:20,415
+提醒我你的关键等式
+remind me the the key equation you
+
+40
+00:02:20,420 --> 00:02:25,115
+记得我们有一个方程式连接
+remember we had an equation connecting
+
+41
+00:02:25,120 --> 00:02:32,025
+连接那么矩阵D是什么
+connecting so what is the matrix D for
+
+42
+00:02:32,030 --> 00:02:37,155
+这个问题，让d是，这是一个三通过
+this problem so D is this is a three by
+
+43
+00:02:37,160 --> 00:02:40,815
+具有这些距离的三个矩阵
+three matrix with these distances
+
+44
+00:02:40,820 --> 00:02:43,365
+平方，这是方便使用
+squared and it was convenient to use
+
+45
+00:02:43,370 --> 00:02:45,375
+距离平方因为那是什么
+distances squared because that's what
+
+46
+00:02:45,380 --> 00:02:49,815
+当然，我会进入下一步
+comes into the next steps so of course
+
+47
+00:02:49,820 --> 00:02:53,585
+从每个X到它自身的距离是0
+the distance from each X to itself is 0
+
+48
+00:02:53,590 --> 00:02:57,735
+距x平方的距离是
+the distance from x distance squared was
+
+49
+00:02:57,740 --> 00:03:02,885
+这是一个，但这个是6
+that this one was that but this one is 6
+
+50
+00:03:02,890 --> 00:03:08,805
+好的，这就是距离矩阵和我们
+ok so that's the distance matrix and we
+
+51
+00:03:08,810 --> 00:03:12,375
+我想找工作找
+would like to find the job was to find
+
+52
+00:03:12,380 --> 00:03:14,865
+一周，我只想写下我们
+week and I'm just going to write down we
+
+53
+00:03:14,870 --> 00:03:25,005
+找不到x1x2和x3也不匹配
+cannot find x1 x2 and x3 too to match
+
+54
+00:03:25,010 --> 00:03:27,765
+那些距离所以出了什么问题
+those distances so what goes wrong well
+
+55
+00:03:27,770 --> 00:03:29,325
+只有一件事可以发生
+there's only one thing that could go
+
+56
+00:03:29,330 --> 00:03:32,205
+连接此距离时错误
+wrong when you connect this distance
+
+57
+00:03:32,210 --> 00:03:37,005
+矩阵D到矩阵X转置X你
+matrix D to the matrix X transpose X you
+
+58
+00:03:37,010 --> 00:03:39,075
+记住位置矩阵也许我
+remember the position matrix maybe I
+
+59
+00:03:39,080 --> 00:03:46,365
+称之为G，这就是GIJ
+called it G this this is giving so G IJ
+
+60
+00:03:46,370 --> 00:03:54,285
+是XI与XJoops的点积
+is the dot product of X I with XJ oops
+
+61
+00:03:54,290 --> 00:04:04,665
+作出这样的成为J在这里谢谢你这么g^
+make that into a J here thank you so g
+
+62
+00:04:04,670 --> 00:04:10,485
+IJ是点积和矩阵
+IJ is the matrix of dot products and the
+
+63
+00:04:10,490 --> 00:04:13,875
+伟大的事情是我们可以发现
+great thing was that we can discover
+
+64
+00:04:13,880 --> 00:04:16,335
+矩阵G来自哪个矩阵
+what that matrix that matrix G comes
+
+65
+00:04:16,340 --> 00:04:19,515
+直接来自D直接来自D.
+directly from D comes directly from D
+
+66
+00:04:19,520 --> 00:04:21,885
+当然我们怎么知道这个
+and of course what do we know about this
+
+67
+00:04:21,890 --> 00:04:24,615
+我们知道它的交叉产品矩阵
+matrix of cross products we know that it
+
+68
+00:04:24,620 --> 00:04:32,645
+是半正定的
+is positive semi-definite
+
+69
+00:04:32,650 --> 00:04:36,784
+所以在一句话中出了问题
+so what goes wrong well just in a word
+
+70
+00:04:36,789 --> 00:04:39,724
+当我们写的是方程
+when we write out that equation and
+
+71
+00:04:39,729 --> 00:04:43,515
+发现三角形是什么G
+discover what G is if the triangle
+
+72
+00:04:43,520 --> 00:04:47,925
+不平等失败我们知道G是G
+inequality fails we learn that G is G
+
+73
+00:04:47,930 --> 00:04:50,765
+并不是肯定的
+doesn't come out positive definite
+
+74
+00:04:50,770 --> 00:04:54,944
+这就是我想说的全部和我
+that's really all I want to say and I
+
+75
+00:04:54,949 --> 00:04:58,185
+可以推动G的例子
+could push through the example G will
+
+76
+00:04:58,190 --> 00:05:00,914
+如果D如果，那就不是肯定的
+not come out positive definite if D if
+
+77
+00:05:00,919 --> 00:05:05,685
+这是D，因为如果它出来它就不能
+that's D because it can't if it came out
+
+78
+00:05:05,690 --> 00:05:08,715
+肯定的，然后我们可以找到一个
+positive definite then we could find an
+
+79
+00:05:08,720 --> 00:05:12,134
+X所以，如果我们有G，那么最后一步
+X so if we had the G then the final step
+
+80
+00:05:12,139 --> 00:05:15,134
+你还记得我们找到一个X井
+you remember is to find an X well we
+
+81
+00:05:15,139 --> 00:05:18,485
+知道如果G是半正定的
+know that if G is positive semi-definite
+
+82
+00:05:18,490 --> 00:05:24,375
+有多种方法可以找到x你
+there are multiple ways to find an x you
+
+83
+00:05:24,380 --> 00:05:27,405
+知道这是正半确定的
+know this is positive semi definite
+
+84
+00:05:27,410 --> 00:05:29,565
+矩阵就是你从X中获得的
+matrices is what you get out of X
+
+85
+00:05:29,570 --> 00:05:33,255
+转置Xs我们可以找到一个给定的x
+transpose X s and we can find an x given
+
+86
+00:05:33,260 --> 00:05:37,335
+我们可以找到G得到一个X所以它有
+a G we can find G given an X so it has
+
+87
+00:05:37,340 --> 00:05:48,735
+是，这不会是真实的，
+to be that this won't be true that the
+
+88
+00:05:48,740 --> 00:05:50,865
+矩阵G来自该等式
+matrix G that comes out of that equation
+
+89
+00:05:50,870 --> 00:05:53,444
+会变成不为正
+will turn out not to be positive
+
+90
+00:05:53,449 --> 00:05:56,315
+确定所以这真的很不错
+definite so it's it's really quite nice
+
+91
+00:05:56,320 --> 00:05:58,515
+这是一个美丽的一点点
+it's a beautiful little bit of
+
+92
+00:05:58,520 --> 00:06:02,925
+数学，如果当且仅当
+mathematics that if if and only if the
+
+93
+00:06:02,930 --> 00:06:05,895
+三角不等式得到满足
+triangle inequality is satisfied by
+
+94
+00:06:05,900 --> 00:06:10,065
+这些数字当且仅当时
+these numbers if and only if then the
+
+95
+00:06:10,070 --> 00:06:14,325
+然后在D矩阵中的矩阵
+matrix that in the in the D matrix then
+
+96
+00:06:14,330 --> 00:06:16,545
+即这样来的G矩阵
+the G matrix that comes out of this
+
+97
+00:06:16,550 --> 00:06:18,455
+我没写过的等式是
+equation which I haven't written is
+
+98
+00:06:18,460 --> 00:06:21,914
+如果三角形是正半正定的
+positive semi-definite if the triangle
+
+99
+00:06:21,919 --> 00:06:24,284
+不平等是可以的，我们可以找到
+inequality is okay we can find the
+
+100
+00:06:24,289 --> 00:06:27,615
+如果三角形不等式是分数
+points if the triangle inequality is
+
+101
+00:06:27,620 --> 00:06:32,295
+像这里我们那样违反了矩阵G.
+violated like here we then the matrix G
+
+102
+00:06:32,300 --> 00:06:34,395
+不是半正定的
+is not positive semi-definite has
+
+103
+00:06:34,400 --> 00:06:37,154
+负特征值，我们找不到
+negative eigenvalues and we cannot find
+
+104
+00:06:37,159 --> 00:06:40,605
+关键是我能记得G
+the point yeah I could recall the G
+
+105
+00:06:40,610 --> 00:06:41,384
+矩阵
+matrix
+
+106
+00:06:41,389 --> 00:06:48,434
+G等式，但它来了
+the the G equation but it's coming to
+
+107
+00:06:48,439 --> 00:06:54,934
+你在两页的部分
+you in the two page section that does
+
+108
+00:06:54,939 --> 00:07:00,495
+只是距离矩阵好吧那就是
+just distance matrices okay that that's
+
+109
+00:07:00,500 --> 00:07:06,825
+我有点喜欢这样做
+just I sort of like made a point it's
+
+110
+00:07:06,830 --> 00:07:09,284
+很高兴有特定的数字和我
+nice to have specific numbers and I
+
+111
+00:07:09,289 --> 00:07:11,624
+可以得到G和的具体数字
+could get the specific numbers for G and
+
+112
+00:07:11,629 --> 00:07:13,904
+我们不会认为这不是积极的
+we would see no way it's not positive
+
+113
+00:07:13,909 --> 00:07:17,295
+确定好，所以这只是整理
+definite okay so that's just tidying up
+
+114
+00:07:17,300 --> 00:07:21,634
+上次我有另一个小问题
+last time I have another small problem
+
+115
+00:07:21,639 --> 00:07:26,355
+谈论，然后一个大问题
+to talk about and then a big question of
+
+116
+00:07:26,360 --> 00:07:30,164
+深度学习是否真的有效我
+whether deep learning actually works I
+
+117
+00:07:30,169 --> 00:07:33,404
+昨晚有专家发来的电子邮件
+had an email from an expert last night
+
+118
+00:07:33,409 --> 00:07:38,175
+这改变了我对世界的看法
+which changed my view of the world about
+
+119
+00:07:38,180 --> 00:07:42,874
+这个问题，你可以想像的了
+that question as you can imagine the the
+
+120
+00:07:42,879 --> 00:07:47,925
+改变我的世界是我曾经想过的
+change in my world was I had thought the
+
+121
+00:07:47,930 --> 00:07:50,295
+答案是肯定的，我现在认为
+answer was yes and I now think the
+
+122
+00:07:50,300 --> 00:07:54,105
+答案不是没有，所以这就像是一个
+answer isn't no so that's like rather a
+
+123
+00:07:54,110 --> 00:07:56,985
+十八六五的大问题但是
+big issue for eighteen oh six five but
+
+124
+00:07:56,990 --> 00:08:02,075
+我们将让我们看到以后好吗
+we'll let's see about that later okay
+
+125
+00:08:02,080 --> 00:08:06,495
+还好我现在就ProQuest的这些问题，所以
+okay now I'll proquest these problem so
+
+126
+00:08:06,500 --> 00:08:09,765
+prouKrusty和我把它包括在内
+prou Krusty's and i it's included in the
+
+127
+00:08:09,770 --> 00:08:12,374
+注意到这个名字来自希腊语
+notes it's that name comes from a Greek
+
+128
+00:08:12,379 --> 00:08:17,524
+神话是你们到希腊神话等等
+myth are you guys into Greek myths so
+
+129
+00:08:17,529 --> 00:08:22,384
+每个Krusty的故事是什么？
+what was the story of per Krusty's he
+
+130
+00:08:22,389 --> 00:08:28,964
+在Procrustes调整了
+was at Procrustes who adjusted the
+
+131
+00:08:28,969 --> 00:08:33,334
+他的长度让他有一张特别的床
+lengths of his so he had a special bed
+
+132
+00:08:33,339 --> 00:08:36,495
+对于crusties床一定长度和
+for crusties bed certain lengths and
+
+133
+00:08:36,500 --> 00:08:39,615
+然后他有来访的游客
+then he had visitors coming and instead
+
+134
+00:08:39,620 --> 00:08:42,885
+的调节所述床的所述长度
+of adjusting the length of the bed to
+
+135
+00:08:42,890 --> 00:08:46,815
+适合Krusty调整后的访客
+fit the visitor for Krusty's adjusted
+
+136
+00:08:46,820 --> 00:08:49,574
+适合床的访客的长度
+the length of the visitor to fit the bed
+
+137
+00:08:49,579 --> 00:08:54,285
+所以要么拉伸访客，要么切碎
+so either stretch the visitor or chopped
+
+138
+00:08:54,290 --> 00:08:55,275
+离
+off
+
+139
+00:08:55,280 --> 00:08:58,425
+访客的一部分，所以无论如何它是它的
+part of the visitor so anyway it's it's
+
+140
+00:08:58,430 --> 00:09:02,175
+希腊人这样或东西好了，
+the Greeks like this or a thing okay so
+
+141
+00:09:02,180 --> 00:09:05,295
+无论如何，那是希腊神话
+anyway that's that's a Greek myth for
+
+142
+00:09:05,300 --> 00:09:09,825
+十八，六，六，好，所以整个
+eighteen oh six five okay so the whole
+
+143
+00:09:09,830 --> 00:09:12,615
+想法有打击茶的问题是
+idea there percuss teas problem is to
+
+144
+00:09:12,620 --> 00:09:17,645
+做一些适合别的东西所以
+make something fit something else so the
+
+145
+00:09:17,650 --> 00:09:26,145
+所以这两件事情都是如此假设我
+so the two things are so suppose I'm
+
+146
+00:09:26,150 --> 00:09:29,115
+我只有三个维度
+just in three dimensions I have two
+
+147
+00:09:29,120 --> 00:09:32,205
+这里向量排序的基础
+vectors here sort of a basis for a
+
+148
+00:09:32,210 --> 00:09:34,395
+二维空间和我在这里
+two-dimensional space and over here I
+
+149
+00:09:34,400 --> 00:09:42,695
+有太空科学家可能有的人
+have people space scientists might have
+
+150
+00:09:42,700 --> 00:09:47,295
+一个位置的计算
+one computation of the of the positions
+
+151
+00:09:47,300 --> 00:09:50,085
+当然他们是卫星
+of satellites then of course they
+
+152
+00:09:50,090 --> 00:09:51,765
+不会多达这是关
+wouldn't be off by as much as this
+
+153
+00:09:51,770 --> 00:09:53,745
+图显示但是他们有另一个
+figure shows but then they have another
+
+154
+00:09:53,750 --> 00:09:57,615
+使用不同坐标计算
+computation using different coordinates
+
+155
+00:09:57,620 --> 00:10:02,535
+所以它是部分旋转的
+so it so it's it's partly rotated from
+
+156
+00:10:02,540 --> 00:10:04,834
+这张照片，但它也部分得到了
+this picture but also it's partly got
+
+157
+00:10:04,839 --> 00:10:07,455
+舍入错误和错误
+roundoff errors and an error in it
+
+158
+00:10:07,460 --> 00:10:09,885
+两者之间所以问题是
+between the two so the question is
+
+159
+00:10:09,890 --> 00:10:12,915
+什么是最好的正交
+what's the best best orthogonal
+
+160
+00:10:12,920 --> 00:10:15,195
+改造所以这是一个
+transformation so this is this is a
+
+161
+00:10:15,200 --> 00:10:21,165
+一堆矢量X1X22Xn让我们说
+bunch of vectors X 1 X 2 2 X n let's say
+
+162
+00:10:21,170 --> 00:10:24,885
+我想把它们乘以一个
+and I want to multiply them by an
+
+163
+00:10:24,890 --> 00:10:27,345
+正交矩阵没有，我可能会这样做
+orthogonal matrix no maybe I'd do it on
+
+164
+00:10:27,350 --> 00:10:35,865
+另一边，我觉得我做的啊Q的
+the other side I think I do yeah q to be
+
+165
+00:10:35,870 --> 00:10:39,795
+尽可能接近另一套Y.
+as close as possible to this other set Y
+
+166
+00:10:39,800 --> 00:10:46,185
+1y2到Yn所以让我说吧
+1 y 2 up to Y n so let me just say it
+
+167
+00:10:46,190 --> 00:10:46,635
+再次
+again
+
+168
+00:10:46,640 --> 00:10:50,265
+我有两组矢量而且我是
+I have two sets of vectors and I'm
+
+169
+00:10:50,270 --> 00:10:52,935
+看起来和他们不一样
+looking and they're different like those
+
+170
+00:10:52,940 --> 00:10:56,465
+两套，我正在寻找
+two sets and I'm looking for the
+
+171
+00:10:56,470 --> 00:10:59,115
+正交矩阵以及
+orthogonal matrix that as well as
+
+172
+00:10:59,120 --> 00:11:02,505
+可能将此集合纳入此中
+possible takes this set into this one of
+
+173
+00:11:02,510 --> 00:11:04,875
+当然，如果这是如果这是一个
+course if this was if this was an
+
+174
+00:11:04,880 --> 00:11:06,765
+正交基础，这是一个
+orthogonal basis and this was an
+
+175
+00:11:06,770 --> 00:11:08,505
+正交基
+orthogonal basis
+
+176
+00:11:08,510 --> 00:11:12,644
+那么我们就可以回家免费问：我们能
+then we would be home free q we could
+
+177
+00:11:12,649 --> 00:11:15,285
+得到平等，我们可以采取正交
+get equality we could take an orthogonal
+
+178
+00:11:15,290 --> 00:11:18,194
+直接基于正交基础
+basis directly into an orthogonal basis
+
+179
+00:11:18,199 --> 00:11:21,795
+在其他情况下使用正交矩阵Q.
+with a orthogonal matrix Q in other
+
+180
+00:11:21,800 --> 00:11:24,045
+如果X是正交矩阵，则为单词
+words if X was an orthogonal matrix and
+
+181
+00:11:24,050 --> 00:11:26,954
+Y是我们得到的正交矩阵
+Y was an orthogonal matrix we would get
+
+182
+00:11:26,959 --> 00:11:32,805
+这是完全正确的q，但事实并非如此
+it the exact correct q but that's not
+
+183
+00:11:32,810 --> 00:11:34,965
+这样的话我们正在寻找最好的
+the case so we're looking for the best
+
+184
+00:11:34,970 --> 00:11:37,485
+可能这样就是问题所在
+possible so that's the the problem then
+
+185
+00:11:37,490 --> 00:11:45,644
+如果我最小化过正交，则最小化
+minimize if I minimize over orthogonal
+
+186
+00:11:45,649 --> 00:11:49,485
+矩阵矩阵Q和我只想得到
+matrix matrices Q and I just want to get
+
+187
+00:11:49,490 --> 00:11:55,925
+我的符号在这里保持一致没关系
+my notation to be consistent here okay
+
+188
+00:11:55,930 --> 00:12:03,584
+好的，所以我看到我开始了
+okay so I've I see that I starting with
+
+189
+00:12:03,589 --> 00:12:08,565
+Y和将它们映射到X的所以让我们
+the Y's and mapping them to X's so let
+
+190
+00:12:08,570 --> 00:12:10,894
+我问什么都般的暴徒“厄尔尼诺问题
+me ask the question what are thuggin 'el
+
+191
+00:12:10,899 --> 00:12:15,884
+矩阵q乘以Y来表示
+matrix q multiplies the Y's to come as
+
+192
+00:12:15,889 --> 00:12:19,235
+尽可能接近x，所以我
+close as possible to the x's so so I
+
+193
+00:12:19,240 --> 00:12:22,814
+在我想要的所有正交Q上
+over all orthogonal Q's I want to
+
+194
+00:12:22,819 --> 00:12:29,415
+在Frobenius中最小化YQ减去X.
+minimize Y Q minus X in the Frobenius
+
+195
+00:12:29,420 --> 00:12:35,685
+因此Frobenius我们进入了平常
+norm squared so Frobenius we're into the
+
+196
+00:12:35,690 --> 00:12:45,095
+Frobenius规范记得矩阵
+Frobenius norm remember the of a matrix
+
+197
+00:12:45,100 --> 00:12:48,465
+这是一个非常方便的诺曼德
+this is a very convenient Normand in
+
+198
+00:12:48,470 --> 00:12:52,095
+数据科学来衡量一个人的规模
+data science to measure the size of a
+
+199
+00:12:52,100 --> 00:12:54,524
+矩阵，我们有几种可能
+matrix and we have several possible
+
+200
+00:12:54,529 --> 00:12:57,735
+它的公式所以让我打电话
+formulas for it so the so let me call
+
+201
+00:12:57,740 --> 00:13:01,334
+矩阵a和Frobenius范数
+the matrix a and the Frobenius norm
+
+202
+00:13:01,339 --> 00:13:02,235
+平方
+squared
+
+203
+00:13:02,240 --> 00:13:05,355
+好吧那么这就是一个表达方式
+okay so what's one expression in terms
+
+204
+00:13:05,360 --> 00:13:09,225
+矩阵条目的数字
+of the entries of the matrix the numbers
+
+205
+00:13:09,230 --> 00:13:13,005
+一个IJ和基质中的Frobenius范数
+a IJ and the matrix the Frobenius norm
+
+206
+00:13:13,010 --> 00:13:16,454
+只是把它像一个长的矢量如此
+is just treats it like a long vector so
+
+207
+00:13:16,459 --> 00:13:20,084
+它是1平方加1平方
+it's a 1 1 squared plus a 1 2 squared
+
+208
+00:13:20,089 --> 00:13:21,465
+一路
+all the way
+
+209
+00:13:21,470 --> 00:13:33,165
+我会说第一到第二行
+the first plus second row just I'll say
+
+210
+00:13:33,170 --> 00:13:38,945
+NN所有的方块的平方之和确定
+n n square ok sum of all the squares
+
+211
+00:13:38,950 --> 00:13:42,945
+只是将它视为长矢量好吧
+just treating it like a long vector okay
+
+212
+00:13:42,950 --> 00:13:46,785
+这个，但这是一个尴尬的表达
+this but that's a awkward expression to
+
+213
+00:13:46,790 --> 00:13:47,535
+写下来
+write down
+
+214
+00:13:47,540 --> 00:13:51,645
+那么我们还有什么方法可以找到
+so what other ways do we have to find
+
+215
+00:13:51,650 --> 00:14:00,045
+我们可以看到矩阵的Frobenius范数
+the Frobenius norm of a matrix let's see
+
+216
+00:14:00,050 --> 00:14:07,845
+我可以把它看成是一个转置
+I can look at this as a transpose a is
+
+217
+00:14:07,850 --> 00:14:11,595
+那个正确的转置一个什么是什么的
+that right a transpose a so what what's
+
+218
+00:14:11,600 --> 00:14:13,175
+发生在那里
+happening there
+
+219
+00:14:13,180 --> 00:14:20,565
+提醒我，是的，我会得到所有
+remind me what yeah I I would get all
+
+220
+00:14:20,570 --> 00:14:25,095
+我会通过拿走所有这些
+that I would get all these by taking the
+
+221
+00:14:25,100 --> 00:14:30,575
+矩阵a转置时间a但是什么
+matrix a transpose times a but what
+
+222
+00:14:30,580 --> 00:14:38,415
+对不起，我不是，我不是我没有我
+sorry I'm not I'm not I haven't I've
+
+223
+00:14:38,420 --> 00:14:43,175
+在这里失去了我的谈话威胁
+lost my threat of of talk here
+
+224
+00:14:43,180 --> 00:14:47,265
+所以这是哦，然后我走了踪迹
+so here's oh and then I take the trace
+
+225
+00:14:47,270 --> 00:14:51,705
+当然这样第一排第一列
+of course so that first row first column
+
+226
+00:14:51,710 --> 00:14:58,485
+有一次会给我一个
+of a times that one will give me the one
+
+227
+00:14:58,490 --> 00:15:02,265
+一组正方形然后那一次
+set of squares and then that one times
+
+228
+00:15:02,270 --> 00:15:04,245
+另一个人会给我
+the other one the next one will give me
+
+229
+00:15:04,250 --> 00:15:08,145
+下一组正方形就是这样
+the next set of squares right so this is
+
+230
+00:15:08,150 --> 00:15:10,905
+去，如果我在跟踪看起来那么现在
+going to if I look at the trace so now
+
+231
+00:15:10,910 --> 00:15:14,955
+让我，所以我只是想看看
+let me I so I'm just want to look at the
+
+232
+00:15:14,960 --> 00:15:20,535
+对角线在这里，所以它是跟踪你
+diagonal here so it's it's the trace you
+
+233
+00:15:20,540 --> 00:15:24,105
+记住一个矩阵的痕迹
+remember the trace of a matrix of a
+
+234
+00:15:24,110 --> 00:15:30,285
+矩阵M是一个人M11M2
+matrix M is some down the guy M 1 1 M 2
+
+235
+00:15:30,290 --> 00:15:33,504
+2到mmm
+2 down to mmm
+
+236
+00:15:33,509 --> 00:15:44,935
+这是一个对角的太阳和一个
+it's it's some it's a diagonal Sun and a
+
+237
+00:15:44,940 --> 00:15:48,144
+我这里的每个人现在都是如此
+everybody with me here is now the so
+
+238
+00:15:48,149 --> 00:15:52,355
+这个术语在转置的对角线上
+that term on the diagonal of a transpose
+
+239
+00:15:52,360 --> 00:15:56,345
+a然后给我所有这些或者也许
+a gives me all of that then or maybe
+
+240
+00:15:56,350 --> 00:15:59,014
+我也许我应该做一个
+I've maybe I should be doing a a
+
+241
+00:15:59,019 --> 00:16:01,295
+转置，重点是它没有
+transpose and the point is it doesn't
+
+242
+00:16:01,300 --> 00:16:05,754
+重要的是，或者是一个转置的痕迹
+matter so or the trace of a a transpose
+
+243
+00:16:05,759 --> 00:16:09,694
+那些都会给予给予
+that would be those would both give give
+
+244
+00:16:09,699 --> 00:16:15,845
+正确的弗罗贝尼乌斯范数如此平方
+the correct Frobenius norm squared so
+
+245
+00:16:15,850 --> 00:16:17,694
+痕迹将进入这个
+traces are going to come into this
+
+246
+00:16:17,699 --> 00:16:19,535
+小问题
+little problem
+
+247
+00:16:19,540 --> 00:16:21,605
+现在还有另一个公式
+now there's another formula for the
+
+248
+00:16:21,610 --> 00:16:24,425
+弗罗贝尼乌斯的规范甚至更短
+Frobenius norm even shorter well
+
+249
+00:16:24,430 --> 00:16:26,454
+肯定比这短
+certainly shorter than this one
+
+250
+00:16:26,459 --> 00:16:29,165
+涉及一个正方形和什么的平方
+involving a sum of squares and what's
+
+251
+00:16:29,170 --> 00:16:32,824
+那是另一种获得的方式
+that one what's the other way to get
+
+252
+00:16:32,829 --> 00:16:37,475
+如果我看一下SVD就会得到同样的答案
+this same answer if I look at the SVD
+
+253
+00:16:37,480 --> 00:16:40,985
+看奇异值我认为，
+look at singular values I think that
+
+254
+00:16:40,990 --> 00:16:44,465
+这也等于西格玛
+this is also equal to Sigma what are
+
+255
+00:16:44,470 --> 00:16:51,985
+所有奇异值的某个方格
+some square of all the singular values
+
+256
+00:16:51,990 --> 00:16:56,365
+所以它是三个很好的表达式
+so it's three nice expressions for the
+
+257
+00:16:56,370 --> 00:17:00,425
+Frobenius规范好的涉及一个
+Frobenius norm the nice ones involve a
+
+258
+00:17:00,430 --> 00:17:03,514
+转置a或aa转置和
+transpose a or a a transpose and of
+
+259
+00:17:03,519 --> 00:17:05,615
+连接到单数的课程
+course that connects to the singular
+
+260
+00:17:05,620 --> 00:17:07,564
+价值因为什么是什么
+values because what are what's the
+
+261
+00:17:07,569 --> 00:17:10,054
+奇异值与。之间的联系
+connection between singular values and
+
+262
+00:17:10,059 --> 00:17:13,294
+那些和这些家伙改变一个或一个
+those and these guys a transpose a or a
+
+263
+00:17:13,299 --> 00:17:18,154
+a转置奇异值是
+a transpose the the singular values are
+
+264
+00:17:18,159 --> 00:17:21,895
+的或正方形的奇异值是
+the or the singular value squared are
+
+265
+00:17:21,900 --> 00:17:27,125
+转置a和a的特征值
+the eigenvalues of a transpose a and
+
+266
+00:17:27,130 --> 00:17:30,605
+然后，当我添加我正在添加的跟踪
+then when I add up the trace I'm adding
+
+267
+00:17:30,610 --> 00:17:34,985
+提高了特征值，那就是那个
+up the eigen values and that's the that
+
+268
+00:17:34,990 --> 00:17:39,215
+给了我Frobenius规范的平方
+gives me the Frobenius norm squared so
+
+269
+00:17:39,220 --> 00:17:44,105
+这是一个告诉我们的东西
+this is a that's a that tells us
+
+270
+00:17:44,110 --> 00:17:46,125
+重要的事情
+something important
+
+271
+00:17:46,130 --> 00:17:49,025
+我们可以用不同的方式看到
+which we can see in different ways that
+
+272
+00:17:49,030 --> 00:17:52,635
+所以我们要解决这个问题，我们要去
+so we to solve this problem we're gonna
+
+273
+00:17:52,640 --> 00:17:57,225
+需要在各种事实，如QA
+need various facts like the QA in the
+
+274
+00:17:57,230 --> 00:18:02,205
+Frobenius规范与a中的相同
+Frobenius norm is the same as a in the
+
+275
+00:18:02,210 --> 00:18:13,485
+Frobenius没有为什么这就是为什么这样
+Frobenius no why why is that why so here
+
+276
+00:18:13,490 --> 00:18:15,465
+我把每一列乘以
+I'm multiplying every column by the
+
+277
+00:18:15,470 --> 00:18:18,285
+矩阵Q长度发生了什么
+matrix Q what happens to the length of
+
+278
+00:18:18,290 --> 00:18:20,405
+当我乘以Q时的列
+the column when I multiply it by Q
+
+279
+00:18:20,410 --> 00:18:24,225
+不会改变，所以我可以积少成多
+doesn't change so I could add up the
+
+280
+00:18:24,230 --> 00:18:26,565
+列的长度都在这里平方
+lengths of the columns all squared here
+
+281
+00:18:26,570 --> 00:18:29,205
+我用行来写它，但我
+I wrote it in in terms of rows but I
+
+282
+00:18:29,210 --> 00:18:32,475
+本来可以重新排序并把它搞定
+could have reordered that and got it in
+
+283
+00:18:32,480 --> 00:18:38,805
+列的术语是因为
+terms of columns that's because the
+
+284
+00:18:38,810 --> 00:18:44,175
+任何矢量平方的Q倍的长度
+length of Q times any any vector square
+
+285
+00:18:44,180 --> 00:18:48,225
+它与矢量平方和
+it is the same as the vector square and
+
+286
+00:18:48,230 --> 00:18:55,685
+这些都需要这些是的列
+these take these to be the columns of a
+
+287
+00:18:55,690 --> 00:18:59,955
+所以对于逐列来说
+so for column by column the
+
+288
+00:18:59,960 --> 00:19:02,295
+乘用Q不改变
+multiplication by Q doesn't change the
+
+289
+00:19:02,300 --> 00:19:05,355
+长度，然后当我把所有的加起来
+length and then when I add up all the
+
+290
+00:19:05,360 --> 00:19:09,005
+列平方我得到的弗洛比尼范数
+columns squared I get the Frobenius norm
+
+291
+00:19:09,010 --> 00:19:13,665
+平方和另一种方式说它让我们
+squared and another way to say it let's
+
+292
+00:19:13,670 --> 00:19:16,545
+在这之间建立联系
+make the connection between the this
+
+293
+00:19:16,550 --> 00:19:19,515
+事实上Q没有改变Frobenius
+fact that Q didn't change the Frobenius
+
+294
+00:19:19,520 --> 00:19:21,915
+因此b和n这个事实
+norm and this fact that therefore b
+
+295
+00:19:21,920 --> 00:19:24,825
+Gnaeus规范以表达方式表达
+Gnaeus norm is expressed in terms of
+
+296
+00:19:24,830 --> 00:19:28,275
+他们的Sigma是如此，那么Q应该是什么
+their Sigma's so whoa so what does Q due
+
+297
+00:19:28,280 --> 00:19:31,605
+我希望在另一个中看到西格玛
+to the Sigma's I want to see in another
+
+298
+00:19:31,610 --> 00:19:35,745
+另一种方式，如果我，为什么这样的答案
+another way the answer to why so if I
+
+299
+00:19:35,750 --> 00:19:38,235
+有一个具有奇异值I的矩阵a
+have a matrix a with singular values I
+
+300
+00:19:38,240 --> 00:19:40,785
+乘以Q会发生什么
+multiply by Q what happens to the
+
+301
+00:19:40,790 --> 00:19:45,285
+奇异值不改变不
+singular values don't change don't
+
+302
+00:19:45,290 --> 00:19:47,505
+改变这是关于说的关键点
+change that's the key point about saying
+
+303
+00:19:47,510 --> 00:19:52,425
+如果我乘以这样的话，那就是他们的价值观
+to their values if I multiply so a has
+
+304
+00:19:52,430 --> 00:19:59,055
+一个SVDuSigmaV转置和Qa
+an SVD u Sigma V transpose and Q a
+
+305
+00:19:59,060 --> 00:20:03,785
+我们将有SVDquSigmaV转置
+we'll have the SVD qu Sigma V transpose
+
+306
+00:20:03,790 --> 00:20:06,735
+所以当我乘以Q时我都改变了
+so all I've changed when I multiply by Q
+
+307
+00:20:06,740 --> 00:20:10,785
+所有我改变是第一因素
+all I changed was the first factor the
+
+308
+00:20:10,790 --> 00:20:14,505
+SVDI中的第一个正交因子
+first orthogonal factor in the SVD I
+
+309
+00:20:14,510 --> 00:20:17,505
+没有改变西格玛，他们仍然是
+didn't change the Sigma's they're still
+
+310
+00:20:17,510 --> 00:20:20,355
+坐在那里，当然我可以
+sitting there so and of course I could
+
+311
+00:20:20,360 --> 00:20:22,845
+另外Q也做Q
+do also Q on the other side different Q
+
+312
+00:20:22,850 --> 00:20:25,125
+相同的Q或另一个不同的Q.
+same Q or a different Q on the other
+
+313
+00:20:25,130 --> 00:20:27,885
+一方会出现在这里而不会
+side would show up here and would not
+
+314
+00:20:27,890 --> 00:20:30,045
+改变Sigma的，因此会
+change the Sigma's and therefore would
+
+315
+00:20:30,050 --> 00:20:33,065
+不要改变弗罗贝尼乌斯的规范
+not change the Frobenius norm so that's
+
+316
+00:20:33,070 --> 00:20:36,795
+这些都是这一重要特性
+these are important properties of this
+
+317
+00:20:36,800 --> 00:20:40,395
+4bGnaeus规范它看起来很混乱
+4b Gnaeus norm it's a it looks messy
+
+318
+00:20:40,400 --> 00:20:45,465
+在那种形式下，但它是很多
+right down in that form but it's much
+
+319
+00:20:45,470 --> 00:20:49,065
+这些形式和形式更好
+nicer in these forms and in that form
+
+320
+00:20:49,070 --> 00:20:55,455
+好的，好吧，如果我可以那么的话
+okay okay so now if I can just then then
+
+321
+00:20:55,460 --> 00:20:59,435
+我们看到它涉及痕迹所以让我
+we saw that it involves traces so let me
+
+322
+00:20:59,440 --> 00:21:03,455
+对痕迹做一些观察
+make a few observations about traces
+
+323
+00:21:03,460 --> 00:21:13,425
+好的，所以我只是想要我们想要的
+okay so I'll just we want to we want to
+
+324
+00:21:13,430 --> 00:21:15,375
+能够玩跟踪和那是
+be able to play with traces and that's
+
+325
+00:21:15,380 --> 00:21:18,465
+我们真的没有做过的事情
+something we really haven't done here's
+
+326
+00:21:18,470 --> 00:21:22,865
+一个事实，即转置B的痕迹
+a fact that the trace of a transpose B
+
+327
+00:21:22,870 --> 00:21:32,165
+等于B的轨迹转置a
+is equal to the trace of B transpose a
+
+328
+00:21:32,170 --> 00:21:38,535
+当然，如果B是很明显，所有
+of course if B is a it's clear and all
+
+329
+00:21:38,540 --> 00:21:44,205
+它等于Ba的痕迹
+and it's equal to the trace of B a
+
+330
+00:21:44,210 --> 00:21:53,145
+转置所以你可以做一些改变
+transpose so you can do little changes
+
+331
+00:21:53,150 --> 00:21:56,175
+在你的矩阵中没有改变
+in your in your matrix without changing
+
+332
+00:21:56,180 --> 00:21:59,565
+跟踪让我们来看看，为什么这些中的一个是
+the trace let's see why one of these is
+
+333
+00:21:59,570 --> 00:22:01,755
+为什么这是第一个陈述的原因
+true why why is that first statement
+
+334
+00:22:01,760 --> 00:22:08,225
+真正
+true
+
+335
+00:22:08,230 --> 00:22:11,445
+该矩阵与此有何关系？
+how is that matrix related to this
+
+336
+00:22:11,450 --> 00:22:17,325
+矩阵它只是一个转置，如果我采取
+matrix it's just a transpose if I take
+
+337
+00:22:17,330 --> 00:22:19,395
+我得到了那个矩阵的转置
+the transpose of that matrix I get that
+
+338
+00:22:19,400 --> 00:22:22,635
+那么我正在添加的跟踪会发生什么
+so what happens to the trace I'm adding
+
+339
+00:22:22,640 --> 00:22:24,825
+在对角线上，转置没有
+down the diagonal the transpose has no
+
+340
+00:22:24,830 --> 00:22:25,565
+影响
+effect
+
+341
+00:22:25,570 --> 00:22:31,125
+显然这只是事实
+clearly this is just the fact that the
+
+342
+00:22:31,130 --> 00:22:33,885
+跟踪没有改变没有改变
+trace doesn't change has not changed
+
+343
+00:22:33,890 --> 00:22:36,135
+当你转置矩阵因为
+when you transpose a matrix because the
+
+344
+00:22:36,140 --> 00:22:38,445
+对角线现在没怎么改变了
+diagonal has not changed now what about
+
+345
+00:22:38,450 --> 00:22:42,105
+这家伙我想我们要回去了
+this guy I guess we're getting back to
+
+346
+00:22:42,110 --> 00:22:44,804
+老式的1806五记
+old-fashioned 1806 five remembering
+
+347
+00:22:44,809 --> 00:22:47,715
+关于线性代数的事实，因为这个
+facts about linear algebra because this
+
+348
+00:22:47,720 --> 00:22:50,145
+是纯线性代数所以这是什么
+is pure linear algebra so what's this
+
+349
+00:22:50,150 --> 00:22:50,745
+一个关于
+one about
+
+350
+00:22:50,750 --> 00:22:54,135
+这说我可以改变顺序
+this says that I can reverse the order
+
+351
+00:22:54,140 --> 00:22:57,915
+两个矩阵的我现在在看
+of two matrices I'm now looking at the
+
+352
+00:22:57,920 --> 00:23:01,865
+这两者之间的联系和和
+connection between those two and and and
+
+353
+00:23:01,870 --> 00:23:04,905
+所以让我只是使用不同的
+so so let me just to use different
+
+354
+00:23:04,910 --> 00:23:11,835
+字母CD等于DC的痕迹，我可以
+letters C D equals the trace of DC I can
+
+355
+00:23:11,840 --> 00:23:15,435
+翻转那就是我所有的顺序
+flip the order that's that's all I've
+
+356
+00:23:15,440 --> 00:23:17,804
+在这里完成的是我用一个转换了B.
+done here is I've reversed B with a
+
+357
+00:23:17,809 --> 00:23:21,225
+转置我用D反转C好吧
+transpose i reversed C with D okay so
+
+358
+00:23:21,230 --> 00:23:28,215
+为什么这才是真正的好
+why is that true why is that true well
+
+359
+00:23:28,220 --> 00:23:32,195
+我们怎样才能看到这一事实的真相
+how shall we see the truth of that fact
+
+360
+00:23:32,200 --> 00:23:35,475
+所以这些都是非常方便的事实
+so these are really convenient facts
+
+361
+00:23:35,480 --> 00:23:38,745
+这使得很多人都使用了这种痕迹
+that make a lot of people use the trace
+
+362
+00:23:38,750 --> 00:23:41,835
+比我们在1806年更常见的五个我
+more often than we have in 1806 five I'm
+
+363
+00:23:41,840 --> 00:23:44,985
+不是基于的大论证用户
+not a big user of arguments based on
+
+364
+00:23:44,990 --> 00:23:48,825
+追踪，但这些都是那种身份
+trace but these are identities that that
+
+365
+00:23:48,830 --> 00:23:52,424
+与许多问题一起走了很长的路
+go a long way with with many problems so
+
+366
+00:23:52,429 --> 00:23:56,535
+让我们来看看为什么这是真的任何时候你
+let's see why that's true any time you
+
+367
+00:23:56,540 --> 00:23:58,655
+想想跟踪你有两个
+think about trace you've got two
+
+368
+00:23:58,660 --> 00:24:01,725
+使用的语言可以使用
+languages to use you can use the
+
+369
+00:24:01,730 --> 00:24:03,495
+特征值它的总和
+eigenvalues it's the sum of the
+
+370
+00:24:03,500 --> 00:24:06,975
+特征值或你可以使用对角线
+eigenvalues or you can use the diagonal
+
+371
+00:24:06,980 --> 00:24:08,565
+条目，因为它是的总和
+entries because it's the sum of the
+
+372
+00:24:08,570 --> 00:24:11,105
+对角条目让我们使用特征值
+diagonal entries let's use eigenvalues
+
+373
+00:24:11,110 --> 00:24:14,865
+如何CD的相关特征值
+how are the eigenvalues of CD related to
+
+374
+00:24:14,870 --> 00:24:18,245
+DC的特征值它们是相同的
+the eigenvalues of DC they're the same
+
+375
+00:24:18,250 --> 00:24:21,345
+如果这些矩阵是倾斜的
+if these matrices are raked
+
+376
+00:24:21,350 --> 00:24:23,625
+然后可能会有一些额外的零
+then there might be some extra zero like
+
+377
+00:24:23,630 --> 00:24:25,424
+在男人，因为他们会有
+in guys because they have would have
+
+378
+00:24:25,429 --> 00:24:28,664
+不同的形状，但零不会
+different shapes but zeros are not going
+
+379
+00:24:28,669 --> 00:24:31,455
+影响痕迹所以这就是
+to affect the trace so so this is the
+
+380
+00:24:31,460 --> 00:24:43,355
+同样相同的非零特征值和好
+same same nonzero eigenvalues okay and
+
+381
+00:24:43,360 --> 00:24:52,034
+所以，好吧，让我让我放手
+so on yeah okay let me just let me let
+
+382
+00:24:52,039 --> 00:24:55,605
+我试着告诉你现在要采取的步骤
+me try to tell you the steps now to get
+
+383
+00:24:55,610 --> 00:24:59,355
+正确的Q或让我告诉你
+the correct Q in or let me tell you the
+
+384
+00:24:59,360 --> 00:25:08,625
+先回答，我意识到了
+answer first and I'm realizing that the
+
+385
+00:25:08,630 --> 00:25:11,654
+非常重要的问题是深刻的
+all-important question for does deep
+
+386
+00:25:11,659 --> 00:25:14,414
+学习实际上我们将要工作
+learning actually work we're going to
+
+387
+00:25:14,419 --> 00:25:16,215
+今天没时间了，因为我们只有
+run out of time today because we only
+
+388
+00:25:16,220 --> 00:25:17,654
+还剩几分钟
+have a few minutes left
+
+389
+00:25:17,659 --> 00:25:21,075
+我建议我们重新提出这个问题
+I suggest we bring that question back up
+
+390
+00:25:21,080 --> 00:25:25,095
+因为它对于一个非常重要
+because like it's pretty important to a
+
+391
+00:25:25,100 --> 00:25:29,835
+很多人，你知道我有
+lot of people there's a you know I had
+
+392
+00:25:29,840 --> 00:25:31,815
+与阿德尔曼教授共进午餐，他说
+lunch with Professor Adelman and he said
+
+393
+00:25:31,820 --> 00:25:34,935
+你知道深度学习和神经网络
+you know deep learning and neural nets
+
+394
+00:25:34,940 --> 00:25:38,645
+已经有了创纪录的数量
+have had like a record amount of
+
+395
+00:25:38,650 --> 00:25:40,125
+公开
+publicity
+
+396
+00:25:40,130 --> 00:25:44,294
+和炒作为一种计算
+and hype for for a sort of computational
+
+397
+00:25:44,299 --> 00:25:50,475
+算法，但我有我的人
+algorithm and but I had I've had people
+
+398
+00:25:50,480 --> 00:25:56,115
+现在告诉我，如果你是典型的第一
+now tell me that typical first if you
+
+399
+00:25:56,120 --> 00:26:03,044
+使用Alex设计的网络创建
+create a network using Alex's designed
+
+400
+00:26:03,049 --> 00:26:07,245
+例如，机会就是它
+for example the chances are that it
+
+401
+00:26:07,250 --> 00:26:10,815
+成功不会成功
+won't be successful that the successful
+
+402
+00:26:10,820 --> 00:26:15,845
+网络已被研究和
+networks have been been worked on and
+
+403
+00:26:15,850 --> 00:26:19,424
+实验和良好的结构
+experimented with and a good structure
+
+404
+00:26:19,429 --> 00:26:22,815
+已经出现，但没有出现在那里
+has emerged but didn't wasn't there at
+
+405
+00:26:22,820 --> 00:26:24,825
+一开始所以我认为这是一个主题
+the start so I think that's a topic for
+
+406
+00:26:24,830 --> 00:26:29,685
+星期一，我真的很好
+for a Monday and I'm really just
+
+407
+00:26:29,690 --> 00:26:31,995
+从人说话实现
+realizing from talking to people in the
+
+408
+00:26:32,000 --> 00:26:34,785
+那个领域
+field that
+
+409
+00:26:34,790 --> 00:26:38,855
+这绝不是自动的
+it's by no means automatic that that
+
+410
+00:26:38,860 --> 00:26:41,235
+结构即使你放入一个整体
+structure even if you put in a whole
+
+411
+00:26:41,240 --> 00:26:44,685
+一堆层可能不是你的
+bunch of layers it may not be what you
+
+412
+00:26:44,690 --> 00:26:48,975
+想要好，所以我让我完成这个
+want okay so I'm let me finish this
+
+413
+00:26:48,980 --> 00:26:51,225
+今天的争论让我给你了
+argument today let me give you the
+
+414
+00:26:51,230 --> 00:26:53,685
+回答这是什么好的提示
+answer so what's the good cue
+
+415
+00:26:53,690 --> 00:27:01,245
+我有Y和X矩阵，这个想法是
+I have matrices Y and X and the idea is
+
+416
+00:27:01,250 --> 00:27:05,945
+我把它看作Y转置X
+that I take its I look at Y transpose X
+
+417
+00:27:05,950 --> 00:27:08,835
+所以这将是所有的点产品
+so that'll be all the dot products of
+
+418
+00:27:08,840 --> 00:27:11,085
+一组矢量是另一组
+one set of vectors were the other set of
+
+419
+00:27:11,090 --> 00:27:14,205
+矢量这是一个矩阵，我做了它的SVD
+vectors that's a matrix and I do its SVD
+
+420
+00:27:14,210 --> 00:27:23,405
+你的SigmaV转置如此倍增
+u Sigma V transpose so so multiply this
+
+421
+00:27:23,410 --> 00:27:27,735
+x转换你给予的两个基础
+x trans a two bases that you're given of
+
+422
+00:27:27,740 --> 00:27:30,975
+当然如果Y与X相同，如果是的话
+course if Y was the same as X if it was
+
+423
+00:27:30,980 --> 00:27:33,225
+你有一个正交的基础
+an orthogonal basis you'd have the
+
+424
+00:27:33,230 --> 00:27:37,395
+身份没有问题，但一般我们
+identity no questions but generally we
+
+425
+00:27:37,400 --> 00:27:41,835
+它有一个SVD，我们正在寻找
+have it has an SVD and we're looking for
+
+426
+00:27:41,840 --> 00:27:45,255
+对于最佳的正交矩阵
+the for a orthogonal matrix of the best
+
+427
+00:27:45,260 --> 00:27:53,115
+问是不是我的意思是它是正确的
+q is doesn't it I mean it's the right
+
+428
+00:27:53,120 --> 00:28:00,545
+四个惊奇表达的时间
+time for four expressions of amazement
+
+429
+00:28:00,550 --> 00:28:10,815
+它是UV转置好的，所以
+it is UV transpose okay so that so
+
+430
+00:28:10,820 --> 00:28:13,035
+这给了我们给出的答案x
+that's gives us the answer we're given x
+
+431
+00:28:13,040 --> 00:28:16,575
+我们正在寻找最好的q和
+and y we're looking for the best q and
+
+432
+00:28:16,580 --> 00:28:19,035
+答案来得最简单
+the answer comes in the simplest
+
+433
+00:28:19,040 --> 00:28:22,665
+计算Y转置X的可能方式
+possible way compute Y transpose X
+
+434
+00:28:22,670 --> 00:28:26,475
+计算其SVD并使用正交
+compute its SVD and use the orthogonal
+
+435
+00:28:26,480 --> 00:28:30,645
+来自SVD的矩阵是的，我出去了
+matrices from the SVD yeah and I'm out
+
+436
+00:28:30,650 --> 00:28:37,985
+时间如此证明它是三行
+of time so so proof it's it's three line
+
+437
+00:28:37,990 --> 00:28:44,025
+以后要么要么发送给你
+later either either to just send you the
+
+438
+00:28:44,030 --> 00:28:46,605
+在线部分或在课堂上讨论
+section online or to discuss it in class
+
+439
+00:28:46,610 --> 00:28:48,465
+星期一，但我
+Monday but I
+
+440
+00:28:48,470 --> 00:28:51,975
+我真的计划周一开始
+I'm really planning Monday to start with
+
+441
+00:28:51,980 --> 00:28:55,455
+问题四，好好问一个问题
+question four and being well to ask a
+
+442
+00:28:55,460 --> 00:28:59,825
+很多人我都能找到
+whole lot of people everybody I can find
+
+443
+00:28:59,830 --> 00:29:04,755
+关于那个重要的问题是
+about that important question is does
+
+444
+00:29:04,760 --> 00:29:07,424
+深度学习通常会起作用
+deep learning usually work how what can
+
+445
+00:29:07,429 --> 00:29:09,794
+你要确保它有效或给予
+you do to make sure it works or give
+
+446
+00:29:09,799 --> 00:29:12,215
+你自己有更好的机会让它发挥作用
+yourself a better chance to have it work
+
+447
+00:29:12,220 --> 00:29:15,100
+so let's that's that's up for Monday
+
+448
+00:29:12,220 --> 00:29:17,710
+那就是周一的情况
+
+449
+00:29:15,110 --> 00:29:17,710
+那么好
+then good
+

@@ -1,0 +1,3893 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,725
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,730 --> 00:00:31,394
+好的，所以这个大麻省理工学院我只是来自一个
+okay so this big MIT I just came from a
+
+10
+00:00:31,399 --> 00:00:35,685
+教师很棒的教师安迪低
+faculty terrific faculty member Andy low
+
+11
+00:00:35,690 --> 00:00:41,295
+在斯隆学校和我必须
+in in the Sloan School and I have to
+
+12
+00:00:41,300 --> 00:00:43,545
+告诉你他告诉我们的是什么，然后我有
+tell you what he told us and then I had
+
+13
+00:00:43,550 --> 00:00:46,455
+在他解释之前我不得不离开
+I had to leave before he could explain
+
+14
+00:00:46,460 --> 00:00:49,185
+为什么这是真的，但这就像是一个
+why it's true but this is like an
+
+15
+00:00:49,190 --> 00:00:51,405
+我不想要的惊人事实
+amazing fact which I don't want to
+
+16
+00:00:51,410 --> 00:00:54,975
+忘了所以在这里你去这就是一切
+forget so here you go this is everything
+
+17
+00:00:54,980 --> 00:00:57,915
+将在该板所以它是很
+will be on that board so it's it's it's
+
+18
+00:00:57,920 --> 00:01:03,095
+关于我们或其他人的观察
+an observation about us or other people
+
+19
+00:01:03,100 --> 00:01:07,724
+也许不是我们，但假设你有一个
+maybe not us but so suppose you have a
+
+20
+00:01:07,729 --> 00:01:11,355
+有偏见的硬币也许你不是人
+biased coin maybe you don't the people
+
+21
+00:01:11,360 --> 00:01:14,385
+玩这个游戏不知道，但它
+playing this game don't know but it's
+
+22
+00:01:14,390 --> 00:01:19,455
+75％的人可能生产25％的头部
+75% likely to produce heads 25% likely
+
+23
+00:01:19,460 --> 00:01:24,525
+产生尾巴然后玩家有
+to produce tails and then the player has
+
+24
+00:01:24,530 --> 00:01:29,135
+猜到一个接一个的翻转
+to guess for one flip after another
+
+25
+00:01:29,140 --> 00:01:36,165
+头或尾，如果你得到一美元
+heads or tails and you get a dollar if
+
+26
+00:01:36,170 --> 00:01:38,205
+如果你是的话，你支付一美元是对的
+you're right you pay a dollar if you're
+
+27
+00:01:38,210 --> 00:01:41,175
+错了，所以你只想得到尽可能多的
+wrong so you just want to get as many
+
+28
+00:01:41,180 --> 00:01:46,065
+从这枚硬币中做出正确的选择
+right choices as possible from this coin
+
+29
+00:01:46,070 --> 00:01:49,245
+继续翻转所以你应该怎么做
+flip that continues so what should you
+
+30
+00:01:49,250 --> 00:01:55,575
+做得好，我想我希望我们会这样做
+do well what I guess I hope we would do
+
+31
+00:01:55,580 --> 00:01:59,805
+我们不知道是什么
+is we would not know what the
+
+32
+00:01:59,810 --> 00:02:03,254
+概率是如此我们猜测
+probabilities were so we would guess
+
+33
+00:02:03,259 --> 00:02:05,175
+也许是第一次尾巴的头
+maybe heads the first time tails the
+
+34
+00:02:05,180 --> 00:02:08,014
+第二次前往第三次
+second time heads to the third time and
+
+35
+00:02:08,019 --> 00:02:12,524
+等等，但实际结果却是
+so on but the actual result would be
+
+36
+00:02:12,529 --> 00:02:14,365
+大多是头
+mostly heads
+
+37
+00:02:14,370 --> 00:02:18,485
+所以我们会在某些方面学到这一点
+so we would learn at some point that
+
+38
+00:02:18,490 --> 00:02:21,425
+或许也许不会那么快我们
+maybe maybe not quite as soon as that we
+
+39
+00:02:21,430 --> 00:02:24,965
+最终会知道我们应该这样做
+would eventually learn that we should
+
+40
+00:02:24,970 --> 00:02:26,975
+继续猜测正确然后我们
+keep guessing heads right and then we
+
+41
+00:02:26,980 --> 00:02:29,795
+那将是我们的最佳选择
+would be that would be our optimal
+
+42
+00:02:29,800 --> 00:02:32,615
+战略猜测头所有的时间，但
+strategy to guess heads all the time but
+
+43
+00:02:32,620 --> 00:02:39,725
+人们实际上做了什么，他们确实开始
+what do people actually do they do start
+
+44
+00:02:39,730 --> 00:02:44,915
+像这样，然后他们
+like this same way and then they're
+
+45
+00:02:44,920 --> 00:02:47,495
+开始学习头脑更多
+beginning to learn that heads is more
+
+46
+00:02:47,500 --> 00:02:52,645
+很常见，也许他们的头脑比
+common so maybe they do more heads than
+
+47
+00:02:52,650 --> 00:02:57,395
+尾巴，但有时尾巴是正确的
+tails but sometimes tails is right and
+
+48
+00:02:57,400 --> 00:03:01,595
+然后过一小会儿，他们也许看到
+then after a little while they maybe see
+
+49
+00:03:01,600 --> 00:03:04,565
+是的，或者他们很好
+that it's yeah or they're just well
+
+50
+00:03:04,570 --> 00:03:06,815
+也许他们不算他们只是
+maybe they're not counting they're just
+
+51
+00:03:06,820 --> 00:03:09,785
+像普通人一样经营
+like operating like ordinary people
+
+52
+00:03:09,790 --> 00:03:13,295
+普通人实际上做了什么
+and what do ordinary people actually do
+
+53
+00:03:13,300 --> 00:03:17,285
+从长远来看，你会说猜
+in the long run you would say guess
+
+54
+00:03:17,290 --> 00:03:22,535
+每次都对，但他们没有
+heads every time right but they don't in
+
+55
+00:03:22,540 --> 00:03:25,925
+从长远来看，人们也许是动物
+the long run people and maybe animals
+
+56
+00:03:25,930 --> 00:03:30,215
+无论猜测是四分之三
+and whatever guess heads three-quarters
+
+57
+00:03:30,220 --> 00:03:32,615
+的时间，并在尾部四分之一
+of the time and tails one quarter at a
+
+58
+00:03:32,620 --> 00:03:35,375
+他们的时间并不令人难以置信
+time isn't that unbelievable they're
+
+59
+00:03:35,380 --> 00:03:37,445
+四分之一的时间猜测尾巴
+guessing tails a quarter of the time
+
+60
+00:03:37,450 --> 00:03:42,275
+当赔率永远不会改变的时候
+when the odds are never changing anyway
+
+61
+00:03:42,280 --> 00:03:44,945
+这就是经济学家的观点
+that's that's something that economists
+
+62
+00:03:44,950 --> 00:03:49,294
+和其他人必须解释和
+and and other people have to explain and
+
+63
+00:03:49,299 --> 00:03:51,665
+如果我能再住一小时
+if I had been able to stay another hour
+
+64
+00:03:51,670 --> 00:03:53,675
+我可以告诉你这个解释
+I could tell you about the explanation
+
+65
+00:03:53,680 --> 00:03:57,755
+但无论如何，那就是我看到的
+but anyway that's that's I I see I've
+
+66
+00:03:57,760 --> 00:03:59,555
+写在我没有的板上
+written that on a board that I have no
+
+67
+00:03:59,560 --> 00:04:02,435
+埋葬的方式，所以它会在那里
+way to bury so it's gonna be there and
+
+68
+00:04:02,440 --> 00:04:06,065
+它不是1806年的主题，而是
+it's not the subject of 1806 five but
+
+69
+00:04:06,070 --> 00:04:10,354
+它有点令人惊奇，所以有
+it's kind of amazing right so there's
+
+70
+00:04:10,359 --> 00:04:13,984
+良好的数学问题无处不没关系我可以
+good math problems everywhere okay can I
+
+71
+00:04:13,989 --> 00:04:18,305
+只要离开你我所知道的和
+just leave you with what I know and and
+
+72
+00:04:18,310 --> 00:04:21,125
+如果我了解更多，我会回到那里
+if I learn more I'll come back to that
+
+73
+00:04:21,130 --> 00:04:24,375
+问题没关系
+question okay
+
+74
+00:04:24,380 --> 00:04:28,245
+请注意这种方式
+please turn attention this way right
+
+75
+00:04:28,250 --> 00:04:31,875
+Norm在规范上有点说几句
+Norm's a little a few words on norms
+
+76
+00:04:31,880 --> 00:04:34,215
+就像那个应该是你的一句话
+just like that should be a word in your
+
+77
+00:04:34,220 --> 00:04:37,095
+语言，所以你应该知道它是什么
+language and so you should know what it
+
+78
+00:04:37,100 --> 00:04:39,795
+意思是你应该知道他们是少数
+mean and you should know they're a few
+
+79
+00:04:39,800 --> 00:04:43,035
+重要的规范再一个规范是一个
+of the important norms again a norm is a
+
+80
+00:04:43,040 --> 00:04:46,365
+测量矢量或大小的方法
+way to measure the size of a vector or
+
+81
+00:04:46,370 --> 00:04:49,905
+矩阵的大小或a的大小
+the size of a matrix or the size of a
+
+82
+00:04:49,910 --> 00:04:52,905
+张紧我们拥有的任何东西或功能
+tensor whatever we have or a function
+
+83
+00:04:52,910 --> 00:04:56,255
+非常重要的是规范
+very important the norm would be a
+
+84
+00:04:56,260 --> 00:04:59,685
+功能就像正弦X从零到PI
+function like sine X from zero to PI
+
+85
+00:04:59,690 --> 00:05:02,295
+那个函数的大小是多少？
+what would be the size of that function
+
+86
+00:05:02,300 --> 00:05:05,175
+好吧，如果它是两个正弦x的大小
+well if it was two sine x the size would
+
+87
+00:05:05,180 --> 00:05:08,205
+两倍，所以规范应该
+be twice as much so the norm should
+
+88
+00:05:08,210 --> 00:05:14,285
+反映，但昨天或
+reflect that but so yesterday or
+
+89
+00:05:14,290 --> 00:05:19,125
+星期三我告诉你那里有P.
+Wednesday I told you the so there P
+
+90
+00:05:19,130 --> 00:05:25,275
+等于1实际无穷大然后
+equals to 1 actually infinity and then
+
+91
+00:05:25,280 --> 00:05:28,545
+我要用一个零的标准
+I'm gonna put in the zero norm with a
+
+92
+00:05:28,550 --> 00:05:31,515
+问号，因为你会看到它
+question mark because you'll see it's
+
+93
+00:05:31,520 --> 00:05:33,975
+它有问题，但让我公正
+that it has a problem but let me just
+
+94
+00:05:33,980 --> 00:05:37,335
+从上次回忆起这些是P
+recall from last time so these are the P
+
+95
+00:05:37,340 --> 00:05:41,235
+等于2是通常的平方和
+equal to two is the usual sum of squares
+
+96
+00:05:41,240 --> 00:05:45,195
+平方根通常长度的向量P.
+square root usual length of a vector P
+
+97
+00:05:45,200 --> 00:05:51,015
+这是一个非常重要的规范
+equal one is this very important norm so
+
+98
+00:05:51,020 --> 00:05:56,085
+我们称之为l1规范，我们会看到
+a we call that the l1 norm and we'll see
+
+99
+00:05:56,090 --> 00:05:59,265
+很多我真正提到过的
+a lot of that that really I mentioned
+
+100
+00:05:59,270 --> 00:06:01,815
+它起着非常重要的作用
+that it plays a very significant part
+
+101
+00:06:01,820 --> 00:06:04,275
+现在在压缩传感中它确实是一个
+now in compress sensing it really was a
+
+102
+00:06:04,280 --> 00:06:07,485
+信号处理中的重磅炸弹
+bombshell in signal processing to
+
+103
+00:06:07,490 --> 00:06:10,575
+发现和在其他领域
+discover and in other fields to to
+
+104
+00:06:10,580 --> 00:06:13,665
+发现有些东西确实有效
+discover that some things really work
+
+105
+00:06:13,670 --> 00:06:17,355
+在l1规范中做得最好
+well work best in the l1 norm the
+
+106
+00:06:17,360 --> 00:06:19,815
+最大规范有自然的作用
+maximum norm has a natural part to play
+
+107
+00:06:19,820 --> 00:06:25,725
+我们会看到它或它的矩阵模拟
+and we'll see that or its matrix analog
+
+108
+00:06:25,730 --> 00:06:30,435
+所以我没有提到l0规范
+so I didn't mention the l0 norm all this
+
+109
+00:06:30,440 --> 00:06:35,445
+LP业务因此LP规范
+LP business so the LP norm
+
+110
+00:06:35,450 --> 00:06:44,625
+或者对于任何P，你是否获得了力量
+or for any P is you take the piece power
+
+111
+00:06:44,630 --> 00:06:49,135
+在这里，P是2和
+to the piece power up here P was 2 and
+
+112
+00:06:49,140 --> 00:06:52,765
+你拿这块根也好吧
+your take the piece root so maybe I
+
+113
+00:06:52,770 --> 00:06:56,685
+应该把它写在P的那个上面
+should write it to the one over P that's
+
+114
+00:06:56,690 --> 00:06:58,615
+然后那样
+then that way
+
+115
+00:06:58,620 --> 00:07:01,615
+以片断力量和片断为基础我们
+taking piece powers and piece roots we
+
+116
+00:07:01,620 --> 00:07:05,305
+得到两个V的标准有一个因素
+do get the norm of two V has a factor
+
+117
+00:07:05,310 --> 00:07:08,845
+两个比较V的标准，所以P等于
+two compared to the norm of V so P equal
+
+118
+00:07:08,850 --> 00:07:10,765
+到2你看到我们做对了
+to 2 you see that we've got it right
+
+119
+00:07:10,770 --> 00:07:13,135
+那里的P等于你在这里看到的
+there P equal one you see it here
+
+120
+00:07:13,140 --> 00:07:16,225
+因为它只是它的总和
+because it's just just sum of the
+
+121
+00:07:16,230 --> 00:07:19,375
+绝对值人们无穷，如果我要是
+absolute values people infinity if I if
+
+122
+00:07:19,380 --> 00:07:23,035
+我向上和向上移动P它会选择
+I move P up and up and up it will pick
+
+123
+00:07:23,040 --> 00:07:26,455
+你知道，因为我增加P无论哪个
+out you know as I increase P whichever
+
+124
+00:07:26,460 --> 00:07:28,405
+一个是最大的将要采取
+one is biggest is going to just take
+
+125
+00:07:28,410 --> 00:07:30,955
+结束，这就是为什么你达到最大规范
+over and that's why you get to max norm
+
+126
+00:07:30,960 --> 00:07:35,155
+现在，我正在使用零标准
+now there's zero norm where I'm using
+
+127
+00:07:35,160 --> 00:07:37,915
+你会看到这个词不正确
+that word like improperly as you'll see
+
+128
+00:07:37,920 --> 00:07:42,475
+因为如果是这样的话，那是什么呢？
+because if so what is the 0 norm it's
+
+129
+00:07:42,480 --> 00:07:55,065
+所以它是非零的数量
+the so so it's the number of non-zeros
+
+130
+00:07:55,070 --> 00:08:05,275
+它的非零组件就是它
+of nonzero components its it it's the
+
+131
+00:08:05,280 --> 00:08:07,345
+你想知道有关的事
+thing that you'd like to know about in
+
+132
+00:08:07,350 --> 00:08:10,675
+稀疏性的问题确实存在
+question of sparsity does the is there
+
+133
+00:08:10,680 --> 00:08:13,705
+只有一个非零组件或那里11
+just one nonzero component or there 11
+
+134
+00:08:13,710 --> 00:08:17,635
+你有什么样的可能吗？
+are there 101 like what that you might
+
+135
+00:08:17,640 --> 00:08:21,925
+想要最小化，因为稀疏
+want to minimize that because sparse
+
+136
+00:08:21,930 --> 00:08:24,355
+向量和稀疏矩阵很多
+vectors and sparse matrices are much
+
+137
+00:08:24,360 --> 00:08:26,785
+你得到了很好的计算速度更快
+faster to compute with you've got good
+
+138
+00:08:26,790 --> 00:08:29,335
+东西，但现在我声称这不是一个常态
+stuff but now i claim that's not a norm
+
+139
+00:08:29,340 --> 00:08:32,565
+在0非零分量的数目
+in the number of 0 nonzero components
+
+140
+00:08:32,570 --> 00:08:36,474
+因为什么是对如何做规范
+because what's the norm of to how does
+
+141
+00:08:36,479 --> 00:08:39,865
+2V的标准与规范比较
+the norm of 2v compare with the norm of
+
+142
+00:08:39,870 --> 00:08:44,335
+伏0规范这将是相同的到V
+V the 0 norm it would be the same to V
+
+143
+00:08:44,340 --> 00:08:46,865
+具有相同数量的非零值
+has the same number of non-zeros as
+
+144
+00:08:46,870 --> 00:08:52,265
+所以它违反了规范，所以我
+so it violates the rule for a norm so I
+
+145
+00:08:52,270 --> 00:08:57,065
+想一想这些规范和所有的豌豆
+think with these norms and all the peas
+
+146
+00:08:57,070 --> 00:09:02,495
+实际上是数学之间
+in between so actually the the math
+
+147
+00:09:02,500 --> 00:09:06,005
+论文充满了让P介于1之间
+papers are full of let P be between 1
+
+148
+00:09:06,010 --> 00:09:08,315
+和无限，因为那是
+and infinity and because that's the
+
+149
+00:09:08,320 --> 00:09:10,475
+在那里，你做的范围内有一个适当的标准为
+range where you do have a proper norm as
+
+150
+00:09:10,480 --> 00:09:14,435
+我们会看到，我认为好的事情
+we will see I think the good thing to do
+
+151
+00:09:14,440 --> 00:09:17,735
+这些规范是有一个画面中
+with these norms is to have a picture in
+
+152
+00:09:17,740 --> 00:09:20,675
+你的思想规范的几何是真实的
+your mind the geometry of a norm is real
+
+153
+00:09:20,680 --> 00:09:23,255
+是好的所以我要建议的图片
+is good so the picture I'm gonna suggest
+
+154
+00:09:23,260 --> 00:09:28,165
+是绘制所有的矢量让我们说在2d
+is plot all the vectors let's say in 2d
+
+155
+00:09:28,170 --> 00:09:34,055
+所以二维空间或两个所以我
+so two dimensional space or two so I
+
+156
+00:09:34,060 --> 00:09:37,475
+想要绘制他们所拥有的向量
+want to plot then the vectors they have
+
+157
+00:09:37,480 --> 00:09:43,145
+V在这些不同的规范中等于1
+V equal one in these different norms so
+
+158
+00:09:43,150 --> 00:09:48,205
+让我问你这是什么，这里是2d空间
+let me ask you what so here's 2d space
+
+159
+00:09:48,210 --> 00:09:51,695
+r2现在我想绘制所有的
+r2 and now I want to plot all the
+
+160
+00:09:51,700 --> 00:09:55,865
+具有普通l2的向量
+vectors that have the ordinary l2
+
+161
+00:09:55,870 --> 00:09:59,915
+长度等于一个，这样又有什么
+lengths equal one so what does that
+
+162
+00:09:59,920 --> 00:10:01,895
+图片看起来像我只是想一张照片
+picture look like I just think a picture
+
+163
+00:10:01,900 --> 00:10:03,815
+真的是值得的东西它是一个圆
+is really worth something it's a circle
+
+164
+00:10:03,820 --> 00:10:07,415
+谢谢它是一个圆圈，这是一个圆圈
+thanks it's a circle it's a circle this
+
+165
+00:10:07,420 --> 00:10:10,175
+圆是这是当然的方程式
+circle is that's the equation of course
+
+166
+00:10:10,180 --> 00:10:17,965
+v1平方加v2平方1以便我
+v1 squared plus v2 squared 1 so that I
+
+167
+00:10:17,970 --> 00:10:22,175
+会称之为单位球
+would call that the unit ball for the
+
+168
+00:10:22,180 --> 00:10:27,155
+现在规范或其他任何东西都可以
+norm or whatever is is a circle okay now
+
+169
+00:10:27,160 --> 00:10:30,365
+现在这里更有趣了
+now here comes more interesting what
+
+170
+00:10:30,370 --> 00:10:37,535
+关于在l1所以再次告诉我如何
+about in the l1 so again tell me how to
+
+171
+00:10:37,540 --> 00:10:43,235
+绘制所有具有V1加V点
+plot all the points that have V 1 plus V
+
+172
+00:10:43,240 --> 00:10:46,925
+2等于1什么是边界
+2 equal 1 what what what's the boundary
+
+173
+00:10:46,930 --> 00:10:51,365
+现在看起来就像是让我们一样
+gonna look like now it's gonna be let's
+
+174
+00:10:51,370 --> 00:10:53,345
+看清楚我可以把一定数量的
+see well I can put in a certain number
+
+175
+00:10:53,350 --> 00:10:57,395
+那里有一个点和那个点
+of points there one and there one and
+
+176
+00:10:57,400 --> 00:10:59,295
+那里是负一号那里
+there at minus one and there
+
+177
+00:10:59,300 --> 00:11:00,855
+这个就是那个
+this one there was that would be the
+
+178
+00:11:00,860 --> 00:11:03,195
+将反映向量10的向量
+vector that would reflect the vector 1 0
+
+179
+00:11:03,200 --> 00:11:06,615
+这将反映向量0
+and this would reflect the vector 0
+
+180
+00:11:06,620 --> 00:11:12,435
+减去1所以是OK所以这些都是像
+minus 1 so yeah ok so those are like
+
+181
+00:11:12,440 --> 00:11:15,915
+四点易于绘图容易看到
+four points easy to plot easy to see
+
+182
+00:11:15,920 --> 00:11:19,574
+l1规范，但是什么是完整的
+that the l1 norm but what's the full
+
+183
+00:11:19,579 --> 00:11:23,805
+那是什么呢？剩下的边界是什么
+what so what's the rest of the boundary
+
+184
+00:11:23,810 --> 00:11:28,245
+这是一颗钻石，它是钻石
+here it's a diamond good it's a diamond
+
+185
+00:11:28,250 --> 00:11:35,565
+这是我们所拥有的线性设定为等于一起来
+it's we have linear set equal to one up
+
+186
+00:11:35,570 --> 00:11:37,695
+这里是正象限
+here in the positive quadrant
+
+187
+00:11:37,700 --> 00:11:40,815
+它只是V1加上V2等于1
+it's just V 1 plus V 2 equal 1 in the
+
+188
+00:11:40,820 --> 00:11:45,584
+这个图是一条直线所以
+graph of that is a straight line so all
+
+189
+00:11:45,589 --> 00:11:48,375
+这些家伙这是V的所有要点
+these guys this is all the points with V
+
+190
+00:11:48,380 --> 00:11:52,514
+1加上V2等于1并且在这里和
+1 plus V 2 equal 1 and over here and
+
+191
+00:11:52,519 --> 00:11:56,625
+在这里和这里所以单位球
+over here and over here so the unit ball
+
+192
+00:11:56,630 --> 00:12:02,745
+在l1规范中是钻石，那是一个
+in the l1 norm is a diamond and that's a
+
+193
+00:12:02,750 --> 00:12:05,834
+它反映在一个非常重要的图片
+very important picture it reflects in a
+
+194
+00:12:05,839 --> 00:12:08,985
+简单的东西很简单
+simple very simple way something
+
+195
+00:12:08,990 --> 00:12:11,024
+重要的是l1规范和
+important about the l1 norm and the
+
+196
+00:12:11,029 --> 00:12:14,805
+因为它刚刚爆炸了他
+reason it's just exploded him in
+
+197
+00:12:14,810 --> 00:12:17,685
+重要的是让我继续下去
+importance let me continue though what
+
+198
+00:12:17,690 --> 00:12:22,355
+关于Max或V无穷大的最大范数
+about the max norm the Max or V infinity
+
+199
+00:12:22,360 --> 00:12:26,385
+又是什么让我策划这些家伙
+what so again let me plot these guys
+
+200
+00:12:26,390 --> 00:12:29,715
+这些家伙肯定会参与其中
+these guys are certainly gonna be in it
+
+201
+00:12:29,720 --> 00:12:32,715
+他们再次归零
+again they're zero
+
+202
+00:12:32,720 --> 00:12:35,894
+你知道加减我和加号
+you know the plus or minus I and plus or
+
+203
+00:12:35,899 --> 00:12:39,975
+减去那些是好朋友的J是什么
+minus J that are good friends what's the
+
+204
+00:12:39,980 --> 00:12:42,885
+边界的其余部分现在看起来像现在
+rest of the boundary look like now now
+
+205
+00:12:42,890 --> 00:12:53,475
+这就是这意味着什么是最大的
+this is this means max so what what are
+
+206
+00:12:53,480 --> 00:12:58,454
+你看到它的其余部分
+the rest of the points you see it does
+
+207
+00:12:58,459 --> 00:13:00,135
+稍微想一想，然后你就明白了
+take a little thought but then you get
+
+208
+00:13:00,140 --> 00:13:04,065
+它，你不要忘记它，所以
+it and you don't for forget it ok so
+
+209
+00:13:04,070 --> 00:13:10,155
+什么是我正在寻找的东西
+what's what's up I'm looking so suppose
+
+210
+00:13:10,160 --> 00:13:12,865
+最大值是V1
+the maximum is V one
+
+211
+00:13:12,870 --> 00:13:16,375
+我想你要去II认为这是
+I think you're gonna go I I think it's
+
+212
+00:13:16,380 --> 00:13:22,435
+看起来像那样的外出-一个
+gonna look like that out - out - one
+
+213
+00:13:22,440 --> 00:13:29,575
+零和零到一，在这里
+zero and up to zero one and up here the
+
+214
+00:13:29,580 --> 00:13:35,005
+矢量将是一个点
+vector would be one one point for
+
+215
+00:13:35,010 --> 00:13:38,155
+所以最大的东西就是一个
+something so the maximum would be one is
+
+216
+00:13:38,160 --> 00:13:42,834
+那真是太好了，不知怎的
+that okay so so so somehow what really
+
+217
+00:13:42,839 --> 00:13:45,955
+看到你更改这个数字P你
+sees as you change this number P you
+
+218
+00:13:45,960 --> 00:13:50,515
+从一个人或者daimond开始吧
+start with people one or daimond and it
+
+219
+00:13:50,520 --> 00:13:54,115
+有点膨胀成为P的一个圆圈
+kind of swells out to be a circle at P
+
+220
+00:13:54,120 --> 00:13:57,955
+等于2然后它保持
+equal to 2 and then it kind of keeps
+
+221
+00:13:57,960 --> 00:14:01,435
+膨胀为P等于平方
+swelling to be a square at P equal
+
+222
+00:14:01,440 --> 00:14:04,435
+无限，这是一个有趣的
+infinity that's a that's a interesting
+
+223
+00:14:04,440 --> 00:14:11,455
+事情，是的，现在是什么问题
+thing and yeah now what's the problem
+
+224
+00:14:11,460 --> 00:14:25,105
+0标准点在哪里
+with the 0 norm where are the points
+
+225
+00:14:25,110 --> 00:14:31,785
+一个非零所以所以我正在密谋
+with one non zero so so so I'm plotting
+
+226
+00:14:31,790 --> 00:14:36,355
+球在哪里在哪里
+ball where are the where the where are
+
+227
+00:14:36,360 --> 00:14:39,055
+这个东西中的向量有一个
+the vectors in this thing that have one
+
+228
+00:14:39,060 --> 00:14:42,565
+非零不是不为零非零使
+non-zero not not zero nonzero so that
+
+229
+00:14:42,570 --> 00:14:48,685
+这不包括在内但我也是如此
+that's not included and but I but so
+
+230
+00:14:48,690 --> 00:14:49,704
+我有什么
+what do I have
+
+231
+00:14:49,709 --> 00:14:53,035
+我不允许向量三分之一
+I'm not allowed the vector one-third
+
+232
+00:14:53,040 --> 00:14:55,075
+三分之二因为有两个非
+two-thirds because that has two non
+
+233
+00:14:55,080 --> 00:14:58,465
+零，那么只有点数在哪里
+zeros so where are the points with only
+
+234
+00:14:58,470 --> 00:15:03,535
+斧头上有一个非零的是啊
+one nonzero yeah on the axes yeah that
+
+235
+00:15:03,540 --> 00:15:06,985
+告诉你，他可以在那里
+does tell you so he can be there and
+
+236
+00:15:06,990 --> 00:15:11,785
+有没有好男人，当然这样的
+there okay without guy and of course so
+
+237
+00:15:11,790 --> 00:15:14,575
+只是一直走出去，完全是这样
+is just keep going out so it totally
+
+238
+00:15:14,580 --> 00:15:21,445
+违反你所知道的也许是重点
+violates the you know so maybe the point
+
+239
+00:15:21,450 --> 00:15:25,615
+我应该对这些数字做些什么
+that I should make about these figures
+
+240
+00:15:25,620 --> 00:15:28,525
+所以就像我去的时候发生的那样
+so so like what's happening when I go
+
+241
+00:15:28,530 --> 00:15:31,375
+降到零我真的很满意
+down to zero I'm served it really that
+
+242
+00:15:31,380 --> 00:15:33,175
+手指应该是在另一端向右
+finger should be on the other end right
+
+243
+00:15:33,180 --> 00:15:37,075
+哦，不要拍这个家伙在中间
+oh no shoot this guy's in the middle
+
+244
+00:15:37,080 --> 00:15:41,815
+这是一个画得很厉害的手指l2是善良的
+this is a badly drawn finger l2 is kind
+
+245
+00:15:41,820 --> 00:15:46,495
+一个中心人l1是一端el
+of a center guy l1 is the at one end el
+
+246
+00:15:46,500 --> 00:15:48,715
+在另一端和这一个的无限性
+infinities at the other end and this one
+
+247
+00:15:48,720 --> 00:15:53,845
+已离开，左边那里
+has gone off and the left there the the
+
+248
+00:15:53,850 --> 00:15:56,865
+钻石有没有发生在这里的事情
+diamond has yeah what's happened here as
+
+249
+00:15:56,870 --> 00:16:00,715
+一个人走向零没有
+that one goes down towards zero none of
+
+250
+00:16:00,720 --> 00:16:04,345
+这些都会好起来的这些这些这些
+these will be okay these these these
+
+251
+00:16:04,350 --> 00:16:09,235
+球将或这些集将失去
+balls will or these sets will lose
+
+252
+00:16:09,240 --> 00:16:14,245
+重量是啊所以他们总是会有这些
+weight yeah so they'll always have these
+
+253
+00:16:14,250 --> 00:16:17,635
+指出，但他们会像这样
+points in but they'll be like this and
+
+254
+00:16:17,640 --> 00:16:20,215
+然后像这样，然后终于在
+then like this and then finally in the
+
+255
+00:16:20,220 --> 00:16:23,065
+在不可接受的限度但没有
+in the unacceptable limit but none of
+
+256
+00:16:23,070 --> 00:16:25,885
+这些，这是没有任何好处的用户可以在本
+those this was not any good either this
+
+257
+00:16:25,890 --> 00:16:31,285
+这是P等于一半让我们说排序
+this was for P equal half let's say sort
+
+258
+00:16:31,290 --> 00:16:34,465
+呃那是P等于发生的那个
+of uh that's a P equal to happen that's
+
+259
+00:16:34,470 --> 00:16:38,115
+不是一个好的规范是的所以也许是事情
+not a good norm yeah so maybe the thing
+
+260
+00:16:38,120 --> 00:16:42,595
+你有这个圈子的属性
+you so there's a property of the circle
+
+261
+00:16:42,600 --> 00:16:47,215
+钻石和广场是一个
+the diamond and the square which is a
+
+262
+00:16:47,220 --> 00:16:50,095
+那些那些很好的数学属性
+nice math property of those of those
+
+263
+00:16:50,100 --> 00:16:55,915
+三套，不属于此
+three sets and is not possessed by this
+
+264
+00:16:55,920 --> 00:17:00,295
+因为这件事减肥我输了
+as this thing loses weight I lose the
+
+265
+00:17:00,300 --> 00:17:02,185
+财产当然那是
+property and then of course that's
+
+266
+00:17:02,190 --> 00:17:04,165
+完全迷失在那里你知道吗？
+totally lost over there do you know what
+
+267
+00:17:04,170 --> 00:17:06,655
+那个属性将是它的本质
+that property would be what what it's
+
+268
+00:17:06,660 --> 00:17:10,345
+为你凹凹凸我会
+for you concave convex convex I would
+
+269
+00:17:10,350 --> 00:17:21,105
+说凸是真正的规范有凸
+say convex this is true norm has convex
+
+270
+00:17:21,110 --> 00:17:24,865
+单球也许可能是我正在拿球
+uni-ball maybe maybe for ball I'm taking
+
+271
+00:17:24,870 --> 00:17:30,925
+所有这些是啊所以我允许
+all of these yeah so I'm allowing the
+
+272
+00:17:30,930 --> 00:17:33,805
+这些形状的内部所以这不是一个
+insides of these shapes so this is not a
+
+273
+00:17:33,810 --> 00:17:37,345
+凸集，设置我不应该
+convex set that set which I shouldn't
+
+274
+00:17:37,350 --> 00:17:47,595
+所以不是不凸会是这样一个与
+so not not convex would be this one with
+
+275
+00:17:47,600 --> 00:17:51,375
+哦，这反映了事实哦
+and that reflects the fact that the oh
+
+276
+00:17:51,380 --> 00:17:55,435
+规范的规则被打破了
+the rules for a norm are broken the
+
+277
+00:17:55,440 --> 00:17:57,534
+三角不等式可能已被打破
+triangle inequality is probably broken
+
+278
+00:17:57,539 --> 00:18:03,654
+那是的，我觉得有点像
+and that yep I think that's sort of like
+
+279
+00:18:03,659 --> 00:18:13,374
+值得记住，然后再一个规范
+worth remembering and then one more norm
+
+280
+00:18:13,379 --> 00:18:21,404
+这是很自然的思考
+that's natural to think about is so s as
+
+281
+00:18:21,409 --> 00:18:24,685
+在广场问题中总是如此
+in the Piazza question s does always
+
+282
+00:18:24,690 --> 00:18:28,855
+代表1806年的对称矩阵
+represent a symmetric matrix in 1806
+
+283
+00:18:28,860 --> 00:18:32,215
+五，现在我要问我的规范是什么
+five and now I'm gonna ask my norm is
+
+284
+00:18:32,220 --> 00:18:34,975
+将要这样我会称之为s
+going to be so I'm gonna call it the s
+
+285
+00:18:34,980 --> 00:18:38,754
+规范，所以评估实际上它是一个
+norm so asses up actually it's a
+
+286
+00:18:38,759 --> 00:18:41,874
+正定对称矩阵F是
+positive definite symmetric matrix F is
+
+287
+00:18:41,879 --> 00:18:44,215
+一个正定的对称矩阵和
+a positive definite symmetric matrix and
+
+288
+00:18:44,220 --> 00:18:45,235
+我该怎么办
+what do I do
+
+289
+00:18:45,240 --> 00:18:54,174
+我会带V转置AVsV对不起好吧
+I'll take V transpose AV s V sorry okay
+
+290
+00:18:54,179 --> 00:18:57,294
+我们的能量是什么呢？
+what's our word for that the energy
+
+291
+00:18:57,299 --> 00:18:59,965
+这是在矢量V的能量和
+that's the energy in the vector V and
+
+292
+00:18:59,970 --> 00:19:05,304
+我会采取平方根，以便我这样做
+I'll take the square root so that I so
+
+293
+00:19:05,309 --> 00:19:10,544
+如果我，我现在有两个长度
+that I now have the lengths of two if I
+
+294
+00:19:10,549 --> 00:19:14,245
+从V2到V的双V然后我得到2
+double V from V 2 to V then I get a 2
+
+295
+00:19:14,250 --> 00:19:16,105
+这里和2在这里，当我拿这个
+here and a 2 here and when I take this
+
+296
+00:19:16,110 --> 00:19:18,475
+平方根我得到一个整体两个和
+square root I get a overall two and
+
+297
+00:19:18,480 --> 00:19:21,235
+这就是我想要的我想要的规范
+that's what I want I want the norm to
+
+298
+00:19:21,240 --> 00:19:25,044
+与两个或三个线性增长或
+grow linearly with the two or three or
+
+299
+00:19:25,049 --> 00:19:27,654
+无论我乘以什么，但是什么是
+whatever I multiply by but what is the
+
+300
+00:19:27,659 --> 00:19:33,115
+这个东西的形状，什么是
+shape of this thing so what is the
+
+301
+00:19:33,120 --> 00:19:40,175
+我会得到什么样的形状
+what is the shape I'm gonna get a
+
+302
+00:19:40,180 --> 00:19:42,515
+像那样的形状是什么形状
+picture like that so what is the shape
+
+303
+00:19:42,520 --> 00:19:51,905
+V转置的V等于或小于1
+of V transpose s V equal one less or
+
+304
+00:19:51,910 --> 00:19:58,355
+如果s是正对称的，则等于1
+equal one if s is a positive symmetric
+
+305
+00:19:58,360 --> 00:20:04,415
+正面的信件告诉我们，我声称
+positive letters tell us I'm claiming
+
+306
+00:20:04,420 --> 00:20:07,325
+我们什么时候得到一堆规范
+that we get a bunch of norms when do we
+
+307
+00:20:07,330 --> 00:20:12,545
+得到l2规范什么矩阵s会
+get the l2 norm what what matrix s would
+
+308
+00:20:12,550 --> 00:20:15,965
+这给了我们l2标准的身份
+this give us the l2 norm the identity
+
+309
+00:20:15,970 --> 00:20:18,515
+当然现在发生了什么事情发生，如果
+certainly now what's going to happen if
+
+310
+00:20:18,520 --> 00:20:21,365
+我使用了一些不同的矩阵
+I use some different matrix s this
+
+311
+00:20:21,370 --> 00:20:25,955
+圆圈会改变我的形状
+circle is going to change shape I'm
+
+312
+00:20:25,960 --> 00:20:28,325
+会有不同的规范取决于
+gonna have a different norm depending on
+
+313
+00:20:28,330 --> 00:20:33,095
+S和一个典型的情况下，将作为s等于
+s and a typical case would be s equal to
+
+314
+00:20:33,100 --> 00:20:38,705
+3这是一个正定的对称
+3 that's a positive definite symmetric
+
+315
+00:20:38,710 --> 00:20:43,175
+矩阵，和本，现在我会
+matrix and this this now I would be
+
+316
+00:20:43,180 --> 00:20:47,015
+绘制2V1平方加上的图形
+drawing the graph of 2 V 1 squared plus
+
+317
+00:20:47,020 --> 00:20:49,385
+3V2平方即能量
+3 V 2 squared that would be the energy
+
+318
+00:20:49,390 --> 00:20:52,985
+对等，我只想要你
+right equal one and I just want you to
+
+319
+00:20:52,990 --> 00:20:56,945
+告诉我这是什么形状，这是一个
+tell me what shape that is so that's a
+
+320
+00:20:56,950 --> 00:20:59,915
+你可以检查的完美的规范
+perfectly good norm that you could check
+
+321
+00:20:59,920 --> 00:21:02,555
+他们所有的财产都出来了
+all its properties they all come out
+
+322
+00:21:02,560 --> 00:21:06,515
+很容易，但我得到一个新的图片新
+easily but I get a new picture a new
+
+323
+00:21:06,520 --> 00:21:09,815
+你可以调整的规范
+norm that's kind of adjustable you could
+
+324
+00:21:09,820 --> 00:21:12,095
+说它是加权范数权重的意思
+say it's a weighted norm weights mean
+
+325
+00:21:12,100 --> 00:21:15,035
+你选择了一些
+that you kind of have picked some
+
+326
+00:21:15,040 --> 00:21:17,045
+数字有点适合
+numbers sort of appropriate to the
+
+327
+00:21:17,050 --> 00:21:19,385
+特别好的问题就是假设那些
+particular problem well suppose those
+
+328
+00:21:19,390 --> 00:21:21,995
+数字是2和3是什么形状
+numbers are 2 and 3 what shape is the
+
+329
+00:21:22,000 --> 00:21:27,005
+单位球在这个标准中它是椭圆形的
+unit ball in this s norm it's in ellipse
+
+330
+00:21:27,010 --> 00:21:30,215
+对，它是一个椭圆，我猜它
+right it's an ellipse and I guess it
+
+331
+00:21:30,220 --> 00:21:33,665
+实际上将是更大的数字3
+will actually be so the larger number 3
+
+332
+00:21:33,670 --> 00:21:37,185
+好吧意味着你不能走得那么远
+well will mean you can't go as far as
+
+333
+00:21:37,190 --> 00:21:39,735
+一个较小的数字-我认为它会
+a smaller number - I think it would
+
+334
+00:21:39,740 --> 00:21:43,755
+可能是像这样的椭圆
+probably be an ellipse like this and the
+
+335
+00:21:43,760 --> 00:21:46,815
+椭圆的轴长度
+axes axis lengths of the ellipse would
+
+336
+00:21:46,820 --> 00:21:49,185
+可能与它有关-
+probably have something to do with it -
+
+337
+00:21:49,190 --> 00:21:53,055
+在三个没关系，所以这就是现在你
+in the three okay so that's just now you
+
+338
+00:21:53,060 --> 00:21:56,745
+真的知道所有的矢量规范
+know really all the vector norms that
+
+339
+00:21:56,750 --> 00:22:02,475
+有点自然而然地使用这些
+are sort of natural to use these come up
+
+340
+00:22:02,480 --> 00:22:05,505
+以自然的方式，他们就像我们说的一样
+in a natural way they're all as we said
+
+341
+00:22:05,510 --> 00:22:07,935
+身份矩阵让我们回归
+the identity matrix brings us back to
+
+342
+00:22:07,940 --> 00:22:12,095
+这两种规范都是如此
+the two norm so these are all sort of
+
+343
+00:22:12,100 --> 00:22:14,465
+两种规范的变化
+variations on the two norm
+
+344
+00:22:14,470 --> 00:22:19,755
+这些是P的变化，从1开始
+these are variations as P runs from 1 up
+
+345
+00:22:19,760 --> 00:22:24,225
+2到无穷大，不允许
+to 2 onto infinity and is not allowed to
+
+346
+00:22:24,230 --> 00:22:31,095
+低于1，那是规范然后
+go below 1 okay that's norms and then
+
+347
+00:22:31,100 --> 00:22:33,525
+也许你实际上可以从这个看
+maybe you can actually see from this
+
+348
+00:22:33,530 --> 00:22:39,275
+图片在这里，我们有点喜欢
+picture here's our like somewhat hokey
+
+349
+00:22:39,280 --> 00:22:44,225
+为什么它是该规范的想法
+idea of why it is that this norm
+
+350
+00:22:44,230 --> 00:22:48,075
+最小化那里或最小化
+minimizing the so minimizing there or in
+
+351
+00:22:48,080 --> 00:22:53,295
+这个规范所以我在这里的意思是什么
+this norm so what do I mean by that here
+
+352
+00:22:53,300 --> 00:22:59,135
+将是一个典型的问题最小化
+would be a typical problem minimize
+
+353
+00:22:59,140 --> 00:23:05,775
+受到斧头等于B的l1哦对不起
+subject to ax equal B the l1 oh sorry
+
+354
+00:23:05,780 --> 00:23:10,935
+我正在使用X现在是l1的一个标准
+I'm using X now yeah one norm of the l1
+
+355
+00:23:10,940 --> 00:23:18,855
+X的规范，这将是一个重要的
+norm of X so that would be an important
+
+356
+00:23:18,860 --> 00:23:21,345
+问题实际上它有一个名字的人
+problem actually it has a name people
+
+357
+00:23:21,350 --> 00:23:23,505
+花了很多时间思考一个
+have spent a lot of time thinking of a
+
+358
+00:23:23,510 --> 00:23:25,965
+快速解决它的方式几乎就像
+fast way to solve it it's almost like
+
+359
+00:23:25,970 --> 00:23:28,185
+最小二乘法什么会什么会令
+least squares what would what would make
+
+360
+00:23:28,190 --> 00:23:31,365
+它更像是这些正方形
+it more like these squares would be
+
+361
+00:23:31,370 --> 00:23:38,385
+改变两个耶耶我能不能
+change that to two yeah yeah can I just
+
+362
+00:23:38,390 --> 00:23:41,975
+有点像草图而不是一个大的
+sort of like sketch without making a big
+
+363
+00:23:41,980 --> 00:23:45,855
+这里论证L之间的区别
+argument here the difference between L
+
+364
+00:23:45,860 --> 00:23:47,475
+等于1或
+equal 1 or
+
+365
+00:23:47,480 --> 00:23:51,435
+到这里，是的，我只是画一个
+to here yeah just I'll just draw a
+
+366
+00:23:51,440 --> 00:23:54,435
+图片现在擦除这个椭圆但你
+picture now erase this ellipse but you
+
+367
+00:23:54,440 --> 00:24:00,524
+不会忘记好的，所以这是我们的
+won't forget okay so this this is our
+
+368
+00:24:00,529 --> 00:24:04,185
+问题l与l1它有一个着名的名字
+problem l with l1 it has a famous name
+
+369
+00:24:04,190 --> 00:24:05,924
+基础追求
+basis pursuit
+
+370
+00:24:05,929 --> 00:24:08,445
+在工作的人都很有名
+well famous to people who work in
+
+371
+00:24:08,450 --> 00:24:12,284
+对于l2的优化它具有重要意义
+optimization for l2 it has an important
+
+372
+00:24:12,289 --> 00:24:14,325
+好吧，它有点像这些
+name well it's sort of like these
+
+373
+00:24:14,330 --> 00:24:18,644
+方块岭回归各种各样的
+squares Ridge regression all sorts of
+
+374
+00:24:18,649 --> 00:24:22,034
+这就像一个漂亮的模特
+the this is like a beautiful model
+
+375
+00:24:22,039 --> 00:24:24,524
+所有解决方案中的问题
+problem among all solutions to ax
+
+376
+00:24:24,529 --> 00:24:28,985
+假设这只是一个等式
+suppose this is just one equation like
+
+377
+00:24:28,990 --> 00:24:34,365
+c1x1加c2x2等于右侧
+c1 x1 plus c2 x2 equals some right side
+
+378
+00:24:34,370 --> 00:24:39,644
+B所以X的约束表明了这一点
+B so the X's the constraint says that
+
+379
+00:24:39,649 --> 00:24:42,105
+向量X必须是在一条线上
+the vectors X have to be on a line
+
+380
+00:24:42,110 --> 00:24:45,195
+假设这是一个图表
+there's suppose that's a graph of that
+
+381
+00:24:45,200 --> 00:24:50,865
+所有这些X中的哪一行
+line so as among all these X's which one
+
+382
+00:24:50,870 --> 00:24:54,404
+是的我从来没有意识到我是什么
+yeah I never realizing what is what I'm
+
+383
+00:24:54,409 --> 00:24:57,794
+要说是聪明的我的意思是好的
+gonna say is gonna be smart okay I mean
+
+384
+00:24:57,799 --> 00:25:01,005
+没有它会是不错的不会是
+not it's gonna be nice not gonna be
+
+385
+00:25:01,010 --> 00:25:01,725
+难
+difficult
+
+386
+00:25:01,730 --> 00:25:05,985
+让我们做，我们知道最好的L2这样一个
+let's do the one we know best l2 so
+
+387
+00:25:05,990 --> 00:25:08,355
+这是一条线让我放过的图片
+here's a picture of the line let me let
+
+388
+00:25:08,360 --> 00:25:10,995
+我让它更倾斜一点
+me make it a little more tilted so so
+
+389
+00:25:11,000 --> 00:25:18,784
+你是的是的，是的，就像二三
+you yeah yeah yeah like like two three
+
+390
+00:25:18,789 --> 00:25:22,875
+好吧，这是XY平面，这里是X.
+okay where this is the XY plane here's X
+
+391
+00:25:22,880 --> 00:25:26,115
+1这里有X2这对是
+1 there's X 2 here are the pair of the
+
+392
+00:25:26,120 --> 00:25:29,205
+满足我的条件的点
+points that satisfy my condition which
+
+393
+00:25:29,210 --> 00:25:32,705
+一个最小化该线上的哪个点
+one minimizes which point on that line
+
+394
+00:25:32,710 --> 00:25:37,695
+最小化具有最小的l2范数
+minimizes has the smallest l2 norm which
+
+395
+00:25:37,700 --> 00:25:41,595
+线上的点具有最小的l2
+point on the line has the smallest l2
+
+396
+00:25:41,600 --> 00:25:47,174
+规范是的，你正在画右边
+norm yeah you're drawing the right
+
+397
+00:25:47,179 --> 00:25:50,024
+用你的双手数字最小的l2
+figure with your hands the smallest l2
+
+398
+00:25:50,029 --> 00:25:53,534
+要记住的规范L是多远的
+norm L to remember is just how far out
+
+399
+00:25:53,539 --> 00:25:54,215
+你走
+you go
+
+400
+00:25:54,220 --> 00:25:56,185
+就是这样
+it's it's
+
+401
+00:25:56,190 --> 00:25:58,355
+在这里循环所以无所谓
+circular here so it doesn't matter what
+
+402
+00:25:58,360 --> 00:26:00,695
+方向他们都给予同样的l
+direction they all giving the same l
+
+403
+00:26:00,700 --> 00:26:03,035
+2-norm它只是我们有多远
+2-norm it's just how far so we're
+
+404
+00:26:03,040 --> 00:26:04,895
+找对的最近点
+looking for the closest point on the
+
+405
+00:26:04,900 --> 00:26:08,135
+因为我们不想去任何一条线
+line because we don't want to go any
+
+406
+00:26:08,140 --> 00:26:10,554
+我们想要进入最小距离
+further we want to go a minimum distance
+
+407
+00:26:10,559 --> 00:26:17,674
+有两个现在那么如果是这样哪来的点
+with two now so if so where's the point
+
+408
+00:26:17,679 --> 00:26:19,625
+至少距离是啊它只是显示
+at minimum distance yeah it's just show
+
+409
+00:26:19,630 --> 00:26:22,054
+我再一次用手或者再次
+me again once more with hands or
+
+410
+00:26:22,059 --> 00:26:27,145
+无论我不想要什么
+whatever it'll be that I didn't want
+
+411
+00:26:27,150 --> 00:26:30,544
+那里有45度角，我要擦掉
+45-degree angles there I'm gonna erase
+
+412
+00:26:30,549 --> 00:26:34,235
+再次，真正这个时候我会
+it again and really this time I'm gonna
+
+413
+00:26:34,240 --> 00:26:41,375
+获得不是45的角度
+get angles that are not 45 all right
+
+414
+00:26:41,380 --> 00:26:45,365
+辉煌得到它，这是我的路线
+brilliant got it okay that's my line
+
+415
+00:26:45,370 --> 00:26:47,705
+好的，最近的点是什么
+okay and what's the nearest point in the
+
+416
+00:26:47,710 --> 00:26:48,395
+l2规范
+l2 norm
+
+417
+00:26:48,400 --> 00:26:51,125
+这里是在L2赢家权
+here's the winner in l2 right the
+
+418
+00:26:51,130 --> 00:26:54,635
+最近点每个人都看到了
+nearest point everybody sees that
+
+419
+00:26:54,640 --> 00:26:57,185
+这就是你所知道的
+picture so that's the that's you know
+
+420
+00:26:57,190 --> 00:27:02,785
+这是一个基本的图片为
+that's a basic picture for for
+
+421
+00:27:02,790 --> 00:27:05,285
+用约束最小化某事
+minimizing something with a constraint
+
+422
+00:27:05,290 --> 00:27:08,515
+这是根本问题
+which is the fundamental problem of
+
+423
+00:27:08,520 --> 00:27:10,895
+神经网络的优化
+optimization of neural nets of
+
+424
+00:27:10,900 --> 00:27:15,595
+我生活中的一切都很好
+everything really of life well I'm
+
+425
+00:27:15,600 --> 00:27:19,924
+哲学这样好吗这是一个的，但
+philosophical so okay that's that's but
+
+426
+00:27:19,929 --> 00:27:22,025
+当然，这总是意味着问题
+of course it always mean the question
+
+427
+00:27:22,030 --> 00:27:24,125
+永远是，也许这在生活中是真实的
+always is and maybe it's true in life to
+
+428
+00:27:24,130 --> 00:27:28,895
+你使用哪种规范好吧现在算了
+which norm are you using okay now count
+
+429
+00:27:28,900 --> 00:27:30,544
+并与自己展示那是
+and show with yourself that was the
+
+430
+00:27:30,549 --> 00:27:35,345
+最小的l2是最短的
+minimum in l2 that's the shortest
+
+431
+00:27:35,350 --> 00:27:37,895
+距离意味着我们的距离
+distance where a distance means what we
+
+432
+00:27:37,900 --> 00:27:40,775
+通常认为它是有意义但现在
+usually think of it as meaning but now
+
+433
+00:27:40,780 --> 00:27:44,825
+让我们来看看指出的l1规范
+let's go for the l1 norm which point on
+
+434
+00:27:44,830 --> 00:27:50,164
+这条线现在具有最小的l1范数
+the line has the smallest l1 norm so now
+
+435
+00:27:50,169 --> 00:27:53,825
+如果是的话，我打算加两个
+I'm going to add the two so if this is
+
+436
+00:27:53,830 --> 00:27:58,315
+有些人认为这是零点
+some point a this is some point a zero
+
+437
+00:27:58,320 --> 00:28:03,575
+这是零点B的权利
+and this is some point zero B right
+
+438
+00:28:03,580 --> 00:28:04,115
+那里
+there
+
+439
+00:28:04,120 --> 00:28:05,945
+所以这两点显然是
+so those two points are obviously
+
+440
+00:28:05,950 --> 00:28:08,405
+重要而且我们可以想到这一点
+important and that point we could figure
+
+441
+00:28:08,410 --> 00:28:09,635
+出的公式
+out the formula for
+
+442
+00:28:09,640 --> 00:28:13,235
+因为我们知道这是什么
+because it's we we know what the
+
+443
+00:28:13,240 --> 00:28:15,965
+几何，但我只是把这两个
+geometry is but I've just put those two
+
+444
+00:28:15,970 --> 00:28:19,294
+如此点我得到零B是的
+points in so did I get a zero B yeah
+
+445
+00:28:19,299 --> 00:28:23,435
+这是一个零井，所以让我问一下
+that's a zero well so let me just ask
+
+446
+00:28:23,440 --> 00:28:24,245
+你那个问题
+you that question
+
+447
+00:28:24,250 --> 00:28:26,225
+那条线上的哪一点最小
+what point on that line has the smallest
+
+448
+00:28:26,230 --> 00:28:32,785
+l1范数具有最小的l1范数
+l1 norm which has the smallest l1 norm
+
+449
+00:28:32,790 --> 00:28:34,895
+有人说它只是说了一点
+somebody said it just say it a little
+
+450
+00:28:34,900 --> 00:28:36,455
+大声，这样你就错了
+louder so that you're wrong
+
+451
+00:28:36,460 --> 00:28:43,205
+磁带永远零B这一点是
+tape forever zero B this point that's
+
+452
+00:28:43,210 --> 00:28:44,635
+获胜者，冠军
+the winner
+
+453
+00:28:44,640 --> 00:28:50,405
+这是l1冠军，这就是
+this is the l1 winner and this was the
+
+454
+00:28:50,410 --> 00:28:56,735
+l2获胜者并注意我说的话
+l2 the winner and notice what I said
+
+455
+00:28:56,740 --> 00:28:58,655
+早些时候，我没有看到它的到来
+earlier and I didn't see it coming but
+
+456
+00:28:58,660 --> 00:29:00,815
+现在我意识到这是一个手指放入
+now I realize this is a finger to put in
+
+457
+00:29:00,820 --> 00:29:07,715
+获胜者最多的笔记
+the notes the winner has the most zeroes
+
+458
+00:29:07,720 --> 00:29:10,745
+它是稀疏的向量，它有一个零
+it's the sparse vector it's got a zero
+
+459
+00:29:10,750 --> 00:29:12,875
+它没有两个组件
+well out of two components it didn't
+
+460
+00:29:12,880 --> 00:29:15,455
+有很大的自由，但它有零
+have much freedom but it has a zero
+
+461
+00:29:15,460 --> 00:29:16,235
+零件
+component
+
+462
+00:29:16,240 --> 00:29:24,065
+它坐落在上上它的轴
+it sits on the on the on the axes it's
+
+463
+00:29:24,070 --> 00:29:26,075
+轴上的东西有
+the things on the axes that have the
+
+464
+00:29:26,080 --> 00:29:29,735
+最小数量的组件，所以是的
+smallest number of components so so yes
+
+465
+00:29:29,740 --> 00:29:34,294
+所以这是l2中的图片
+so this is the picture in l2 in in two
+
+466
+00:29:34,299 --> 00:29:36,875
+抱歉，在二维图像，使
+sorry the picture in two dimensions so
+
+467
+00:29:36,880 --> 00:29:40,385
+我在2d，你可以看到
+I'm in 2d and you can see that the
+
+468
+00:29:40,390 --> 00:29:43,565
+获胜者是零组件是啊是啊
+winner is has a zero component yeah yeah
+
+469
+00:29:43,570 --> 00:29:49,565
+并且这是一个延伸到的事实
+and and that's a fact that extends into
+
+470
+00:29:49,570 --> 00:29:52,294
+更高的尺寸，这使得
+higher dimensions too and that makes the
+
+471
+00:29:52,299 --> 00:29:55,924
+l1规范特别，因为我说是的
+l1 norm special as I've said yeah is
+
+472
+00:29:55,929 --> 00:29:58,294
+还有更多关于这个例子的说法
+there more to say about that example
+
+473
+00:29:58,299 --> 00:30:04,804
+这是一个简单的第二个问题
+that's for a simple 2d question that
+
+474
+00:30:04,809 --> 00:30:07,924
+真的说明了l1
+really makes the point that the l1
+
+475
+00:30:07,929 --> 00:30:10,145
+胜利者在那里它不是你
+winner is there it's not further you
+
+476
+00:30:10,150 --> 00:30:11,765
+不要再上去行权
+don't go further up the line right
+
+477
+00:30:11,770 --> 00:30:14,435
+因为因为那么你，那么你
+because because then you're then you
+
+478
+00:30:14,440 --> 00:30:17,705
+甚至在各方面都很糟糕
+have even that's bad in all ways when
+
+479
+00:30:17,710 --> 00:30:20,164
+你进一步上升，你正在添加
+you go up further you're you're adding
+
+480
+00:30:20,169 --> 00:30:22,185
+有些非零
+some nonzero
+
+481
+00:30:22,190 --> 00:30:24,315
+第一个组件，你正在增加
+first component and you're increasing
+
+482
+00:30:24,320 --> 00:30:27,075
+非零超过第二个组成部分
+the non zero over second component so
+
+483
+00:30:27,080 --> 00:30:29,385
+你的想法不错
+your that's a bad idea
+
+484
+00:30:29,390 --> 00:30:31,815
+这是一个坏主意，这是这个
+that's a bad idea this is this is the
+
+485
+00:30:31,820 --> 00:30:37,335
+赢家，在某种程度上是这里的图片
+winner and in a way here's the picture
+
+486
+00:30:37,340 --> 00:30:41,535
+是的哦是的我应该准备这些
+yeah oh yeah I should prepare these
+
+487
+00:30:41,540 --> 00:30:43,905
+讲座，但这一个都出来了
+lectures but this one's coming out all
+
+488
+00:30:43,910 --> 00:30:46,725
+无论如何，所以这样的图片
+right anyway so this so the picture
+
+489
+00:30:46,730 --> 00:30:50,175
+那里有最近的球
+there is the nearest ball it's at that
+
+490
+00:30:50,180 --> 00:30:54,674
+点，你能看到什么呢？
+point and what is it can you see that so
+
+491
+00:30:54,679 --> 00:30:57,975
+该星是外循环，这是
+that star is outside the circle this is
+
+492
+00:30:57,980 --> 00:31:01,545
+l1冠军，所以这是最近的
+the l1 winner so and that's the nearest
+
+493
+00:31:01,550 --> 00:31:05,225
+那就是那个爆发了
+that's the that's is the blow-up of the
+
+494
+00:31:05,230 --> 00:31:09,375
+l1规范直到达到这一点为止
+l1 norm until it hits that's the point
+
+495
+00:31:09,380 --> 00:31:16,424
+在l1规范命中你看到它只是
+where the l1 norm hit do you see it just
+
+496
+00:31:16,429 --> 00:31:18,855
+给它一点想到的是
+give it a little thought that that
+
+497
+00:31:18,860 --> 00:31:21,615
+另一种几何方式来看
+another another geometric way to see the
+
+498
+00:31:21,620 --> 00:31:24,195
+你开始回答这个问题
+answer to this problem is you started
+
+499
+00:31:24,200 --> 00:31:26,745
+原点然后你炸毁了一个规范，直到
+the origin then you blow up a norm until
+
+500
+00:31:26,750 --> 00:31:30,315
+你得到一点就行了
+you get a point on the line that
+
+501
+00:31:30,320 --> 00:31:32,685
+满足你的约束，因为
+satisfies your constraint and because
+
+502
+00:31:32,690 --> 00:31:35,205
+当它击中时，你正在炸毁一个常态
+you were blowing up a norm when it hits
+
+503
+00:31:35,210 --> 00:31:38,085
+首先，这是最小的爆炸
+first that's the smallest blow-up
+
+504
+00:31:38,090 --> 00:31:38,804
+可能
+possible
+
+505
+00:31:38,809 --> 00:31:41,145
+这是这家伙的那个薄荷
+that's the mint that's the guy that
+
+506
+00:31:41,150 --> 00:31:44,265
+最小化你只是考虑一下
+minimizes ya just think about that
+
+507
+00:31:44,270 --> 00:31:47,565
+图片，我会画得更好
+picture and I'll draw it better
+
+508
+00:31:47,570 --> 00:31:55,245
+某处-那是矢量规范和
+somewhere - well that's vector norms and
+
+509
+00:31:55,250 --> 00:31:58,725
+然后我介绍了一些矩阵规范和
+then I introduced some matrix norms and
+
+510
+00:31:58,730 --> 00:32:06,395
+我只想说那些话
+let me just say a word about those
+
+511
+00:32:06,400 --> 00:32:09,755
+关于矩阵规范的好话，所以
+okay word about matrix norm so so the
+
+512
+00:32:09,760 --> 00:32:17,375
+矩阵规范是如此如此现在我有一个
+matrix norms were the so so now I have a
+
+513
+00:32:17,380 --> 00:32:24,455
+矩阵a和我想定义那些相同的
+matrix a and I want to define those same
+
+514
+00:32:24,460 --> 00:32:28,865
+对于矩阵而言这又是三个规范
+three norms again for a matrix and this
+
+515
+00:32:28,870 --> 00:32:35,345
+是两个常态，两个标准是什么
+was two norm and what was the two norm
+
+516
+00:32:35,350 --> 00:32:44,645
+一个矩阵很好，它是西格玛一个转身
+of a matrix well it was Sigma one turned
+
+517
+00:32:44,650 --> 00:32:47,765
+是这样的，没有定义它
+out to be so what that doesn't define it
+
+518
+00:32:47,770 --> 00:32:50,375
+或者它可以找到它只是说好吧
+or it could to find it just say okay the
+
+519
+00:32:50,380 --> 00:32:52,985
+最大的奇异值是两个常态
+largest singular value is the two norm
+
+520
+00:32:52,990 --> 00:32:55,685
+矩阵，但实际上它来自
+of the matrix but actually it comes from
+
+521
+00:32:55,690 --> 00:32:58,505
+在某个地方所以我想谈谈这个
+somewhere so I want to speak about this
+
+522
+00:32:58,510 --> 00:33:06,125
+首先是墓葬规范，所以它就是这样
+one first the tomb norm so so so it's
+
+523
+00:33:06,130 --> 00:33:09,005
+矩阵的两个范数和一种方法
+the two norm of a matrix and one way to
+
+524
+00:33:09,010 --> 00:33:18,845
+看矩阵的两个范数就是
+see the two norm of a matrix is to
+
+525
+00:33:18,850 --> 00:33:23,795
+连接到我的2个矢量范数
+connected to the 2 norm of vectors I'd
+
+526
+00:33:23,800 --> 00:33:26,075
+喜欢连接矩阵的两个范数
+like to connect the two norm of matrices
+
+527
+00:33:26,080 --> 00:33:31,205
+向量的两个范数以及如何应用
+to the two norm of vectors and how shall
+
+528
+00:33:31,210 --> 00:33:34,345
+我这样做，我想我会去看看
+I do that I think I'm going to look at
+
+529
+00:33:34,350 --> 00:33:42,535
+AX的2范数超过X的两个范数
+the 2 norm of AX over the two norm of X
+
+530
+00:33:42,540 --> 00:33:46,295
+所以对我来说这个比例是
+so in a way to me that that ratio is
+
+531
+00:33:46,300 --> 00:33:50,765
+比如爆炸因子，如果a是7次
+like the blow up factor if a was 7 times
+
+532
+00:33:50,770 --> 00:33:53,945
+如果一个人的身份是一个简单的案例
+the identity to take an easy case if a
+
+533
+00:33:53,950 --> 00:33:56,225
+是7倍的身份会是什么那
+is 7 times the identity what would that
+
+534
+00:33:56,230 --> 00:34:05,225
+比如是7如果是a如果a是7我这个
+ratio be yeah 7 if a is if a is 7 I this
+
+535
+00:34:05,230 --> 00:34:08,225
+这将是7X，这将是X和
+this will be 7 X and this will be X and
+
+536
+00:34:08,230 --> 00:34:12,035
+规范因素7出来了
+norms the factor 7 comes out so that
+
+537
+00:34:12,040 --> 00:34:16,075
+比率将是7好
+ratio will be 7 okay
+
+538
+00:34:16,080 --> 00:34:20,395
+对我而言，规范就是这样的
+for me the norm is take that's the
+
+539
+00:34:20,400 --> 00:34:25,935
+爆炸因素，所以这里是我的
+blow-up factor when so here here's my
+
+540
+00:34:25,940 --> 00:34:29,605
+这是我现在的矩阵规范的想法
+here's the idea of a matrix norm now I'm
+
+541
+00:34:29,610 --> 00:34:34,465
+从矢量做矩阵矩阵范数
+doing matrix matrix norm from vector
+
+542
+00:34:34,470 --> 00:34:46,315
+规范和答案将是最大的
+norm and the answer will be maximum the
+
+543
+00:34:46,320 --> 00:34:49,735
+这个比率的最大值我称之为比率
+maximum of this ratio I call that ratio
+
+544
+00:34:49,740 --> 00:34:51,505
+爆炸矢量只是一个
+of the blow up vector that's just a
+
+545
+00:34:51,510 --> 00:34:57,015
+化妆品名称是所有X的最大值
+made-up name the maximum over all X's
+
+546
+00:34:57,020 --> 00:35:00,355
+所有我想看看哪个矢量得到
+all the I look to see which vector gets
+
+547
+00:35:00,360 --> 00:35:05,755
+炸得最多，这是常态
+blown up the most and that is the norm
+
+548
+00:35:05,760 --> 00:35:08,305
+矩阵
+of the matrix
+
+549
+00:35:08,310 --> 00:35:11,905
+我知道我已经接受了规范
+I know I've I've settled on norms of
+
+550
+00:35:11,910 --> 00:35:13,825
+这是在楼上完成的
+vectors that's that's done upstairs
+
+551
+00:35:13,830 --> 00:35:17,065
+现在我正在寻找规范
+there now I'm looking at norms of
+
+552
+00:35:17,070 --> 00:35:20,455
+矩阵，这是获得一个的方法
+matrices and this is one way to get a
+
+553
+00:35:20,460 --> 00:35:23,335
+矩阵的良好规范来了
+good norm of a matrix that kind of comes
+
+554
+00:35:23,340 --> 00:35:25,225
+从这两个规范，所以会有
+from the two norm so there would be
+
+555
+00:35:25,230 --> 00:35:27,655
+来自的矩阵的其他规范
+other norms for matrices coming from
+
+556
+00:35:27,660 --> 00:35:30,955
+其他矢量规范和我们没有的规范
+other vector norms and those we haven't
+
+557
+00:35:30,960 --> 00:35:34,165
+看到但这两个规范是非常的
+seen but the two norm is this is a very
+
+558
+00:35:34,170 --> 00:35:36,955
+重要的是什么是最大的
+important one so what is the maximum
+
+559
+00:35:36,960 --> 00:35:42,445
+矩阵的这个比率的值
+value of this of that ratio for a matrix
+
+560
+00:35:42,450 --> 00:35:48,595
+声称它是Sigma1是什么的
+a the claim is that it's Sigma 1 what a
+
+561
+00:35:48,600 --> 00:35:54,435
+那里的大平等现在可以看出原因
+big equality there now can we see why is
+
+562
+00:35:54,440 --> 00:35:57,595
+为什么Sigma1能够解决这个问题
+why is Sigma 1 the answer to this
+
+563
+00:35:57,600 --> 00:36:04,675
+问题我可以看到一对夫妇的方式来
+problem I can see a couple of ways to
+
+564
+00:36:04,680 --> 00:36:05,995
+考虑一下，但那是非常的
+think about that but that's a very
+
+565
+00:36:06,000 --> 00:36:11,775
+事实上这是一个重要的事实
+important fact in fact this is a way to
+
+566
+00:36:11,780 --> 00:36:15,475
+发现西格玛1没有全部
+discover what Sigma 1 is without all the
+
+567
+00:36:15,480 --> 00:36:18,145
+其他西格玛如果我寻找X那个
+other Sigma's if I look for the X that
+
+568
+00:36:18,150 --> 00:36:20,095
+有最大的爆炸因素和
+has the biggest blow-up factor and by
+
+569
+00:36:20,100 --> 00:36:23,065
+会是其中X的方式，其中X会
+the way which X will it be which X will
+
+570
+00:36:23,070 --> 00:36:26,935
+在这里赢得最大的竞争，并成为
+win the max competition here and be
+
+571
+00:36:26,940 --> 00:36:28,824
+Sigma的时间是1倍
+Sigma 1 times as long
+
+572
+00:36:28,829 --> 00:36:34,645
+Raja的比例为Sigma1
+Raja's as the the ratio will be Sigma 1
+
+573
+00:36:34,650 --> 00:36:37,044
+什么是西格玛1这是什么东西
+that'll be Sigma 1 when is this thing
+
+574
+00:36:37,049 --> 00:36:39,895
+西格玛1倍大，对于其
+Sigma 1 times as large as that for which
+
+575
+00:36:39,900 --> 00:36:45,804
+如果X是一个特征向量，则X为零
+X naught for an eigenvector if X was an
+
+576
+00:36:45,809 --> 00:36:49,574
+特征向量是什么比例
+eigenvector what would that ratio be
+
+577
+00:36:49,579 --> 00:36:54,925
+lambda但是如果a不是对称的
+lambda but if a is not a symmetric
+
+578
+00:36:54,930 --> 00:36:56,125
+矩阵
+matrix
+
+579
+00:36:56,130 --> 00:36:59,064
+也许特征向量不会告诉你
+maybe the eigenvectors don't tell you
+
+580
+00:36:59,069 --> 00:37:03,084
+服务员准确的方式去做什么
+the the waiter the exact way to go what
+
+581
+00:37:03,089 --> 00:37:05,334
+那么你现在猜的是什么向量视图
+so what vector view would you now guess
+
+582
+00:37:05,339 --> 00:37:09,714
+它不是一个特征向量，它是一个单数
+it's not an eigenvector it is a singular
+
+583
+00:37:09,719 --> 00:37:11,905
+矢量和哪些奇异向量
+vector and which singular vectors are
+
+584
+00:37:11,910 --> 00:37:16,014
+可能会是你v1
+probably going to be you v1
+
+585
+00:37:16,019 --> 00:37:18,534
+是啊V一个有意义的赢家所以
+yeah V one makes sense winner so the
+
+586
+00:37:18,539 --> 00:37:22,584
+本次比赛的获胜者是X等于V.
+winner of this competition is X equal V
+
+587
+00:37:22,589 --> 00:37:29,024
+1第一个右边的单数
+1 the first the first right singular
+
+588
+00:37:29,029 --> 00:37:34,254
+矢量，我们最好能够检查
+vector and we better be able to check
+
+589
+00:37:34,259 --> 00:37:39,385
+这又是一个最大化问题
+that so again this maximization problem
+
+590
+00:37:39,390 --> 00:37:44,484
+答案告诉你的是
+the answer tells you is in terms of the
+
+591
+00:37:44,489 --> 00:37:47,875
+奇异向量，这是一种寻找方式
+singular vectors so that's a way to find
+
+592
+00:37:47,880 --> 00:37:49,854
+这第一个奇异向量没有
+this first singular vector without
+
+593
+00:37:49,859 --> 00:37:53,635
+找到他们所有，让我们只是插入
+finding them all and let's just plug in
+
+594
+00:37:53,640 --> 00:37:57,114
+他们向量的第一件事就是看
+the first thing of their vector and see
+
+595
+00:37:57,119 --> 00:38:00,954
+这个比例是看到它看到的
+that the ratio is see what it see that
+
+596
+00:38:00,959 --> 00:38:03,984
+这个比例是西格玛1所以现在让我插上
+the ratio is Sigma 1 so now let me plug
+
+597
+00:38:03,989 --> 00:38:09,135
+它所以我有什么我想要一个V1
+it in so so what do I have I want a V 1
+
+598
+00:38:09,140 --> 00:38:15,264
+超过V1的长度好吧，我希望
+over length of V 1 okay and I'm hoping
+
+599
+00:38:15,269 --> 00:38:18,834
+得到答案的是什么回合
+to get that answer well what's the bout
+
+600
+00:38:18,839 --> 00:38:21,234
+这里的分母是V的长度
+of the denominator here the length of V
+
+601
+00:38:21,239 --> 00:38:26,125
+1是什么没什么大不了的还有那一个
+1 is what no big deal there that's one
+
+602
+00:38:26,130 --> 00:38:29,185
+什么是顶部的长度
+what what's the length of the of the top
+
+603
+00:38:29,190 --> 00:38:30,875
+一个如此
+one so so
+
+604
+00:38:30,880 --> 00:38:35,315
+是V1那么什么是V1，如果v1是
+is a v1 now what is a v1 if v1 is the
+
+605
+00:38:35,320 --> 00:38:38,465
+第一个奇异的第一个右奇异
+first singular first right singular
+
+606
+00:38:38,470 --> 00:38:45,385
+向量然后v1是Sigma的1倍u1
+vector then a v1 is Sigma 1 times u1
+
+607
+00:38:45,390 --> 00:38:49,895
+记住奇异的矢量交易了
+remember the singular vector deals were
+
+608
+00:38:49,900 --> 00:38:58,195
+AV等于SigmauAVk等于sigmakUK
+AV equals Sigma u AV k equals sigma k UK
+
+609
+00:38:58,200 --> 00:39:00,485
+记住，所以他们不是
+remember that so they're not
+
+610
+00:39:00,490 --> 00:39:03,275
+特征向量是它们的奇异向量
+eigenvectors their singular vectors so
+
+611
+00:39:03,280 --> 00:39:09,125
+这就是v1的长度
+that's that is a v1 is the length of
+
+612
+00:39:09,130 --> 00:39:13,835
+西格玛1U1和它是由1和分
+sigma 1 u 1 and it's divided by 1 and of
+
+613
+00:39:13,840 --> 00:39:17,705
+当然你也是一个单位向量，所以我
+course u 1 is also a unit vector so I
+
+614
+00:39:17,710 --> 00:39:24,035
+只是得到信号好，这是另一个
+just get signal okay so that's another
+
+615
+00:39:24,040 --> 00:39:27,485
+这样说，你可以找到西格玛1
+way to say that you can find Sigma 1 by
+
+616
+00:39:27,490 --> 00:39:31,145
+解决这个最大的问题，你得到
+solving this maximum problem and you get
+
+617
+00:39:31,150 --> 00:39:36,065
+西格玛1确定，我可以得到其他
+that Sigma 1 ok and I could get other
+
+618
+00:39:36,070 --> 00:39:40,835
+规范矩阵规范通过最大化
+norms matrix norms by by maximizing that
+
+619
+00:39:40,840 --> 00:39:44,285
+在那个向量范数I中炸毁因子
+blow up factor in that vector norm I
+
+620
+00:39:44,290 --> 00:39:48,965
+现在不会这样做只是为了保持控制
+won't do that now just to keep control
+
+621
+00:39:48,970 --> 00:39:51,935
+什么，我们现在得到了什么什么的
+of what we've got now what were the what
+
+622
+00:39:51,940 --> 00:39:54,575
+是下一个进入的矩阵规范
+was the next matrix norm that came in
+
+623
+00:39:54,580 --> 00:39:57,545
+最后的时间非常非常重要的一个
+last time very very important one for
+
+624
+00:39:57,550 --> 00:40:01,385
+以某种方式深度学习和神经网络
+deep learning and neural nets somehow
+
+625
+00:40:01,390 --> 00:40:04,135
+它比这家伙更简单一点，
+it's a little simpler than this guy and
+
+626
+00:40:04,140 --> 00:40:07,655
+什么是矩阵规范
+what's the what was that matrix norm
+
+627
+00:40:07,660 --> 00:40:12,985
+什么字母的名字在这里
+what letter whose name goes here
+
+628
+00:40:12,990 --> 00:40:16,505
+Frobenius所以Frobenius和F的首都F
+Frobenius so capital F for Frobenius and
+
+629
+00:40:16,510 --> 00:40:19,535
+这一点，那是什么那是
+that and what was that that was the
+
+630
+00:40:19,540 --> 00:40:22,475
+平方根的总和
+square root of the sum of the all the
+
+631
+00:40:22,480 --> 00:40:31,805
+加起来为所有人添加所有的IJ方块
+add up add all the a IJ squares for all
+
+632
+00:40:31,810 --> 00:40:34,745
+在矩阵上然后取一个正方形
+over the matrix and then takes a square
+
+633
+00:40:34,750 --> 00:40:38,105
+根，然后有人问了一个好
+root and then somebody asked a good
+
+634
+00:40:38,110 --> 00:40:41,585
+周三课后问题是什么
+question after class on Wednesday what
+
+635
+00:40:41,590 --> 00:40:44,605
+这与Sigma的关系有关
+has that got to do with the Sigma's
+
+636
+00:40:44,610 --> 00:40:49,135
+因为我失望的是这些
+because I my disappoint was that these
+
+637
+00:40:49,140 --> 00:40:53,395
+宿舍是随身携带的人
+dorms are the guys that go with the
+
+638
+00:40:53,400 --> 00:40:55,045
+Sigma的做法很好
+Sigma's that does that have nice
+
+639
+00:40:55,050 --> 00:40:57,535
+西格玛的公式就在这里
+formulas for the Sigma's and here it is
+
+640
+00:40:57,540 --> 00:41:00,175
+它是总和的平方根
+it's the square root of the sum of the
+
+641
+00:41:00,180 --> 00:41:08,155
+所有信号的正方形是对不起让
+squares of all the signals yes sorry let
+
+642
+00:41:08,160 --> 00:41:16,765
+我再写Frobenius但是这个
+me write Frobenius again but this
+
+643
+00:41:16,770 --> 00:41:18,805
+用F表示现在很漂亮
+notation with an F is now pretty
+
+644
+00:41:18,810 --> 00:41:22,675
+标准，我们应该能够看到
+standard and we should be able to see
+
+645
+00:41:22,680 --> 00:41:26,065
+为什么这个数字与那个数字相同
+why that number is the same as that
+
+646
+00:41:26,070 --> 00:41:40,045
+号码是的，我可以给你一个
+number yeah I could I could give you a
+
+647
+00:41:40,050 --> 00:41:41,665
+理由还是我不能把它放在上面
+reason or I couldn't put it on the
+
+648
+00:41:41,670 --> 00:41:47,935
+问题集是啊我认为它更好
+problem set yeah I think it better on
+
+649
+00:41:47,940 --> 00:41:50,455
+问题集首先是因为
+the problem set because first of all
+
+650
+00:41:50,460 --> 00:41:52,165
+我脱身马上和
+I'll get off the hook right away and
+
+651
+00:41:52,170 --> 00:41:57,205
+其次是中间的这种联系
+secondly this connection between in
+
+652
+00:41:57,210 --> 00:41:59,485
+ProbieNia所以它就像一个美丽的事实
+Probie Nia so it's like a beautiful fact
+
+653
+00:41:59,490 --> 00:42:01,735
+关于Frobenius规范，你加起来所有
+about Frobenius norm that you add up all
+
+654
+00:42:01,740 --> 00:42:05,035
+SigmaSquared是他们的M倍
+the Sigma Squared's as M times n of them
+
+655
+00:42:05,040 --> 00:42:08,755
+因为它是一个全部填充的矩阵或你
+because it's a all filled matrix or you
+
+656
+00:42:08,760 --> 00:42:12,115
+加起来以另一种方式说它是我们
+add up so another way to say it is we
+
+657
+00:42:12,120 --> 00:42:14,275
+还没写下今天的SVD
+haven't written down the SVD today's a
+
+658
+00:42:14,280 --> 00:42:21,685
+谁你的西格玛V转置和重点
+whoyou Sigma V transpose and the point
+
+659
+00:42:21,690 --> 00:42:26,905
+实际上就是弗罗贝尼乌斯的规范
+is that for the Frobenius norm actually
+
+660
+00:42:26,910 --> 00:42:30,775
+对于所有这些规范，我可以改变你
+for all these norms I can change you it
+
+661
+00:42:30,780 --> 00:42:33,235
+不改变常态，所以我可以做
+doesn't change the norm so I can make
+
+662
+00:42:33,240 --> 00:42:36,445
+你们认同它就是我们所知道的
+you the identity it's you as we all know
+
+663
+00:42:36,450 --> 00:42:38,815
+是一个正交矩阵，我是什么
+is an orthogonal matrix and what I'm
+
+664
+00:42:38,820 --> 00:42:41,575
+说是正交矩阵，你没有
+saying is orthogonal matrix you doesn't
+
+665
+00:42:41,580 --> 00:42:44,445
+改变任何这些特定的规范
+change any of these particular norms so
+
+666
+00:42:44,450 --> 00:42:47,185
+假设这里的身份相同
+suppose it was the identity same here
+
+667
+00:42:47,190 --> 00:42:48,955
+这可能是没有的身份
+that could be the identity without
+
+668
+00:42:48,960 --> 00:42:52,405
+改变规范，所以我们到了
+changing the norm so we're down to the
+
+669
+00:42:52,410 --> 00:42:55,705
+什么是弗罗贝尼乌斯的规范
+norm of the the Frobenius so what's the
+
+670
+00:42:55,710 --> 00:42:57,015
+弗罗贝尼乌斯规范
+Frobenius norm
+
+671
+00:42:57,020 --> 00:43:02,145
+那个家伙是什么ProbieGnaeus
+of that guy what's the Probie Gnaeus
+
+672
+00:43:02,150 --> 00:43:06,795
+那个对角矩阵的范数很好
+norm of that diagonal matrix well you're
+
+673
+00:43:06,800 --> 00:43:08,864
+应该把所有的正方形加起来
+supposed to add up the squares of all
+
+674
+00:43:08,869 --> 00:43:11,385
+矩阵中的数字和做什么
+the numbers in the matrix and what do
+
+675
+00:43:11,390 --> 00:43:16,695
+你让你做对了所以这就是原因
+you get you get that right so that's why
+
+676
+00:43:16,700 --> 00:43:19,335
+这与此相同，因为
+this is the same as this because the
+
+677
+00:43:19,340 --> 00:43:21,945
+正交人在那里正交
+orthogonal guy there on the orthogonal
+
+678
+00:43:21,950 --> 00:43:23,775
+那个家伙在常态上没有任何区别
+guy there make no difference in the norm
+
+679
+00:43:23,780 --> 00:43:28,995
+但这需要检查是的，但是
+but that takes checking right yeah but
+
+680
+00:43:29,000 --> 00:43:30,525
+这是另一种了解原因的方法
+that's another way to see why the
+
+681
+00:43:30,530 --> 00:43:33,045
+证明规范给出了这个然后
+provenience norm gives this and then
+
+682
+00:43:33,050 --> 00:43:37,985
+最后这是核规范和
+finally this was the nuclear norm and
+
+683
+00:43:37,990 --> 00:43:41,145
+实际上就在我的午餐前
+actually just before the my lunch
+
+684
+00:43:41,150 --> 00:43:43,815
+讲授的大概的主题
+lecture on the subject of probably about
+
+685
+00:43:43,820 --> 00:43:48,555
+午餐讲座是一个学习早晨
+a learning morning the lunch lecture was
+
+686
+00:43:48,560 --> 00:43:51,765
+关于这种人类行为的疯狂方式
+about this crazy way that humans behave
+
+687
+00:43:51,770 --> 00:43:58,815
+实际上不是我们，而是其他人
+not us but other humans other actually
+
+688
+00:43:58,820 --> 00:44:06,854
+好吧，从磁带中拿出来好吧
+well take that out of the tape yeah okay
+
+689
+00:44:06,859 --> 00:44:09,075
+无论如何那是那次讲座
+anyway that was that lecture well before
+
+690
+00:44:09,080 --> 00:44:13,445
+这是一个小时的讲座加
+that was a lecture for an hour plus
+
+691
+00:44:13,450 --> 00:44:16,275
+关于深刻学习的人
+about deep learning by somebody who
+
+692
+00:44:16,280 --> 00:44:19,425
+真的真的已经开始明白了
+really really has begun to understand
+
+693
+00:44:19,430 --> 00:44:22,745
+里面有什么东西发生了这是如何
+what is happening inside how does that
+
+694
+00:44:22,750 --> 00:44:25,995
+梯度下降优化算法
+gradient descent optimization algorithm
+
+695
+00:44:26,000 --> 00:44:29,265
+挑出什么什么它挑出来作为
+pick out what what does it pick out as
+
+696
+00:44:29,270 --> 00:44:33,885
+随着作为东西它学习它的
+that as as the thing it learns it's
+
+697
+00:44:33,890 --> 00:44:37,275
+会是你知道我们的目标
+gonna be the you know our goal in in
+
+698
+00:44:37,280 --> 00:44:40,515
+这个课程我们还没有，但他的
+this course we're not there yet but his
+
+699
+00:44:40,520 --> 00:44:44,685
+猜想是的，所以它是一个
+conjecture is that that yeah so it's a
+
+700
+00:44:44,690 --> 00:44:46,215
+猜想他没有我们的证据
+conjecture he doesn't have our proof
+
+701
+00:44:46,220 --> 00:44:49,815
+他有一些很好的案例证明
+he's got proofs of some nice cases where
+
+702
+00:44:49,820 --> 00:44:51,705
+事情通勤，但他没有得到
+things commute but he hasn't got the
+
+703
+00:44:51,710 --> 00:44:54,945
+整件事，但它非常棒
+whole thing yet but it's pretty terrific
+
+704
+00:44:54,950 --> 00:45:00,835
+工作所以这是cerebro教授
+work so this this was professor cerebro
+
+705
+00:45:00,840 --> 00:45:04,615
+在芝加哥所以他刚宣布了他的
+in Chicago so he just announced his
+
+706
+00:45:04,620 --> 00:45:07,945
+猜想和他猜想的是
+conjecture and his conjecture is that in
+
+707
+00:45:07,950 --> 00:45:11,845
+一个模型案例深入学习
+a model case the deep learning that
+
+708
+00:45:11,850 --> 00:45:14,245
+我们将通过渐变来学习
+we'll learn about with a gradient
+
+709
+00:45:14,250 --> 00:45:16,465
+我们将学会找到的血统
+descent that we'll learn about to find
+
+710
+00:45:16,470 --> 00:45:20,185
+最重要的是重点
+the best weights that the point is that
+
+711
+00:45:20,190 --> 00:45:24,565
+他们你知道典型的深度学习
+they're you know typical deep learning
+
+712
+00:45:24,570 --> 00:45:27,685
+问题这几天有更多的
+problem these days there are many more
+
+713
+00:45:27,690 --> 00:45:31,525
+方式比样本等都有很多
+ways than samples and so there are a lot
+
+714
+00:45:31,530 --> 00:45:33,505
+可能的最小值
+of possible minima
+
+715
+00:45:33,510 --> 00:45:35,905
+许多不同的重量给出相同的
+many different weights give the same
+
+716
+00:45:35,910 --> 00:45:39,115
+最小的损失，因为有这么多
+minimum loss because there are so many
+
+717
+00:45:39,120 --> 00:45:42,265
+权衡它的问题也是如此
+weights it's the problem is like too
+
+718
+00:45:42,270 --> 00:45:45,055
+许多变量，但事实证明是一个
+many variables but it turns out to be a
+
+719
+00:45:45,060 --> 00:45:47,245
+非常非常好的事情那部分
+very very good thing that's part of the
+
+720
+00:45:47,250 --> 00:45:52,725
+成功，他认为，在一个
+success and the he believes that in a
+
+721
+00:45:52,730 --> 00:45:58,195
+通过优化的模型情况
+model situation that the optimization by
+
+722
+00:45:58,200 --> 00:46:04,165
+梯度下降挑出权重
+gradient descent picks out the weights
+
+723
+00:46:04,170 --> 00:46:07,135
+这样可以最大限度地减少核规范
+that minimize the nuclear norm so this
+
+724
+00:46:07,140 --> 00:46:10,785
+将是很多权重的标准
+would be a norm of a lot of weights and
+
+725
+00:46:10,790 --> 00:46:14,295
+他认为这就是系统的用武之地
+he thinks that's where the system goes
+
+726
+00:46:14,300 --> 00:46:17,425
+会看到这个出现了
+will see this this was comes up in
+
+727
+00:46:17,430 --> 00:46:19,705
+我上次提到的压缩传感
+compressed sensing as I mentioned last
+
+728
+00:46:19,710 --> 00:46:23,035
+这个时间，但现在我必须记住
+time so this but now I have to remember
+
+729
+00:46:23,040 --> 00:46:26,905
+什么是定义做得好
+what was what was the definition well do
+
+730
+00:46:26,910 --> 00:46:29,005
+你还记得核规范是什么
+you remember what the nuclear norm was
+
+731
+00:46:29,010 --> 00:46:32,545
+这也是他经常使用的他用过的
+it's also his he often used he used a
+
+732
+00:46:32,550 --> 00:46:35,395
+我会把小明星而不是结束
+little star instead of an end I'll put
+
+733
+00:46:35,400 --> 00:46:37,915
+在其他人称之为的笔记中
+that in the notes other people call it
+
+734
+00:46:37,920 --> 00:46:40,765
+跟踪规范，但我想这个
+the trace norm that's but I think this
+
+735
+00:46:40,770 --> 00:46:46,705
+最后一种给它起一个名字符号
+end kind of gives it a name notation you
+
+736
+00:46:46,710 --> 00:46:48,655
+还记得让我们叫它
+can remember so let's call it the
+
+737
+00:46:48,660 --> 00:46:50,395
+核规范你还记得那是什么
+nuclear norm do you remember what that
+
+738
+00:46:50,400 --> 00:46:52,665
+一个是
+one was
+
+739
+00:46:52,670 --> 00:46:55,665
+是的，有人正在唱歌
+it was yes somebody's singing it right
+
+740
+00:46:55,670 --> 00:46:59,065
+添加Sigma的耶只是总和
+add the Sigma's yeah just the sum of the
+
+741
+00:46:59,070 --> 00:47:07,555
+像你这样的信号知道一个规范是的
+signals like you know one norm yeah this
+
+742
+00:47:07,560 --> 00:47:12,235
+是一种天生的l1类型的规范
+is natural sort of l1 type of norm for
+
+743
+00:47:12,240 --> 00:47:13,705
+矩阵
+matrices
+
+744
+00:47:13,710 --> 00:47:17,034
+这是你拥有了l1范西格玛
+it's the l1 norm you have that Sigma
+
+745
+00:47:17,039 --> 00:47:19,044
+矢量这将是l2的规范
+vector this would be the l2 norm of the
+
+746
+00:47:19,049 --> 00:47:20,455
+西格玛因子即L
+Sigma factor that would be the L
+
+747
+00:47:20,460 --> 00:47:23,334
+无穷大规范注意到矢量
+infinity norm notice that the vector
+
+748
+00:47:23,339 --> 00:47:28,375
+数字无穷大为1会发生变化
+numbers infinity to 1 gets changed
+
+749
+00:47:28,380 --> 00:47:34,125
+当你看矩阵时，大约2
+around 2 when you look at the matrix
+
+750
+00:47:34,130 --> 00:47:39,024
+那么这是一个令人兴奋的想法吧
+well so that's an exciting idea and it
+
+751
+00:47:39,029 --> 00:47:43,554
+还有待证明的是人
+remains to be proved people are
+
+752
+00:47:43,559 --> 00:47:46,015
+尝试看看它说的是它
+experimenting to see does it say is it
+
+753
+00:47:46,020 --> 00:47:46,554
+真正
+true
+
+754
+00:47:46,559 --> 00:47:52,255
+是的，所以这是一个未来是的好吧
+yep so that's a future yes okay so
+
+755
+00:47:52,260 --> 00:47:55,405
+那是今天我们谈论的规范
+that's today we've talked about norms
+
+756
+00:47:55,410 --> 00:47:57,955
+这部分笔记将是
+and this section of the notes will be
+
+757
+00:47:57,960 --> 00:48:05,155
+关于规范我们已经迈出了一大步
+all about norms we've taken a big leap
+
+758
+00:48:05,160 --> 00:48:11,475
+在评论深度学习和
+in to comment about deep learning and
+
+759
+00:48:11,480 --> 00:48:14,364
+这是我想说的话最多，
+this is what I want to say the most and
+
+760
+00:48:14,369 --> 00:48:18,385
+我说给每个班级我的教
+I say it to every class I teach at the
+
+761
+00:48:18,390 --> 00:48:22,284
+我学期开始了
+near the start of the semester my
+
+762
+00:48:22,289 --> 00:48:25,465
+感觉我的工作就是教
+feeling about what my job is is to teach
+
+763
+00:48:25,470 --> 00:48:28,195
+你的事情或加入你加入你
+you things or to join you join with you
+
+764
+00:48:28,200 --> 00:48:30,235
+学习今天发生的事情
+in learning things as has happened today
+
+765
+00:48:30,240 --> 00:48:33,774
+这不是你的评分，我不花任何钱
+it's not to grade you I don't spend any
+
+766
+00:48:33,779 --> 00:48:38,094
+时间就像失去睡眠你们都应该
+time like like losing sleep y'all should
+
+767
+00:48:38,099 --> 00:48:40,824
+那个人应该拿一点还是一点
+should that person take up one point or
+
+768
+00:48:40,829 --> 00:48:45,114
+把它变成epsilon惩罚
+epsilon penalty for for turning it in
+
+769
+00:48:45,119 --> 00:48:47,145
+几分钟迟到
+for minutes late
+
+770
+00:48:47,150 --> 00:48:50,304
+你好，我们有很多东西
+hello with that right we've got a lot to
+
+771
+00:48:50,309 --> 00:48:54,235
+做到这一点，无论如何我们会继续
+do here and so anyway we'll get on with
+
+772
+00:48:54,240 --> 00:49:00,324
+一份工作，所以家庭作业三上来，我们
+a job so homework three coming up and we
+
+773
+00:49:00,329 --> 00:49:03,145
+使用你已经拥有的笔记
+be using the notes that you already have
+
+774
+00:49:03,150 --> 00:49:05,364
+为那些人发布了四星
+posted in stellar four for those
+
+775
+00:49:05,369 --> 00:49:08,875
+部分八九等，并
+sections eight and nine and so on and
+
+776
+00:49:08,880 --> 00:49:11,965
+星期一我们会继续，好的，看到你
+we'll keep going on Monday okay see you
+
+777
+00:49:11,970 --> 00:49:15,410
+周一，周末愉快
+
+778
+00:49:11,970 --> 00:49:15,870
+Monday and have a great weekend
+
+779
+00:49:15,880 --> 00:49:17,940
+您
+you
+

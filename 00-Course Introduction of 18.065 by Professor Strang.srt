@@ -1,0 +1,578 @@
+1
+00:00:00,530 --> 00:00:15,104
+[音乐]
+[Music]
+
+2
+00:00:15,109 --> 00:00:20,604
+所以我是吉尔伯特斯特朗，这是关于
+so I'm Gilbert Strang and this is about
+
+3
+00:00:20,609 --> 00:00:24,835
+我的新课程18065和新的
+my new course 1806 5 and the new
+
+4
+00:00:24,840 --> 00:00:27,655
+教科书线性代数和学习
+textbook linear algebra and learning
+
+5
+00:00:27,660 --> 00:00:30,715
+从数据和这些主题中的内容
+from data and what's in those subjects
+
+6
+00:00:30,720 --> 00:00:35,515
+所以他们真的是两个必不可少的主题
+so they're really two essential topics
+
+7
+00:00:35,520 --> 00:00:40,915
+和两个补充，但所有这些
+and two supplementary but all of them
+
+8
+00:00:40,920 --> 00:00:43,644
+非常重要的科目，如果我告诉你
+very important subjects so if I tell you
+
+9
+00:00:43,649 --> 00:00:46,495
+关于数学的这四个部分
+about those four parts of mathematics
+
+10
+00:00:46,500 --> 00:00:49,585
+这是在给你的过程中
+that are in the course that'll give you
+
+11
+00:00:49,590 --> 00:00:52,165
+一个想法，如果你有兴趣关注
+an idea if you're interested to follow
+
+12
+00:00:52,170 --> 00:00:54,894
+通过这样的第一个主题是
+through so the first big subject is
+
+13
+00:00:54,899 --> 00:00:58,315
+线性代数这一问题刚
+linear algebra that subject has just
+
+14
+00:00:58,320 --> 00:01:01,165
+飙升的重要性在
+surged exploded in importance in
+
+15
+00:01:01,170 --> 00:01:04,885
+练习我想要关注的是一些
+practice what I want to focus on is some
+
+16
+00:01:04,890 --> 00:01:07,945
+最好的矩阵说对称
+of the best matrices say symmetric
+
+17
+00:01:07,950 --> 00:01:11,455
+矩阵正交矩阵及其矩阵
+matrices orthogonal matrices and their
+
+18
+00:01:11,460 --> 00:01:17,245
+关系那些是星星
+relation those are those are the stars
+
+19
+00:01:17,250 --> 00:01:22,555
+线性代数和关键步骤是
+of linear algebra and the key step is to
+
+20
+00:01:22,560 --> 00:01:26,425
+因子矩阵可以是对称的
+factor a matrix into may be symmetric
+
+21
+00:01:26,430 --> 00:01:30,165
+时间正交矩阵可以是
+times orthogonal matrix may be
+
+22
+00:01:30,170 --> 00:01:33,684
+正交时间对角线时间
+orthogonal times diagonal times
+
+23
+00:01:33,689 --> 00:01:35,845
+正交矩阵非常
+orthogonal matrix that's a very
+
+24
+00:01:35,850 --> 00:01:38,815
+重要的分解称为
+important factorization called the
+
+25
+00:01:38,820 --> 00:01:41,785
+奇异值分解是
+singular value decomposition that
+
+26
+00:01:41,790 --> 00:01:45,445
+没有进入很多线性代数
+doesn't get into a lot of linear algebra
+
+27
+00:01:45,450 --> 00:01:49,705
+课程，但它是如此重要，所以我可以
+courses but it's so critical so can I
+
+28
+00:01:49,710 --> 00:01:53,215
+现在谈谈第二个重要的事情
+speak now about the second important
+
+29
+00:01:53,220 --> 00:01:56,095
+话题是深度学习有啥
+topic which is deep learning so what is
+
+30
+00:01:56,100 --> 00:01:59,364
+深入学习它的工作就是创造
+deep learning it's the job is to create
+
+31
+00:01:59,369 --> 00:02:03,175
+创建一个您输入的功能
+a create a function you have your inputs
+
+32
+00:02:03,180 --> 00:02:06,474
+就像无人驾驶汽车的输入一样
+are like for driverless cars the input
+
+33
+00:02:06,479 --> 00:02:08,724
+将是一个电话的图像
+would be an image that's a telephone
+
+34
+00:02:08,729 --> 00:02:13,675
+杆或行人和系统
+pole or a pedestrian and the system
+
+35
+00:02:13,680 --> 00:02:18,264
+学习识别它是什么或者是什么
+to learn to recognize which it is or the
+
+36
+00:02:18,269 --> 00:02:23,604
+来自地址的手写输入
+inputs from handwriting on on addresses
+
+37
+00:02:23,609 --> 00:02:27,475
+将是一个邮政编码，因此系统必须
+would be a zip code so the system has to
+
+38
+00:02:27,480 --> 00:02:31,074
+学习如何识别0123到9
+learn how to recognize 0 1 2 3 up to 9
+
+39
+00:02:31,079 --> 00:02:35,124
+从各种手写或其他
+from handwriting of all kinds or another
+
+40
+00:02:35,129 --> 00:02:37,975
+一个是Siri必须做的演讲
+one is speech like what Siri has to do
+
+41
+00:02:37,980 --> 00:02:41,514
+所以我的发言得到输入
+so my speech has to get input and
+
+42
+00:02:41,519 --> 00:02:44,934
+通过过程解释和输出
+interpreted and output by the process of
+
+43
+00:02:44,939 --> 00:02:47,664
+深度学习，所以它涉及创建一个
+deep learning so it involves creating a
+
+44
+00:02:47,669 --> 00:02:50,564
+学习功能该功能需要
+learning function the function takes the
+
+45
+00:02:50,569 --> 00:02:56,414
+输入数据并产生输出
+input the data and produces the output
+
+46
+00:02:56,419 --> 00:03:01,255
+这些数据的含义以及如何
+the meaning of that data and so how
+
+47
+00:03:01,260 --> 00:03:03,505
+什么是这样的功能
+what's the function like that's what
+
+48
+00:03:03,510 --> 00:03:07,725
+数学是关于功能的
+mathematics is about functions so it
+
+49
+00:03:07,730 --> 00:03:10,195
+涉及配偶它涉及矩阵
+involves mate it involves matrix
+
+50
+00:03:10,200 --> 00:03:12,344
+乘法部分功能是
+multiplications part of the function is
+
+51
+00:03:12,349 --> 00:03:16,764
+通过矩阵乘以向量
+multiplying vectors by matrices so
+
+52
+00:03:16,769 --> 00:03:19,374
+这是一堆步骤，但如果有的话
+that's a bunch of steps but if there was
+
+53
+00:03:19,379 --> 00:03:21,654
+只有它是所有线性代数
+only that if it was all linear algebra
+
+54
+00:03:21,659 --> 00:03:25,734
+事情会失败并失败了
+the thing would fail and has failed what
+
+55
+00:03:25,739 --> 00:03:29,724
+使它现在的工作非常公司
+makes it work now so much that companies
+
+56
+00:03:29,729 --> 00:03:33,404
+正在投资巨大的Lea
+are investing enormous Lea in the
+
+57
+00:03:33,409 --> 00:03:36,145
+技术是现在的
+technology is that there's now a
+
+58
+00:03:36,150 --> 00:03:38,874
+非线性函数非常简单
+nonlinear function a very simple one in
+
+59
+00:03:38,879 --> 00:03:41,245
+每对之间的中间
+the middle between every pair of
+
+60
+00:03:41,250 --> 00:03:44,275
+矩阵，这不仅仅是我的功能
+matrices and that not only function I
+
+61
+00:03:44,280 --> 00:03:46,675
+甚至可以告诉你它是什么
+can even tell you what it is it's the
+
+62
+00:03:46,680 --> 00:03:50,694
+函数f让我们称之为X的ff
+function f let's call it f f of X is
+
+63
+00:03:50,699 --> 00:03:55,824
+如果X是正数而f是X，则等于X.
+equal to X if X is positive and f of X
+
+64
+00:03:55,829 --> 00:03:59,785
+如果X为负数，则为0，这样您就可以想象
+is 0 if X is negative so you can imagine
+
+65
+00:03:59,790 --> 00:04:02,124
+它的图表是一条平坦的线条
+its graph it's a flat line where it's
+
+66
+00:04:02,129 --> 00:04:04,675
+负面，然后它是一个45度的斜率
+negative and then it's a 45-degree slope
+
+67
+00:04:04,680 --> 00:04:07,484
+把它放在哪里是积极的
+where it's positive so putting that
+
+68
+00:04:07,489 --> 00:04:10,224
+矩阵之间的非线性函数
+nonlinear function in between the matrix
+
+69
+00:04:10,229 --> 00:04:14,715
+乘法是构建的方式
+multiplications is the way to construct
+
+70
+00:04:14,720 --> 00:04:18,414
+学习成功的学习功能但是
+learn successful learning function but
+
+71
+00:04:18,419 --> 00:04:20,784
+你必须找到那些矩阵，所以我
+you have to find those matrices so I
+
+72
+00:04:20,789 --> 00:04:23,245
+提到支持科目
+mentioned to supporting subjects
+
+73
+00:04:23,250 --> 00:04:26,195
+首先是优化将是
+the first is optimization would be the
+
+74
+00:04:26,200 --> 00:04:29,495
+我们必须找到这些条目
+we have to find the entries in those
+
+75
+00:04:29,500 --> 00:04:32,435
+进入学习的矩阵
+matrices that go into the learning
+
+76
+00:04:32,440 --> 00:04:36,365
+功能这是至关重要的一步
+function that's a crucial step so this
+
+77
+00:04:36,370 --> 00:04:39,035
+是一个最小化错误的问题
+is a problem of minimizing the error
+
+78
+00:04:39,040 --> 00:04:42,815
+所有这些矩阵条目为
+with all those matrix entries as
+
+79
+00:04:42,820 --> 00:04:46,655
+变量因此这是多变量的
+variables so this is multivariable
+
+80
+00:04:46,660 --> 00:04:50,435
+微积分就像十万五
+calculus like a hundred thousand five
+
+81
+00:04:50,440 --> 00:04:53,015
+十万变量只是
+hundred thousand variables is just
+
+82
+00:04:53,020 --> 00:04:57,725
+在基础微积分课程中是不可想象的但是
+unthinkable in basic calculus course but
+
+83
+00:04:57,730 --> 00:05:01,775
+它发生在一家公司里面
+it's happening in in a company that's
+
+84
+00:05:01,780 --> 00:05:07,595
+深学习工作，所以这是
+working with deep learning and so that's
+
+85
+00:05:07,600 --> 00:05:09,905
+这是深刻的巨大计算
+it that's the giant calculation of deep
+
+86
+00:05:09,910 --> 00:05:13,325
+了解这是GPU的发展方向
+learning that's what keeps GPUs going
+
+87
+00:05:13,330 --> 00:05:18,755
+一个星期，但它给出了惊人的结果
+for a week but it gives amazing results
+
+88
+00:05:18,760 --> 00:05:21,335
+这在以前是无法实现的
+that could never have been achieved in
+
+89
+00:05:21,340 --> 00:05:24,245
+过去那么另一个关键主题
+the past so then the other key subject
+
+90
+00:05:24,250 --> 00:05:28,385
+是统计和基本思路
+is statistics and the basic ideas of
+
+91
+00:05:28,390 --> 00:05:32,345
+统计在这里起作用，因为何时
+Statistics play a role here because when
+
+92
+00:05:32,350 --> 00:05:34,475
+你将整个序列相乘
+you're multiplying a whole sequence of
+
+93
+00:05:34,480 --> 00:05:37,835
+深度学习的矩阵非常
+matrices in deep learning it's very
+
+94
+00:05:37,840 --> 00:05:43,445
+这些数字可能会增长
+possible for the numbers to grow out of
+
+95
+00:05:43,450 --> 00:05:47,075
+以指数方式或降至零
+sight exponentially or to drop to zero
+
+96
+00:05:47,080 --> 00:05:50,435
+而这两个都是坏消息
+and both of those are bad news for the
+
+97
+00:05:50,440 --> 00:05:53,195
+学习功能所以你需要保持
+learning function so you need to keep
+
+98
+00:05:53,200 --> 00:05:56,005
+右边的平均值和方差
+the mean and variance at the right spot
+
+99
+00:05:56,010 --> 00:06:01,985
+保持这些数字在学习中
+to keep those numbers in the learning
+
+100
+00:06:01,990 --> 00:06:05,975
+将这些矩阵运用于良好的功能中
+function those matrices in in a good
+
+101
+00:06:05,980 --> 00:06:10,415
+范围所以你这个课程不会是一个
+range so it's you this course won't be a
+
+102
+00:06:10,420 --> 00:06:13,685
+统计课程，但它会使用
+statistics course but it will use
+
+103
+00:06:13,690 --> 00:06:16,955
+深度学习这样的统计数据
+statistics as deep learning does so
+
+104
+00:06:16,960 --> 00:06:19,985
+那些是线性的四个主题
+those are the four subjects linear
+
+105
+00:06:19,990 --> 00:06:23,935
+代数和深度学习两大问题
+algebra and deep learning two big ones
+
+106
+00:06:23,940 --> 00:06:28,025
+优化和统计必不可少
+optimization and statistics essential
+
+107
+00:06:28,030 --> 00:06:32,615
+所以我希望你会喜欢这些视频
+also so I hope you'll enjoy the videos
+
+108
+00:06:32,620 --> 00:06:34,524
+和
+and
+
+109
+00:06:34,529 --> 00:06:37,694
+这需要两个，然后去
+that takes both and go to the
+
+110
+00:06:37,699 --> 00:06:41,694
+OpenCourseWare网站ocw.mit.edu
+OpenCourseWare site ocw.mit.edu
+
+111
+00:06:41,699 --> 00:06:44,904
+了解视频以外的全貌
+for the full picture beyond the videos
+
+112
+00:06:44,909 --> 00:06:48,624
+有运动问题讨论
+there are exercises problems discussion
+
+113
+00:06:48,629 --> 00:06:51,174
+更多的是使它成为一个完整的
+lots more toward making it a complete
+
+114
+00:06:51,179 --> 00:06:56,029
+我希望你喜欢的演讲
+
+115
+00:06:51,179 --> 00:07:02,610
+presentation which I hope you like
+
+116
+00:07:02,620 --> 00:07:04,680
+您
+you
+

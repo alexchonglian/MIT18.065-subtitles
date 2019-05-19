@@ -1,0 +1,3988 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:21,394
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:21,399 --> 00:00:24,545
+所以我周末都在努力工作
+so I've worked hard over the weekend
+
+10
+00:00:24,550 --> 00:00:27,045
+弄清楚我上次做了什么
+figured out what I was doing last time
+
+11
+00:00:27,050 --> 00:00:29,105
+和我在做什么这个时间和
+and what I'm doing this time and
+
+12
+00:00:29,110 --> 00:00:32,775
+改进了笔记，所以你会得到一个新的
+improved the notes so you'll get a new
+
+13
+00:00:32,780 --> 00:00:36,585
+关于上一讲和以后的一套笔记
+set of notes on the last lecture and on
+
+14
+00:00:36,590 --> 00:00:41,145
+这个和我有点得到了
+this one and I kind of got to got a
+
+15
+00:00:41,150 --> 00:00:43,515
+我们在做什么更好的画面和
+better picture of what we're doing and
+
+16
+00:00:43,520 --> 00:00:47,535
+该委员会的目标是描述
+that board is aiming to describe the
+
+17
+00:00:47,540 --> 00:00:50,324
+我们最后做的事情的大局
+large picture of what we're doing last
+
+18
+00:00:50,329 --> 00:00:54,555
+时间，这次是最后一次
+time and this time so last time was
+
+19
+00:00:54,560 --> 00:00:59,505
+关于a时的逆变化
+about changes in a inverse when a
+
+20
+00:00:59,510 --> 00:01:04,115
+改变这个时间是关于变化的
+changed this time is about changes in
+
+21
+00:01:04,120 --> 00:01:07,515
+特征值和奇异变化
+eigenvalues and changes in singular
+
+22
+00:01:07,520 --> 00:01:10,245
+当你可以想象的变化时的价值观
+values when a changes you can imagine
+
+23
+00:01:10,250 --> 00:01:12,904
+这是一个自然重要的情况
+this is a natural important situation
+
+24
+00:01:12,909 --> 00:01:17,775
+矩阵移动，因此他们的
+matrices move and therefore their
+
+25
+00:01:17,780 --> 00:01:21,965
+反转改变了它们的特征值变化
+inverses change their eigenvalues change
+
+26
+00:01:21,970 --> 00:01:27,224
+他们的奇异价值会改变，而你就是这样
+their singular values change and it you
+
+27
+00:01:27,229 --> 00:01:30,585
+希望有一个公式，所以我们确实有一个
+hope for a formula well so we did have a
+
+28
+00:01:30,590 --> 00:01:35,745
+上次改变的公式
+formula for last time for the change in
+
+29
+00:01:35,750 --> 00:01:40,904
+反矩阵这样和我一样
+the inverse matrix so that's and I
+
+30
+00:01:40,909 --> 00:01:44,385
+没有得到每个U和V转置
+didn't get every U and V transpose in
+
+31
+00:01:44,390 --> 00:01:48,945
+视频中的正确位置，但在或
+the right place in the video but or in
+
+32
+00:01:48,950 --> 00:01:52,755
+笔记的第一个版本，但我
+the first version of the notes but I
+
+33
+00:01:52,760 --> 00:01:56,385
+希望有这样的公式
+hope that there'll be the formula that
+
+34
+00:01:56,390 --> 00:01:59,864
+Woodberrymorrison公式将是
+that Woodberry morrison formula will be
+
+35
+00:01:59,869 --> 00:02:00,675
+正确
+correct
+
+36
+00:02:00,680 --> 00:02:07,485
+这次确定，所以因此我不会回去了
+this time ok so so I won't go back over
+
+37
+00:02:07,490 --> 00:02:10,155
+那部分
+that part
+
+38
+00:02:10,160 --> 00:02:13,845
+但我也意识到还有另一个
+but I realize also there there's another
+
+39
+00:02:13,850 --> 00:02:16,635
+问题是，我们能回答的时候
+question that we can answer when the
+
+40
+00:02:16,640 --> 00:02:20,895
+改变时的变化非常小
+change is very small when the change in
+
+41
+00:02:20,900 --> 00:02:27,015
+a是da或Deltaa的一个小变化和
+a is da or Delta a of a small change and
+
+42
+00:02:27,020 --> 00:02:29,675
+这当然是微积分的意义所在
+that's of course what calculus is about
+
+43
+00:02:29,680 --> 00:02:35,715
+所以我必须要有一些平行的主题
+so I have to sort of parallel topics
+
+44
+00:02:35,720 --> 00:02:41,085
+这里的衍生物是什么？
+here what is the derivative when the
+
+45
+00:02:41,090 --> 00:02:46,305
+它的变化是无穷小的
+changes of of it is infinitesimal and
+
+46
+00:02:46,310 --> 00:02:50,265
+什么是实际的变化
+what is the actual change when the
+
+47
+00:02:50,270 --> 00:02:56,325
+变化是有限大小没关系所以现在让我
+change is finite size okay so now let me
+
+48
+00:02:56,330 --> 00:02:59,115
+说什么我们可以做，什么不能做
+say what we can do and what we can't do
+
+49
+00:02:59,120 --> 00:03:06,105
+因为哦，我会先搞清楚
+for oh I'll start out by figuring out
+
+50
+00:03:06,110 --> 00:03:08,835
+衍生物的反转是什么
+what the derivative is for the inverse
+
+51
+00:03:08,840 --> 00:03:11,295
+这就像最后一次完成一样
+so that's like completing the last time
+
+52
+00:03:11,300 --> 00:03:14,985
+对于无穷小的变化，我会移动
+for infinitesimal changes then I'll move
+
+53
+00:03:14,990 --> 00:03:19,275
+关于特征值和特征值的变化
+on to changes in the eigenvalues and
+
+54
+00:03:19,280 --> 00:03:23,595
+奇异的价值观，你不能
+singular values and there you cannot
+
+55
+00:03:23,600 --> 00:03:27,585
+期待一个精确的公式，我们有一个我们有
+expect an exact formula we had a we had
+
+56
+00:03:27,590 --> 00:03:31,005
+一个完全不同的公式
+a formula that was exact apart from any
+
+57
+00:03:31,010 --> 00:03:34,215
+这个错别字，我们会找到一个公式
+typos for this and we'll find a formula
+
+58
+00:03:34,220 --> 00:03:36,015
+为此，我们将找到一个公式
+for this and we'll find a formula for
+
+59
+00:03:36,020 --> 00:03:38,685
+这一点，对于清楚，一次会
+that and for that well that one will
+
+60
+00:03:38,690 --> 00:03:41,115
+来自这一个，所以这将是一个
+come from this one so so this will be a
+
+61
+00:03:41,120 --> 00:03:44,745
+今天突出强调特征值如何
+highlight today how do the eigen values
+
+62
+00:03:44,750 --> 00:03:49,995
+当矩阵改变但我们改变时
+change when the matrix changes but we
+
+63
+00:03:50,000 --> 00:03:52,875
+我们无法与此平行
+won't be able to do parallel to this we
+
+64
+00:03:52,880 --> 00:03:55,515
+我们将无法做到
+won't be able to oh well we will be able
+
+65
+00:03:55,520 --> 00:03:57,885
+为你做些事情的变化有限
+to do something for finite changes
+
+66
+00:03:57,890 --> 00:04:00,405
+这对数学来说很重要
+that's important the mathematics would
+
+67
+00:04:00,410 --> 00:04:03,105
+必须继续打击它的问题
+have to keep hitting it that problem
+
+68
+00:04:03,110 --> 00:04:05,925
+直到它到达某个地方所以我不会得到一个
+until it got somewhere so I won't get an
+
+69
+00:04:05,930 --> 00:04:08,204
+改变的确切公式也是如此
+exact formula for the change that's too
+
+70
+00:04:08,209 --> 00:04:12,585
+很多，但我会得到不平等有多大
+much but I'll get inequalities how big
+
+71
+00:04:12,590 --> 00:04:14,445
+这种变化可能是我能说的
+that change could be what can I say
+
+72
+00:04:14,450 --> 00:04:18,285
+关于它，所以这些是高度的
+about it so these are that's highly
+
+73
+00:04:18,290 --> 00:04:21,335
+有趣的是我可以从这开始
+interesting may I start with the
+
+74
+00:04:21,340 --> 00:04:23,985
+完成上一课的内容
+completing the last lecture what
+
+75
+00:04:23,990 --> 00:04:26,594
+逆的导数，所以我
+the derivative of the inverse so I'm
+
+76
+00:04:26,599 --> 00:04:30,465
+想到这里是什么设置了
+thinking here so what's the setup the
+
+77
+00:04:30,470 --> 00:04:37,694
+设置是我的矩阵，取决于时间
+setup is my matrix a depends on time on
+
+78
+00:04:37,699 --> 00:04:46,325
+T和它有一个逆逆
+T and it has an inverse a inverse
+
+79
+00:04:46,330 --> 00:04:50,775
+取决于T，如果我知道这一点
+depends on T and if I know this
+
+80
+00:04:50,780 --> 00:04:52,965
+换言之，如果我知道da
+dependence in other words if I know da
+
+81
+00:04:52,970 --> 00:04:56,715
+DT矩阵的含义是多少
+DT how much what how the matrix is
+
+82
+00:04:56,720 --> 00:04:58,754
+取决于T然后我希望我能
+depending on T then I hope I could
+
+83
+00:04:58,759 --> 00:05:01,515
+弄清楚a的衍生物是什么
+figure out what the derivative of a
+
+84
+00:05:01,520 --> 00:05:04,904
+逆是我们应该能够做到的
+inverse is that we should be able to do
+
+85
+00:05:04,909 --> 00:05:08,925
+这就让我开始吧
+this so let me just start with the it's
+
+86
+00:05:08,930 --> 00:05:13,455
+并不难，它补充了这个
+not hard and it complements this one by
+
+87
+00:05:13,460 --> 00:05:16,995
+做微积分的情况下将
+doing the calculus case the the
+
+88
+00:05:17,000 --> 00:05:21,404
+微小变化，所以我想要去
+infinitesimal change so I want to get to
+
+89
+00:05:21,409 --> 00:05:27,974
+我得到了我能得到的
+that I'm given I'm given I can figure
+
+90
+00:05:27,979 --> 00:05:30,855
+a的变化和我的工作是
+out the change in a and my job is to
+
+91
+00:05:30,860 --> 00:05:39,645
+找到一个改变这个a的衍生物
+find a change the derivative of this a
+
+92
+00:05:39,650 --> 00:05:48,154
+反之亦然所以这里很方便
+and of a inverse okay so here's a handy
+
+93
+00:05:48,159 --> 00:05:52,935
+身份，我只是把它放在这里
+identity and I just put this here so
+
+94
+00:05:52,940 --> 00:06:00,254
+这是我想要的有用身份
+here's my useful identity I want to so
+
+95
+00:06:00,259 --> 00:06:02,955
+就像上次我开始用一个
+as last time I start with a with a
+
+96
+00:06:02,960 --> 00:06:05,085
+有限变化其微积分总是如此
+finite change its calculus always does
+
+97
+00:06:05,090 --> 00:06:08,055
+那个权利从一个三角洲T开始
+that right starts with a delta T and
+
+98
+00:06:08,060 --> 00:06:11,085
+然后它变为零所以我在这里
+then it goes to zero so so here I'm up
+
+99
+00:06:11,090 --> 00:06:14,414
+在完整的尺寸变化，所以我认为
+at the full size change so I think that
+
+100
+00:06:14,419 --> 00:06:21,425
+这等于B逆a-Ba
+this is equal to B inverse a minus B a
+
+101
+00:06:21,430 --> 00:06:28,154
+反过来，如果它是真的那就是a
+inverse and that's if it's true it's a
+
+102
+00:06:28,159 --> 00:06:31,414
+非常酷的配方，看起来是真的
+pretty cool formula and look it is true
+
+103
+00:06:31,419 --> 00:06:33,974
+因为在这个右手边我
+because over on this right hand side I
+
+104
+00:06:33,979 --> 00:06:36,564
+有B反时间aa
+have B inverse times a a
+
+105
+00:06:36,569 --> 00:06:38,515
+与身份相比，这是我的B.
+versus the identity so that's my B
+
+106
+00:06:38,520 --> 00:06:41,394
+逆，我有减去B
+inverse and I have the minus the B
+
+107
+00:06:41,399 --> 00:06:43,614
+逆B是有一个身份
+inverse B is the identity there is a
+
+108
+00:06:43,619 --> 00:06:48,944
+反之，这是好的，所以这是一个
+inverse it's good right so so that is a
+
+109
+00:06:48,949 --> 00:06:52,344
+从那个方面我们可以真正学习
+from that well we I could actually learn
+
+110
+00:06:52,349 --> 00:07:02,325
+从那个等级的等级
+from that the the rank of this equals
+
+111
+00:07:02,330 --> 00:07:08,844
+这是一个重点
+the rank of this that's that's a point
+
+112
+00:07:08,849 --> 00:07:11,605
+我从大公式制造但现在
+that I made from the big formula but now
+
+113
+00:07:11,610 --> 00:07:15,684
+我们可以从简单的公式中看到它
+we can see it from easy formula I'm
+
+114
+00:07:15,689 --> 00:07:18,084
+假设B和a到处都是
+assuming that B and a everywhere here
+
+115
+00:07:18,089 --> 00:07:19,735
+我假设a和b是可逆的
+I'm assuming that a and b are invertible
+
+116
+00:07:19,740 --> 00:07:22,524
+当我乘以一个矩阵时
+matrices so when i multiply by an
+
+117
+00:07:22,529 --> 00:07:25,134
+可变矩阵不会改变
+invertible matrix that does not change
+
+118
+00:07:25,139 --> 00:07:28,524
+排名所以那些排名相同
+the rank so the those have the same rank
+
+119
+00:07:28,529 --> 00:07:31,344
+但我会比那更进一步
+but I'm gonna get further than that I
+
+120
+00:07:31,349 --> 00:07:36,434
+想找到这个没问题，那我该怎么办呢
+want to find this okay so how do I go
+
+121
+00:07:36,439 --> 00:07:41,004
+我该如何继续这项工作呢
+how do I go forward with that job to
+
+122
+00:07:41,009 --> 00:07:43,374
+很好地找到宇宙的衍生物
+find the derivative of the universe well
+
+123
+00:07:43,379 --> 00:07:47,355
+我要让我打电话给这个
+I'm gonna let I'm gonna call this a
+
+124
+00:07:47,360 --> 00:07:52,554
+在这里改变倒数
+change in a inverse and over here
+
+125
+00:07:52,559 --> 00:08:02,754
+我会有V会是的，好吧，看对了
+I'll have V will be yeah okay see right
+
+126
+00:08:02,759 --> 00:08:08,304
+是的，所以B逆将这是真的
+yeah so B inverse will be this is really
+
+127
+00:08:08,309 --> 00:08:14,994
+这是一个加上Delta逆转而且这个
+this is a plus Delta a inverse and this
+
+128
+00:08:14,999 --> 00:08:18,355
+很好，这是一个减B，所以这是
+is well that's a minus B so that's
+
+129
+00:08:18,360 --> 00:08:23,264
+真的减去Delta一个减去右边
+really minus Delta a minus right
+
+130
+00:08:23,269 --> 00:08:29,094
+变化是从A到B的变化
+the change is from A to B is the change
+
+131
+00:08:29,099 --> 00:08:32,305
+我正在看这个区别
+here I'm looking at this the difference
+
+132
+00:08:32,310 --> 00:08:34,884
+减去减B所以这是一个变化，
+a minus B so it's minus a change and
+
+133
+00:08:34,889 --> 00:08:38,305
+在这里，我有一个反向我没有做过
+here I have a inverse I haven't done
+
+134
+00:08:38,310 --> 00:08:43,875
+除了介绍这个Delta以外的任何东西
+anything except to introduce this Delta
+
+135
+00:08:43,880 --> 00:08:46,944
+为了让我离开它并带来
+for the and get me out of it and brought
+
+136
+00:08:46,949 --> 00:08:49,944
+三角洲现在好吗我想做
+Delta in okay now I want to do
+
+137
+00:08:49,949 --> 00:08:51,225
+计算
+calculations
+
+138
+00:08:51,230 --> 00:08:56,155
+所以我想B是你知道的
+so I'm thinking of B as being you know a
+
+139
+00:08:56,160 --> 00:08:58,795
+有点儿，有点儿
+little a little there's a sort of a
+
+140
+00:08:58,800 --> 00:09:01,825
+三角洲T和我双方要分
+delta T and I'm gonna divide by both
+
+141
+00:09:01,830 --> 00:09:05,455
+如果我，deltaTI必须这样做
+sides by delta T I have to do this if I
+
+142
+00:09:05,460 --> 00:09:14,365
+想要，现在我会让DeltaT归零
+want and now I'll let Delta T go to zero
+
+143
+00:09:14,370 --> 00:09:20,485
+所以这是最终出现的微积分
+so this is calculus appears finally are
+
+144
+00:09:20,490 --> 00:09:28,075
+我不会说我们的敌人微积分但是
+I won't say our enemy calculus but but
+
+145
+00:09:28,080 --> 00:09:31,645
+有一种类似的竞争
+there's a sort of like competition
+
+146
+00:09:31,650 --> 00:09:34,765
+线性代数与微积分之间的关系
+between linear algebra and calculus for
+
+147
+00:09:34,770 --> 00:09:40,735
+对于大学数学微积分已经有了
+for college mathematics calculus has had
+
+148
+00:09:40,740 --> 00:09:44,425
+这是太多的时间和注意力
+far far too much time and attention it's
+
+149
+00:09:44,430 --> 00:09:46,855
+喜欢它有三到四个学期
+like it gets three or four semesters of
+
+150
+00:09:46,860 --> 00:09:49,315
+微积分给没有得到任何人的人
+calculus for people who don't get any
+
+151
+00:09:49,320 --> 00:09:51,535
+线性代数我很高兴这不会出现
+linear algebra I'm glad this won't be on
+
+152
+00:09:51,540 --> 00:09:56,305
+视频，但我担心它无论如何
+the video but I'm afraid it will anyway
+
+153
+00:09:56,310 --> 00:09:58,915
+当然微积分就好了
+of course calculus is fine in its place
+
+154
+00:09:58,920 --> 00:10:02,965
+好吧所以现在这里的地方让Deltat
+okay so here's its place now let Delta t
+
+155
+00:10:02,970 --> 00:10:05,245
+归零，那么这个等式是什么
+go to zero so what does this equation
+
+156
+00:10:05,250 --> 00:10:12,565
+成为它刚刚结束，每个人都知道
+become it just ends and everybody knows
+
+157
+00:10:12,570 --> 00:10:15,445
+随着极限的ΔT去
+that as the limit as delta T goes to
+
+158
+00:10:15,450 --> 00:10:20,665
+零我更换三角洲的由三角洲如此
+zero I replace Delta's by the Delta so
+
+159
+00:10:20,670 --> 00:10:23,575
+这个Delta除以deltaT有
+this Delta a divided by delta T that has
+
+160
+00:10:23,580 --> 00:10:26,365
+每个顶部都有意义的意思
+a meaning each the top has a meaning and
+
+161
+00:10:26,370 --> 00:10:29,545
+底部有一个平均值，但随后在
+the bottom has a mean but then in the
+
+162
+00:10:29,550 --> 00:10:33,595
+限制它是一个有意义的比例
+limit it's a ratio that has a meaning so
+
+163
+00:10:33,600 --> 00:10:35,005
+da本身
+da by itself
+
+164
+00:10:35,010 --> 00:10:37,255
+我没有附加含义
+I don't attach a meaning to that's
+
+165
+00:10:37,260 --> 00:10:40,165
+无穷小这是极限所以那是
+infinitesimal it's the limit so that's
+
+166
+00:10:40,170 --> 00:10:42,835
+为什么我想要三角洲的delta，所以我
+why I wanted a delta over a delta so I
+
+167
+00:10:42,840 --> 00:10:45,385
+可以做微积分所以现在发生的事情
+could do calculus so what happens now as
+
+168
+00:10:45,390 --> 00:10:47,785
+deltaT变为零，当然也是
+delta T goes to zero and of course as
+
+169
+00:10:47,790 --> 00:10:50,515
+deltaT变为零，携带Delta
+delta T goes to zero that carries Delta
+
+170
+00:10:50,520 --> 00:10:55,305
+a到零，这样就变成了逆
+a to zero so that becomes a inverse and
+
+171
+00:10:55,310 --> 00:10:59,035
+这种方法与deltaT相比如何？
+what does this approach as delta T goes
+
+172
+00:10:59,040 --> 00:11:00,985
+为零
+to zero
+
+173
+00:11:00,990 --> 00:11:04,295
+da/dt用那个减号哦我有
+da/dt with that minus sign oh I've got
+
+174
+00:11:04,300 --> 00:11:07,774
+要记住减号减号是
+to remember the minus sign minus sign is
+
+175
+00:11:07,779 --> 00:11:11,345
+在这里-我带出了减号
+in here - I'm bringing out the minus
+
+176
+00:11:11,350 --> 00:11:14,615
+那么这就像我们所做的那样
+sign then this was a inverse as we had
+
+177
+00:11:14,620 --> 00:11:21,385
+和那个da/dt那是相反的
+and that da/dt and that's a inverse
+
+178
+00:11:21,390 --> 00:11:27,355
+这就是我们的公式一个很好的公式，
+that's our formula a nice formula which
+
+179
+00:11:27,360 --> 00:11:31,435
+某种属于人们的知识
+sort of belongs in people's knowledge
+
+180
+00:11:31,440 --> 00:11:35,765
+你认识到如果a是1比1
+you recognize that if a was a 1 by 1
+
+181
+00:11:35,770 --> 00:11:40,265
+矩阵我们可以称之为X而不是a
+matrix we could call it X instead of a
+
+182
+00:11:40,270 --> 00:11:45,125
+如果a，如果有一个1乘1的矩阵X则
+if a if a there's a 1 by 1 matrix X then
+
+183
+00:11:45,130 --> 00:11:46,834
+我正在看到的公式
+I'm seeing the formula for the
+
+184
+00:11:46,839 --> 00:11:52,145
+X的1的导数写一个逆
+derivative of 1 over X write a inverse
+
+185
+00:11:52,150 --> 00:11:56,135
+只是一个1比1的情况，它只是X超过1所以
+just a 1 by 1 case it's just 1 over X so
+
+186
+00:11:56,140 --> 00:11:58,655
+1或TI的衍生物应该
+the derivative of 1 or maybe T I should
+
+187
+00:11:58,660 --> 00:12:02,855
+如果a只是T那么说
+be saying if if a is just T then the
+
+188
+00:12:02,860 --> 00:12:06,245
+T相对于T的导数为1
+derivative of 1 over T with respect to T
+
+189
+00:12:06,250 --> 00:12:15,035
+我是正方形，是正方形的负1
+is is minus 1 over T squared right I've
+
+190
+00:12:15,040 --> 00:12:18,125
+只是逐个案例，我们知道这是
+just the one by one case we know that's
+
+191
+00:12:18,130 --> 00:12:20,435
+什么是微积分，现在我们能够做到
+what calculus does and now we're able to
+
+192
+00:12:20,440 --> 00:12:24,454
+通过n个案例来做那个就是那个
+do that n by n case so that's that's
+
+193
+00:12:24,459 --> 00:12:28,985
+就像好，然后是先生
+just like good and then it's it sir
+
+194
+00:12:28,990 --> 00:12:32,735
+平行于这样的公式
+parallel to formulas like this which are
+
+195
+00:12:32,740 --> 00:12:37,115
+这个deltaa没有变为0的地方
+where this delta a is not gone to 0 it's
+
+196
+00:12:37,120 --> 00:12:39,605
+全尺寸但低级别
+full size but low-rank
+
+197
+00:12:39,610 --> 00:12:42,065
+这实际上就是公式
+that was the point actually the formula
+
+198
+00:12:42,070 --> 00:12:43,685
+是它会适用，如果排名
+would be it would apply if the rank
+
+199
+00:12:43,690 --> 00:12:46,865
+虽然不低，但利息却很低
+wasn't low but the interest is in low
+
+200
+00:12:46,870 --> 00:12:47,875
+秩
+rank
+
+201
+00:12:47,880 --> 00:12:50,795
+我们对此有好处吗？
+are we good for this that's really the
+
+202
+00:12:50,800 --> 00:12:53,695
+完成最后一次讲座
+completion of last times lecture with
+
+203
+00:12:53,700 --> 00:12:58,445
+与衍生品确定好来回来
+with derivatives ok ok come in come back
+
+204
+00:12:58,450 --> 00:13:01,925
+来到这里新的东西现在lambdas
+to here to the new thing now lambdas
+
+205
+00:13:01,930 --> 00:13:05,345
+让我们关注lambdas特征值如何
+let's focus on lambdas eigenvalues how
+
+206
+00:13:05,350 --> 00:13:08,075
+当特征值改变时
+does the eigen value change when the
+
+207
+00:13:08,080 --> 00:13:10,985
+矩阵改变请问该特征值
+matrix changes how does the eigen value
+
+208
+00:13:10,990 --> 00:13:13,265
+当矩阵发生变化时我会改变
+change when the matrix changes so I have
+
+209
+00:13:13,270 --> 00:13:14,695
+至
+to
+
+210
+00:13:14,700 --> 00:13:18,665
+可能性一个是小变化的时候
+possibilities one is small change when
+
+211
+00:13:18,670 --> 00:13:20,495
+我在做微积分，我让一个
+I'm doing calculus and I'm letting a
+
+212
+00:13:20,500 --> 00:13:25,325
+deltaT变为零，另一个变满
+delta T go to zero the other is full
+
+213
+00:13:25,330 --> 00:13:28,235
+大小顺序改变我不会改变的地方
+size order one change where I will not
+
+214
+00:13:28,240 --> 00:13:30,035
+能够给你一个公式为
+be able to give you a formula for the
+
+215
+00:13:30,040 --> 00:13:32,885
+新的lambdas但我能告诉你
+new lambdas but I'll be able to tell you
+
+216
+00:13:32,890 --> 00:13:36,305
+关于他们的重要事实就是如此
+important facts about them so that's so
+
+217
+00:13:36,310 --> 00:13:39,215
+现在这是今天的演讲
+this is this is today's lecture now you
+
+218
+00:13:39,220 --> 00:13:40,954
+可以说是完成了
+could say that's the completion of
+
+219
+00:13:40,959 --> 00:13:44,635
+周五的演讲怎么样d拉姆达DT
+Friday's lecture what about D lambda DT
+
+220
+00:13:44,640 --> 00:13:50,345
+这是一个很好的公式，这是一个证据
+it's a nice formula and it's a proof is
+
+221
+00:13:50,350 --> 00:13:54,204
+好玩-我对这个证据感到非常高兴
+fun - I was very happy about this proof
+
+222
+00:13:54,209 --> 00:13:58,024
+好吧所以我猜微积分出现了
+okay so I guess calculus is showing up
+
+223
+00:13:58,029 --> 00:14:00,815
+在这个中间板上，我该怎么做
+here on this middle board so how do I
+
+224
+00:14:00,820 --> 00:14:04,415
+从特征值开始
+start with the eigenvalues well start
+
+225
+00:14:04,420 --> 00:14:08,915
+我所知道的，所以这些都是事实
+with what I know so so these are facts
+
+226
+00:14:08,920 --> 00:14:15,785
+你可以说，我必须得到
+you could say that I have to get the
+
+227
+00:14:15,790 --> 00:14:17,225
+特征值，当然
+eigenvalues into it and of course
+
+228
+00:14:17,230 --> 00:14:19,115
+特征值必须带有特征
+eigenvalues have to come with eigen
+
+229
+00:14:19,120 --> 00:14:24,305
+矢量，所以我会再次使用它
+vectors so I'll again use a of T it'll
+
+230
+00:14:24,310 --> 00:14:27,215
+取决于T和特征向量
+be depending on T and an eigen vector
+
+231
+00:14:27,220 --> 00:14:30,485
+这取决于T是一个特征值
+that depends on T is an eigen value that
+
+232
+00:14:30,490 --> 00:14:33,155
+取决于T倍的特征向量
+depends on T times an eigen vector that
+
+233
+00:14:33,160 --> 00:14:38,255
+取决于我们的事实
+depends on T great a fact one that we
+
+234
+00:14:38,260 --> 00:14:41,635
+计划采取某种方式的衍生物
+plan to take the derivative of somehow
+
+235
+00:14:41,640 --> 00:14:45,065
+还有第二个事实
+there's also a second fact that comes
+
+236
+00:14:45,070 --> 00:14:48,785
+在这里发挥什么是交易
+into play here what's the deal on the
+
+237
+00:14:48,790 --> 00:14:52,985
+他们就是转置的特征值
+eigenvalues of a transpose they're the
+
+238
+00:14:52,990 --> 00:14:55,985
+转置的特征值是相同的
+same the eigenvalues of a transpose are
+
+239
+00:14:55,990 --> 00:14:57,875
+与a的特征值相同
+the same as the eigen values of a are
+
+240
+00:14:57,880 --> 00:15:01,535
+特征向量通常不同
+the eigenvectors the same not usually of
+
+241
+00:15:01,540 --> 00:15:05,584
+当然，如果矩阵是对称的话
+course if the matrix was symmetric then
+
+242
+00:15:05,589 --> 00:15:07,415
+a和转置是一样的
+a and a transpose are just the same
+
+243
+00:15:07,420 --> 00:15:09,785
+所以他们会有这样的转置
+thing so they would have so a transpose
+
+244
+00:15:09,790 --> 00:15:13,105
+通常会有那个特征值
+would have that eigenvalue but generally
+
+245
+00:15:13,110 --> 00:15:15,514
+特征向量，但它通常有一个
+eigenvector but it generally it has a
+
+246
+00:15:15,519 --> 00:15:20,855
+不同的特征向量，它真的
+different eigenvector and it really to
+
+247
+00:15:20,860 --> 00:15:22,805
+保持它与这一个分开
+keep it sort of separate from this one
+
+248
+00:15:22,810 --> 00:15:25,355
+让我们称之为它，它会有相同的
+let's call it y it'll have the same
+
+249
+00:15:25,360 --> 00:15:27,565
+特征值我打算打电话
+eigenvalue I'm going to call
+
+250
+00:15:27,570 --> 00:15:31,035
+为什么，但我要把它变成行向量
+why but I'm gonna make it a row vector
+
+251
+00:15:31,040 --> 00:15:34,885
+因为转置是代替的
+because a transpose is what instead of
+
+252
+00:15:34,890 --> 00:15:36,895
+写下转置我会留下来的
+writing down a transpose I'm gonna stay
+
+253
+00:15:36,900 --> 00:15:39,325
+用a但是把特征值放在
+with a but put the eigenvalue on the
+
+254
+00:15:39,330 --> 00:15:42,085
+左边所以这里是特征值
+left side so here here's the eigenvalue
+
+255
+00:15:42,090 --> 00:15:48,655
+左边的一个特征向量，它有
+eigenvector for a on the left and it has
+
+256
+00:15:48,660 --> 00:15:51,805
+相同的特征值时间
+the same eigenvalue times that
+
+257
+00:15:51,810 --> 00:15:54,925
+特征向量，但我在向量中是一个
+eigenvector but that i in vector is a
+
+258
+00:15:54,930 --> 00:15:58,555
+我当然非常喜欢这个
+row I am very of course this is an
+
+259
+00:15:58,560 --> 00:16:02,755
+行之间的行相等于我的行
+equality between rows a row times my
+
+260
+00:16:02,760 --> 00:16:05,605
+矩阵给出一行，这就是
+matrix gives a row so that's the
+
+261
+00:16:05,610 --> 00:16:09,325
+它具有相同的特征值
+eigenvalues of that it has the same
+
+262
+00:16:09,330 --> 00:16:11,755
+特征值所以这是完全的
+eigenvalue so this is this is totally
+
+263
+00:16:11,760 --> 00:16:14,755
+平行于完全平行和
+parallel to that totally parallel and
+
+264
+00:16:14,760 --> 00:16:18,295
+也许有点不太确定
+maybe there's sort of less definitely
+
+265
+00:16:18,300 --> 00:16:25,765
+不太常见，但这只是一回事
+less seen but it's just the same thing
+
+266
+00:16:25,770 --> 00:16:28,615
+对于你使用每个人看到的转置
+for a transpose you use everybody sees
+
+267
+00:16:28,620 --> 00:16:31,165
+如果我改变这个等式，那么我就是
+if I transpose this equation then I've
+
+268
+00:16:31,170 --> 00:16:33,535
+得到的东西看起来像那样但是
+got something that looks like that but
+
+269
+00:16:33,540 --> 00:16:36,025
+我现在宁愿这样做了
+I'd rather have it this way now one more
+
+270
+00:16:36,030 --> 00:16:38,305
+关于我需要的这一事实的事情
+thing about these one more fact I need
+
+271
+00:16:38,310 --> 00:16:42,805
+我必须要有一些
+there's there has to be some I some
+
+272
+00:16:42,810 --> 00:16:46,465
+规范化应该怎样多久
+normalization how long how what should
+
+273
+00:16:46,470 --> 00:16:48,895
+是现在X可能的长度
+be the length of the right now X could
+
+274
+00:16:48,900 --> 00:16:52,045
+有任何长度Y可以有任何长度
+have any lengths Y could have any length
+
+275
+00:16:52,050 --> 00:16:54,495
+并且有一种自然的正常化
+and there's a natural normalization
+
+276
+00:16:54,500 --> 00:17:00,475
+这是y转置时间X等于
+which is y transpose times X equal to
+
+277
+00:17:00,480 --> 00:17:06,324
+规范化的一个并不能说明
+one that normalizes the to doesn't tell
+
+278
+00:17:06,329 --> 00:17:08,965
+我是X的长度还是Y的长度
+me the length of X or the length of Y
+
+279
+00:17:08,970 --> 00:17:11,845
+但它告诉我他们说的关键
+but it tells me the key saying they're
+
+280
+00:17:11,850 --> 00:17:15,235
+两者的长度，所以我所拥有的
+lengths of both so what I've what I've
+
+281
+00:17:15,240 --> 00:17:18,715
+得到那里跟踪一个本征
+got there is tracking along one eigen
+
+282
+00:17:18,720 --> 00:17:22,194
+值和它的一对特征向量和
+value and it's pair of eigen vectors and
+
+283
+00:17:22,199 --> 00:17:24,535
+你总是欢迎想到的
+you're always welcome to think of the
+
+284
+00:17:24,540 --> 00:17:26,815
+当y和X相同时的对称情况
+symmetric case when y and X are the same
+
+285
+00:17:26,820 --> 00:17:30,115
+然后我会叫他们问我哦
+and then I would call them Q oh well I
+
+286
+00:17:30,120 --> 00:17:32,035
+如果它是对称的，它会称它们为Q.
+would call them Q if it was a symmetric
+
+287
+00:17:32,040 --> 00:17:36,325
+矩阵，但如果是的话，我会的
+matrix but I would have if yeah so if
+
+288
+00:17:36,330 --> 00:17:38,305
+它是一个对称矩阵，我称之为
+it's a symmetric matrix I would call the
+
+289
+00:17:38,310 --> 00:17:41,155
+两个特征向量都称为q
+both eigenvectors would be called q
+
+290
+00:17:41,160 --> 00:17:44,625
+这就是说队列是一个
+and this would be saying that queue is a
+
+291
+00:17:44,630 --> 00:17:48,025
+单位向量，所以这是所有的东西
+unit vector right so this is all stuff
+
+292
+00:17:48,030 --> 00:17:50,965
+我们知道，实际上也许我应该
+we know and actually maybe I should
+
+293
+00:17:50,970 --> 00:17:55,795
+用矩阵表示法写出来就是这样
+write it in in matrix notation just so
+
+294
+00:17:55,800 --> 00:18:05,035
+因为这是重要的，如果这是一个
+cuz it's important so if that's for one
+
+295
+00:18:05,040 --> 00:18:07,525
+特征向量这适用于所有人
+eigenvector this is for all of them at
+
+296
+00:18:07,530 --> 00:18:12,025
+一旦每个人都与它的x是
+once everybody's with it the x's are the
+
+297
+00:18:12,030 --> 00:18:17,095
+我X的列需要仔细考虑AMDA是
+columns of X and I need to mull aMDA is
+
+298
+00:18:17,100 --> 00:18:19,825
+lambdas的对角矩阵和它
+the diagonal matrix of lambdas and it
+
+299
+00:18:19,830 --> 00:18:21,865
+必须坐在右边这样才能
+has to sit on the right so that it will
+
+300
+00:18:21,870 --> 00:18:24,805
+将这些列相乘，这就像
+multiply those columns so this is like
+
+301
+00:18:24,810 --> 00:18:26,935
+一切的一切特征向量一次
+all all eigenvectors at once
+
+302
+00:18:26,940 --> 00:18:29,815
+这将是什么意思
+what would this one be this would be
+
+303
+00:18:29,820 --> 00:18:42,205
+像Y转置等于Y转置
+like Y transpose a equals a Y transpose
+
+304
+00:18:42,210 --> 00:18:46,285
+Ÿs等于O和可能这些都是
+Y s equals o and probably these are
+
+305
+00:18:46,290 --> 00:18:48,775
+乘以它有趣我不想
+multiplied it's funny I don't want to
+
+306
+00:18:48,780 --> 00:18:51,955
+如果我写Y，那就说我感觉不对劲
+put what I'm I feel wrong if I write Y
+
+307
+00:18:51,960 --> 00:18:56,965
+像这里一样在X转置
+transpose here like here the X was on
+
+308
+00:18:56,970 --> 00:18:59,245
+右侧和左侧和专辑一个
+the right and on the left and album one
+
+309
+00:18:59,250 --> 00:19:09,535
+哦，是的，你转置是的好，所以什么
+oh it yeah y transpose yeah okay so what
+
+310
+00:19:09,540 --> 00:19:17,155
+我把lambdaY转置，做什么
+do I put lambda Y transpose and what do
+
+311
+00:19:17,160 --> 00:19:20,005
+我把这个翻译成了什么
+I put here what does this translate to
+
+312
+00:19:20,010 --> 00:19:22,885
+如果我这是一个特征向量
+if I if this was for a one eigenvector
+
+313
+00:19:22,890 --> 00:19:25,165
+对于他们所有人来说，它就是这样
+for all of them at once it's just gonna
+
+314
+00:19:25,170 --> 00:19:27,745
+翻译为Y转X等于
+translate to Y transpose X equal the
+
+315
+00:19:27,750 --> 00:19:33,685
+身份这是非常基本的东西但是
+identity this is pretty basic stuff but
+
+316
+00:19:33,690 --> 00:19:35,455
+不知怎的，我们并不总是
+stuff somehow we don't always
+
+317
+00:19:35,460 --> 00:19:38,485
+一定看还好那些是关键
+necessarily see okay those are the key
+
+318
+00:19:38,490 --> 00:19:45,115
+事实，现在我打算采取
+facts and now I plan to take the
+
+319
+00:19:45,120 --> 00:19:47,935
+衍生物带有衍生物
+derivative take the derivative with
+
+320
+00:19:47,940 --> 00:19:50,965
+尊重lambda哦，我可以推导出来
+respect to lambda oh okay I can derive
+
+321
+00:19:50,970 --> 00:19:54,505
+多了一个事实，所以这
+one more fact so this
+
+322
+00:19:54,510 --> 00:20:02,215
+配方这是配方一的公式之一
+formula this is formula one formula one
+
+323
+00:20:02,220 --> 00:20:05,575
+只是说我会得到什么，如果我打这个上
+just says what do I get if I hit this on
+
+324
+00:20:05,580 --> 00:20:08,725
+Y转置左边我可以做那个Y.
+the left by Y transpose can I do that Y
+
+325
+00:20:08,730 --> 00:20:17,245
+T等于TX的TX的转置
+transpose of T a of T X of T equals
+
+326
+00:20:17,250 --> 00:20:20,605
+T的lambda是我们的数字
+lambda of T that's us that's a number so
+
+327
+00:20:20,610 --> 00:20:24,565
+我总是可以把它带到前面
+I can always bring that out but in front
+
+328
+00:20:24,570 --> 00:20:31,935
+内积的矢量符号
+of the inner product the vector notation
+
+329
+00:20:31,940 --> 00:20:38,414
+你恳求的那样对你有好处吗？
+are you good for that I'm pleading like
+
+330
+00:20:38,419 --> 00:20:43,495
+我所做的一切都完全没问题
+everything I've done is totally okay and
+
+331
+00:20:43,500 --> 00:20:47,695
+现在我对此有所改进
+now I have a improvement to make on this
+
+332
+00:20:47,700 --> 00:20:51,865
+右手边哪个是y
+right hand side which is so what is y
+
+333
+00:20:51,870 --> 00:20:56,155
+转置时间X它是1所以让我们
+transpose times X it's 1 so let's
+
+334
+00:20:56,160 --> 00:21:03,115
+记住它是1，所以换句话说我
+remember that it's 1 so in other words I
+
+335
+00:21:03,120 --> 00:21:06,355
+有一个lambda的T的公式
+have got a formula for lambda of T the
+
+336
+00:21:06,360 --> 00:21:09,955
+随着时间改变矩阵的特征值
+eigen value as time changes the matrix
+
+337
+00:21:09,960 --> 00:21:12,445
+改变其本征值的变化
+changes its eigen values change
+
+338
+00:21:12,450 --> 00:21:14,815
+按照这个公式其
+according to this formula its
+
+339
+00:21:14,820 --> 00:21:17,155
+特征向量根据此变化
+eigenvectors change according to this
+
+340
+00:21:17,160 --> 00:21:19,735
+公式，它是左特征向量
+formula and it's left eigenvectors
+
+341
+00:21:19,740 --> 00:21:22,794
+根据那个公式改变不是
+change according to that formula isn't
+
+342
+00:21:22,799 --> 00:21:24,855
+所以这里的一切都是如此
+that so where everything here is
+
+343
+00:21:24,860 --> 00:21:31,664
+在板上，现在有什么意义
+aboveboard and now what's the point
+
+344
+00:21:31,669 --> 00:21:36,775
+关键是我会发现这个
+the point is I'm gonna find this the
+
+345
+00:21:36,780 --> 00:21:39,325
+派生所以我要接受
+derivative so I'm going to take the
+
+346
+00:21:39,330 --> 00:21:42,265
+该等式的衍生物，看看是什么
+derivative of that equation and see what
+
+347
+00:21:42,270 --> 00:21:42,565
+我明白了
+I get
+
+348
+00:21:42,570 --> 00:21:45,475
+这就是那个公式
+that's that'll be the formula for the
+
+349
+00:21:45,480 --> 00:21:47,515
+特征值的导数和它的
+derivative of an eigen value and it's
+
+350
+00:21:47,520 --> 00:21:51,294
+令人惊讶的是，它并不是那么广泛
+it's amazingly it's not that widely
+
+351
+00:21:51,299 --> 00:21:54,405
+知道它当然是经典的但是
+known it's of course it's classical but
+
+352
+00:21:54,410 --> 00:21:58,495
+它并不总是课程的一部分所以这些
+it's not always part of courses so these
+
+353
+00:21:58,500 --> 00:22:01,554
+这是随着时间变化矩阵的变化
+this is as time varies the matrix varies
+
+354
+00:22:01,559 --> 00:22:04,665
+a因此它的特征值
+a and therefore its eigenvalues
+
+355
+00:22:04,670 --> 00:22:07,695
+它是特征向量，所以我们是
+and it's eigenvectors very so we're
+
+356
+00:22:07,700 --> 00:22:12,015
+会发现DlambdaDT是一个级别
+gonna find D lambda DT it's one level of
+
+357
+00:22:12,020 --> 00:22:16,515
+更难找到DXDT那个
+difficulty more to find DX DT that the
+
+358
+00:22:16,520 --> 00:22:18,975
+特征向量的导数或
+derivative of the eigenvector or the
+
+359
+00:22:18,980 --> 00:22:20,985
+特征值的二阶导数
+second derivative of the eigenvalue
+
+360
+00:22:20,990 --> 00:22:22,635
+虽然那些人聚在一起
+though those kind of come together and
+
+361
+00:22:22,640 --> 00:22:25,215
+我不会去那里我就要去做
+I'm not gonna go there I'm just gonna do
+
+362
+00:22:25,220 --> 00:22:27,705
+这里有一件好事
+the one great thing here take the
+
+363
+00:22:27,710 --> 00:22:30,465
+我应该做那个方程的导数
+derivative of that equation shall I do
+
+364
+00:22:30,470 --> 00:22:35,985
+它在那边所以我们去，所以我想
+it over there so here we go so I want to
+
+365
+00:22:35,990 --> 00:22:41,085
+计算DlambdaDT，我正在使用它
+compute D lambda DT and I'm using this
+
+366
+00:22:41,090 --> 00:22:51,135
+lambda的公式，所以我有
+formula for lambda there so I've got
+
+367
+00:22:51,140 --> 00:22:54,195
+依赖于T和我的三件事
+three things that depend on T and I'm
+
+368
+00:22:54,200 --> 00:22:56,085
+采取他们的产品的衍生物
+taking the derivative of their product
+
+369
+00:22:56,090 --> 00:22:59,085
+所以我要正确使用产品规则
+so I'm gonna use the product rule right
+
+370
+00:22:59,090 --> 00:23:01,605
+现在它需要我将应用该产品
+now it takes a I'll apply the product
+
+371
+00:23:01,610 --> 00:23:03,705
+统治那个衍生物好吧
+rule to that derivative okay
+
+372
+00:23:03,710 --> 00:23:07,775
+取第一个人的衍生物
+take the derivative of the first guy
+
+373
+00:23:07,780 --> 00:23:14,265
+X次乘以衍生物的次数
+times a times X take the derivative of
+
+374
+00:23:14,270 --> 00:23:33,695
+第二个人和第二个人相遇
+the second guy times the second guy and
+
+375
+00:23:33,700 --> 00:23:42,375
+牛逼DX的TA的第三个家伙ÿ转
+the third guy Y transpose of T a of T DX
+
+376
+00:23:42,380 --> 00:23:54,795
+DT好吧我们距离一分钟一分钟
+DT okay we are one minute away from a
+
+377
+00:23:54,800 --> 00:23:58,875
+伟大的公式，我真的很高兴，如果
+great formula and I'm really happy if
+
+378
+00:23:58,880 --> 00:24:01,695
+你让我这说的是，
+you allow me to say it that that the
+
+379
+00:24:01,700 --> 00:24:04,725
+公式来自于采取
+formula comes by just putting taking
+
+380
+00:24:04,730 --> 00:24:07,245
+那些我们知道的事实
+those facts we know putting them
+
+381
+00:24:07,250 --> 00:24:09,795
+我们一起进入这个表达
+together into this expression that we
+
+382
+00:24:09,800 --> 00:24:13,395
+也知道，这就像lambda
+also know and that this is like lambda
+
+383
+00:24:13,400 --> 00:24:16,325
+等于X逆ax
+equals X inverse ax
+
+384
+00:24:16,330 --> 00:24:19,235
+这是对角化的事情然后
+that's diagonalizing thing and then
+
+385
+00:24:19,240 --> 00:24:22,385
+采取衍生物所以我得到了什么
+taking the derivative so what do I get
+
+386
+00:24:22,390 --> 00:24:28,975
+如果我这个术语能很好地利用这个衍生物
+if I take that derivative well this term
+
+387
+00:24:28,980 --> 00:24:32,465
+我会继续保持，好像我不会去
+I'm going to keep like I'm not going to
+
+388
+00:24:32,470 --> 00:24:42,635
+玩弄每个人都很清楚
+play with that everybody's clear that's
+
+389
+00:24:42,640 --> 00:24:45,725
+这里的数字是ADT的矩阵
+a number here's a matrix the ADT is a
+
+390
+00:24:45,730 --> 00:24:49,085
+矩阵我得到的导数
+matrix the derivative I take the
+
+391
+00:24:49,090 --> 00:24:52,415
+它的衍生物在这里的每一个条目
+derivative of it every entry in a here's
+
+392
+00:24:52,420 --> 00:24:57,395
+它是一个列向量，它的特征向量
+it's a column vector its eigen vector
+
+393
+00:24:57,400 --> 00:24:59,615
+这是Rho时间的行向量
+and here's a row vector so Rho times
+
+394
+00:24:59,620 --> 00:25:02,165
+矩阵时间列是第一个
+matrix times column is a number one by
+
+395
+00:25:02,170 --> 00:25:06,145
+一个，实际上这是我的答案
+one and actually that's my answer
+
+396
+00:25:06,150 --> 00:25:08,945
+那是我的回答所以我这么说
+that's my answer so I'm saying that
+
+397
+00:25:08,950 --> 00:25:14,305
+这两个词相互抵消了
+these two terms cancel each other out
+
+398
+00:25:14,310 --> 00:25:16,925
+这两个方面相加为零，并且
+those two terms add to zero and that
+
+399
+00:25:16,930 --> 00:25:21,425
+这是正确的答案
+this is the right answer for for the
+
+400
+00:25:21,430 --> 00:25:22,355
+衍生物
+derivative
+
+401
+00:25:22,360 --> 00:25:26,405
+这是一个很好的公式，所以找到
+that's a nice formula so to find the
+
+402
+00:25:26,410 --> 00:25:30,065
+您采用的特征值的导数
+derivative of an eigen value you take
+
+403
+00:25:30,070 --> 00:25:33,395
+矩阵改变你的速度
+the rate the matrix is changing you
+
+404
+00:25:33,400 --> 00:25:36,905
+乘以俄勒冈州的矢量和
+multiply by the Oregon vector and by the
+
+405
+00:25:36,910 --> 00:25:39,875
+左特征向量它给你一个数字
+left eigen vector it gives you a number
+
+406
+00:25:39,880 --> 00:25:44,735
+那就是DlambdaDT好吧，为什么呢
+and that's the D lambda DT okay so why
+
+407
+00:25:44,740 --> 00:25:48,785
+那两个家伙加零是不是
+do those two guys add to zero that's
+
+408
+00:25:48,790 --> 00:25:50,495
+那就是剩下的一切
+that's all that remains here and then
+
+409
+00:25:50,500 --> 00:25:53,615
+这个主题以这个好结束了
+this topic is ended with this nice
+
+410
+00:25:53,620 --> 00:25:58,975
+公式好，所以我想简化它
+formula okay so I want to simplify that
+
+411
+00:25:58,980 --> 00:26:01,565
+简化并表明他们取消了
+simplify that and show that they cancel
+
+412
+00:26:01,570 --> 00:26:06,545
+彼此没关系，所以什么是斧头它的lambda
+each other okay so what is ax its lambda
+
+413
+00:26:06,550 --> 00:26:12,955
+X所以这个家伙只不过是它的lambda
+X so this guy is nothing but it's lambda
+
+414
+00:26:12,960 --> 00:26:19,625
+这取决于课程时间的时间dy
+that depends on time of course times dy
+
+415
+00:26:19,630 --> 00:26:23,945
+DTDY转置DT我只是复制
+DT D Y transpose DT I'm just copying
+
+416
+00:26:23,950 --> 00:26:27,105
+那斧子拉姆达X
+that ax is lambda X
+
+417
+00:26:27,110 --> 00:26:29,174
+抱歉，我不是故意要看那个
+sorry I didn't mean to make that look
+
+418
+00:26:29,179 --> 00:26:37,335
+那个斧头很难用lambdaX和我
+hard okay with that ax is lambda X and I
+
+419
+00:26:37,340 --> 00:26:39,794
+我非常安全，因为lambda只是
+am perfectly safe because lambda is just
+
+420
+00:26:39,799 --> 00:26:42,734
+一个数字，将它带到左边
+a number to bring it out to the left so
+
+421
+00:26:42,739 --> 00:26:44,624
+它没有得到它看起来不像它
+it's not getting doesn't look like it's
+
+422
+00:26:44,629 --> 00:26:46,784
+在路上和另一个怎么样
+in the way and what about this other
+
+423
+00:26:46,789 --> 00:26:54,705
+长期所以我有ý转AUÿ
+term so I have y transpose au y
+
+424
+00:26:54,710 --> 00:26:59,924
+转置一个什么是Y.
+transpose a what's that what's Y
+
+425
+00:26:59,929 --> 00:27:02,414
+移调这就是组合
+transpose a that's the combination that
+
+426
+00:27:02,419 --> 00:27:07,274
+我知道Y转换一个让Y就是那个
+I know Y transpose a a a let Y is that
+
+427
+00:27:07,279 --> 00:27:10,185
+左特征向量y转置a带来
+left eigenvector y transpose a is brings
+
+428
+00:27:10,190 --> 00:27:12,825
+出一个lambda所以这也带来了一个
+out a lambda so this also brings out a
+
+429
+00:27:12,830 --> 00:27:27,674
+lambdatimesytransposexdx/dt好吧我
+lambda times y transpose x dx/dt okay I
+
+430
+00:27:27,679 --> 00:27:30,674
+只需使用ax等于lambdaX即可
+just use ax equal lambda X there that
+
+431
+00:27:30,679 --> 00:27:33,435
+现在什么都不是，我该怎么办
+was really nothing now what do I do
+
+432
+00:27:33,440 --> 00:27:35,744
+你能不能让我想零吗？
+can you I want this to be zero can you
+
+433
+00:27:35,749 --> 00:27:38,114
+看到它正在发生它是一个伟大的
+see it happening it's a it's a great
+
+434
+00:27:38,119 --> 00:27:40,994
+很高兴看到它发生得如此做什么
+pleasure to see it happening so what do
+
+435
+00:27:40,999 --> 00:27:44,674
+我在这里现在是我的第一步
+I have here what's my first step now
+
+436
+00:27:44,679 --> 00:27:48,225
+带来会把lambda带到那个外面
+bring would bring lambda outside that's
+
+437
+00:27:48,230 --> 00:27:50,354
+不是零，我们不知道那是什么
+not zero we don't know what that is
+
+438
+00:27:50,359 --> 00:27:53,595
+把lambda带到那里时间
+bring lambda outside there times the
+
+439
+00:27:53,600 --> 00:27:59,264
+因为一些奇妙的原因所以整个事情
+whole thing so for some wonderful reason
+
+440
+00:27:59,269 --> 00:28:02,654
+我相信这个数字是一个
+I believe that this number which is a
+
+441
+00:28:02,659 --> 00:28:05,654
+第一列的滚动时间乘以a
+roll times at column a row times a
+
+442
+00:28:05,659 --> 00:28:09,164
+列两届那里，我相信他们
+column two terms there I believe they
+
+443
+00:28:09,169 --> 00:28:11,715
+互相敲打他们那个
+knock each other out and they that
+
+444
+00:28:11,720 --> 00:28:18,284
+结果为零，为什么我为什么呢？
+result is zero and why why because I
+
+445
+00:28:18,289 --> 00:28:21,705
+回到这是这个董事会的
+come back to the this is this board has
+
+446
+00:28:21,710 --> 00:28:25,965
+所有我知道的，这就是为什么要转置
+all that I know and here's why transpose
+
+447
+00:28:25,970 --> 00:28:28,335
+时间X等于1，这有何帮助
+times X equal one and how does that help
+
+448
+00:28:28,340 --> 00:28:31,874
+我，因为我在那里看到的
+me because what I'm seeing in that
+
+449
+00:28:31,879 --> 00:28:36,554
+在那个方格和那些括号是
+square in that and those brackets is the
+
+450
+00:28:36,559 --> 00:28:38,945
+Y的导数转置X.
+derivative of Y transpose X
+
+451
+00:28:38,950 --> 00:28:45,675
+所以它是一个人的衍生物
+so it's the derivative of one therefore
+
+452
+00:28:45,680 --> 00:28:50,445
+零，所以这是它的衍生物
+zero so this is the derivative of one it
+
+453
+00:28:50,450 --> 00:28:53,265
+等于零这两个术语敲每个
+equals zero those two terms knock each
+
+454
+00:28:53,270 --> 00:28:55,965
+其他的，只留下美好的名词
+other out and leave just the nice term
+
+455
+00:28:55,970 --> 00:28:58,455
+我们看到的是衍生物
+that we're seeing so the derivative of
+
+456
+00:28:58,460 --> 00:29:02,085
+特征值只是为了有一个
+the eigenvalue just just to have one
+
+457
+00:29:02,090 --> 00:29:04,785
+在我们离开它之前先看看它
+more look at it before we leave it the
+
+458
+00:29:04,790 --> 00:29:06,825
+特征值的导数就是这个
+derivative of the eigenvalue is this
+
+459
+00:29:06,830 --> 00:29:09,045
+公式是它的速率
+formula it's the rate at which the
+
+460
+00:29:09,050 --> 00:29:11,415
+矩阵正在改变时代
+matrix is changing times the
+
+461
+00:29:11,420 --> 00:29:15,555
+有时左右的特征向量
+eigenvectors on right and left sometimes
+
+462
+00:29:15,560 --> 00:29:17,205
+他们被称为正确的特征向量
+they're called the right eigenvector in
+
+463
+00:29:17,210 --> 00:29:22,655
+在时间t的左特征向量
+the left eigenvector at at the time t
+
+464
+00:29:22,660 --> 00:29:26,325
+是的，所以我们没有看到这一点
+yeah so a is so we're not seeing in this
+
+465
+00:29:26,330 --> 00:29:30,095
+换言之，lambdaDT不是我
+d lambda DT in other words does is not I
+
+466
+00:29:30,100 --> 00:29:34,035
+不需要我得到一个很好的配方
+don't need to I get a nice formula which
+
+467
+00:29:34,040 --> 00:29:36,255
+不涉及的衍生物
+doesn't involve the derivative of the
+
+468
+00:29:36,260 --> 00:29:39,375
+特征向量，如果我是它的美丽
+eigenvector that's the beauty of it if I
+
+469
+00:29:39,380 --> 00:29:42,735
+想上去应该迈出下一步
+want to go up should take the next step
+
+470
+00:29:42,740 --> 00:29:47,565
+我本周末试过，但如果这是一团糟
+I tried this weekend but it's a mess if
+
+471
+00:29:47,570 --> 00:29:49,995
+这是我的意思
+it would be to take there so I've this
+
+472
+00:29:50,000 --> 00:29:52,725
+是我的公式和DlambdaDT等于
+is my formula and D lambda DT equals
+
+473
+00:29:52,730 --> 00:29:55,815
+这个和我可以采取下一个衍生物
+this and I can take the next derivative
+
+474
+00:29:55,820 --> 00:29:59,115
+这一点，并会涉及第二
+of that and it will involve the second
+
+475
+00:29:59,120 --> 00:30:01,965
+天DT正确，但也会
+day DT squared right but it will also
+
+476
+00:30:01,970 --> 00:30:07,725
+实际上涉及DXDT和dyDT
+involve DX DT and dy DT and it in fact
+
+477
+00:30:07,730 --> 00:30:10,335
+伪逆甚至显示出它
+the pseudo-inverse even shows up it's
+
+478
+00:30:10,340 --> 00:30:15,915
+这是另一个步骤，我不会去
+it's a another step and I'm not going
+
+479
+00:30:15,920 --> 00:30:19,725
+那是因为我们拥有最好的
+that far because we've got the the best
+
+480
+00:30:19,730 --> 00:30:24,915
+公式那里好吧所以现在有了
+formula there okay so now that has
+
+481
+00:30:24,920 --> 00:30:31,065
+我回答了这个问题
+answered this question and I could
+
+482
+00:30:31,070 --> 00:30:33,465
+以同样的方式回答这个问题
+answer that question the same way it
+
+483
+00:30:33,470 --> 00:30:36,195
+将涉及转置a和
+would involve a transpose a and the
+
+484
+00:30:36,200 --> 00:30:39,225
+奇异向量而不是涉及到
+singular vectors instead of involving a
+
+485
+00:30:39,230 --> 00:30:43,445
+并且特征向量可能是a
+and the eigenvectors maybe that's a
+
+486
+00:30:43,450 --> 00:30:45,855
+适合的运动我不知道我没有
+suitable exercise I don't know I haven't
+
+487
+00:30:45,860 --> 00:30:51,445
+自己做了我想做的就是这个
+done it myself what I want to do is this
+
+488
+00:30:51,450 --> 00:30:55,885
+现在，我们可以说什么可以说
+now now it's say what can we say about
+
+489
+00:30:55,890 --> 00:30:58,835
+特征值的变化，我会
+the change in the eigenvalue and I'll
+
+490
+00:30:58,840 --> 00:31:01,825
+首先要保留特征值
+just stay first of all with eigenvalues
+
+491
+00:31:01,830 --> 00:31:07,745
+当改变就像Rank1那样
+when the change is like Rank 1 that way
+
+492
+00:31:07,750 --> 00:31:10,505
+这是一个完美的例子
+this is a perfect example when the
+
+493
+00:31:10,510 --> 00:31:18,455
+变化是等级1所以所以我真的如此
+change is Rank 1 so so so I'm really so
+
+494
+00:31:18,460 --> 00:31:26,255
+关于特征值我们能说些什么呢？
+what can we say about the eigenvalues
+
+495
+00:31:26,260 --> 00:31:28,025
+让我们把最大的顶部
+let's take the top the largest
+
+496
+00:31:28,030 --> 00:31:31,745
+特征值或所有这些都是特征值
+eigenvalue or all of them all of them
+
+497
+00:31:31,750 --> 00:31:39,995
+lambdaJ他们都加了一个等级
+lambda J all of them of a plus a rank
+
+498
+00:31:40,000 --> 00:31:45,185
+一个矩阵UV转置让我做
+one matrix UV transpose oh let me make
+
+499
+00:31:45,190 --> 00:31:50,945
+它让我们，让我们在这里做一个漂亮的情况下，
+it let's let's do the nice case here a
+
+500
+00:31:50,950 --> 00:31:54,395
+很好的情况，因为如果我允许一般
+nice case because if I allow a general
+
+501
+00:31:54,400 --> 00:31:57,395
+矩阵我不得不担心它
+matrix a I have to worry about does it
+
+502
+00:31:57,400 --> 00:31:59,315
+有足够的特征向量你知道吗
+have enough eigenvectors you know can it
+
+503
+00:31:59,320 --> 00:32:02,645
+将所有那些东西对齐化
+diagonalize all that stuff let's make
+
+504
+00:32:02,650 --> 00:32:06,955
+让我们使它成为一个对称矩阵和
+let's make it a symmetric matrix and
+
+505
+00:32:06,960 --> 00:32:11,375
+让我们使等级一变化对称
+let's make the rank one change symmetric
+
+506
+00:32:11,380 --> 00:32:14,525
+也因此，问题是我能说什么
+too so the question is what can I say
+
+507
+00:32:14,530 --> 00:32:18,875
+关于排名之后的特征值
+about the eigenvalues of after a rank
+
+508
+00:32:18,880 --> 00:32:22,145
+一次改变，这不是微积分
+one change so again this isn't calculus
+
+509
+00:32:22,150 --> 00:32:24,725
+现在因为我正在做的改变
+now because the change that I'm making
+
+510
+00:32:24,730 --> 00:32:28,955
+完全是一个真正的向量而不是
+is as fully as is a true vector and not
+
+511
+00:32:28,960 --> 00:32:33,545
+差别好，我不会
+a differential okay and I'm not going to
+
+512
+00:32:33,550 --> 00:32:36,755
+具有用于新的固有的精确配方
+have an exact formula for the new eigen
+
+513
+00:32:36,760 --> 00:32:39,845
+我说的价值，但我要去做什么
+values as I said but what I am going to
+
+514
+00:32:39,850 --> 00:32:46,265
+做的是写下美好的事实
+do is write down the beautiful facts
+
+515
+00:32:46,270 --> 00:32:49,625
+那是众所周知的，在这里他们
+that are known about that and here they
+
+516
+00:32:49,630 --> 00:32:54,955
+首先是特征值
+are so first of all the eigen values are
+
+517
+00:32:54,960 --> 00:32:59,135
+按降序排列，我们使用降序
+in descending order we use descending
+
+518
+00:32:59,140 --> 00:33:01,595
+奇异值的顺序让我们使用它们
+order for singular values let's use them
+
+519
+00:33:01,600 --> 00:33:04,715
+也是因为λ为1的特征值
+also for an eigen value so lambda 1
+
+520
+00:33:04,720 --> 00:33:07,105
+大于等于λ2更大
+is greater equal to lambda 2 greater
+
+521
+00:33:07,110 --> 00:33:10,205
+等于lambda3等等
+equal lambda 3 and so on
+
+522
+00:33:10,210 --> 00:33:19,835
+哦，给我给我一个啊给我一个
+Oh give me give me a yeah give me an
+
+523
+00:33:19,840 --> 00:33:25,414
+你有什么想法？
+idea well what do you expect from from
+
+524
+00:33:25,419 --> 00:33:27,695
+将这一变化排在第一位
+that rank one change so that that
+
+525
+00:33:27,700 --> 00:33:30,755
+变化等级1你能告诉我了吗？
+changes Rank 1 can you tell me any more
+
+526
+00:33:30,760 --> 00:33:33,455
+关于那个改变你转移什么
+about that change you you transpose what
+
+527
+00:33:33,460 --> 00:33:39,395
+一种矩阵是uu转置它的
+kind of a matrix is uu transpose it's
+
+528
+00:33:39,400 --> 00:33:42,355
+等级1，但我们可以说更多
+rank 1 but we can say more
+
+529
+00:33:42,360 --> 00:33:48,845
+这是当然的负鼠埃特里克，它是
+it is possum Ettrick of course and it is
+
+530
+00:33:48,850 --> 00:33:53,315
+是的积极半肯定的积极
+yeah positive semi definite positive
+
+531
+00:33:53,320 --> 00:33:56,095
+半确定这是一个积极的变化
+semi definite this is a positive change
+
+532
+00:33:56,100 --> 00:34:01,404
+uutranspose是典型的排名1
+uu transpose is the typical rank 1
+
+533
+00:34:01,409 --> 00:34:03,725
+正半确定它不可能
+positive semi definite it couldn't be
+
+534
+00:34:03,730 --> 00:34:05,284
+肯定的，因为它只有
+positive definite because it's only got
+
+535
+00:34:05,289 --> 00:34:08,255
+等级1本征是什么的
+Rank 1 what are the eigen what's the
+
+536
+00:34:08,260 --> 00:34:10,685
+那个矩阵的特征向量是的，是的
+eigenvector of that matrix yeah let's
+
+537
+00:34:10,690 --> 00:34:15,035
+只是为什么不能在这里我们可以通过两种做到这一点
+just why not here we can do this in two
+
+538
+00:34:15,040 --> 00:34:15,965
+秒
+seconds
+
+539
+00:34:15,970 --> 00:34:18,904
+所以uutranspose这是一个矩阵我
+so uu transpose that's a matrix I'm
+
+540
+00:34:18,909 --> 00:34:21,575
+请您想想，这是一个
+asking you to think about and it's a
+
+541
+00:34:21,580 --> 00:34:24,424
+全n乘n矩阵列乘一行
+full n by n matrix column times a row
+
+542
+00:34:24,429 --> 00:34:27,215
+告诉我那个矩阵的特征向量
+tell me an eigenvector of that matrix
+
+543
+00:34:27,220 --> 00:34:31,864
+是的，如果我把你的矩阵乘以你
+yes you if I multiply my matrix by you
+
+544
+00:34:31,869 --> 00:34:35,945
+我得到了什么，我得到一些数字
+I get what do I get I get some number
+
+545
+00:34:35,950 --> 00:34:40,435
+时间U和那个数字是什么lambda
+times U and what is that number lambda
+
+546
+00:34:40,440 --> 00:34:43,624
+是lambda恰好是你的转置
+is that lambda happens to be u transpose
+
+547
+00:34:43,629 --> 00:34:47,945
+你和那是什么不同
+U and what is the so that's different
+
+548
+00:34:47,950 --> 00:34:50,195
+来自uutranspose这是一个矩阵
+from uu transpose this was a matrix
+
+549
+00:34:50,200 --> 00:34:53,374
+现在每个人都使用18超过65
+everybody uses 18 over 6 5 now that's a
+
+550
+00:34:53,379 --> 00:34:56,404
+号码，你能告诉我什么
+number and what can you tell me about
+
+551
+00:34:56,409 --> 00:34:57,594
+那个数字
+that number
+
+552
+00:34:57,599 --> 00:35:03,515
+它更大更好
+it is greater well even more greater
+
+553
+00:35:03,520 --> 00:35:06,545
+比0大，因为这是真的
+than 0 greater because this is a true
+
+554
+00:35:06,550 --> 00:35:10,325
+矢量所以这大于0
+vector so this is greater than 0 it's
+
+555
+00:35:10,330 --> 00:35:12,035
+所有其他的唯一特征值
+the only eigenvalue all the other
+
+556
+00:35:12,040 --> 00:35:14,614
+的那秩的特征值
+eigenvalues of the of that of that rank
+
+557
+00:35:14,619 --> 00:35:17,405
+一个矩阵是0但是一个非零
+one matrix are 0 but the one non-zero
+
+558
+00:35:17,410 --> 00:35:18,365
+本征
+eigen
+
+559
+00:35:18,370 --> 00:35:21,005
+价值在好的方面结束了它就是你
+value is over on the plus side it's you
+
+560
+00:35:21,010 --> 00:35:23,945
+转你，我们都意识到，作为
+transpose you we all recognize that as
+
+561
+00:35:23,950 --> 00:35:26,975
+U的长度肯定是平方的
+the lengths of U squared it's certainly
+
+562
+00:35:26,980 --> 00:35:31,175
+积极的，所以我们确实有一个积极的半
+positive so we do have a positive semi
+
+563
+00:35:31,180 --> 00:35:34,225
+确定矩阵你的猜测是什么
+definite matrix what would your guess be
+
+564
+00:35:34,230 --> 00:35:39,875
+对一个特征值的影响
+of the effect on the eigenvalues of a so
+
+565
+00:35:39,880 --> 00:35:42,185
+所以我回到我真正的问题我
+so I'm coming back to my real problem I
+
+566
+00:35:42,190 --> 00:35:44,465
+可以的值很抱歉是的我有一个
+can values of s sorry yes I have a
+
+567
+00:35:44,470 --> 00:35:46,715
+对称矩阵我说的是对称的
+symmetric matrices I'm saying symmetric
+
+568
+00:35:46,720 --> 00:35:49,625
+如果我有一个对称的话，你的猜测是什么？
+what is your guess if I have a symmetric
+
+569
+00:35:49,630 --> 00:35:54,365
+矩阵和我添加uutranspose做什么
+matrix and I add on uu transpose what do
+
+570
+00:35:54,370 --> 00:35:56,935
+你想象那对特征值有影响
+you imagine that does to the eigenvalues
+
+571
+00:35:56,940 --> 00:36:00,295
+你会说得对，就这么说吧
+you're gonna get it right just say it
+
+572
+00:36:00,300 --> 00:36:03,305
+s的特征值会发生什么
+what happens to the eigenvalues of s if
+
+573
+00:36:03,310 --> 00:36:07,475
+我加上uutranspose他们将会
+I add on uu transpose they will they'll
+
+574
+00:36:07,480 --> 00:36:10,535
+更积极的他们会上升这是一个
+be more positive they'll go up this is a
+
+575
+00:36:10,540 --> 00:36:13,775
+积极的事情就像添加17
+positive thing it's like adding 17 to
+
+576
+00:36:13,780 --> 00:36:17,905
+因此它会向上移动
+something right it moves up so therefore
+
+577
+00:36:17,910 --> 00:36:26,285
+我相信是这样的，现在我已经这样了
+what I believe is so these now I have so
+
+578
+00:36:26,290 --> 00:36:29,255
+是的我有两套特征值
+yeah I've got two sets of eigenvalues
+
+579
+00:36:29,260 --> 00:36:33,335
+现在一个是另一个的S参数
+now one is the argument of s the other
+
+580
+00:36:33,340 --> 00:36:35,045
+是特征值的不同
+is the eigenvalues the different
+
+581
+00:36:35,050 --> 00:36:38,345
+s的特征值所以我不能称之为
+eigenvalues of s so what I can't call
+
+582
+00:36:38,350 --> 00:36:40,535
+他们两个lambda表达式或我有麻烦所以
+them both lambdas or I'm in trouble so
+
+583
+00:36:40,540 --> 00:36:45,395
+让我让我开始，所以我会打电话给
+let me let me start so I'll call the
+
+584
+00:36:45,400 --> 00:36:49,145
+需要这样的另一个你最喜欢的
+need so one other do you have a favorite
+
+585
+00:36:49,150 --> 00:36:51,545
+其他希腊字母的特征值
+other Greek letter for the eigenvalues
+
+586
+00:36:51,550 --> 00:36:57,905
+只要你说一个，你的伽玛好吗？
+of s gamma okay as long as you say a
+
+587
+00:36:57,910 --> 00:36:59,585
+希腊字母我有一些想法如何
+Greek letters I have some idea how to
+
+588
+00:36:59,590 --> 00:37:02,645
+写Zeta在我看来就好像
+write Zeta it seems to me like the
+
+589
+00:37:02,650 --> 00:37:05,345
+世界上最难写的信和
+world's toughest letter to write and
+
+590
+00:37:05,350 --> 00:37:07,985
+电气工程师可以冷静地冲洗
+electrical engineers can coolly flush
+
+591
+00:37:07,990 --> 00:37:13,295
+阿尔法泽塔，但我从未成功过
+alpha Zeta but like I've never succeeded
+
+592
+00:37:13,300 --> 00:37:16,325
+所以你说的好吧
+so so all right what did you say
+
+593
+00:37:16,330 --> 00:37:23,255
+伽玛J原来没关系所以那些
+gamma J of the original okay so those
+
+594
+00:37:23,260 --> 00:37:25,045
+是原始的特征值
+are the eigenvalues of the original
+
+595
+00:37:25,050 --> 00:37:28,315
+这些是特征值
+these are the eigenvalues of the
+
+596
+00:37:28,320 --> 00:37:31,505
+修改过，我们期待着lambdas
+modified and we're expecting the lambdas
+
+597
+00:37:31,510 --> 00:37:32,195
+要大
+to be big
+
+598
+00:37:32,200 --> 00:37:36,635
+比起gammas哦，它只是一个
+than the gammas oh it's just a
+
+599
+00:37:36,640 --> 00:37:39,005
+定性陈述，这是真的
+qualitative statement and it's true
+
+600
+00:37:39,010 --> 00:37:43,375
+每个lambda都大于gamma哦
+each lambda is bigger than the gamma oh
+
+601
+00:37:43,380 --> 00:37:47,675
+对不起是啊是的每个lambda加入
+sorry yeah yeah each lambda by adding
+
+602
+00:37:47,680 --> 00:37:49,804
+这个东西，lambda比大
+this stuff the lambdas are bigger than
+
+603
+00:37:49,809 --> 00:37:51,965
+所以我就写的是lambda表达式
+so I'll just write that lambdas are
+
+604
+00:37:51,970 --> 00:38:01,745
+比gammas大，那是一个
+bigger than gammas and that's a
+
+605
+00:38:01,750 --> 00:38:07,015
+我们可以证明的基本事实
+fundamental fact which we could prove
+
+606
+00:38:07,020 --> 00:38:10,354
+而多了几分被称为当然的了
+but a little more is known of course the
+
+607
+00:38:10,359 --> 00:38:14,614
+问题是多大可以多大
+question is how much bigger how much can
+
+608
+00:38:14,619 --> 00:38:18,604
+他们做得更好，我不相信
+they be way bigger well I don't believe
+
+609
+00:38:18,609 --> 00:38:21,215
+他们可能会更大更多
+they could be bigger by more than more
+
+610
+00:38:21,220 --> 00:38:24,965
+比我自己的那个数字还有
+than that number myself but there's
+
+611
+00:38:24,970 --> 00:38:28,235
+那里有更好的消息
+there's there's better news than that so
+
+612
+00:38:28,240 --> 00:38:30,094
+lambdas比gammas大
+the lambdas are bigger than the gammas
+
+613
+00:38:30,099 --> 00:38:34,625
+所以lambda1大于gamma1所以
+so lambda 1 is bigger than gamma 1 so
+
+614
+00:38:34,630 --> 00:38:38,854
+这是SPlusuu
+this is of this is the S Plus u u
+
+615
+00:38:38,859 --> 00:38:42,785
+转置矩阵，这些是
+transpose matrix and this these are the
+
+616
+00:38:42,790 --> 00:38:45,875
+S矩阵λ1的特征值是
+eigenvalues of the S matrix lambda 1 is
+
+617
+00:38:45,880 --> 00:38:48,125
+大于伽玛1，但看起来是什么
+bigger than gamma 1 but look what's
+
+618
+00:38:48,130 --> 00:38:52,475
+发生在这一行文本中我是
+happening in this line of text here I'm
+
+619
+00:38:52,480 --> 00:38:55,715
+说λ2是λ2
+saying that gamma 1 that lambda 2 is
+
+620
+00:38:55,720 --> 00:38:59,435
+小于伽马1是不是工整
+smaller than gamma 1 isn't that neat the
+
+621
+00:38:59,440 --> 00:39:06,155
+特征值上升，但它们不仅仅是
+eigenvalues go up but they don't just
+
+622
+00:39:06,160 --> 00:39:13,655
+喜欢去任何地方，这就是所谓的
+like go anywhere and that's called
+
+623
+00:39:13,660 --> 00:39:21,665
+隔行扫描
+interlacing
+
+624
+00:39:21,670 --> 00:39:24,045
+所以这是其中一个很棒的
+so this is one of those wonderful
+
+625
+00:39:24,050 --> 00:39:28,324
+使你的心快乐的定理
+theorems that makes your heart happy
+
+626
+00:39:28,329 --> 00:39:31,755
+那个想法，如果我做一个等级
+that that the idea that if I do a rank
+
+627
+00:39:31,760 --> 00:39:34,785
+一个改变然后我和它是一个
+one change then the I and it's a
+
+628
+00:39:34,790 --> 00:39:37,905
+然后积极改变特征值
+positive change then the eigen values
+
+629
+00:39:37,910 --> 00:39:42,135
+增加，但他们不增加新的
+increase but they don't increase the new
+
+630
+00:39:42,140 --> 00:39:44,715
+特征值低于新的秒
+eigen value is below the new second
+
+631
+00:39:44,720 --> 00:39:47,445
+特征值它不会传递旧的
+eigen value it doesn't pass up the old
+
+632
+00:39:47,450 --> 00:39:51,854
+第一个特征值和新的第三个
+first eigen value and the new third
+
+633
+00:39:51,859 --> 00:39:54,435
+特征值不会过时
+eigen value doesn't pass up the old
+
+634
+00:39:54,440 --> 00:39:57,735
+第二个本征是的，是的，所以那是
+second eigen does yeah yeah so that's
+
+635
+00:39:57,740 --> 00:40:01,025
+这就是隔行扫描定理
+the that's the interlacing theorem that
+
+636
+00:40:01,030 --> 00:40:04,875
+与着名群众的名字相关联
+associated with the names of famous mass
+
+637
+00:40:04,880 --> 00:40:08,054
+那些人当然是你必须的
+guys that's just of course you have to
+
+638
+00:40:08,059 --> 00:40:12,165
+在我们写作的时候说这很漂亮
+say that's beautiful while we're writing
+
+639
+00:40:12,170 --> 00:40:16,035
+下来这样一个定理猜猜是什么
+down such a theorem make a guess of what
+
+640
+00:40:16,040 --> 00:40:21,554
+如果我做一个等级，定理就是
+the theorem would be if I do a rank to
+
+641
+00:40:21,559 --> 00:40:28,834
+改变假设我做了一个是对不起的
+change suppose I do an A yes sorry s
+
+642
+00:40:28,839 --> 00:40:32,145
+保持对称，我排名第一
+staying symmetric and I do a rank one
+
+643
+00:40:32,150 --> 00:40:36,074
+改变但是我也做了一个等级
+change but then I also do a rank to
+
+644
+00:40:36,079 --> 00:40:41,715
+改变说Ww转置好，所以是什么
+change say W w transpose okay so what's
+
+645
+00:40:41,720 --> 00:40:44,864
+这里的交易我对此有何了解
+the deal here what do I know about that
+
+646
+00:40:44,869 --> 00:40:49,415
+三角洲的变化矩阵在这里我
+the change matrix the Delta s here I
+
+647
+00:40:49,420 --> 00:40:54,885
+知道它的排名是2我假设你和
+know it's rank is 2 I'm assuming you and
+
+648
+00:40:54,890 --> 00:40:56,834
+W不是这样的
+W were not in the same direction so
+
+649
+00:40:56,839 --> 00:41:00,824
+这是一个2级矩阵，你可以做什么
+that's a rank 2 matrix and what can you
+
+650
+00:41:00,829 --> 00:41:02,445
+告诉我有关它的特征值
+tell me about the eigenvalues of that
+
+651
+00:41:02,450 --> 00:41:07,574
+秩2矩阵，因此它有n个特征值
+Rank 2 matrix so it's got n eigenvalues
+
+652
+00:41:07,579 --> 00:41:10,005
+因为它是N×n矩阵但是如何
+because it's an N by n matrix but how
+
+653
+00:41:10,010 --> 00:41:14,975
+它也有许多非零特征值
+many nonzero eigenvalues has it got too
+
+654
+00:41:14,980 --> 00:41:18,975
+因为它的等级是等级告诉的
+because it's rank is to the rank tells
+
+655
+00:41:18,980 --> 00:41:20,715
+你是非零特征值的数量
+you the number of nonzero eigenvalues
+
+656
+00:41:20,720 --> 00:41:23,955
+当矩阵是对称的时，它不会
+when matrices are symmetric it doesn't
+
+657
+00:41:23,960 --> 00:41:26,114
+告诉你，矩阵是否足够
+tell you enough if matrices are
+
+658
+00:41:26,119 --> 00:41:28,955
+非对称特征值可能很奇怪
+unsymmetric eigenvalues can be weird so
+
+659
+00:41:28,960 --> 00:41:33,275
+保持对称，这样就可以了
+stay symmetric here ok so that that
+
+660
+00:41:33,280 --> 00:41:37,505
+这有一个Chazz两个非零的特征值
+this has a Chazz two nonzero eigenvalues
+
+661
+00:41:37,510 --> 00:41:39,955
+你能告诉我他们的标志吗？
+and can you tell me their sign
+
+662
+00:41:39,960 --> 00:41:42,695
+什么是矩阵正面
+what is that matrix positive
+
+663
+00:41:42,700 --> 00:41:45,425
+当然，半定是的，它是
+semi-definite yes of course it is of
+
+664
+00:41:45,430 --> 00:41:48,515
+当然所以这是，而且这是和
+course so this was and this was and
+
+665
+00:41:48,520 --> 00:41:50,405
+肯定是
+together it certainly is
+
+666
+00:41:50,410 --> 00:41:56,555
+所以现在我增加了两个积极的排名
+so now I've added a rank two positive
+
+667
+00:41:56,560 --> 00:41:58,715
+确定正半正定矩阵
+definite positive semi definite matrix
+
+668
+00:41:58,720 --> 00:42:00,965
+现在我只是不打算重写
+and now just I'm not going to rewrite
+
+669
+00:42:00,970 --> 00:42:03,395
+此行，但你会期望
+this line but what would you expect to
+
+670
+00:42:03,400 --> 00:42:08,705
+是的，你会期待特征值
+be true you would expect the eigenvalues
+
+671
+00:42:08,710 --> 00:42:13,885
+增加但是lambda三有多大
+increase but how big could lambda three
+
+672
+00:42:13,890 --> 00:42:19,205
+很抱歉伽玛是的所以伽玛2让我们
+are sorry gamma yeah so gamma 2 let's
+
+673
+00:42:19,210 --> 00:42:23,465
+遵循伽玛2所以现在好吧也许我
+follow gamma 2 so so now well maybe I
+
+674
+00:42:23,470 --> 00:42:26,135
+应该使用希腊人的另外两个
+should use another two the Greeks have
+
+675
+00:42:26,140 --> 00:42:30,085
+除了lambda和gamma之外的任何其他字母
+any other letters than lambda and gamma
+
+676
+00:42:30,090 --> 00:42:35,945
+谁看到了这一切，谁知道，每个
+who see all of that who knows that each
+
+677
+00:42:35,950 --> 00:42:39,935
+一个我可以写alpha好的alpha是的
+one I can write alpha good alpha yes
+
+678
+00:42:39,940 --> 00:42:43,535
+alpha右边所以alpha作为特征alpha
+alpha right so alpha as the eigen alpha
+
+679
+00:42:43,540 --> 00:42:50,225
+是这个环的特征值
+is the eigenvalues of this this ring to
+
+680
+00:42:50,230 --> 00:42:56,525
+现在改变好我将成为什么样的人
+change okay now what am I going to be
+
+681
+00:42:56,530 --> 00:43:00,455
+能说我可以说些什么
+able to say can I say anything about
+
+682
+00:43:00,460 --> 00:43:07,025
+当然这很好，alpha1更大
+this well of course alpha 1 is bigger
+
+683
+00:43:07,030 --> 00:43:09,755
+比lambda1大于I
+than lambda 1 which was bigger than I
+
+684
+00:43:09,760 --> 00:43:13,114
+意思是我可以测量正确的上升我是
+mean I can measure going up right I'm
+
+685
+00:43:13,119 --> 00:43:15,125
+增加肯定或正面
+adding positive definite or positive
+
+686
+00:43:15,130 --> 00:43:16,985
+半定的东西，我无能为力
+semi definite stuff there's no way I can
+
+687
+00:43:16,990 --> 00:43:18,935
+伙计们可以开始贬低我了
+guys can start going down on me
+
+688
+00:43:18,940 --> 00:43:23,135
+所以alpha1大于或等于
+so alpha 1 is greater or equal to the
+
+689
+00:43:23,140 --> 00:43:26,344
+拉姆达1，它方才秩一
+lambda 1 which had just a rank one
+
+690
+00:43:26,349 --> 00:43:28,775
+变化大于等于
+change which is greater equal to the to
+
+691
+00:43:28,780 --> 00:43:37,475
+MU是mugammagamma1，它是
+the MU was it mu gamma gamma 1 which is
+
+692
+00:43:37,480 --> 00:43:44,305
+a，那是的，等等现在好了
+a and that's yeah and so on okay now
+
+693
+00:43:44,310 --> 00:43:47,075
+让我们看看alpha1是
+let's see is alpha 1 is
+
+694
+00:43:47,080 --> 00:43:50,975
+比我更大的阿尔法
+one bigger than alpha what am i
+
+695
+00:43:50,980 --> 00:43:54,185
+奋力在这里写下来好
+struggling to to write down here well
+
+696
+00:43:54,190 --> 00:43:57,905
+我能说什么才能说得好
+what could I say well what can I say
+
+697
+00:43:57,910 --> 00:44:01,775
+这反映了这一事实
+that that reflects the fact that that
+
+698
+00:44:01,780 --> 00:44:08,495
+这个lambda-没有抱歉
+this lambda - no sorry
+
+699
+00:44:08,500 --> 00:44:12,155
+它反映了伽玛一个上升的人
+it reflects so gamma one went up who
+
+700
+00:44:12,160 --> 00:44:13,955
+相机一个比lambda二大
+camera one was bigger than lambda two
+
+701
+00:44:13,960 --> 00:44:16,535
+伽玛一号就是这里的重点
+that was the point here gamma one is
+
+702
+00:44:16,540 --> 00:44:18,605
+更大，所以这很容易
+bigger so so this was sort of easy
+
+703
+00:44:18,610 --> 00:44:21,245
+因为我正在添加我期望的东西
+because I'm adding stuff I expected the
+
+704
+00:44:21,250 --> 00:44:23,765
+lambdas上去就是这个地方
+lambdas to go up this is where the
+
+705
+00:44:23,770 --> 00:44:27,185
+定理是它到目前为止没有上升
+theorem is that it didn't go up so far
+
+706
+00:44:27,190 --> 00:44:30,935
+至于传递或抱歉lambda二
+as to pass or sorry the the lambda two
+
+707
+00:44:30,940 --> 00:44:34,345
+上升没有超过伽玛1
+which went up didn't pass up gamma 1
+
+708
+00:44:34,350 --> 00:44:37,975
+lambda2现在没有通过gamma1
+lambda 2 didn't pass up gamma 1 and now
+
+709
+00:44:37,980 --> 00:44:41,905
+让我把这些话写下来吧
+let me write those words down now the
+
+710
+00:44:41,910 --> 00:44:46,835
+阿尔法2很好，它可以alpha
+Alpha 2 well it could could alpha to
+
+711
+00:44:46,840 --> 00:44:53,785
+传递lambda1和alpha3怎么样
+pass up lambda 1 and what about alpha 3
+
+712
+00:44:53,790 --> 00:45:00,965
+所以让我说出我相信的想法
+so so let me say what I believe I think
+
+713
+00:45:00,970 --> 00:45:05,435
+alpha2就像1落后但是我
+alpha 2 which is like 1 behind but I'm
+
+714
+00:45:05,440 --> 00:45:09,425
+添加排名-我认为alpha2可以通过
+adding rank - I think alpha 2 could pass
+
+715
+00:45:09,430 --> 00:45:13,535
+lambda1它可以通过lambda1但是
+up lambda 1 it could pass lambda 1 but
+
+716
+00:45:13,540 --> 00:45:16,985
+alpha3我不能相信alpha3
+alpha 3 can't I believe that alpha 3 is
+
+717
+00:45:16,990 --> 00:45:21,485
+比lambda1小，所以alpha3更小
+smaller than lambda 1 so alpha 3 smaller
+
+718
+00:45:21,490 --> 00:45:26,065
+然后伽玛不是原始的
+than then then gamma wasn't the original
+
+719
+00:45:26,070 --> 00:45:37,445
+是的好哦，无论如何我会把它弄好
+yeah okay Oh anyway I'll get it right in
+
+720
+00:45:37,450 --> 00:45:40,565
+你知道什么问题的笔记
+the notes you you you know what question
+
+721
+00:45:40,570 --> 00:45:42,785
+我问，这对我来说就是那个
+I'm asking and that's for me that's the
+
+722
+00:45:42,790 --> 00:45:43,975
+重要的事情
+important thing
+
+723
+00:45:43,980 --> 00:45:49,325
+现在有一个小问题，为什么
+now there is a little matter of why is
+
+724
+00:45:49,330 --> 00:45:52,595
+这是真的，这是好的情况让我
+this true this is the good case let me
+
+725
+00:45:52,600 --> 00:45:54,665
+给你另一个隔行扫描的例子
+give you another example of interlacing
+
+726
+00:45:54,670 --> 00:45:58,265
+我可以做到这就是真的
+can I do that it's it's it it really
+
+727
+00:45:58,270 --> 00:46:00,725
+来自这个，但让我给你一个
+comes from this but let me give you an
+
+728
+00:46:00,730 --> 00:46:05,675
+另一个例子就是这样我才引人注目
+other example that's just striking so I
+
+729
+00:46:05,680 --> 00:46:10,925
+有一个对称矩阵n由n调用它
+have a symmetric matrix n by n call it s
+
+730
+00:46:10,930 --> 00:46:17,315
+然后我扔掉了最后一排，并
+and then I throw away the last row and
+
+731
+00:46:17,320 --> 00:46:21,275
+列所以在这里是sn减1大
+column so in here is s n minus 1 the big
+
+732
+00:46:21,280 --> 00:46:24,785
+矩阵是SN，这是这个
+matrix was SN the this is a this one is
+
+733
+00:46:24,790 --> 00:46:30,245
+大小为n减1可以，所以它有排序
+of size n minus 1 okay so it's got sort
+
+734
+00:46:30,250 --> 00:46:32,405
+少自由度，因为
+of less degrees of freedom because the
+
+735
+00:46:32,410 --> 00:46:35,845
+自由的最后度得到去除，
+last degree of freedom got removed and
+
+736
+00:46:35,850 --> 00:46:38,435
+您如何看待特征值？
+what do you think about the eigenvalues
+
+737
+00:46:38,440 --> 00:46:42,095
+这是N减1的特征值
+of this the N minus 1 eigenvalues of
+
+738
+00:46:42,100 --> 00:46:45,785
+这和他们的n个特征值
+this and the n eigenvalues of that they
+
+739
+00:46:45,790 --> 00:46:50,225
+交织所以这个特征值也是如此
+interlace so the eigenvalues so so this
+
+740
+00:46:50,230 --> 00:46:53,735
+具有特征值lambda1
+has eigen values lambda 1 this would
+
+741
+00:46:53,740 --> 00:46:57,055
+具有小于该特征值的特征值
+have an eigenvalue smaller than that
+
+742
+00:46:57,060 --> 00:47:00,935
+这将有一个特征值lambda2
+this would have an eigenvalue lambda 2
+
+743
+00:47:00,940 --> 00:47:05,105
+这将使特征值更小
+this would have an eigenvalue smaller
+
+744
+00:47:05,110 --> 00:47:07,565
+比那样等等
+than that and so on just the same
+
+745
+00:47:07,570 --> 00:47:09,635
+隔行扫描，基本上是相同的
+interlacing and basically for the same
+
+746
+00:47:09,640 --> 00:47:14,525
+因为当你喜欢它的时候就像它一样
+reason that when you like it's like it's
+
+747
+00:47:14,530 --> 00:47:18,575
+这就是这个减小到n的大小
+this is this this reduction to size n
+
+748
+00:47:18,580 --> 00:47:21,455
+减1就像我说xn必须是
+minus 1 is like I'm saying xn has to be
+
+749
+00:47:21,460 --> 00:47:23,915
+能量为0或任何一个
+0 in the energy or any any of those
+
+750
+00:47:23,920 --> 00:47:28,355
+表达式和制作xn的事实
+expressions and the fact of making xn be
+
+751
+00:47:28,360 --> 00:47:32,555
+0是一个约束1
+0 is a like a 1 constraint taking one
+
+752
+00:47:32,560 --> 00:47:35,315
+它的自由度减少了
+degree of freedom away it reduces the
+
+753
+00:47:35,320 --> 00:47:38,825
+特征值但不是两个好现在我
+eigen values but not by two okay now I
+
+754
+00:47:38,830 --> 00:47:45,905
+有一个最后的神秘，让我尝试
+have one final mystery and let me try to
+
+755
+00:47:45,910 --> 00:47:52,055
+告诉你它让我担心的是什么
+tell you what it worried me no what is
+
+756
+00:47:52,060 --> 00:47:55,565
+它让我很担心
+it that worried me yes
+
+757
+00:47:55,570 --> 00:48:02,395
+假设你这就是假设这个
+suppose this you that supposes this
+
+758
+00:48:02,400 --> 00:48:05,465
+改变这种U该改变的是我
+change this u this change that I'm
+
+759
+00:48:05,470 --> 00:48:10,145
+假设它实际上是第二个
+making suppose it's actually the second
+
+760
+00:48:10,150 --> 00:48:13,415
+s的特征向量我也可以这样
+eigenvector of s so so can I kind of
+
+761
+00:48:13,420 --> 00:48:17,365
+写下来
+write this down
+
+762
+00:48:17,370 --> 00:48:23,255
+假设你实际上是第二个
+suppose you is actually the second
+
+763
+00:48:23,260 --> 00:48:29,435
+s的特征向量我的意思是这样的
+eigenvector of s where I mean by that so
+
+764
+00:48:29,440 --> 00:48:33,005
+我的意思是，有时U是lambda的2倍
+I mean that s times U is lambda 2 times
+
+765
+00:48:33,010 --> 00:48:38,105
+ü还好还好，现在我看，我要去
+u okay okay now I look at and I'm gonna
+
+766
+00:48:38,110 --> 00:48:44,915
+改变它s+uu转置那是什么
+change it s + uu transpose that's what
+
+767
+00:48:44,920 --> 00:48:46,625
+我一直在看，这会让人感动
+I've been looking at and that moves the
+
+768
+00:48:46,630 --> 00:48:49,535
+特征值上升但令我担心的是
+eigenvalues up but what worries me is
+
+769
+00:48:49,540 --> 00:48:55,355
+就好像我把它乘以20大一些
+like if I multiply this by 20 some big
+
+770
+00:48:55,360 --> 00:48:59,125
+我想要移动那个特征值
+number I'm gonna move that eigenvalue
+
+771
+00:48:59,130 --> 00:49:03,995
+过去的方式我就像我担心的那样
+way up way past I'm like I got worried
+
+772
+00:49:04,000 --> 00:49:07,265
+关于这个不平等的权利
+about this this inequality right
+
+773
+00:49:07,270 --> 00:49:11,855
+如果我，但当我添加这就是那个
+if I but when I add this that's that
+
+774
+00:49:11,860 --> 00:49:20,345
+相同的U是lambda2加20你写su
+same U is lambda 2 plus 20 you write su
+
+775
+00:49:20,350 --> 00:49:26,735
+是lambda2u，这20是20U是
+is lambda 2 u and this 20 is 20 U is a
+
+776
+00:49:26,740 --> 00:49:30,515
+单位矢量所以是的你在这里看到我的担心
+unit vector so yes you see my worry here
+
+777
+00:49:30,520 --> 00:49:35,465
+我正在进行等级1更改，但它已被移动
+I'm doing a Rank 1 change but it's moved
+
+778
+00:49:35,470 --> 00:49:39,755
+在特征值方式上如此可能
+in eigen value way way up so how could
+
+779
+00:49:39,760 --> 00:49:44,945
+这种说法是真的，这种危险
+this danger this this statement be true
+
+780
+00:49:44,950 --> 00:49:47,735
+所以我只是我只是想出了这里
+so I'm just I've just figured out here
+
+781
+00:49:47,740 --> 00:49:51,425
+什么配得好呀
+what what gamete well yeah
+
+782
+00:49:51,430 --> 00:49:54,995
+你看到我的问题，我可以把它留下来
+you see my question I could leave it as
+
+783
+00:49:55,000 --> 00:49:58,085
+下次回答的问题让我这样做
+a question to answer next time let me do
+
+784
+00:49:58,090 --> 00:50:03,215
+那个，我会把它放在网上，所以你会
+that and I'll put it on online so you'll
+
+785
+00:50:03,220 --> 00:50:06,935
+看清楚它看起来像它
+see it clearly it looks like and it it
+
+786
+00:50:06,940 --> 00:50:11,135
+发生这个特征向量现在有
+happens that this eigen vector now has
+
+787
+00:50:11,140 --> 00:50:14,315
+特征值lambda2加20为什么不
+eigen value lambda 2 plus 20 why doesn't
+
+788
+00:50:14,320 --> 00:50:19,385
+吹走这句话好吧，我会的
+that blow away this statement okay I'll
+
+789
+00:50:19,390 --> 00:50:22,085
+把它放在一边，因为它有点来了
+put that because it's sort of coming
+
+790
+00:50:22,090 --> 00:50:24,905
+与零下10秒，在去
+with with minus 10 seconds to go in the
+
+791
+00:50:24,910 --> 00:50:28,245
+类，以便让我们离开那
+class so so let's leave that
+
+792
+00:50:28,250 --> 00:50:30,555
+下次再讨论这个问题
+a discussion of this for next time and
+
+793
+00:50:30,560 --> 00:50:34,035
+那么如果我对这个讲座感到满意的话
+then but I'm happy with this lecture if
+
+794
+00:50:34,040 --> 00:50:37,695
+你是我使用V的最后一次演讲
+you are the last lecture I got using V's
+
+795
+00:50:37,700 --> 00:50:41,085
+混淆了，我在这里不可靠
+mixed up and it's not reliable here I
+
+796
+00:50:41,090 --> 00:50:46,089
+like the proof of D lambda DT and we're
+
+797
+00:50:41,090 --> 00:50:50,560
+就像DlambdaDT的证明一样，我们也是
+
+798
+00:50:46,099 --> 00:50:50,560
+从这个话题开始-非常感谢你
+started on this topic - good thank you
+

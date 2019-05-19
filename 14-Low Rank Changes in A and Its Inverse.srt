@@ -1,0 +1,3668 @@
+1
+00:00:01,069 --> 00:00:03,194
+以下内容提供
+the following content is provided under
+
+2
+00:00:03,199 --> 00:00:05,715
+CreativeCommons许可您的支持
+a Creative Commons license your support
+
+3
+00:00:05,720 --> 00:00:08,024
+将帮助MITOpenCourseWare继续
+will help MIT OpenCourseWare continue to
+
+4
+00:00:08,029 --> 00:00:09,855
+提供高质量的教育资源
+offer high quality educational resources
+
+5
+00:00:09,860 --> 00:00:10,935
+免费
+for free
+
+6
+00:00:10,940 --> 00:00:13,125
+捐款或查看额外的捐款
+to make a donation or to view additional
+
+7
+00:00:13,130 --> 00:00:15,165
+数百个麻省理工学院课程的材料
+materials from hundreds of MIT courses
+
+8
+00:00:15,170 --> 00:00:32,015
+访问位于ocw.mit.edu的麻省理工学院开放式课件
+visit MIT opencourseware at ocw.mit.edu
+
+9
+00:00:32,020 --> 00:00:37,365
+低阶矩阵如此重要的功能
+low rank matrices so important function
+
+10
+00:00:37,370 --> 00:00:42,665
+矩阵他们可以真正低等级
+matrices they can be truly low rank like
+
+11
+00:00:42,670 --> 00:00:47,145
+紫外线转置是排名第一和我们
+UV transpose that's a rank one and we
+
+12
+00:00:47,150 --> 00:00:51,705
+对那些问题有一些疑问
+have some questions about those and then
+
+13
+00:00:51,710 --> 00:00:54,225
+本章后面将讨论矩阵
+later in the chapter will meet matrices
+
+14
+00:00:54,230 --> 00:00:57,285
+虽然排名在哪里
+that are approximately though rank where
+
+15
+00:00:57,290 --> 00:01:01,725
+奇异值就像下降一样
+the the singular values drop off like
+
+16
+00:01:01,730 --> 00:01:05,974
+疯了，那些非常了不起
+crazy and those are quite remarkable
+
+17
+00:01:05,979 --> 00:01:10,665
+矩阵确定，这是我的话题
+matrices ok so that this is my topic at
+
+18
+00:01:10,670 --> 00:01:15,465
+一开始，如果不采取
+the beginning and it if it doesn't take
+
+19
+00:01:15,470 --> 00:01:17,985
+整整一个小时我想回去
+the whole hour I want to go back to a
+
+20
+00:01:17,990 --> 00:01:24,165
+第2章第2章中的主题
+topic in in chapter chapter 2 that
+
+21
+00:01:24,170 --> 00:01:29,915
+应该是2.4，我们是最后一次
+should be 2.4 where we were last time
+
+22
+00:01:29,920 --> 00:01:38,415
+好的，所以这是在一小时后期
+good ok so that's for late in the hour
+
+23
+00:01:38,420 --> 00:01:42,525
+这是现在所以我希望它让我们专注
+this is for now so I want it let's focus
+
+24
+00:01:42,530 --> 00:01:46,065
+对此我有什么问题
+on this so what's the question there I
+
+25
+00:01:46,070 --> 00:01:49,695
+从身份矩阵Iperturb开始
+start with the identity matrix I perturb
+
+26
+00:01:49,700 --> 00:01:55,815
+它通过排名1的矩阵，我问什么
+it by a matrix of rank 1 and I ask what
+
+27
+00:01:55,820 --> 00:02:00,375
+反之亦然，我正在做一个小事
+the inverse is so I'm making a small
+
+28
+00:02:00,380 --> 00:02:02,864
+当我说小时改变矩阵
+change in the matrix when I say small
+
+29
+00:02:02,869 --> 00:02:05,085
+改变我不是说数字是
+change I don't mean that the numbers are
+
+30
+00:02:05,090 --> 00:02:10,004
+事实上，你知道它可以紫外线
+small in fact you know it could UV
+
+31
+00:02:10,009 --> 00:02:12,885
+转置可能是所有的女主人
+transpose could be the all ones matron
+
+32
+00:02:12,890 --> 00:02:16,785
+或者所有的数百万甚至矩阵，但它
+or all Millions matrix even but it's
+
+33
+00:02:16,790 --> 00:02:19,874
+等级很小就是那个
+rank is small that's what's that's the
+
+34
+00:02:19,879 --> 00:02:22,785
+小这种想法是很重要的位置，并
+idea of small that's important here and
+
+35
+00:02:22,790 --> 00:02:27,904
+我想知道反面是什么
+I would like to know what the inverse is
+
+36
+00:02:27,909 --> 00:02:32,055
+这就是4.1和4.1中的问题
+so that's the question here in 4.1 and
+
+37
+00:02:32,060 --> 00:02:35,025
+有一个着名的公式，有
+there's a famous formula that has at
+
+38
+00:02:35,030 --> 00:02:37,505
+至少三个名字，可能更多和
+least three names and probably more and
+
+39
+00:02:37,510 --> 00:02:40,755
+它也被称为矩阵求逆
+it's also called the matrix inversion
+
+40
+00:02:40,760 --> 00:02:54,704
+信号处理中的公式让我
+formula in signal processing and let me
+
+41
+00:02:54,709 --> 00:02:57,615
+记下这个例子，所以我开始吧
+write down the example so here I start
+
+42
+00:02:57,620 --> 00:03:02,165
+使用单位矩阵我排名1
+with the identity matrix I do a rank 1
+
+43
+00:03:02,170 --> 00:03:05,835
+扰动，我想知道是什么
+perturbation and I want to know what's
+
+44
+00:03:05,840 --> 00:03:08,564
+反过来，我会写下来的
+the inverse and I'll write down the
+
+45
+00:03:08,569 --> 00:03:12,885
+回答并检查它是否是正确的那么
+answer and check that it's correct so
+
+46
+00:03:12,890 --> 00:03:15,764
+我正在扰乱身份矩阵
+i'm perturbing the identity matrix in
+
+47
+00:03:15,769 --> 00:03:19,245
+这种情况的逆也是
+this case whose inverse is also the
+
+48
+00:03:19,250 --> 00:03:21,104
+单位矩阵所以我要写
+identity matrix so I'm going to write
+
+49
+00:03:21,109 --> 00:03:24,704
+作为一种排列的答案
+the answer as a as a permutation as a
+
+50
+00:03:24,709 --> 00:03:27,764
+我和这个问题的扰动是
+perturbation of I and the question is
+
+51
+00:03:27,769 --> 00:03:31,064
+什么是扰动，它是一个
+what is that perturbation and it's a
+
+52
+00:03:31,069 --> 00:03:34,505
+着名的配方有一个UV转置
+famous formula there's a UV transpose
+
+53
+00:03:34,510 --> 00:03:40,294
+从那里复制除以1
+comes in copied from there divided by 1
+
+54
+00:03:40,299 --> 00:03:47,204
+减去vtransposeu现在让我们先来
+minus v transpose u now let's first of
+
+55
+00:03:47,209 --> 00:03:49,395
+所有这些只是看到这些是一个
+all just see that these are this is a
+
+56
+00:03:49,400 --> 00:03:54,314
+合理的配方，所以使用列U和
+reasonable formula so use a column U and
+
+57
+00:03:54,319 --> 00:03:58,634
+V是列向量，因为UV总是如此
+V are column vectors as always so UV
+
+58
+00:03:58,639 --> 00:04:01,775
+transpose是一列矩阵列
+transpose is a matrix column times row
+
+59
+00:04:01,780 --> 00:04:05,475
+所以我从中减去了
+so I it's being subtracted from the
+
+60
+00:04:05,480 --> 00:04:09,764
+身份和这边我在这边
+identity and over here on this side I
+
+61
+00:04:09,769 --> 00:04:12,884
+将UV转置再次排名第一
+have UV transpose again a rank one
+
+62
+00:04:12,889 --> 00:04:16,755
+矩阵除以数字，这就是
+matrix divided by a number so that's the
+
+63
+00:04:16,760 --> 00:04:21,104
+指出这是一个数字
+point this is a number
+
+64
+00:04:21,109 --> 00:04:28,724
+一个接一个矩阵，你可以这样说
+a one by one matrix you could say so the
+
+65
+00:04:28,729 --> 00:04:32,594
+这个公式的要点就是找到了
+point of this formula is to find the
+
+66
+00:04:32,599 --> 00:04:36,134
+N乘n矩阵的逆
+inverse of an N by n matrix in terms of
+
+67
+00:04:36,139 --> 00:04:39,914
+1乘1矩阵的逆矩阵
+the inverse of a 1 by 1 matrix which is
+
+68
+00:04:39,919 --> 00:04:42,974
+我的意思是更简单，更容易做到
+a lot simpler and easier to do I mean
+
+69
+00:04:42,979 --> 00:04:46,184
+右手边显然很容易
+that right hand side is clearly easy and
+
+70
+00:04:46,189 --> 00:04:50,284
+让我们看看它告诉我们的其他事情
+let's see what other things it tells us
+
+71
+00:04:50,289 --> 00:04:55,064
+所以这是一个秩1扰动
+so this was a Rank 1 perturbation in the
+
+72
+00:04:55,069 --> 00:04:59,355
+身份然后，当我反转，我得看看
+identity then when I invert I get look
+
+73
+00:04:59,360 --> 00:05:01,904
+在此这也是1级，这是一个
+at this this is also a rank 1 that's a
+
+74
+00:05:01,909 --> 00:05:05,235
+这其实数量是非常相同的
+number that's in fact it's the very same
+
+75
+00:05:05,240 --> 00:05:08,805
+等级1，我们在这个有没有在这
+rank 1 that we had there in this in this
+
+76
+00:05:08,810 --> 00:05:17,534
+好的情况如此结论，如果我改变你的
+nice case so conclusion if I change your
+
+77
+00:05:17,539 --> 00:05:21,675
+矩阵按等级1改变它的倒数
+matrix by rank 1 I change its inverse by
+
+78
+00:05:21,680 --> 00:05:26,024
+排名第一，似乎并不完全
+rank one that doesn't seem completely
+
+79
+00:05:26,029 --> 00:05:30,344
+很明显，直到你弄明白
+obvious until you go to figure it out
+
+80
+00:05:30,349 --> 00:05:33,105
+当你搞清楚时，你会得到一个公式
+when you figure it out you get a formula
+
+81
+00:05:33,110 --> 00:05:36,034
+到目前为止，我告诉你的是我
+that tells you well so far what I'm
+
+82
+00:05:36,039 --> 00:05:38,955
+扰动是我的身份矩阵
+perturbing is the identity matrix when I
+
+83
+00:05:38,960 --> 00:05:41,495
+到达这里我会扰乱任何矩阵
+get here I'm gonna perturb any matrix
+
+84
+00:05:41,500 --> 00:05:44,355
+如果，我会得出同样的结论
+I'm gonna reach the same conclusion if
+
+85
+00:05:44,360 --> 00:05:51,524
+这是排名1然后是变化
+this is rank 1 then the change in the
+
+86
+00:05:51,529 --> 00:05:54,524
+逆也是排名1，但让我们看看它
+inverse is also rank 1 but let's see it
+
+87
+00:05:54,529 --> 00:05:57,964
+第一个平等的身份，所以我
+first for a equal the identity so I
+
+88
+00:05:57,969 --> 00:06:01,694
+我猜我有两三个问题
+guess I have two or three questions one
+
+89
+00:06:01,699 --> 00:06:03,914
+将如何检查这是什么
+would be how do you check that this is
+
+90
+00:06:03,919 --> 00:06:11,765
+再次纠正，记住它在做什么
+correct again remember what it's doing
+
+91
+00:06:11,770 --> 00:06:16,265
+它的漂亮整洁是它的计算
+it's pretty neat it's it's computing an
+
+92
+00:06:16,270 --> 00:06:19,874
+N乘以1乘以1乘以1
+N by n inverse in terms of a 1 by 1
+
+93
+00:06:19,879 --> 00:06:25,185
+反过来我只是一个数字而且那就是
+inverse I just it's a number and that's
+
+94
+00:06:25,190 --> 00:06:27,825
+这肯定是一个有利的交流所以它是
+a certainly a favorable exchange so it's
+
+95
+00:06:27,830 --> 00:06:30,524
+你想要的公式和a
+a formula that you want and and a
+
+96
+00:06:30,529 --> 00:06:34,164
+这个公式非常有用
+formula that's quite useful
+
+97
+00:06:34,169 --> 00:06:36,814
+是的，让我看看公式
+yeah let me just check the formula
+
+98
+00:06:36,819 --> 00:06:40,175
+在我谈论它如何有用之前
+before I talk about how how it's useful
+
+99
+00:06:40,180 --> 00:06:43,504
+所以如何检查它我猜是否这样
+so how shall I check it I guess if this
+
+100
+00:06:43,509 --> 00:06:45,605
+声称是逆，然后让我们
+is claimed to be the inverse then let's
+
+101
+00:06:45,610 --> 00:06:48,384
+只是检查所以这将是检查
+just check so this will be the check
+
+102
+00:06:48,389 --> 00:06:58,625
+我将乘以我加上UV
+I'll multiply by by that I plus UV
+
+103
+00:06:58,630 --> 00:07:02,585
+转换一个减去V转置你
+transpose over one minus V transpose you
+
+104
+00:07:02,590 --> 00:07:06,064
+声称的反转和我希望的是什么
+the claimed inverse and what am i hoping
+
+105
+00:07:06,069 --> 00:07:11,435
+从这个乘法得到我，我
+to get from this multiplication I I'm
+
+106
+00:07:11,440 --> 00:07:14,254
+想知道我希望那个结果是
+wondering I'm hoping that that result is
+
+107
+00:07:14,259 --> 00:07:16,925
+身份矩阵所以我要去
+the identity matrix so I'm just going to
+
+108
+00:07:16,930 --> 00:07:19,835
+做到这一点我们会看到身份
+do it out and we'll see the identity
+
+109
+00:07:19,840 --> 00:07:23,164
+出现让我这么快就让我这么做
+appear so that times I so let me just
+
+110
+00:07:23,169 --> 00:07:26,015
+先写下那部分我减去紫外线
+write that part first I minus UV
+
+111
+00:07:26,020 --> 00:07:30,185
+转置，现在我减去UV转置
+transpose and now I minus UV transpose
+
+112
+00:07:30,190 --> 00:07:35,034
+这是为了减去紫外线
+times this so that's I minus UV
+
+113
+00:07:35,039 --> 00:07:42,754
+转置xUV转置超过一个减号
+transpose x UV transpose over one minus
+
+114
+00:07:42,759 --> 00:07:48,455
+V转置你就是这样
+V transpose u that's it's just just
+
+115
+00:07:48,460 --> 00:07:51,694
+将它乘以看到我们
+multiplying it out and seeing that we
+
+116
+00:07:51,699 --> 00:07:55,504
+得到身份好吧我看到了身份
+get the identity okay I see the identity
+
+117
+00:07:55,509 --> 00:07:58,884
+所以我想我希望这一切
+there so I guess I hope that all this
+
+118
+00:07:58,889 --> 00:08:03,904
+这部分减少到它减少了什么
+this part reduces to what does it reduce
+
+119
+00:08:03,909 --> 00:08:09,605
+好吧，让我在那里做那个分子
+to okay let me do that numerator there
+
+120
+00:08:09,610 --> 00:08:19,145
+所以这是UV转置减去upoo减去
+so that's UV transpose minus u poo minus
+
+121
+00:08:19,150 --> 00:08:23,464
+u次V转置你看到了什么
+u times V transpose u do you see what's
+
+122
+00:08:23,469 --> 00:08:30,904
+发生在这里V转置关键是
+happening here V transpose the key is
+
+123
+00:08:30,909 --> 00:08:35,094
+当我乘以那个倍数时
+that when I multiplied that times that
+
+124
+00:08:35,099 --> 00:08:38,164
+我连续做了四件事，而且我做了
+I've got four things in a row and I do
+
+125
+00:08:38,169 --> 00:08:41,074
+中间对首先因为那是一个
+the middle pair first because that's a
+
+126
+00:08:41,079 --> 00:08:44,255
+数字V转置你所以我有紫外线
+number V transpose u so I had UV
+
+127
+00:08:44,260 --> 00:08:46,705
+转移从那
+transpose from that
+
+128
+00:08:46,710 --> 00:08:50,695
+和UV转置次数-数量
+and UV transpose times that number - do
+
+129
+00:08:50,700 --> 00:08:57,555
+你知道我在这里得到了什么
+you see what have I got here I've got
+
+130
+00:08:57,560 --> 00:09:01,375
+我已经知道了，我现在已经进行了紫外线转换
+I've got ya I've got UV transpose I now
+
+131
+00:09:01,380 --> 00:09:04,945
+我将1-v转置因子分解出来
+i factor out a 1 - v transpose u which
+
+132
+00:09:04,950 --> 00:09:08,905
+正是我想要的这是一个因素
+is just what I want this is a factor
+
+133
+00:09:08,910 --> 00:09:11,065
+然后1减V将你移出这里
+then 1 minus V transpose u out of here
+
+134
+00:09:11,070 --> 00:09:14,755
+它取消了那些然后我就是
+it's there cancel those and then I'm
+
+135
+00:09:14,760 --> 00:09:18,265
+留下一个取消的UV转置
+left with a UV transpose which cancels
+
+136
+00:09:18,270 --> 00:09:22,945
+那并留下了它的亲切身份
+that and leaves the identity it's kind
+
+137
+00:09:22,950 --> 00:09:28,885
+魔术当然是有人拥有的
+of magic of course it was somebody had
+
+138
+00:09:28,890 --> 00:09:30,535
+在第一个中找出那个公式
+to figure out that formula in the first
+
+139
+00:09:30,540 --> 00:09:37,045
+地方我可以，我可以做下一个，如果
+place I could I could do the next one if
+
+140
+00:09:37,050 --> 00:09:42,885
+你喜欢，因为我在滚动
+you like since I'm on a roll
+
+141
+00:09:42,890 --> 00:09:46,315
+假设我现在采取第二个是什么
+suppose I take the second one now what's
+
+142
+00:09:46,320 --> 00:09:49,705
+它的紫外转置的差异，但
+the difference in its UV transpose but
+
+143
+00:09:49,710 --> 00:09:52,315
+那些较大字母在U和V
+those are larger letters the U and the V
+
+144
+00:09:52,320 --> 00:09:55,245
+那么如果我的意思是那些呢？
+so what if one of my meaning by those
+
+145
+00:09:55,250 --> 00:09:58,315
+那些是矩阵，是的，这是一个更大的
+those are matrices yeah this is a bigger
+
+146
+00:09:58,320 --> 00:10:03,385
+等级U是U是有K列V.
+rank U is a U is a has K columns V
+
+147
+00:10:03,390 --> 00:10:07,555
+转置有K行他们产品
+transpose has K rows they that product
+
+148
+00:10:07,560 --> 00:10:13,495
+UV转置是KbyK所以让我看看
+UV transpose is K by K so let me see
+
+149
+00:10:13,500 --> 00:10:16,255
+我认为这个公式现在会如此
+what I think the formula would be so now
+
+150
+00:10:16,260 --> 00:10:22,015
+我减去UV转置，所以这是
+I minus UV transpose inverse so this is
+
+151
+00:10:22,020 --> 00:10:30,355
+n乘以K乘以K乘以n得到n乘以n
+n by K times K by n so it's n by n
+
+152
+00:10:30,360 --> 00:10:32,875
+矩阵，这是想法的身份
+matrix and this is the idea identities
+
+153
+00:10:32,880 --> 00:10:37,675
+但它的等级是什么等级
+but it's rank is what is the rank of
+
+154
+00:10:37,680 --> 00:10:42,645
+现在好了正确的，所以我在这里
+that now okay right so I have here the
+
+155
+00:10:42,650 --> 00:10:46,675
+整件事就是整件事
+whole thing is the whole thing is the
+
+156
+00:10:46,680 --> 00:10:49,915
+N乘n矩阵的逆，所以我有一个
+inverse of an N by n matrix so I have an
+
+157
+00:10:49,920 --> 00:10:52,645
+Nbynmatrix让我把它放在这里n
+N by n matrix let me put that up here n
+
+158
+00:10:52,650 --> 00:11:01,435
+通过n矩阵反转
+by n matrix to invert
+
+159
+00:11:01,440 --> 00:11:04,685
+还有它是好的，我会写下来
+there it is okay I'm gonna write down
+
+160
+00:11:04,690 --> 00:11:06,425
+你能够达到的公式
+the formula you're gonna be able to
+
+161
+00:11:06,430 --> 00:11:08,465
+写下来，因为它只是复制
+write it down because it's just copy
+
+162
+00:11:08,470 --> 00:11:13,235
+从那个复制，你会看到
+copied from that one and you'll see that
+
+163
+00:11:13,240 --> 00:11:16,805
+它涉及KbyKinverse，所以我有
+it involves a K by K inverse so I have
+
+164
+00:11:16,810 --> 00:11:19,384
+N×n矩阵反转，但我没有
+an N by n matrix to invert but I don't
+
+165
+00:11:19,389 --> 00:11:22,235
+必须这样做我可以把它切换到K.
+have to do that I can switch it to a K
+
+166
+00:11:22,240 --> 00:11:26,795
+通过K矩阵，这很漂亮没关系
+by K matrix that's like pretty nice okay
+
+167
+00:11:26,800 --> 00:11:28,524
+所以我们这样做吧
+so so let's do it
+
+168
+00:11:28,529 --> 00:11:34,535
+所以我基本上要复制我加
+so I'm basically gonna copy that I plus
+
+169
+00:11:34,540 --> 00:11:40,715
+你现在我是矩阵所以我就是这样的
+you now I'm matrices so I I so that's an
+
+170
+00:11:40,720 --> 00:11:43,024
+逆，但我不能把它作为一个
+inverse but I can't leave it as a
+
+171
+00:11:43,029 --> 00:11:44,795
+分母，因为我们在这里
+denominator because we're here we're
+
+172
+00:11:44,800 --> 00:11:47,465
+谈到由K矩阵AK，这是
+talking about a K by K matrix this is
+
+173
+00:11:47,470 --> 00:11:51,995
+现在这很好，所以我必须这样做
+this is now this is well so I have to
+
+174
+00:11:52,000 --> 00:11:58,564
+把它像任何矩阵逆IK减去
+put it like any matrix inverse I K minus
+
+175
+00:11:58,569 --> 00:12:06,545
+V转置你反转所以我只是
+V transpose u inverse so I'm just
+
+176
+00:12:06,550 --> 00:12:09,574
+明智地复制这个公式
+copying this formula wisely taking the
+
+177
+00:12:09,579 --> 00:12:12,274
+你首先要比这个部分好
+you first than this part and then
+
+178
+00:12:12,279 --> 00:12:19,204
+最后V转置我把这个
+finally the V transpose I put this one
+
+179
+00:12:19,209 --> 00:12:21,725
+这一个现在已经成功了
+up this one now has made that one
+
+180
+00:12:21,730 --> 00:12:25,055
+过时的右这是字母k等于
+obsolete right this was the case k equal
+
+181
+00:12:25,060 --> 00:12:30,365
+一个在这里，但我认为它有助于
+one over here but I think it helps to
+
+182
+00:12:30,370 --> 00:12:32,345
+看到这肯定有助于我看到
+see it this certainly helps me to see
+
+183
+00:12:32,350 --> 00:12:34,925
+公式首先排名第一
+the formula first for a rank one
+
+184
+00:12:34,930 --> 00:12:39,965
+扰动，非常非常
+perturbation which is pretty much a very
+
+185
+00:12:39,970 --> 00:12:42,694
+可能的可能性，然后看到我们
+likely possibility and then see that we
+
+186
+00:12:42,699 --> 00:12:45,365
+有我完全类似的公式应
+have I totally analogous formula shall
+
+187
+00:12:45,370 --> 00:12:49,024
+我们这有点乐趣，以检查它，所以我
+we it's sort of fun to check it so I
+
+188
+00:12:49,029 --> 00:12:52,055
+打算做同样的检查，但我会
+plan to do the same check but but I'll
+
+189
+00:12:52,060 --> 00:13:02,615
+请注意，我有一个KbyK所以
+just notice here that I have a K by K so
+
+190
+00:13:02,620 --> 00:13:04,324
+我正在交换一些东西
+I'm exchanging something that's a
+
+191
+00:13:04,329 --> 00:13:07,684
+n的身份和n的扰动
+perturbation of I of n by n identity and
+
+192
+00:13:07,689 --> 00:13:12,365
+n由n矩阵表示必须反转
+n by n matrix for to have to invert
+
+193
+00:13:12,370 --> 00:13:16,024
+什么是KbyK矩阵
+something that's a K by K matrix
+
+194
+00:13:16,029 --> 00:13:20,495
+K的身份很多地扰乱了K.
+perturbing the K by K identity much
+
+195
+00:13:20,500 --> 00:13:26,285
+在这种情况下，较小的是k就是一个
+smaller in that case k was one so are
+
+196
+00:13:26,290 --> 00:13:29,074
+你现在好好检查它，所以我想要
+you good for checking it now so I want
+
+197
+00:13:29,079 --> 00:13:32,105
+通过这个和多个多重我
+to multiple multiple I that by this and
+
+198
+00:13:32,110 --> 00:13:35,855
+希望得到我是这个身份
+hopefully get I am the identity this is
+
+199
+00:13:35,860 --> 00:13:43,745
+最后，我不是，我应该
+the end by in I didn't yeah I should I
+
+200
+00:13:43,750 --> 00:13:46,774
+没有给予这两个或三个奖励
+haven't given credit to the two or three
+
+201
+00:13:46,779 --> 00:13:49,774
+或者可能有11个人找到了
+or four possibly 11 people who found
+
+202
+00:13:49,779 --> 00:13:55,655
+这个公式，我不明白哦，是的
+this formula and I not see oh yeah here
+
+203
+00:13:55,660 --> 00:13:56,495
+是他们的名字
+are their names
+
+204
+00:13:56,500 --> 00:14:00,155
+是不是好让他们通过著名
+is it okay to make them famous by
+
+205
+00:14:00,160 --> 00:14:06,324
+把他们的名字放在这里是谢尔曼
+putting their names up here yes Sherman
+
+206
+00:14:06,329 --> 00:14:12,625
+我无法告诉你是谁做了什么的
+and I couldn't tell you who did what
+
+207
+00:14:12,630 --> 00:14:18,515
+莫里森伍德伯里
+Morrison Woodbury
+
+208
+00:14:18,520 --> 00:14:22,985
+然后也许没人会怀疑别人
+and then nobody doubt others right maybe
+
+209
+00:14:22,990 --> 00:14:25,595
+其中一人做了一个这样做排名
+one of them did that one did this rank
+
+210
+00:14:25,600 --> 00:14:28,025
+一个案例，然后另一个案例
+one case and then another generalized it
+
+211
+00:14:28,030 --> 00:14:31,445
+然后你可以从中看到
+and then you could see from that from
+
+212
+00:14:31,450 --> 00:14:34,865
+那里的大纲最终我们会
+the outline there that eventually we'll
+
+213
+00:14:34,870 --> 00:14:37,265
+我们当然可以扰乱矩阵
+we can perturb a matrix a of course
+
+214
+00:14:37,270 --> 00:14:39,425
+那不会比那更难
+that's not gonna be much harder than the
+
+215
+00:14:39,430 --> 00:14:42,905
+身份好吧让我们做一个
+identity okay let's let's do just one
+
+216
+00:14:42,910 --> 00:14:45,545
+更多检查，然后显示它是如何
+more check and then show how it could be
+
+217
+00:14:45,550 --> 00:14:51,065
+使用好吧好吧我乘以那个
+used okay okay I multiply that by that
+
+218
+00:14:51,070 --> 00:14:55,475
+我们可以做到这这件事倍
+can we do that this this thing times
+
+219
+00:14:55,480 --> 00:14:57,785
+这个并希望得到这样的身份
+this and hope to get the identity so
+
+220
+00:14:57,790 --> 00:15:01,115
+首先，我会写下这件事
+first I'll write down this thing there's
+
+221
+00:15:01,120 --> 00:15:03,175
+我不会平等的东西，因为我
+something I won't put equal because I'm
+
+222
+00:15:03,180 --> 00:15:07,595
+不是我乘以那就好了
+not I'm multiplying that by that okay so
+
+223
+00:15:07,600 --> 00:15:14,825
+我通过n减去UV转置
+I get by n minus UV transpose on the
+
+224
+00:15:14,830 --> 00:15:16,325
+左边当然我得到了
+left side of course I'm getting the
+
+225
+00:15:16,330 --> 00:15:20,285
+身份，我希望希望我得到
+identity and I hope hoping I'm getting
+
+226
+00:15:20,290 --> 00:15:22,025
+在右边的身份所以我
+the identity on the right so I'm
+
+227
+00:15:22,030 --> 00:15:25,115
+这个相乘我做到了，现在有我
+multiplying by this I did it there now I
+
+228
+00:15:25,120 --> 00:15:30,485
+必须把我减去UV转置它
+have to put I minus UV transpose it
+
+229
+00:15:30,490 --> 00:15:34,805
+在这里面对你我是负V
+takes face here you I'm minus V
+
+230
+00:15:34,810 --> 00:15:49,355
+转置u逆V转置gulp所以
+transpose u inverse V transpose gulp so
+
+231
+00:15:49,360 --> 00:15:54,325
+我只是留在那里，或者你就是你
+I just leave it there or you're you're
+
+232
+00:15:54,330 --> 00:15:57,815
+午餐时你很坚强让我们看看我们是什么
+at lunch you're strong let's see what we
+
+233
+00:15:57,820 --> 00:16:01,685
+可以做到还好这部分罚款好吧，这
+can do okay this part fine okay this
+
+234
+00:16:01,690 --> 00:16:08,525
+部分哦，男孩我在这里做什么诀窍
+part oh boy what do I do here the trick
+
+235
+00:16:08,530 --> 00:16:12,965
+是要成为这个不要看
+is gonna be that this don't be looking
+
+236
+00:16:12,970 --> 00:16:17,915
+它可以写的东西
+thing there it can be written
+
+237
+00:16:17,920 --> 00:16:21,575
+不同的是，让我们告诉我什么
+differently well let's just tell me what
+
+238
+00:16:21,580 --> 00:16:25,835
+等于它等于你减去紫外线
+it equals it equals u minus u v
+
+239
+00:16:25,840 --> 00:16:26,944
+颠倒
+transpose
+
+240
+00:16:26,949 --> 00:16:33,234
+你写的每个人都看到了，但现在
+you write everybody sees that but now
+
+241
+00:16:33,239 --> 00:16:36,994
+我要做什么我要把它放进去
+what am I gonna do I'm gonna put the
+
+242
+00:16:36,999 --> 00:16:42,624
+括号不同
+parentheses differently
+
+243
+00:16:42,629 --> 00:16:45,634
+我带来了你，你这是在
+I'm bringing the you the you that was on
+
+244
+00:16:45,639 --> 00:16:47,405
+在那里，我会穿上它
+the right up there I'm gonna put it on
+
+245
+00:16:47,410 --> 00:16:51,394
+左边你看到的就是这样
+the left you see that so so this is
+
+246
+00:16:51,399 --> 00:16:55,294
+显然你减去UV转移你和
+obviously you minus UV transpose you and
+
+247
+00:16:55,299 --> 00:16:57,845
+现在我要把另一个放在右边
+now I'm going to put right at another
+
+248
+00:16:57,850 --> 00:17:01,204
+时间是你的时间我减去V转置
+time it's you times I minus V transpose
+
+249
+00:17:01,209 --> 00:17:05,465
+你，我会把你从中分解出来
+you I'm gonna factor that you out of on
+
+250
+00:17:05,470 --> 00:17:07,745
+左侧而不是它的位置
+the left side instead of where it
+
+251
+00:17:07,750 --> 00:17:09,634
+最初来自右侧
+originally came on the right side of
+
+252
+00:17:09,639 --> 00:17:12,875
+这没关系你怎么看好消息
+this okay you see how see the great news
+
+253
+00:17:12,880 --> 00:17:15,664
+是的，这实际上是好的
+there yeah this was actually well
+
+254
+00:17:15,669 --> 00:17:20,644
+由你的教授偶然组织
+organized by your professor by accident
+
+255
+00:17:20,649 --> 00:17:25,444
+好吧那我现在该做什么呢
+okay so what do I do now this thing look
+
+256
+00:17:25,449 --> 00:17:27,725
+我到底就是我所拥有的
+I've got exactly here what I've got
+
+257
+00:17:27,730 --> 00:17:32,435
+完全倒在那里，我有我
+inverted there so altogether I have I
+
+258
+00:17:32,440 --> 00:17:36,695
+减去UV转置加上你这个
+minus UV transpose Plus this you this
+
+259
+00:17:36,700 --> 00:17:41,784
+取消时间V转置所以我得到了我
+cancelled times V transpose so I get I
+
+260
+00:17:41,789 --> 00:17:44,554
+所以这只是这个小花招
+so it was just this little sleight of
+
+261
+00:17:44,559 --> 00:17:47,615
+你右手进来的地方
+hand where you came in on the right and
+
+262
+00:17:47,620 --> 00:17:53,554
+在左边出来没关系，是一个
+came out on the left okay and be a
+
+263
+00:17:53,559 --> 00:17:59,884
+现在有类似的公式
+similar formula with a in there so now
+
+264
+00:17:59,889 --> 00:18:01,595
+这是一个公平的问题，是怎么做的
+it's a fair question how did anybody
+
+265
+00:18:01,600 --> 00:18:04,144
+想出这些公式，我们就是这样
+come up with these formulas we're we're
+
+266
+00:18:04,149 --> 00:18:06,215
+通过检查证明它们是正确的
+proving them correct just by checking
+
+267
+00:18:06,220 --> 00:18:09,154
+他们认同他们的身份
+that they that they give the identity
+
+268
+00:18:09,159 --> 00:18:13,524
+矩阵我们应该如何思考
+matrix we should really think how that
+
+269
+00:18:13,529 --> 00:18:16,955
+如何在第一个中找到公式
+how to find the formula in the first
+
+270
+00:18:16,960 --> 00:18:22,174
+我可以回到这个地方怎么样
+place I could go back to this one how
+
+271
+00:18:22,179 --> 00:18:24,394
+你能在第一个中找到那个公式吗？
+could you find that formula in the first
+
+272
+00:18:24,399 --> 00:18:27,875
+放置好这里是应该做的一种方式
+place well here's one way to do it
+
+273
+00:18:27,880 --> 00:18:41,465
+-所以-这是一个即将发现的
+- so - - this is an about to discover
+
+274
+00:18:41,470 --> 00:18:45,465
+然后我在这里让我放过
+and then I over here let me put over
+
+275
+00:18:45,470 --> 00:18:57,165
+我想到这里使用这个公式
+here to use the formula while I think of
+
+276
+00:18:57,170 --> 00:19:00,915
+它实际上我有两个用于
+it and actually I have two to uses in
+
+277
+00:19:00,920 --> 00:19:13,005
+心灵使用一个就是解决所以我只是
+mind use one would be to solve so I just
+
+278
+00:19:13,010 --> 00:19:16,095
+做我想我想要这样这是我的
+doing I suppose I want to so this is my
+
+279
+00:19:16,100 --> 00:19:21,375
+新矩阵UV转置x等于一些
+new matrix UV transpose x equals some
+
+280
+00:19:21,380 --> 00:19:26,795
+右手边B解决了一个线性系统
+right hand side B solve a linear system
+
+281
+00:19:26,800 --> 00:19:31,215
+其具有系数矩阵它们
+that has that coefficient matrix they
+
+282
+00:19:31,220 --> 00:19:41,255
+过去常常会在广场上出现新的a
+used to would be in the squares a new a
+
+283
+00:19:41,260 --> 00:19:46,725
+新的测量或观察或数据
+new measurement or observation or data
+
+284
+00:19:46,730 --> 00:19:57,075
+指出这些方块所以我的意思
+point in these squares so what I mean
+
+285
+00:19:57,080 --> 00:19:59,505
+那么旧的我是什么意思呢
+well what do I mean by this the old
+
+286
+00:19:59,510 --> 00:20:10,455
+问题是X等于B，我在想
+problem was a X equal B and I'm thinking
+
+287
+00:20:10,460 --> 00:20:12,945
+我说的是最小方块
+what I'm talking about least squares
+
+288
+00:20:12,950 --> 00:20:16,985
+在这里，我想象一个是矩形的
+here I'm imagining that a is rectangular
+
+289
+00:20:16,990 --> 00:20:20,985
+-许多方程式教导a是一个高大的罪
+- many equations taught a is a tall sin
+
+290
+00:20:20,990 --> 00:20:23,085
+矩阵只是我们一直在谈论的那种
+matrix just the kind we've been talking
+
+291
+00:20:23,090 --> 00:20:27,195
+关于这个等式成为
+about so that that equation becomes of
+
+292
+00:20:27,200 --> 00:20:29,355
+当然我们知道我们正常了
+course we know we go to the normal
+
+293
+00:20:29,360 --> 00:20:37,665
+方程式a转置X是好的X是
+equations a transpose a X the good X is
+
+294
+00:20:37,670 --> 00:20:41,154
+转置B
+a transpose B
+
+295
+00:20:41,159 --> 00:20:48,424
+好的，现在我们得到一个新的测量所以a
+okay now we get a new measurement so a
+
+296
+00:20:48,429 --> 00:20:50,224
+新测量如何新
+new measurement how does the new
+
+297
+00:20:50,229 --> 00:20:52,414
+测量改变了这个问题
+measurement change the problem so this
+
+298
+00:20:52,419 --> 00:20:54,694
+是之前的老问题
+is the old problem before the
+
+299
+00:20:54,699 --> 00:20:56,914
+测量现在是一个新的
+measurement comes in now a new
+
+300
+00:20:56,919 --> 00:20:59,074
+测量到了，这是另一个B.
+measurement arrived so that's another B
+
+301
+00:20:59,079 --> 00:21:04,854
+aBn加1，我们得到另一个等式
+a B n plus 1 and we get another equation
+
+302
+00:21:04,859 --> 00:21:07,834
+我们得到另一个正确的方程式
+we get another equation right that's the
+
+303
+00:21:07,839 --> 00:21:11,044
+新的测量一个新点的
+new measurement a new point to that the
+
+304
+00:21:11,049 --> 00:21:12,954
+直线试图贴近
+straight line is trying to stay close to
+
+305
+00:21:12,959 --> 00:21:17,914
+所以我们称这个等式我不知道
+so so we call this equation I don't know
+
+306
+00:21:17,919 --> 00:21:21,004
+我们应该怎么称呼它也许就是它
+what we should call it maybe it's it'll
+
+307
+00:21:21,009 --> 00:21:26,944
+多一个排所以现在老现在是
+be one more row so now old now it's
+
+308
+00:21:26,949 --> 00:21:30,904
+变得新鲜我有点兴奋
+becoming new I'm sort of more excited
+
+309
+00:21:30,909 --> 00:21:32,944
+关于这个，然后改善
+about this then and improving the
+
+310
+00:21:32,949 --> 00:21:37,564
+公式所以还是会这么好吗
+formula so just keep going so okay
+
+311
+00:21:37,569 --> 00:21:40,774
+有我们的M测量和存在
+there's our M measurements and being
+
+312
+00:21:40,779 --> 00:21:44,704
+大的a是高大的薄矩阵和
+large a being the tall thin matrix and
+
+313
+00:21:44,709 --> 00:21:46,654
+现在我们要再给它一排
+now we're gonna give it one more row
+
+314
+00:21:46,659 --> 00:21:48,754
+我们要让它甚至更高的发言权
+we're gonna make it even taller say
+
+315
+00:21:48,759 --> 00:21:54,114
+也许V转置时间与X相同
+maybe V transpose times the same X is
+
+316
+00:21:54,119 --> 00:22:00,514
+有些是新的或类似的东西，所以我们
+some be new or something like that so we
+
+317
+00:22:00,519 --> 00:22:03,394
+所以再多一行了
+so there's one more row one more
+
+318
+00:22:03,399 --> 00:22:06,874
+测量那么北方是什么
+measurement so what's the north what
+
+319
+00:22:06,879 --> 00:22:08,584
+这是正常的等式
+happens to the normal equation this is
+
+320
+00:22:08,589 --> 00:22:11,435
+这让你更有可能
+this is makes it even more likely you
+
+321
+00:22:11,440 --> 00:22:13,774
+知道还有另外一点希望
+know there's another point hoping the
+
+322
+00:22:13,779 --> 00:22:15,634
+直线将通过，但如果我们
+straight line will go through but if we
+
+323
+00:22:15,639 --> 00:22:17,734
+再给它一点，甚至更少
+give it one more point there's even less
+
+324
+00:22:17,739 --> 00:22:20,974
+直线前进的可能性
+chance of a straight line going exactly
+
+325
+00:22:20,979 --> 00:22:25,114
+通过，但仍然是为什么这是我的
+through but still so what why this is my
+
+326
+00:22:25,119 --> 00:22:27,514
+新矩阵所以我的新常态是什么
+new matrix so what's my new normal
+
+327
+00:22:27,519 --> 00:22:37,435
+方程新的正规方程然后a
+equation a new normal equation then a a
+
+328
+00:22:37,440 --> 00:22:42,484
+转置所以a有一个新的新的
+transpose so a the a has got a new a new
+
+329
+00:22:42,489 --> 00:22:47,224
+row有一个新行，所以转置
+row has got a new row so a transpose
+
+330
+00:22:47,229 --> 00:22:49,174
+将有一个我刚刚复制的新专栏
+will have a new column I'm just copying
+
+331
+00:22:49,179 --> 00:22:51,904
+正常的等式，但我给它
+the normal equation but I'm giving it
+
+332
+00:22:51,909 --> 00:22:52,675
+它的
+its
+
+333
+00:22:52,680 --> 00:22:57,195
+新事物得到了一个新专栏，这是我的一个
+new things got a new column this is my a
+
+334
+00:22:57,200 --> 00:23:05,605
+换了一排这是我最好的X帽子
+with a new row this is my X hat my best
+
+335
+00:23:05,610 --> 00:23:10,215
+我最小的方块回答新的和a
+my least squares answer new and a
+
+336
+00:23:10,220 --> 00:23:15,925
+transpose这是一个转置与
+transpose is this a transpose with the
+
+337
+00:23:15,930 --> 00:23:25,155
+新的现在列时间b所以b和b新
+new now column times b so b and b new
+
+338
+00:23:25,160 --> 00:23:29,695
+好吧相当好看这个
+okay pretty okay with this to see that
+
+339
+00:23:29,700 --> 00:23:31,645
+这是新的正规方程式
+this is the new normal equation i'm
+
+340
+00:23:31,650 --> 00:23:34,375
+使用新矩阵和新权利
+using the new matrix and the new right
+
+341
+00:23:34,380 --> 00:23:40,165
+手边和另外一个数据点
+hand side and just one more data point
+
+342
+00:23:40,170 --> 00:23:45,115
+已进入系统
+has come into the into the system from
+
+343
+00:23:45,120 --> 00:23:49,165
+他们的传感器和关键点是什么
+their sensor and what's the key point
+
+344
+00:23:49,170 --> 00:23:51,685
+这里的关键点是我不想
+here key point is i don't want to
+
+345
+00:23:51,690 --> 00:23:55,945
+重新计算我不想乘以那个
+recompute i don't want to multiply that
+
+346
+00:23:55,950 --> 00:24:00,175
+矩阵，我不想重新开始
+matrix again i don't want to start over
+
+347
+00:24:00,180 --> 00:24:03,085
+我不想，我不想计算
+I don't want to I don't want to compute
+
+348
+00:24:03,090 --> 00:24:08,215
+这是一个井II的转置时间
+this a transpose times that a well I I
+
+349
+00:24:08,220 --> 00:24:10,795
+想要用我已经做过的事情
+want to use what I've already done so
+
+350
+00:24:10,800 --> 00:24:14,035
+如果我成倍的是什么是什么
+what is what is what is if I multiply
+
+351
+00:24:14,040 --> 00:24:15,985
+那两个在一起我实际上是什么
+those two together what do I actually
+
+352
+00:24:15,990 --> 00:24:22,035
+得到这就是这是我正在添加一个新的
+get so this is this is I'm adding a new
+
+353
+00:24:22,040 --> 00:24:26,095
+列在这里和新行在这里和我
+column here and the new row here and I
+
+354
+00:24:26,100 --> 00:24:28,645
+告诉我你的想法是什么和答案
+tell me what you think the answer is and
+
+355
+00:24:28,650 --> 00:24:31,075
+然后让我们看看为什么我问你
+then let's just see why I'm asking you
+
+356
+00:24:31,080 --> 00:24:38,535
+什么那个矩阵是你怎么想的
+what that matrix is what do you think
+
+357
+00:24:38,540 --> 00:24:42,355
+无论如何，让我知道如果
+start me out to anyway they knew that if
+
+358
+00:24:42,360 --> 00:24:44,545
+我只是要求平凡
+I just I'm just asking for ordinary
+
+359
+00:24:44,550 --> 00:24:47,605
+矩阵乘法很好我想我
+matrix multiplication well I guess I'm
+
+360
+00:24:47,610 --> 00:24:51,225
+要求你按列行进行
+asking you to do it columns times rows
+
+361
+00:24:51,230 --> 00:24:56,035
+因为那是1806五个专业
+since that's what 1806 five specializes
+
+362
+00:24:56,040 --> 00:25:01,215
+因此，我认为我有那样的时间
+in so I think I have that times that a
+
+363
+00:25:01,220 --> 00:25:03,355
+转置一个
+transpose a
+
+364
+00:25:03,360 --> 00:25:07,835
+加上一个新列，一个nuRhoVV
+plus one new column times one nu Rho VV
+
+365
+00:25:07,840 --> 00:25:13,285
+转置乘以这个Xhatnu
+transpose is multiplying this X hat nu
+
+366
+00:25:13,290 --> 00:25:17,045
+我得到了正确的一面
+and over on the right side I get
+
+367
+00:25:17,050 --> 00:25:20,485
+无论我有一个转置V老和
+whatever I had the a transpose V old and
+
+368
+00:25:20,490 --> 00:25:26,705
+在V千伏新，但让我回来给
+the V V new but let me come back to that
+
+369
+00:25:26,710 --> 00:25:29,555
+因为这真的告诉你为什么你
+because that really shows you why you
+
+370
+00:25:29,560 --> 00:25:32,555
+必须理解矩阵乘法
+must understand matrix multiplication
+
+371
+00:25:32,560 --> 00:25:37,295
+通常的行x列，但那
+both the usual row x column but that
+
+372
+00:25:37,300 --> 00:25:41,615
+在这里也不会那么有吸引力
+would not be so attractive here and also
+
+373
+00:25:41,620 --> 00:25:46,475
+列的时间为行的新方式
+the new way as columns times rows
+
+374
+00:25:46,480 --> 00:25:49,025
+因为当我看到它作为列时间
+because when I see it as columns times
+
+375
+00:25:49,030 --> 00:25:51,995
+行我看到我有相同的列
+rows I see that I have the same columns
+
+376
+00:25:52,000 --> 00:25:55,325
+那里有相同的行，所以我就是我
+and same rows there so I just what I
+
+377
+00:25:55,330 --> 00:25:57,515
+已经知道然后我有一个新的
+already knew and then I have one new
+
+378
+00:25:57,520 --> 00:25:59,915
+列当然是一个新行
+column times one new row of course
+
+379
+00:25:59,920 --> 00:26:02,555
+第n列加1，第n行
+that's column n plus 1 and that's row n
+
+380
+00:26:02,560 --> 00:26:06,815
+再加1，他们给予等级1它是a
+plus 1 and they give that rank 1 it's a
+
+381
+00:26:06,820 --> 00:26:10,205
+等级1在转置中改变它是a
+rank 1 change in a transpose a it's a
+
+382
+00:26:10,210 --> 00:26:13,565
+等级1改变转置a这样
+rank 1 change in a transpose a so this
+
+383
+00:26:13,570 --> 00:26:17,885
+就像最小正方形的一部分我
+is like part of the of least squares I
+
+384
+00:26:17,890 --> 00:26:22,235
+意味着你可以看到一个相关性
+mean you can see that the relevance in a
+
+385
+00:26:22,240 --> 00:26:25,765
+真正的问题，你可能有一个
+real problem you you maybe have a
+
+386
+00:26:25,770 --> 00:26:28,685
+沿着你飞行的导弹送了一个
+missile flying along you sent up a
+
+387
+00:26:28,690 --> 00:26:31,655
+您正在跟踪的卫星GPS卫星
+satellite GPS satellite you're tracking
+
+388
+00:26:31,660 --> 00:26:36,065
+它只是在数据中输入更多数据
+it more data comes in the data is just
+
+389
+00:26:36,070 --> 00:26:40,145
+跟踪器没有一个位置
+one more position the tracker isn't
+
+390
+00:26:40,150 --> 00:26:43,325
+完美，所以我们在这里很适合我
+perfect so we're gonna fit well here I'm
+
+391
+00:26:43,330 --> 00:26:49,745
+拟合直线也许我们就是
+fitting a straight line maybe but we're
+
+392
+00:26:49,750 --> 00:26:53,135
+适合数据和唯一
+fitting to the data and the the only
+
+393
+00:26:53,140 --> 00:26:55,625
+改变了左手的配偶
+change in the mate in the left hand the
+
+394
+00:26:55,630 --> 00:26:58,205
+很大的问题，大部分的
+big problem that the big part of the
+
+395
+00:26:58,210 --> 00:27:00,965
+计算是转置一个部分
+computation is that a transpose a part
+
+396
+00:27:00,970 --> 00:27:05,855
+它只是按等级1或更改而改变
+and it's just changed by rank 1 or by
+
+397
+00:27:05,860 --> 00:27:10,415
+如果我们有K个新数据点，则排名a
+rank a if we had K new data points if we
+
+398
+00:27:10,420 --> 00:27:13,295
+有K个新的数据点然后这将是
+had K new data points then this would be
+
+399
+00:27:13,300 --> 00:27:15,155
+一个雨洞
+a rain cave
+
+400
+00:27:15,160 --> 00:27:20,865
+所以你看，然后我回到这里好吧
+so you see then I go back here well okay
+
+401
+00:27:20,870 --> 00:27:23,625
+现在我正在扰乱a和我的转置
+now I'm perturbing a transpose a and I
+
+402
+00:27:23,630 --> 00:27:27,395
+尚未给出那个公式
+haven't given a formula for that one yet
+
+403
+00:27:27,400 --> 00:27:29,925
+到目前为止，我只是感到不安
+I've only perturbed up to now the
+
+404
+00:27:29,930 --> 00:27:32,535
+身份，但你可以相信所有
+identity but you can believe since all
+
+405
+00:27:32,540 --> 00:27:35,535
+谢尔曼，这些公式正在起作用
+these formulas are working that Sherman
+
+406
+00:27:35,540 --> 00:27:38,475
+或莫里森或伍德伯里想出了
+or Morrison or Woodbury came up with the
+
+407
+00:27:38,480 --> 00:27:42,345
+正确的置换扰动
+correct permutation the perturbation for
+
+408
+00:27:42,350 --> 00:27:46,835
+一个转置，所以我很高兴
+a transpose a so I'm sort of happy to
+
+409
+00:27:46,840 --> 00:27:51,795
+那个应用程序如此自然而然
+that that application so natural came
+
+410
+00:27:51,800 --> 00:27:59,865
+如此简单，我就是那样的
+out so simply well I'm on that sort of
+
+411
+00:27:59,870 --> 00:28:02,895
+你有没有听说过这个主题
+subject have you ever heard of the
+
+412
+00:28:02,900 --> 00:28:07,865
+卡尔曼滤波器使牛仔过滤器
+Kalman filter so the cowman filter
+
+413
+00:28:07,870 --> 00:28:12,585
+究竟是什么呢？
+what's that about it's about exactly
+
+414
+00:28:12,590 --> 00:28:15,675
+这是关于它的动态平方
+this it's about dynamically squares it's
+
+415
+00:28:15,680 --> 00:28:17,535
+关于最小二乘问题
+about least squares problems in which
+
+416
+00:28:17,540 --> 00:28:20,835
+新数据即将出现，这是其中的一部分
+new data is coming in that's a part a
+
+417
+00:28:20,840 --> 00:28:23,205
+卡尔曼滤波器或另一个词让我
+Kalman filter or another word let me
+
+418
+00:28:23,210 --> 00:28:25,485
+在这里写几个字
+just write a couple of words up here
+
+419
+00:28:25,490 --> 00:28:30,935
+这实际上是递归最小二乘法
+this is really recursive least squares
+
+420
+00:28:30,940 --> 00:28:35,865
+递归最小二乘法我的意思
+recursive least squares what I mean by
+
+421
+00:28:35,870 --> 00:28:39,645
+递归是新数据进来的
+recursive is new data comes in it
+
+422
+00:28:39,650 --> 00:28:43,635
+改变答案，但不会改变
+changes the answer but it doesn't change
+
+423
+00:28:43,640 --> 00:28:53,715
+我们的方法，然后卡尔曼滤波器
+our method and then the Kalman filter is
+
+424
+00:28:53,720 --> 00:28:57,075
+如果，指导非常重要
+a very very big deal in guidance if
+
+425
+00:28:57,080 --> 00:29:00,365
+如果你发送一枚导弹，你就是这样的
+you're if you're sending up a missile a
+
+426
+00:29:00,370 --> 00:29:06,675
+卫星你跟踪它你做的只是
+satellite you track it you do just just
+
+427
+00:29:06,680 --> 00:29:10,185
+我一直在这里讨论但是
+what I've been discussing here but the
+
+428
+00:29:10,190 --> 00:29:14,195
+卡尔曼滤波器是它的更多
+Kalman filter is it's it's got more
+
+429
+00:29:14,200 --> 00:29:16,545
+建立在这个可能性的可能性
+possibilities built in than this one
+
+430
+00:29:16,550 --> 00:29:20,775
+这是最简单的更新
+this is the simplest update possible and
+
+431
+00:29:20,780 --> 00:29:25,205
+它会打电话或进入这个类别
+it would call or go in this category
+
+432
+00:29:25,210 --> 00:29:30,965
+库尔曼超越了标准更新
+kulmann went beyond a standard update
+
+433
+00:29:30,970 --> 00:29:36,554
+如果我是的话，他是如何超越的呢？
+how did he go beyond let's if I if I've
+
+434
+00:29:36,559 --> 00:29:38,804
+我应该使用卡尔曼滤波器这个词
+used the words Kalman filter I should
+
+435
+00:29:38,809 --> 00:29:41,565
+告诉你卡尔曼是什么
+tell you what what it is that Kalman
+
+436
+00:29:41,570 --> 00:29:44,804
+是什么，广场是什么
+does and what is that the squares
+
+437
+00:29:44,809 --> 00:29:47,745
+问题就像一般的一部分
+problem it's just like part of general
+
+438
+00:29:47,750 --> 00:29:52,665
+在我看来这些知识很好
+knowledge that seems to me okay so what
+
+439
+00:29:52,670 --> 00:29:54,975
+是不是算多根哪些
+is it counted more gen what are the
+
+440
+00:29:54,980 --> 00:29:57,645
+你看过主要的其他作品
+additional pieces you've seen the main
+
+441
+00:29:57,650 --> 00:30:02,685
+这里有一个简单的递归的想法
+idea here of getting a simple recursive
+
+442
+00:30:02,690 --> 00:30:05,325
+不需要重新计算的步骤
+step that doesn't require recomputing
+
+443
+00:30:05,330 --> 00:30:10,605
+你之前和当然所做的一切
+all that you did before and of course to
+
+444
+00:30:10,610 --> 00:30:14,835
+这反过来我会在那里申请
+this inverse I'm going to apply there
+
+445
+00:30:14,840 --> 00:30:17,235
+谢尔曼莫里森将是这样的公式
+shermann morrison would be formula so
+
+446
+00:30:17,240 --> 00:30:19,095
+我将使用之前的反转
+I'll use the inverse that I had before
+
+447
+00:30:19,100 --> 00:30:23,625
+这将是一个排名第一
+and this will be a rank one this is a
+
+448
+00:30:23,630 --> 00:30:27,195
+排名是我的一个扰动
+rank one perturbation of that I'm
+
+449
+00:30:27,200 --> 00:30:30,164
+看着这里的转置
+looking here at a transpose a over there
+
+450
+00:30:30,169 --> 00:30:32,205
+我看起来就像刚刚打电话一样
+I was looking at just like just called
+
+451
+00:30:32,210 --> 00:30:35,205
+它或我甚至称它为身份
+it a or I even called it the identity
+
+452
+00:30:35,210 --> 00:30:37,635
+矩阵但它是你拥有的任何矩阵
+matrix but it's whatever matrix you have
+
+453
+00:30:37,640 --> 00:30:40,395
+这里有一级扰动和
+here with a rank one perturbation and
+
+454
+00:30:40,400 --> 00:30:44,205
+整个事情必须倒置好
+the whole thing has to be inverted okay
+
+455
+00:30:44,210 --> 00:30:46,924
+所以我要说的是什么
+and so I was going to say what is
+
+456
+00:30:46,929 --> 00:30:50,025
+另外，你知道卡尔曼
+additional just so you know about Kalman
+
+457
+00:30:50,030 --> 00:30:53,445
+过滤器，所以两件事是额外的
+filters so two things are additional the
+
+458
+00:30:53,450 --> 00:30:56,595
+重点是卡尔曼滤波器
+point the point is Kalman filters are
+
+459
+00:30:56,600 --> 00:30:59,804
+对于动态最小二乘，我会说
+for dynamic least squares I would say
+
+460
+00:30:59,809 --> 00:31:02,685
+动态最小二乘等有
+dynamic least squares and so there are
+
+461
+00:31:02,690 --> 00:31:04,544
+你没见过两种成分
+two ingredients that you haven't seen
+
+462
+00:31:04,549 --> 00:31:13,365
+这里有一个成分是使用的想法
+here one ingredient is the idea of using
+
+463
+00:31:13,370 --> 00:31:16,575
+协方差矩阵告诉你
+the covariance matrix which tells you
+
+464
+00:31:16,580 --> 00:31:19,145
+错误如何相关
+how errors are correlated
+
+465
+00:31:19,150 --> 00:31:22,515
+所以这将是加权最小二乘法
+so that would be weighted least squares
+
+466
+00:31:22,520 --> 00:31:27,345
+或相关最小二乘这些
+or correlated least squares these
+
+467
+00:31:27,350 --> 00:31:34,965
+正方形是这些方块让我公正
+squares is so these squares let me just
+
+468
+00:31:34,970 --> 00:31:36,165
+提醒
+remind
+
+469
+00:31:36,170 --> 00:31:41,555
+我可以在这里写这些广场
+I can write it here so these square
+
+470
+00:31:41,560 --> 00:31:51,525
+标准标准意味着数据是
+standard standard meaning that data is
+
+471
+00:31:51,530 --> 00:31:55,985
+不相关它都有相同的
+not correlated it all has the same
+
+472
+00:31:55,990 --> 00:31:59,415
+方差这些是统计词
+variance these are the statistics words
+
+473
+00:31:59,420 --> 00:32:04,595
+当我上次在这里时，我正在使用它
+that I'm using when I last time in this
+
+474
+00:32:04,600 --> 00:32:09,285
+但是我会正确地谈论这个问题
+but that I'll talk about properly so the
+
+475
+00:32:09,290 --> 00:32:12,555
+标准的是协变的
+standard one is the covariant the
+
+476
+00:32:12,560 --> 00:32:19,395
+标准意味着协方差等于
+standard means covariance equal the
+
+477
+00:32:19,400 --> 00:32:24,885
+您正在做的身份矩阵
+identity matrix you're doing like
+
+478
+00:32:24,890 --> 00:32:28,865
+高斯正态概率但有
+Gaussian normal probability but with
+
+479
+00:32:28,870 --> 00:32:33,855
+只是标准的高斯标准
+just standard gaussians standard
+
+480
+00:32:33,860 --> 00:32:38,675
+高斯因此是其中的一个方面
+Gaussian so that's one aspect which in
+
+481
+00:32:38,680 --> 00:32:44,195
+德雷珀实验室的工作让我们说
+the work of the Draper lab let's say
+
+482
+00:32:44,200 --> 00:32:47,625
+他们必须认为他们得到了
+they have to think okay they're getting
+
+483
+00:32:47,630 --> 00:32:50,625
+传感器不同类型的传感器与
+sensors different kinds of sensors with
+
+484
+00:32:50,630 --> 00:32:52,665
+不同的准确度不同
+different accuracies different
+
+485
+00:32:52,670 --> 00:32:55,125
+他们必须具备可靠性
+reliability so they have they have to
+
+486
+00:32:55,130 --> 00:32:56,955
+考虑协方差矩阵
+take account of the covariance matrix
+
+487
+00:32:56,960 --> 00:33:02,565
+那么另一点也是如此
+then the other point is and also so that
+
+488
+00:33:02,570 --> 00:33:09,305
+是0.10.2是你的动态部分
+was 0.1 0.2 is the dynamic part you're
+
+489
+00:33:09,310 --> 00:33:15,095
+那是一个状态方程式
+the co there's a state equation that's
+
+490
+00:33:15,100 --> 00:33:18,195
+所以我真的处于控制的边缘
+so I'm really into the edge of control
+
+491
+00:33:18,200 --> 00:33:20,745
+理论所以让我用一些话来说
+theory so let me just use some words
+
+492
+00:33:20,750 --> 00:33:25,035
+在这里，你已经看到你是否如此控制
+here that you've seen if you so control
+
+493
+00:33:25,040 --> 00:33:28,725
+理论有一个状态方程是什么
+theory has a state equation what's
+
+494
+00:33:28,730 --> 00:33:31,875
+在美学上这是什么状态
+aesthetically what is the state this is
+
+495
+00:33:31,880 --> 00:33:36,195
+在我的例子中，位置是
+the position in my example is the
+
+496
+00:33:36,200 --> 00:33:42,955
+卫星的位置
+position of the satellite
+
+497
+00:33:42,960 --> 00:33:50,435
+所以我们正在寻找一个令人高兴的解决方案
+so are we looking for a fix a delight
+
+498
+00:33:50,440 --> 00:33:53,435
+当然不是卫星正在移动
+certainly not the satellite is moving so
+
+499
+00:33:53,440 --> 00:33:57,274
+状态方程告诉我多少
+the state equation tells me how much the
+
+500
+00:33:57,279 --> 00:34:02,554
+卫星它的牛顿定律告诉我
+satellite it's Newton's law tells me
+
+501
+00:34:02,559 --> 00:34:04,504
+卫星应该在哪里
+where the satellite should be where am I
+
+502
+00:34:04,509 --> 00:34:04,984
+看着
+looking
+
+503
+00:34:04,989 --> 00:34:09,995
+然后最小二乘告诉我他
+and then the least-squares tells me he
+
+504
+00:34:10,000 --> 00:34:14,824
+说看看那种中位数
+says look around that sort of median
+
+505
+00:34:14,829 --> 00:34:18,574
+对于实际位置立场
+position for the actual position that
+
+506
+00:34:18,579 --> 00:34:23,824
+这些数据只是给予了
+that the data is giving so just just to
+
+507
+00:34:23,829 --> 00:34:27,715
+说让我让我总结这个
+say let me let me summarize this the
+
+508
+00:34:27,720 --> 00:34:32,525
+卡尔曼滤波器是一个显着的
+Kalman filter is a significantly
+
+509
+00:34:32,530 --> 00:34:35,465
+递归方格的改进版本
+improved version of recursively squares
+
+510
+00:34:35,470 --> 00:34:38,844
+那是递归的新方格
+that's recursively squares new
+
+511
+00:34:38,849 --> 00:34:44,094
+测量是变化的事情但是
+measurement comes in changes things but
+
+512
+00:34:44,099 --> 00:34:49,745
+留下很大一部分，你做的
+leaves a big part unchanged and you make
+
+513
+00:34:49,750 --> 00:34:52,985
+你发现新发现的新东西
+the you find the new you find that new
+
+514
+00:34:52,990 --> 00:35:00,455
+用卡尔曼滤波器退出你有一个
+exit with a Kalman filter you there's a
+
+515
+00:35:00,460 --> 00:35:02,945
+这里中间的协方差矩阵
+covariance matrix in the middle here
+
+516
+00:35:02,950 --> 00:35:05,614
+这就是协方差矩阵的地方
+that's where covariance matrices go
+
+517
+00:35:05,619 --> 00:35:09,485
+这是矩阵协方差或逆矩阵
+that's matrix covariance or inverse
+
+518
+00:35:09,490 --> 00:35:13,235
+协方差时间以及为什么不这样做
+covariance times that and well why don't
+
+519
+00:35:13,240 --> 00:35:16,925
+我们看到右边的协方差
+we see see the covariances at the right
+
+520
+00:35:16,930 --> 00:35:21,755
+时间好吧所以也许我的那些会议纪要
+time okay so maybe my those minutes that
+
+521
+00:35:21,760 --> 00:35:27,245
+我已经占据了真正要得到的
+I've occupied were just to really to get
+
+522
+00:35:27,250 --> 00:35:32,225
+你最简单的听到这个名字
+you to hear that name for the simplest
+
+523
+00:35:32,230 --> 00:35:35,614
+更新和凯尔曼的名字更多
+update and kellman's name for a more
+
+524
+00:35:35,619 --> 00:35:39,025
+一般更新没事
+general update okay done
+
+525
+00:35:39,030 --> 00:35:42,875
+好吧哦，这也是要做的
+okay oh that was this is also to be done
+
+526
+00:35:42,880 --> 00:35:48,035
+你在哪里知道顶部
+where's ya know up top
+
+527
+00:35:48,040 --> 00:35:51,905
+我似乎在这里的应用程序
+I seem to be into the applications here
+
+528
+00:35:51,910 --> 00:35:57,445
+我答应如何发现这个公式
+I promised how to discover the formula
+
+529
+00:35:57,450 --> 00:36:03,635
+也许我永远都不会知道，因为我
+maybe I'll never know okay because I'm
+
+530
+00:36:03,640 --> 00:36:06,305
+真的更感兴趣的是它的好处
+really more interested in what's it good
+
+531
+00:36:06,310 --> 00:36:08,185
+对于
+for
+
+532
+00:36:08,190 --> 00:36:11,975
+好的，那么使用第一名是好的
+okay so what's it good use number one
+
+533
+00:36:11,980 --> 00:36:14,425
+现在我正在备份轻松简单
+now I'm backing up to the easy easy
+
+534
+00:36:14,430 --> 00:36:19,955
+问题假设II已经或者然后让
+question suppose I I had or and then let
+
+535
+00:36:19,960 --> 00:36:22,025
+我甚至做了一些矩阵来改变
+me even make some matrix to change the
+
+536
+00:36:22,030 --> 00:36:25,705
+矩阵到这里使它更现实
+matrix to a here makes it more realistic
+
+537
+00:36:25,710 --> 00:36:30,185
+还好还好我要去的副本，在这里充分
+okay okay I'm gonna copy that here fully
+
+538
+00:36:30,190 --> 00:36:34,595
+在发现公式的那一刻
+on discovering the formula the moment
+
+539
+00:36:34,600 --> 00:36:43,325
+我们只是用它好了，所以我想，
+let's just use it okay so I suppose that
+
+540
+00:36:43,330 --> 00:37:03,025
+一个U就是它的盐现在好了，现在盐了
+a U is be its salt okay now now salt a
+
+541
+00:37:03,030 --> 00:37:11,854
+加-好吧让我排名第一
+plus - all right let me do the rank one
+
+542
+00:37:11,859 --> 00:37:21,425
+a-UV转置B这是什么X.
+a - UV transpose B what's X this is the
+
+543
+00:37:21,430 --> 00:37:23,765
+我真的很想问题
+problem that I really would like to
+
+544
+00:37:23,770 --> 00:37:27,995
+解决，让我确定我这样做
+solve let me just be sure I'm doing this
+
+545
+00:37:28,000 --> 00:37:33,815
+对
+right
+
+546
+00:37:33,820 --> 00:37:46,215
+是的是的还好没事想你我
+yep okay yep all right suppose I you
+
+547
+00:37:46,220 --> 00:37:48,225
+知道它有点类似于什么
+know it's a little it's similar to what
+
+548
+00:37:48,230 --> 00:37:50,775
+我们在凯勒曼的情况下
+we had in the Kellerman situation
+
+549
+00:37:50,780 --> 00:37:54,795
+假设我现在解决了一个问题
+suppose I've solved one problem but now
+
+550
+00:37:54,800 --> 00:37:59,625
+我把第一级扰乱了矩阵，所以我
+I perturb the matrix by rank one so I
+
+551
+00:37:59,630 --> 00:38:02,025
+有一个新的问题，新的答案，
+have a new problem with a new answer and
+
+552
+00:38:02,030 --> 00:38:04,995
+我想快点得到答案，是的
+I want to get that answer quickly yeah
+
+553
+00:38:05,000 --> 00:38:09,315
+哦，不，谢谢
+oh no thank you
+
+554
+00:38:09,320 --> 00:38:12,635
+非常感谢，让我们称呼这个人
+thank you very much let's call this guy
+
+555
+00:38:12,640 --> 00:38:23,925
+Z好的没关系，这太好了
+Z okay okay so that's great
+
+556
+00:38:23,930 --> 00:38:27,195
+所以这就是我解决的问题
+so so that's that's what I've solved for
+
+557
+00:38:27,200 --> 00:38:32,085
+换句话说，我发现了一个逆
+W in other words I have found a inverse
+
+558
+00:38:32,090 --> 00:38:36,945
+B和我想找到这个问题的答案
+B and I want to find the answer to that
+
+559
+00:38:36,950 --> 00:38:38,385
+新问题
+new question
+
+560
+00:38:38,390 --> 00:38:41,835
+所以我扰乱矩阵就是这样
+so I perturb the matrix it's it's the
+
+561
+00:38:41,840 --> 00:38:43,965
+线性系统中的系数矩阵
+coefficient matrix in a linear system
+
+562
+00:38:43,970 --> 00:38:45,825
+而我只是想解决那个线性问题
+and I just want to solve that linear
+
+563
+00:38:45,830 --> 00:38:49,665
+系统还好，如果我不知道的话
+system okay now so if I didn't know
+
+564
+00:38:49,670 --> 00:38:52,365
+关于这些公式我会做什么的
+anything about these formulas I would
+
+565
+00:38:52,370 --> 00:38:55,635
+这里有一个新矩阵我必须这样做
+have a new matrix here I'd have to it
+
+566
+00:38:55,640 --> 00:39:01,155
+需要n个立方体步骤才能完成
+would take n cube steps to do
+
+567
+00:39:01,160 --> 00:39:07,085
+消除并得到新的答案
+elimination and and get the new answer
+
+568
+00:39:07,090 --> 00:39:11,795
+但重点是使用旧的答案
+but the point is to use the old answer
+
+569
+00:39:11,800 --> 00:39:14,985
+重点是使用旧的答案和
+the point is to use the old answer and
+
+570
+00:39:14,990 --> 00:39:17,775
+现在让我说一下这是什么和
+now let me just say what this is and
+
+571
+00:39:17,780 --> 00:39:25,715
+这是本节中的问题三，但是
+it's problem three in this section but
+
+572
+00:39:25,720 --> 00:39:29,475
+好的
+so okay
+
+573
+00:39:29,480 --> 00:39:37,545
+换句话说，我们知道我们已经知道了
+so in other words we know about a we've
+
+574
+00:39:37,550 --> 00:39:41,715
+解决了那个我要做的事情
+solved that one so what I'm gonna do
+
+575
+00:39:41,720 --> 00:39:44,055
+而不是解决一个全新的问题
+instead of solving a whole new problem
+
+576
+00:39:44,060 --> 00:39:52,875
+我会这么快就有了这个主意
+I'm gonna so quickly it's the idea and
+
+577
+00:39:52,880 --> 00:39:56,205
+这就是我要解决的想法
+here's the idea I'm gonna I've solved
+
+578
+00:39:56,210 --> 00:39:58,094
+那一个，我要解决一秒钟
+that one and I'm gonna solve a second
+
+579
+00:39:58,099 --> 00:40:03,705
+问题也解决了同样的问题
+problem also solve a with the same
+
+580
+00:40:03,710 --> 00:40:08,625
+矩阵a呐喊一次我应该怎样
+matrix a whoops a times what shall I
+
+581
+00:40:08,630 --> 00:40:09,705
+打电话给未知
+call the unknown
+
+582
+00:40:09,710 --> 00:40:19,005
+还有的电子ü所以这是我的问题，我知道
+there's e u so this is my problem I know
+
+583
+00:40:19,010 --> 00:40:21,785
+U和V转置，但我没有
+the U and the V transpose but I don't
+
+584
+00:40:21,790 --> 00:40:24,614
+真想找到这个的倒数
+really want to find the inverse of this
+
+585
+00:40:24,619 --> 00:40:28,245
+从头开始的矩阵所以这个想法就是这样
+matrix from scratch so the idea is that
+
+586
+00:40:28,250 --> 00:40:30,665
+如果我合适地结合起来
+if I combine suitably combine the
+
+587
+00:40:30,670 --> 00:40:33,375
+原始问题的解决方案
+solutions to the original problem the
+
+588
+00:40:33,380 --> 00:40:37,324
+原始解决方案W和解决方案
+original solution W and the solution to
+
+589
+00:40:37,329 --> 00:40:41,985
+这个问题跟你那里的新人有关
+this problem with the new guy you there
+
+590
+00:40:41,990 --> 00:40:45,854
+不论如何，到结合W和
+that somehow by combining the W and the
+
+591
+00:40:45,859 --> 00:40:49,425
+Z我会得到这个答案X的
+Z I'm gonna get this answer X that's
+
+592
+00:40:49,430 --> 00:40:55,064
+通过弄清楚W，我就是那样的
+where I'm that's um by by figuring out W
+
+593
+00:40:55,069 --> 00:40:57,614
+和Z所以你看到我做了什么我已经
+and Z so do you see what I've done I've
+
+594
+00:40:57,619 --> 00:41:00,824
+解决了我已解决的矩阵问题
+solved the with the matrix a I've solved
+
+595
+00:41:00,829 --> 00:41:05,715
+两个问题确实需要两倍
+two problems does that take twice as
+
+596
+00:41:05,720 --> 00:41:10,834
+如果我有相同的矩阵a
+long if I if I have the same matrix a
+
+597
+00:41:10,839 --> 00:41:15,195
+但不同的右手边b如果我
+but different right hand sides b if i
+
+598
+00:41:15,200 --> 00:41:18,255
+把它变成了鲁的所有艰苦工作
+factor it a into Lu all the hard work is
+
+599
+00:41:18,260 --> 00:41:22,035
+虽然全部在左侧完成
+done there on the left side although all
+
+600
+00:41:22,040 --> 00:41:24,435
+这项工作是在找到卢然后完成的
+the work is done in finding Lu and then
+
+601
+00:41:24,440 --> 00:41:27,614
+我只是替代找到了
+I just back substitute to find the
+
+602
+00:41:27,619 --> 00:41:30,675
+第二种解决方案这是如此根本
+second solution this is so fundamental
+
+603
+00:41:30,680 --> 00:41:34,185
+我强调的是，如果你有
+that I'm emphasizing it that if you have
+
+604
+00:41:34,190 --> 00:41:37,245
+你没有多个右手边
+multiple right-hand sides you don't
+
+605
+00:41:37,250 --> 00:41:39,854
+每次都回去工作
+every time go back and and work on the
+
+606
+00:41:39,859 --> 00:41:41,985
+左侧与左侧相同
+left side the left side with the same
+
+607
+00:41:41,990 --> 00:41:43,125
+矩阵
+matrix a
+
+608
+00:41:43,130 --> 00:41:45,915
+只是会做同样的事情
+just would do the same stuff the same
+
+609
+00:41:45,920 --> 00:41:48,944
+罗斯维尔和枢轴以及所有这些东西
+Roseville and pivots and all that stuff
+
+610
+00:41:48,949 --> 00:41:51,944
+会发生，因为它和你一样
+will happen because it's the same a you
+
+611
+00:41:51,949 --> 00:41:55,004
+只是附上你真的只是坚持一个
+just attach you really just stick a
+
+612
+00:41:55,009 --> 00:41:59,084
+第二列确实是快速的方法
+second column really the the fast way to
+
+613
+00:41:59,089 --> 00:42:05,685
+做到这两个解决方案来了
+do it is a w-z the two solutions come
+
+614
+00:42:05,690 --> 00:42:11,114
+从B和你我刚才把它
+from the B and the you I've just put the
+
+615
+00:42:11,119 --> 00:42:14,175
+两个问题，共同强调，
+two problems together to emphasize that
+
+616
+00:42:14,180 --> 00:42:18,435
+矩阵A是它的这个相同
+the matrix a is the same it's the this
+
+617
+00:42:18,440 --> 00:42:20,774
+是大多数工作的地方，但它
+is where most of the work goes but it
+
+618
+00:42:20,779 --> 00:42:23,204
+只有这一点才会到那里
+only goes there once that's the point
+
+619
+00:42:23,209 --> 00:42:24,165
+好的
+okay
+
+620
+00:42:24,170 --> 00:42:28,484
+最后我应该记笔记
+then finally I'm supposed to the notes
+
+621
+00:42:28,489 --> 00:42:31,925
+应该告诉我如何结合
+are supposed to tell me how to combine
+
+622
+00:42:31,930 --> 00:42:35,415
+两个答案W和Z得到了
+the two answers W and Z to get the
+
+623
+00:42:35,420 --> 00:42:38,385
+回答X所以让我写下来
+answer X so let me write that down
+
+624
+00:42:38,390 --> 00:42:44,264
+这将是使用号码
+and that will be that will be use number
+
+625
+00:42:44,269 --> 00:42:48,854
+谢尔曼·莫里森之一
+one of the of the shermann morrison
+
+626
+00:42:48,859 --> 00:42:52,034
+伍德伯里公式好，所以我正在计划
+Woodberry formula okay so i'm planning
+
+627
+00:42:52,039 --> 00:42:54,284
+根据这个把它写下来
+to just write it down according to this
+
+628
+00:42:54,289 --> 00:43:00,794
+第二步是我们想要的答案
+step two is the answer we want here
+
+629
+00:43:00,799 --> 00:43:03,524
+写X所以我没有用过相同的
+written X so I haven't used the same
+
+630
+00:43:03,529 --> 00:43:07,094
+笔记中的字母是原件
+letters as in the notes is the original
+
+631
+00:43:07,099 --> 00:43:13,454
+好，然后改变，因为我
+W good and then a change because I've
+
+632
+00:43:13,459 --> 00:43:17,114
+改变了问题所以我要去
+changed the problem so I'm going to
+
+633
+00:43:17,119 --> 00:43:19,844
+改变答案，但事情是
+change the answer but the thing is to
+
+634
+00:43:19,849 --> 00:43:23,734
+得到这个答案就是我必须的
+get this answer it's just I have to
+
+635
+00:43:23,739 --> 00:43:27,885
+在任何地方除以那个决定因素
+divide by that determinant wherever it
+
+636
+00:43:27,890 --> 00:43:36,464
+虽然哦，是的，我很抱歉，我正在使用
+was though oh yeah I'm sorry I'm using
+
+637
+00:43:36,469 --> 00:43:39,494
+这里的一个，我还没有给你的
+the a here and I haven't given you the
+
+638
+00:43:39,499 --> 00:43:46,814
+公式为使将不得不等待，所以
+formula for a so that'll have to wait so
+
+639
+00:43:46,819 --> 00:43:51,705
+它就是这样，我会在这里确定
+it's just so I'll put determinate here
+
+640
+00:43:51,710 --> 00:43:55,095
+和shermann莫里森会想通
+and shermann morrison would be figured
+
+641
+00:43:55,100 --> 00:44:03,645
+那个，然后哦，对不起，我们知道
+that out and then oh I'm sorry we know
+
+642
+00:44:03,650 --> 00:44:08,715
+那是什么我们想要一个减去V
+what that is we want one minus V
+
+643
+00:44:08,720 --> 00:44:12,705
+转置Z所以它是这里的V之一
+transpose Z so it's the V from here one
+
+644
+00:44:12,710 --> 00:44:16,365
+减去V转置，它就是那里的Z.
+minus V transpose and it's the Z there
+
+645
+00:44:16,370 --> 00:44:21,435
+噢，好的，所以我会得到一个
+oh yeah okay good so so I'm gonna get a
+
+646
+00:44:21,440 --> 00:44:25,665
+改变解W的公式
+formula that that changes the solution W
+
+647
+00:44:25,670 --> 00:44:29,175
+通过我们认识到的一个术语来临
+by a term that we recognize is coming
+
+648
+00:44:29,180 --> 00:44:31,815
+来自谢尔曼莫里森伍德伯里和那
+from shermann morrison Woodbury and that
+
+649
+00:44:31,820 --> 00:44:39,185
+分子中的项是Z的倍数
+term in the numerator is a multiple of Z
+
+650
+00:44:39,190 --> 00:45:06,465
+X所以我使用W是W倍X所以V
+X so I'm using W yes W times X so the V
+
+651
+00:45:06,470 --> 00:45:09,705
+在这里我只是使用V是一样的
+here I'm just using the V is the same
+
+652
+00:45:09,710 --> 00:45:18,165
+事情那么好我认为那是我认为的上帝
+thing so okay I think that's God I think
+
+653
+00:45:18,170 --> 00:45:24,015
+这很好，所以重点是2倍
+that's good so again the point was 2x
+
+654
+00:45:24,020 --> 00:45:25,995
+不会出现在这里，因为它是什么
+doesn't appear here because it's what
+
+655
+00:45:26,000 --> 00:45:29,685
+我之后是使用W和Z的
+I'm after is to use the W and the Z the
+
+656
+00:45:29,690 --> 00:45:33,195
+W和Z和我当然必须使用
+W and the Z and I have to use of course
+
+657
+00:45:33,200 --> 00:45:36,975
+V和我必须使用U和那个
+the V and I have to use the U and that
+
+658
+00:45:36,980 --> 00:45:41,355
+在这里使用所以必须的一切
+got used here so everything that had to
+
+659
+00:45:41,360 --> 00:45:46,535
+使用得到了，这就是答案
+be used got used and that was the answer
+
+660
+00:45:46,540 --> 00:45:50,895
+所以这是基本用途，如果我是，如果我
+so that's the basic use is if I'm if I
+
+661
+00:45:50,900 --> 00:45:55,425
+扰动问题的左手
+perturbed the problem the the left hand
+
+662
+00:45:55,430 --> 00:45:58,985
+那边解决方案的变化是什么
+side what's the change in the solution
+
+663
+00:45:58,990 --> 00:46:01,455
+在这里与这些广场
+over here with these squares
+
+664
+00:46:01,460 --> 00:46:04,545
+这是我扰乱左手的一样
+it was the same I perturb the left hand
+
+665
+00:46:04,550 --> 00:46:05,044
+侧
+side
+
+666
+00:46:05,049 --> 00:46:07,174
+但因为那里有正方形
+but because it was these squares there
+
+667
+00:46:07,179 --> 00:46:10,264
+是一个转置辅助处理如此
+was an a transpose aid to deal with so
+
+668
+00:46:10,269 --> 00:46:13,084
+这就像一个级别更难
+this was like one level more difficult
+
+669
+00:46:13,089 --> 00:46:15,274
+因为它涉及转置王牌和
+because it involved a transpose ace and
+
+670
+00:46:15,279 --> 00:46:19,794
+这里只是直白啊好了，
+here was just straightforward eh okay so
+
+671
+00:46:19,799 --> 00:46:33,454
+是的，谢谢我可能会这样做
+yes thanks I could probably do this
+
+672
+00:46:33,459 --> 00:46:36,454
+其他方式是啊是啊是的我希望你
+other ways yeah yeah yeah I hope you
+
+673
+00:46:36,459 --> 00:46:39,724
+希望你能跟进这一点，把它写
+hope you follow up on that and write it
+
+674
+00:46:39,729 --> 00:46:44,885
+是的，是的，所以也许我做了什么
+down yeah yeah so maybe what I've done
+
+675
+00:46:44,890 --> 00:46:49,434
+是我今天的目标首先是
+is what my goal was for today first to
+
+676
+00:46:49,439 --> 00:46:52,794
+显示逆的公式
+show you the formula for the inverse
+
+677
+00:46:52,799 --> 00:46:55,084
+第二，认识到它有
+second to recognize that it has
+
+678
+00:46:55,089 --> 00:46:59,584
+排名K的有趣重要性
+interesting importance that a rank K
+
+679
+00:46:59,589 --> 00:47:02,404
+矩阵的变化带来了等级a
+change in the matrix brings a rank a
+
+680
+00:47:02,409 --> 00:47:05,824
+我们可以改变倒数
+change in the inverse and that we can
+
+681
+00:47:05,829 --> 00:47:08,284
+该公式表示将N反转为n
+the formula says to invert an N by n
+
+682
+00:47:08,289 --> 00:47:10,984
+你可以通过矩阵切换和反转K.
+matrix you can switch and invert a K by
+
+683
+00:47:10,989 --> 00:47:13,924
+K矩阵，然后我谈到了一对
+K matrix and then I spoke about a couple
+
+684
+00:47:13,929 --> 00:47:16,294
+应用程序所以我唯一的事情
+of the applications so the only thing I
+
+685
+00:47:16,299 --> 00:47:19,174
+没做的就是给你全力
+have not done is to give you the full
+
+686
+00:47:19,179 --> 00:47:22,294
+讲道莫里森伍德伯里公式
+sermon Morrison Woodberry formula the
+
+687
+00:47:22,299 --> 00:47:24,424
+一个人就是一个人
+one with an a the one that's up on the
+
+688
+00:47:24,429 --> 00:47:27,875
+我可以最终做到这一点
+right can I do that finally you could
+
+689
+00:47:27,880 --> 00:47:32,035
+可能猜猜它会是什么
+probably guess what it's going to be
+
+690
+00:47:32,040 --> 00:47:37,135
+哪里还有一个还好
+where's there's gotta be one more okay
+
+691
+00:47:37,140 --> 00:47:42,535
+所以我只听到谢尔曼马辛伍德伯里
+so I I just hear Sherman Marcin Woodbury
+
+692
+00:47:42,540 --> 00:47:45,595
+什么是完整的东西呢
+and what's the complete thing it's a
+
+693
+00:47:45,600 --> 00:47:49,795
+减去UV转置，所以这是n
+minus UV transpose inverse so this is n
+
+694
+00:47:49,800 --> 00:47:54,055
+由N和它现在是一个A而不是一个
+by N and it's an A now instead of an
+
+695
+00:47:54,060 --> 00:47:55,995
+身份矩阵就是区别
+identity matrix that's the difference
+
+696
+00:47:56,000 --> 00:48:01,795
+这是由KKbyn所以它的等级
+and this is n by K K by n so it's rank
+
+697
+00:48:01,800 --> 00:48:06,535
+洞穴扰动和开始我出去
+Cave perturbation and start me out on
+
+698
+00:48:06,540 --> 00:48:11,365
+在公式上什么是第一个
+the on the formula what's the first
+
+699
+00:48:11,370 --> 00:48:16,615
+我必须写一个反转所以我
+thing I have to write a inverse so I
+
+700
+00:48:16,620 --> 00:48:19,555
+从反向开始，我减去
+start with a inverse and I subtract
+
+701
+00:48:19,560 --> 00:48:22,615
+什么东西，它会是一个副本
+something and it's gonna be a copy of
+
+702
+00:48:22,620 --> 00:48:27,955
+这个除了好吧也许它只是可能
+this except well maybe it's just maybe
+
+703
+00:48:27,960 --> 00:48:30,445
+它只是一个完美的副本也许我只是
+it's just a perfect copy maybe I just
+
+704
+00:48:30,450 --> 00:48:34,405
+我需要你从左边开始
+need to you I'm going from that left
+
+705
+00:48:34,410 --> 00:48:39,115
+现在我登上了洞穴，我放在那里
+board now I cave where do I put in there
+
+706
+00:48:39,120 --> 00:48:45,625
+我要去要确定一下所以我们
+I am gonna have to look ok so we're
+
+707
+00:48:45,630 --> 00:48:49,795
+现在写下完整的公式
+writing down now the formula the full
+
+708
+00:48:49,800 --> 00:48:51,865
+比例没关系
+scale okay
+
+709
+00:48:51,870 --> 00:49:00,685
+哦，没事在这里是有一个一个
+oh all right here it is there's an a
+
+710
+00:49:00,690 --> 00:49:05,635
+反过来你现在来了整个
+inverse you now comes the in that whole
+
+711
+00:49:05,640 --> 00:49:08,115
+倒过来，你会期待我
+thing inverted that you'll expect I
+
+712
+00:49:08,120 --> 00:49:12,775
+减去V转置你所有的逆
+minus V transpose a inverse you all
+
+713
+00:49:12,780 --> 00:49:16,615
+逆，然后还有另外两个
+inverse and then there's another two
+
+714
+00:49:16,620 --> 00:49:22,585
+件V转置反转所以我没有
+pieces V transpose a inverse so I didn't
+
+715
+00:49:22,590 --> 00:49:24,745
+展望未来，将它全部放在一条线上，但是
+look ahead to get it all on one line but
+
+716
+00:49:24,750 --> 00:49:28,225
+你明白这是什么哦那是
+do you see what this is there oh that's
+
+717
+00:49:28,230 --> 00:49:30,745
+可能就是那个是的
+probably is that yeah that's the
+
+718
+00:49:30,750 --> 00:49:33,025
+身份正确，因为我们已经拥有
+identity right right because we've got
+
+719
+00:49:33,030 --> 00:49:36,085
+足够的倒数我相信是的
+enough a inverses I believe that's the
+
+720
+00:49:36,090 --> 00:49:41,875
+生命的最后终极公式在这里，
+final ultimate formula of life here that
+
+721
+00:49:41,880 --> 00:49:45,415
+我们用等级K改变了它
+we've changed it by rank K
+
+722
+00:49:45,420 --> 00:49:47,515
+这是原始的逆和
+here's the original inverse and
+
+723
+00:49:47,520 --> 00:49:52,785
+大概这是K级改变是的
+presumably this is a rank K change yeah
+
+724
+00:49:52,790 --> 00:49:56,205
+那将是一个变化和排名
+that's a that'll be a rank a change and
+
+725
+00:49:56,210 --> 00:50:00,355
+它只需要我们来计算它
+and it only requires us to compute that
+
+726
+00:50:00,360 --> 00:50:04,045
+反转那里的电缆是K的
+inverse where that's cable that's a K by
+
+727
+00:50:04,050 --> 00:50:08,425
+K矩阵对，谢谢你允许
+K matrix right thank you for allowing
+
+728
+00:50:08,430 --> 00:50:14,125
+这小时50分钟的公式如此
+this hour 50 minutes of formulas so
+
+729
+00:50:14,130 --> 00:50:17,335
+这真的是什么来如此
+that's really what what that comes to so
+
+730
+00:50:17,340 --> 00:50:20,125
+所以这是第四节中的第一节
+so that's section four point one of the
+
+731
+00:50:20,130 --> 00:50:24,685
+注意到一些应用程序，我们会
+notes with some applications and we will
+
+732
+00:50:24,690 --> 00:50:28,370
+move on to other circumstances of low
+
+733
+00:50:24,690 --> 00:50:32,330
+转移到低其他情况
+
+734
+00:50:28,380 --> 00:50:32,330
+排名好谢谢
+rank good thank you
+
